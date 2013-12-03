@@ -1,0 +1,29 @@
+
+exclude:    ['Rakefile', 'Gemfile', 'Gemfile.lock']
+lsi:         false
+pygments:    false
+markdown:    kramdown
+permalink:   :title
+kramdown:
+  auto_ids: true,
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: true
+
+  coderay:
+    coderay_wrap: div
+    coderay_line_numbers: ''
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: style
+
+sass:
+  syntax: scss
+  style:  compressed
+
+__default_layouts:
+  default: 'govuk_template'
+
+govuk_template_assets: '/patterns/assets/govuk_template'
