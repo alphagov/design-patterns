@@ -2,6 +2,12 @@
   a {
     color: #fff;
     float: left;
+    text-decoration: none;
+    margin-right: 10px;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
   .alpha {
     @include phase-tag;
