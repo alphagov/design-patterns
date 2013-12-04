@@ -24,6 +24,6 @@ sass:
   style:  compressed
 
 __default_layouts:
-  default: 'govuk_template'
+  default: 'default'
 
 govuk_template_assets: '/patterns/assets/govuk_template'

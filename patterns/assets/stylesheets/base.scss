@@ -1,0 +1,36 @@
+//
+// Design Patterns base file
+//
+
+
+// From the frontend toolkit
+@import "../govuk_frontend_toolkit/stylesheets/_colours";
+@import "../govuk_frontend_toolkit/stylesheets/_css3";
+@import "../govuk_frontend_toolkit/stylesheets/_device-pixels";
+@import "../govuk_frontend_toolkit/stylesheets/_typography";
+@import "../govuk_frontend_toolkit/stylesheets/_conditionals";
+@import "../govuk_frontend_toolkit/stylesheets/_shims";
+
+// # Styleguide
+// A collection of Sass mixins. They shouldn't output any CSS when included and
+// should only produce CSS when called from another file.
+@import "styleguide/dimensions";
+
+// # Globals
+// Contain global page styling for things which appear on every page of
+// the site. This includes any global navigation or global footers.
+@import "globals/default-layout";
+
+// # Helpers
+// Blocks of Sass which match a reusable markup pattern. They are used to style
+// singular blocks which appear on multiple pages around the site.
+// The name of the file should match the single selector inside the file and
+// everything else should be nested under that selector,
+#content {
+  @import "helpers/block";
+}
+
+// # Views
+// Views are where you style the layout of a single page and any elements which
+// will only appear on that page.
+

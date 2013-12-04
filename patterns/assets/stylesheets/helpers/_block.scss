@@ -1,0 +1,13 @@
+.block {
+  .inner-block {
+    padding: 0 $gutter-half;
+
+    @include media(tablet){
+      padding: 0 $gutter;
+
+      &.floated-children {
+        padding: 0 $gutter-half;
+      }
+    }
+  }
+}
