@@ -1,0 +1,53 @@
+main.pattern {
+  header {
+    @extend %contain-floats;
+    padding: $gutter 0;
+
+    .title {
+      float: left;
+      width: $two-thirds;
+
+      h1, p {
+        padding: 0 $gutter-half;
+      }
+      h1 {
+        @include core-48;
+        font-weight: bold;
+      }
+      p {
+        @include core-19;
+        color: $secondary-text-colour;
+      }
+    }
+    .phase-block {
+      float: left;
+      width: $one-third;
+
+      li {
+        padding: $gutter-half;
+      }
+    }
+
+  }
+
+  .content {
+    float: right;
+    width: $two-thirds;
+
+    h2 {
+      border-bottom: 1px solid;
+      @include heading-36;
+      font-weight: bold;
+      margin: $gutter-half 0;
+    }
+    h3 {
+      @include heading-24;
+      font-weight: bold;
+      margin: $gutter-half 0 $gutter-third;
+    }
+    p {
+      @include copy-19;
+      margin: $gutter-third 0;
+    }
+  }
+}

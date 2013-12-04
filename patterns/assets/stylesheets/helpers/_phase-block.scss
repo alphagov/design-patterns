@@ -1,0 +1,13 @@
+.phase-block {
+  @extend %contain-floats;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  .alpha {
+    @include phase-tag(beta);
+  }
+  .beta {
+    @include phase-tag(alpha);
+  }
+}

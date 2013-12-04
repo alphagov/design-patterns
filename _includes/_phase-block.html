@@ -1,0 +1,7 @@
+{% if page.phases %}
+<ul class="phase-block">
+  {% for phase in page.phases %}
+    <li class="{{ phase | downcase }}">{{ phase }}</li>
+  {% endfor %}
+</ul>
+{% endif %}

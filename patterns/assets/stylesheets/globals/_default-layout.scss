@@ -1,5 +1,9 @@
+.phase-banner {
+  @include phase-banner;
+}
 #content {
+  @extend %contain-floats;
   max-width: 1020px;
   width: auto;
-  margin: 0 auto;
+  margin: 0 auto 3*$gutter;
 }

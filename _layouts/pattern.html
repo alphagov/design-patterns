@@ -1,13 +1,18 @@
 ---
 layout: default
+layout-class: 'pattern'
 ---
 
-<div class="block">
-  <div class="inner-block">
-    <h1>{{title}}</h1>
+<header class="block">
+  <div class="inner-block floated-children">
+    <div class="title">
+      <p>Pattern</p>
+      <h1>{{ page.title }}</h1>
+    </div>
+    {% include _phase-block.html %}
   </div>
-</div>
-<div class="block">
+</header>
+<div class="block content">
   <div class="inner-block">
     {{ content }}
   </div>

@@ -4,12 +4,15 @@
 
 
 // From the frontend toolkit
-@import "../govuk_frontend_toolkit/stylesheets/_colours";
-@import "../govuk_frontend_toolkit/stylesheets/_css3";
-@import "../govuk_frontend_toolkit/stylesheets/_device-pixels";
-@import "../govuk_frontend_toolkit/stylesheets/_typography";
-@import "../govuk_frontend_toolkit/stylesheets/_conditionals";
-@import "../govuk_frontend_toolkit/stylesheets/_shims";
+@import "../govuk_frontend_toolkit/stylesheets/colours";
+@import "../govuk_frontend_toolkit/stylesheets/conditionals";
+@import "../govuk_frontend_toolkit/stylesheets/css3";
+@import "../govuk_frontend_toolkit/stylesheets/device-pixels";
+@import "../govuk_frontend_toolkit/stylesheets/measurements";
+@import "../govuk_frontend_toolkit/stylesheets/shims";
+@import "../govuk_frontend_toolkit/stylesheets/typography";
+
+@import "../govuk_frontend_toolkit/stylesheets/design-patterns/alpha-beta";
 
 // # Styleguide
 // A collection of Sass mixins. They shouldn't output any CSS when included and
@@ -20,6 +23,7 @@
 // Contain global page styling for things which appear on every page of
 // the site. This includes any global navigation or global footers.
 @import "globals/default-layout";
+@import "globals/reset";
 
 // # Helpers
 // Blocks of Sass which match a reusable markup pattern. They are used to style
@@ -28,9 +32,10 @@
 // everything else should be nested under that selector,
 #content {
   @import "helpers/block";
+  @import "helpers/phase-block";
 }
 
 // # Views
 // Views are where you style the layout of a single page and any elements which
 // will only appear on that page.
-
+@import "views/pattern";
