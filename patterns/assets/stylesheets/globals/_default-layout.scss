@@ -1,3 +1,12 @@
+.header-proposition #proposition-name {
+  a {
+    color: #fff;
+    float: left;
+  }
+  .alpha {
+    @include phase-tag;
+  }
+}
 .phase-banner {
   @include phase-banner;
 }
