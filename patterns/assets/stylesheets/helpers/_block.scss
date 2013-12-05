@@ -4,9 +4,14 @@
 
     @include media(tablet){
       padding: 0 $gutter;
+    }
 
-      &.floated-children {
+    &.floated-children {
+      padding: 0;
+
+      @include media(tablet){
         padding: 0 $gutter-half;
+
       }
     }
   }

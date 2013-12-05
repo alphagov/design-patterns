@@ -1,7 +1,10 @@
 main.pattern {
   header {
     @extend %contain-floats;
-    padding: $gutter 0;
+    padding: $gutter-half 0;
+    @include media(tablet){
+      padding: $gutter 0;
+    }
 
     .title {
       float: left;
@@ -30,9 +33,45 @@ main.pattern {
 
   }
 
+  .navigation {
+    @include media(tablet){
+      float: left;
+      width: 25%;
+    }
+    h2 {
+      @include core-16;
+      @include media(tablet){
+        padding-top: 40px;
+      }
+    }
+
+    ol {
+      list-style: none;
+      padding-left: 15px;
+
+      li {
+        @include core-16;
+        padding-bottom: 5px;
+        @include media(tablet){
+          padding: 5px 0;
+        }
+
+        &:before {
+          content: "-";
+          position: relative;
+          float: left;
+          width: 15px;
+          margin-left: -15px;
+        }
+      }
+    }
+  }
+
   .content {
-    float: right;
-    width: 75%;
+    @include media(tablet){
+      float: right;
+      width: 75%;
+    }
 
     h2 {
       border-bottom: 1px solid;
