@@ -1,0 +1,80 @@
+main.transaction-1 {
+  > .progress-indicator{
+    margin: 30px;
+  }
+  header {
+    @extend %contain-floats;
+    padding: $gutter 0;
+
+    .title {
+      float: left;
+      width: $two-thirds;
+
+      h1, p {
+        padding: 0 $gutter-half;
+      }
+      h1 {
+        @include core-48;
+        font-weight: bold;
+      }
+      p {
+        @include core-36;
+        color: $secondary-text-colour;
+      }
+    }
+
+  }
+
+  nav.progress-indicator{
+    @include progress-indicator;
+    @include core-19;    
+  }
+
+  nav.progress-indicator-2{
+    @include progress-indicator;
+    @include core-19;
+    width: 40%;
+    li{
+      float: none;
+      margin-right: 0;
+      &.done{
+      margin-left: 0;
+        span{
+          position: relative;
+          margin-top: 3px;
+        }
+      }
+    }   
+  }
+
+  .button{
+    @include button;
+  }
+
+  nav.step-navigation{
+    @include copy-19;
+    .button{
+      margin-bottom: $gutter-third;
+    }
+  }
+
+  .content {
+    width: 100%;
+
+    h2 {
+      border-bottom: 1px solid;
+      @include heading-36;
+      font-weight: bold;
+      margin: $gutter-half 0;
+    }
+    h3 {
+      @include heading-24;
+      font-weight: bold;
+      margin: $gutter-half 0 $gutter-third;
+    }
+    p {
+      @include copy-19;
+      margin: $gutter-third 0;
+    }
+  }
+}

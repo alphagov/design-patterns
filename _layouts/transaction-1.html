@@ -1,0 +1,25 @@
+---
+layout: transaction
+service-title: "Transaction 1"
+layout-class: 'transaction-1'
+---
+
+<header class="block">
+  <div class="inner-block floated-children">
+    <div class="title">
+      <p>Service</p>
+      <h1>{{ page.page-title }}</h1>
+    </div>
+  </div>
+</header>
+
+{% include _progress-indicator.html %}
+
+<div class="block content">
+  <div class="inner-block">
+    {{ content }}
+
+	{% include _step-navigation.html %}
+
+  </div>
+</div>

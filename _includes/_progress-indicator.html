@@ -1,0 +1,10 @@
+{% if page.progress-indicator %}
+{% assign current-step = page.url | remove:'.html' | split:'.' | last | times: 1 %}
+<nav role="navigation" class="progress-indicator">
+	<ul>
+  	{% for step in page.progress-indicator %}
+    	<li class="{% if forloop.index == current-step %}active {% endif %}{% if forloop.index < current-step %}done{% endif %}">{{ forloop.index }}. {{ step }} {% if forloop.index < current-step %}<span>done</span>{% endif %}</li>
+  	{% endfor %}
+	</ul>
+</nav>
+{% endif %}

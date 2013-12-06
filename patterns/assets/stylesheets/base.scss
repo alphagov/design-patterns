@@ -36,9 +36,12 @@
   @import "helpers/phase-block";
 }
 
+@import "helpers/progress-indicator";
+
 // # Views
 // Views are where you style the layout of a single page and any elements which
 // will only appear on that page.
 @import "views/home";
 @import "views/pattern";
 @import "views/progress-indicator";
+@import "views/transaction-1";
