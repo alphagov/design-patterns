@@ -7,18 +7,19 @@ layout-class: 'pattern'
   <header class="block">
     <div class="inner-block floated-children">
       <div class="title">
-        <p>Pattern</p>
-        <h1>{{ page.title }}</h1>
+        <p>Design pattern</p>
+        <h1>{{ page.title }} {% include _phase-block.html %}</h1>
       </div>
-      {% include _phase-block.html %}
     </div>
   </header>
+  <!--
   <nav class="block navigation">
     <div class="inner-block">
       <h2>Contents</h2>
       {{ page.content | toc_list }}
     </div>
   </nav>
+-->
   <div class="block content">
     <div class="inner-block">
       {{ content }}

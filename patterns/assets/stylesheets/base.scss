@@ -13,6 +13,7 @@
 @import "../govuk_frontend_toolkit/stylesheets/typography";
 
 @import "../govuk_frontend_toolkit/stylesheets/design-patterns/alpha-beta";
+@import "../govuk_frontend_toolkit/stylesheets/design-patterns/buttons";
 
 // # Styleguide
 // A collection of Sass mixins. They shouldn't output any CSS when included and
@@ -38,4 +39,6 @@
 // # Views
 // Views are where you style the layout of a single page and any elements which
 // will only appear on that page.
+@import "views/home";
 @import "views/pattern";
+@import "views/progress-indicator";

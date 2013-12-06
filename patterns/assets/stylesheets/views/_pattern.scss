@@ -18,13 +18,13 @@ main.pattern {
         font-weight: bold;
       }
       p {
-        @include core-19;
+        @include core-36;
         color: $secondary-text-colour;
       }
     }
     .phase-block {
-      float: left;
-      width: $one-third;
+      //float: left;
+      //width: $one-third;
 
       li {
         padding: $gutter-half;
@@ -69,7 +69,7 @@ main.pattern {
 
   .content {
     @include media(tablet){
-      float: right;
+      //float: right;
       width: 75%;
     }
 
@@ -83,10 +83,33 @@ main.pattern {
       @include heading-24;
       font-weight: bold;
       margin: $gutter-half 0 $gutter-third;
+    }    
+    h4 {
+      @include copy-19;
+      font-weight: bold;
+      margin: $gutter-half 0 $gutter-third;
     }
     p {
       @include copy-19;
       margin: $gutter-third 0;
+    }
+    strong{
+      font-weight: bold;
+    }
+    ol{
+      list-style-type: decimal;
+    }
+    li {
+      @include copy-19;
+    }
+    .pattern-example{
+      border: 1px solid $border-colour;
+      outline: 20px solid $highlight-colour;
+      margin: 40px -100px 50px 0;
+      padding: $gutter;
+    }
+    .button{
+      @include button;
     }
   }
 }

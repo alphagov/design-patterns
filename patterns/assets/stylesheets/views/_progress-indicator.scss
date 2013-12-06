@@ -1,0 +1,131 @@
+// =======================================================
+// PROGRESS INDICATOR
+
+@mixin progress-indicator {
+  border-bottom: 1px solid $border-colour;
+  border-top: 1px solid $border-colour;
+  //margin-left: 20px;
+  ol, ul{
+    @extend %contain-floats;
+    //list-style-type: decimal;
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+    margin-bottom: -1px;
+    @include media(mobile) {
+      margin: 0.5em 0;
+    }
+  }
+  li{
+    float: left;
+    margin: 0 $gutter-two-thirds 0 0;
+    padding: 10px 0 5px 0;
+    color: $secondary-text-colour;      
+    a{
+      display: block;
+      color: $secondary-text-colour;
+      text-decoration: none;
+      &:hover{
+      color: $link-colour;
+      text-decoration: underline;
+      }
+    } 
+    &.active{
+      border-bottom: 5px solid $text-colour;
+      color: $text-colour;
+      a{
+        color: $text-colour;
+      }
+
+      @include media(mobile) {
+        border: 0;
+        font-weight: bold;
+      }
+    }
+    span{
+      float: right;
+      @include core-16;
+    }
+    @include media(mobile) {
+      width: 100%;
+      margin-left: 0.5em;
+      padding: 0.25em;
+    }
+    &.done{
+      margin-left: 20px;
+      //color: $text-colour;
+      a{
+        //color: $text-colour;
+      }
+      &:before{
+        /*
+        content: " ";
+        position: absolute;
+        display: block;
+        margin-left: -18px;
+        width: 5px;
+        margin-top: 3px;
+        height: 10px;
+        border-right: 3px solid;
+        border-bottom: 3px solid;
+        border-color: $green;
+        -webkit-transform: rotate(45deg);
+        */
+      };
+      span{
+        font-weight: bold;
+        color: $green;
+
+        text-indent: -9999px;
+        margin-right: 5px;
+        margin-left: -16px;
+        width: 5px;
+        margin-top: -23px;
+        height: 10px;
+        border-right: 3px solid;
+        border-bottom: 3px solid;
+        border-color: $green;
+        -webkit-transform: rotate(45deg);
+        position: absolute;
+      }
+    }
+  }
+}
+
+main.progress-indicator {
+
+  nav.progress-indicator{
+    @include progress-indicator;    
+  }
+
+  nav.progress-indicator-2{
+    @include progress-indicator;
+    width: 40%;
+    li{
+      float: none;
+      margin-right: 0;
+      //margin-left: 20px;
+
+      &.done{
+      margin-left: 0;
+        span{
+          position: relative;
+          margin-top: 3px;
+        }
+      }
+    }   
+  }
+
+
+  .title {
+    h1 {
+      @include core-48;
+      font-weight: bold;
+    }
+    p {
+      @include core-19;
+      color: $secondary-text-colour;
+    }
+  }
+}

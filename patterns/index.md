@@ -1,8 +1,11 @@
 ---
+layout: home
 title: 'Design pattern library'
 ---
 
-* [Progress indicator](progress-indicator.html)
+## The patterns
+
+* [Progress indicators](progress-indicator.html)
 
 ## How to use the patterns in this library
 
