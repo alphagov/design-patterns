@@ -1,7 +1,13 @@
-main.transaction-1 {
+main.transaction-3 {
+
+  .progress-indicator.horizontal{
+    margin-top: -30px;
+    ul{
+      border-top: none;
+    }
+  }
 
   .content {
-    width: 100%;
 
     h2 {
       @include heading-24;

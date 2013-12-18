@@ -37,6 +37,9 @@
 }
 
 @import "helpers/progress-indicator";
+@import "helpers/step-navigation";
+@import "helpers/service-header";
+@import "helpers/buttons";
 
 // # Views
 // Views are where you style the layout of a single page and any elements which
@@ -45,3 +48,6 @@
 @import "views/pattern";
 @import "views/progress-indicator";
 @import "views/transaction-1";
+@import "views/transaction-2";
+@import "views/transaction-3";
+@import "views/transaction-4";

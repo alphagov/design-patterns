@@ -34,7 +34,7 @@ If they are also experiencing the third problem then you should consider a horiz
 #### Example
 
 <div class="pattern-example">
-	<nav role="navigation" class="progress-indicator">
+	<nav role="navigation" class="horizontal progress-indicator">
 		<ul>
 		  <li class="done">1. About you <span>done</span></li>
 		  <li class="done">2. Your company <span>done</span></li>
@@ -61,7 +61,7 @@ If people can complete the steps in any order, or if you can partially complete 
 #### Example
 
 <div class="pattern-example">
-	<nav role="navigation" class="progress-indicator-2">
+	<nav role="navigation" class="vertical progress-indicator">
 		<ul>
 		  <li><a href="">About you <span>(3/10)</span></a></li>
 		  <li class="done"><a href="">Your company <span>(10/10)</span></a></li>
@@ -76,7 +76,7 @@ Don't forget you'll need to let them know when they can progress past these step
 #### Example
 
 <div class="pattern-example">
-	<nav role="navigation" class="progress-indicator-2">
+	<nav role="navigation" class="vertical progress-indicator">
 		<ul>
 		  <li class="done"><a href="">About you <span>(10/10)</span></a></li>
 		  <li class="done"><a href="">Your company <span>(10/10)</span></a></li>
@@ -116,5 +116,7 @@ There's one possible use case, where:
 * the total number of steps changes depending on how the user completes them
 
 A survey is one example of the above. If anyone wants to test the two approaches on a survey we'd be very interested in the results.
+
+[Discuss this pattern](https://designpatterns.hackpad.com/Progress-indicators-3AOrLoia9Us)
 
 

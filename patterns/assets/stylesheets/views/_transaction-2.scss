@@ -1,7 +1,8 @@
-main.transaction-1 {
+main.transaction-2 {
 
   .content {
-    width: 100%;
+    width: 75%;
+    float: right;
 
     h2 {
       @include heading-24;

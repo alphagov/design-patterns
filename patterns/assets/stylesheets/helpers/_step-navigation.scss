@@ -1,0 +1,7 @@
+.step-navigation{
+  margin-top: 400px;
+  @include copy-19;
+  .button{
+    margin-bottom: $gutter-third;
+  }
+}

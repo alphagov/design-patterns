@@ -1,0 +1,38 @@
+---
+layout: govuk_template
+title: "Transaction 2"
+layout-class: 'transaction-2'
+service-title: 'Renew a company licence'
+phase: alpha
+service-header: 'v3'
+header-class: class="with-proposition"
+progress-indicator-style: 'vertical'
+steps:
+ - About you
+ - Your company
+ - Payment details
+ - Delivery
+ - Done
+---
+
+{% include _service-header.html %}
+
+<main id="content" class="{{ page.layout-class }} {{ page.page-class }}">
+
+	{% include _progress-indicator.html %}
+
+	<div class="block content">
+	  <div class="inner-block">
+
+	  	{% assign current-step = page.url | remove:'.html' | split:'.' | last | times: 1 %}
+	  	{% assign prev-step = current-step | minus:1 %}
+	  	<h2>{{ page.steps[prev-step] }}</h2>
+
+	    {{ content }}
+
+		{% include _step-navigation.html %}
+
+	  </div>
+	</div>
+
+</main>

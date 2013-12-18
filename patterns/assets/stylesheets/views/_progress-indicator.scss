@@ -3,26 +3,6 @@
 
 main.progress-indicator {
 
-  nav.progress-indicator{
-    @include progress-indicator; 
-  }
-
-  nav.progress-indicator-2{
-    @include progress-indicator;
-    width: 40%;
-    li{
-      float: none;
-      margin-right: 0;
-      &.done{
-      margin-left: 0;
-        span{
-          position: relative;
-          margin-top: 3px;
-        }
-      }
-    }   
-  }
-
 
   .title {
     h1 {
@@ -32,6 +12,26 @@ main.progress-indicator {
     p {
       @include core-19;
       color: $secondary-text-colour;
+    }
+  }
+
+
+
+  .pattern-example{
+    @import "helpers/progress-indicator";
+    .progress-indicator{
+      &.vertical {
+        width: 35%;
+        float: none;
+        ul{
+          margin: 0;
+        }
+      }
+      &.horizontal {
+        ul{
+          margin: 0;
+        }
+      }
     }
   }
 }

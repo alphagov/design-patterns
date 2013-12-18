@@ -1,0 +1,9 @@
+{% if page.account-links %}
+<nav class="account">
+  <ul>
+    {% for link in page.account-links %}
+    <li><a href="#">{{ link }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>
+{% endif %}

@@ -3,8 +3,8 @@
 {% assign prev-step = current-step | minus:1 %}
 
 <nav class="step-navigation">
-	{% if next-step <= page.progress-indicator.size %}
-		<a href="{{ page.url | remove:'.html' | split:'.' | first }}.{{ next-step }}.html" class="button">Step {{ next-step }}: {{ page.progress-indicator[current-step] }}</a>
+	{% if next-step <= page.steps.size %}
+		<a href="{{ page.url | remove:'.html' | split:'.' | first }}.{{ next-step }}.html" class="button">Next: {{ page.steps[current-step] }}</a>
 
 		{% if prev-step != 0 %}
 		<br>

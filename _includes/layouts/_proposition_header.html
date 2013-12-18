@@ -1,16 +1,22 @@
+{% if page.service-header == 'default' %}
+
 <div class="header-proposition">
   <div class="content">
     <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
     <nav id="proposition-menu">
     <span id="proposition-name"><a href="/patterns">{{ page.service-title }}</a> <span class="alpha">Alpha</span></span>
-    <!--
-    <ul id="proposition-links">
-      <li><a href="/" class="">Nav links</a></li>
-      <li><a href="/" class="">Nav links</a></li>
-      <li><a href="/" class="">Nav links</a></li>
-      <li><a href="/" class="">Nav links</a></li>
-    </ul>
-  -->
+      {% if page.proposition-links %}
+      <nav class="account">
+        <ul>
+          {% for link in page.transaction-links %}
+          <li><a href="#">{{ link }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+      {% endif %}
     </nav>
   </div>
 </div>
+
+{% endif %}
+
