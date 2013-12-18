@@ -4,6 +4,7 @@ lsi:         false
 pygments:    false
 markdown:    kramdown
 permalink:   :title
+baseurl:     /design-patterns
 kramdown:
   auto_ids: true,
   footnote_nr: 1
