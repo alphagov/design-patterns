@@ -20,9 +20,10 @@ kramdown:
     coderay_bold_every: 10
     coderay_css: style
 
-sass:
-  syntax: scss
-  style:  compressed
+#sass:
+#  compile_in_place: true
+#  syntax: scss
+#  style:  compressed
 
 __default_layouts:
   default: 'default'

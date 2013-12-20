@@ -1,0 +1,1218 @@
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+/* CSS 3 Mixins
+
+  Add them as you need them. This should let us manage vendor prefixes in one place.
+ */
+/* Cross-browser shims
+
+  Ways of normalising properties across browsers.
+ */
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+/* Usage:
+   @include inline-block
+
+   or
+
+   @include inline-block("250px")
+
+   which gives a min-height to the inline-block elements.
+*/
+/* Contain floats usage:
+
+   .this-has-floated-children {
+     @extend %contain-floats;
+   }
+
+*/
+#content:after, #content .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after, .service-header.v2 header:after, .service-header.v3 header:after, main.home header:after, main.pattern header:after, main.pattern .content .pattern-example:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ol:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ul:after, main.progress-indicator .pattern-example .progress-indicator.vertical ol:after, main.progress-indicator .pattern-example .progress-indicator.vertical ul:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+@font-face {
+  font-family: GDS-Logo;
+  src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica"); }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+@font-face {
+  font-family: GDS-Logo;
+  src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica"); }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+/* Cross-browser shims
+
+  Ways of normalising properties across browsers.
+ */
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+/* Usage:
+   @include inline-block
+
+   or
+
+   @include inline-block("250px")
+
+   which gives a min-height to the inline-block elements.
+*/
+/* Contain floats usage:
+
+   .this-has-floated-children {
+     @extend %contain-floats;
+   }
+
+*/
+#content:after, #content .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after, .service-header.v2 header:after, .service-header.v3 header:after, main.home header:after, main.pattern header:after, main.pattern .content .pattern-example:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ol:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ul:after, main.progress-indicator .pattern-example .progress-indicator.vertical ol:after, main.progress-indicator .pattern-example .progress-indicator.vertical ul:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+/* CSS 3 Mixins
+
+  Add them as you need them. This should let us manage vendor prefixes in one place.
+ */
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+/*
+
+Mixin and defaults for making buttons on GOV.UK services.
+
+For guidance, see: https://www.gov.uk/service-manual/design-and-content/resources/buttons.html
+
+Example usage:
+
+.button{
+  @include button;
+}
+.button-secondary{
+  @include button($grey-3);
+}
+.button-warning{
+  @include button($red);
+}
+
+*/
+.header-proposition #proposition-name a {
+  color: #fff;
+  float: left;
+  text-decoration: none;
+  margin-right: 10px; }
+  .header-proposition #proposition-name a:hover {
+    text-decoration: underline; }
+.header-proposition #proposition-name .alpha {
+  display: block;
+  float: left;
+  background-color: #d53880;
+  color: #fff;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  margin: 3px 10px 0 0;
+  padding: 2px 5px 0; }
+  @media (max-width: 640px) {
+    .header-proposition #proposition-name .alpha {
+      font-size: 14px;
+      line-height: 1.14286; } }
+
+.phase-banner {
+  padding: 8px 0;
+  background-color: #d53880; }
+  .phase-banner p {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+    color: #0b0c0c;
+    font-family: "nta", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 300;
+    text-transform: none; }
+    @media (max-width: 640px) {
+      .phase-banner p {
+        font-size: 14px;
+        line-height: 1.14286; } }
+  .phase-banner a, .phase-banner a:link, .phase-banner a:visited, .phase-banner a:active {
+    color: #0b0c0c; }
+  .phase-banner a:hover {
+    color: #0b0c0c; }
+
+#content {
+  max-width: 1020px;
+  width: auto;
+  margin: 0 auto 90px; }
+
+/* Borrowed from http://meyerweb.com/eric/tools/css/reset/ */
+div, span,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark {
+  border: none;
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+input, textarea,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  font-weight: normal; }
+
+#content .block .inner-block {
+  padding: 0 15px; }
+  @media (min-width: 641px) {
+    #content .block .inner-block {
+      padding: 0 30px; } }
+  #content .block .inner-block.floated-children {
+    padding: 0; }
+    @media (min-width: 641px) {
+      #content .block .inner-block.floated-children {
+        padding: 0 15px; } }
+#content .phase-block {
+  display: inline;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  #content .phase-block .alpha {
+    display: block;
+    float: left;
+    background-color: #d53880;
+    color: #fff;
+    font-family: "nta", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 300;
+    text-transform: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin: 3px 10px 0 0;
+    padding: 2px 5px 0; }
+    @media (max-width: 640px) {
+      #content .phase-block .alpha {
+        font-size: 14px;
+        line-height: 1.14286; } }
+  #content .phase-block .beta {
+    display: block;
+    float: left;
+    background-color: #f47738;
+    color: #fff;
+    font-family: "nta", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 300;
+    text-transform: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin: 3px 10px 0 0;
+    padding: 2px 5px 0; }
+    @media (max-width: 640px) {
+      #content .phase-block .beta {
+        font-size: 14px;
+        line-height: 1.14286; } }
+  #content .phase-block .alpha,
+  #content .phase-block .beta {
+    display: inline;
+    vertical-align: middle;
+    float: none; }
+
+.progress-indicator.compact {
+  margin: 30px 0 0 30px;
+  color: #6f777b; }
+.progress-indicator.horizontal, .progress-indicator.vertical {
+  margin-bottom: 30px;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none; }
+  @media (max-width: 640px) {
+    .progress-indicator.horizontal, .progress-indicator.vertical {
+      font-size: 16px;
+      line-height: 1.25; } }
+  @media (max-width: 640px) {
+    .progress-indicator.horizontal, .progress-indicator.vertical {
+      padding-left: 20px; } }
+  .progress-indicator.horizontal ol, .progress-indicator.horizontal ul, .progress-indicator.vertical ol, .progress-indicator.vertical ul {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-color: #bfc1c3;
+    list-style-type: none;
+    margin: 0 0 0 30px;
+    padding: 0; }
+    @media (max-width: 640px) {
+      .progress-indicator.horizontal ol, .progress-indicator.horizontal ul, .progress-indicator.vertical ol, .progress-indicator.vertical ul {
+        margin: 0; } }
+  .progress-indicator.horizontal li, .progress-indicator.vertical li {
+    float: left;
+    margin: 0 20px -1px 0;
+    padding: 10px 0 5px 0;
+    color: #6f777b;
+    border-bottom: 5px solid transparent; }
+    .progress-indicator.horizontal li a, .progress-indicator.vertical li a {
+      display: block;
+      text-decoration: none; }
+      .progress-indicator.horizontal li a:hover, .progress-indicator.vertical li a:hover {
+        color: #2e3191;
+        text-decoration: underline; }
+    .progress-indicator.horizontal li.active, .progress-indicator.vertical li.active {
+      border-bottom: 5px solid #0b0c0c;
+      color: #0b0c0c; }
+      .progress-indicator.horizontal li.active a, .progress-indicator.vertical li.active a {
+        color: #0b0c0c; }
+      @media (max-width: 640px) {
+        .progress-indicator.horizontal li.active, .progress-indicator.vertical li.active {
+          border: 0;
+          font-weight: bold; } }
+    .progress-indicator.horizontal li span, .progress-indicator.vertical li span {
+      float: right;
+      font-family: "nta", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.25;
+      font-weight: 300;
+      text-transform: none; }
+      @media (max-width: 640px) {
+        .progress-indicator.horizontal li span, .progress-indicator.vertical li span {
+          font-size: 14px;
+          line-height: 1.14286; } }
+    @media (max-width: 640px) {
+      .progress-indicator.horizontal li, .progress-indicator.vertical li {
+        width: 100%;
+        margin-left: 0; } }
+    .progress-indicator.horizontal li.done span, .progress-indicator.vertical li.done span {
+      display: none;
+      font-weight: bold;
+      color: #006435;
+      text-indent: -9999px;
+      margin-right: 5px;
+      margin-left: -16px;
+      width: 5px;
+      margin-top: -23px;
+      height: 10px;
+      border-right: 3px solid;
+      border-bottom: 3px solid;
+      border-color: #006435;
+      -webkit-transform: rotate(45deg);
+      position: absolute; }
+.progress-indicator.vertical {
+  width: 25%;
+  float: left; }
+  .progress-indicator.vertical li {
+    float: none;
+    margin-right: 0; }
+    .progress-indicator.vertical li.done span {
+      position: relative;
+      margin-top: 3px; }
+
+.step-navigation {
+  margin-top: 400px;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 2px;
+  padding-bottom: 8px; }
+  @media (max-width: 640px) {
+    .step-navigation {
+      font-size: 16px;
+      line-height: 1.25; } }
+  @media (min-width: 641px) {
+    .step-navigation {
+      padding-top: 0;
+      padding-bottom: 5px; } }
+  .step-navigation .button {
+    margin-bottom: 10px; }
+
+.service-header.v2 header {
+  padding: 30px 0;
+  background: #005EA5;
+  margin-bottom: 30px; }
+  .service-header.v2 header .title {
+    color: white;
+    max-width: 960px;
+    width: auto;
+    margin: 0 auto; }
+    .service-header.v2 header .title h1 {
+      font-family: "nta", Arial, sans-serif;
+      font-size: 27px;
+      line-height: 1.11111;
+      font-weight: 400;
+      text-transform: none;
+      font-weight: bold; }
+      @media (max-width: 640px) {
+        .service-header.v2 header .title h1 {
+          font-size: 18px;
+          line-height: 1.11111; } }
+      .service-header.v2 header .title h1 .phase {
+        font-size: 16px;
+        font-size: 16px;
+        vertical-align: top;
+        font-weight: normal; }
+  .service-header.v2 header .account {
+    max-width: 1020px;
+    width: auto;
+    margin: 0 auto; }
+    .service-header.v2 header .account ul {
+      list-style-type: none; }
+      .service-header.v2 header .account ul li {
+        float: right;
+        margin-left: 30px;
+        margin-top: 5px; }
+        .service-header.v2 header .account ul li a {
+          color: white;
+          text-decoration: none;
+          font-family: "nta", Arial, sans-serif;
+          font-size: 19px;
+          line-height: 1.31579;
+          font-weight: 400;
+          text-transform: none; }
+          @media (max-width: 640px) {
+            .service-header.v2 header .account ul li a {
+              font-size: 16px;
+              line-height: 1.25; } }
+          .service-header.v2 header .account ul li a:hover {
+            text-decoration: underline; }
+.service-header.v3 {
+  max-width: 1020px;
+  width: auto;
+  margin: 0 auto; }
+  .service-header.v3 header {
+    padding: 30px 0;
+    margin-bottom: 30px; }
+    .service-header.v3 header .title {
+      padding-left: 30px; }
+      @media (max-width: 640px) {
+        .service-header.v3 header .title {
+          padding-left: 20px; } }
+      .service-header.v3 header .title p {
+        font-family: "nta", Arial, sans-serif;
+        font-size: 19px;
+        line-height: 1.31579;
+        font-weight: 400;
+        text-transform: none;
+        color: #6f777b; }
+        @media (max-width: 640px) {
+          .service-header.v3 header .title p {
+            font-size: 16px;
+            line-height: 1.25; } }
+      .service-header.v3 header .title h1 {
+        font-family: "nta", Arial, sans-serif;
+        font-size: 48px;
+        line-height: 1.04167;
+        font-weight: 400;
+        text-transform: none;
+        font-weight: bold; }
+        @media (max-width: 640px) {
+          .service-header.v3 header .title h1 {
+            font-size: 32px;
+            line-height: 1.09375; } }
+        .service-header.v3 header .title h1 .phase {
+          font-size: 16px;
+          font-size: 16px;
+          vertical-align: top;
+          font-weight: normal; }
+    .service-header.v3 header .account {
+      max-width: 1020px;
+      width: auto;
+      margin: 0 auto; }
+      .service-header.v3 header .account ul {
+        list-style-type: none; }
+        .service-header.v3 header .account ul li {
+          float: right;
+          margin-left: 30px;
+          margin-top: 5px; }
+          .service-header.v3 header .account ul li a {
+            color: white;
+            text-decoration: none;
+            font-family: "nta", Arial, sans-serif;
+            font-size: 19px;
+            line-height: 1.31579;
+            font-weight: 400;
+            text-transform: none; }
+            @media (max-width: 640px) {
+              .service-header.v3 header .account ul li a {
+                font-size: 16px;
+                line-height: 1.25; } }
+            .service-header.v3 header .account ul li a:hover {
+              text-decoration: underline; }
+
+.button {
+  background-color: #00823b;
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  padding: 0.35em 0.5em 0.15em 0.5em;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-box-shadow: 0 2px 0 #003518;
+  -moz-box-shadow: 0 2px 0 #003518;
+  box-shadow: 0 2px 0 #003518;
+  font-size: 1em;
+  line-height: 1.25;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  color: white; }
+  .button:visited {
+    background-color: #00823b; }
+  .button:hover, .button:focus {
+    background-color: #00692f; }
+  .button:active {
+    top: 2px;
+    -webkit-box-shadow: 0 0 0 #00823b;
+    -moz-box-shadow: 0 0 0 #00823b;
+    box-shadow: 0 0 0 #00823b; }
+  .button.disabled, .button[disabled="disabled"], .button[disabled] {
+    zoom: 1;
+    filter: alpha(opacity=50);
+    opacity: 0.5; }
+    .button.disabled:hover, .button[disabled="disabled"]:hover, .button[disabled]:hover {
+      cursor: default;
+      background-color: #00823b; }
+    .button.disabled:active, .button[disabled="disabled"]:active, .button[disabled]:active {
+      top: 0;
+      -webkit-box-shadow: 0 2px 0 #003518;
+      -moz-box-shadow: 0 2px 0 #003518;
+      box-shadow: 0 2px 0 #003518; }
+  .button:hover, .button:focus, .button:visited {
+    color: white; }
+  .button:before {
+    content: "";
+    height: 110%;
+    width: 100%;
+    display: block;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .button:active:before {
+    top: -10%;
+    height: 120%; }
+  .button[rel="external"]:after {
+    display: none;
+    content: none;
+    margin-left: 0;
+    margin-right: 0; }
+
+main.home header {
+  padding: 30px 0; }
+  main.home header .title {
+    float: left;
+    width: 66.66667%; }
+    main.home header .title h1, main.home header .title p {
+      padding: 0 15px; }
+    main.home header .title h1 {
+      font-family: "nta", Arial, sans-serif;
+      font-size: 48px;
+      line-height: 1.04167;
+      font-weight: 400;
+      text-transform: none;
+      font-weight: bold; }
+      @media (max-width: 640px) {
+        main.home header .title h1 {
+          font-size: 32px;
+          line-height: 1.09375; } }
+    main.home header .title p {
+      font-family: "nta", Arial, sans-serif;
+      font-size: 19px;
+      line-height: 1.31579;
+      font-weight: 400;
+      text-transform: none;
+      color: #6f777b; }
+      @media (max-width: 640px) {
+        main.home header .title p {
+          font-size: 16px;
+          line-height: 1.25; } }
+  main.home header .phase-block {
+    float: left;
+    width: 33.33333%; }
+    main.home header .phase-block li {
+      padding: 15px; }
+main.home .content {
+  float: right;
+  width: 75%; }
+  main.home .content h2 {
+    border-bottom: 1px solid;
+    font-family: "nta", Arial, sans-serif;
+    font-size: 36px;
+    line-height: 1.11111;
+    font-weight: 400;
+    text-transform: none;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    font-weight: bold;
+    margin: 15px 0; }
+    @media (max-width: 640px) {
+      main.home .content h2 {
+        font-size: 24px;
+        line-height: 1.04167; } }
+    @media (min-width: 641px) {
+      main.home .content h2 {
+        padding-top: 6px;
+        padding-bottom: 9px; } }
+  main.home .content h3 {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 400;
+    text-transform: none;
+    padding-top: 9px;
+    padding-bottom: 6px;
+    font-weight: bold;
+    margin: 15px 0 10px; }
+    @media (max-width: 640px) {
+      main.home .content h3 {
+        font-size: 20px;
+        line-height: 1.2; } }
+    @media (min-width: 641px) {
+      main.home .content h3 {
+        padding-top: 6px;
+        padding-bottom: 4px; } }
+  main.home .content p {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 19px;
+    line-height: 1.31579;
+    font-weight: 400;
+    text-transform: none;
+    padding-top: 2px;
+    padding-bottom: 8px;
+    margin: 10px 0; }
+    @media (max-width: 640px) {
+      main.home .content p {
+        font-size: 16px;
+        line-height: 1.25; } }
+    @media (min-width: 641px) {
+      main.home .content p {
+        padding-top: 0;
+        padding-bottom: 5px; } }
+
+main.pattern header {
+  padding: 15px 0; }
+  @media (min-width: 641px) {
+    main.pattern header {
+      padding: 30px 0; } }
+  main.pattern header .title {
+    float: left;
+    width: 66.66667%; }
+    main.pattern header .title h1, main.pattern header .title p {
+      padding: 0 15px; }
+    main.pattern header .title h1 {
+      font-family: "nta", Arial, sans-serif;
+      font-size: 48px;
+      line-height: 1.04167;
+      font-weight: 400;
+      text-transform: none;
+      font-weight: bold; }
+      @media (max-width: 640px) {
+        main.pattern header .title h1 {
+          font-size: 32px;
+          line-height: 1.09375; } }
+    main.pattern header .title p {
+      font-family: "nta", Arial, sans-serif;
+      font-size: 36px;
+      line-height: 1.11111;
+      font-weight: 400;
+      text-transform: none;
+      color: #6f777b; }
+      @media (max-width: 640px) {
+        main.pattern header .title p {
+          font-size: 24px;
+          line-height: 1.04167; } }
+  main.pattern header .phase-block li {
+    padding: 15px; }
+@media (min-width: 641px) {
+  main.pattern .navigation {
+    float: left;
+    width: 25%; } }
+main.pattern .navigation h2 {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none; }
+  @media (max-width: 640px) {
+    main.pattern .navigation h2 {
+      font-size: 14px;
+      line-height: 1.14286; } }
+  @media (min-width: 641px) {
+    main.pattern .navigation h2 {
+      padding-top: 40px; } }
+main.pattern .navigation ol {
+  list-style: none;
+  padding-left: 15px; }
+  main.pattern .navigation ol li {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 300;
+    text-transform: none;
+    padding-bottom: 5px; }
+    @media (max-width: 640px) {
+      main.pattern .navigation ol li {
+        font-size: 14px;
+        line-height: 1.14286; } }
+    @media (min-width: 641px) {
+      main.pattern .navigation ol li {
+        padding: 5px 0; } }
+    main.pattern .navigation ol li:before {
+      content: "-";
+      position: relative;
+      float: left;
+      width: 15px;
+      margin-left: -15px; }
+@media (min-width: 641px) {
+  main.pattern .content {
+    width: 75%; } }
+main.pattern .content h2 {
+  border-bottom: 1px solid;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 1.11111;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  font-weight: bold;
+  margin: 15px 0; }
+  @media (max-width: 640px) {
+    main.pattern .content h2 {
+      font-size: 24px;
+      line-height: 1.04167; } }
+  @media (min-width: 641px) {
+    main.pattern .content h2 {
+      padding-top: 6px;
+      padding-bottom: 9px; } }
+main.pattern .content h3 {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 9px;
+  padding-bottom: 6px;
+  font-weight: bold;
+  margin: 15px 0 10px; }
+  @media (max-width: 640px) {
+    main.pattern .content h3 {
+      font-size: 20px;
+      line-height: 1.2; } }
+  @media (min-width: 641px) {
+    main.pattern .content h3 {
+      padding-top: 6px;
+      padding-bottom: 4px; } }
+main.pattern .content h4 {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 2px;
+  padding-bottom: 8px;
+  font-weight: bold;
+  margin: 15px 0 10px; }
+  @media (max-width: 640px) {
+    main.pattern .content h4 {
+      font-size: 16px;
+      line-height: 1.25; } }
+  @media (min-width: 641px) {
+    main.pattern .content h4 {
+      padding-top: 0;
+      padding-bottom: 5px; } }
+main.pattern .content p {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 2px;
+  padding-bottom: 8px;
+  margin: 10px 0; }
+  @media (max-width: 640px) {
+    main.pattern .content p {
+      font-size: 16px;
+      line-height: 1.25; } }
+  @media (min-width: 641px) {
+    main.pattern .content p {
+      padding-top: 0;
+      padding-bottom: 5px; } }
+main.pattern .content strong {
+  font-weight: bold; }
+main.pattern .content ol {
+  list-style-type: decimal; }
+main.pattern .content li {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 2px;
+  padding-bottom: 8px; }
+  @media (max-width: 640px) {
+    main.pattern .content li {
+      font-size: 16px;
+      line-height: 1.25; } }
+  @media (min-width: 641px) {
+    main.pattern .content li {
+      padding-top: 0;
+      padding-bottom: 5px; } }
+main.pattern .content .pattern-example {
+  border: 1px solid #bfc1c3;
+  outline: 20px solid #f8f8f8;
+  margin: 40px -100px 50px 0;
+  padding: 30px; }
+main.pattern .content .button {
+  background-color: #00823b;
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  padding: 0.35em 0.5em 0.15em 0.5em;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-box-shadow: 0 2px 0 #003518;
+  -moz-box-shadow: 0 2px 0 #003518;
+  box-shadow: 0 2px 0 #003518;
+  font-size: 1em;
+  line-height: 1.25;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  color: white; }
+  main.pattern .content .button:visited {
+    background-color: #00823b; }
+  main.pattern .content .button:hover, main.pattern .content .button:focus {
+    background-color: #00692f; }
+  main.pattern .content .button:active {
+    top: 2px;
+    -webkit-box-shadow: 0 0 0 #00823b;
+    -moz-box-shadow: 0 0 0 #00823b;
+    box-shadow: 0 0 0 #00823b; }
+  main.pattern .content .button.disabled, main.pattern .content .button[disabled="disabled"], main.pattern .content .button[disabled] {
+    zoom: 1;
+    filter: alpha(opacity=50);
+    opacity: 0.5; }
+    main.pattern .content .button.disabled:hover, main.pattern .content .button[disabled="disabled"]:hover, main.pattern .content .button[disabled]:hover {
+      cursor: default;
+      background-color: #00823b; }
+    main.pattern .content .button.disabled:active, main.pattern .content .button[disabled="disabled"]:active, main.pattern .content .button[disabled]:active {
+      top: 0;
+      -webkit-box-shadow: 0 2px 0 #003518;
+      -moz-box-shadow: 0 2px 0 #003518;
+      box-shadow: 0 2px 0 #003518; }
+  main.pattern .content .button:hover, main.pattern .content .button:focus, main.pattern .content .button:visited {
+    color: white; }
+  main.pattern .content .button:before {
+    content: "";
+    height: 110%;
+    width: 100%;
+    display: block;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  main.pattern .content .button:active:before {
+    top: -10%;
+    height: 120%; }
+  main.pattern .content .button[rel="external"]:after {
+    display: none;
+    content: none;
+    margin-left: 0;
+    margin-right: 0; }
+
+main.progress-indicator .title h1 {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 48px;
+  line-height: 1.04167;
+  font-weight: 400;
+  text-transform: none;
+  font-weight: bold; }
+  @media (max-width: 640px) {
+    main.progress-indicator .title h1 {
+      font-size: 32px;
+      line-height: 1.09375; } }
+main.progress-indicator .title p {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none;
+  color: #6f777b; }
+  @media (max-width: 640px) {
+    main.progress-indicator .title p {
+      font-size: 16px;
+      line-height: 1.25; } }
+main.progress-indicator .pattern-example .progress-indicator.compact {
+  margin: 30px 0 0 30px;
+  color: #6f777b; }
+main.progress-indicator .pattern-example .progress-indicator.horizontal, main.progress-indicator .pattern-example .progress-indicator.vertical {
+  margin-bottom: 30px;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none; }
+  @media (max-width: 640px) {
+    main.progress-indicator .pattern-example .progress-indicator.horizontal, main.progress-indicator .pattern-example .progress-indicator.vertical {
+      font-size: 16px;
+      line-height: 1.25; } }
+  @media (max-width: 640px) {
+    main.progress-indicator .pattern-example .progress-indicator.horizontal, main.progress-indicator .pattern-example .progress-indicator.vertical {
+      padding-left: 20px; } }
+  main.progress-indicator .pattern-example .progress-indicator.horizontal ol, main.progress-indicator .pattern-example .progress-indicator.horizontal ul, main.progress-indicator .pattern-example .progress-indicator.vertical ol, main.progress-indicator .pattern-example .progress-indicator.vertical ul {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-color: #bfc1c3;
+    list-style-type: none;
+    margin: 0 0 0 30px;
+    padding: 0; }
+    @media (max-width: 640px) {
+      main.progress-indicator .pattern-example .progress-indicator.horizontal ol, main.progress-indicator .pattern-example .progress-indicator.horizontal ul, main.progress-indicator .pattern-example .progress-indicator.vertical ol, main.progress-indicator .pattern-example .progress-indicator.vertical ul {
+        margin: 0; } }
+  main.progress-indicator .pattern-example .progress-indicator.horizontal li, main.progress-indicator .pattern-example .progress-indicator.vertical li {
+    float: left;
+    margin: 0 20px -1px 0;
+    padding: 10px 0 5px 0;
+    color: #6f777b;
+    border-bottom: 5px solid transparent; }
+    main.progress-indicator .pattern-example .progress-indicator.horizontal li a, main.progress-indicator .pattern-example .progress-indicator.vertical li a {
+      display: block;
+      text-decoration: none; }
+      main.progress-indicator .pattern-example .progress-indicator.horizontal li a:hover, main.progress-indicator .pattern-example .progress-indicator.vertical li a:hover {
+        color: #2e3191;
+        text-decoration: underline; }
+    main.progress-indicator .pattern-example .progress-indicator.horizontal li.active, main.progress-indicator .pattern-example .progress-indicator.vertical li.active {
+      border-bottom: 5px solid #0b0c0c;
+      color: #0b0c0c; }
+      main.progress-indicator .pattern-example .progress-indicator.horizontal li.active a, main.progress-indicator .pattern-example .progress-indicator.vertical li.active a {
+        color: #0b0c0c; }
+      @media (max-width: 640px) {
+        main.progress-indicator .pattern-example .progress-indicator.horizontal li.active, main.progress-indicator .pattern-example .progress-indicator.vertical li.active {
+          border: 0;
+          font-weight: bold; } }
+    main.progress-indicator .pattern-example .progress-indicator.horizontal li span, main.progress-indicator .pattern-example .progress-indicator.vertical li span {
+      float: right;
+      font-family: "nta", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.25;
+      font-weight: 300;
+      text-transform: none; }
+      @media (max-width: 640px) {
+        main.progress-indicator .pattern-example .progress-indicator.horizontal li span, main.progress-indicator .pattern-example .progress-indicator.vertical li span {
+          font-size: 14px;
+          line-height: 1.14286; } }
+    @media (max-width: 640px) {
+      main.progress-indicator .pattern-example .progress-indicator.horizontal li, main.progress-indicator .pattern-example .progress-indicator.vertical li {
+        width: 100%;
+        margin-left: 0; } }
+    main.progress-indicator .pattern-example .progress-indicator.horizontal li.done span, main.progress-indicator .pattern-example .progress-indicator.vertical li.done span {
+      display: none;
+      font-weight: bold;
+      color: #006435;
+      text-indent: -9999px;
+      margin-right: 5px;
+      margin-left: -16px;
+      width: 5px;
+      margin-top: -23px;
+      height: 10px;
+      border-right: 3px solid;
+      border-bottom: 3px solid;
+      border-color: #006435;
+      -webkit-transform: rotate(45deg);
+      position: absolute; }
+main.progress-indicator .pattern-example .progress-indicator.vertical {
+  width: 25%;
+  float: left; }
+  main.progress-indicator .pattern-example .progress-indicator.vertical li {
+    float: none;
+    margin-right: 0; }
+    main.progress-indicator .pattern-example .progress-indicator.vertical li.done span {
+      position: relative;
+      margin-top: 3px; }
+main.progress-indicator .pattern-example .progress-indicator.vertical {
+  width: 35%;
+  float: none; }
+  main.progress-indicator .pattern-example .progress-indicator.vertical ul {
+    margin: 0; }
+main.progress-indicator .pattern-example .progress-indicator.horizontal ul {
+  margin: 0; }
+
+main.transaction-1 .content {
+  width: 100%; }
+  main.transaction-1 .content h2 {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 400;
+    text-transform: none;
+    padding-top: 9px;
+    padding-bottom: 6px;
+    font-weight: bold;
+    margin-bottom: 15px; }
+    @media (max-width: 640px) {
+      main.transaction-1 .content h2 {
+        font-size: 20px;
+        line-height: 1.2; } }
+    @media (min-width: 641px) {
+      main.transaction-1 .content h2 {
+        padding-top: 6px;
+        padding-bottom: 4px; } }
+  main.transaction-1 .content h3 {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 400;
+    text-transform: none;
+    padding-top: 9px;
+    padding-bottom: 6px;
+    font-weight: bold;
+    margin: 15px 0 10px; }
+    @media (max-width: 640px) {
+      main.transaction-1 .content h3 {
+        font-size: 20px;
+        line-height: 1.2; } }
+    @media (min-width: 641px) {
+      main.transaction-1 .content h3 {
+        padding-top: 6px;
+        padding-bottom: 4px; } }
+  main.transaction-1 .content p {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 19px;
+    line-height: 1.31579;
+    font-weight: 400;
+    text-transform: none;
+    padding-top: 2px;
+    padding-bottom: 8px;
+    margin: 10px 0; }
+    @media (max-width: 640px) {
+      main.transaction-1 .content p {
+        font-size: 16px;
+        line-height: 1.25; } }
+    @media (min-width: 641px) {
+      main.transaction-1 .content p {
+        padding-top: 0;
+        padding-bottom: 5px; } }
+
+main.transaction-2 .content {
+  width: 75%;
+  float: right; }
+  main.transaction-2 .content h2 {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 400;
+    text-transform: none;
+    padding-top: 9px;
+    padding-bottom: 6px;
+    font-weight: bold;
+    margin-bottom: 15px; }
+    @media (max-width: 640px) {
+      main.transaction-2 .content h2 {
+        font-size: 20px;
+        line-height: 1.2; } }
+    @media (min-width: 641px) {
+      main.transaction-2 .content h2 {
+        padding-top: 6px;
+        padding-bottom: 4px; } }
+  main.transaction-2 .content h3 {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 400;
+    text-transform: none;
+    padding-top: 9px;
+    padding-bottom: 6px;
+    font-weight: bold;
+    margin: 15px 0 10px; }
+    @media (max-width: 640px) {
+      main.transaction-2 .content h3 {
+        font-size: 20px;
+        line-height: 1.2; } }
+    @media (min-width: 641px) {
+      main.transaction-2 .content h3 {
+        padding-top: 6px;
+        padding-bottom: 4px; } }
+  main.transaction-2 .content p {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 19px;
+    line-height: 1.31579;
+    font-weight: 400;
+    text-transform: none;
+    padding-top: 2px;
+    padding-bottom: 8px;
+    margin: 10px 0; }
+    @media (max-width: 640px) {
+      main.transaction-2 .content p {
+        font-size: 16px;
+        line-height: 1.25; } }
+    @media (min-width: 641px) {
+      main.transaction-2 .content p {
+        padding-top: 0;
+        padding-bottom: 5px; } }
+
+main.transaction-3 .progress-indicator.horizontal {
+  margin-top: -30px; }
+  main.transaction-3 .progress-indicator.horizontal ul {
+    border-top: none; }
+main.transaction-3 .content h2 {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 9px;
+  padding-bottom: 6px;
+  font-weight: bold;
+  margin-bottom: 15px; }
+  @media (max-width: 640px) {
+    main.transaction-3 .content h2 {
+      font-size: 20px;
+      line-height: 1.2; } }
+  @media (min-width: 641px) {
+    main.transaction-3 .content h2 {
+      padding-top: 6px;
+      padding-bottom: 4px; } }
+main.transaction-3 .content h3 {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 9px;
+  padding-bottom: 6px;
+  font-weight: bold;
+  margin: 15px 0 10px; }
+  @media (max-width: 640px) {
+    main.transaction-3 .content h3 {
+      font-size: 20px;
+      line-height: 1.2; } }
+  @media (min-width: 641px) {
+    main.transaction-3 .content h3 {
+      padding-top: 6px;
+      padding-bottom: 4px; } }
+main.transaction-3 .content p {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 2px;
+  padding-bottom: 8px;
+  margin: 10px 0; }
+  @media (max-width: 640px) {
+    main.transaction-3 .content p {
+      font-size: 16px;
+      line-height: 1.25; } }
+  @media (min-width: 641px) {
+    main.transaction-3 .content p {
+      padding-top: 0;
+      padding-bottom: 5px; } }
+
+main.transaction-4 .content {
+  width: 75%;
+  float: right; }
+  main.transaction-4 .content h2 {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 400;
+    text-transform: none;
+    padding-top: 9px;
+    padding-bottom: 6px;
+    font-weight: bold;
+    margin-bottom: 15px; }
+    @media (max-width: 640px) {
+      main.transaction-4 .content h2 {
+        font-size: 20px;
+        line-height: 1.2; } }
+    @media (min-width: 641px) {
+      main.transaction-4 .content h2 {
+        padding-top: 6px;
+        padding-bottom: 4px; } }
+  main.transaction-4 .content h3 {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 400;
+    text-transform: none;
+    padding-top: 9px;
+    padding-bottom: 6px;
+    font-weight: bold;
+    margin: 15px 0 10px; }
+    @media (max-width: 640px) {
+      main.transaction-4 .content h3 {
+        font-size: 20px;
+        line-height: 1.2; } }
+    @media (min-width: 641px) {
+      main.transaction-4 .content h3 {
+        padding-top: 6px;
+        padding-bottom: 4px; } }
+  main.transaction-4 .content p {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 19px;
+    line-height: 1.31579;
+    font-weight: 400;
+    text-transform: none;
+    padding-top: 2px;
+    padding-bottom: 8px;
+    margin: 10px 0; }
+    @media (max-width: 640px) {
+      main.transaction-4 .content p {
+        font-size: 16px;
+        line-height: 1.25; } }
+    @media (min-width: 641px) {
+      main.transaction-4 .content p {
+        padding-top: 0;
+        padding-bottom: 5px; } }
