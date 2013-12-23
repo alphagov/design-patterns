@@ -1,5 +1,5 @@
 
-exclude:    ['Rakefile', 'Gemfile', 'Gemfile.lock']
+exclude:    ['Rakefile', 'Gemfile', 'Gemfile.lock', '*.scss']
 lsi:         false
 pygments:    false
 markdown:    kramdown
