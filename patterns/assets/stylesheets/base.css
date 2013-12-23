@@ -343,6 +343,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
           -webkit-transform: rotate(45deg);
           position: absolute;
           */ }
+.progress-indicator.horizontal li.done span {
+  display: none; }
 .progress-indicator.vertical {
   width: 25%;
   float: left; }
@@ -976,6 +978,8 @@ main.progress-indicator .pattern-example .progress-indicator.horizontal, main.pr
           -webkit-transform: rotate(45deg);
           position: absolute;
           */ }
+main.progress-indicator .pattern-example .progress-indicator.horizontal li.done span {
+  display: none; }
 main.progress-indicator .pattern-example .progress-indicator.vertical {
   width: 25%;
   float: left; }

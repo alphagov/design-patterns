@@ -82,6 +82,11 @@
       }
     }
   }
+  &.horizontal{
+    li.done span{
+      display: none;
+    }
+  }
   &.vertical{
     width: 25%;
     float: left;
