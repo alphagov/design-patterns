@@ -7,7 +7,7 @@ Some early prototypes for a design pattern library.
 
 ## Installation
 
-The site has been designed to be hosted on GitHub pages, which run Jekyll in Safe mode. For this reason, any Sass has to be preprocessed before it's uploaded to GitHub. So, first you'll need to do that. From the '/patterns/assets' folder:
+The site has been designed to be hosted on GitHub pages, which run Jekyll in Safe mode. For this reason if you make any changes to the Sass files you'll need to compile them locally. From the '/patterns/assets' folder:
 
 ```
 sass --watch sass:stylesheets
@@ -20,3 +20,5 @@ jekyll serve --watch --baseurl ''
 ```
 
 This is so that URLs are correctly resolved in both local and GitHib hosted environents.
+
+Finally, because we're using GitHub Pages there is no master branch - 'gh-pages' is the default branch.
