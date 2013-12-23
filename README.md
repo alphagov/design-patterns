@@ -2,6 +2,8 @@
 
 Some early prototypes for a design pattern library.
 
+[http://alphagov.github.io/design-patterns/patterns/](http://alphagov.github.io/design-patterns/patterns/)
+
 
 ## Installation
 
