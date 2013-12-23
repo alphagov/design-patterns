@@ -6,21 +6,27 @@ phases:
   - alpha
 ---
 
+## Introduction
 
-Use a progress indicator to help people work through transactions that are spread over multiple screens.
+### The user need
 
+As people interact with a multi-step transaction they can sometimes become disorientated or think that they've finished when they haven't. This can cause them to drop out of the transaction before they've completed it.
 
-**Signs that you might need a progress indicator:**
+### The pattern
 
-1. People think that they've finished the transaction when they haven't
-2. People become irritated because they don't know how much further they have to go
-3. People lose track of what to do because they have no overall picture of the steps
+A progress indicator addresses this issue by telling users how many steps they've completed and how many more there are to go.
 
-If your users aren't having any of the above problems then you probably don't need to use a progress indicator.
+More detailed progress indicators give an overview of each step and may allow users to navigate between the steps as well.
 
-If they're only experiencing the first two problems then a simple step indicator above the page title should be enough.
+### When to use
 
-#### Example
+Only implement a progress indicator if you've observed the user needs described above. Before you implement one, make sure you've made the transaction as simple and straightforward as you can. If you've done this and users are still struggling, only then consider one of the following approaches.
+
+## Examples
+
+### 1. Step indicator
+
+Add some text above the page title that explains which step a user is on and how many steps there are in total.
 
 <div class="pattern-example">
 	<div class="title">
@@ -29,15 +35,17 @@ If they're only experiencing the first two problems then a simple step indicator
 	</div>
 </div>
 
-If they are also experiencing the third problem then you should consider a horizontal progress bar instead. 
+A step indicator is the preferred approach because it's accessible and works well on all devices. However, if your users also need to see an overview of each step then consider a horizontal progress bar.
 
-#### Example
+### 2. Horizontal progress bar
+
+Run a bar across the top of the page, like this:
 
 <div class="pattern-example">
 	<nav role="navigation" class="horizontal progress-indicator">
 		<ul>
-		  <li class="done">1. About you <span>done</span></li>
-		  <li class="done">2. Your company <span>done</span></li>
+		  <li class="done"><a href="">1. About you <span>done</span></a></li>
+		  <li class="done"><a href="">2. Your company <span>done</span></a></li>
 		  <li class="active">3. Payment details</li>
 		  <li>4. Delivery</li>
 		  <li>5. Done</li>
@@ -45,20 +53,14 @@ If they are also experiencing the third problem then you should consider a horiz
 	</nav>
 </div>
 
-Remember:
+You can add links to progress bars, but don't rely on this as users often don't recognise progress bars as a form of navigation. Instead, add 'Back' and 'Next' links at the bottom of each screen.
 
-1. number the steps
-2. align them horizontally across the top of the screen
-3. add 'Back' and 'Next' links at the bottom of each screen
-4. make it clear which step they're on
-5. always show the final 'Done' step (NEEDS TESTING)
+Remember to number the steps as this helps to emphasise the fact that there's a fixed order of completion.
 
 
-### Variable order steps
+### 3. Vertical progress bar
 
-If people can complete the steps in any order, or if you can partially complete steps then use this layout in a left column instead.
-
-#### Example
+If you decide to let users complete the steps in any order, or if they can partially complete steps then use a vertical progress bar instead.
 
 <div class="pattern-example">
 	<nav role="navigation" class="vertical progress-indicator">
