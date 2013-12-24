@@ -549,6 +549,63 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     margin-left: 0;
     margin-right: 0; }
 
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"],
+.form input[type="date"],
+.form input[type="datetime"],
+.form input[type="datetime-local"],
+.form input[type="email"],
+.form input[type="month"],
+.form input[type="number"],
+.form input[type="search"],
+.form input[type="tel"],
+.form input[type="time"],
+.form input[type="url"],
+.form input[type="week"],
+.form select[size] {
+  background-color: #f8f8f8;
+  border: 2px inset;
+  padding: 2px 0 2px 8px;
+  width: 300px; }
+  @media (max-width: 640px) {
+    .form input[type="text"],
+    .form input[type="password"],
+    .form input[type="email"],
+    .form input[type="date"],
+    .form input[type="datetime"],
+    .form input[type="datetime-local"],
+    .form input[type="email"],
+    .form input[type="month"],
+    .form input[type="number"],
+    .form input[type="search"],
+    .form input[type="tel"],
+    .form input[type="time"],
+    .form input[type="url"],
+    .form input[type="week"],
+    .form select[size] {
+      width: 97%;
+      box-sizing: border-box; } }
+.form label {
+  display: block;
+  padding-right: 10px;
+  padding-top: 5px; }
+.form select {
+  font-size: 14px;
+  border: 1px solid #6f777b;
+  margin-left: 0; }
+.form .control {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none;
+  padding: 8px 0; }
+  @media (max-width: 640px) {
+    .form .control {
+      font-size: 16px;
+      line-height: 1.25; } }
+
 main.home header {
   padding: 30px 0; }
   @media (min-width: 641px) {
