@@ -23,6 +23,7 @@ Only implement a progress indicator if you've observed the user needs described 
 ### Example 1: Step indicator
 
 <div class="pattern-example">
+	<div class="ribbon">Recommended</div>
 	<div class="title">
 	  <p>Step 3 of 5</p>
 	  <h1>Payment details</h1>

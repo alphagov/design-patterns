@@ -107,9 +107,27 @@ main.pattern {
       outline: 20px solid $highlight-colour;
       margin: 40px 0 50px 0;
       padding: $gutter;
+      overflow: hidden;
+      position: relative;
     }
     .button{
       @include button;
     }
   }
+}
+
+// Github banner
+
+.ribbon {
+  background-color: $grass-green;
+  overflow: hidden;
+  position: absolute;
+  right: -50px;
+  top: 40px;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  padding: 3px 50px;
 }

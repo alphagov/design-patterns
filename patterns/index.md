@@ -14,7 +14,7 @@ These patterns are intended for use on GOV.UK services.
 
 ## How to use these patterns
 
-1. Don't use a pattern unless it addresses a genuine user need
+1. Don't use a pattern unless there's a genuine need for it
 2. Try these patterns before creating your own versions
 3. If they don't work for your users, change them until they do
 4. Lets us know if you use or change a pattern, so we can share 
