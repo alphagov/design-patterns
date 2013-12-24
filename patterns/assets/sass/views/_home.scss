@@ -1,7 +1,10 @@
 main.home {
   header {
     @extend %contain-floats;
-    padding: $gutter 0;
+    padding: $gutter 0;    
+    @include media(tablet){
+      padding: $gutter 0;
+    }
 
     .title {
       float: left;
@@ -31,23 +34,37 @@ main.home {
   }
 
   .content {
-    float: right;
-    width: 75%;
+    @include media(tablet){
+      width: 75%;
+    }
 
     h2 {
-      border-bottom: 1px solid;
       @include heading-36;
       font-weight: bold;
-      margin: $gutter-half 0;
+      margin: $gutter 0;
     }
     h3 {
       @include heading-24;
+      font-weight: bold;
+      margin: $gutter-half 0 $gutter-third;
+    }    
+    h4 {
+      @include copy-19;
       font-weight: bold;
       margin: $gutter-half 0 $gutter-third;
     }
     p {
       @include copy-19;
       margin: $gutter-third 0;
+    }
+    strong{
+      font-weight: bold;
+    }
+    ol{
+      list-style-type: decimal;
+    }
+    li {
+      @include copy-19;
     }
   }
 }

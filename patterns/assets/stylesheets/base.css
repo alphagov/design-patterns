@@ -551,6 +551,9 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 
 main.home header {
   padding: 30px 0; }
+  @media (min-width: 641px) {
+    main.home header {
+      padding: 30px 0; } }
   main.home header .title {
     float: left;
     width: 66.66667%; }
@@ -583,63 +586,100 @@ main.home header {
     width: 33.33333%; }
     main.home header .phase-block li {
       padding: 15px; }
-main.home .content {
-  float: right;
-  width: 75%; }
-  main.home .content h2 {
-    border-bottom: 1px solid;
-    font-family: "nta", Arial, sans-serif;
-    font-size: 36px;
-    line-height: 1.11111;
-    font-weight: 400;
-    text-transform: none;
-    padding-top: 8px;
-    padding-bottom: 7px;
-    font-weight: bold;
-    margin: 15px 0; }
-    @media (max-width: 640px) {
-      main.home .content h2 {
-        font-size: 24px;
-        line-height: 1.04167; } }
-    @media (min-width: 641px) {
-      main.home .content h2 {
-        padding-top: 6px;
-        padding-bottom: 9px; } }
-  main.home .content h3 {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 24px;
-    line-height: 1.25;
-    font-weight: 400;
-    text-transform: none;
-    padding-top: 9px;
-    padding-bottom: 6px;
-    font-weight: bold;
-    margin: 15px 0 10px; }
-    @media (max-width: 640px) {
-      main.home .content h3 {
-        font-size: 20px;
-        line-height: 1.2; } }
-    @media (min-width: 641px) {
-      main.home .content h3 {
-        padding-top: 6px;
-        padding-bottom: 4px; } }
-  main.home .content p {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 19px;
-    line-height: 1.31579;
-    font-weight: 400;
-    text-transform: none;
-    padding-top: 2px;
-    padding-bottom: 8px;
-    margin: 10px 0; }
-    @media (max-width: 640px) {
-      main.home .content p {
-        font-size: 16px;
-        line-height: 1.25; } }
-    @media (min-width: 641px) {
-      main.home .content p {
-        padding-top: 0;
-        padding-bottom: 5px; } }
+@media (min-width: 641px) {
+  main.home .content {
+    width: 75%; } }
+main.home .content h2 {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 1.11111;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  font-weight: bold;
+  margin: 30px 0; }
+  @media (max-width: 640px) {
+    main.home .content h2 {
+      font-size: 24px;
+      line-height: 1.04167; } }
+  @media (min-width: 641px) {
+    main.home .content h2 {
+      padding-top: 6px;
+      padding-bottom: 9px; } }
+main.home .content h3 {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 9px;
+  padding-bottom: 6px;
+  font-weight: bold;
+  margin: 15px 0 10px; }
+  @media (max-width: 640px) {
+    main.home .content h3 {
+      font-size: 20px;
+      line-height: 1.2; } }
+  @media (min-width: 641px) {
+    main.home .content h3 {
+      padding-top: 6px;
+      padding-bottom: 4px; } }
+main.home .content h4 {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 2px;
+  padding-bottom: 8px;
+  font-weight: bold;
+  margin: 15px 0 10px; }
+  @media (max-width: 640px) {
+    main.home .content h4 {
+      font-size: 16px;
+      line-height: 1.25; } }
+  @media (min-width: 641px) {
+    main.home .content h4 {
+      padding-top: 0;
+      padding-bottom: 5px; } }
+main.home .content p {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 2px;
+  padding-bottom: 8px;
+  margin: 10px 0; }
+  @media (max-width: 640px) {
+    main.home .content p {
+      font-size: 16px;
+      line-height: 1.25; } }
+  @media (min-width: 641px) {
+    main.home .content p {
+      padding-top: 0;
+      padding-bottom: 5px; } }
+main.home .content strong {
+  font-weight: bold; }
+main.home .content ol {
+  list-style-type: decimal; }
+main.home .content li {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 2px;
+  padding-bottom: 8px; }
+  @media (max-width: 640px) {
+    main.home .content li {
+      font-size: 16px;
+      line-height: 1.25; } }
+  @media (min-width: 641px) {
+    main.home .content li {
+      padding-top: 0;
+      padding-bottom: 5px; } }
 
 main.pattern header {
   padding: 15px 0; }
