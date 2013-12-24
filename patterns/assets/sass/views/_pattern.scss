@@ -106,7 +106,7 @@ main.pattern {
       @extend %contain-floats;
       border: 1px solid $border-colour;
       outline: 20px solid $highlight-colour;
-      margin: 40px -100px 50px 0;
+      margin: 40px 0 50px 0;
       padding: $gutter;
     }
     .button{

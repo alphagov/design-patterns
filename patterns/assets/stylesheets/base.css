@@ -813,7 +813,7 @@ main.pattern .content li {
 main.pattern .content .pattern-example {
   border: 1px solid #bfc1c3;
   outline: 20px solid #f8f8f8;
-  margin: 40px -100px 50px 0;
+  margin: 40px 0 50px 0;
   padding: 30px; }
 main.pattern .content .button {
   background-color: #00823b;
