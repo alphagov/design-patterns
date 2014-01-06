@@ -69,7 +69,7 @@ However, don't rely on people spotting any links in a progress bar - they often 
 
 For some transactions you'll want to let users complete the steps in any order, or let them partially complete steps. In general this is harder to do in a usable way, so only do it if the benefits to the user outweight the costs.
 
-A vertical progress bar gives you the flexibility you'll need without implying a fixed order of completion. It's visually distinct from a horizontal progress bar, helping users to understand that it behaves slightly differently.
+By convention we use a vertical progress bar for this. The steps aren't numbered because they can be completed in any order. The vertical alignment allows room for more steps and also space to indicate how complete each step is.
 
 Don't forget you'll need to let people know when they can progress past these steps to the next part of the transaction.
 
