@@ -13,12 +13,12 @@ The site has been designed to be hosted on GitHub pages, which run Jekyll in Saf
 sass --watch sass:stylesheets
 ```
 
-If you want to preview your work locally you'll need to run Jekyll like this:
+If you want to preview your work locally, run Jekyll like this:
 
 ```
 jekyll serve --watch --baseurl ''
 ```
 
-This is so that URLs are correctly resolved in both local and GitHib hosted environents.
+This is so that URLs are correctly resolved in both local and GitHub hosted environents.
 
 Finally, because we're using GitHub Pages there is no master branch - 'gh-pages' is the default branch.
