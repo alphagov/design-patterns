@@ -13,8 +13,7 @@
   input[type="tel"],
   input[type="time"],
   input[type="url"],
-  input[type="week"],
-  select[size]{
+  input[type="week"]{
     background-color: $highlight-colour;
     border: 2px inset;
     padding: 2px 0 2px 8px;
@@ -22,6 +21,19 @@
     @include media("mobile"){
       width: 97%;
       box-sizing: border-box;
+    }
+    &.postcode{
+      width: 100px;
+    }
+  }
+
+  textarea{
+    width: 300px;    
+    background-color: $highlight-colour;
+    border: 2px inset;
+    padding: 2px 0 2px 8px;    
+    @include media("mobile"){
+      width: 97%;
     }
   }
 
@@ -32,8 +44,8 @@
   }
 
   select{
-    font-size: 14px;
-    border: 1px solid $grey-1;
+    font-size: 19px;
+    //border: 1px solid $grey-1;
     margin-left: 0;
   }
 

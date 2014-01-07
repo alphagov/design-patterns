@@ -1,3 +1,21 @@
 .button{
 	@include button;
 }
+.button-secondary{
+	@include button($highlight-colour);
+}
+
+.link-style {
+    display: inline;
+    color: $link-colour;
+    -webkit-appearance:none;
+    background: none;
+    border: none;
+    //@include core-19;
+    text-decoration: underline;
+    //padding: 0;
+  &:hover {
+    color: $link-hover-colour;
+    cursor: pointer;
+  }
+}

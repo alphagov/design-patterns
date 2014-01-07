@@ -549,6 +549,78 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     margin-left: 0;
     margin-right: 0; }
 
+.button-secondary {
+  background-color: #f8f8f8;
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  padding: 0.35em 0.5em 0.15em 0.5em;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-box-shadow: 0 2px 0 #d2d2d2;
+  -moz-box-shadow: 0 2px 0 #d2d2d2;
+  box-shadow: 0 2px 0 #d2d2d2;
+  font-size: 1em;
+  line-height: 1.25;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  color: #0b0c0c; }
+  .button-secondary:visited {
+    background-color: #f8f8f8; }
+  .button-secondary:hover, .button-secondary:focus {
+    background-color: #ebebeb; }
+  .button-secondary:active {
+    top: 2px;
+    -webkit-box-shadow: 0 0 0 #f8f8f8;
+    -moz-box-shadow: 0 0 0 #f8f8f8;
+    box-shadow: 0 0 0 #f8f8f8; }
+  .button-secondary.disabled, .button-secondary[disabled="disabled"], .button-secondary[disabled] {
+    zoom: 1;
+    filter: alpha(opacity=50);
+    opacity: 0.5; }
+    .button-secondary.disabled:hover, .button-secondary[disabled="disabled"]:hover, .button-secondary[disabled]:hover {
+      cursor: default;
+      background-color: #f8f8f8; }
+    .button-secondary.disabled:active, .button-secondary[disabled="disabled"]:active, .button-secondary[disabled]:active {
+      top: 0;
+      -webkit-box-shadow: 0 2px 0 #d2d2d2;
+      -moz-box-shadow: 0 2px 0 #d2d2d2;
+      box-shadow: 0 2px 0 #d2d2d2; }
+  .button-secondary:hover, .button-secondary:focus, .button-secondary:visited {
+    color: #0b0c0c; }
+  .button-secondary:before {
+    content: "";
+    height: 110%;
+    width: 100%;
+    display: block;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .button-secondary:active:before {
+    top: -10%;
+    height: 120%; }
+  .button-secondary[rel="external"]:after {
+    display: none;
+    content: none;
+    margin-left: 0;
+    margin-right: 0; }
+
+.link-style {
+  display: inline;
+  color: #2e3191;
+  -webkit-appearance: none;
+  background: none;
+  border: none;
+  text-decoration: underline; }
+  .link-style:hover {
+    color: #2e8aca;
+    cursor: pointer; }
+
 .form input[type="text"],
 .form input[type="password"],
 .form input[type="email"],
@@ -562,8 +634,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 .form input[type="tel"],
 .form input[type="time"],
 .form input[type="url"],
-.form input[type="week"],
-.form select[size] {
+.form input[type="week"] {
   background-color: #f8f8f8;
   border: 2px inset;
   padding: 2px 0 2px 8px;
@@ -582,17 +653,38 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     .form input[type="tel"],
     .form input[type="time"],
     .form input[type="url"],
-    .form input[type="week"],
-    .form select[size] {
+    .form input[type="week"] {
       width: 97%;
       box-sizing: border-box; } }
+  .form input[type="text"].postcode,
+  .form input[type="password"].postcode,
+  .form input[type="email"].postcode,
+  .form input[type="date"].postcode,
+  .form input[type="datetime"].postcode,
+  .form input[type="datetime-local"].postcode,
+  .form input[type="email"].postcode,
+  .form input[type="month"].postcode,
+  .form input[type="number"].postcode,
+  .form input[type="search"].postcode,
+  .form input[type="tel"].postcode,
+  .form input[type="time"].postcode,
+  .form input[type="url"].postcode,
+  .form input[type="week"].postcode {
+    width: 100px; }
+.form textarea {
+  width: 300px;
+  background-color: #f8f8f8;
+  border: 2px inset;
+  padding: 2px 0 2px 8px; }
+  @media (max-width: 640px) {
+    .form textarea {
+      width: 97%; } }
 .form label {
   display: block;
   padding-right: 10px;
   padding-top: 5px; }
 .form select {
-  font-size: 14px;
-  border: 1px solid #6f777b;
+  font-size: 19px;
   margin-left: 0; }
 .form .control {
   font-family: "nta", Arial, sans-serif;
@@ -622,6 +714,10 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     margin-left: 0;
     margin-right: 0.5em;
     padding-right: 1em; }
+
+#find-uk-address {
+  margin-left: 10px;
+  vertical-align: -1px; }
 
 main.home header {
   padding: 30px 0; }

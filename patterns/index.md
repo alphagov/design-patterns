@@ -11,6 +11,7 @@ These patterns are intended for use on GOV.UK services.
 
 * [Progress indicators](progress-indicator.html)
 * [People's names](peoples-names.html)
+* [Addresses](addresses.html)
 
 ## How to use these patterns
 
