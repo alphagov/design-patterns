@@ -1088,30 +1088,39 @@ main.pattern .content .button {
     content: none;
     margin-left: 0;
     margin-right: 0; }
-main.pattern .related-links {
+main.pattern .related {
   float: left;
   width: 25%; }
-  main.pattern .related-links ul {
-    list-style-type: none;
-    border-top: 5px solid #0b0c0c;
-    margin: 0 30px;
-    padding-top: 20px; }
-    main.pattern .related-links ul li {
+  main.pattern .related .actions {
+    margin: 30px;
+    list-style-type: none; }
+    main.pattern .related .actions li {
       font-family: "nta", Arial, sans-serif;
       font-size: 19px;
       line-height: 1.31579;
       font-weight: 400;
       text-transform: none;
-      padding-top: 2px;
-      padding-bottom: 8px; }
+      font-weight: 700; }
       @media (max-width: 640px) {
-        main.pattern .related-links ul li {
+        main.pattern .related .actions li {
           font-size: 16px;
           line-height: 1.25; } }
-      @media (min-width: 641px) {
-        main.pattern .related-links ul li {
-          padding-top: 0;
-          padding-bottom: 5px; } }
+  main.pattern .related .metadata {
+    border-top: 5px solid #0b0c0c;
+    margin: 0 30px;
+    padding-top: 20px; }
+    main.pattern .related .metadata dd {
+      font-family: "nta", Arial, sans-serif;
+      font-size: 24px;
+      line-height: 1.25;
+      font-weight: 400;
+      text-transform: none;
+      font-weight: 700;
+      margin-bottom: 10px; }
+      @media (max-width: 640px) {
+        main.pattern .related .metadata dd {
+          font-size: 20px;
+          line-height: 1.2; } }
 
 .ribbon {
   background-color: #85994b;

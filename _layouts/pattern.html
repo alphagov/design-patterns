@@ -26,8 +26,22 @@ layout-class: 'pattern'
       {{ content }}
     </div>
   </div>
-  <div class="related-links">
-    <ul>
+  <div class="related">
+
+    <dl class="metadata">
+      {% if page.published %}
+      <dt>Published:</dt>
+      <dd>{{ page.published }}</dd>
+      {% endif %}
+
+      {% if page.updated %}
+      <dt>Updated:</dt>
+      <dd>{{ page.updated }}</dd>
+      {% endif %}
+    </dl>
+
+
+    <ul class="actions">
       {% if page.discuss-url %}<li><a href="{{ page.discuss-url }}">Discuss this pattern</a></li>{% endif %}
     </ul>
   </div>

@@ -3,6 +3,8 @@ layout: pattern
 title: Progress indicators
 page-class: 'progress-indicator'
 discuss-url: https://designpatterns.hackpad.com/Progress-indicators-3AOrLoia9Us
+published: 2 January 2014
+updated: 9 January 2014
 phases:
   - alpha
 ---
