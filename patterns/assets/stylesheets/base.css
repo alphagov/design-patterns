@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @-ms-viewport {
   width: device-width; }
 
@@ -610,6 +611,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     margin-left: 0;
     margin-right: 0; }
 
+details summary,
 .link-style {
   display: inline;
   color: #2e3191;
@@ -617,6 +619,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   background: none;
   border: none;
   text-decoration: underline; }
+  details summary:hover,
   .link-style:hover {
     color: #2e8aca;
     cursor: pointer; }
@@ -718,6 +721,54 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 #find-uk-address {
   margin-left: 10px;
   vertical-align: -1px; }
+
+/* Example use:
+    <details>
+      <summary>Wanna know more?</sumary>
+      <p>Of course you do!</p>
+    </details>
+*/
+details {
+  display: block;
+  margin: 0 -1em 0 -1em; }
+  details summary {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 19px;
+    line-height: 1.31579;
+    font-weight: 400;
+    text-transform: none;
+    display: block;
+    margin-bottom: 0.5em;
+    margin-top: 0.2em;
+    /*
+    &:focus{
+      background-color: #FFBF47;
+      outline: 3px solid #FFBF47;
+    };*/ }
+    @media (max-width: 640px) {
+      details summary {
+        font-size: 16px;
+        line-height: 1.25; } }
+  details[open] {
+    margin: 0 -1em 0 -1em; }
+    details[open] summary:focus {
+      outline: none;
+      background-color: transparent; }
+
+/* Styles for browsers that don't yet natively support details/summary */
+.no-details details > * {
+  display: none; }
+
+.no-details details > summary:before {
+  float: left;
+  width: 20px;
+  content: '► '; }
+
+.no-details details.open > summary:before {
+  content: '▼ '; }
+
+.no-details details summary {
+  display: block; }
 
 main.home header {
   padding: 30px 0; }
