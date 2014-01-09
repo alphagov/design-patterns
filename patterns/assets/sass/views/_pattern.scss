@@ -124,6 +124,7 @@ main.pattern {
         list-style-type: none;
         li{
           @include bold-19;
+          margin-bottom: $gutter-third;
         }
       }
       .metadata{

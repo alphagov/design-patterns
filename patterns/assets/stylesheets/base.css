@@ -1100,7 +1100,8 @@ main.pattern .related {
       line-height: 1.31579;
       font-weight: 400;
       text-transform: none;
-      font-weight: 700; }
+      font-weight: 700;
+      margin-bottom: 10px; }
       @media (max-width: 640px) {
         main.pattern .related .actions li {
           font-size: 16px;
