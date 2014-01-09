@@ -739,12 +739,7 @@ details {
     text-transform: none;
     display: block;
     margin-bottom: 0.5em;
-    margin-top: 0.2em;
-    /*
-    &:focus{
-      background-color: #FFBF47;
-      outline: 3px solid #FFBF47;
-    };*/ }
+    margin-top: 0.2em; }
     @media (max-width: 640px) {
       details summary {
         font-size: 16px;
