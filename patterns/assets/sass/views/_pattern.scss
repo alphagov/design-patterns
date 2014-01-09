@@ -70,6 +70,7 @@ main.pattern {
   .content {
     @include media(tablet){
       width: 75%;
+      float: left;
     }
 
     h2 {
@@ -114,6 +115,22 @@ main.pattern {
       @include button;
     }
   }
+
+  .related-links{
+      float: left;
+      width: 25%;
+      ul{
+        list-style-type: none;
+        border-top: 5px solid $black;
+        margin: 0 30px;
+        padding-top: 20px;
+        li{
+          @include copy-19;
+        }
+      }
+
+  }
+
 }
 
 // Github banner

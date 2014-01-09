@@ -2,6 +2,7 @@
 layout: pattern
 title: Progress indicators
 page-class: 'progress-indicator'
+discuss-url: https://designpatterns.hackpad.com/Progress-indicators-3AOrLoia9Us
 phases:
   - alpha
 ---
@@ -115,8 +116,5 @@ Another way is to group steps into larger chunks that don't change and represent
 Finally, you could show all the steps but allow users to simply skips over the ones that don't apply.
 
 As always, testing with your users is only way to decide on the best approach.
-
-
-[Discuss this pattern](https://designpatterns.hackpad.com/Progress-indicators-3AOrLoia9Us)
 
 

@@ -927,7 +927,8 @@ main.pattern .navigation ol {
       margin-left: -15px; }
 @media (min-width: 641px) {
   main.pattern .content {
-    width: 75%; } }
+    width: 75%;
+    float: left; } }
 main.pattern .content h2 {
   border-bottom: 1px solid;
   font-family: "nta", Arial, sans-serif;
@@ -1087,6 +1088,30 @@ main.pattern .content .button {
     content: none;
     margin-left: 0;
     margin-right: 0; }
+main.pattern .related-links {
+  float: left;
+  width: 25%; }
+  main.pattern .related-links ul {
+    list-style-type: none;
+    border-top: 5px solid #0b0c0c;
+    margin: 0 30px;
+    padding-top: 20px; }
+    main.pattern .related-links ul li {
+      font-family: "nta", Arial, sans-serif;
+      font-size: 19px;
+      line-height: 1.31579;
+      font-weight: 400;
+      text-transform: none;
+      padding-top: 2px;
+      padding-bottom: 8px; }
+      @media (max-width: 640px) {
+        main.pattern .related-links ul li {
+          font-size: 16px;
+          line-height: 1.25; } }
+      @media (min-width: 641px) {
+        main.pattern .related-links ul li {
+          padding-top: 0;
+          padding-bottom: 5px; } }
 
 .ribbon {
   background-color: #85994b;

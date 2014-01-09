@@ -2,6 +2,7 @@
 layout: pattern
 title: People's names
 page-class: 'peoples-names'
+discuss-url: https://designpatterns.hackpad.com/Peoples-names-mgFWXkwyPEt
 phases:
   - alpha
 ---
@@ -67,8 +68,5 @@ If you do implement a title field make sure users can leave it blank and deal wi
 		</div>
 	</form>
 </div>
-
-
-[Discuss this pattern](https://designpatterns.hackpad.com/Peoples-names-mgFWXkwyPEt)
 
 

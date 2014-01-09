@@ -2,6 +2,9 @@
 layout: pattern
 title: Addresses
 page-class: 'addresses'
+discuss-url: https://designpatterns.hackpad.com/Address-CgrMSGRAhRc
+published: 2 January 2014
+updated: 9 January 2014
 phases:
   - alpha
 ---
@@ -120,8 +123,4 @@ Sometimes referred to as 'postcode lookup'. An address finder lets users specify
 
 * to make it clear that the address finder only works for UK addresses
 * to provide a manual option for people with international adresses or addresses that are missing or badly formed in the Royal Mail database
-
-
-[Discuss this pattern](https://designpatterns.hackpad.com/Address-CgrMSGRAhRc)
-
 

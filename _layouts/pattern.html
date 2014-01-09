@@ -26,4 +26,9 @@ layout-class: 'pattern'
       {{ content }}
     </div>
   </div>
+  <div class="related-links">
+    <ul>
+      {% if page.discuss-url %}<li><a href="{{ page.discuss-url }}">Discuss this pattern</a></li>{% endif %}
+    </ul>
+  </div>
 </article>
