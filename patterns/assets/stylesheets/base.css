@@ -1140,10 +1140,15 @@ main.pattern .content .button {
     margin-left: 0;
     margin-right: 0; }
 main.pattern .related {
-  float: left;
-  width: 25%; }
+  padding: 0 15px; }
+  @media (min-width: 641px) {
+    main.pattern .related {
+      width: 25%;
+      float: left;
+      padding: 10px 30px;
+      box-sizing: border-box; } }
   main.pattern .related .actions {
-    margin: 30px;
+    margin: 30px 0;
     list-style-type: none; }
     main.pattern .related .actions li {
       font-family: "nta", Arial, sans-serif;
@@ -1159,7 +1164,6 @@ main.pattern .related {
           line-height: 1.25; } }
   main.pattern .related .metadata {
     border-top: 5px solid #0b0c0c;
-    margin: 0 30px;
     padding-top: 20px; }
     main.pattern .related .metadata dd {
       font-family: "nta", Arial, sans-serif;

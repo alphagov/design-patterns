@@ -117,25 +117,29 @@ main.pattern {
   }
 
   .related{
-      float: left;
+    padding: 0 15px;
+    @include media(tablet){
       width: 25%;
-      .actions{
-        margin: $gutter;
-        list-style-type: none;
-        li{
-          @include bold-19;
-          margin-bottom: $gutter-third;
-        }
+      float: left;
+      padding: 10px 30px;
+      box-sizing: border-box;
+    }
+    .actions{
+      margin: $gutter 0;
+      list-style-type: none;
+      li{
+        @include bold-19;
+        margin-bottom: $gutter-third;
       }
-      .metadata{
-        border-top: 5px solid $black;
-        margin: 0 $gutter;
-        padding-top: $gutter-two-thirds;
-        dd{
-          @include bold-24;
-          margin-bottom: $gutter-third;
-        }
+    }
+    .metadata{
+      border-top: 5px solid $black;
+      padding-top: $gutter-two-thirds;
+      dd{
+        @include bold-24;
+        margin-bottom: $gutter-third;
       }
+    }
   }
 
 }
