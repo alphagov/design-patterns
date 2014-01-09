@@ -52,6 +52,8 @@ $(document).ready(function () {
   $('#name-title').convertToTitleSelect();
 
 
+  // POSTCODE LOOKUP
+
   jQuery.fn.postcodeLookup = function() {
   
     // Add the control above the address fields
@@ -110,5 +112,14 @@ $(document).ready(function () {
   };
 
   $('.js-address-finder').postcodeLookup();
+
+
+
+  // DETAILS TAG POLYFILL
+
+  // Add conditional classname based on support
+  $('html').addClass($.fn.details.support ? 'details' : 'no-details');
+  // Emulate <details> where necessary and enable open/close event handlers
+  $('details').details();
 
 });
