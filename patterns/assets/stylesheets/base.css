@@ -1132,7 +1132,7 @@ main.pattern .content p {
       padding-bottom: 5px; } }
 main.pattern .content p code {
   font-size: 13px;
-  color: black;
+  color: #0b0c0c;
   background-color: #f8f8f8;
   border: 1px solid #bfc1c3;
   line-height: 19px;
@@ -1225,8 +1225,6 @@ main.pattern .content .button {
     content: none;
     margin-left: 0;
     margin-right: 0; }
-main.pattern .content code {
-  font-size: 19px; }
 main.pattern .related {
   padding: 0 15px; }
   @media (min-width: 641px) {

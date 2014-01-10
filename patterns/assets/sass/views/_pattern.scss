@@ -95,9 +95,9 @@ main.pattern {
     }
     p code {
         font-size: 13px;
-        color: black;
-        background-color: #f8f8f8;
-        border: 1px solid #bfc1c3;
+        color: $black;
+        background-color: $highlight-colour;
+        border: 1px solid $border-colour;
         line-height: 19px;
         overflow: auto;
         padding: 0.3em 0.5em;
@@ -122,9 +122,6 @@ main.pattern {
     }
     .button{
       @include button;
-    }
-    code{
-      font-size: 19px;    
     }
   }
 
