@@ -611,6 +611,67 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     margin-left: 0;
     margin-right: 0; }
 
+.button-warning {
+  background-color: #b10e1e;
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  padding: 0.35em 0.5em 0.15em 0.5em;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-box-shadow: 0 2px 0 #6a0812;
+  -moz-box-shadow: 0 2px 0 #6a0812;
+  box-shadow: 0 2px 0 #6a0812;
+  font-size: 1em;
+  line-height: 1.25;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  color: white; }
+  .button-warning:visited {
+    background-color: #b10e1e; }
+  .button-warning:hover, .button-warning:focus {
+    background-color: #990c1a; }
+  .button-warning:active {
+    top: 2px;
+    -webkit-box-shadow: 0 0 0 #b10e1e;
+    -moz-box-shadow: 0 0 0 #b10e1e;
+    box-shadow: 0 0 0 #b10e1e; }
+  .button-warning.disabled, .button-warning[disabled="disabled"], .button-warning[disabled] {
+    zoom: 1;
+    filter: alpha(opacity=50);
+    opacity: 0.5; }
+    .button-warning.disabled:hover, .button-warning[disabled="disabled"]:hover, .button-warning[disabled]:hover {
+      cursor: default;
+      background-color: #b10e1e; }
+    .button-warning.disabled:active, .button-warning[disabled="disabled"]:active, .button-warning[disabled]:active {
+      top: 0;
+      -webkit-box-shadow: 0 2px 0 #6a0812;
+      -moz-box-shadow: 0 2px 0 #6a0812;
+      box-shadow: 0 2px 0 #6a0812; }
+  .button-warning:hover, .button-warning:focus, .button-warning:visited {
+    color: white; }
+  .button-warning:before {
+    content: "";
+    height: 110%;
+    width: 100%;
+    display: block;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .button-warning:active:before {
+    top: -10%;
+    height: 120%; }
+  .button-warning[rel="external"]:after {
+    display: none;
+    content: none;
+    margin-left: 0;
+    margin-right: 0; }
+
 details summary,
 .link-style {
   display: inline;

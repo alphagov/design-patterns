@@ -1,8 +1,11 @@
-.button{
+.button {
 	@include button;
 }
-.button-secondary{
+.button-secondary {
 	@include button($highlight-colour);
+}
+.button-warning {
+	@include button($red);
 }
 
 %link-style,

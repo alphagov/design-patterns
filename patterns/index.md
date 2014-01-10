@@ -11,6 +11,7 @@ If you're designing services for GOV.UK the patterns in this library can help yo
 * [People's names](peoples-names.html)
 * [Progress indicators](progress-indicator.html)
 * [Progressive disclosure](progressive-disclosure.html)
+* [Buttons](buttons.html)
 
 ## How to use this library
 
