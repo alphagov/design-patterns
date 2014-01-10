@@ -39,7 +39,7 @@ Buttons should have a default colour (such as green). Alternative colours should
 
 ### Disabling buttons
 
-As with the default browser style, buttons will need a disabled style to indicate when the disabled attribute is set.
+As with the default browser style, buttons will need a disabled style to indicate when the `disabled` attribute is set.
 
 #### Example
 

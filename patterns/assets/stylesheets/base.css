@@ -1108,6 +1108,14 @@ main.pattern .content p {
     main.pattern .content p {
       padding-top: 0;
       padding-bottom: 5px; } }
+main.pattern .content p code {
+  font-size: 13px;
+  color: black;
+  background-color: #f8f8f8;
+  border: 1px solid #bfc1c3;
+  line-height: 19px;
+  overflow: auto;
+  padding: 0.3em 0.5em; }
 main.pattern .content strong {
   font-weight: bold; }
 main.pattern .content ol {
