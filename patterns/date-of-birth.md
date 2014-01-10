@@ -33,7 +33,7 @@ Our current reccomendation for capturing date of birth is to use three clearly l
 	</form>
 </div>
 
-You should avoid using select boxes, because some users struggle with long ones (the year drop-down for example).
+We've found that some users struggle with long select boxes, which is why we're not recommending you use them.
 
 We will be testing this approach and others in the near future and will update this pattern accordingly. If you want to be notified of any updates you can [follow this pattern](#).
 
