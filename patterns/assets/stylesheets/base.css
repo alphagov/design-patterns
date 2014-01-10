@@ -35,7 +35,7 @@
    }
 
 */
-#content:after, #content .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after, .service-header.v2 header:after, .service-header.v3 header:after, main.home header:after, main.pattern header:after, main.pattern .content .pattern-example:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ol:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ul:after, main.progress-indicator .pattern-example .progress-indicator.vertical ol:after, main.progress-indicator .pattern-example .progress-indicator.vertical ul:after {
+#content:after, #content .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after, .service-header.v2 header:after, .service-header.v3 header:after, .date-of-birth:after, main.home header:after, main.pattern header:after, main.pattern .content .pattern-example:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ol:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ul:after, main.progress-indicator .pattern-example .progress-indicator.vertical ol:after, main.progress-indicator .pattern-example .progress-indicator.vertical ul:after {
   content: "";
   display: block;
   clear: both; }
@@ -86,7 +86,7 @@
    }
 
 */
-#content:after, #content .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after, .service-header.v2 header:after, .service-header.v3 header:after, main.home header:after, main.pattern header:after, main.pattern .content .pattern-example:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ol:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ul:after, main.progress-indicator .pattern-example .progress-indicator.vertical ol:after, main.progress-indicator .pattern-example .progress-indicator.vertical ul:after {
+#content:after, #content .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after, .service-header.v2 header:after, .service-header.v3 header:after, .date-of-birth:after, main.home header:after, main.pattern header:after, main.pattern .content .pattern-example:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ol:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ul:after, main.progress-indicator .pattern-example .progress-indicator.vertical ol:after, main.progress-indicator .pattern-example .progress-indicator.vertical ul:after {
   content: "";
   display: block;
   clear: both; }
@@ -761,6 +761,28 @@ details summary,
     .form .control {
       font-size: 16px;
       line-height: 1.25; } }
+.form fieldset {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  font-weight: 700; }
+  @media (max-width: 640px) {
+    .form fieldset {
+      font-size: 20px;
+      line-height: 1.2; } }
+
+.date-of-birth .control {
+  width: 60px;
+  width: 69px;
+  float: left; }
+  .date-of-birth .control.day input, .date-of-birth .control.month input {
+    width: 40px; }
+    .date-of-birth .control.day input:after, .date-of-birth .control.month input:after {
+      content: "/"; }
+  .date-of-birth .control.year input {
+    width: 60px; }
 
 #global-breadcrumb {
   padding: 0.75em 0;
@@ -1203,6 +1225,8 @@ main.pattern .content .button {
     content: none;
     margin-left: 0;
     margin-right: 0; }
+main.pattern .content code {
+  font-size: 19px; }
 main.pattern .related {
   padding: 0 15px; }
   @media (min-width: 641px) {

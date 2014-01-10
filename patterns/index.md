@@ -8,6 +8,7 @@ phases:
 If you're designing services for GOV.UK the patterns in this library can help you.
 
 * [Addresses](addresses.html)
+* [Date of birth](date-of-birth.html)
 * [People's names](peoples-names.html)
 * [Progress indicators](progress-indicator.html)
 * [Progressive disclosure](progressive-disclosure.html)

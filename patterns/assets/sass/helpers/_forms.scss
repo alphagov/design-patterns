@@ -45,13 +45,16 @@
 
   select{
     font-size: 19px;
-    //border: 1px solid $grey-1;
     margin-left: 0;
   }
 
   .control{
     @include core-19;
     padding: 8px 0;
+  }
+
+  fieldset{
+    @include bold-24;
   }
 
 }

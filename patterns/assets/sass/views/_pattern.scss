@@ -123,6 +123,9 @@ main.pattern {
     .button{
       @include button;
     }
+    code{
+      font-size: 19px;    
+    }
   }
 
   .related{
