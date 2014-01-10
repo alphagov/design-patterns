@@ -1276,6 +1276,7 @@ main.pattern .related {
   color: #fff;
   display: block;
   font-weight: bold;
+  font-size: 16px;
   padding: 3px 50px; }
 
 main.progress-indicator .title h1 {
