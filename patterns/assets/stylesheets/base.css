@@ -815,7 +815,7 @@ details {
   display: block;
   margin: 0;
   padding-left: 10px;
-  border-left: 3px solid #fff; }
+  border-left: 4px solid #fff; }
   details summary {
     font-family: "nta", Arial, sans-serif;
     font-size: 19px;
@@ -833,7 +833,7 @@ details {
         line-height: 1.25; } }
   details[open] {
     margin: 0;
-    border-left: 3px solid #bfc1c3; }
+    border-left-color: #bfc1c3; }
     details[open] summary:focus {
       outline: none;
       background-color: #fff; }
