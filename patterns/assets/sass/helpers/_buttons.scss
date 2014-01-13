@@ -1,10 +1,20 @@
 .button {
+   @include button;
 }
 .button-secondary {
-	@include button($highlight-colour);
+   @include button($highlight-colour);
 }
 .button-warning {
-	@include button($red);
+   @include button($red);
+}
+
+// Additional styles for consistent button size and alignment
+
+.button,
+.button-secondary,
+.button-warning {
+    margin: 0 4px;
+    vertical-align: top;
 }
 
 %link-style,
