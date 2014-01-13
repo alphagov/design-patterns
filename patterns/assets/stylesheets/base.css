@@ -175,34 +175,6 @@ Example usage:
   width: auto;
   margin: 0 auto 90px; }
 
-/* Borrowed from http://meyerweb.com/eric/tools/css/reset/ */
-div, span,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark {
-  border: none;
-  margin: 0;
-  padding: 0; }
-
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-input, textarea,
-table, caption, tbody, tfoot, thead, tr, th, td {
-  font-size: inherit;
-  font-family: inherit;
-  line-height: inherit;
-  font-weight: normal; }
-
 #content .block .inner-block {
   padding: 0 15px; }
   @media (min-width: 641px) {
@@ -671,6 +643,12 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     content: none;
     margin-left: 0;
     margin-right: 0; }
+
+.button,
+.button-secondary,
+.button-warning {
+  margin: 0 4px;
+  vertical-align: top; }
 
 details summary,
 .link-style {
@@ -1143,66 +1121,6 @@ main.pattern .content .pattern-example {
   padding: 30px;
   overflow: hidden;
   position: relative; }
-main.pattern .content .button {
-  background-color: #00823b;
-  position: relative;
-  display: -moz-inline-stack;
-  display: inline-block;
-  padding: 0.35em 0.5em 0.15em 0.5em;
-  border: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  -webkit-appearance: none;
-  -webkit-box-shadow: 0 2px 0 #003518;
-  -moz-box-shadow: 0 2px 0 #003518;
-  box-shadow: 0 2px 0 #003518;
-  font-size: 1em;
-  line-height: 1.25;
-  text-decoration: none;
-  -webkit-font-smoothing: antialiased;
-  cursor: pointer;
-  color: white; }
-  main.pattern .content .button:visited {
-    background-color: #00823b; }
-  main.pattern .content .button:hover, main.pattern .content .button:focus {
-    background-color: #00692f; }
-  main.pattern .content .button:active {
-    top: 2px;
-    -webkit-box-shadow: 0 0 0 #00823b;
-    -moz-box-shadow: 0 0 0 #00823b;
-    box-shadow: 0 0 0 #00823b; }
-  main.pattern .content .button.disabled, main.pattern .content .button[disabled="disabled"], main.pattern .content .button[disabled] {
-    zoom: 1;
-    filter: alpha(opacity=50);
-    opacity: 0.5; }
-    main.pattern .content .button.disabled:hover, main.pattern .content .button[disabled="disabled"]:hover, main.pattern .content .button[disabled]:hover {
-      cursor: default;
-      background-color: #00823b; }
-    main.pattern .content .button.disabled:active, main.pattern .content .button[disabled="disabled"]:active, main.pattern .content .button[disabled]:active {
-      top: 0;
-      -webkit-box-shadow: 0 2px 0 #003518;
-      -moz-box-shadow: 0 2px 0 #003518;
-      box-shadow: 0 2px 0 #003518; }
-  main.pattern .content .button:hover, main.pattern .content .button:focus, main.pattern .content .button:visited {
-    color: white; }
-  main.pattern .content .button:before {
-    content: "";
-    height: 110%;
-    width: 100%;
-    display: block;
-    background: transparent;
-    position: absolute;
-    top: 0;
-    left: 0; }
-  main.pattern .content .button:active:before {
-    top: -10%;
-    height: 120%; }
-  main.pattern .content .button[rel="external"]:after {
-    display: none;
-    content: none;
-    margin-left: 0;
-    margin-right: 0; }
 main.pattern .related {
   padding: 0 15px; }
   @media (min-width: 641px) {

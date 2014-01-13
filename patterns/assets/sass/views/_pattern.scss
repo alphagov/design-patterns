@@ -120,9 +120,6 @@ main.pattern {
       overflow: hidden;
       position: relative;
     }
-    .button{
-      @include button;
-    }
   }
 
   .related{

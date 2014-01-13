@@ -18,7 +18,7 @@ Buttons can be made of links, inputs and button tags. CSS should be used to sepa
 <div class="pattern-example">
   <p>
     <button class="button">Button tag</button>
-    <a class="button">Link tag</a>
+    <a href="#" class="button">Link tag</a>
     <input class="button" type="submit" value="Input tag" />
   </p>
 </div>
@@ -44,11 +44,11 @@ As with the default browser style, buttons will need a disabled style to indicat
 #### Example
 
 <div class="pattern-example">
-  <p>
-    <button class="button" disabled="disabled">Button tag</button>
-    <a class="disabled button">Link tag</a>
-    <input class="button" disabled="" type="submit" value="Input tag" />
-  </p>
+<p>
+  <button class="button" disabled="disabled">Button tag</button>
+  <a class="disabled button">Link tag</a>
+  <input class="button" disabled="" type="submit" value="Input tag" />
+</p>
 </div>
 
 ### Types of button

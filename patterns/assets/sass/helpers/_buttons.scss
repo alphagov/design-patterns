@@ -1,5 +1,4 @@
 .button {
-	@include button;
 }
 .button-secondary {
 	@include button($highlight-colour);
