@@ -9,12 +9,7 @@ phases:
   - alpha
 ---
 
-Capturing addresses is not as trivial as it might first seem. The first two questions you should ask are:
-
-* what do we intend to do with the address?
-* which geographic regions will the addresses come from?
-
-How you answer these questions should determine how you capture the addresses. On this page we'll discuss three approaches:
+There are a couple of ways to capture addresses. Which one you choose will depend on what you want to do with the address and where geographically they are likely to come from. We'll discuss three approaches here:
 
 1. Free text box
 2. Multiple fields

@@ -25,23 +25,11 @@ Buttons can be made of links, inputs and button tags. CSS should be used to sepa
 
 ### Button colours
 
-Buttons should have a default colour (such as green). Alternative colours should be possible but only to indicate different actions.
-
-#### Example
-
-<div class="pattern-example">
-  <p>
-    <a href="#" class="button">Primary action</a>
-    <a href="#" class="button-secondary">Secondary action</a>
-    <a href="#" class="button-warning">Warning action</a>
-  </p>
-</div>
+The default button colour is green (Sass variable: `$button-colour` ). Only use other colours if it improves the user experience in some way.
 
 ### Disabling buttons
 
 As with the default browser style, buttons will need a disabled style to indicate when the `disabled` attribute is set.
-
-#### Example
 
 <div class="pattern-example">
 <p>

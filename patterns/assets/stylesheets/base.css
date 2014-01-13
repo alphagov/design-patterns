@@ -35,7 +35,7 @@
    }
 
 */
-#content:after, #content .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after, .service-header.v2 header:after, .service-header.v3 header:after, main.home header:after, main.pattern header:after, main.pattern .content .pattern-example:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ol:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ul:after, main.progress-indicator .pattern-example .progress-indicator.vertical ol:after, main.progress-indicator .pattern-example .progress-indicator.vertical ul:after {
+#content:after, #content .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after, .service-header.v2 header:after, .service-header.v3 header:after, .date-of-birth:after, main.home header:after, main.pattern header:after, main.pattern .content .pattern-example:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ol:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ul:after, main.progress-indicator .pattern-example .progress-indicator.vertical ol:after, main.progress-indicator .pattern-example .progress-indicator.vertical ul:after {
   content: "";
   display: block;
   clear: both; }
@@ -86,7 +86,7 @@
    }
 
 */
-#content:after, #content .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after, .service-header.v2 header:after, .service-header.v3 header:after, main.home header:after, main.pattern header:after, main.pattern .content .pattern-example:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ol:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ul:after, main.progress-indicator .pattern-example .progress-indicator.vertical ol:after, main.progress-indicator .pattern-example .progress-indicator.vertical ul:after {
+#content:after, #content .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after, .service-header.v2 header:after, .service-header.v3 header:after, .date-of-birth:after, main.home header:after, main.pattern header:after, main.pattern .content .pattern-example:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ol:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ul:after, main.progress-indicator .pattern-example .progress-indicator.vertical ol:after, main.progress-indicator .pattern-example .progress-indicator.vertical ul:after {
   content: "";
   display: block;
   clear: both; }
@@ -767,6 +767,28 @@ details summary,
     .form .control {
       font-size: 16px;
       line-height: 1.25; } }
+.form fieldset {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  font-weight: 700; }
+  @media (max-width: 640px) {
+    .form fieldset {
+      font-size: 20px;
+      line-height: 1.2; } }
+
+.date-of-birth .control {
+  width: 60px;
+  width: 69px;
+  float: left; }
+  .date-of-birth .control.day input, .date-of-birth .control.month input {
+    width: 40px; }
+    .date-of-birth .control.day input:after, .date-of-birth .control.month input:after {
+      content: "/"; }
+  .date-of-birth .control.year input {
+    width: 60px; }
 
 #global-breadcrumb {
   padding: 0.75em 0;
@@ -797,7 +819,9 @@ details summary,
 */
 details {
   display: block;
-  margin: 0 -1em 0 -1em; }
+  margin: 0;
+  padding-left: 10px;
+  border-left: 4px solid #fff; }
   details summary {
     font-family: "nta", Arial, sans-serif;
     font-size: 19px;
@@ -805,17 +829,20 @@ details {
     font-weight: 400;
     text-transform: none;
     display: block;
-    margin-bottom: 0.5em;
-    margin-top: 0.2em; }
+    padding-bottom: 5px;
+    margin-top: 3px;
+    margin-left: -18px;
+    background: #fff; }
     @media (max-width: 640px) {
       details summary {
         font-size: 16px;
         line-height: 1.25; } }
   details[open] {
-    margin: 0 -1em 0 -1em; }
+    margin: 0;
+    border-left-color: #bfc1c3; }
     details[open] summary:focus {
       outline: none;
-      background-color: transparent; }
+      background-color: #fff; }
 
 /* Styles for browsers that don't yet natively support details/summary */
 .no-details details > * {
@@ -1116,12 +1143,13 @@ main.pattern .content p {
       padding-bottom: 5px; } }
 main.pattern .content p code {
   font-size: 13px;
-  color: black;
+  color: #0b0c0c;
   background-color: #f8f8f8;
   border: 1px solid #bfc1c3;
   line-height: 19px;
   overflow: auto;
-  padding: 0.3em 0.5em; }
+  padding: 0.3em 0.5em;
+  white-space: nowrap; }
 main.pattern .content strong {
   font-weight: bold; }
 main.pattern .content ol {
@@ -1199,6 +1227,7 @@ main.pattern .related {
   color: #fff;
   display: block;
   font-weight: bold;
+  font-size: 16px;
   padding: 3px 50px; }
 
 main.progress-indicator .title h1 {
