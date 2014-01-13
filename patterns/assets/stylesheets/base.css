@@ -813,7 +813,9 @@ details summary,
 */
 details {
   display: block;
-  margin: 0 -1em 0 -1em; }
+  margin: 0;
+  padding-left: 10px;
+  border-left: 3px solid #fff; }
   details summary {
     font-family: "nta", Arial, sans-serif;
     font-size: 19px;
@@ -821,17 +823,20 @@ details {
     font-weight: 400;
     text-transform: none;
     display: block;
-    margin-bottom: 0.5em;
-    margin-top: 0.2em; }
+    padding-bottom: 5px;
+    margin-top: 3px;
+    margin-left: -18px;
+    background: #fff; }
     @media (max-width: 640px) {
       details summary {
         font-size: 16px;
         line-height: 1.25; } }
   details[open] {
-    margin: 0 -1em 0 -1em; }
+    margin: 0;
+    border-left: 3px solid #bfc1c3; }
     details[open] summary:focus {
       outline: none;
-      background-color: transparent; }
+      background-color: #fff; }
 
 /* Styles for browsers that don't yet natively support details/summary */
 .no-details details > * {

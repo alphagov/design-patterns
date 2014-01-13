@@ -14,17 +14,24 @@
 
   details{
     display: block;
-    margin: 0 -1em 0 -1em;
+    //margin: 0 -10px 0 -10px;
+    margin: 0;
+    padding-left: 10px;
+    border-left: 3px solid #fff;
     summary{
       @include core-19;
       @extend %link-style;
       display: block;
-      margin-bottom: 0.5em;
-      margin-top: 0.2em;
+      padding-bottom: 5px;
+      margin-top: 3px;
+      margin-left: -18px;
+      background: #fff;
     }
     &[open]{
-      margin: 0 -1em 0 -1em;
-      summary:focus{ outline: none; background-color: transparent; }
+      margin: 0;
+      //margin: 0 -10px 0 -10px;
+      summary:focus{ outline: none; background-color: #fff; }
+      border-left: 3px solid $border-colour;
     }
 
 
