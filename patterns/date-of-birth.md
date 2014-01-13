@@ -9,7 +9,7 @@ phases:
   - alpha
 ---
 
-Our current reccomendation for capturing date of birth is to use three clearly labelled text boxes, as follows:
+Our current recommendation for capturing date of birth is to use three clearly labelled text boxes, as follows:
 
 <div class="pattern-example">
 	<div class="ribbon">Recommended</div>
@@ -33,7 +33,11 @@ Our current reccomendation for capturing date of birth is to use three clearly l
 	</form>
 </div>
 
-We've found that some users struggle with long select boxes, which is why we're not recommending you use them. You should also avoid using calendar controls for date-of-birth - they're more appropriate for recent past or future dates, or where the day of the week is relevant.
+We've found that some users struggle with long select boxes, which is why we're not recommending you use them.
+See [this blog post](https://designnotes.blog.gov.uk/2013/12/05/asking-for-a-date-of-birth/) for a more detailed account of our findings.
+
+
+You should also avoid using calendar controls for date-of-birth - they're more appropriate for recent past or future dates, or where the day of the week is relevant.
 
 We will be testing this approach and others in the near future and will update this pattern accordingly. If you want to be notified of any updates you can [follow this pattern](#).
 
