@@ -387,23 +387,23 @@ select:focus,
     font-size: 30px;
     line-height: 1em;
     text-decoration: none;
-    margin-bottom: 1px; }
+    text-rendering: optimizeLegibility;
+    margin-bottom: -1px;
+    padding-bottom: 1px; }
     #global-header #logo img {
       position: relative;
-      top: -3px;
+      top: -2px;
       width: 35px;
       height: 31px;
-      padding-right: 8px;
+      padding-right: 6px;
       float: left;
       display: inline;
       line-height: inherit;
       border: none; }
-    #global-header #logo span > span {
-      margin: 0 1px 0 -6px; }
     #global-header #logo:hover, #global-header #logo:focus {
       text-decoration: none;
       border-bottom: 1px solid;
-      margin-bottom: 0; }
+      padding-bottom: 0; }
     #global-header #logo:active {
       color: #2b8cc4; }
   #global-header .header-proposition {
