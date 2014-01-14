@@ -35,7 +35,8 @@
    }
 
 */
-#content:after, #content .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after, .service-header.v2 header:after, .service-header.v3 header:after, .date-of-birth:after, main.home header:after, main.pattern header:after, main.pattern .content .pattern-example:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ol:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ul:after, main.progress-indicator .pattern-example .progress-indicator.vertical ol:after, main.progress-indicator .pattern-example .progress-indicator.vertical ul:after {
+#content:after, #content .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after, .service-header.v2 header:after, .service-header.v3 header:after, .date-of-birth:after, main.home header:after, main.pattern header:after, main.pattern .content .pattern-example:after,
+main.pattern .content .html-example:after, main.pattern .content .code-links:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ol:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ul:after, main.progress-indicator .pattern-example .progress-indicator.vertical ol:after, main.progress-indicator .pattern-example .progress-indicator.vertical ul:after {
   content: "";
   display: block;
   clear: both; }
@@ -86,7 +87,8 @@
    }
 
 */
-#content:after, #content .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after, .service-header.v2 header:after, .service-header.v3 header:after, .date-of-birth:after, main.home header:after, main.pattern header:after, main.pattern .content .pattern-example:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ol:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ul:after, main.progress-indicator .pattern-example .progress-indicator.vertical ol:after, main.progress-indicator .pattern-example .progress-indicator.vertical ul:after {
+#content:after, #content .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after, .service-header.v2 header:after, .service-header.v3 header:after, .date-of-birth:after, main.home header:after, main.pattern header:after, main.pattern .content .pattern-example:after,
+main.pattern .content .html-example:after, main.pattern .content .code-links:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ol:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ul:after, main.progress-indicator .pattern-example .progress-indicator.vertical ol:after, main.progress-indicator .pattern-example .progress-indicator.vertical ul:after {
   content: "";
   display: block;
   clear: both; }
@@ -1172,13 +1174,29 @@ main.pattern .content li {
     main.pattern .content li {
       padding-top: 0;
       padding-bottom: 5px; } }
-main.pattern .content .pattern-example {
+main.pattern .content .pattern-example,
+main.pattern .content .html-example {
   border: 1px solid #bfc1c3;
   outline: 20px solid #f8f8f8;
   margin: 40px 0 50px 0;
   padding: 30px;
+  padding-bottom: 10px;
   overflow: hidden;
   position: relative; }
+  main.pattern .content .pattern-example figcaption,
+  main.pattern .content .html-example figcaption {
+    border-top: 1px solid #bfc1c3;
+    padding: 10px 5px 0 20px;
+    margin: 0 -30px; }
+main.pattern .content .html-example code {
+  margin-top: -20px;
+  margin-left: -70px;
+  display: block; }
+main.pattern .content .code-links {
+  float: right; }
+  main.pattern .content .code-links dt, main.pattern .content .code-links dd {
+    float: left;
+    margin-right: 10px; }
 main.pattern .related {
   padding: 0 15px; }
   @media (min-width: 641px) {

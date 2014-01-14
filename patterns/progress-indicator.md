@@ -27,10 +27,7 @@ Only implement a progress indicator if you've observed the user needs described 
 
 <div class="pattern-example">
 	<div class="ribbon">Recommended</div>
-	<div class="title">
-	  <p>Step 3 of 5</p>
-	  <h1>Payment details</h1>
-	</div>
+	{% include pattern-examples/_step-indicator.html %}
 </div>
 
 This is the preferred approach and should be tried before moving on to any of the others. It's accessible, compact and works well on all devices.
@@ -39,15 +36,7 @@ This is the preferred approach and should be tried before moving on to any of th
 ### Example 2: Horizontal progress bar
 
 <div class="pattern-example">
-	<nav role="navigation" class="horizontal progress-indicator">
-		<ul>
-		  <li class="done"><a href="">1. About you <span>done</span></a></li>
-		  <li class="done"><a href="">2. Your company <span>done</span></a></li>
-		  <li class="active">3. Payment details</li>
-		  <li>4. Delivery</li>
-		  <li>5. Done</li>
-		</ul>
-	</nav>
+	{% include pattern-examples/_horizontal-progress-bar.html %}
 </div>
 
 A horizontal progress bar outlines each of the steps involved in a transaction. This gives you a second chance to explain to users what's involved in each step if they missed this information on the start screen.
@@ -59,16 +48,17 @@ However, don't rely on people spotting any links in a progress bar - they often 
 
 ### Example 3: Vertical progress bar
 
-<div class="pattern-example">
-	<nav role="navigation" class="vertical progress-indicator">
-		<ul>
-		  <li><a href="">About you <span>(3/10)</span></a></li>
-		  <li class="done"><a href="">Your company <span>(10/10)</span></a></li>
-		  <li class="active"><a href="">Payment details <span>(1/6)</span></a></li>
-		  <li><a href="">Delivery <span>(0/3)</span></a></li>
-		</ul>
-	</nav>
-</div>
+<figure class="pattern-example">
+	{% include pattern-examples/_vertical-progress-bar.html %}
+	<figcaption>
+		<dl class="code-links">
+			<dt>View:</dt>
+			<dd><a href="#">HTML</a></dd>
+			<dd><a href="#">Sass</a></dd>
+		</dl>
+		Example 3: Vertical progress bar
+	</figcaption>
+</figure>
 
 For some transactions you'll want to let users complete the steps in any order, or let them partially complete steps. In general this is harder to do in a usable way, so only do it if the benefits to the user outweight the costs.
 
@@ -77,15 +67,7 @@ By convention we use a vertical progress bar for this. The steps aren't numbered
 Don't forget you'll need to let people know when they can progress past these steps to the next part of the transaction.
 
 <div class="pattern-example">
-	<nav role="navigation" class="vertical progress-indicator">
-		<ul>
-		  <li class="done"><a href="">About you <span>(10/10)</span></a></li>
-		  <li class="done"><a href="">Your company <span>(10/10)</span></a></li>
-		  <li class="active done"><a href="">Payment details <span>(6/6)</span></a></li>
-		  <li class="done"><a href="">Delivery <span>(3/3)</span></a></li>
-		</ul>
-	</nav>
-	<p><a href="" class="button">Submit order</a></p>
+	{% include pattern-examples/_vertical-progress-bar-2.html %}
 </div>
 
 You'll probably want to alert users that they can proceed in some other way too (a pop-up?). They're unlikely to notice that you added a button below the steps.

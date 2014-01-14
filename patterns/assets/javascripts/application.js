@@ -122,4 +122,19 @@ $(document).ready(function () {
   // Emulate <details> where necessary and enable open/close event handlers
   $('details').details();
 
+
+
+  // HTML snippets for live examples
+
+  /*
+  $('.pattern-example').each(function(){
+    var htmlString = $(this).html();
+    var el = $('<code>').text(htmlString);
+    el = $('<pre class="html-example">').append(el);
+    $(this).after(el);
+  });
+*/
+
+
+
 });
