@@ -778,6 +778,8 @@ details summary,
     .form fieldset {
       font-size: 20px;
       line-height: 1.2; } }
+.form .hint {
+  color: #6f777b; }
 
 .date-of-birth .control {
   width: 60px;

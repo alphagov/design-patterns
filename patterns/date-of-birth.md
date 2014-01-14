@@ -9,13 +9,13 @@ phases:
   - alpha
 ---
 
-Our current recommendation for capturing date of birth is to use three clearly labelled text boxes, as follows:
+Our current recommendation for capturing date of birth is to use three clearly labelled text boxes.
 
 <div class="pattern-example">
 	<div class="ribbon">Recommended</div>
 	<form class="form">
 		<fieldset class="date-of-birth">
-			<legend>Date of birth <p>Eg. 6 / 3 / 1976</p></legend>
+			<legend>Date of birth <p class="hint">Example: 21 Mar 1976</p></legend>
 
 			<div class="control day">
 		  		<label for="day">Day</label>
@@ -23,7 +23,7 @@ Our current recommendation for capturing date of birth is to use three clearly l
 			</div>
 			<div class="control month">
 		  		<label for="month">Month</label>
-		  		<input type="text" pattern="[0-9]*" id="month">
+		  		<input type="text" id="month">
 			</div>
 			<div class="control year">
 		  		<label for="year">Year</label>
