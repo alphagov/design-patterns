@@ -20,7 +20,7 @@ A progress indicator addresses this issue by telling users how many steps they'v
 
 ### When should I use one?
 
-Only implement a progress indicator if you've observed the user needs described above. Before you implement one, make sure you've made the transaction as simple and straightforward as you can. If you've done this and users are still struggling, only then consider one of the following approaches.
+Only implement a progress indicator if you've observed the user needs described above. Before you implement one, make sure you've made the transaction as simple and straightforward as you can. If you've done this and users are still struggling, then consider one of the following approaches.
 
 
 ### Example 1: Step indicator
@@ -39,11 +39,13 @@ This is the preferred approach and should be tried before moving on to any of th
 	{% include pattern-examples/_horizontal-progress-bar.html %}
 </div>
 
-A horizontal progress bar outlines each of the steps involved in a transaction. This gives you a second chance to explain to users what's involved in each step if they missed this information on the start screen.
+A horizontal progress bar outlines each of the steps involved in a transaction. This can help if your users need reminding of what each step involves. 
 
-Numbering each step helps to reinforce their sequential nature. The link style lets users know that a step has been completed and also that it can be used as navigation.
+You can also use the progress bar as an additional form of navigation. Don't rely on people using it like this though - you'll still need to provide 'Back' and 'Next' links at the bottom of each screen.
 
-However, don't rely on people spotting any links in a progress bar - they often won't. Instead, add 'Back' and 'Next' links to the bottom of each screen.
+Remember to number each step - it helps to reinforce their sequential nature.
+
+You'll need to keep the number of steps and their names short in order to fit them all on one line.
 
 
 ### Example 3: Vertical progress bar
@@ -62,7 +64,7 @@ However, don't rely on people spotting any links in a progress bar - they often 
 
 For some transactions you'll want to let users complete the steps in any order, or let them partially complete steps. In general this is harder to do in a usable way, so only do it if the benefits to the user outweight the costs.
 
-By convention we use a vertical progress bar for this. The steps aren't numbered because they can be completed in any order. The vertical alignment allows room for more steps and also space to indicate how complete each step is.
+We recommend using a vertical progress bar for this. The steps aren't numbered because they can be completed in any order. The vertical alignment allows room for more steps and also space to indicate how complete each step is.
 
 Don't forget you'll need to let people know when they can progress past these steps to the next part of the transaction.
 
@@ -70,12 +72,10 @@ Don't forget you'll need to let people know when they can progress past these st
 	{% include pattern-examples/_vertical-progress-bar-2.html %}
 </div>
 
-You'll probably want to alert users that they can proceed in some other way too (a pop-up?). They're unlikely to notice that you added a button below the steps.
+You'll should also consider alerting users that they can proceed in some other way too (a pop-up for example). Not everyone will notice the appearance of a button.
 
 
-### Example 4: Loading bar (don't do this)
-
-[EXAMPLE HERE]
+### Example 4: Loading bar
 
 We're not recommending that you use these. So far we've not seen any examples where a simple step indicator wouldn't work just as well. As that's the simpler solution, that's the one we're recommending.
 
@@ -87,17 +87,15 @@ There's one possible use case, where:
 A survey is one example of the above. If anyone wants to test the two approaches on a survey we'd be very interested in the results.
 
 
-### Limitations of this pattern
+### Dealing with branching transaction flows
 
-A limitation of all of these approaches occurs if the number of steps in the transaction changes as the user interacts with it. This can often occur with branching transactions.
+If the total number of steps changes as the user moves through them this may confuse your users.
 
-This results in the total number of steps changing, which users may find confusing and may reduce their confidence in what the system is telling them.
-
-One way around this is not to specify how many steps are left, but this removes one of the key benefits of the pattern.
+One way around this is not to specify how many steps are left, but this does remove one of the key benefits of the pattern.
 
 Another way is to group steps into larger chunks that don't change and represent those instead.
 
-Finally, you could show all the steps but allow users to simply skips over the ones that don't apply.
+Finally, you could show all the steps but allow users to simply skip over the ones that don't apply.
 
 As always, testing with your users is only way to decide on the best approach.
 
