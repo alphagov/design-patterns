@@ -3,7 +3,7 @@ $(document).ready(function () {
   // Convert a text field to a 'Title' select box
 
   jQuery.fn.convertToTitleSelect = function() {
-    var titles = ['Mr', 'Mrs', 'Miss', 'Ms', 'Dr'];
+    var titles = ['', 'Mr', 'Ms', 'Mrs', 'Miss', 'Dr'];
     if($(this).val()==''){
       $(this).attr('id', 'title-hide');
     } else if (!jQuery.inArray($(this).val(), titles)) {
@@ -60,7 +60,7 @@ $(document).ready(function () {
     $(this).before(
         '<div class="control">' +
         '<label for="postcode-lookup">Postcode</label> ' +
-        '<input type="text" id="postcode-lookup" class="postcode"><span id="find-uk-address" class="button">Find UK address</span>' +    
+        '<input type="text" id="postcode-lookup" class="postcode"><span id="find-uk-address" class="button-secondary">Find UK address</span>' +    
         '</div>' +
         '<p id="enter-address-manually"><span class="link-style">Enter address manually</span></p>'
     );  
@@ -121,5 +121,20 @@ $(document).ready(function () {
   $('html').addClass($.fn.details.support ? 'details' : 'no-details');
   // Emulate <details> where necessary and enable open/close event handlers
   $('details').details();
+
+
+
+  // HTML snippets for live examples
+
+  /*
+  $('.pattern-example').each(function(){
+    var htmlString = $(this).html();
+    var el = $('<code>').text(htmlString);
+    el = $('<pre class="html-example">').append(el);
+    $(this).after(el);
+  });
+*/
+
+
 
 });

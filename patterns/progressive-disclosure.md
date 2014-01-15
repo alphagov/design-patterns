@@ -9,11 +9,19 @@ phases:
   - alpha
 ---
 
-This is the technique of hiding content on a page until a user interacts with it in some way. It's most commonly used with help text or similar supporting content.
+This is the technique of hiding content on a page until a user interacts with it in some way. Done well it:
 
-Done well it keeps a page focussed and uncluttered and delivers content only to those people who need it. Done badly it hides important content from people or forces them to interact needlessly with the page.
+* keeps a page focussed and uncluttered
+* delivers targeted content to those people who need it
+* reduces the [cognitive load](http://usabilityfriction.com/2010/11/22/cognitive-load/) on your users
 
-In HTML5, the 'details' and 'summary' tags can be used for this:
+However, be careful not to hide important content from people or force them to interact needlessly with the page. If a majority of users need that content, *don't hide it*.
+
+
+
+### Details and summary tags
+
+In HTML5, the 'details' and 'summary' tags can be used like this:
 
 <div class="pattern-example">
 
@@ -26,21 +34,24 @@ In HTML5, the 'details' and 'summary' tags can be used for this:
 
 Cross browser support for these tags is [still patchy](http://caniuse.com/details), but you can plug the gap with JavaScript. [This jQuery plugin](https://github.com/mathiasbynens/jquery-details) does just that, whilst also adding appropriate ARIA roles to the elements.
 
-### When to use this pattern
+#### Writing good summary text
 
-Take care using this pattern. The objective is to de-clutter your interface by hiding information that's only relevant to a small proportion of users. If a majority of users need that information, *don't hide it*.
+Good summary text is critical, because you're hiding content from users. It needs to directly reference the needs of the users for whom the content is intended. As always, verbs are powerful, but so is framing the text in the users own voice.
 
-Because you're hiding content, the wording of the summary text is critical. It needs to directly address the audience for whom the content is relevant. If you're writing help text then one approach is to frame the summary as a question, FAQ style.
+Some examples: 
 
+* 'What if I don't have a passport?'
+* 'Add another address'
+* 'Show details'
 
-### Watch out for...
-
-A common issue is people not clicking the summary because they worry they'll be taken away from the current page (which can cause problems in transactions). You can help by being very consistent in the way you present these elements. using words like 'show' in the summary text may also help.
+Some users are reluctant to click on summary text for fear that they will be taken to another screen and lose whatever information they've already provided. A consistent visual treatment (like the '►' bullet above) can help, as can using strong action words like 'add' or 'show'.
 
 
 ### Progressive disclosure in forms
 
-Used carefully, progressive disclosure can improve the user experience of forms by hiding those parts of the form that the user doesn't need to complete. Remember though:
+Used carefully, progressive disclosure can improve the user experience of forms by hiding those parts of the form that the user doesn't need to complete.
+
+Remember though:
 
 * try to simplify the form so you don't need to use this technique
 * don't hide parts of the form that must be completed
