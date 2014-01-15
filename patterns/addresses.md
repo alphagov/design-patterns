@@ -9,7 +9,7 @@ phases:
   - alpha
 ---
 
-There are a couple of ways to capture addresses. Which one you choose will depend on what you want to do with the address and where geographically they are likely to come from. We'll discuss three approaches here:
+There are a couple of ways to capture addresses. Which one you choose will depend on what you want to do with the address and which geographical regions you need to support. We'll discuss three approaches here:
 
 1. Free text box
 2. Multiple fields
@@ -46,7 +46,7 @@ A single, multi-line text box where users write out the address in full.
 
 ### 2. Multiple fields
 
-The address is broken down into multiple fields. Here's an example that works for UK addresses:
+The address is broken down into multiple fields. Here's an example that works for simple UK addresses:
 
 <div class="pattern-example">
 	<form class="form">
@@ -83,11 +83,11 @@ The address is broken down into multiple fields. Here's an example that works fo
 
 * Hard to find a single format that works for a broad range of regions
 * No guarantee that people will use the fields as you intended
-* Can't post addresses from the clipboard
+* Can't easily paste addresses from the clipboard
 
 #### Use when...
 
-* you know which regions the addresses will come from and can find a suitable format for them
+* you know which regions the addresses will come from and can find a format that supports them all
 
 #### Guidelines for UK addresses
 
@@ -103,6 +103,15 @@ The address is broken down into multiple fields. Here's an example that works fo
 
 Sometimes referred to as 'postcode lookup'. An address finder lets users specify a UK address by inputing their postcode and selecting the address from a list.
 
+#### Remember...
+
+* to make it clear that the address finder only works for UK addresses
+* to provide a manual option for people with international adresses or addresses that are missing or badly formed in the Royal Mail database
+
+#### Example
+
+Here's an example that combines an address finder, with a free text box. This approach potentially combines the benefit of structured data for UK addresses, whilst allowing for any format for non-UK addresses.
+
 <div class="pattern-example">
 	<form class="form">
 		<div class="js-address-finder">
@@ -114,8 +123,6 @@ Sometimes referred to as 'postcode lookup'. An address finder lets users specify
 	</form>
 </div>
 
-#### Remember...
+Note: The JavaScript in the above example is purely to demonstrate the interaction, it doesn't actually 'work'.
 
-* to make it clear that the address finder only works for UK addresses
-* to provide a manual option for people with international adresses or addresses that are missing or badly formed in the Royal Mail database
 

@@ -60,7 +60,7 @@ $(document).ready(function () {
     $(this).before(
         '<div class="control">' +
         '<label for="postcode-lookup">Postcode</label> ' +
-        '<input type="text" id="postcode-lookup" class="postcode"><span id="find-uk-address" class="button">Find UK address</span>' +    
+        '<input type="text" id="postcode-lookup" class="postcode"><span id="find-uk-address" class="button-secondary">Find UK address</span>' +    
         '</div>' +
         '<p id="enter-address-manually"><span class="link-style">Enter address manually</span></p>'
     );  

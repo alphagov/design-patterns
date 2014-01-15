@@ -53,8 +53,8 @@ However, don't rely on people spotting any links in a progress bar - they often 
 	<figcaption>
 		<dl class="code-links">
 			<dt>View:</dt>
-			<dd><a href="#">HTML</a></dd>
-			<dd><a href="#">Sass</a></dd>
+			<dd><a href="https://github.com/alphagov/design-patterns/blob/gh-pages/_includes/pattern-examples/_vertical-progress-bar.html">HTML</a></dd>
+			<dd><a href="https://github.com/alphagov/design-patterns/blob/gh-pages/patterns/assets/sass/helpers/_progress-indicator.scss">Sass</a></dd>
 		</dl>
 		Example 3: Vertical progress bar
 	</figcaption>
