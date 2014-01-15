@@ -11,9 +11,9 @@ phases:
 
 There are a couple of ways to capture addresses. Which one you choose will depend on what you want to do with the address and which geographical regions you need to support. We'll discuss three approaches here:
 
-1. Free text box
-2. Multiple fields
-3. Address finder
+1. [Free text box](#free-text-box)
+2. [Multiple fields](#multiple-fields)
+3. [Address finder](#address-finder)
 
 ### 1. Free text box
 
