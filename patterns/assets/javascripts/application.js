@@ -3,7 +3,7 @@ $(document).ready(function () {
   // Convert a text field to a 'Title' select box
 
   jQuery.fn.convertToTitleSelect = function() {
-    var titles = ['Mr', 'Mrs', 'Miss', 'Ms', 'Dr'];
+    var titles = ['', 'Mr', 'Ms', 'Mrs', 'Miss', 'Dr'];
     if($(this).val()==''){
       $(this).attr('id', 'title-hide');
     } else if (!jQuery.inArray($(this).val(), titles)) {
