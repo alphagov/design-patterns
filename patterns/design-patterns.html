@@ -70,6 +70,9 @@ phases:
           <p>
             @include bold-[size]($line-height, $line-height-640)
           </p>
+          <p class="note">
+            $line-height and $line-height-640 are both optional. 
+          </p>
         </details>
         
       </div>
@@ -134,6 +137,9 @@ phases:
 
         </div>
         
+        <div class="reference-url">
+          <a href="https://github.com/alphagov/govuk_frontend_toolkit?source=c#core-styles">Core styles</a>
+        </div>
       </div>
       
       <div class="section">
@@ -144,12 +150,15 @@ phases:
         </p>
         
         <details>
-          <summary>View front end toolkit mixins</summary>
+          <summary>View front-end toolkit mixins</summary>
           <p>
             @include heading-[size]($line-height, $line-height-640)
           </p>
           <p>
             @include copy-[size]($line-height, $line-height-640)
+          </p>
+          <p class="note">
+            $line-height and $line-height-640 are both optional. 
           </p>
         </details>
       </div>
@@ -182,7 +191,7 @@ phases:
         </div>
         
         <div class="reference-url">
-          <a href="https://github.com/alphagov/govuk_frontend_toolkit?source=c#heading-and-copy-styles">Toolkit: Heading and copy styles</a>
+          <a href="https://github.com/alphagov/govuk_frontend_toolkit?source=c#heading-and-copy-styles">Heading and copy styles</a>
         </div>
         
       </div>
@@ -227,6 +236,7 @@ phases:
         </div>
       </div>
       
+      <!-- Data -->
       <div class="section">
         <h2 class="section-header">Data</h2>
         <p>
@@ -234,6 +244,7 @@ phases:
         </p>
       </div>
       
+      <!-- Data : Example 1 -->
       <div class="example">
         
         <div class="example-compare">
@@ -250,6 +261,7 @@ phases:
         
       </div>
       
+      <!-- Data : Example 2 -->
       <div class="example">
         
         <div class="example-compare">
@@ -267,6 +279,7 @@ phases:
         
       </div>
       
+      <!-- Data : Example 3 -->
       <div class="example">
         
         <div class="example-compare">
@@ -280,19 +293,16 @@ phases:
         <div class="example-compare">
           <div class="bold-48">48PX</div>
           <p class="copy-16 copy-16-tight">16px description</p>
-          <div class="example-url">
-            <a href="https://www.gov.uk/#departments-and-policy">Gov.UK Departments and policy</a>
-          </div>
         </div>
+        
       </div>
       
-      <!--
-      <div class="section-header">
-        <h2>Links</h2>
-      </div>
-      <div class="section-text">
+      
+      <!-- Links -->
+      <div class="section">
+        <h2 class="section-header">Links</h2>
         <p>
-          The frond end toolkit provides variables for link colours
+          
         </p>
       </div>
       
@@ -307,16 +317,97 @@ phases:
           <a href="https://www.gov.uk/browse/driving">Gov.UK Driving</a>
         </div>
       </div>
-      -->
+      
+      <!-- Buttons -->
+      
+      <div class="section">
+        <h2 class="section-header">Buttons</h2>
+        <p>
+          Buttons should have a default colour (such as green). Alternative colours should be possible but only to indicate different actions.
+        </p>
+        <p>
+          By default, buttons are the browser default (16px), you may well want to increase this to the standard body copy size (19px).
+        </p>
+        <details>
+          <summary>View front-end toolkit mixin</summary>
+          <p>
+            @mixin button($colour)
+          </p>
+          <p class="note">
+            $colour - the background colour of the button (default is $green).
+          </p>
+        </details>
+        
+      </div>
+      
+      <div class="example">
+        
+        <h4 class="example-title">Primary actions</h4>
+        
+        <a href="#" class="button">Button</a>
+        
+        <h4 class="example-title">Secondary actions</h4>
+        
+        <a href="#" class="button button-secondary">Button</a>
+        
+        <h4 class="example-title">Warning actions</h4>
+        
+        <a href="#" class="button button-warning">Button</a>
+        
+        <div class="reference-url">
+          <a href="https://www.gov.uk/service-manual/user-centered-design/resources/buttons.html">Service Design Manual : Buttons</a>
+        </div>
+      </div>
+      
+      <!-- Grids -->
+      <div class="section">
+        <h2 class="section-header">Grids</h2>
+        <p>
+          Tablet or desktop layouts use either a three or four column fluid grid. Both grids can be present on a single page.
+        </p>
+        <p>
+          Narrower layouts intended for mobile devices or older web-browsers might find it simple to use a single column.
+        </p>
+      </div>
+      
+      <div class="example">
+        Examples to follow.
+      </div>
+      
+      <!-- Colours -->
+      <div class="section">
+        <h2 class="section-header">Colours</h2>
+        <p>
+          The Design Service Manual lists the GOV.UK colour palette showing HEX values, along with their corresponding Sass variable names.
+        </p>
+        <p>
+          Use the Sass variables defined in ‘colours.scss’ of the GOV.UK front-end toolkit to create classnames for the colours you require.
+        </p>
+      </div>
+      
+      <div class="example">
+        
+        <h3 class="example-title">GOV.UK colour palette</h3>
+        
+        <div class="swatch colour-hm-government">
+        </div>
+        <p>sass-variable: $hm-government</p>
+        
+        
+        <div class="swatch colour-nhs">
+        </div>
+        <p>sass-variable: $department-of-health</p>
+        
+        <div class="reference-url">
+          <a href="https://www.gov.uk/service-manual/user-centered-design/resources/colour-palettes">GOV.UK colour palette with Sass variable names</a>, <a href="http://alphagov.github.io/design/gov.uk.colours/">GOV.UK colour palette with HEX and RGB values</a>
+        </div>
+        
+      </div>
       
       <!--
          
       <div class="section-header">
         <h2>Forms</h2>
-      </div>
-      
-      <div class="section-header">
-        <h2>Buttons</h2>
       </div>
       
       <div class="section-header">

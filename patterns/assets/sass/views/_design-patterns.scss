@@ -3,29 +3,28 @@
 // Pattern Library - header
 
 .pattern-header {
-  @extend %contain-floats;
-  padding: $gutter-half 0;
-  @include media(tablet) {
-    padding: $gutter 0;
-  }
-  margin-bottom: $gutter;
-  .title {
-    float: left;
-    width: $two-thirds;
-    h1, p {
-      padding: 0 $gutter-half;
-    }
-    h1 {
-      @include core-48;
-      font-weight: bold;
-    }
-    p {
-      @include core-36;
-      color: $secondary-text-colour;
-    }
-  }
+   @extend %contain-floats;
+   padding: $gutter-half 0;
+   @include media(tablet) {
+      padding: $gutter 0;
+   }
+   margin-bottom: $gutter;
+   .title {
+      float: left;
+      width: $two-thirds;
+      h1, p {
+         padding: 0 $gutter-half;
+      }
+      h1 {
+         @include core-48;
+         font-weight: bold;
+      }
+      p {
+         @include core-36;
+         color: $secondary-text-colour;
+      }
+   }
 }
-
 
 // Design Patterns - Explanatory sections
 
@@ -56,6 +55,12 @@
    p {
       @include copy-19;
       margin: $gutter-half 0;
+      max-width: 75%;
+   }
+   
+   .note {
+      @include copy-16;
+      margin: $gutter-half 0;
    }
    
    details {
@@ -71,12 +76,11 @@
    
    border: 1px solid #bfc1c3;
    outline: 20px solid #f8f8f8;
-   margin: 30px 0 60px 0;
+   margin:  40px 0 60px;
    padding: 30px;
    overflow: hidden;
    
    .example-url {
-      display: inline-block;
       margin-top: $gutter;
    }
    .example-url:before {
@@ -84,8 +88,7 @@
    }
    
    .reference-url {
-      display: inline-block;
-      margin-top: $gutter;
+      padding-top: $gutter;
    }
    .reference-url:before {
       content: "Reference: ";
@@ -101,6 +104,24 @@
       margin-right: 15px ;
    }
    
+   .example-title {
+      @include copy-19;
+      font-weight: bold;
+   }
+   
+   .swatch {
+      width: $gutter*2;
+      height: $gutter*2;
+      display: inline-block;
+      margin-right: $gutter;
+      margin-top: $gutter-half;
+   }
+   .colour-hm-government {
+      background: $hm-government;
+   }
+   .colour-nhs {
+      background: $department-of-health;
+   }
 }
 
 .example-compare {
@@ -217,6 +238,8 @@
       margin-bottom: $gutter-half+5;
    }
    
+   // Tabular numbers 
+   
    // External links
    .external-link-heading {
      @include external-link-heading;
@@ -252,7 +275,7 @@
       color: $secondary-text-colour;
    }
    
-   // Example link colours
+   // Link colours
    
    .link {
       color: $link-colour;
@@ -264,6 +287,27 @@
       color: $link-visited-colour;
    }
    
+   // Colours 
    
+   // Buttons
+   
+   .button {
+     @include button;
+     @include core-19;
+   }
+   
+   .button-secondary {
+     @include button($grey-3);
+     @include core-19;
+   }
+   
+   .button-warning {
+     @include button($red);
+     @include core-19;
+   }
+   
+   .example .button {
+      margin-bottom: $gutter;
+   }
    
 }
