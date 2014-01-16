@@ -118,6 +118,11 @@ main.pattern {
         padding: 10px 5px 0 20px;
         margin: 0 -30px;
       }
+      &.wide{
+        @include media(tablet){
+          margin-right: -35%;
+        } 
+      }
     }
     .html-example{
       code{

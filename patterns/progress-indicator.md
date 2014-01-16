@@ -35,11 +35,11 @@ This is the preferred approach and should be tried before moving on to any of th
 
 ### Example 2: Horizontal progress bar
 
-<div class="pattern-example">
+<div class="pattern-example wide">
 	{% include pattern-examples/_horizontal-progress-bar.html %}
 </div>
 
-A horizontal progress bar outlines each of the steps involved in a transaction. This can help if your users need reminding of what each step involves. 
+A horizontal progress bar labels each of the steps involved in a transaction. This can help if your users need reminding of what each step involves or of how long each step might take. 
 
 You can also use the progress bar as an additional form of navigation. Don't rely on people using it like this though - you'll still need to provide 'Back' and 'Next' links at the bottom of each screen.
 
@@ -64,7 +64,7 @@ You'll need to keep the number of steps and their names short in order to fit th
 
 For some transactions you'll want to let users complete the steps in any order, or let them partially complete steps. In general this is harder to do in a usable way, so only do it if the benefits to the user outweight the costs.
 
-We recommend using a vertical progress bar for this. The steps aren't numbered because they can be completed in any order. The vertical alignment allows room for more steps and also space to indicate how complete each step is.
+We recommend using a vertical progress bar for this. The steps aren't numbered because they can be completed in any order. The vertical alignment allows room for more steps and also to indicate how complete each step is.
 
 Don't forget you'll need to let people know when they can progress past these steps to the next part of the transaction.
 
@@ -81,7 +81,7 @@ We're not recommending that you use these. So far we've not seen any examples wh
 
 There's one possible use case, where:
 
-* there are a large number of similarly sized steps
+* there are a large number of small, similarly sized steps
 * the total number of steps changes depending on how the user completes them
 
 A survey is one example of the above. If anyone wants to test the two approaches on a survey we'd be very interested in the results.
@@ -89,13 +89,7 @@ A survey is one example of the above. If anyone wants to test the two approaches
 
 ### Dealing with branching transaction flows
 
-If the total number of steps changes as the user moves through them this may confuse your users.
-
-One way around this is not to specify how many steps are left, but this does remove one of the key benefits of the pattern.
-
-Another way is to group steps into larger chunks that don't change and represent those instead.
-
-Finally, you could show all the steps but allow users to simply skip over the ones that don't apply.
+If the total number of steps changes as the user moves through the transaction then this may confuse your users. One way to avoid the issue is not to specify how many steps are left, but this does remove one of the key benefits of the pattern. Another approach is to combine steps into larger chunks that don't change and then represent those instead.
 
 As always, testing with your users is only way to decide on the best approach.
 

@@ -333,22 +333,19 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     .progress-indicator.horizontal li.done span, .progress-indicator.vertical li.done span {
       font-weight: bold;
       color: #006435;
-          /*
-
-          text-indent: -9999px;
-          margin-right: 5px;
-          margin-left: -16px;
-          width: 5px;
-          margin-top: -23px;
-          height: 10px;
-          border-right: 3px solid;
-          border-bottom: 3px solid;
-          border-color: $green;
-          -webkit-transform: rotate(45deg);
-          position: absolute;
-          */ }
-.progress-indicator.horizontal li.done span {
-  display: none; }
+      text-indent: -9999px;
+      margin-right: 5px;
+      margin-left: -16px;
+      width: 5px;
+      margin-top: -23px;
+      height: 10px;
+      border-right: 3px solid;
+      border-bottom: 3px solid;
+      border-color: #006435;
+      -webkit-transform: rotate(45deg);
+      position: absolute; }
+.progress-indicator.horizontal li {
+  margin-left: 20px; }
 .progress-indicator.vertical {
   width: 25%;
   float: left; }
@@ -1187,6 +1184,10 @@ main.pattern .content .html-example {
     border-top: 1px solid #bfc1c3;
     padding: 10px 5px 0 20px;
     margin: 0 -30px; }
+  @media (min-width: 641px) {
+    main.pattern .content .pattern-example.wide,
+    main.pattern .content .html-example.wide {
+      margin-right: -35%; } }
 main.pattern .content .html-example code {
   margin-top: -20px;
   margin-left: -70px;
@@ -1337,22 +1338,19 @@ main.progress-indicator .pattern-example .progress-indicator.horizontal, main.pr
     main.progress-indicator .pattern-example .progress-indicator.horizontal li.done span, main.progress-indicator .pattern-example .progress-indicator.vertical li.done span {
       font-weight: bold;
       color: #006435;
-          /*
-
-          text-indent: -9999px;
-          margin-right: 5px;
-          margin-left: -16px;
-          width: 5px;
-          margin-top: -23px;
-          height: 10px;
-          border-right: 3px solid;
-          border-bottom: 3px solid;
-          border-color: $green;
-          -webkit-transform: rotate(45deg);
-          position: absolute;
-          */ }
-main.progress-indicator .pattern-example .progress-indicator.horizontal li.done span {
-  display: none; }
+      text-indent: -9999px;
+      margin-right: 5px;
+      margin-left: -16px;
+      width: 5px;
+      margin-top: -23px;
+      height: 10px;
+      border-right: 3px solid;
+      border-bottom: 3px solid;
+      border-color: #006435;
+      -webkit-transform: rotate(45deg);
+      position: absolute; }
+main.progress-indicator .pattern-example .progress-indicator.horizontal li {
+  margin-left: 20px; }
 main.progress-indicator .pattern-example .progress-indicator.vertical {
   width: 25%;
   float: left; }

@@ -64,8 +64,7 @@
 
           font-weight: bold;
           color: $green;
-          /*
-
+          
           text-indent: -9999px;
           margin-right: 5px;
           margin-left: -16px;
@@ -77,14 +76,17 @@
           border-color: $green;
           -webkit-transform: rotate(45deg);
           position: absolute;
-          */
+          
         }
       }
     }
   }
   &.horizontal{
+    li{
+      margin-left: 20px;
+    }
     li.done span{
-      display: none;
+      //display: none;
     }
   }
   &.vertical{
