@@ -7,7 +7,7 @@ phases:
 
 If you're designing or building services for GOV.UK this library can help you.
 It contains guidance and examples for some of the more common design problems.
-If you'd like to suggest a new pattern you can do so on the [design patterns wiki](https://designpatterns.hackpad.com/Pattern-library-0eUk1OdHvql).
+If you'd like to discuss a pattern or suggest a new one you can do this on the [design patterns wiki](https://designpatterns.hackpad.com/Pattern-library-0eUk1OdHvql).
 
 ####The guide
 
@@ -28,7 +28,7 @@ If you'd like to suggest a new pattern you can do so on the [design patterns wik
 1. Don't use a pattern unless there's a genuine need for it
 2. Try the patterns here before creating your own versions
 3. If they don't work for your users, change them until they do
-4. Lets us know if you use or change a pattern, so we can share 
+4. [Let us know](https://designpatterns.hackpad.com/Pattern-library-0eUk1OdHvql) if you use or change a pattern
 
 ## Code examples
 
