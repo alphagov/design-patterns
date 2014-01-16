@@ -32,132 +32,203 @@ phases:
   <div class="block content">
     <div class="inner-block">
       
-      <div class="section-header">
-        <h2>The importance of style guides</h2>
-      </div>
-      
-      <div class="section-text">
+      <div class="section">
+        
+        <h2 class="section-header">The importance of style guides</h2>
+        
         <blockquote>
           <p>
-            "Documenting reusable styles is invaluable when maintaining a brand identity over time, particularly when more than one person (who may not be a designer) is producing material."
+          "Documenting reusable styles is invaluable when maintaining a brand identity over time, particularly when more than one person (who may not be a designer) is producing material."
+          </p>
+          <p class="cite">
+            <a href="http://24ways.org/2011/front-end-style-guides/">Anna Debenham</a>
           </p>
         </blockquote>
-        <p class="cite"><a href="http://24ways.org/2011/front-end-style-guides/">Anna Debenham</a></p>
+        
       </div>
       
-      <div class="section-header">
-        <h2>Typography specifications</h2>
-      </div>
-      
-      <div class="section-text">
+      <!-- Typography -->
+      <div class="section">
+        
+        <h2 class="section-header">Typography specifications</h2>
+        
         <p>
           Sizes are appropriate for wider (desktop or tablet) viewports you might want to reduce the sizes for smaller screens, although you should try to retain hierarchies.
         </p>
+        
+        <h3 class="section-title">Core regular and bold styles</h3>
+        
+        <p>
+          Core styles are defined as base font styles with no extra padding.
+        </p>
+        
+        <details>
+          <summary>View front-end toolkit mixins</summary>
+          <p>
+            @include core-[size]($line-height, $line-height-640)
+          </p>
+          <p>
+            @include bold-[size]($line-height, $line-height-640)
+          </p>
+        </details>
+        
       </div>
       
       <div class="example">
-        <div class="core-80">
-          80px/80 Regular
+        
+        <div class="example-compare">
+          
+          <div class="core-80">
+            80px/80 Regular
+          </div>
+          <div class="core-48">
+            48px/50 Regular
+          </div>
+          <div class="core-36">
+            36px/40 Regular
+          </div>
+          <div class="core-27">
+            27px/30 Regular
+          </div>
+          <div class="core-27">
+            24px/30 Regular
+          </div>
+          <div class="core-19">
+            19px/25 Regular
+          </div>
+          <div class="core-16">
+            16px/20 Regular
+          </div>
+          <div class="core-14">
+            14px/20 Regular
+          </div>
+        
         </div>
-        <div class="core-48">
-          48px/50 Regular
+        
+        <div class="example-compare">
+        
+            <div class="bold-80">
+              80px/80 Bold
+            </div>
+            <div class="bold-48">
+              48px/50 Bold
+            </div>
+            <div class="bold-36">
+              36px/40 Bold
+            </div>
+            <div class="bold-27">
+              27px/30 Bold
+            </div>
+            <div class="bold-27">
+              24px/30 Bold
+            </div>
+            <div class="bold-19">
+              19px/25 Bold
+            </div>
+            <div class="bold-16">
+              16px/20 Bold
+            </div>
+            <div class="bold-14">
+              14px/20 Bold
+            </div>
+
         </div>
-        <div class="core-36">
-          36px/40 Regular
-        </div>
-        <div class="core-27">
-          27px/30 Regular
-        </div>
-        <div class="core-27">
-          24px/30 Regular
-        </div>
-        <div class="core-19">
-          19px/25 Regular
-        </div>
-        <div class="core-16">
-          16px/20 Regular
-        </div>
-        <div class="core-14">
-          14px/20 Regular
-        </div>
+        
+      </div>
+      
+      <div class="section">
+        
+        <h3 class="section-title">Heading and copy styles</h3>
+        <p>
+          Heading and copy styles have added padding to ensure a consistent baseline vertical grid. By default these are a regular font weight.
+        </p>
+        
+        <details>
+          <summary>View front end toolkit mixins</summary>
+          <p>
+            @include heading-[size]($line-height, $line-height-640)
+          </p>
+          <p>
+            @include copy-[size]($line-height, $line-height-640)
+          </p>
+        </details>
       </div>
       
       <div class="example">
-        <div class="bold-80">
-          80px/80 Bold
+        
+        <div class="heading-80">
+          80px heading
         </div>
-        <div class="bold-48">
-          48px/50 Bold
+        <div class="heading-48">
+          48px heading
         </div>
-        <div class="bold-36">
-          36px/40 Bold
+        <div class="heading-36">
+          36px heading
         </div>
-        <div class="bold-27">
-          27px/30 Bold
+        <div class="heading-27">
+          27px heading
         </div>
-        <div class="bold-27">
-          24px/30 Bold
+        <div class="heading-24">
+          24px heading
         </div>
-        <div class="bold-19">
-          19px/25 Bold
+        <div class="copy-19">
+          19px copy
         </div>
-        <div class="bold-16">
-          16px/20 Bold
+        <div class="copy-16">
+          16px copy
         </div>
-        <div class="bold-14">
-          14px/20 Bold
+        <div class="copy-14">
+          14px copy
         </div>
+        
+        <div class="reference-url">
+          <a href="https://github.com/alphagov/govuk_frontend_toolkit?source=c#heading-and-copy-styles">Toolkit: Heading and copy styles</a>
+        </div>
+        
       </div>
       
-      <div class="section-header">
-        <h2>Page titles</h2>
+      <div class="section">
+        <h4 class="section-subtitle">Page titles</h4>
       </div>
       
       <div class="example">
-        <h2 class="bold-48">48px Page title</h2>
+        <h2 class="heading-48 heading-bold">48px Page title</h2>
         <div class="example-url">
           <a href="https://www.gov.uk/browse/driving">Driving and transport</a>
         </div>
       </div>
       
-      <h3 class="section-title">
-        Titling on content pages
-      </h3>
+      <div class="section">
+        <h4 class="section-subtitle">Titling on content pages</h4>
+      </div>
       
       <div class="example">
-        <p class="heading-27 text-secondary">27px section name</p>
-        <h2 class="bold-36">36px the title of this document</h2>
+        <div class="heading-27 text-secondary">27px section name</div>
+        <div class="heading-36 heading-bold">36px the title of this document</div>
         <div class="example-url">
           <a href="https://www.gov.uk/government/publications/dwp-business-plan-transparency-measures">Gov.UK publications</a>
         </div>
       </div>
       
-      <div class="section-header">
-        <h2>Hierarchy and spacing</h2>
-      </div>
-      
-      <div class="section-text">
-        
+      <div class="section">
+        <h3 class="section-title">Hierarchy and spacing</h3>
         <p>
-          Sizing your body copy appropriately for the column with should be your starting point.
+          Sizing your body copy appropriately for the column with should be your starting point. <br>
           Spacing under headlines and body text is commonly multiples of 15px.
         </p>
       </div>
       
       <div class="example">
-        <h1 class="heading-48">48px regular</h1>
-        <h2 class="bold-27 space-15">Heading 27px bold</h2>
-        <h3 class="bold-19">Subheading 19px bold</h3>
-        <p class="copy-19">
+        <div class="heading-48 heading-underline">48px regular</div>
+        <div class="heading-27 heading-bold">Heading 27px bold</div>
+        <div class="copy-19 copy-bold">Subheading 19px bold</div>
+        <div class="copy-19">
           Body 19px regular. Departments and their agencies are responsible for putting government policy into practice.
-        </p>
+        </div>
       </div>
       
-      <div class="section-header">
-        <h2>Data</h2>
-      </div>
-      
-      <div class="section-text">
+      <div class="section">
+        <h2 class="section-header">Data</h2>
         <p>
           Pulling out interesting figures from data sets is a good way to make them more approachable without resorting to photography.
         </p>
@@ -172,7 +243,6 @@ phases:
             <a href="https://www.gov.uk/#departments-and-policy">Gov.UK Departments and policy</a>
           </div>
         </div>
-        
         <div class="example-compare">
           <div class="bold-80">80PX</div>
           <p class="copy-16">16px description</p>
@@ -195,12 +265,6 @@ phases:
           <div class="bold-80">80px</div>
         </div>
         
-      </div>
-      
-      <div class="section-text">
-        <p>
-          A smaller version is also used.
-        </p>
       </div>
       
       <div class="example">
@@ -226,7 +290,27 @@ phases:
       <div class="section-header">
         <h2>Links</h2>
       </div>
+      <div class="section-text">
+        <p>
+          The frond end toolkit provides variables for link colours
+        </p>
+      </div>
       
+      <div class="example">
+        
+        <ul class="example-list">
+          <li><a href="#" class="link">Default link colour</a> $link-colour</li>
+          <li><a href="#" class="link-hover">Hover link colour</a> $link-hover-colour</li>
+        </ul>
+        
+        <div class="example-url">
+          <a href="https://www.gov.uk/browse/driving">Gov.UK Driving</a>
+        </div>
+      </div>
+      -->
+      
+      <!--
+         
       <div class="section-header">
         <h2>Forms</h2>
       </div>

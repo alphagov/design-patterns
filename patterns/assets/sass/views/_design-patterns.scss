@@ -1,30 +1,5 @@
 // Prevent the Pattern Library styles overriding any default template or frontend_toolkit styles
 
-// Pattern Library - Example box
-
-.example {
-   @extend %contain-floats;
-   
-   border: 1px solid #bfc1c3;
-   outline: 20px solid #f8f8f8;
-   margin: 30px $gutter-half 60px $gutter-half;
-   padding: 30px;
-   overflow: hidden;
-   
-   .example-url {
-      display: inline-block;
-      margin-top: $gutter;
-   }
-   .example-url:before {
-      content: "Example: ";
-   }
-}
-
-.example-compare {
-   width: 50%;
-   float: left;
-}
-
 // Pattern Library - header
 
 .pattern-header {
@@ -51,26 +26,86 @@
   }
 }
 
-// Pattern Library - Guide text
 
-.section-header {
-   border-bottom: 5px solid #000;
+// Design Patterns - Explanatory sections
+
+.section {
+   
    margin-bottom: $gutter;
    
-   h2 {
-      @include bold-36;
-      padding-bottom: 10px;
+   .section-header {
+      @include heading-36;
    }
+   
+   // Add underline for now
+   .section-header {
+      border-bottom: 5px solid #000;
+      padding-bottom: 1px;
+   }
+   
+   .section-title {
+      @include heading-27;
+      font-weight: 700;
+   }
+   
+   .section-subtitle {
+      @include copy-19;
+      font-weight: bold;
+   }
+   
+   p {
+      @include copy-19;
+      margin: $gutter-half 0;
+   }
+   
+   details {
+      padding-left: $gutter-half;
+   }
+   
 }
 
-.section-title {
-   @include bold-24;
-   margin-bottom: $gutter-half;
+// Pattern Library - Example box
+
+.example {
+   @extend %contain-floats;
+   
+   border: 1px solid #bfc1c3;
+   outline: 20px solid #f8f8f8;
+   margin: 30px 0 60px 0;
+   padding: 30px;
+   overflow: hidden;
+   
+   .example-url {
+      display: inline-block;
+      margin-top: $gutter;
+   }
+   .example-url:before {
+      content: "Example: ";
+   }
+   
+   .reference-url {
+      display: inline-block;
+      margin-top: $gutter;
+   }
+   .reference-url:before {
+      content: "Reference: ";
+   }
+   
+   .example-list {
+      list-style: none;
+   }
+   .example-list li {
+      margin-bottom: 15px;
+   }
+   .example-list li a{
+      margin-right: 15px ;
+   }
+   
 }
 
-.section-text {
-   @include copy-19;
-   margin: $gutter 0 $gutter 0;
+.example-compare {
+   width: 50%;
+   float: left;
 }
 
 // Let's create styles for all the mixins in the front-end toolkit _typography.css file
@@ -107,7 +142,7 @@
       @include core-14;
    }
    
-   // Bold
+   // Bold text
    .bold-80 {
       @include bold-80;
    }
@@ -149,6 +184,15 @@
    .heading-24 {
       @include heading-24;
    }
+   .heading-bold {
+      font-weight: 700;
+   }
+   
+   .heading-underline {
+      border-bottom: 5px solid #000;
+      padding-bottom: 1px;
+      margin-bottom: 23px;
+   }
    
    // Copy
    .copy-19 {
@@ -159,6 +203,9 @@
    }
    .copy-14 {
       @include copy-14;
+   }
+   .copy-bold {
+      font-weight: 700;
    }
    
    .copy-16-tight {
@@ -205,8 +252,18 @@
       color: $secondary-text-colour;
    }
    
-   // Spacing
-   // Let's create consistent spacing between content blocks
-   // Since we're using .group to clear, we can re-use this for now
+   // Example link colours
+   
+   .link {
+      color: $link-colour;
+   }
+   .link-hover {
+      color: $link-hover-colour;
+   }
+   .link-visited {
+      color: $link-visited-colour;
+   }
+   
+   
    
 }

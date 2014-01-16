@@ -36,7 +36,7 @@
 
 */
 #content:after, #content .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after, .service-header.v2 header:after, .service-header.v3 header:after, .date-of-birth:after, main.home header:after, main.pattern header:after, main.pattern .content .pattern-example:after,
-main.pattern .content .html-example:after, main.pattern .content .code-links:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ol:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ul:after, main.progress-indicator .pattern-example .progress-indicator.vertical ol:after, main.progress-indicator .pattern-example .progress-indicator.vertical ul:after, .example:after, .pattern-header:after {
+main.pattern .content .html-example:after, main.pattern .content .code-links:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ol:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ul:after, main.progress-indicator .pattern-example .progress-indicator.vertical ol:after, main.progress-indicator .pattern-example .progress-indicator.vertical ul:after, .pattern-header:after, .example:after {
   content: "";
   display: block;
   clear: both; }
@@ -88,7 +88,7 @@ main.pattern .content .html-example:after, main.pattern .content .code-links:aft
 
 */
 #content:after, #content .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after, .service-header.v2 header:after, .service-header.v3 header:after, .date-of-birth:after, main.home header:after, main.pattern header:after, main.pattern .content .pattern-example:after,
-main.pattern .content .html-example:after, main.pattern .content .code-links:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ol:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ul:after, main.progress-indicator .pattern-example .progress-indicator.vertical ol:after, main.progress-indicator .pattern-example .progress-indicator.vertical ul:after, .example:after, .pattern-header:after {
+main.pattern .content .html-example:after, main.pattern .content .code-links:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ol:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ul:after, main.progress-indicator .pattern-example .progress-indicator.vertical ol:after, main.progress-indicator .pattern-example .progress-indicator.vertical ul:after, .pattern-header:after, .example:after {
   content: "";
   display: block;
   clear: both; }
@@ -1599,22 +1599,6 @@ main.transaction-4 .content {
         padding-top: 0;
         padding-bottom: 5px; } }
 
-.example {
-  border: 1px solid #bfc1c3;
-  outline: 20px solid #f8f8f8;
-  margin: 30px 15px 60px 15px;
-  padding: 30px;
-  overflow: hidden; }
-  .example .example-url {
-    display: inline-block;
-    margin-top: 30px; }
-  .example .example-url:before {
-    content: "Example: "; }
-
-.example-compare {
-  width: 50%;
-  float: left; }
-
 .pattern-header {
   padding: 15px 0;
   margin-bottom: 30px; }
@@ -1649,52 +1633,107 @@ main.transaction-4 .content {
           font-size: 24px;
           line-height: 1.04167; } }
 
-.section-header {
-  border-bottom: 5px solid #000;
+.section {
   margin-bottom: 30px; }
-  .section-header h2 {
+  .section .section-header {
     font-family: "nta", Arial, sans-serif;
     font-size: 36px;
     line-height: 1.11111;
     font-weight: 400;
     text-transform: none;
-    font-weight: 700;
-    padding-bottom: 10px; }
+    padding-top: 8px;
+    padding-bottom: 7px; }
     @media (max-width: 640px) {
-      .section-header h2 {
+      .section .section-header {
         font-size: 24px;
         line-height: 1.04167; } }
+    @media (min-width: 641px) {
+      .section .section-header {
+        padding-top: 6px;
+        padding-bottom: 9px; } }
+  .section .section-header {
+    border-bottom: 5px solid #000;
+    padding-bottom: 1px; }
+  .section .section-title {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 27px;
+    line-height: 1.11111;
+    font-weight: 400;
+    text-transform: none;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    font-weight: 700; }
+    @media (max-width: 640px) {
+      .section .section-title {
+        font-size: 18px;
+        line-height: 1.11111; } }
+    @media (min-width: 641px) {
+      .section .section-title {
+        padding-top: 4px;
+        padding-bottom: 6px; } }
+  .section .section-subtitle {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 19px;
+    line-height: 1.31579;
+    font-weight: 400;
+    text-transform: none;
+    padding-top: 2px;
+    padding-bottom: 8px;
+    font-weight: bold; }
+    @media (max-width: 640px) {
+      .section .section-subtitle {
+        font-size: 16px;
+        line-height: 1.25; } }
+    @media (min-width: 641px) {
+      .section .section-subtitle {
+        padding-top: 0;
+        padding-bottom: 5px; } }
+  .section p {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 19px;
+    line-height: 1.31579;
+    font-weight: 400;
+    text-transform: none;
+    padding-top: 2px;
+    padding-bottom: 8px;
+    margin: 15px 0; }
+    @media (max-width: 640px) {
+      .section p {
+        font-size: 16px;
+        line-height: 1.25; } }
+    @media (min-width: 641px) {
+      .section p {
+        padding-top: 0;
+        padding-bottom: 5px; } }
+  .section details {
+    padding-left: 15px; }
 
-.section-title {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 24px;
-  line-height: 1.25;
-  font-weight: 400;
-  text-transform: none;
-  font-weight: 700;
-  margin-bottom: 15px; }
-  @media (max-width: 640px) {
-    .section-title {
-      font-size: 20px;
-      line-height: 1.2; } }
+.example {
+  border: 1px solid #bfc1c3;
+  outline: 20px solid #f8f8f8;
+  margin: 30px 0 60px 0;
+  padding: 30px;
+  overflow: hidden; }
+  .example .example-url {
+    display: inline-block;
+    margin-top: 30px; }
+  .example .example-url:before {
+    content: "Example: "; }
+  .example .reference-url {
+    display: inline-block;
+    margin-top: 30px; }
+  .example .reference-url:before {
+    content: "Reference: "; }
+  .example .example-list {
+    list-style: none; }
+  .example .example-list li {
+    margin-bottom: 15px; }
+  .example .example-list li a {
+    margin-right: 15px; }
 
-.section-text {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 19px;
-  line-height: 1.31579;
-  font-weight: 400;
-  text-transform: none;
-  padding-top: 2px;
-  padding-bottom: 8px;
-  margin: 30px 0 30px 0; }
-  @media (max-width: 640px) {
-    .section-text {
-      font-size: 16px;
-      line-height: 1.25; } }
-  @media (min-width: 641px) {
-    .section-text {
-      padding-top: 0;
-      padding-bottom: 5px; } }
+.example-compare {
+  width: 50%;
+  float: left; }
 
 .design-patterns .core-80 {
   font-family: "nta", Arial, sans-serif;
@@ -1944,6 +1983,12 @@ main.transaction-4 .content {
     .design-patterns .heading-24 {
       padding-top: 6px;
       padding-bottom: 4px; } }
+.design-patterns .heading-bold {
+  font-weight: 700; }
+.design-patterns .heading-underline {
+  border-bottom: 5px solid #000;
+  padding-bottom: 1px;
+  margin-bottom: 23px; }
 .design-patterns .copy-19 {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
@@ -1992,6 +2037,8 @@ main.transaction-4 .content {
     .design-patterns .copy-14 {
       padding-top: 5px;
       padding-bottom: 5px; } }
+.design-patterns .copy-bold {
+  font-weight: 700; }
 .design-patterns .copy-16-tight {
   line-height: 0.7;
   padding: 0; }
@@ -2038,3 +2085,9 @@ main.transaction-4 .content {
   background-position: right -388px; }
 .design-patterns .text-secondary {
   color: #6f777b; }
+.design-patterns .link {
+  color: #2e3191; }
+.design-patterns .link-hover {
+  color: #2e8aca; }
+.design-patterns .link-visited {
+  color: #2e3191; }
