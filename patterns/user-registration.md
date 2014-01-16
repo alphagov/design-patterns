@@ -2,7 +2,7 @@
 layout: pattern
 title: User registration
 page-class: 'user-registration'
-discuss-url: https://designpatterns.hackpad.com/Email-validation-m3xPAh7cKnt
+discuss-url: https://designpatterns.hackpad.com/Passwords-email-addresses-and-logins-4dSSBUhCYjj
 published: 16 January 2014
 updated: 16 January 2014
 phases:
