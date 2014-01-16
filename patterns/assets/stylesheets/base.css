@@ -1696,87 +1696,87 @@ main.transaction-4 .content {
       padding-top: 0;
       padding-bottom: 5px; } }
 
-.style-guide .core-80 {
+.design-patterns .core-80 {
   font-family: "nta", Arial, sans-serif;
   font-size: 80px;
   line-height: 1;
   font-weight: 400;
   text-transform: none; }
   @media (max-width: 640px) {
-    .style-guide .core-80 {
+    .design-patterns .core-80 {
       font-size: 53px;
       line-height: 1.03774; } }
-.style-guide .core-48 {
+.design-patterns .core-48 {
   font-family: "nta", Arial, sans-serif;
   font-size: 48px;
   line-height: 1.04167;
   font-weight: 400;
   text-transform: none; }
   @media (max-width: 640px) {
-    .style-guide .core-48 {
+    .design-patterns .core-48 {
       font-size: 32px;
       line-height: 1.09375; } }
-.style-guide .core-36 {
+.design-patterns .core-36 {
   font-family: "nta", Arial, sans-serif;
   font-size: 36px;
   line-height: 1.11111;
   font-weight: 400;
   text-transform: none; }
   @media (max-width: 640px) {
-    .style-guide .core-36 {
+    .design-patterns .core-36 {
       font-size: 24px;
       line-height: 1.04167; } }
-.style-guide .core-27 {
+.design-patterns .core-27 {
   font-family: "nta", Arial, sans-serif;
   font-size: 27px;
   line-height: 1.11111;
   font-weight: 400;
   text-transform: none; }
   @media (max-width: 640px) {
-    .style-guide .core-27 {
+    .design-patterns .core-27 {
       font-size: 18px;
       line-height: 1.11111; } }
-.style-guide .core-24 {
+.design-patterns .core-24 {
   font-family: "nta", Arial, sans-serif;
   font-size: 24px;
   line-height: 1.25;
   font-weight: 400;
   text-transform: none; }
   @media (max-width: 640px) {
-    .style-guide .core-24 {
+    .design-patterns .core-24 {
       font-size: 20px;
       line-height: 1.2; } }
-.style-guide .core-19 {
+.design-patterns .core-19 {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
   line-height: 1.31579;
   font-weight: 400;
   text-transform: none; }
   @media (max-width: 640px) {
-    .style-guide .core-19 {
+    .design-patterns .core-19 {
       font-size: 16px;
       line-height: 1.25; } }
-.style-guide .core-16 {
+.design-patterns .core-16 {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
   font-weight: 300;
   text-transform: none; }
   @media (max-width: 640px) {
-    .style-guide .core-16 {
+    .design-patterns .core-16 {
       font-size: 14px;
       line-height: 1.14286; } }
-.style-guide .core-14 {
+.design-patterns .core-14 {
   font-family: "nta", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   font-weight: 400;
   text-transform: none; }
   @media (max-width: 640px) {
-    .style-guide .core-14 {
+    .design-patterns .core-14 {
       font-size: 12px;
       line-height: 1.25; } }
-.style-guide .bold-80 {
+.design-patterns .bold-80 {
   font-family: "nta", Arial, sans-serif;
   font-size: 80px;
   line-height: 1;
@@ -1784,10 +1784,10 @@ main.transaction-4 .content {
   text-transform: none;
   font-weight: 700; }
   @media (max-width: 640px) {
-    .style-guide .bold-80 {
+    .design-patterns .bold-80 {
       font-size: 53px;
       line-height: 1.03774; } }
-.style-guide .bold-48 {
+.design-patterns .bold-48 {
   font-family: "nta", Arial, sans-serif;
   font-size: 48px;
   line-height: 1.04167;
@@ -1795,10 +1795,10 @@ main.transaction-4 .content {
   text-transform: none;
   font-weight: 700; }
   @media (max-width: 640px) {
-    .style-guide .bold-48 {
+    .design-patterns .bold-48 {
       font-size: 32px;
       line-height: 1.09375; } }
-.style-guide .bold-36 {
+.design-patterns .bold-36 {
   font-family: "nta", Arial, sans-serif;
   font-size: 36px;
   line-height: 1.11111;
@@ -1806,10 +1806,10 @@ main.transaction-4 .content {
   text-transform: none;
   font-weight: 700; }
   @media (max-width: 640px) {
-    .style-guide .bold-36 {
+    .design-patterns .bold-36 {
       font-size: 24px;
       line-height: 1.04167; } }
-.style-guide .bold-27 {
+.design-patterns .bold-27 {
   font-family: "nta", Arial, sans-serif;
   font-size: 27px;
   line-height: 1.11111;
@@ -1817,10 +1817,10 @@ main.transaction-4 .content {
   text-transform: none;
   font-weight: 700; }
   @media (max-width: 640px) {
-    .style-guide .bold-27 {
+    .design-patterns .bold-27 {
       font-size: 18px;
       line-height: 1.11111; } }
-.style-guide .bold-24 {
+.design-patterns .bold-24 {
   font-family: "nta", Arial, sans-serif;
   font-size: 24px;
   line-height: 1.25;
@@ -1828,10 +1828,10 @@ main.transaction-4 .content {
   text-transform: none;
   font-weight: 700; }
   @media (max-width: 640px) {
-    .style-guide .bold-24 {
+    .design-patterns .bold-24 {
       font-size: 20px;
       line-height: 1.2; } }
-.style-guide .bold-19 {
+.design-patterns .bold-19 {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
   line-height: 1.31579;
@@ -1839,10 +1839,10 @@ main.transaction-4 .content {
   text-transform: none;
   font-weight: 700; }
   @media (max-width: 640px) {
-    .style-guide .bold-19 {
+    .design-patterns .bold-19 {
       font-size: 16px;
       line-height: 1.25; } }
-.style-guide .bold-16 {
+.design-patterns .bold-16 {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
@@ -1850,10 +1850,10 @@ main.transaction-4 .content {
   text-transform: none;
   font-weight: 700; }
   @media (max-width: 640px) {
-    .style-guide .bold-16 {
+    .design-patterns .bold-16 {
       font-size: 14px;
       line-height: 1.14286; } }
-.style-guide .bold-14 {
+.design-patterns .bold-14 {
   font-family: "nta", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
@@ -1861,10 +1861,10 @@ main.transaction-4 .content {
   text-transform: none;
   font-weight: 700; }
   @media (max-width: 640px) {
-    .style-guide .bold-14 {
+    .design-patterns .bold-14 {
       font-size: 12px;
       line-height: 1.25; } }
-.style-guide .heading-80 {
+.design-patterns .heading-80 {
   font-family: "nta", Arial, sans-serif;
   font-size: 80px;
   line-height: 1;
@@ -1873,14 +1873,14 @@ main.transaction-4 .content {
   padding-top: 8px;
   padding-bottom: 7px; }
   @media (max-width: 640px) {
-    .style-guide .heading-80 {
+    .design-patterns .heading-80 {
       font-size: 53px;
       line-height: 1.03774; } }
   @media (min-width: 641px) {
-    .style-guide .heading-80 {
+    .design-patterns .heading-80 {
       padding-top: 6px;
       padding-bottom: 14px; } }
-.style-guide .heading-48 {
+.design-patterns .heading-48 {
   font-family: "nta", Arial, sans-serif;
   font-size: 48px;
   line-height: 1.04167;
@@ -1889,14 +1889,14 @@ main.transaction-4 .content {
   padding-top: 10px;
   padding-bottom: 10px; }
   @media (max-width: 640px) {
-    .style-guide .heading-48 {
+    .design-patterns .heading-48 {
       font-size: 32px;
       line-height: 1.09375; } }
   @media (min-width: 641px) {
-    .style-guide .heading-48 {
+    .design-patterns .heading-48 {
       padding-top: 7px;
       padding-bottom: 13px; } }
-.style-guide .heading-36 {
+.design-patterns .heading-36 {
   font-family: "nta", Arial, sans-serif;
   font-size: 36px;
   line-height: 1.11111;
@@ -1905,14 +1905,14 @@ main.transaction-4 .content {
   padding-top: 8px;
   padding-bottom: 7px; }
   @media (max-width: 640px) {
-    .style-guide .heading-36 {
+    .design-patterns .heading-36 {
       font-size: 24px;
       line-height: 1.04167; } }
   @media (min-width: 641px) {
-    .style-guide .heading-36 {
+    .design-patterns .heading-36 {
       padding-top: 6px;
       padding-bottom: 9px; } }
-.style-guide .heading-27 {
+.design-patterns .heading-27 {
   font-family: "nta", Arial, sans-serif;
   font-size: 27px;
   line-height: 1.11111;
@@ -1921,14 +1921,14 @@ main.transaction-4 .content {
   padding-top: 8px;
   padding-bottom: 7px; }
   @media (max-width: 640px) {
-    .style-guide .heading-27 {
+    .design-patterns .heading-27 {
       font-size: 18px;
       line-height: 1.11111; } }
   @media (min-width: 641px) {
-    .style-guide .heading-27 {
+    .design-patterns .heading-27 {
       padding-top: 4px;
       padding-bottom: 6px; } }
-.style-guide .heading-24 {
+.design-patterns .heading-24 {
   font-family: "nta", Arial, sans-serif;
   font-size: 24px;
   line-height: 1.25;
@@ -1937,14 +1937,14 @@ main.transaction-4 .content {
   padding-top: 9px;
   padding-bottom: 6px; }
   @media (max-width: 640px) {
-    .style-guide .heading-24 {
+    .design-patterns .heading-24 {
       font-size: 20px;
       line-height: 1.2; } }
   @media (min-width: 641px) {
-    .style-guide .heading-24 {
+    .design-patterns .heading-24 {
       padding-top: 6px;
       padding-bottom: 4px; } }
-.style-guide .copy-19 {
+.design-patterns .copy-19 {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
   line-height: 1.31579;
@@ -1953,14 +1953,14 @@ main.transaction-4 .content {
   padding-top: 2px;
   padding-bottom: 8px; }
   @media (max-width: 640px) {
-    .style-guide .copy-19 {
+    .design-patterns .copy-19 {
       font-size: 16px;
       line-height: 1.25; } }
   @media (min-width: 641px) {
-    .style-guide .copy-19 {
+    .design-patterns .copy-19 {
       padding-top: 0;
       padding-bottom: 5px; } }
-.style-guide .copy-16 {
+.design-patterns .copy-16 {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
@@ -1969,14 +1969,14 @@ main.transaction-4 .content {
   padding-top: 8px;
   padding-bottom: 7px; }
   @media (max-width: 640px) {
-    .style-guide .copy-16 {
+    .design-patterns .copy-16 {
       font-size: 14px;
       line-height: 1.14286; } }
   @media (min-width: 641px) {
-    .style-guide .copy-16 {
+    .design-patterns .copy-16 {
       padding-top: 5px;
       padding-bottom: 5px; } }
-.style-guide .copy-14 {
+.design-patterns .copy-14 {
   font-family: "nta", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
@@ -1985,56 +1985,56 @@ main.transaction-4 .content {
   padding-top: 8px;
   padding-bottom: 7px; }
   @media (max-width: 640px) {
-    .style-guide .copy-14 {
+    .design-patterns .copy-14 {
       font-size: 12px;
       line-height: 1.25; } }
   @media (min-width: 641px) {
-    .style-guide .copy-14 {
+    .design-patterns .copy-14 {
       padding-top: 5px;
       padding-bottom: 5px; } }
-.style-guide .copy-16-tight {
+.design-patterns .copy-16-tight {
   line-height: 0.7;
   padding: 0; }
-.style-guide .space-15 {
+.design-patterns .space-15 {
   margin-bottom: 20px; }
-.style-guide .external-link-heading:after {
+.design-patterns .external-link-heading:after {
   background-image: image-url("external-link-black-12x12.png");
   background-repeat: no-repeat; }
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-    .style-guide .external-link-heading:after {
+    .design-patterns .external-link-heading:after {
       background-image: image-url("external-link-black-24x24.png");
       background-size: 12px 400px; } }
-.style-guide .external-link-default:after {
+.design-patterns .external-link-default:after {
   background-image: image-url("external-link.png");
   background-repeat: no-repeat; }
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-    .style-guide .external-link-default:after {
+    .design-patterns .external-link-default:after {
       background-image: image-url("external-link-24x24.png");
       background-size: 12px 400px; } }
-.style-guide .external-link-19:after {
+.design-patterns .external-link-19:after {
   content: "\A0\A0\A0\A0";
   background-position: right 6px; }
-.style-guide .external-link-19:hover:after {
+.design-patterns .external-link-19:hover:after {
   background-position: right -382px; }
-.style-guide .external-link-16:after {
+.design-patterns .external-link-16:after {
   content: "\A0\A0\A0\A0\A0";
   background-position: right 3px; }
-.style-guide .external-link-16:hover:after {
+.design-patterns .external-link-16:hover:after {
   background-position: right -385px; }
-.style-guide .external-link-14:after {
+.design-patterns .external-link-14:after {
   content: "\A0\A0\A0\A0\A0";
   background-position: right 1px; }
-.style-guide .external-link-14:hover:after {
+.design-patterns .external-link-14:hover:after {
   background-position: right -387px; }
-.style-guide .external-link-13:after {
+.design-patterns .external-link-13:after {
   content: "\A0\A0\A0\A0\A0";
   background-position: right 1px; }
-.style-guide .external-link-13:hover:after {
+.design-patterns .external-link-13:hover:after {
   background-position: right -387px; }
-.style-guide .external-link-12:after {
+.design-patterns .external-link-12:after {
   content: "\A0\A0\A0\A0\A0\A0\A0\A0";
   background-position: right 0px; }
-.style-guide .external-link-12:hover:after {
+.design-patterns .external-link-12:hover:after {
   background-position: right -388px; }
-.style-guide .text-secondary {
+.design-patterns .text-secondary {
   color: #6f777b; }
