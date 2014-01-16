@@ -20,14 +20,16 @@ A progress indicator addresses this issue by telling users how many steps they'v
 
 ### When should I use one?
 
-Only implement a progress indicator if you've observed the user needs described above. Before you implement one, make sure you've made the transaction as simple and straightforward as you can. If you've done this and users are still struggling, then consider one of the following approaches.
-
+Only implement a progress indicator if you've observed the user needs described above. Before you implement one, make sure you've made the transaction as simple and straightforward as you can. If you've done this and users are still struggling, then consider one of the following approaches (the Sass code for thes examples is [available on GitHub](https://github.com/alphagov/design-patterns/blob/gh-pages/patterns/assets/sass/helpers/_progress-indicator.scss).
 
 ### Example 1: Step indicator
 
 <div class="pattern-example">
 	<div class="ribbon">Recommended</div>
-	{% include pattern-examples/_step-indicator.html %}
+	<div class="title">
+		<p>Step 3 of 5</p>
+		<h1>Payment details</h1>
+	</div>
 </div>
 
 This is the preferred approach and should be tried before moving on to any of the others. It's accessible, compact and works well on all devices.
@@ -36,7 +38,15 @@ This is the preferred approach and should be tried before moving on to any of th
 ### Example 2: Horizontal progress bar
 
 <div class="pattern-example wide">
-	{% include pattern-examples/_horizontal-progress-bar.html %}
+	<nav role="navigation" class="horizontal progress-indicator">
+		<ul>
+		  <li class="done"><a href="">1. About you <span>done</span></a></li>
+		  <li class="done"><a href="">2. Your company <span>done</span></a></li>
+		  <li class="active">3. Payment details</li>
+		  <li>4. Delivery</li>
+		  <li>5. Done</li>
+		</ul>
+	</nav>
 </div>
 
 A horizontal progress bar labels each of the steps involved in a transaction. This can help if your users need reminding of what each step involves or of how long each step might take. 
@@ -50,17 +60,16 @@ You'll need to keep the number of steps and their names short in order to fit th
 
 ### Example 3: Vertical progress bar
 
-<figure class="pattern-example">
-	{% include pattern-examples/_vertical-progress-bar.html %}
-	<figcaption>
-		<dl class="code-links">
-			<dt>View:</dt>
-			<dd><a href="https://github.com/alphagov/design-patterns/blob/gh-pages/_includes/pattern-examples/_vertical-progress-bar.html">HTML</a></dd>
-			<dd><a href="https://github.com/alphagov/design-patterns/blob/gh-pages/patterns/assets/sass/helpers/_progress-indicator.scss">Sass</a></dd>
-		</dl>
-		Example 3: Vertical progress bar
-	</figcaption>
-</figure>
+<div class="pattern-example">
+	<nav role="navigation" class="vertical progress-indicator">
+		<ul>
+		  <li><a href="">About you <span>(3/10)</span></a></li>
+		  <li class="done"><a href="">Your company <span>(10/10)</span></a></li>
+		  <li class="active"><a href="">Payment details <span>(1/6)</span></a></li>
+		  <li><a href="">Delivery <span>(0/3)</span></a></li>
+		</ul>
+	</nav>
+</div>
 
 For some transactions you'll want to let users complete the steps in any order, or let them partially complete steps. In general this is harder to do in a usable way, so only do it if the benefits to the user outweight the costs.
 
@@ -69,7 +78,15 @@ We recommend using a vertical progress bar for this. The steps aren't numbered b
 Don't forget you'll need to let people know when they can progress past these steps to the next part of the transaction.
 
 <div class="pattern-example">
-	{% include pattern-examples/_vertical-progress-bar-2.html %}
+	<nav role="navigation" class="vertical progress-indicator">
+		<ul>
+		  <li class="done"><a href="">About you <span>(10/10)</span></a></li>
+		  <li class="done"><a href="">Your company <span>(10/10)</span></a></li>
+		  <li class="active done"><a href="">Payment details <span>(6/6)</span></a></li>
+		  <li class="done"><a href="">Delivery <span>(3/3)</span></a></li>
+		</ul>
+	</nav>
+	<p><a href="" class="button">Submit order</a></p>
 </div>
 
 You'll should also consider alerting users that they can proceed in some other way too (a pop-up for example). Not everyone will notice the appearance of a button.

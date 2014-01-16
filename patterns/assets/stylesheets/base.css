@@ -1176,14 +1176,8 @@ main.pattern .content .html-example {
   outline: 20px solid #f8f8f8;
   margin: 40px 0 50px 0;
   padding: 30px;
-  padding-bottom: 10px;
   overflow: hidden;
   position: relative; }
-  main.pattern .content .pattern-example figcaption,
-  main.pattern .content .html-example figcaption {
-    border-top: 1px solid #bfc1c3;
-    padding: 10px 5px 0 20px;
-    margin: 0 -30px; }
   @media (min-width: 641px) {
     main.pattern .content .pattern-example.wide,
     main.pattern .content .html-example.wide {
