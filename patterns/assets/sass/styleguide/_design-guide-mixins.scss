@@ -1,0 +1,49 @@
+// Let's prefix these new mixins with "new" to easily see which have been created within the design guide
+
+// Heading hierachy
+
+// 80px bold (used for data)
+
+// 48px bold (used for page titles)
+
+// 36px regular with underline (used for page sections)
+
+@mixin new-heading-36-underline($tabular-numbers: false) {
+  @include core-36($tabular-numbers: $tabular-numbers);
+
+  padding-top: 8px;
+  padding-bottom: 3px;
+  border-bottom: 3px solid #0b0c0c;
+
+  @include media(tablet) {
+    padding-top: 6px;
+    padding-bottom: 1px;
+    border-bottom-width: 5px;
+  }
+  
+}
+
+// 27px (used for intro or lead text)
+// This commonly has 30px spacing underneath
+@mixin new-heading-27($tabular-numbers: false) {
+   
+   @include core-27($tabular-numbers: $tabular-numbers);
+   padding-top: 8px;
+   padding-bottom: 7px;
+   margin-bottom: $gutter-half;
+   
+   @include media(tablet) {
+      padding-top: 4px;
+      padding-bottom: 6px;
+      margin-bottom: $gutter;
+  }
+}
+
+
+// 24px
+
+// 19px 
+
+// 16px
+
+// 14px

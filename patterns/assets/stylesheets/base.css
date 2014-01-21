@@ -35,8 +35,8 @@
    }
 
 */
-#content:after, #content .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after, .service-header.v2 header:after, .service-header.v3 header:after, .date-of-birth:after, main.home header:after, main.pattern header:after, main.pattern .content .pattern-example:after,
-main.pattern .content .html-example:after, main.pattern .content .code-links:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ol:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ul:after, main.progress-indicator .pattern-example .progress-indicator.vertical ol:after, main.progress-indicator .pattern-example .progress-indicator.vertical ul:after, .pattern-header:after, .example:after {
+#content:after, .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after, .service-header.v2 header:after, .service-header.v3 header:after, .date-of-birth:after, main.home header:after, main.pattern header:after, main.pattern .content .pattern-example:after,
+main.pattern .content .html-example:after, main.pattern .content .code-links:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ol:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ul:after, main.progress-indicator .pattern-example .progress-indicator.vertical ol:after, main.progress-indicator .pattern-example .progress-indicator.vertical ul:after, .pattern-header:after, .example:after, .grid-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -87,8 +87,8 @@ main.pattern .content .html-example:after, main.pattern .content .code-links:aft
    }
 
 */
-#content:after, #content .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after, .service-header.v2 header:after, .service-header.v3 header:after, .date-of-birth:after, main.home header:after, main.pattern header:after, main.pattern .content .pattern-example:after,
-main.pattern .content .html-example:after, main.pattern .content .code-links:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ol:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ul:after, main.progress-indicator .pattern-example .progress-indicator.vertical ol:after, main.progress-indicator .pattern-example .progress-indicator.vertical ul:after, .pattern-header:after, .example:after {
+#content:after, .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after, .service-header.v2 header:after, .service-header.v3 header:after, .date-of-birth:after, main.home header:after, main.pattern header:after, main.pattern .content .pattern-example:after,
+main.pattern .content .html-example:after, main.pattern .content .code-links:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ol:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ul:after, main.progress-indicator .pattern-example .progress-indicator.vertical ol:after, main.progress-indicator .pattern-example .progress-indicator.vertical ul:after, .pattern-header:after, .example:after, .grid-wrapper:after {
   content: "";
   display: block;
   clear: both; }
@@ -205,22 +205,23 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   line-height: inherit;
   font-weight: normal; }
 
-#content .block .inner-block {
+.block .inner-block {
   padding: 0 15px; }
   @media (min-width: 641px) {
-    #content .block .inner-block {
+    .block .inner-block {
       padding: 0 30px; } }
-  #content .block .inner-block.floated-children {
+  .block .inner-block.floated-children {
     padding: 0; }
     @media (min-width: 641px) {
-      #content .block .inner-block.floated-children {
+      .block .inner-block.floated-children {
         padding: 0 15px; } }
-#content .phase-block {
+
+.phase-block {
   display: inline;
   list-style: none;
   padding: 0;
   margin: 0; }
-  #content .phase-block .alpha {
+  .phase-block .alpha {
     display: block;
     float: left;
     background-color: #d53880;
@@ -237,10 +238,10 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     margin: 3px 10px 0 0;
     padding: 2px 5px 0; }
     @media (max-width: 640px) {
-      #content .phase-block .alpha {
+      .phase-block .alpha {
         font-size: 14px;
         line-height: 1.14286; } }
-  #content .phase-block .beta {
+  .phase-block .beta {
     display: block;
     float: left;
     background-color: #f47738;
@@ -257,11 +258,11 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     margin: 3px 10px 0 0;
     padding: 2px 5px 0; }
     @media (max-width: 640px) {
-      #content .phase-block .beta {
+      .phase-block .beta {
         font-size: 14px;
         line-height: 1.14286; } }
-  #content .phase-block .alpha,
-  #content .phase-block .beta {
+  .phase-block .alpha,
+  .phase-block .beta {
     display: inline;
     vertical-align: middle;
     float: none; }
@@ -1027,8 +1028,6 @@ main.pattern header {
         main.pattern header .title p {
           font-size: 24px;
           line-height: 1.04167; } }
-  main.pattern header .phase-block li {
-    padding: 15px; }
 @media (min-width: 641px) {
   main.pattern .navigation {
     float: left;
@@ -1599,6 +1598,11 @@ main.transaction-4 .content {
         padding-top: 0;
         padding-bottom: 5px; } }
 
+.main {
+  max-width: 1020px;
+  width: auto;
+  margin: 0 auto 90px; }
+
 .pattern-header {
   padding: 15px 0;
   margin-bottom: 30px; }
@@ -1633,28 +1637,46 @@ main.transaction-4 .content {
           font-size: 24px;
           line-height: 1.04167; } }
 
-.section {
+.guide-header {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 1.11111;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 8px;
+  padding-bottom: 3px;
+  border-bottom: 3px solid #0b0c0c; }
+  @media (max-width: 640px) {
+    .guide-header {
+      font-size: 24px;
+      line-height: 1.04167; } }
+  @media (min-width: 641px) {
+    .guide-header {
+      padding-top: 6px;
+      padding-bottom: 1px;
+      border-bottom-width: 5px; } }
+
+.guide-sub-header {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 9px;
+  padding-bottom: 6px;
+  font-weight: 700; }
+  @media (max-width: 640px) {
+    .guide-sub-header {
+      font-size: 20px;
+      line-height: 1.2; } }
+  @media (min-width: 641px) {
+    .guide-sub-header {
+      padding-top: 6px;
+      padding-bottom: 4px; } }
+
+.guide {
   margin-bottom: 30px; }
-  .section .section-header {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 36px;
-    line-height: 1.11111;
-    font-weight: 400;
-    text-transform: none;
-    padding-top: 8px;
-    padding-bottom: 7px; }
-    @media (max-width: 640px) {
-      .section .section-header {
-        font-size: 24px;
-        line-height: 1.04167; } }
-    @media (min-width: 641px) {
-      .section .section-header {
-        padding-top: 6px;
-        padding-bottom: 9px; } }
-  .section .section-header {
-    border-bottom: 5px solid #000;
-    padding-bottom: 1px; }
-  .section .section-title {
+  .guide .lede {
     font-family: "nta", Arial, sans-serif;
     font-size: 27px;
     line-height: 1.11111;
@@ -1662,16 +1684,20 @@ main.transaction-4 .content {
     text-transform: none;
     padding-top: 8px;
     padding-bottom: 7px;
-    font-weight: 700; }
+    margin-bottom: 15px; }
     @media (max-width: 640px) {
-      .section .section-title {
+      .guide .lede {
         font-size: 18px;
         line-height: 1.11111; } }
     @media (min-width: 641px) {
-      .section .section-title {
+      .guide .lede {
         padding-top: 4px;
-        padding-bottom: 6px; } }
-  .section .section-subtitle {
+        padding-bottom: 6px;
+        margin-bottom: 30px; } }
+    @media (min-width: 641px) {
+      .guide .lede {
+        max-width: 75%; } }
+  .guide p {
     font-family: "nta", Arial, sans-serif;
     font-size: 19px;
     line-height: 1.31579;
@@ -1679,34 +1705,19 @@ main.transaction-4 .content {
     text-transform: none;
     padding-top: 2px;
     padding-bottom: 8px;
-    font-weight: bold; }
+    margin: 15px 0; }
     @media (max-width: 640px) {
-      .section .section-subtitle {
+      .guide p {
         font-size: 16px;
         line-height: 1.25; } }
     @media (min-width: 641px) {
-      .section .section-subtitle {
+      .guide p {
         padding-top: 0;
         padding-bottom: 5px; } }
-  .section p {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 19px;
-    line-height: 1.31579;
-    font-weight: 400;
-    text-transform: none;
-    padding-top: 2px;
-    padding-bottom: 8px;
-    margin: 15px 0;
-    max-width: 75%; }
-    @media (max-width: 640px) {
-      .section p {
-        font-size: 16px;
-        line-height: 1.25; } }
     @media (min-width: 641px) {
-      .section p {
-        padding-top: 0;
-        padding-bottom: 5px; } }
-  .section .note {
+      .guide p {
+        max-width: 75%; } }
+  .guide .note {
     font-family: "nta", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.25;
@@ -1716,22 +1727,25 @@ main.transaction-4 .content {
     padding-bottom: 7px;
     margin: 15px 0; }
     @media (max-width: 640px) {
-      .section .note {
+      .guide .note {
         font-size: 14px;
         line-height: 1.14286; } }
     @media (min-width: 641px) {
-      .section .note {
+      .guide .note {
         padding-top: 5px;
         padding-bottom: 5px; } }
-  .section details {
+  .guide details {
     padding-left: 15px; }
 
 .example {
   border: 1px solid #bfc1c3;
   outline: 20px solid #f8f8f8;
-  margin: 40px 0 60px;
-  padding: 30px;
+  margin: 30px 0 60px 0;
+  padding: 15px;
   overflow: hidden; }
+  @media (min-width: 641px) {
+    .example {
+      padding: 30px; } }
   .example .example-url {
     margin-top: 30px; }
   .example .example-url:before {
@@ -1740,29 +1754,31 @@ main.transaction-4 .content {
     padding-top: 30px; }
   .example .reference-url:before {
     content: "Reference: "; }
-  .example .example-list {
-    list-style: none; }
-  .example .example-list li {
-    margin-bottom: 15px; }
-  .example .example-list li a {
-    margin-right: 15px; }
-  .example .example-title {
+  .example .example-unordered-list li,
+  .example .example-ordered-list li {
+    padding-left: 0.3em;
     font-family: "nta", Arial, sans-serif;
     font-size: 19px;
     line-height: 1.31579;
     font-weight: 400;
     text-transform: none;
     padding-top: 2px;
-    padding-bottom: 8px;
-    font-weight: bold; }
+    padding-bottom: 8px; }
     @media (max-width: 640px) {
-      .example .example-title {
+      .example .example-unordered-list li,
+      .example .example-ordered-list li {
         font-size: 16px;
         line-height: 1.25; } }
     @media (min-width: 641px) {
-      .example .example-title {
+      .example .example-unordered-list li,
+      .example .example-ordered-list li {
         padding-top: 0;
         padding-bottom: 5px; } }
+  .example .example-unordered-list {
+    list-style-type: circle;
+    list-style-image: url(https://assets.digital.cabinet-office.gov.uk/static/bullet-disc-5px-4180cb91fb35028365a59ddfcfd36e34.gif); }
+  .example .example-ordered-list {
+    list-style-type: none; }
   .example .swatch {
     width: 60px;
     height: 60px;
@@ -1773,92 +1789,99 @@ main.transaction-4 .content {
     background: #0076c0; }
   .example .colour-nhs {
     background: #00ad93; }
+  .example img {
+    max-width: 100%;
+    vertical-align: top; }
 
-.example-compare {
-  width: 50%;
-  float: left; }
-
-.design-patterns .core-80 {
+.core-80 {
   font-family: "nta", Arial, sans-serif;
   font-size: 80px;
   line-height: 1;
   font-weight: 400;
   text-transform: none; }
   @media (max-width: 640px) {
-    .design-patterns .core-80 {
+    .core-80 {
       font-size: 53px;
       line-height: 1.03774; } }
-.design-patterns .core-48 {
+
+.core-48 {
   font-family: "nta", Arial, sans-serif;
   font-size: 48px;
   line-height: 1.04167;
   font-weight: 400;
   text-transform: none; }
   @media (max-width: 640px) {
-    .design-patterns .core-48 {
+    .core-48 {
       font-size: 32px;
       line-height: 1.09375; } }
-.design-patterns .core-36 {
+
+.core-36 {
   font-family: "nta", Arial, sans-serif;
   font-size: 36px;
   line-height: 1.11111;
   font-weight: 400;
   text-transform: none; }
   @media (max-width: 640px) {
-    .design-patterns .core-36 {
+    .core-36 {
       font-size: 24px;
       line-height: 1.04167; } }
-.design-patterns .core-27 {
+
+.core-27 {
   font-family: "nta", Arial, sans-serif;
   font-size: 27px;
   line-height: 1.11111;
   font-weight: 400;
   text-transform: none; }
   @media (max-width: 640px) {
-    .design-patterns .core-27 {
+    .core-27 {
       font-size: 18px;
       line-height: 1.11111; } }
-.design-patterns .core-24 {
+
+.core-24 {
   font-family: "nta", Arial, sans-serif;
   font-size: 24px;
   line-height: 1.25;
   font-weight: 400;
   text-transform: none; }
   @media (max-width: 640px) {
-    .design-patterns .core-24 {
+    .core-24 {
       font-size: 20px;
       line-height: 1.2; } }
-.design-patterns .core-19 {
+
+.core-19 {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
   line-height: 1.31579;
   font-weight: 400;
   text-transform: none; }
   @media (max-width: 640px) {
-    .design-patterns .core-19 {
+    .core-19 {
       font-size: 16px;
       line-height: 1.25; } }
-.design-patterns .core-16 {
+
+.core-16 {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
   font-weight: 300;
   text-transform: none; }
   @media (max-width: 640px) {
-    .design-patterns .core-16 {
+    .core-16 {
       font-size: 14px;
       line-height: 1.14286; } }
-.design-patterns .core-14 {
+
+.core-14 {
   font-family: "nta", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   font-weight: 400;
   text-transform: none; }
   @media (max-width: 640px) {
-    .design-patterns .core-14 {
+    .core-14 {
       font-size: 12px;
       line-height: 1.25; } }
-.design-patterns .bold-80 {
+
+.bold-80 {
   font-family: "nta", Arial, sans-serif;
   font-size: 80px;
   line-height: 1;
@@ -1866,10 +1889,11 @@ main.transaction-4 .content {
   text-transform: none;
   font-weight: 700; }
   @media (max-width: 640px) {
-    .design-patterns .bold-80 {
+    .bold-80 {
       font-size: 53px;
       line-height: 1.03774; } }
-.design-patterns .bold-48 {
+
+.bold-48 {
   font-family: "nta", Arial, sans-serif;
   font-size: 48px;
   line-height: 1.04167;
@@ -1877,10 +1901,11 @@ main.transaction-4 .content {
   text-transform: none;
   font-weight: 700; }
   @media (max-width: 640px) {
-    .design-patterns .bold-48 {
+    .bold-48 {
       font-size: 32px;
       line-height: 1.09375; } }
-.design-patterns .bold-36 {
+
+.bold-36 {
   font-family: "nta", Arial, sans-serif;
   font-size: 36px;
   line-height: 1.11111;
@@ -1888,10 +1913,11 @@ main.transaction-4 .content {
   text-transform: none;
   font-weight: 700; }
   @media (max-width: 640px) {
-    .design-patterns .bold-36 {
+    .bold-36 {
       font-size: 24px;
       line-height: 1.04167; } }
-.design-patterns .bold-27 {
+
+.bold-27 {
   font-family: "nta", Arial, sans-serif;
   font-size: 27px;
   line-height: 1.11111;
@@ -1899,10 +1925,11 @@ main.transaction-4 .content {
   text-transform: none;
   font-weight: 700; }
   @media (max-width: 640px) {
-    .design-patterns .bold-27 {
+    .bold-27 {
       font-size: 18px;
       line-height: 1.11111; } }
-.design-patterns .bold-24 {
+
+.bold-24 {
   font-family: "nta", Arial, sans-serif;
   font-size: 24px;
   line-height: 1.25;
@@ -1910,10 +1937,11 @@ main.transaction-4 .content {
   text-transform: none;
   font-weight: 700; }
   @media (max-width: 640px) {
-    .design-patterns .bold-24 {
+    .bold-24 {
       font-size: 20px;
       line-height: 1.2; } }
-.design-patterns .bold-19 {
+
+.bold-19 {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
   line-height: 1.31579;
@@ -1921,10 +1949,11 @@ main.transaction-4 .content {
   text-transform: none;
   font-weight: 700; }
   @media (max-width: 640px) {
-    .design-patterns .bold-19 {
+    .bold-19 {
       font-size: 16px;
       line-height: 1.25; } }
-.design-patterns .bold-16 {
+
+.bold-16 {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
@@ -1932,10 +1961,11 @@ main.transaction-4 .content {
   text-transform: none;
   font-weight: 700; }
   @media (max-width: 640px) {
-    .design-patterns .bold-16 {
+    .bold-16 {
       font-size: 14px;
       line-height: 1.14286; } }
-.design-patterns .bold-14 {
+
+.bold-14 {
   font-family: "nta", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
@@ -1943,26 +1973,11 @@ main.transaction-4 .content {
   text-transform: none;
   font-weight: 700; }
   @media (max-width: 640px) {
-    .design-patterns .bold-14 {
+    .bold-14 {
       font-size: 12px;
       line-height: 1.25; } }
-.design-patterns .heading-80 {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 80px;
-  line-height: 1;
-  font-weight: 400;
-  text-transform: none;
-  padding-top: 8px;
-  padding-bottom: 7px; }
-  @media (max-width: 640px) {
-    .design-patterns .heading-80 {
-      font-size: 53px;
-      line-height: 1.03774; } }
-  @media (min-width: 641px) {
-    .design-patterns .heading-80 {
-      padding-top: 6px;
-      padding-bottom: 14px; } }
-.design-patterns .heading-48 {
+
+.heading-48 {
   font-family: "nta", Arial, sans-serif;
   font-size: 48px;
   line-height: 1.04167;
@@ -1971,14 +1986,15 @@ main.transaction-4 .content {
   padding-top: 10px;
   padding-bottom: 10px; }
   @media (max-width: 640px) {
-    .design-patterns .heading-48 {
+    .heading-48 {
       font-size: 32px;
       line-height: 1.09375; } }
   @media (min-width: 641px) {
-    .design-patterns .heading-48 {
+    .heading-48 {
       padding-top: 7px;
       padding-bottom: 13px; } }
-.design-patterns .heading-36 {
+
+.heading-36 {
   font-family: "nta", Arial, sans-serif;
   font-size: 36px;
   line-height: 1.11111;
@@ -1987,14 +2003,15 @@ main.transaction-4 .content {
   padding-top: 8px;
   padding-bottom: 7px; }
   @media (max-width: 640px) {
-    .design-patterns .heading-36 {
+    .heading-36 {
       font-size: 24px;
       line-height: 1.04167; } }
   @media (min-width: 641px) {
-    .design-patterns .heading-36 {
+    .heading-36 {
       padding-top: 6px;
       padding-bottom: 9px; } }
-.design-patterns .heading-27 {
+
+.heading-27 {
   font-family: "nta", Arial, sans-serif;
   font-size: 27px;
   line-height: 1.11111;
@@ -2003,14 +2020,15 @@ main.transaction-4 .content {
   padding-top: 8px;
   padding-bottom: 7px; }
   @media (max-width: 640px) {
-    .design-patterns .heading-27 {
+    .heading-27 {
       font-size: 18px;
       line-height: 1.11111; } }
   @media (min-width: 641px) {
-    .design-patterns .heading-27 {
+    .heading-27 {
       padding-top: 4px;
       padding-bottom: 6px; } }
-.design-patterns .heading-24 {
+
+.heading-24 {
   font-family: "nta", Arial, sans-serif;
   font-size: 24px;
   line-height: 1.25;
@@ -2019,20 +2037,126 @@ main.transaction-4 .content {
   padding-top: 9px;
   padding-bottom: 6px; }
   @media (max-width: 640px) {
-    .design-patterns .heading-24 {
+    .heading-24 {
       font-size: 20px;
       line-height: 1.2; } }
   @media (min-width: 641px) {
-    .design-patterns .heading-24 {
+    .heading-24 {
       padding-top: 6px;
       padding-bottom: 4px; } }
-.design-patterns .heading-bold {
+
+.heading-48-bold {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 48px;
+  line-height: 1.04167;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-weight: 700; }
-.design-patterns .heading-underline {
-  border-bottom: 5px solid #000;
-  padding-bottom: 1px;
-  margin-bottom: 23px; }
-.design-patterns .copy-19 {
+  @media (max-width: 640px) {
+    .heading-48-bold {
+      font-size: 32px;
+      line-height: 1.09375; } }
+  @media (min-width: 641px) {
+    .heading-48-bold {
+      padding-top: 7px;
+      padding-bottom: 13px; } }
+
+.heading-36-bold {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 1.11111;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  font-weight: 700; }
+  @media (max-width: 640px) {
+    .heading-36-bold {
+      font-size: 24px;
+      line-height: 1.04167; } }
+  @media (min-width: 641px) {
+    .heading-36-bold {
+      padding-top: 6px;
+      padding-bottom: 9px; } }
+
+.heading-36-underline {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 1.11111;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 8px;
+  padding-bottom: 3px;
+  border-bottom: 3px solid #0b0c0c; }
+  @media (max-width: 640px) {
+    .heading-36-underline {
+      font-size: 24px;
+      line-height: 1.04167; } }
+  @media (min-width: 641px) {
+    .heading-36-underline {
+      padding-top: 6px;
+      padding-bottom: 1px;
+      border-bottom-width: 5px; } }
+
+.heading-24-bold {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 9px;
+  padding-bottom: 6px;
+  font-weight: 700; }
+  @media (max-width: 640px) {
+    .heading-24-bold {
+      font-size: 20px;
+      line-height: 1.2; } }
+  @media (min-width: 641px) {
+    .heading-24-bold {
+      padding-top: 6px;
+      padding-bottom: 4px; } }
+
+.add-spacing div {
+  margin-bottom: 30px; }
+
+.intro {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 9px;
+  padding-bottom: 6px; }
+  @media (max-width: 640px) {
+    .intro {
+      font-size: 20px;
+      line-height: 1.2; } }
+  @media (min-width: 641px) {
+    .intro {
+      padding-top: 6px;
+      padding-bottom: 4px; } }
+
+.copy-19-bold {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 2px;
+  padding-bottom: 8px;
+  font-weight: 700; }
+  @media (max-width: 640px) {
+    .copy-19-bold {
+      font-size: 16px;
+      line-height: 1.25; } }
+  @media (min-width: 641px) {
+    .copy-19-bold {
+      padding-top: 0;
+      padding-bottom: 5px; } }
+
+.copy-19 {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
   line-height: 1.31579;
@@ -2041,14 +2165,15 @@ main.transaction-4 .content {
   padding-top: 2px;
   padding-bottom: 8px; }
   @media (max-width: 640px) {
-    .design-patterns .copy-19 {
+    .copy-19 {
       font-size: 16px;
       line-height: 1.25; } }
   @media (min-width: 641px) {
-    .design-patterns .copy-19 {
+    .copy-19 {
       padding-top: 0;
       padding-bottom: 5px; } }
-.design-patterns .copy-16 {
+
+.copy-16 {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
@@ -2057,14 +2182,15 @@ main.transaction-4 .content {
   padding-top: 8px;
   padding-bottom: 7px; }
   @media (max-width: 640px) {
-    .design-patterns .copy-16 {
+    .copy-16 {
       font-size: 14px;
       line-height: 1.14286; } }
   @media (min-width: 641px) {
-    .design-patterns .copy-16 {
+    .copy-16 {
       padding-top: 5px;
       padding-bottom: 5px; } }
-.design-patterns .copy-14 {
+
+.copy-14 {
   font-family: "nta", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
@@ -2073,68 +2199,92 @@ main.transaction-4 .content {
   padding-top: 8px;
   padding-bottom: 7px; }
   @media (max-width: 640px) {
-    .design-patterns .copy-14 {
+    .copy-14 {
       font-size: 12px;
       line-height: 1.25; } }
   @media (min-width: 641px) {
-    .design-patterns .copy-14 {
+    .copy-14 {
       padding-top: 5px;
       padding-bottom: 5px; } }
-.design-patterns .copy-bold {
+
+.copy-bold {
   font-weight: 700; }
-.design-patterns .copy-16-tight {
-  line-height: 0.7;
-  padding: 0; }
-.design-patterns .space-15 {
+
+.heading-bold {
+  font-weight: bold; }
+
+.page-header {
+  padding-top: 20px; }
+
+.page-header .title {
+  padding: 0;
+  background: pink; }
+  @media (min-width: 641px) {
+    .page-header .title {
+      padding: 20px 0; } }
+
+.space-15 {
   margin-bottom: 20px; }
-.design-patterns .external-link-heading:after {
+
+.external-link-heading:after {
   background-image: image-url("external-link-black-12x12.png");
   background-repeat: no-repeat; }
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-    .design-patterns .external-link-heading:after {
+    .external-link-heading:after {
       background-image: image-url("external-link-black-24x24.png");
       background-size: 12px 400px; } }
-.design-patterns .external-link-default:after {
+
+.external-link-default:after {
   background-image: image-url("external-link.png");
   background-repeat: no-repeat; }
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-    .design-patterns .external-link-default:after {
+    .external-link-default:after {
       background-image: image-url("external-link-24x24.png");
       background-size: 12px 400px; } }
-.design-patterns .external-link-19:after {
+
+.external-link-19:after {
   content: "\A0\A0\A0\A0";
   background-position: right 6px; }
-.design-patterns .external-link-19:hover:after {
+.external-link-19:hover:after {
   background-position: right -382px; }
-.design-patterns .external-link-16:after {
+
+.external-link-16:after {
   content: "\A0\A0\A0\A0\A0";
   background-position: right 3px; }
-.design-patterns .external-link-16:hover:after {
+.external-link-16:hover:after {
   background-position: right -385px; }
-.design-patterns .external-link-14:after {
+
+.external-link-14:after {
   content: "\A0\A0\A0\A0\A0";
   background-position: right 1px; }
-.design-patterns .external-link-14:hover:after {
+.external-link-14:hover:after {
   background-position: right -387px; }
-.design-patterns .external-link-13:after {
+
+.external-link-13:after {
   content: "\A0\A0\A0\A0\A0";
   background-position: right 1px; }
-.design-patterns .external-link-13:hover:after {
+.external-link-13:hover:after {
   background-position: right -387px; }
-.design-patterns .external-link-12:after {
+
+.external-link-12:after {
   content: "\A0\A0\A0\A0\A0\A0\A0\A0";
   background-position: right 0px; }
-.design-patterns .external-link-12:hover:after {
+.external-link-12:hover:after {
   background-position: right -388px; }
-.design-patterns .text-secondary {
+
+.text-secondary {
   color: #6f777b; }
-.design-patterns .link {
+
+.link {
   color: #2e3191; }
-.design-patterns .link-hover {
+
+.link-hover {
   color: #2e8aca; }
-.design-patterns .link-visited {
+
+.link-visited {
   color: #2e3191; }
-.design-patterns .button {
+
+.button {
   background-color: #00823b;
   position: relative;
   display: -moz-inline-stack;
@@ -2159,30 +2309,30 @@ main.transaction-4 .content {
   line-height: 1.31579;
   font-weight: 400;
   text-transform: none; }
-  .design-patterns .button:visited {
+  .button:visited {
     background-color: #00823b; }
-  .design-patterns .button:hover, .design-patterns .button:focus {
+  .button:hover, .button:focus {
     background-color: #00692f; }
-  .design-patterns .button:active {
+  .button:active {
     top: 2px;
     -webkit-box-shadow: 0 0 0 #00823b;
     -moz-box-shadow: 0 0 0 #00823b;
     box-shadow: 0 0 0 #00823b; }
-  .design-patterns .button.disabled, .design-patterns .button[disabled="disabled"], .design-patterns .button[disabled] {
+  .button.disabled, .button[disabled="disabled"], .button[disabled] {
     zoom: 1;
     filter: alpha(opacity=50);
     opacity: 0.5; }
-    .design-patterns .button.disabled:hover, .design-patterns .button[disabled="disabled"]:hover, .design-patterns .button[disabled]:hover {
+    .button.disabled:hover, .button[disabled="disabled"]:hover, .button[disabled]:hover {
       cursor: default;
       background-color: #00823b; }
-    .design-patterns .button.disabled:active, .design-patterns .button[disabled="disabled"]:active, .design-patterns .button[disabled]:active {
+    .button.disabled:active, .button[disabled="disabled"]:active, .button[disabled]:active {
       top: 0;
       -webkit-box-shadow: 0 2px 0 #003518;
       -moz-box-shadow: 0 2px 0 #003518;
       box-shadow: 0 2px 0 #003518; }
-  .design-patterns .button:hover, .design-patterns .button:focus, .design-patterns .button:visited {
+  .button:hover, .button:focus, .button:visited {
     color: white; }
-  .design-patterns .button:before {
+  .button:before {
     content: "";
     height: 110%;
     width: 100%;
@@ -2191,19 +2341,20 @@ main.transaction-4 .content {
     position: absolute;
     top: 0;
     left: 0; }
-  .design-patterns .button:active:before {
+  .button:active:before {
     top: -10%;
     height: 120%; }
-  .design-patterns .button[rel="external"]:after {
+  .button[rel="external"]:after {
     display: none;
     content: none;
     margin-left: 0;
     margin-right: 0; }
   @media (max-width: 640px) {
-    .design-patterns .button {
+    .button {
       font-size: 16px;
       line-height: 1.25; } }
-.design-patterns .button-secondary {
+
+.button-secondary {
   background-color: #dee0e2;
   position: relative;
   display: -moz-inline-stack;
@@ -2228,30 +2379,30 @@ main.transaction-4 .content {
   line-height: 1.31579;
   font-weight: 400;
   text-transform: none; }
-  .design-patterns .button-secondary:visited {
+  .button-secondary:visited {
     background-color: #dee0e2; }
-  .design-patterns .button-secondary:hover, .design-patterns .button-secondary:focus {
+  .button-secondary:hover, .button-secondary:focus {
     background-color: #d0d3d6; }
-  .design-patterns .button-secondary:active {
+  .button-secondary:active {
     top: 2px;
     -webkit-box-shadow: 0 0 0 #dee0e2;
     -moz-box-shadow: 0 0 0 #dee0e2;
     box-shadow: 0 0 0 #dee0e2; }
-  .design-patterns .button-secondary.disabled, .design-patterns .button-secondary[disabled="disabled"], .design-patterns .button-secondary[disabled] {
+  .button-secondary.disabled, .button-secondary[disabled="disabled"], .button-secondary[disabled] {
     zoom: 1;
     filter: alpha(opacity=50);
     opacity: 0.5; }
-    .design-patterns .button-secondary.disabled:hover, .design-patterns .button-secondary[disabled="disabled"]:hover, .design-patterns .button-secondary[disabled]:hover {
+    .button-secondary.disabled:hover, .button-secondary[disabled="disabled"]:hover, .button-secondary[disabled]:hover {
       cursor: default;
       background-color: #dee0e2; }
-    .design-patterns .button-secondary.disabled:active, .design-patterns .button-secondary[disabled="disabled"]:active, .design-patterns .button-secondary[disabled]:active {
+    .button-secondary.disabled:active, .button-secondary[disabled="disabled"]:active, .button-secondary[disabled]:active {
       top: 0;
       -webkit-box-shadow: 0 2px 0 #b5babe;
       -moz-box-shadow: 0 2px 0 #b5babe;
       box-shadow: 0 2px 0 #b5babe; }
-  .design-patterns .button-secondary:hover, .design-patterns .button-secondary:focus, .design-patterns .button-secondary:visited {
+  .button-secondary:hover, .button-secondary:focus, .button-secondary:visited {
     color: #0b0c0c; }
-  .design-patterns .button-secondary:before {
+  .button-secondary:before {
     content: "";
     height: 110%;
     width: 100%;
@@ -2260,19 +2411,20 @@ main.transaction-4 .content {
     position: absolute;
     top: 0;
     left: 0; }
-  .design-patterns .button-secondary:active:before {
+  .button-secondary:active:before {
     top: -10%;
     height: 120%; }
-  .design-patterns .button-secondary[rel="external"]:after {
+  .button-secondary[rel="external"]:after {
     display: none;
     content: none;
     margin-left: 0;
     margin-right: 0; }
   @media (max-width: 640px) {
-    .design-patterns .button-secondary {
+    .button-secondary {
       font-size: 16px;
       line-height: 1.25; } }
-.design-patterns .button-warning {
+
+.button-warning {
   background-color: #b10e1e;
   position: relative;
   display: -moz-inline-stack;
@@ -2297,30 +2449,30 @@ main.transaction-4 .content {
   line-height: 1.31579;
   font-weight: 400;
   text-transform: none; }
-  .design-patterns .button-warning:visited {
+  .button-warning:visited {
     background-color: #b10e1e; }
-  .design-patterns .button-warning:hover, .design-patterns .button-warning:focus {
+  .button-warning:hover, .button-warning:focus {
     background-color: #990c1a; }
-  .design-patterns .button-warning:active {
+  .button-warning:active {
     top: 2px;
     -webkit-box-shadow: 0 0 0 #b10e1e;
     -moz-box-shadow: 0 0 0 #b10e1e;
     box-shadow: 0 0 0 #b10e1e; }
-  .design-patterns .button-warning.disabled, .design-patterns .button-warning[disabled="disabled"], .design-patterns .button-warning[disabled] {
+  .button-warning.disabled, .button-warning[disabled="disabled"], .button-warning[disabled] {
     zoom: 1;
     filter: alpha(opacity=50);
     opacity: 0.5; }
-    .design-patterns .button-warning.disabled:hover, .design-patterns .button-warning[disabled="disabled"]:hover, .design-patterns .button-warning[disabled]:hover {
+    .button-warning.disabled:hover, .button-warning[disabled="disabled"]:hover, .button-warning[disabled]:hover {
       cursor: default;
       background-color: #b10e1e; }
-    .design-patterns .button-warning.disabled:active, .design-patterns .button-warning[disabled="disabled"]:active, .design-patterns .button-warning[disabled]:active {
+    .button-warning.disabled:active, .button-warning[disabled="disabled"]:active, .button-warning[disabled]:active {
       top: 0;
       -webkit-box-shadow: 0 2px 0 #6a0812;
       -moz-box-shadow: 0 2px 0 #6a0812;
       box-shadow: 0 2px 0 #6a0812; }
-  .design-patterns .button-warning:hover, .design-patterns .button-warning:focus, .design-patterns .button-warning:visited {
+  .button-warning:hover, .button-warning:focus, .button-warning:visited {
     color: white; }
-  .design-patterns .button-warning:before {
+  .button-warning:before {
     content: "";
     height: 110%;
     width: 100%;
@@ -2329,17 +2481,60 @@ main.transaction-4 .content {
     position: absolute;
     top: 0;
     left: 0; }
-  .design-patterns .button-warning:active:before {
+  .button-warning:active:before {
     top: -10%;
     height: 120%; }
-  .design-patterns .button-warning[rel="external"]:after {
+  .button-warning[rel="external"]:after {
     display: none;
     content: none;
     margin-left: 0;
     margin-right: 0; }
   @media (max-width: 640px) {
-    .design-patterns .button-warning {
+    .button-warning {
       font-size: 16px;
       line-height: 1.25; } }
-.design-patterns .example .button {
-  margin-bottom: 30px; }
+
+.grid {
+  float: left; }
+
+.grid .inner-block {
+  padding: 0 15px; }
+
+.grid-1-4 {
+  width: 100%;
+  margin-bottom: 15px; }
+  @media (min-width: 641px) {
+    .grid-1-4 {
+      width: 25%; } }
+
+.grid-1-3 {
+  width: 100%;
+  margin-bottom: 15px; }
+  @media (min-width: 641px) {
+    .grid-1-3 {
+      width: 33.33333%; } }
+
+.grid-1-2 {
+  width: 100%;
+  margin-bottom: 15px; }
+  @media (min-width: 641px) {
+    .grid-1-2 {
+      width: 50%; } }
+
+.grid-2-3 {
+  width: 100%;
+  margin-bottom: 15px; }
+  @media (min-width: 641px) {
+    .grid-2-3 {
+      width: 66.66667%; } }
+
+.grid-example {
+  background: grey;
+  padding: 15px 0 0 0; }
+  @media (min-width: 641px) {
+    .grid-example {
+      padding: 15px 15px 0 15px; } }
+
+.grid-example p {
+  width: 100%;
+  background: white; }

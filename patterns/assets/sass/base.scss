@@ -19,6 +19,8 @@
 // A collection of Sass mixins. They shouldn't output any CSS when included and
 // should only produce CSS when called from another file.
 @import "styleguide/dimensions";
+@import "styleguide/design-guide-mixins";
+
 
 // # Globals
 // Contain global page styling for things which appear on every page of
@@ -31,10 +33,10 @@
 // singular blocks which appear on multiple pages around the site.
 // The name of the file should match the single selector inside the file and
 // everything else should be nested under that selector,
-#content {
-  @import "helpers/block";
-  @import "helpers/phase-block";
-}
+
+// Layout helpers
+@import "helpers/block";
+@import "helpers/phase-block";
 
 @import "helpers/progress-indicator";
 @import "helpers/step-navigation";
@@ -57,4 +59,4 @@
 @import "views/transaction-2";
 @import "views/transaction-3";
 @import "views/transaction-4";
-@import "views/design-patterns";
+@import "views/design-guide";

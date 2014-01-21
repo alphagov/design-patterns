@@ -9,6 +9,10 @@ If you're designing or building services for GOV.UK this library can help you.
 It contains guidance and examples for some of the more common design problems.
 If you'd like to suggest a new pattern you can do so on the [design patterns wiki](https://designpatterns.hackpad.com/Pattern-library-0eUk1OdHvql).
 
+####The guide
+
+* [GOV.UK design guide](design-guide.html)
+
 ####The patterns
 
 * [Addresses](addresses.html)
