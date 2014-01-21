@@ -1740,12 +1740,30 @@ main.transaction-4 .content {
 .example {
   border: 1px solid #bfc1c3;
   outline: 20px solid #f8f8f8;
-  margin: 30px 0 60px 0;
+  margin: 45px 0 60px 0;
   padding: 15px;
   overflow: hidden; }
   @media (min-width: 641px) {
     .example {
       padding: 30px; } }
+  .example .example-header {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 19px;
+    line-height: 1.31579;
+    font-weight: 400;
+    text-transform: none;
+    padding-top: 2px;
+    padding-bottom: 8px;
+    font-weight: 700;
+    margin: 15px 0 0 0; }
+    @media (max-width: 640px) {
+      .example .example-header {
+        font-size: 16px;
+        line-height: 1.25; } }
+    @media (min-width: 641px) {
+      .example .example-header {
+        padding-top: 0;
+        padding-bottom: 5px; } }
   .example .example-url {
     margin-top: 30px; }
   .example .example-url:before {
@@ -1754,6 +1772,8 @@ main.transaction-4 .content {
     padding-top: 30px; }
   .example .reference-url:before {
     content: "Reference: "; }
+  .example .button {
+    margin-bottom: 15px; }
   .example .example-unordered-list li,
   .example .example-ordered-list li {
     padding-left: 0.3em;
@@ -1792,6 +1812,8 @@ main.transaction-4 .content {
   .example img {
     max-width: 100%;
     vertical-align: top; }
+  .example .related-links {
+    list-style-type: none; }
 
 .core-80 {
   font-family: "nta", Arial, sans-serif;
