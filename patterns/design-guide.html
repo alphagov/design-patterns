@@ -11,7 +11,7 @@ phases:
     <ol class="group">
       <li><a href="https://www.gov.uk">Home</a></li>
       <li><a href="{{ site.baseurl }}/patterns/">Design patterns</a></li>
-      <li><a href="{{ site.baseurl }}/patterns/design-patterns.html">GOV.UK design guide</a></li>
+      <li><a href="{{ site.baseurl }}/patterns/design-guide.html">GOV.UK design guide</a></li>
     </ol>
   </nav>
 </div>
@@ -29,34 +29,62 @@ phases:
     </div>
   </header>
   
-  <div class="block content">
-    <div class="inner-block">
+  <div class="grid-wrapper grid-page">
+    <div class="grid grid-1-4">
+      <div class="inner-block">
+        <ul class="guide-nav">
+           <li>
+              <a href="#guide-about">About this guide</a>
+            </li>
+          <li>
+            <a href="#guide-typography">Typography</a>
+            <ul>
+              <li><a href="#guide-typography-type">Type sizes</a></li>
+              <li><a href="#guide-typography-usage">Type size usage</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#guide-grid">Grid</a>
+            <ul>
+              <li><a href="#guide-grid-4-col">Four column grid</a></li>
+              <li><a href="#guide-grid-3-col">Three column grid</a></li>
+              <li><a href="#guide-grid-2-col">Two column grid</a></li>
+            </ul>
+          </li>
+          <li><a href="#guide-images">Images</a></li>
+          <li><a href="#guide-data">Data</a></li>
+          <li><a href="#guide-colour">Colour</a></li>
+        </ul>
       
-      <!-- The purpose of this guide -->
-      <!--
-      <div class="guide">
-        <h2 class="guide-header">The purpose of this guide</h2>
-        <p class="lede">
-          This guide is intended to help in the production of content for GOV.UK. Its aim is to show design patterns and demonstrate these with example code, to help developers and designers achieve a consistent look across government services.
-        </p>
-        <p>
-          This guide also replaces the <a href="assets/images/gov-uk-design-patterns.pdf">GOV.UK Design Patterns PDF</a> and in doing so, initially follows a similar structure, though there is scope for many more topics to be covered here. It is hoped that this content will form the basis of a style guide and the styles here will reside within the front-end toolkit.
-        </p>
       </div>
-      -->
-      
-      <!-- Typography specifications -->
-      <div class="guide">
-        <h2 class="guide-header">Typography specifications</h2>
-        <p class="lede">
-          The following type sizes are available as core styles in a regular and bold weights.
-        </p>
-        <p>The Sass mixins for these styles can be found within the <a href="https://github.com/alphagov/govuk_frontend_toolkit#typography">GOV.UK frontend toolkit</a></p>
-      </div>
-      
-      <div class="example">
-        <div class="grid-wrapper">
-          <div class="grid grid-1-2">
+    </div>
+    <div class="grid grid-3-4 content">
+      <div class="inner-block">
+        
+        <!-- About this guide -->
+        <div class="guide" id="guide-about">
+          <h2 class="guide-header">About this guide</h2>
+          <p class="lede">
+            This guide aims to help achieve a consistent look across government services.
+          </p>
+        </div>
+        
+        <!-- Typography -->
+        <div class="guide" id="guide-typography">
+          <h2 class="guide-header">Typography</h2>
+          <p class="lede">
+            Services should use clear, easy to read type, with consistent styles and a clear hierarchy of information.
+          </p>
+        </div>
+        
+        <!-- Typography : Type sizes -->
+        <div class="guide" id="guide-typography-type">
+          <h3 class="guide-subheader">Type sizes</h3>
+          <p>These are the recommended type sizes.</p>
+        </div>
+        
+        <div class="example">
+          <div class="inner-block">
             <div class="core-80">
               80px/80 Regular
             </div>
@@ -79,10 +107,14 @@ phases:
               16px/20 Regular
             </div>
             <div class="core-14">
-              14px/20 Regular
+            14px/20 Regular
             </div>
           </div>
-          <div class="grid grid-1-2">
+        </div>
+        
+        <div class="example">
+          
+          <div class="inner-block">
             <div class="bold-80">
               80px/80 Bold
             </div>
@@ -108,481 +140,249 @@ phases:
               14px/20 Bold
             </div>
           </div>
-        </div>
-      </div>
-      
-      <!-- Headings -->
-      <div class="guide">
-        <h2 class="guide-header">Headings</h2>
-        <p class="lede">
-          Sizing your text appropriately for the column width should be your starting point. Use 48px as the recommended heading size and reduce where titles are too long.
-        </p>
-      </div>
-      
-      <!-- Heading sizes -->
-      <h3 class="heading-24 heading-bold">The following heading sizes are commonly used.</h3>
-      
-      <div class="example add-spacing">
-        
-        <div class="heading-48-bold">
-          48px heading (page titles)
-        </div>
-        
-        <div class="heading-36-bold">
-          36px heading (content page titles)
-        </div>
-        <div class="heading-36-underline">
-          36px heading (page sections)
-        </div>
-        
-        <div class="heading-27">
-          27px heading (intro or lead text)
-        </div>
-        
-      </div>
-      
-      <!-- Page titles -->
-      <div class="guide">
-        <h3 class="guide-header">Page titles</h3>
-         <p>Where possible, page titles should use 48px bold text. Where heading text is too long for 48px bold text, reduce the size to 36px bold. </p>
-        <p>Page titles have plenty of white space surrounding them. 60px above and below for 48px text, 45px above and below for 36px text.</p>
-      </div>
-      
-      <div class="example">
-        <header class="page-header">
-          <h2 class="heading-48 heading-bold">Drivers of lorries, buses and goods vehicles</h2>
-        </header>
-        <div class="example-url">
-          <a href="https://www.gov.uk/browse/driving/drivers-lorries-buses">Driving and transport - page title</a>
-        </div>
-      </div>
-      
-      <!-- Content page titles -->
-      <div class="guide">
-        <h3 class="guide-header">Content page titles</h3>
-        <p>These are smaller, at 36px and have optional text denoting the page section above. Here as the text size is smaller, the spacing at the top is also smaller with 45px above the title, but the same 60px below.</p>
-      </div>
-      
-      <div class="example">
-        <div class="heading-27 text-secondary">27px section name (optional)</div>
-        <div class="heading-36 heading-bold">36px the title of this document</div>
-        <div class="example-url">
-          <a href="https://www.gov.uk/government/publications/dwp-business-plan-transparency-measures">Gov.UK publications</a>
-        </div>
-      </div>
-      
-      <div class="example">
-        <div class="heading-36 heading-bold">36px the title of this document</div>
-        <div class="example-url">
-          <a href="https://www.gov.uk/#services-and-information-label">GOV.UK - Services and information</a>
-        </div>
-      </div>
-      
-      <div class="example">
-        <div class="heading-36-underline">36px the title of a section</div>
-        <div class="example-url">
-          <a href="#example-needed">Example needed</a>
-        </div>
-      </div>
-      
-      <!-- Body text -->
-      <div class="guide">
-        <h2 class="guide-header">Body text</h2>
-        <p>
-          Type should be large enough to be easily read. This is generally larger than many current websites: 36px for headlines, 19px for body text. Leading body text - for example an intro paragraph, can be larger at 24px.
-        </p>
-      </div>
-      
-      <div class="example">
-        
-        <p class="heading-24">
-          24px copy (intro text)
-        </p>
-        <div class="copy-19">
-          19px copy (body copy)
-        </div>
-        <div class="copy-16">
-          16px copy (smaller body copy)
-        </div>
-        <div class="copy-14">
-          14px copy
-        </div>
-      </div>
-      
-      <h3 class="heading-24 heading-bold">Intro paragraph text</h3>
-       
-      <div class="example">
-        <div class="grid-wrapper">
-          <div class="grid grid-1-2">
           
-            <p class="heading-24">
-              Get help if you’re at school, planning to go on to further or higher education, looking for training or interested in a student or career development loan.
-            </p>
-          
-          </div>
-          <div class="grid grid-1-2">
-          
-            <p class="heading-24">
-              24px intro text
-            </p>
-          
-          </div>
         </div>
         
-        <div class="example-url">
-          <a href="https://www.gov.uk/browse/education">GOV.UK - Education and learning</a>
+        <!-- Typography : Usage -->
+        <div class="guide" id="guide-typography-usage">
+          <h3 class="guide-subheader">Type size usage</h3>
         </div>
         
-      </div>
-      
-      <h3 class="heading-24 heading-bold">Body text</h3>
-       
-      <div class="example">
+        <div class="example">
+          <h2 class="heading-48 heading-bold">Page header <em>48px</em></h2>
+          <h2 class="heading-36 heading-bold">Page subheader <em>36px</em></h2>
+          <h2 class="heading-36 heading-underline">Page section header <em>36px</em></h2>
         
-        <div class="grid-wrapper">
-          <div class="grid grid-1-2">
-            <p class="copy-19">
-              Log in or sign up to student finance online. You can check when payments are due, track an application and update your personal details and apply for finance.
-            </p>
-          </div>
-          <div class="grid grid-1-2">
-            <p class="copy-19">
-              19px regular body copy
-            </p>
-          </div>
+          <p class="heading-24">
+            <em>24px</em> copy, used for lead paragraphs.
+          </p>
+          <p class="copy-19">
+            <em>19px</em> copy, recommended body copy size.
+          </p>
+          <p class="copy-16">
+            <em>16px</em> copy, Aenean <a href="#">link within body copy</a> nulla sed consectetur.
+          </p>
+          <p class="copy-14">
+            <em>14px</em> copy, Aenean lacinia bibendum nulla sed consectetur.
+          </p>
         </div>
         
-        <div class="example-url">
-          <a href="https://www.gov.uk/student-finance-register-login">GOV.UK - Student finance login</a>
-        </div>
         
-      </div>
-      
-      <h3 class="heading-24 heading-bold">Smaller body copy</h3>
-      
-      <div class="guide">
-        <p>Use body copy smaller than 19px for in-page navigation, breadcrumbs, related links and step-by-step navigation.</p>
-      </div>
-      
-      <div class="example">
-        
-        <div class="grid-wrapper">
-          <div class="grid grid-1-2">
-            <ul class="related-links">
-              <li>
-                <a href="/student-finance">Student finance</a>
-              </li>
-              <li>
-                <a href="/apply-for-student-finance">Student finance: how to apply</a>
-              </li>
-              <li>
-                <a href="/student-finance-forms">Student finance forms</a>
-              </li>
-              <li>
-                <a href="/contact-student-finance-england">Contact Student Finance England</a>
-              </li>
-            </ul>
-          </div>
-          <div class="grid grid-1-2">
-            <p class="copy-16">
-            16px related links
-            </p>
-          </div>
-        </div>
-        
-        <div class="example-url">
-          <a href="https://www.gov.uk/student-finance">GOV.UK - Student finance</a>
-        </div>
-        
-      </div>
-      
-       <!-- Colour -->
-        <div class="guide">
-
-          <h2 class="guide-header">Colour</h2>
+        <!-- Grid -->
+        <div class="guide" id="guide-grid">
+          <h2 class="guide-header">Grid</h2>
           <p class="lede">
-            Generally we use type in #0B0C0C against a white or light grey background. Links should be blue and underlined.
-          </p>
-          <h3 class="heading-24 heading-bold">Text and link colours</h3>
-          <p>
-            Text must have enough contrast against the background colour to be readable. This should be tested to conform with our <a href="https://www.gov.uk/service-manual/user-centered-design/accessibility.html">Accessibility requirements</a>.
+            Tablet or desktop layouts use either a three or four column fluid grid. 
           </p>
         </div>
-
+        
+        <!-- Grid : Example -->
+        <div class="guide" id="guide-grid-4-col">
+          <h3 class="guide-subheader">Four equal columns</h3>
+        </div>
+        
+        <div class="example">
+          <div class="grid-wrapper grid-example">
+            <div class="grid grid-1-4">
+              <div class="inner-block">
+                <p>Content</p>
+              </div>
+            </div>
+            <div class="grid grid-1-4">
+              <div class="inner-block">
+                <p>Content</p>
+              </div>
+            </div>
+            <div class="grid grid-1-4">
+              <div class="inner-block">
+                <p>Content</p>
+              </div>
+            </div>
+            <div class="grid grid-1-4">
+              <div class="inner-block">
+                <p>Content</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Grid : Example -->
+        <div class="guide" id="guide-grid-3-col">
+          <h3 class="guide-subheader">Three equal columns</h3>
+        </div>
+        
+        <div class="example">
+          <div class="grid-wrapper grid-example">
+            <div class="grid grid-1-3">
+              <div class="inner-block">
+                <p>Content</p>
+              </div>
+            </div>
+            <div class="grid grid-1-3">
+              <div class="inner-block">
+                <p>Content</p>
+              </div>
+            </div>
+            <div class="grid grid-1-3">
+              <div class="inner-block">
+                <p>Content</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Grid : Example -->
+        <div class="guide" id="guide-grid-2-col">
+          <h3 class="guide-subheader">Two columns</h3>
+        </div>
+        
+        <div class="example">
+          <div class="grid-wrapper grid-example">
+            <div class="grid grid-2-3">
+              <div class="inner-block">
+                <p>Content</p>
+              </div>
+            </div>
+            <div class="grid grid-1-3">
+              <div class="inner-block">
+                <p>Content</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        <!-- Images -->
+        <div class="guide" id="guide-images">
+          <h2 class="guide-header">Images</h2>
+          <p class="lede">
+            Avoid using images, GOV.UK is for services and information, not photographs. If images cannot be avoided they should be landscape, 3:2 aspect ratio.
+          </p>
+        </div>
+        
+        <!-- Images : Example -->
         <div class="example">
           <div class="grid-wrapper">
             <div class="grid grid-1-2">
-
-              <p>
-                Use <a href="#">Benefits Adviser</a> to find out what benefits you could get. It will time out if inactive for 20 minutes but you can save your answers for up to 7 days.
-              </p>
-
-              <div class="example-url">
-                <a href="https://www.gov.uk/benefits-adviser">Links within paragraph text</a>
+              <div class="inner-block">
+                <img src="assets/images/3by2.jpg" alt="3:2">
               </div>
-
             </div>
             <div class="grid grid-1-2">
-
-               <h2 class="copy-19 copy-bold">
-                  <a href="#">Apprenticeships, 14 to 19 education and training at work</a>
-                </h2>
-
-                <div class="example-url">
-                  <a href="https://www.gov.uk/browse/education">Links within headings</a>
-                </div>
-
+              <div class="inner-block">
+                <img src="assets/images/pm.jpg" alt="">
+              </div>
             </div>
           </div>
-
         </div>
-
-        <div class="guide">
-
-          <h3 class="guide-sub-header">Colour palette</h3>
-          <p>
-             We recommend you use the Sass variables where possible in case the colour values are updated. The variables are defined in ‘colours.scss’ in the <a href="https://github.com/alphagov/govuk_frontend_toolkit#colours">GOV.UK Front-end Toolkit</a>.
-          </p>
-          <p>
-            <a href="https://www.gov.uk/service-manual/user-centered-design/resources/colour-palettes">GOV.UK colour palette with Sass variable names</a>
+        
+        
+        <!-- Data -->
+        <div class="guide" id="guide-data">
+          <h2 class="guide-header">Data</h2>
+          <p class="lede">
+            Data is recommended as an alternative to using photography.
           </p>
         </div>
         
-      <!-- Images -->
-      <div class="guide">
-        <h2 class="guide-header">Images</h2>
-        <p class="lede">
-          Avoid using images, GOV.UK is
-          for services and information, not photographs. If images cannot be avoided they should be landscape, 3:2 aspect ratio
-        </p>
-      </div>
-      
-      <div class="example">
-        
-        <div class="grid-wrapper">
+        <!-- Data : Example -->
+        <div class="example">
           <div class="grid grid-1-2">
-            <img src="assets/images/3by2.jpg" alt="3:2">
-          </div>
-          <div class="grid grid-1-2">
-            <img src="assets/images/pm.jpg" alt="">
-          </div>
-        </div>
-        <div class="example-url">
-          <a href="https://www.gov.uk/government/how-government-works">GOV.UK - Image usage</a>
-        </div>
-      </div>
-      
-      
-      <!-- Data -->
-      <div class="guide">
-        <h2 class="guide-header">Data</h2>
-        <p class="lede">
-          Pulling out interesting figures from data sets is a good way to make them more approachable without resorting to photography.
-        </p>
-        <p>Data is displayed at 80px bold. Used to highlight numbers, facts. Smaller data examples are displayed at 48px bold. The number should always precede the following text to aid screenreaders.</p>
-        
-      </div>
-      
-      <!-- Data : Example 1 -->
-      <div class="example">
-
-        <div class="grid grid-1-2">
-          <div class="bold-80">24</div>
-          <p class="copy-16 copy-bold">Ministerial departments</p>
-          <div class="example-url">
-            <a href="https://www.gov.uk/#departments-and-policy">Gov.UK Departments and policy</a>
-          </div>
-        </div>
-        <div class="grid grid-1-2">
-          <div class="bold-80">80PX</div>
-          <p class="copy-16 copy-bold">16px</p>
-        </div>
-
-      </div>
-
-      <!-- Data : Example 2 -->
-      <div class="example">
-
-        <div class="grid grid-1-2">
-          <div class="bold-48">56/154</div>
-          <p class="copy-16 copy-bold">on GOV.UK</p>
-          <div class="example-url">
-            <a href="https://www.gov.uk/#departments-and-policy">Gov.UK Departments and policy</a>
-          </div>
-        </div>
-
-        <div class="grid grid-1-2">
-          <div class="bold-48">48PX</div>
-          <p class="copy-16 copy-bold">16px</p>
-        </div>
-
-      </div>
-      
-      <!-- Lists -->
-      <!--
-      <div class="guide">
-        <h2 class="guide-header">Lists</h2>
-        <p class="lede">Lists use the default 19px body size and use an image for the bullet. 
-          Ordered lists are used to indicate navigation steps.</p>
-      </div>
-      
-      <div class="example">
-        
-        <div class="grid-wrapper">
-          <div class="grid grid-1-2">
-            
-            <ul class="example-unordered-list">
-              <li>savings</li>
-              <li>earnings (eg from payslips)</li>
-              <li>existing benefits and pensions</li>
-              <li>outgoings (eg rent, mortgage, childcare payments)</li>
-              <li>local housing allowance limit (if you rent your property from a private landlord)</li>
-            </ul>
-            
-            <div class="example-url">
-              <a href="https://www.gov.uk/benefits-adviser">GOV.UK - Benefits advisor</a>
+            <div class="inner-block">
+              <div class="bold-80">24</div>
+              <p class="copy-16 copy-bold">Ministerial departments</p>
             </div>
-            
           </div>
           <div class="grid grid-1-2">
-           
+            <div class="inner-block">
+              <div class="bold-80">80PX</div>
+              <p class="copy-16 copy-bold">16px</p>
+            </div>
           </div>
+        </div>
+        
+        <!-- Data : Example -->
+        <div class="example">
+          <div class="grid grid-1-2">
+            <div class="inner-block">
+              <div class="bold-48">56/154</div>
+              <p class="copy-16 copy-bold">on GOV.UK</p>
+            </div>
+          </div>
+          <div class="grid grid-1-2">
+            <div class="inner-block">
+              <div class="bold-48">48PX</div>
+              <p class="copy-16 copy-bold">16px</p>
+            </div>
+          </div>
+        </div>
+        
+        
+        <!-- Colour -->
+        <div class="guide" id="guide-colour">
+          <h2 class="guide-header">Colour</h2>
+          <p class="lede">
+            GOV.UK colour palette with Sass variable names.
+          </p>
+        </div>
+        
+        <!-- Colour palette : Example -->
+        
+        <details class="more">
+          <summary>View front-end toolkit example</summary>
           
+          <p>
+            $hm-government
+          </p>
+          
+          <p>Usage: </p>
+          
+          <p class="note">
+            
+            .top-bar {
+              background: $hm-government
+            }
+          </p>
+          
+          <a href="https://github.com/alphagov/govuk_frontend_toolkit#colours">GOV.UK front-end toolkit - colours</a>
+        </details>
+        
+        
+        <!-- Buttons -->
+        
+        <div class="guide" id="guide-colour">
+          <h2 class="guide-header">Buttons</h2>
+          <p class="lede">
+            Primary action buttons are green, secondary action buttons are grey, irreversible action buttons are red.
+          </p>
         </div>
         
-      </div>
-      -->
-      
-      <!-- Tables -->
-      <!--
-      <div class="guide">
-        <h2 class="guide-header">Tables</h2>
-        <p></p>
-      </div>
-      
-      <div class="example">
-        <h3 class="example-header"></h3>
-        <div class="example-url">
-          <a href="#">www.example.com</a>
-        </div>
-      </div>
-      -->
-      
-      <!-- Buttons -->
-      <div class="guide">
-        <h2 class="guide-header">Buttons</h2>
-        <p class="lede">
-          Buttons should have a default colour (such as green). Alternative colours should be possible but only to indicate different actions. Button text size should be the same as body text, for desktop this is 19px.
-        </p>
-      </div>
-      
-      <div class="example">
-        <h3 class="example-header">Primary actions</h3>
-
-        <a href="#" class="button">Button</a>
-
-        <h3 class="example-header">Secondary actions</h3>
-
-        <a href="#" class="button button-secondary">Button</a>
-
-        <h3 class="example-header">Warning actions</h3>
-
-        <a href="#" class="button button-warning">Button</a>
-       
-        <div class="reference-url">
-            <a href="https://www.gov.uk/service-manual/user-centered-design/resources/buttons.html">Service Design Manual : Buttons</a>
+        <div class="example">
+          <a href="#" class="button">Button</a>
+          <a href="#" class="button button-secondary">Button</a>
+          <a href="#" class="button button-warning">Button</a>
         </div>
         
-      </div>
-      
-      
-      <!-- Grids -->
-      
-      <div class="guide">
-        <h2 class="guide-header">Grid layout</h2>
-        <p class="lede">
-          Tablet or desktop layouts use either a three or four column fluid grid. Both grids can be present on a single page.
-        </p>
-        <p>
-          Narrower layouts intended for mobile devices or older web-browsers might find it simple to use a single column.
-        </p>
-        <p>
-          The gov.uk frontend toolkit provides width variables for common grid layout widths.
-        </p>
-        
-        <h3></h3>
-      </div>
-      
-      <h3 class="guide-sub-header">Three equal columns</h3>
-      
-      <div class="example">
-        
-        <div class="grid-wrapper grid-example">
-          <div class="grid grid-1-3">
-            <div class="inner-block">
-              <p>Content</p>
-            </div>
-          </div>
-          <div class="grid grid-1-3">
-            <div class="inner-block">
-              <p>Content</p>
-            </div>
-          </div>
-          <div class="grid grid-1-3">
-            <div class="inner-block">
-              <p>Content</p>
-            </div>
-          </div>
-        </div>
+        <details class="more">
+          <summary>View front-end toolkit example</summary>
+          
+          <p>
+            @mixin button($colour)
+          </p>
+          
+          <p>Usage: </p>
+          
+          <p class="note">
+            
+            .button-primary {
+              @include button($green);
+            }
+          </p>
+          
+          <a href="https://github.com/alphagov/govuk_frontend_toolkit#buttons">GOV.UK front-end toolkit - buttons</a>
+        </details>
         
       </div>
-      
-      <h3 class="guide-sub-header">Four equal columns</h3>
-      
-      <div class="example">
-        
-        <div class="grid-wrapper grid-example">
-          <div class="grid grid-1-4">
-            <div class="inner-block">
-              <p>Content</p>
-            </div>
-          </div>
-          <div class="grid grid-1-4">
-            <div class="inner-block">
-              <p>Content</p>
-            </div>
-          </div>
-          <div class="grid grid-1-4">
-            <div class="inner-block">
-              <p>Content</p>
-            </div>
-          </div>
-          <div class="grid grid-1-4">
-            <div class="inner-block">
-              <p>Content</p>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-      
-      <h3 class="guide-sub-header">Two columns - two thirds, one third split</h3>
-      
-      <div class="example">
-        <div class="grid-wrapper grid-example">
-          <div class="grid grid-2-3">
-            <div class="inner-block">
-              <p>Content</p>
-            </div>
-          </div>
-          <div class="grid grid-1-3">
-            <div class="inner-block">
-              <p>Content</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
     </div>
   </div>
   

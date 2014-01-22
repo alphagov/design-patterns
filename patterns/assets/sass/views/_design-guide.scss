@@ -1,6 +1,7 @@
 // Prevent the Design Guide styles overriding any gov.uk template or frontend_toolkit styles
 
 // Design Guide - Layout
+
 .main {
    max-width: 1020px;
    width: auto;
@@ -33,13 +34,28 @@
    }
 }
 
+// Design Guide - Nav
+
+.guide-nav {
+   border-top: 5px solid #0b0c0c;
+   padding-top: $gutter-half;
+   padding-left: $gutter-half;
+   list-style: none;
+}
+
+.guide-nav ul {
+   padding-left: $gutter-half;
+}
+
 // Design Guide - Explanatory sections
 
 .guide-header {
-   @include new-heading-36-underline;
+   @include heading-27;
+   font-weight: 700;
+   margin-bottom: 0;
 }
 
-.guide-sub-header {
+.guide-subheader {
    @include heading-24;
    font-weight: 700;
 }
@@ -50,28 +66,25 @@
    
    margin-bottom: $gutter;
    
-   .lede {
-      @include new-heading-27;
-      @include media(tablet) {
-         max-width: 75%;
-      }
-   }
-   
    p {
       @include copy-19;
       margin: $gutter-half 0;
       @include media(tablet) {
-         max-width: 75%;
+         max-width: 85%;
+      }
+   }
+   
+   .lede {
+      @include heading-24;
+      margin: 0 0 $gutter-half 0;
+      @include media(tablet) {
+         max-width: 85%;
       }
    }
    
    .note {
       @include copy-16;
       margin: $gutter-half 0;
-   }
-   
-   details {
-      padding-left: $gutter-half;
    }
    
 }
@@ -85,17 +98,12 @@
    border: 1px solid #bfc1c3;
    outline: 20px solid #f8f8f8;
    margin: $gutter*1.5 0 $gutter*2 0;
-   padding: $gutter-half;
+   padding: $gutter-half 0;
    @include media(tablet) {
-      padding: $gutter;
+      padding: $gutter $gutter-half;
    }
    overflow: hidden;
    
-   .example-header {
-      @include copy-19;
-      font-weight: 700;
-      margin: $gutter-half 0 0 0;
-   }
    .example-url {
       margin-top: $gutter;
    }
@@ -103,30 +111,8 @@
       content: "Example: ";
    }
    
-   .reference-url {
-      padding-top: $gutter;
-   }
-   .reference-url:before {
-      content: "Reference: ";
-   }
-   
    .button {
       margin-bottom: $gutter-half;
-   }
-   
-   .example-unordered-list li,
-   .example-ordered-list li {
-      padding-left: 0.3em;
-      @include copy-19;
-   }
-   
-   .example-unordered-list {
-      list-style-type: circle;
-      list-style-image: url(https://assets.digital.cabinet-office.gov.uk/static/bullet-disc-5px-4180cb91fb35028365a59ddfcfd36e34.gif);
-   }
-   
-   .example-ordered-list {
-      list-style-type: none;
    }
    
    .swatch {
@@ -136,22 +122,40 @@
       margin-right: $gutter;
       margin-top: $gutter-half;
    }
-   .colour-hm-government {
-      background: $hm-government;
-   }
-   .colour-nhs {
-      background: $department-of-health;
+   
+   // Highlight for sizes & info
+   em {
+      font-style: normal;
+      color: $hm-government;
    }
    
-   // Images 
    img {
       max-width: 100%;
       vertical-align: top;
    }
-   
-   .related-links {
-      list-style-type: none;
-   }
+}
+
+// Design Guide - More information
+
+.more {
+   margin-top: -($gutter-half);
+   margin-bottom: $gutter*2;
+   padding-left: $gutter-half;
+}
+.more[open] {
+   margin-top: -($gutter-half);
+   margin-bottom: $gutter*2;
+}
+.more summary {
+   margin-left: -19px;
+}
+.more p,
+.more a {
+   margin: $gutter-half;
+}
+.more a {
+   display: inline-block;
+   @include copy-16;
 }
 
 
@@ -227,45 +231,8 @@
    @include heading-24;
 }
 
-// New! Commonly used heading and copy sizes
-
-// 48 bold
-.heading-48-bold {
-   @include heading-48;
-   font-weight: 700;
-}
-
-// 36 bold
-.heading-36-bold {
-   @include heading-36;
-   font-weight: 700;
-}
-
-// 36 regular underline
-.heading-36-underline {
-   @include new-heading-36-underline;
-}
-
-// 24 bold
-.heading-24-bold {
-   @include heading-24;
-   font-weight: 700;
-}
-
-// Add spacing for examples
-.add-spacing div {
-   margin-bottom: $gutter;
-}
-
-// 24 regular
-.intro {
-   @include heading-24;
-}
-
-// 19px bold
-
-.copy-19-bold {
-   @include copy-19;
+// Use these to show where new font styles are required
+.heading-bold {
    font-weight: 700;
 }
 
@@ -280,42 +247,11 @@
    @include copy-14;
 }
 
+// Use these to show where new font styles are required
 .copy-bold {
    font-weight: 700;
 }
 
-
-// Use this if we think other weights are used elsewhere
-.heading-bold {
-   font-weight: bold;
-}
-
-
-// Page header
-.page-header {
-   padding-top: 20px;
-}
-.page-header .title {
-   padding: 0;
-   background: pink;
-   @include media(tablet) {
-      padding: 20px 0;
-   }
-}
-
-// Spacing 
-//.page-title {
-//   padding: $gutter 0;
-//   background: lightgrey;
-//   
-//   @include media(tablet) {
-//      padding: $gutter 0;
-//   }
-//}
-
-.space-15 {
-   margin-bottom: $gutter-half+5;
-}
 
 // Tabular numbers 
 
@@ -349,12 +285,6 @@
   @include external-link-12;
 }
 
-// Text colours
-
-.text-secondary {
-   color: $secondary-text-colour;
-}
-
 // Link colours
 
 .link {
@@ -368,6 +298,20 @@
 }
 
 // Colour palette
+
+.colour-hm-government {
+   background: $hm-government;
+}
+
+.colour-nhs {
+   background: $department-of-health;
+}
+
+// Text colours
+
+.text-secondary {
+   color: $secondary-text-colour;
+}
 
 // Buttons
 
@@ -388,6 +332,10 @@
 
 // Grid layout
 
+.grid-page {
+   padding: 0 15px;
+}
+
 .grid-wrapper {
    @extend %contain-floats;
 }
@@ -402,7 +350,6 @@
 
 .grid-1-4 {
    width: $full-width;
-   margin-bottom: $gutter-half;
    @include media(tablet) {
       width: 25%;
    }
@@ -410,7 +357,6 @@
 
 .grid-1-3 {
    width: $full-width;
-   margin-bottom: $gutter-half;
    @include media(tablet) {
       width: $one-third;
    }
@@ -418,7 +364,6 @@
 
 .grid-1-2 {
    width: $full-width;
-   margin-bottom: $gutter-half;
    @include media(tablet) {
       width: $half;
    }
@@ -426,24 +371,28 @@
 
 .grid-2-3 {
    width: $full-width;
-   margin-bottom: $gutter-half;
    @include media(tablet) {
       width: $two-thirds;
    }
 }
 
-// Grid layout - example styles to highlight content
+.grid-3-4 {
+   width: $full-width;
+   @include media(tablet) {
+      width: 75%;
+   }
+}
+
+// Grid layout - example styles to highlight
 
 .grid-example {
-   background: grey;
-   padding: $gutter-half 0 0 0;
-   @include media(tablet) {
-     padding: $gutter-half $gutter-half 0 $gutter-half;
-   }
+   background: white;
 }
 
 .grid-example p {
    width: 100%;
-   background: white;
-   // background: white url("../images/stripe.png") 0 0 repeat;
+   background: url("../images/grid.png") 0 0 repeat;
+   min-height: 60px;
+   overflow: hidden;
+   text-indent: -99em;
 }
