@@ -40,6 +40,7 @@
    border-top: 5px solid #0b0c0c;
    padding-top: $gutter-half;
    padding-left: $gutter-half;
+   margin-top: 7px;
    list-style: none;
 }
 
@@ -236,6 +237,12 @@
    font-weight: 700;
 }
 
+.heading-underline {
+   padding-bottom: 5px;
+   border-bottom: 5px solid #000;
+   margin-bottom: $gutter-half;
+}
+
 // Copy
 .copy-19 {
    @include copy-19;
@@ -250,6 +257,19 @@
 // Use these to show where new font styles are required
 .copy-bold {
    font-weight: 700;
+}
+
+// Example heading classes
+.page-header {
+   padding: $gutter 0;
+}
+.page-header .heading-48 {
+   padding-top: 26px;
+   padding-bottom: 14px;
+   font-weight: 700;
+}
+.page-header .heading-24 {
+   padding-top: $gutter;
 }
 
 

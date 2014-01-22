@@ -1641,6 +1641,7 @@ main.transaction-4 .content {
   border-top: 5px solid #0b0c0c;
   padding-top: 15px;
   padding-left: 15px;
+  margin-top: 7px;
   list-style: none; }
 
 .guide-nav ul {
@@ -2060,6 +2061,11 @@ main.transaction-4 .content {
 .heading-bold {
   font-weight: 700; }
 
+.heading-underline {
+  padding-bottom: 5px;
+  border-bottom: 5px solid #000;
+  margin-bottom: 15px; }
+
 .copy-19 {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
@@ -2113,6 +2119,17 @@ main.transaction-4 .content {
 
 .copy-bold {
   font-weight: 700; }
+
+.page-header {
+  padding: 30px 0; }
+
+.page-header .heading-48 {
+  padding-top: 26px;
+  padding-bottom: 14px;
+  font-weight: 700; }
+
+.page-header .heading-24 {
+  padding-top: 30px; }
 
 .external-link-heading:after {
   background-image: image-url("external-link-black-12x12.png");

@@ -40,7 +40,8 @@ phases:
             <a href="#guide-typography">Typography</a>
             <ul>
               <li><a href="#guide-typography-type">Type sizes</a></li>
-              <li><a href="#guide-typography-usage">Type size usage</a></li>
+              <li><a href="#guide-typography-titles">Page titles</a></li>
+              <li><a href="#guide-typography-copy">Body copy</a></li>
             </ul>
           </li>
           <li>
@@ -54,7 +55,7 @@ phases:
           <li><a href="#guide-images">Images</a></li>
           <li><a href="#guide-data">Data</a></li>
           <li><a href="#guide-colour">Colour</a></li>
-          <li><a href="#guide-buttons">Colour</a></li>
+          <li><a href="#guide-buttons">Buttons</a></li>
         </ul>
       
       </div>
@@ -144,30 +145,117 @@ phases:
           
         </div>
         
-        <!-- Typography : Usage -->
-        <div class="guide" id="guide-typography-usage">
-          <h3 class="guide-subheader">Type size usage</h3>
+        <div class="example">
+          <h2 class="heading-48 heading-bold">Page header <em>48px</em></h2>
+          <h3 class="heading-36 heading-bold">Page subheader <em>36px</em></h3>
+          <h3 class="heading-36 heading-underline">Page subheader <em>36px</em></h3>
+          <h3 class="heading-27 heading-bold">Page subheader <em>27px</em></h3>
+        </div>
+        
+        <details class="more">
+          <summary>View HTML &amp; SCSS for this example</summary>
+          
+          <p>
+            Create heading classes from the font mixins in _typography.scss.
+          </p>
+          
+          <p>Usage: </p>
+          
+          <pre>
+            <code>
+              &lt;h2 class=&quot;heading-48&quot;&gt;Page header 48px&lt;/h2&gt;
+              
+              .heading-48 {
+                @include heading-48;
+                font-weight: 700;
+              }
+            </code>
+          </pre>
+          
+          <a href="https://github.com/alphagov/govuk_frontend_toolkit#typography">Github: GOV.UK front-end toolkit - typography</a>
+        </details>
+        
+        <!-- Typography : Page titles -->
+        <div class="guide" id="guide-typography-titles">
+          <h3 class="guide-subheader">Page titles</h3>
         </div>
         
         <div class="example">
-          <h2 class="heading-48 heading-bold">Page header <em>48px</em></h2>
-          <h2 class="heading-36 heading-bold">Page subheader <em>36px</em></h2>
-          <h2 class="heading-36 heading-underline">Page section header <em>36px</em></h2>
+          <div class="inner-block">
+            <div class="page-header">
+              <h2 class="heading-48">Driving and transport <em>48px</em></h2>
+              <p class="heading-24">
+                Book your driving test or get a tax disc online, find out the legal requirements for buying, owning, importing or scrapping a car or motorcycle <em>24px</em>.
+              </p>
+            </div>
+            <div class="example-url">
+              <a href="https://www.gov.uk/browse/driving">Driving and transport</a>
+            </div>
+          </div>
+        </div>
         
-          <p class="heading-24">
-            <em>24px</em> copy, used for lead paragraphs.
+        <details class="more">
+          <summary>View HTML &amp; SCSS for this example</summary>
+          
+          <p>
+            Using the <code>heading-48</code> mixin, with additional styles for spacing, using the <code>$gutter-half</code> variable = 15px.
           </p>
-          <p class="copy-19">
-            <em>19px</em> copy, recommended body copy size.
-          </p>
-          <p class="copy-16">
-            <em>16px</em> copy, Aenean <a href="#">link within body copy</a> nulla sed consectetur.
-          </p>
-          <p class="copy-14">
-            <em>14px</em> copy, Aenean lacinia bibendum nulla sed consectetur.
+          
+          <p>Usage: </p>
+          <pre>
+            <code>
+              &lt;div class=&quot;page-header&quot;&gt;
+                &lt;h2 class=&quot;heading-48&quot;&gt;Driving and transport&lt;/h2&gt;
+                &lt;p class=&quot;heading-24&quot;&gt;
+                  Book your driving test or get a tax disc online, 
+                  find out the legal requirements for buying, owning, 
+                  importing or scrapping a car or motorcycle.
+                &lt;/p&gt;
+              &lt;/div&gt;
+              
+              .page-header {
+                 padding: $gutter-half 0;
+              }
+              .page-header .heading-48 {
+                 @include heading-48;
+                 font-weight: 700;
+                 padding-top: 26px;
+                 padding-bottom: 14px;
+              }
+              .page-header .heading-24 {
+                 padding-top: $gutter-half;
+              }
+              
+            </code>
+          </pre>
+        </details>
+        
+        <!-- Typography : Body copy -->
+        <div class="guide" id="guide-typography-copy">
+          <h3 class="guide-subheader">Body copy</h3>
+          <p>
+            Text should be large enough to be easily read.
           </p>
         </div>
         
+        <div class="example">
+          <div class="inner-block">
+            
+            <p class="heading-24">
+              <em>24px</em> copy, used for lead paragraphs.
+            </p>
+            <p class="copy-19">
+              <em>19px</em> copy, recommended body copy size.
+            </p>
+            <p class="copy-16">
+              <em>16px</em> copy, Aenean <a href="#">link within body copy</a> nulla sed consectetur.
+            </p>
+            <p class="copy-14">
+              <em>14px</em> copy, Aenean lacinia bibendum nulla sed consectetur.
+            </p>
+            
+          </div>
+        </div>
         
         <!-- Grid -->
         <div class="guide" id="guide-grid">
@@ -325,27 +413,44 @@ phases:
           <p class="lede">
             GOV.UK colour palette with Sass variable names.
           </p>
+          <p>
+            Using the Sass variables in the front-end toolkit is advised, in case these colours are updated.
+          </p>
         </div>
         
         <!-- Colour palette : Example -->
+        <div class="example">
+          <div class="inner-block">
+            <div class="swatch colour-hm-government"></div>
+            <pre><code>Sass variable: $hm-government</code>
+            </pre>
+            <div class="swatch colour-nhs"></div>
+            <pre><code>Sass variable: $department-of-health;</code>
+            </pre>
+          </div>
+          
+        </div>
         
         <details class="more">
-          <summary>View front-end toolkit example</summary>
+          <summary>View HTML &amp; SCSS for this example</summary>
           
           <p>
-            $hm-government
+           Taking the Sass colour variable <code>$hm-government</code>
           </p>
           
           <p>Usage: </p>
           
-          <p class="note">
-            
-            .top-bar {
-              background: $hm-government
-            }
-          </p>
+          <pre>
+            <code>
+              &lt;div class=&quot;swatch colour-hm-government&quot;&gt;&lt;/div&gt;
+               
+              .colour-hm-government {
+                background: $hm-government
+              }
+            </code>
+          </pre>
           
-          <a href="https://github.com/alphagov/govuk_frontend_toolkit#colours">GOV.UK front-end toolkit - colours</a>
+          <a href="https://github.com/alphagov/govuk_frontend_toolkit#colours">Github: GOV.UK front-end toolkit - colours</a>
         </details>
         
         
@@ -359,28 +464,37 @@ phases:
         </div>
         
         <div class="example">
-          <a href="#" class="button">Button</a>
-          <a href="#" class="button button-secondary">Button</a>
-          <a href="#" class="button button-warning">Button</a>
+          <div class="inner-block">
+            <a href="#" class="button">Button</a>
+            <a href="#" class="button button-secondary">Button</a>
+            <a href="#" class="button button-warning">Button</a>
+          </div>
         </div>
         
         <details class="more">
-          <summary>View front-end toolkit example</summary>
+          <summary>View HTML &amp; SCSS for this example</summary>
           
           <p>
-            @mixin button($colour)
+            The front-end toolkit provides button mixins in _buttons.scss.
           </p>
           
           <p>Usage: </p>
           
-          <p class="note">
-            
-            .button-primary {
-              @include button($green);
-            }
-          </p>
+          <pre>
+            <code>
+              &lt;button class=&quot;button-primary&quot;&gt;button text&lt;/button&gt;
+              
+              .button-primary {
+                @include button($green);
+                @include core-19;
+              }
+            </code>
+          </pre>
           
-          <a href="https://github.com/alphagov/govuk_frontend_toolkit#buttons">GOV.UK front-end toolkit - buttons</a>
+          <p>Here we also include the <code>core-19</code> mixin to set the button font size to 19px.</p>
+          
+          <a href="https://github.com/alphagov/govuk_frontend_toolkit#buttons">Github: GOV.UK front-end toolkit - buttons</a>
+        
         </details>
         
       </div>
