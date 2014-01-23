@@ -2134,13 +2134,8 @@ main.transaction-4 .content {
   padding-bottom: 17px;
   font-weight: 700; }
 
-.help-notice {
-  background: url(https://assets.digital.cabinet-office.gov.uk/static/icon-important-187bcc8d8a6d56498c4ac26cadad102d.png) 0 15px no-repeat;
-  padding-top: 15px;
-  padding-bottom: 30px; }
-
-.help-notice p {
-  padding-left: 60px; }
+.page-copyheader {
+  margin-top: 30px; }
 
 .external-link-heading:after {
   background-image: image-url("external-link-black-12x12.png");

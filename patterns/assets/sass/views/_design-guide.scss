@@ -276,13 +276,8 @@
    font-weight: 700;
 }
 
-.help-notice {
-   background: url(https://assets.digital.cabinet-office.gov.uk/static/icon-important-187bcc8d8a6d56498c4ac26cadad102d.png) 0 15px no-repeat;
-   padding-top: $gutter-half;
-   padding-bottom: $gutter;
-}
-.help-notice p {
-   padding-left: $gutter*2;
+.page-copyheader {
+   margin-top: $gutter;
 }
 
 // Tabular numbers 
