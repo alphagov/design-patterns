@@ -112,8 +112,11 @@
       content: "Example: ";
    }
    
-   .button {
-      margin-bottom: $gutter-half;
+   .button,
+   .button-secondary,
+   .button-warning {
+      float: left;
+      margin-bottom: 0;
    }
    
    .swatch {
@@ -237,12 +240,6 @@
    font-weight: 700;
 }
 
-.heading-underline {
-   padding-bottom: 5px;
-   border-bottom: 5px solid #000;
-   margin-bottom: $gutter-half;
-}
-
 // Copy
 .copy-19 {
    @include copy-19;
@@ -259,7 +256,7 @@
    font-weight: 700;
 }
 
-// Example heading classes
+// EXAMPLE - PAGE HEADER
 .page-header {
    padding: $gutter 0;
 }
@@ -268,10 +265,25 @@
    padding-bottom: 14px;
    font-weight: 700;
 }
-.page-header .heading-24 {
+.page-header .copy-19 {
    padding-top: $gutter;
 }
 
+// EXAMPLE - PAGE SUBHEADER
+.page-subheader .heading-24 {
+   padding-top: $gutter;
+   padding-bottom: 17px;
+   font-weight: 700;
+}
+
+.help-notice {
+   background: url(https://assets.digital.cabinet-office.gov.uk/static/icon-important-187bcc8d8a6d56498c4ac26cadad102d.png) 0 15px no-repeat;
+   padding-top: $gutter-half;
+   padding-bottom: $gutter;
+}
+.help-notice p {
+   padding-left: $gutter*2;
+}
 
 // Tabular numbers 
 

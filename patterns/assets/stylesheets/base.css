@@ -678,7 +678,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 .button,
 .button-secondary,
 .button-warning {
-  margin: 0 4px;
+  margin: 0 15px 15px 0;
   vertical-align: top; }
 
 details summary,
@@ -1757,8 +1757,11 @@ main.transaction-4 .content {
     margin-top: 30px; }
   .example .example-url:before {
     content: "Example: "; }
-  .example .button {
-    margin-bottom: 15px; }
+  .example .button,
+  .example .button-secondary,
+  .example .button-warning {
+    float: left;
+    margin-bottom: 0; }
   .example .swatch {
     width: 60px;
     height: 60px;
@@ -2061,11 +2064,6 @@ main.transaction-4 .content {
 .heading-bold {
   font-weight: 700; }
 
-.heading-underline {
-  padding-bottom: 5px;
-  border-bottom: 5px solid #000;
-  margin-bottom: 15px; }
-
 .copy-19 {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
@@ -2128,8 +2126,21 @@ main.transaction-4 .content {
   padding-bottom: 14px;
   font-weight: 700; }
 
-.page-header .heading-24 {
+.page-header .copy-19 {
   padding-top: 30px; }
+
+.page-subheader .heading-24 {
+  padding-top: 30px;
+  padding-bottom: 17px;
+  font-weight: 700; }
+
+.help-notice {
+  background: url(https://assets.digital.cabinet-office.gov.uk/static/icon-important-187bcc8d8a6d56498c4ac26cadad102d.png) 0 15px no-repeat;
+  padding-top: 15px;
+  padding-bottom: 30px; }
+
+.help-notice p {
+  padding-left: 60px; }
 
 .external-link-heading:after {
   background-image: image-url("external-link-black-12x12.png");

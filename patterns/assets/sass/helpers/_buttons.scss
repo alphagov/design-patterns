@@ -13,7 +13,7 @@
 .button,
 .button-secondary,
 .button-warning {
-    margin: 0 4px;
+    margin: 0 $gutter-half $gutter-half 0;
     vertical-align: top;
 }
 

@@ -39,9 +39,10 @@ phases:
           <li>
             <a href="#guide-typography">Typography</a>
             <ul>
-              <li><a href="#guide-typography-type">Type sizes</a></li>
-              <li><a href="#guide-typography-titles">Page titles</a></li>
+              <li><a href="#guide-typography-titles">Page header</a></li>
+              <li><a href="#guide-typography-subtitles">Page subtitles</a></li>
               <li><a href="#guide-typography-copy">Body copy</a></li>
+              <li><a href="#guide-typography-spacing">Putting it all together</a></li>
             </ul>
           </li>
           <li>
@@ -79,102 +80,6 @@ phases:
           </p>
         </div>
         
-        <!-- Typography : Type sizes -->
-        <div class="guide" id="guide-typography-type">
-          <h3 class="guide-subheader">Type sizes</h3>
-          <p>These are the recommended type sizes.</p>
-        </div>
-        
-        <div class="example">
-          <div class="inner-block">
-            <div class="core-80">
-              80px/80 Regular
-            </div>
-            <div class="core-48">
-              48px/50 Regular
-            </div>
-            <div class="core-36">
-              36px/40 Regular
-            </div>
-            <div class="core-27">
-              27px/30 Regular
-            </div>
-            <div class="core-27">
-              24px/30 Regular
-            </div>
-            <div class="core-19">
-              19px/25 Regular
-            </div>
-            <div class="core-16">
-              16px/20 Regular
-            </div>
-            <div class="core-14">
-            14px/20 Regular
-            </div>
-          </div>
-        </div>
-        
-        <div class="example">
-          
-          <div class="inner-block">
-            <div class="bold-80">
-              80px/80 Bold
-            </div>
-            <div class="bold-48">
-              48px/50 Bold
-            </div>
-            <div class="bold-36">
-              36px/40 Bold
-            </div>
-            <div class="bold-27">
-              27px/30 Bold
-            </div>
-            <div class="bold-27">
-              24px/30 Bold
-            </div>
-            <div class="bold-19">
-              19px/25 Bold
-            </div>
-            <div class="bold-16">
-              16px/20 Bold
-            </div>
-            <div class="bold-14">
-              14px/20 Bold
-            </div>
-          </div>
-          
-        </div>
-        
-        <div class="example">
-          <h2 class="heading-48 heading-bold">Page header <em>48px</em></h2>
-          <h3 class="heading-36 heading-bold">Page subheader <em>36px</em></h3>
-          <h3 class="heading-36 heading-underline">Page subheader <em>36px</em></h3>
-          <h3 class="heading-27 heading-bold">Page subheader <em>27px</em></h3>
-        </div>
-        
-        <details class="more">
-          <summary>View HTML &amp; SCSS for this example</summary>
-          
-          <p>
-            Create heading classes from the font mixins in _typography.scss.
-          </p>
-          
-          <p>Usage: </p>
-          
-          <pre>
-            <code>
-              &lt;h2 class=&quot;heading-48&quot;&gt;Page header 48px&lt;/h2&gt;
-              
-              .heading-48 {
-                @include heading-48;
-                font-weight: 700;
-              }
-            </code>
-          </pre>
-          
-          <a href="https://github.com/alphagov/govuk_frontend_toolkit#typography">Github: GOV.UK front-end toolkit - typography</a>
-        </details>
-        
         <!-- Typography : Page titles -->
         <div class="guide" id="guide-typography-titles">
           <h3 class="guide-subheader">Page titles</h3>
@@ -183,13 +88,13 @@ phases:
         <div class="example">
           <div class="inner-block">
             <div class="page-header">
-              <h2 class="heading-48">Driving and transport <em>48px</em></h2>
-              <p class="heading-24">
-                Book your driving test or get a tax disc online, find out the legal requirements for buying, owning, importing or scrapping a car or motorcycle <em>24px</em>.
+              <h2 class="heading-48">Car tax: get a tax disc for your vehicle <em>48px</em></h2>
+              <p class="copy-19">
+                Buy or renew your tax disc (vehicle licence) online - get tax for your car, motorbike, lorry, bus or other vehicle that needs a tax disc. <em>19px</em>
               </p>
             </div>
             <div class="example-url">
-              <a href="https://www.gov.uk/browse/driving">Driving and transport</a>
+              <a href="https://www.gov.uk/tax-disc">Car tax: get a tax disc for your vehicle</a>
             </div>
           </div>
         </div>
@@ -197,19 +102,15 @@ phases:
         <details class="more">
           <summary>View HTML &amp; SCSS for this example</summary>
           
-          <p>
-            Using the <code>heading-48</code> mixin, with additional styles for spacing, using the <code>$gutter-half</code> variable = 15px.
-          </p>
-          
           <p>Usage: </p>
           <pre>
             <code>
               &lt;div class=&quot;page-header&quot;&gt;
-                &lt;h2 class=&quot;heading-48&quot;&gt;Driving and transport&lt;/h2&gt;
-                &lt;p class=&quot;heading-24&quot;&gt;
-                  Book your driving test or get a tax disc online, 
-                  find out the legal requirements for buying, owning, 
-                  importing or scrapping a car or motorcycle.
+                &lt;h2 class=&quot;heading-48&quot;&gt;Car tax: get a tax disc for your vehicle&lt;/h2&gt;
+                &lt;p class=&quot;copy-19&quot;&gt;
+                  Buy or renew your tax disc (vehicle licence) online 
+                  - get tax for your car, motorbike, lorry, 
+                  bus or other vehicle that needs a tax disc
                 &lt;/p&gt;
               &lt;/div&gt;
               
@@ -222,37 +123,131 @@ phases:
                  padding-top: 26px;
                  padding-bottom: 14px;
               }
-              .page-header .heading-24 {
+              .page-header .copy-19 {
                  padding-top: $gutter-half;
               }
-              
             </code>
           </pre>
+          
+          <p>
+            The <code>heading-48</code> mixin is found in _typography.scss.
+          </p>
+          <p>
+            Here <code>$gutter-half</code> is used to ensure consistent spacing, <code>$gutter-half</code> is 15px.
+          </p>
+          
+        </details>
+        
+        <!-- Typography : Page subtitles -->
+        <div class="guide" id="guide-typography-subtitles">
+          <h3 class="guide-subheader">Page subtitles</h3>
+        </div>
+        
+        <div class="example">
+          <div class="inner-block">
+          
+            <div class="page-subheader">
+              <p class="heading-24">
+                Disability exemption <em>24px</em>
+              </p>
+              <p class="copy-19">
+                You may be exempt or pay a reduced amount of vehicle tax if you receive certain benefits because of your disability. Find out if you’re eligible and how to apply. <em>19px</em>
+              </p>
+            </div>
+            
+            <div class="example-url">
+              <a href="https://www.gov.uk/tax-disc">Car tax: get a tax disc for your vehicle</a>
+            </div>
+            
+          </div>
+        </div>
+        
+        <details class="more">
+          <summary>View HTML &amp; SCSS for this example</summary>
+          
+          <p>Usage: </p>
+          <pre>
+            <code>
+              &lt;div class=&quot;page-subheader&quot;&gt;              
+                &lt;p class=&quot;heading-24&quot;&gt;
+                  Disability exemption &lt;em&gt;24px&lt;/em&gt;
+                &lt;/p&gt;
+                &lt;p class=&quot;copy-19&quot;&gt;
+                  You may be exempt or pay a reduced amount of vehicle tax if you receive certain benefits because of your disability. Find out if you&#x2019;re eligible and how to apply.
+                &lt;/p&gt;
+              &lt;/div&gt;
+              
+              .page-subheader .heading-24 {
+                 padding-top: 26px;
+                 padding-bottom: 10px;
+                 font-weight: 700;
+              }
+            </code>
+          </pre>
+          
+          <p>
+            The <code>heading-48</code> mixin is found in _typography.scss.
+          </p>
+          <p>
+            Here <code>$gutter-half</code> is used to ensure consistent spacing, <code>$gutter-half</code> is 15px.
+          </p>
+          
         </details>
         
         <!-- Typography : Body copy -->
         <div class="guide" id="guide-typography-copy">
           <h3 class="guide-subheader">Body copy</h3>
-          <p>
-            Text should be large enough to be easily read.
-          </p>
         </div>
         
         <div class="example">
           <div class="inner-block">
             
-            <p class="heading-24">
-              <em>24px</em> copy, used for lead paragraphs.
-            </p>
             <p class="copy-19">
-              <em>19px</em> copy, recommended body copy size.
+              Fill in a V20 ‘Application for duplicate tax disc’ form and take it to your nearest Post Office that issues duplicate tax discs. <em>19px</em>
             </p>
-            <p class="copy-16">
-              <em>16px</em> copy, Aenean <a href="#">link within body copy</a> nulla sed consectetur.
-            </p>
-            <p class="copy-14">
-              <em>14px</em> copy, Aenean lacinia bibendum nulla sed consectetur.
-            </p>
+            
+            <div class="help-notice">
+              <p class="copy-19 copy-bold">
+                You must replace your tax disc if it’s been lost, stolen, damaged or destroyed - or you can’t read it because it’s faded. <em>19px</em>
+              </p>
+            </div>
+            
+            <div class="example-url">
+              <a href="https://www.gov.uk/apply-duplicate-tax-disc">Apply for a duplicate tax disc</a>
+            </div>
+            
+          </div>
+        </div>
+        
+        <!-- Typography : Spacing -->
+        <div class="guide" id="guide-typography-spacing">
+          <h3 class="guide-subheader">Putting it all together</h3>
+        </div>
+        
+        <div class="example">
+          <div class="inner-block">
+            
+            <div class="page-header">
+              <h2 class="heading-48">Apply for a duplicate tax disc <em>48px</em></h2>
+              <p class="copy-19">
+                Fill in a V20 ‘Application for duplicate tax disc’ form and take it to your nearest Post Office that issues duplicate tax discs. <em>19px</em>
+              </p>
+            </div>
+            
+            <div class="help-notice">
+              <p class="copy-19 copy-bold">
+                You must replace your tax disc if it’s been lost, stolen, damaged or destroyed - or you can’t read it because it’s faded. <em>19px</em>
+              </p>
+            </div>
+            
+            <div class="page-subheader">
+              <p class="heading-24">
+                If you’re the registered keeper <em>24px</em>
+              </p>
+              <p class="copy-19">
+                Go to your nearest Post Office with:. <em>19px</em>
+              </p>
+            </div>
             
           </div>
         </div>
@@ -458,7 +453,7 @@ phases:
         
         <div class="guide" id="guide-buttons">
           <h2 class="guide-header">Buttons</h2>
-          <p class="lede">
+          <p>
             Primary action buttons are green, secondary action buttons are grey, irreversible action buttons are red.
           </p>
         </div>
@@ -466,8 +461,8 @@ phases:
         <div class="example">
           <div class="inner-block">
             <a href="#" class="button">Button</a>
-            <a href="#" class="button button-secondary">Button</a>
-            <a href="#" class="button button-warning">Button</a>
+            <a href="#" class="button-secondary">Button</a>
+            <a href="#" class="button-warning">Button</a>
           </div>
         </div>
         
