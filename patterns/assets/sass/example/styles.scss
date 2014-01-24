@@ -1,0 +1,32 @@
+//
+// Design Guide example stylesheet
+//
+// From the frontend toolkit
+@import "../../govuk_frontend_toolkit/stylesheets/colours";
+@import "../../govuk_frontend_toolkit/stylesheets/conditionals";
+@import "../../govuk_frontend_toolkit/stylesheets/css3";
+@import "../../govuk_frontend_toolkit/stylesheets/device-pixels";
+@import "../../govuk_frontend_toolkit/stylesheets/measurements";
+@import "../../govuk_frontend_toolkit/stylesheets/shims";
+@import "../../govuk_frontend_toolkit/stylesheets/typography";
+
+@import "../../govuk_frontend_toolkit/stylesheets/design-patterns/alpha-beta";
+@import "../../govuk_frontend_toolkit/stylesheets/design-patterns/buttons";
+
+// Import variables
+@import "../design-guide/vars";
+
+// Create styles for template setup
+@import "../design-guide/template.scss";
+
+// From the design guide
+@import "../design-guide/typography";
+
+// Import your styles below here
+
+// Import design patterns
+@import "../design-patterns/breadcrumb";
+@import "../design-patterns/button";
+@import "../design-patterns/footer";
+@import "../design-patterns/alpha-beta";
+@import "../design-patterns/service-name";

@@ -1,20 +1,23 @@
 /*
-Syntax error: File to import not found or unreadable: views/design-guide.
+Syntax error: File to import not found or unreadable: ../design-patterns/breadcrumb.
               Load paths:
                 /Users/gemmaleigh/Sites/gds/design-patterns/patterns/assets
                 /Users/gemmaleigh/Sites/gds/design-patterns/patterns/assets/sass
-        on line 61 of sass/base.scss
+        on line 28 of sass/example/styles.scss
 
-56: @import "views/progress-indicator";
-57: @import "views/transaction-1";
-58: @import "views/transaction-2";
-59: @import "views/transaction-3";
-60: @import "views/transaction-4";
-61: @import "views/design-guide";
-62: @import "views/design-guide-typography";
+23: @import "../design-guide/typography";
+24: 
+25: // Import your styles below here
+26: 
+27: // Import design patterns
+28: @import "../design-patterns/breadcrumb";
+29: @import "../design-patterns/button";
+30: @import "../design-patterns/footer";
+31: @import "../design-patterns/alpha-beta";
+32: @import "../design-patterns/service-name";
 
 Backtrace:
-sass/base.scss:61
+sass/example/styles.scss:28
 /Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/import_node.rb:67:in `rescue in import'
 /Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/import_node.rb:45:in `import'
 /Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/import_node.rb:28:in `imported_file'
@@ -52,4 +55,4 @@ sass/base.scss:61
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: views/design-guide.\A               Load paths:\A                 /Users/gemmaleigh/Sites/gds/design-patterns/patterns/assets\A                 /Users/gemmaleigh/Sites/gds/design-patterns/patterns/assets/sass\A         on line 61 of sass/base.scss\A \A 56: @import \"views/progress-indicator\";\A 57: @import \"views/transaction-1\";\A 58: @import \"views/transaction-2\";\A 59: @import \"views/transaction-3\";\A 60: @import \"views/transaction-4\";\A 61: @import \"views/design-guide\";\A 62: @import \"views/design-guide-typography\";"; }
+  content: "Syntax error: File to import not found or unreadable: ../design-patterns/breadcrumb.\A               Load paths:\A                 /Users/gemmaleigh/Sites/gds/design-patterns/patterns/assets\A                 /Users/gemmaleigh/Sites/gds/design-patterns/patterns/assets/sass\A         on line 28 of sass/example/styles.scss\A \A 23: @import \"../design-guide/typography\";\A 24: \A 25: // Import your styles below here\A 26: \A 27: // Import design patterns\A 28: @import \"../design-patterns/breadcrumb\";\A 29: @import \"../design-patterns/button\";\A 30: @import \"../design-patterns/footer\";\A 31: @import \"../design-patterns/alpha-beta\";\A 32: @import \"../design-patterns/service-name\";"; }

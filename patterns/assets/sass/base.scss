@@ -19,7 +19,6 @@
 // A collection of Sass mixins. They shouldn't output any CSS when included and
 // should only produce CSS when called from another file.
 @import "styleguide/dimensions";
-@import "styleguide/design-guide-mixins";
 
 
 // # Globals
@@ -60,3 +59,4 @@
 @import "views/transaction-3";
 @import "views/transaction-4";
 @import "views/design-guide";
+@import "views/design-guide-typography";
