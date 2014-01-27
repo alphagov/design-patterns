@@ -17,62 +17,36 @@ phases:
 </div>
 
 <div class="grid-wrapper">
-  <div class="grid content">
+  <div class="grid">
     <div class="inner-block">
       
-      <h1>GOV.UK design guide example</h1>
+      <h1>Design guide example</h1>
+      <p>
+        This page uses the <a href="https://github.com/alphagov/govuk_template">gov.uk template</a>, <a href="https://github.com/alphagov/govuk_frontend_toolkit"> govuk_frontend_toolkit</a> and <a href="https://github.com/alphagov/design-patterns/blob/gh-pages/example/assets/sass/example/_template.scss">template styles</a>.
+      </p>
+      <p>
+        Styles are applied using the <code>.gov-uk</code> class.
+      </p>
       
-      <h2>This page uses the gov.uk template, gov.uk front-end toolkit and additional template styles.</h2>
+      <h2>Example pages using the template styles</h2>
+      <ul>
+        <li><a href="{{ site.baseurl }}/example/typography.html">Typography</a></li>
+        <li><a href="{{ site.baseurl }}/example/grid.html">Grid</a></li>
+      </ul>
       
-      <h2>How to set up a template like this one:</h2>
+      <h2>base.scss</h2>
       
-      <ol>
-        <li>Grab the <a href="https://github.com/alphagov/govuk_template">gov.uk template</a></li>
-        <li>If not using Ruby or Node.js - include the govuk_frontend_toolkit repository as a git submodule with your /assets/ folder. <a href="https://github.com/alphagov/govuk_frontend_toolkit#other-projects">Instructions here</a>. </li>
-        
-        <li>Set up a base Sass stylesheet within /assets/sass/</li>
-        <li>At the top of the base Sass file, import the <a href="https://github.com/alphagov/govuk_frontend_toolkit"> govuk_frontend_toolkit</a> files. <a href="https://github.com/alphagov/govuk_frontend_toolkit#usage">Instructions here</a>.</li>
-        <li>Create a folder /yourprojectname/ for your project, here we are using /example/</li>
-        <li>Create a _vars.scss file within /yourprojectname/ for commonly used variables and import this next.</li>
-        <li>Import the gov.uk _template.scss file within /yourprojectname/ for basic typography and layout.</li>
-        <li>Create a /design-patterns/ folder within your /sass/ folder and create modules for additional styles as required.</li>
-      </ol>
+      <p>
+        At the top of your base Sass file, import the <a href="https://github.com/alphagov/govuk_frontend_toolkit"> govuk_frontend_toolkit</a> files.
+      </p>
       
-      <h3>The base stylesheet /assets/base.scss should look like this:</h3>
-        
-<pre><code>
-// Design Guide example stylesheet
-
-// Import the frontend toolkit
-@import "../govuk_frontend_toolkit/stylesheets/colours";
-@import "../govuk_frontend_toolkit/stylesheets/conditionals";
-@import "../govuk_frontend_toolkit/stylesheets/css3";
-@import "../govuk_frontend_toolkit/stylesheets/device-pixels";
-@import "../govuk_frontend_toolkit/stylesheets/measurements";
-@import "../govuk_frontend_toolkit/stylesheets/shims";
-@import "../govuk_frontend_toolkit/stylesheets/typography";
-
-@import "../govuk_frontend_toolkit/stylesheets/design-patterns/alpha-beta";
-@import "../govuk_frontend_toolkit/stylesheets/design-patterns/buttons";
-
-// Where 'example' is your project name
-
-// Import variables
-@import "example/vars";
-
-// Import template (typography &amp; layout) base styles
-@import "example/template";
-
-// Import design patterns (modules)
-@import "design-patterns/alpha-beta";
-@import "design-patterns/breadcrumb";
-@import "design-patterns/buttons";
-@import "design-patterns/footer";
-@import "design-patterns/service-name";
-
-// Import additional modules as required
-</code>
-</pre>
+      <p>
+        Then import the <a href="https://github.com/alphagov/design-patterns/blob/gh-pages/example/assets/example/_vars.scss">vars</a> and <a href="https://github.com/alphagov/design-patterns/blob/gh-pages/example/assets/example/_template.scss">template</a> files, for basic layout and typography styles.
+      </p>
+      
+      <p>
+        <a href="https://github.com/alphagov/design-patterns/blob/gh-pages/example/assets/sass/base.scss">Here's the base.scss file</a> for this project.
+      </p>
       
     </div>
   </div>

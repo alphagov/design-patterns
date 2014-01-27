@@ -42,12 +42,12 @@
    
    -webkit-font-smoothing: antialiased;
    
-   * {
-   max-width: 75ex;
-  }
- 
    // Bump up the default font size to 19px
    @include core-19;
+   // Test setting maximum content width
+   * {
+     max-width: 75ex;
+   }
    
    // Set common typography styles
    h1,
@@ -90,9 +90,8 @@
    }
    li {
       margin-bottom: 5px;
-    }
-   
-   
+  }
+    
    // Data font sizes
    .data-80 {
      @include bold-80;
@@ -114,8 +113,9 @@
    // Code
    code {
      @include core-16;
+     padding: 0 5px;
+     background: $grey-3;
    }
-   
 }
 
 // Grid layout
@@ -188,4 +188,12 @@
 
 .button-warning {
   @include button ($red);
+}
+
+
+// Example styles
+
+.example {
+  color: $hm-government;
+  font-style: normal;
 }
