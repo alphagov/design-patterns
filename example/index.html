@@ -34,8 +34,8 @@ phases:
         <li>Set up a base Sass stylesheet within /assets/sass/</li>
         <li>At the top of the base Sass file, import the <a href="https://github.com/alphagov/govuk_frontend_toolkit"> govuk_frontend_toolkit</a> files. <a href="https://github.com/alphagov/govuk_frontend_toolkit#usage">Instructions here</a>.</li>
         <li>Create a folder /yourprojectname/ for your project, here we are using /example/</li>
-        <li>Create <a href="{{ site.baseurl }}/example/assets/sass/design-guide/_vars.scss">_vars.scss</a> file within /yourprojectname/ for commonly used variables and import this next.</li>
-        <li>Import the gov.uk <a href="{{ site.baseurl }}/example/assets/sass/design-guide/_vars.scss">_template.scss</a> file within /yourprojectname/ for basic typography and layout.</li>
+        <li>Create a _vars.scss file within /yourprojectname/ for commonly used variables and import this next.</li>
+        <li>Import the gov.uk _template.scss file within /yourprojectname/ for basic typography and layout.</li>
         <li>Create a /design-patterns/ folder within your /sass/ folder and create modules for additional styles as required.</li>
       </ol>
       
@@ -45,16 +45,16 @@ phases:
 // Design Guide example stylesheet
 
 // Import the frontend toolkit
-@import "../govuk_frontend_toolkit/stylesheets/colours";
-@import "../govuk_frontend_toolkit/stylesheets/conditionals";
-@import "../govuk_frontend_toolkit/stylesheets/css3";
-@import "../govuk_frontend_toolkit/stylesheets/device-pixels";
-@import "../govuk_frontend_toolkit/stylesheets/measurements";
-@import "../govuk_frontend_toolkit/stylesheets/shims";
-@import "../govuk_frontend_toolkit/stylesheets/typography";
+@import "../govuk_toolkit/stylesheets/colours";
+@import "../govuk_toolkit/stylesheets/conditionals";
+@import "../govuk_toolkit/stylesheets/css3";
+@import "../govuk_toolkit/stylesheets/device-pixels";
+@import "../govuk_toolkit/stylesheets/measurements";
+@import "../govuk_toolkit/stylesheets/shims";
+@import "../govuk_toolkit/stylesheets/typography";
 
-@import "../govuk_frontend_toolkit/stylesheets/design-patterns/alpha-beta";
-@import "../govuk_frontend_toolkit/stylesheets/design-patterns/buttons";
+@import "../govuk_toolkit/stylesheets/design-patterns/alpha-beta";
+@import "../govuk_toolkit/stylesheets/design-patterns/buttons";
 
 // Where 'example' is your project name
 

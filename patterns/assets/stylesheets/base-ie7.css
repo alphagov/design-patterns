@@ -1595,6 +1595,7 @@ main.transaction-4 .content {
 .design-guide .main {
   padding-bottom: 90px; }
 .design-guide .gov-uk {
+  -webkit-font-smoothing: antialiased;
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
   line-height: 1.31579;
@@ -1613,7 +1614,7 @@ main.transaction-4 .content {
     text-transform: none;
     font-weight: 700;
     margin-top: 30px;
-    margin-bottom: 30px; }
+    margin-bottom: 60px; }
     @media (max-width: 640px) {
       .design-guide .gov-uk h1,
       .design-guide .gov-uk .heading-48 {
@@ -1641,8 +1642,8 @@ main.transaction-4 .content {
     font-weight: 400;
     text-transform: none;
     font-weight: 700;
-    margin-top: 40px;
-    margin-bottom: 10px; }
+    margin-top: 45px;
+    margin-bottom: 20px; }
     @media (max-width: 640px) {
       .design-guide .gov-uk h2,
       .design-guide .gov-uk .heading-24 {
@@ -1666,7 +1667,7 @@ main.transaction-4 .content {
   .design-guide .gov-uk p,
   .design-guide .gov-uk ul {
     margin-top: 5px;
-    margin-bottom: 15px; }
+    margin-bottom: 20px; }
   .design-guide .gov-uk ul {
     padding-left: 20px; }
   .design-guide .gov-uk ul li {
@@ -1726,7 +1727,6 @@ main.transaction-4 .content {
 .design-guide .grid {
   float: left; }
 .design-guide .grid .inner-block {
-  padding: 0 30px;
   padding: 0 15px; }
 .design-guide .grid-1-4 {
   width: 100%;

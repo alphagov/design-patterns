@@ -248,6 +248,7 @@ Example usage:
   padding-bottom: 90px; }
 
 .gov-uk {
+  -webkit-font-smoothing: antialiased;
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
   line-height: 1.31579;
@@ -266,7 +267,7 @@ Example usage:
     text-transform: none;
     font-weight: 700;
     margin-top: 30px;
-    margin-bottom: 30px; }
+    margin-bottom: 60px; }
     @media (max-width: 640px) {
       .gov-uk h1,
       .gov-uk .heading-48 {
@@ -294,8 +295,8 @@ Example usage:
     font-weight: 400;
     text-transform: none;
     font-weight: 700;
-    margin-top: 40px;
-    margin-bottom: 10px; }
+    margin-top: 45px;
+    margin-bottom: 20px; }
     @media (max-width: 640px) {
       .gov-uk h2,
       .gov-uk .heading-24 {
@@ -319,7 +320,7 @@ Example usage:
   .gov-uk p,
   .gov-uk ul {
     margin-top: 5px;
-    margin-bottom: 15px; }
+    margin-bottom: 20px; }
   .gov-uk ul {
     padding-left: 20px; }
   .gov-uk ul li {
