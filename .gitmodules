@@ -4,3 +4,6 @@
 [submodule "example/assets/govuk_toolkit"]
 	path = example/assets/govuk_toolkit
 	url = https://github.com/alphagov/govuk_frontend_toolkit.git
+[submodule "example/assets/govuk_frontend_toolkit"]
+	path = example/assets/govuk_frontend_toolkit
+	url = https://github.com/alphagov/govuk_frontend_toolkit.git

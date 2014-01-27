@@ -42,6 +42,10 @@
    
    -webkit-font-smoothing: antialiased;
    
+   * {
+   max-width: 75ex;
+  }
+ 
    // Bump up the default font size to 19px
    @include core-19;
    

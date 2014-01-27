@@ -254,6 +254,8 @@ Example usage:
   line-height: 1.31579;
   font-weight: 400;
   text-transform: none; }
+  .gov-uk * {
+    max-width: 75ex; }
   @media (max-width: 640px) {
     .gov-uk {
       font-size: 16px;

@@ -1601,6 +1601,8 @@ main.transaction-4 .content {
   line-height: 1.31579;
   font-weight: 400;
   text-transform: none; }
+  .design-guide .gov-uk * {
+    max-width: 75ex; }
   @media (max-width: 640px) {
     .design-guide .gov-uk {
       font-size: 16px;
