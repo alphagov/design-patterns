@@ -94,34 +94,39 @@
 // Design Guide - Examples
 
 .example {
-   @extend %contain-floats;
-   
-   border: 1px solid #bfc1c3;
-   outline: 20px solid #f8f8f8;
-   margin: $gutter*1.5 0 $gutter*2 0;
-   padding: $gutter-half 0;
-   @include media(tablet) {
-      padding: $gutter $gutter-half;
-   }
-   overflow: hidden;
-   
-   .example-url {
-      margin-top: $gutter;
-   }
-   .example-url:before {
-      content: "Example: ";
-   }
-   
-   code {
-     @include core-16;
-   }
-   
-   // Highlight font sizes
-   em {
-      font-style: normal;
-      color: $hm-government;
-   }
-   
+  @extend %contain-floats;
+  
+  border: 1px solid #bfc1c3;
+  outline: 20px solid #f8f8f8;
+  margin: $gutter*1.5 0 $gutter*2 0;
+  padding: $gutter-half 0;
+  
+  @include media(tablet) {
+    padding: $gutter $gutter-half;
+  }
+  overflow: hidden;
+  
+  .example-url {
+    margin-top: $gutter;
+  }
+  .example-url:before {
+    content: "Example: ";
+  }
+  
+  code {
+   @include core-16;
+  }
+  
+  // Highlight font sizes
+  em {
+    font-style: normal;
+    color: $hm-government;
+  }
+  
+  // Reduce grid padding
+  .grid .inner-block {
+   padding: 0 $gutter-half;
+  }
 }
 
 // Design Guide - More information

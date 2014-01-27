@@ -1816,6 +1816,9 @@ main.transaction-4 .content {
   float: left; }
 .design-guide .grid .inner-block {
   padding: 0 15px; }
+  @media (min-width: 641px) {
+    .design-guide .grid .inner-block {
+      padding: 0 30px; } }
 .design-guide .grid-1-4 {
   width: 100%; }
   @media (min-width: 641px) {
@@ -2197,6 +2200,8 @@ main.transaction-4 .content {
   .example em {
     font-style: normal;
     color: #0076c0; }
+  .example .grid .inner-block {
+    padding: 0 15px; }
 
 .more {
   margin-top: -15px;

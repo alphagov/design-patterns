@@ -383,7 +383,8 @@ Example usage:
   float: left; }
 
 .grid .inner-block {
-  padding: 0 15px; }
+  padding: 0 15px;
+  padding: 0 30px; }
 
 .grid-1-4 {
   width: 100%;

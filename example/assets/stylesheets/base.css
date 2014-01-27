@@ -380,6 +380,9 @@ Example usage:
 
 .grid .inner-block {
   padding: 0 15px; }
+  @media (min-width: 641px) {
+    .grid .inner-block {
+      padding: 0 30px; } }
 
 .grid-1-4 {
   width: 100%; }
