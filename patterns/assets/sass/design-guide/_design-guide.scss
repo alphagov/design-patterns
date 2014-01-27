@@ -2,7 +2,7 @@
 
 // Design Guide - Layout
 
-.main {
+.design-guide {
    max-width: 1020px;
    width: auto;
    margin: 0 auto 90px;
@@ -61,8 +61,6 @@
    font-weight: 700;
 }
 
-// Scoped text styles
-
 .guide {
    
    margin-bottom: $gutter;
@@ -89,7 +87,9 @@
    }
    
 }
-
+.guide-end {
+  margin-bottom: $gutter*2;
+}
 
 // Design Guide - Examples
 
@@ -112,31 +112,16 @@
       content: "Example: ";
    }
    
-   .button,
-   .button-secondary,
-   .button-warning {
-      float: left;
-      margin-bottom: 0;
+   code {
+     @include core-16;
    }
    
-   .swatch {
-      width: $gutter*2;
-      height: $gutter*2;
-      display: inline-block;
-      margin-right: $gutter;
-      margin-top: $gutter-half;
-   }
-   
-   // Highlight for sizes & info
+   // Highlight font sizes
    em {
       font-style: normal;
       color: $hm-government;
    }
    
-   img {
-      max-width: 100%;
-      vertical-align: top;
-   }
 }
 
 // Design Guide - More information
@@ -162,115 +147,68 @@
    @include copy-16;
 }
 
-
-// Link colours
-
-.link {
-   color: $link-colour;
-}
-.link-hover {
-   color: $link-hover-colour;
-}
-.link-visited {
-   color: $link-visited-colour;
-}
-
-// Colour palette
-
-.colour-hm-government {
-   background: $hm-government;
-}
-
-.colour-nhs {
-   background: $department-of-health;
-}
-
-// Text colours
-
-.text-secondary {
-   color: $secondary-text-colour;
-}
-
-// Buttons
-
-.button {
-  @include button;
-  @include core-19;
-}
-
-.button-secondary {
-  @include button($grey-3);
-  @include core-19;
-}
-
-.button-warning {
-  @include button($red);
-  @include core-19;
-}
-
 // Grid layout
 
-.grid-page {
-   padding: 0 15px;
-}
-
-.grid-wrapper {
-   @extend %contain-floats;
-}
-
-.grid {
-   float: left;
-}
-
-.grid .inner-block {
-   padding: 0 $gutter-half;
-}
-
-.grid-1-4 {
-   width: $full-width;
-   @include media(tablet) {
-      width: 25%;
-   }
-}
-
-.grid-1-3 {
-   width: $full-width;
-   @include media(tablet) {
-      width: $one-third;
-   }
-}
-
-.grid-1-2 {
-   width: $full-width;
-   @include media(tablet) {
-      width: $half;
-   }
-}
-
-.grid-2-3 {
-   width: $full-width;
-   @include media(tablet) {
-      width: $two-thirds;
-   }
-}
-
-.grid-3-4 {
-   width: $full-width;
-   @include media(tablet) {
-      width: 75%;
-   }
-}
-
-// Grid layout - example styles to highlight
-
-.grid-example {
+.example-grid {
    background: white;
+   padding-left: 0;
+   padding-right: 0;
 }
 
-.grid-example p {
+.example-grid p {
    width: 100%;
    background: url("../images/grid.png") 0 0 repeat;
    min-height: 60px;
    overflow: hidden;
    text-indent: -99em;
+}
+
+// Images
+.example-images {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.example {
+  
+  img {
+     max-width: 100%;
+     vertical-align: top;
+  }
+  
+}
+
+// Colour palette
+
+.example {
+  
+  .swatch {
+     width: $gutter*2;
+     height: $gutter*2;
+     display: inline-block;
+     margin-right: $gutter;
+     margin-top: $gutter-half;
+  }
+  
+}
+
+.colour-hm-government {
+   background: $hm-government;
+}
+
+.colour-department-of-health {
+   background: $department-of-health;
+}
+
+// Buttons
+
+.example {
+  
+   .button,
+   .button-secondary,
+   .button-warning {
+      float: left;
+      margin-bottom: 0;
+   }
+   
 }

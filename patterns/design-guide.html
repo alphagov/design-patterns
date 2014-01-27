@@ -29,7 +29,8 @@ phases:
     </div>
   </header>
   
-  <div class="grid-wrapper grid-page">
+  <div class="grid-wrapper">
+    
     <div class="grid grid-1-4">
       <div class="inner-block">
         <ul class="guide-nav">
@@ -58,9 +59,9 @@ phases:
           <li><a href="#guide-colour">Colour</a></li>
           <li><a href="#guide-buttons">Buttons</a></li>
         </ul>
-      
       </div>
     </div>
+    
     <div class="grid grid-3-4 content">
       <div class="inner-block">
         
@@ -80,239 +81,95 @@ phases:
           </p>
         </div>
         
-        <div class="example baseline-grid">
-          <div class="inner-block">
-            <div class="heading-80">
-              80px/80 Regular
-            </div>
-            <div class="heading-48">
-              48px/50 Regular
-            </div>
-            <div class="heading-36">
-              36px/40 Regular
-            </div>
-            <div class="heading-27">
-              27px/30 Regular
-            </div>
-            <div class="heading-24">
-              24px/30 Regular
-            </div>
-            <div class="copy-19">
-              19px/25 Regular
-            </div>
-            <div class="copy-16">
-              16px/20 Regular
-            </div>
-            <div class="copy-14">
-            14px/20 Regular
-            </div>
-          </div>
-        </div>
-
-        <div class="example baseline-grid">
-
-          <div class="inner-block">
-            <div class="bold-80">
-              80px/80 Bold
-            </div>
-            <div class="bold-48">
-              48px/50 Bold
-            </div>
-            <div class="bold-36">
-              36px/40 Bold
-            </div>
-            <div class="bold-27">
-              27px/30 Bold
-            </div>
-            <div class="bold-27">
-              24px/30 Bold
-            </div>
-            <div class="bold-19">
-              19px/25 Bold
-            </div>
-            <div class="bold-16">
-              16px/20 Bold
-            </div>
-            <div class="bold-14">
-              14px/20 Bold
-            </div>
-          </div>
-
-        </div>
-        
         <!-- Typography : Page titles -->
         <div class="guide" id="guide-typography-titles">
           <h3 class="guide-subheader">Page titles</h3>
         </div>
         
-        <div class="example">
+        <div class="example gov-uk">
           <div class="inner-block">
-            <div class="page-header">
-              <h2 class="heading-48">Car tax: get a tax disc for your vehicle <em>48px</em></h2>
-              <p class="copy-19">
-                Buy or renew your tax disc (vehicle licence) online - get tax for your car, motorbike, lorry, bus or other vehicle that needs a tax disc. <em>19px</em>
-              </p>
-            </div>
-            <div class="example-url">
-              <a href="https://www.gov.uk/tax-disc">Car tax: get a tax disc for your vehicle</a>
-            </div>
+            
+            <h1>Car tax: get a tax disc for your vehicle <em>48px</em></h1>
+            <p>
+              Buy or renew your tax disc (vehicle licence) online - get tax for your car, motorbike, lorry, bus or other vehicle that needs a tax disc. <em>19px</em>
+            </p>
+            
           </div>
         </div>
-        
-        <details class="more">
-          <summary>View HTML &amp; SCSS for this example</summary>
-          
-          <p>Usage: </p>
-          <pre>
-            <code>
-              &lt;div class=&quot;page-header&quot;&gt;
-                &lt;h2 class=&quot;heading-48&quot;&gt;Car tax: get a tax disc for your vehicle&lt;/h2&gt;
-                &lt;p class=&quot;copy-19&quot;&gt;
-                  Buy or renew your tax disc (vehicle licence) online 
-                  - get tax for your car, motorbike, lorry, 
-                  bus or other vehicle that needs a tax disc
-                &lt;/p&gt;
-              &lt;/div&gt;
-              
-              .page-header {
-                 padding: $gutter-half 0;
-              }
-              .page-header .heading-48 {
-                 @include heading-48;
-                 font-weight: 700;
-                 padding-top: 26px;
-                 padding-bottom: 14px;
-              }
-              .page-header .copy-19 {
-                 padding-top: $gutter-half;
-              }
-            </code>
-          </pre>
-          
-          <p>
-            The <code>heading-48</code> mixin is found in _typography.scss.
-          </p>
-          <p>
-            Here <code>$gutter-half</code> is used to ensure consistent spacing, <code>$gutter-half</code> is 15px.
-          </p>
-          
-        </details>
         
         <!-- Typography : Page subtitles -->
         <div class="guide" id="guide-typography-subtitles">
           <h3 class="guide-subheader">Page subtitles</h3>
         </div>
         
-        <div class="example">
+        <div class="example gov-uk">
           <div class="inner-block">
-          
-            <div class="page-subheader">
-              <p class="heading-24">
-                Disability exemption <em>24px</em>
-              </p>
-              <p class="copy-19">
-                You may be exempt or pay a reduced amount of vehicle tax if you receive certain benefits because of your disability. Find out if you’re eligible and how to apply. <em>19px</em>
-              </p>
-            </div>
             
-            <div class="example-url">
-              <a href="https://www.gov.uk/tax-disc">Car tax: get a tax disc for your vehicle</a>
-            </div>
+            <h2>
+              Disability exemption <em>24px</em>
+            </h2>
+            <p>
+              You may be exempt or pay a reduced amount of vehicle tax if you receive certain benefits because of your disability. Find out if you’re eligible and how to apply. <em>19px</em>
+            </p>
             
           </div>
         </div>
-        
-        <details class="more">
-          <summary>View HTML &amp; SCSS for this example</summary>
-          
-          <p>Usage: </p>
-          <pre>
-            <code>
-              &lt;div class=&quot;page-subheader&quot;&gt;              
-                &lt;p class=&quot;heading-24&quot;&gt;
-                  Disability exemption &lt;em&gt;24px&lt;/em&gt;
-                &lt;/p&gt;
-                &lt;p class=&quot;copy-19&quot;&gt;
-                  You may be exempt or pay a reduced amount of vehicle tax if you receive certain benefits because of your disability. Find out if you&#x2019;re eligible and how to apply.
-                &lt;/p&gt;
-              &lt;/div&gt;
-              
-              .page-subheader .heading-24 {
-                 padding-top: 26px;
-                 padding-bottom: 10px;
-                 font-weight: 700;
-              }
-            </code>
-          </pre>
-          
-          <p>
-            The <code>heading-48</code> mixin is found in _typography.scss.
-          </p>
-          <p>
-            Here <code>$gutter-half</code> is used to ensure consistent spacing, <code>$gutter-half</code> is 15px.
-          </p>
-          
-        </details>
         
         <!-- Typography : Body copy -->
         <div class="guide" id="guide-typography-copy">
           <h3 class="guide-subheader">Body copy</h3>
         </div>
         
-        <div class="example">
+        <div class="example gov-uk">
           <div class="inner-block">
             
-            <p class="copy-19 copy-bold">
+            <h3>
               If you’re a motor trader. <em>19px</em>
+            </h3>
+            <p>
+              Motor traders don’t need to make a SORN on a vehicle if all the following apply: <em>19px</em> 
             </p>
-            
-            <p class="copy-19">
-              Motor traders don’t need to make a SORN on a vehicle if all the following apply: <em>19px</em>
-            </p>
-            
-            <div class="example-url">
-              <a href="https://www.gov.uk/register-sorn-statutory-off-road-notification">Make a SORN</a>
-            </div>
             
           </div>
         </div>
-        
+    
         <!-- Typography : Spacing -->
         <div class="guide" id="guide-typography-spacing">
           <h3 class="guide-subheader">Putting it all together</h3>
         </div>
-        
-        <div class="example">
+    
+        <div class="example gov-uk">
           <div class="inner-block">
-            
-            <div class="page-header">
-              <h2 class="heading-48">Make a SORN (Statutory Off Road Notification) <em>48px</em></h2>
-              <p class="copy-19">
-                You can make a SORN (Statutory Off Road Notification) online if you are registered as the vehicle’s keeper. You’ll need the reference number on your V5C registration certificate, V11 or V85/1 reminder form. <em>19px</em>
-              </p>
-            </div>
-            
-            <div class="page-subheader">
-            <h2 class="heading-24 heading-bold">Penalties <em>24px</em></h2>
-            </div>
-            
-            <p class="copy-19">
+            <h1>
+              Make a SORN (Statutory Off Road Notification) <em>48px</em>
+            </h1>
+            <p>
+              You can make a SORN (Statutory Off Road Notification) online if you are registered as the vehicle’s keeper. You’ll need the reference number on your V5C registration certificate, V11 or V85/1 reminder form. <em>19px</em>
+            </p>
+
+            <h2>
+              Penalties <em>24px</em>
+            </h2>
+            <p>
               If you don’t make a SORN when you have to you’ll automatically be fined £80, will need to get a new tax disc and must pay any tax arrears. You could also get a County Court Judgement against you, be fined a minimum of £1,000 and be liable to prosecution. <em>19px</em>
             </p>
-            
-            <p class="copy-19 copy-bold page-copyheader">
-              If you’re a motor trader. <em>19px</em>
-            </p>
-            
-            <p class="copy-19">
+
+            <h3> If you’re a motor trader. <em>19px</em></h3>
+
+            <p>
               Motor traders don’t need to make a SORN on a vehicle if all the following apply: <em>19px</em>
             </p>
             
-            <div class="example-url">
-              <a href="https://www.gov.uk/register-sorn-statutory-off-road-notification">Make a SORN</a>
-            </div>
-            
           </div>
+          
+        </div>
+        
+        <!-- Typography : Working example page -->
+        <div class="guide guide-end">
+          <h3 class="guide-subheader">Working example</h3>
+          <p>
+            <a href="{{site_baseurl}}/example/typography.html" class="example-url">Typography styles within a sample gov.uk template</a>
+          </p>
         </div>
         
         <!-- Grid -->
@@ -327,9 +184,9 @@ phases:
         <div class="guide" id="guide-grid-4-col">
           <h3 class="guide-subheader">Four equal columns</h3>
         </div>
-        
-        <div class="example">
-          <div class="grid-wrapper grid-example">
+      
+        <div class="example example-grid">
+          <div class="grid-wrapper">
             <div class="grid grid-1-4">
               <div class="inner-block">
                 <p>Content</p>
@@ -358,8 +215,8 @@ phases:
           <h3 class="guide-subheader">Three equal columns</h3>
         </div>
         
-        <div class="example">
-          <div class="grid-wrapper grid-example">
+        <div class="example example-grid">
+          <div class="grid-wrapper">
             <div class="grid grid-1-3">
               <div class="inner-block">
                 <p>Content</p>
@@ -383,8 +240,8 @@ phases:
           <h3 class="guide-subheader">Two columns</h3>
         </div>
         
-        <div class="example">
-          <div class="grid-wrapper grid-example">
+        <div class="example example-grid">
+          <div class="grid-wrapper">
             <div class="grid grid-2-3">
               <div class="inner-block">
                 <p>Content</p>
@@ -398,6 +255,13 @@ phases:
           </div>
         </div>
         
+        <!-- Grid : Working example page -->
+        <div class="guide guide-end">
+          <h3 class="guide-subheader">Working example</h3>
+          <p>
+            <a href="{{site_baseurl}}/example/grid.html" class="example-url">Grid styles within a sample gov.uk template</a>
+          </p>
+        </div>
         
         <!-- Images -->
         <div class="guide" id="guide-images">
@@ -408,7 +272,7 @@ phases:
         </div>
         
         <!-- Images : Example -->
-        <div class="example">
+        <div class="example example-images">
           <div class="grid-wrapper">
             <div class="grid grid-1-2">
               <div class="inner-block">
@@ -433,39 +297,55 @@ phases:
         </div>
         
         <!-- Data : Example -->
-        <div class="example">
+        <div class="example gov-uk">
           <div class="grid grid-1-2">
             <div class="inner-block">
-              <div class="bold-80">24</div>
-              <p class="copy-16 copy-bold">Ministerial departments</p>
+              
+              <div class="data">
+                <h2 class="data-80">24</h2>
+                <p>Ministerial departments</p>
+              </div>
+              
             </div>
           </div>
           <div class="grid grid-1-2">
             <div class="inner-block">
-              <div class="bold-80">80PX</div>
-              <p class="copy-16 copy-bold">16px</p>
+              
+              <div class="data">
+                <h2 class="data-80">80px</h2>
+                <p>16px</p>
+              </div>
+              
             </div>
           </div>
         </div>
         
         <!-- Data : Example -->
-        <div class="example">
+        <div class="example gov-uk">
           <div class="grid grid-1-2">
             <div class="inner-block">
-              <div class="bold-48">56/154</div>
-              <p class="copy-16 copy-bold">on GOV.UK</p>
+              
+              <div class="data">
+                <h2 class="data-48">56/154</h2>
+                <p>on GOV.UK</p>
+              </div>
+              
             </div>
           </div>
           <div class="grid grid-1-2">
             <div class="inner-block">
-              <div class="bold-48">48PX</div>
-              <p class="copy-16 copy-bold">16px</p>
+              
+              <div class="data">
+                <h2 class="data-48">48px</h2>
+                <p>16px</p>
+              </div>
+              
             </div>
           </div>
         </div>
         
         
-        <!-- Colour -->
+        <!-- Colour palette -->
         <div class="guide" id="guide-colour">
           <h2 class="guide-header">Colour</h2>
           <p class="lede">
@@ -477,16 +357,16 @@ phases:
         </div>
         
         <!-- Colour palette : Example -->
-        <div class="example">
+        <div class="example gov-uk">
           <div class="inner-block">
+            
             <div class="swatch colour-hm-government"></div>
-            <pre><code>Sass variable: $hm-government</code>
-            </pre>
-            <div class="swatch colour-nhs"></div>
-            <pre><code>Sass variable: $department-of-health;</code>
-            </pre>
+            <pre><code>Sass variable: $hm-government</code></pre>
+            
+            <div class="swatch colour-department-of-health"></div>
+            <pre><code>Sass variable: $department-of-health;</code></pre>
+            
           </div>
-          
         </div>
         
         <details class="more">
@@ -500,8 +380,8 @@ phases:
           
           <pre>
             <code>
-              &lt;div class=&quot;swatch colour-hm-government&quot;&gt;&lt;/div&gt;
-               
+              &lt;div class=&quot;colour-hm-government&quot;&gt;&lt;/div&gt;
+           
               .colour-hm-government {
                 background: $hm-government
               }
@@ -513,7 +393,6 @@ phases:
         
         
         <!-- Buttons -->
-        
         <div class="guide" id="guide-buttons">
           <h2 class="guide-header">Buttons</h2>
           <p>
@@ -521,11 +400,14 @@ phases:
           </p>
         </div>
         
-        <div class="example">
+        <!-- Buttons : Example-->
+        <div class="example gov-uk">
           <div class="inner-block">
-            <a href="#" class="button">Button</a>
-            <a href="#" class="button-secondary">Button</a>
-            <a href="#" class="button-warning">Button</a>
+            
+            <a href="#" class="button">Primary action</a>
+            <a href="#" class="button button-secondary">Secondary action</a>
+            <a href="#" class="button button-warning">Warning action</a>
+            
           </div>
         </div>
         
@@ -540,19 +422,16 @@ phases:
           
           <pre>
             <code>
-              &lt;button class=&quot;button-primary&quot;&gt;button text&lt;/button&gt;
+              &lt;button class=&quot;button&quot;&gt;Primary action&lt;/button&gt;
               
-              .button-primary {
+              .button {
                 @include button($green);
-                @include core-19;
               }
             </code>
           </pre>
           
-          <p>Here we also include the <code>core-19</code> mixin to set the button font size to 19px.</p>
-          
           <a href="https://github.com/alphagov/govuk_frontend_toolkit#buttons">Github: GOV.UK front-end toolkit - buttons</a>
-        
+          
         </details>
         
       </div>

@@ -58,5 +58,16 @@
 @import "views/transaction-2";
 @import "views/transaction-3";
 @import "views/transaction-4";
-@import "views/design-guide";
-@import "views/design-guide-typography";
+
+
+// # Design Guide
+// Using a nested import to prevent 'example' styles affecting Design Patterns
+// http://sass-lang.com/documentation/file.SASS_REFERENCE.html#nested-import
+
+.design-guide {
+   // Let's import the base example files, so we can show how they work in the Design Guide
+   @import "../../../example/assets/sass/example/vars";
+   @import "../../../example/assets/sass/example/template";
+}
+
+@import "design-guide/design-guide"
