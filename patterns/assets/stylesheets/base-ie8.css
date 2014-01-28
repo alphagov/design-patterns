@@ -1500,97 +1500,13 @@ main.transaction-4 .content {
         font-size: 16px;
         line-height: 1.25; } }
 
-.design-guide .core-80 {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 80px;
-  line-height: 1;
-  font-weight: 400;
-  text-transform: none; }
-  @media (max-width: 640px) {
-    .design-guide .core-80 {
-      font-size: 53px;
-      line-height: 1.03774; } }
-.design-guide .core-48 {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 48px;
-  line-height: 1.04167;
-  font-weight: 400;
-  text-transform: none; }
-  @media (max-width: 640px) {
-    .design-guide .core-48 {
-      font-size: 32px;
-      line-height: 1.09375; } }
-.design-guide .core-36 {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 36px;
-  line-height: 1.11111;
-  font-weight: 400;
-  text-transform: none; }
-  @media (max-width: 640px) {
-    .design-guide .core-36 {
-      font-size: 24px;
-      line-height: 1.04167; } }
-.design-guide .core-27 {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 27px;
-  line-height: 1.11111;
-  font-weight: 400;
-  text-transform: none; }
-  @media (max-width: 640px) {
-    .design-guide .core-27 {
-      font-size: 18px;
-      line-height: 1.11111; } }
-.design-guide .core-24 {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 24px;
-  line-height: 1.25;
-  font-weight: 400;
-  text-transform: none; }
-  @media (max-width: 640px) {
-    .design-guide .core-24 {
-      font-size: 20px;
-      line-height: 1.2; } }
-.design-guide .core-19 {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 19px;
-  line-height: 1.31579;
-  font-weight: 400;
-  text-transform: none; }
-  @media (max-width: 640px) {
-    .design-guide .core-19 {
-      font-size: 16px;
-      line-height: 1.25; } }
-.design-guide .core-16 {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 300;
-  text-transform: none; }
-  @media (max-width: 640px) {
-    .design-guide .core-16 {
-      font-size: 14px;
-      line-height: 1.14286; } }
-.design-guide .core-14 {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.42857;
-  font-weight: 400;
-  text-transform: none; }
-  @media (max-width: 640px) {
-    .design-guide .core-14 {
-      font-size: 12px;
-      line-height: 1.25; } }
-.design-guide .main {
-  padding-bottom: 90px; }
 .design-guide .gov-uk {
-  -webkit-font-smoothing: antialiased;
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
   line-height: 1.31579;
   font-weight: 400;
-  text-transform: none; }
-  .design-guide .gov-uk * {
-    max-width: 75ex; }
+  text-transform: none;
+  -webkit-font-smoothing: antialiased; }
   @media (max-width: 640px) {
     .design-guide .gov-uk {
       font-size: 16px;
@@ -1611,7 +1527,9 @@ main.transaction-4 .content {
         font-size: 32px;
         line-height: 1.09375; } }
     .design-guide .gov-uk h1 span,
-    .design-guide .gov-uk .heading-48 span {
+    .design-guide .gov-uk h1 .document-type,
+    .design-guide .gov-uk .heading-48 span,
+    .design-guide .gov-uk .heading-48 .document-type {
       display: block;
       font-family: "nta", Arial, sans-serif;
       font-size: 27px;
@@ -1621,7 +1539,9 @@ main.transaction-4 .content {
       color: #6f777b; }
       @media (max-width: 640px) {
         .design-guide .gov-uk h1 span,
-        .design-guide .gov-uk .heading-48 span {
+        .design-guide .gov-uk h1 .document-type,
+        .design-guide .gov-uk .heading-48 span,
+        .design-guide .gov-uk .heading-48 .document-type {
           font-size: 18px;
           line-height: 1.11111; } }
   .design-guide .gov-uk h2,
@@ -1704,11 +1624,215 @@ main.transaction-4 .content {
     font-size: 16px;
     line-height: 1.25;
     font-weight: 300;
-    text-transform: none; }
+    text-transform: none;
+    padding: 0 5px;
+    background: #dee0e2; }
     @media (max-width: 640px) {
       .design-guide .gov-uk code {
         font-size: 14px;
         line-height: 1.14286; } }
+  .design-guide .gov-uk .gutter {
+    padding-bottom: 30px; }
+  .design-guide .gov-uk .gutter-double {
+    padding-bottom: 60px; }
+  .design-guide .gov-uk .button {
+    background-color: #006435;
+    position: relative;
+    display: -moz-inline-stack;
+    display: inline-block;
+    padding: 0.35em 0.5em 0.15em 0.5em;
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -webkit-box-shadow: 0 2px 0 #00180c;
+    -moz-box-shadow: 0 2px 0 #00180c;
+    box-shadow: 0 2px 0 #00180c;
+    border-bottom: 2px solid #00180c;
+    font-size: 1em;
+    line-height: 1.25;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    color: white; }
+    .design-guide .gov-uk .button:visited {
+      background-color: #006435; }
+    .design-guide .gov-uk .button:hover, .design-guide .gov-uk .button:focus {
+      background-color: #004b27; }
+    .design-guide .gov-uk .button:active {
+      top: 2px;
+      -webkit-box-shadow: 0 0 0 #006435;
+      -moz-box-shadow: 0 0 0 #006435;
+      box-shadow: 0 0 0 #006435; }
+    .design-guide .gov-uk .button.disabled, .design-guide .gov-uk .button[disabled="disabled"], .design-guide .gov-uk .button[disabled] {
+      zoom: 1;
+      filter: alpha(opacity=50);
+      opacity: 0.5; }
+      .design-guide .gov-uk .button.disabled:hover, .design-guide .gov-uk .button[disabled="disabled"]:hover, .design-guide .gov-uk .button[disabled]:hover {
+        cursor: default;
+        background-color: #006435; }
+      .design-guide .gov-uk .button.disabled:active, .design-guide .gov-uk .button[disabled="disabled"]:active, .design-guide .gov-uk .button[disabled]:active {
+        top: 0;
+        -webkit-box-shadow: 0 2px 0 #00180c;
+        -moz-box-shadow: 0 2px 0 #00180c;
+        box-shadow: 0 2px 0 #00180c;
+        border-bottom: 2px solid #00180c; }
+    .design-guide .gov-uk .button:hover, .design-guide .gov-uk .button:focus, .design-guide .gov-uk .button:visited {
+      color: white; }
+    .design-guide .gov-uk .button:before {
+      content: "";
+      height: 110%;
+      width: 100%;
+      display: block;
+      background: transparent;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    .design-guide .gov-uk .button:active:before {
+      top: -10%;
+      height: 120%; }
+    .design-guide .gov-uk .button[rel="external"]:after {
+      display: none;
+      content: none;
+      margin-left: 0;
+      margin-right: 0; }
+    .design-guide .gov-uk .button[type="submit"], .design-guide .gov-uk .button[type="reset"], .design-guide .gov-uk .button[type="button"] {
+      filter: chroma(color=black); }
+    .design-guide .gov-uk .button[type=submit].button {
+      filter: none; }
+  .design-guide .gov-uk .button-secondary {
+    background-color: #dee0e2;
+    position: relative;
+    display: -moz-inline-stack;
+    display: inline-block;
+    padding: 0.35em 0.5em 0.15em 0.5em;
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -webkit-box-shadow: 0 2px 0 #b5babe;
+    -moz-box-shadow: 0 2px 0 #b5babe;
+    box-shadow: 0 2px 0 #b5babe;
+    border-bottom: 2px solid #b5babe;
+    font-size: 1em;
+    line-height: 1.25;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    color: #0b0c0c; }
+    .design-guide .gov-uk .button-secondary:visited {
+      background-color: #dee0e2; }
+    .design-guide .gov-uk .button-secondary:hover, .design-guide .gov-uk .button-secondary:focus {
+      background-color: #d0d3d6; }
+    .design-guide .gov-uk .button-secondary:active {
+      top: 2px;
+      -webkit-box-shadow: 0 0 0 #dee0e2;
+      -moz-box-shadow: 0 0 0 #dee0e2;
+      box-shadow: 0 0 0 #dee0e2; }
+    .design-guide .gov-uk .button-secondary.disabled, .design-guide .gov-uk .button-secondary[disabled="disabled"], .design-guide .gov-uk .button-secondary[disabled] {
+      zoom: 1;
+      filter: alpha(opacity=50);
+      opacity: 0.5; }
+      .design-guide .gov-uk .button-secondary.disabled:hover, .design-guide .gov-uk .button-secondary[disabled="disabled"]:hover, .design-guide .gov-uk .button-secondary[disabled]:hover {
+        cursor: default;
+        background-color: #dee0e2; }
+      .design-guide .gov-uk .button-secondary.disabled:active, .design-guide .gov-uk .button-secondary[disabled="disabled"]:active, .design-guide .gov-uk .button-secondary[disabled]:active {
+        top: 0;
+        -webkit-box-shadow: 0 2px 0 #b5babe;
+        -moz-box-shadow: 0 2px 0 #b5babe;
+        box-shadow: 0 2px 0 #b5babe;
+        border-bottom: 2px solid #b5babe; }
+    .design-guide .gov-uk .button-secondary:hover, .design-guide .gov-uk .button-secondary:focus, .design-guide .gov-uk .button-secondary:visited {
+      color: #0b0c0c; }
+    .design-guide .gov-uk .button-secondary:before {
+      content: "";
+      height: 110%;
+      width: 100%;
+      display: block;
+      background: transparent;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    .design-guide .gov-uk .button-secondary:active:before {
+      top: -10%;
+      height: 120%; }
+    .design-guide .gov-uk .button-secondary[rel="external"]:after {
+      display: none;
+      content: none;
+      margin-left: 0;
+      margin-right: 0; }
+    .design-guide .gov-uk .button-secondary[type="submit"], .design-guide .gov-uk .button-secondary[type="reset"], .design-guide .gov-uk .button-secondary[type="button"] {
+      filter: chroma(color=black); }
+    .design-guide .gov-uk .button-secondary[type=submit].button {
+      filter: none; }
+  .design-guide .gov-uk .button-warning {
+    background-color: #b10e1e;
+    position: relative;
+    display: -moz-inline-stack;
+    display: inline-block;
+    padding: 0.35em 0.5em 0.15em 0.5em;
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -webkit-box-shadow: 0 2px 0 #6a0812;
+    -moz-box-shadow: 0 2px 0 #6a0812;
+    box-shadow: 0 2px 0 #6a0812;
+    border-bottom: 2px solid #6a0812;
+    font-size: 1em;
+    line-height: 1.25;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    color: white; }
+    .design-guide .gov-uk .button-warning:visited {
+      background-color: #b10e1e; }
+    .design-guide .gov-uk .button-warning:hover, .design-guide .gov-uk .button-warning:focus {
+      background-color: #990c1a; }
+    .design-guide .gov-uk .button-warning:active {
+      top: 2px;
+      -webkit-box-shadow: 0 0 0 #b10e1e;
+      -moz-box-shadow: 0 0 0 #b10e1e;
+      box-shadow: 0 0 0 #b10e1e; }
+    .design-guide .gov-uk .button-warning.disabled, .design-guide .gov-uk .button-warning[disabled="disabled"], .design-guide .gov-uk .button-warning[disabled] {
+      zoom: 1;
+      filter: alpha(opacity=50);
+      opacity: 0.5; }
+      .design-guide .gov-uk .button-warning.disabled:hover, .design-guide .gov-uk .button-warning[disabled="disabled"]:hover, .design-guide .gov-uk .button-warning[disabled]:hover {
+        cursor: default;
+        background-color: #b10e1e; }
+      .design-guide .gov-uk .button-warning.disabled:active, .design-guide .gov-uk .button-warning[disabled="disabled"]:active, .design-guide .gov-uk .button-warning[disabled]:active {
+        top: 0;
+        -webkit-box-shadow: 0 2px 0 #6a0812;
+        -moz-box-shadow: 0 2px 0 #6a0812;
+        box-shadow: 0 2px 0 #6a0812;
+        border-bottom: 2px solid #6a0812; }
+    .design-guide .gov-uk .button-warning:hover, .design-guide .gov-uk .button-warning:focus, .design-guide .gov-uk .button-warning:visited {
+      color: white; }
+    .design-guide .gov-uk .button-warning:before {
+      content: "";
+      height: 110%;
+      width: 100%;
+      display: block;
+      background: transparent;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    .design-guide .gov-uk .button-warning:active:before {
+      top: -10%;
+      height: 120%; }
+    .design-guide .gov-uk .button-warning[rel="external"]:after {
+      display: none;
+      content: none;
+      margin-left: 0;
+      margin-right: 0; }
+    .design-guide .gov-uk .button-warning[type="submit"], .design-guide .gov-uk .button-warning[type="reset"], .design-guide .gov-uk .button-warning[type="button"] {
+      filter: chroma(color=black); }
+    .design-guide .gov-uk .button-warning[type=submit].button {
+      filter: none; }
 .design-guide .grid-wrapper {
   max-width: 1020px;
   margin: 0 auto;
@@ -1724,214 +1848,21 @@ main.transaction-4 .content {
   width: 25%; }
 .design-guide .grid-1-3 {
   width: 100%;
-  width: 33.33333%; }
+  width: 33.333333333%; }
 .design-guide .grid-1-2 {
   width: 100%;
   width: 50%; }
 .design-guide .grid-2-3 {
   width: 100%;
-  width: 66.66667%; }
+  width: 66.666666667%; }
 .design-guide .grid-3-4 {
   width: 100%;
   width: 75%; }
-.design-guide .button {
-  background-color: #006435;
-  position: relative;
-  display: -moz-inline-stack;
-  display: inline-block;
-  padding: 0.35em 0.5em 0.15em 0.5em;
-  border: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  -webkit-appearance: none;
-  -webkit-box-shadow: 0 2px 0 #00180c;
-  -moz-box-shadow: 0 2px 0 #00180c;
-  box-shadow: 0 2px 0 #00180c;
-  border-bottom: 2px solid #00180c;
-  font-size: 1em;
-  line-height: 1.25;
-  text-decoration: none;
-  -webkit-font-smoothing: antialiased;
-  cursor: pointer;
-  color: white; }
-  .design-guide .button:visited {
-    background-color: #006435; }
-  .design-guide .button:hover, .design-guide .button:focus {
-    background-color: #004b27; }
-  .design-guide .button:active {
-    top: 2px;
-    -webkit-box-shadow: 0 0 0 #006435;
-    -moz-box-shadow: 0 0 0 #006435;
-    box-shadow: 0 0 0 #006435; }
-  .design-guide .button.disabled, .design-guide .button[disabled="disabled"], .design-guide .button[disabled] {
-    zoom: 1;
-    filter: alpha(opacity=50);
-    opacity: 0.5; }
-    .design-guide .button.disabled:hover, .design-guide .button[disabled="disabled"]:hover, .design-guide .button[disabled]:hover {
-      cursor: default;
-      background-color: #006435; }
-    .design-guide .button.disabled:active, .design-guide .button[disabled="disabled"]:active, .design-guide .button[disabled]:active {
-      top: 0;
-      -webkit-box-shadow: 0 2px 0 #00180c;
-      -moz-box-shadow: 0 2px 0 #00180c;
-      box-shadow: 0 2px 0 #00180c;
-      border-bottom: 2px solid #00180c; }
-  .design-guide .button:hover, .design-guide .button:focus, .design-guide .button:visited {
-    color: white; }
-  .design-guide .button:before {
-    content: "";
-    height: 110%;
-    width: 100%;
-    display: block;
-    background: transparent;
-    position: absolute;
-    top: 0;
-    left: 0; }
-  .design-guide .button:active:before {
-    top: -10%;
-    height: 120%; }
-  .design-guide .button[rel="external"]:after {
-    display: none;
-    content: none;
-    margin-left: 0;
-    margin-right: 0; }
-  .design-guide .button[type="submit"], .design-guide .button[type="reset"], .design-guide .button[type="button"] {
-    filter: chroma(color=black); }
-  .design-guide .button[type=submit].button {
-    filter: none; }
-.design-guide .button-secondary {
-  background-color: #dee0e2;
-  position: relative;
-  display: -moz-inline-stack;
-  display: inline-block;
-  padding: 0.35em 0.5em 0.15em 0.5em;
-  border: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  -webkit-appearance: none;
-  -webkit-box-shadow: 0 2px 0 #b5babe;
-  -moz-box-shadow: 0 2px 0 #b5babe;
-  box-shadow: 0 2px 0 #b5babe;
-  border-bottom: 2px solid #b5babe;
-  font-size: 1em;
-  line-height: 1.25;
-  text-decoration: none;
-  -webkit-font-smoothing: antialiased;
-  cursor: pointer;
-  color: #0b0c0c; }
-  .design-guide .button-secondary:visited {
-    background-color: #dee0e2; }
-  .design-guide .button-secondary:hover, .design-guide .button-secondary:focus {
-    background-color: #d0d3d6; }
-  .design-guide .button-secondary:active {
-    top: 2px;
-    -webkit-box-shadow: 0 0 0 #dee0e2;
-    -moz-box-shadow: 0 0 0 #dee0e2;
-    box-shadow: 0 0 0 #dee0e2; }
-  .design-guide .button-secondary.disabled, .design-guide .button-secondary[disabled="disabled"], .design-guide .button-secondary[disabled] {
-    zoom: 1;
-    filter: alpha(opacity=50);
-    opacity: 0.5; }
-    .design-guide .button-secondary.disabled:hover, .design-guide .button-secondary[disabled="disabled"]:hover, .design-guide .button-secondary[disabled]:hover {
-      cursor: default;
-      background-color: #dee0e2; }
-    .design-guide .button-secondary.disabled:active, .design-guide .button-secondary[disabled="disabled"]:active, .design-guide .button-secondary[disabled]:active {
-      top: 0;
-      -webkit-box-shadow: 0 2px 0 #b5babe;
-      -moz-box-shadow: 0 2px 0 #b5babe;
-      box-shadow: 0 2px 0 #b5babe;
-      border-bottom: 2px solid #b5babe; }
-  .design-guide .button-secondary:hover, .design-guide .button-secondary:focus, .design-guide .button-secondary:visited {
-    color: #0b0c0c; }
-  .design-guide .button-secondary:before {
-    content: "";
-    height: 110%;
-    width: 100%;
-    display: block;
-    background: transparent;
-    position: absolute;
-    top: 0;
-    left: 0; }
-  .design-guide .button-secondary:active:before {
-    top: -10%;
-    height: 120%; }
-  .design-guide .button-secondary[rel="external"]:after {
-    display: none;
-    content: none;
-    margin-left: 0;
-    margin-right: 0; }
-  .design-guide .button-secondary[type="submit"], .design-guide .button-secondary[type="reset"], .design-guide .button-secondary[type="button"] {
-    filter: chroma(color=black); }
-  .design-guide .button-secondary[type=submit].button {
-    filter: none; }
-.design-guide .button-warning {
-  background-color: #b10e1e;
-  position: relative;
-  display: -moz-inline-stack;
-  display: inline-block;
-  padding: 0.35em 0.5em 0.15em 0.5em;
-  border: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  -webkit-appearance: none;
-  -webkit-box-shadow: 0 2px 0 #6a0812;
-  -moz-box-shadow: 0 2px 0 #6a0812;
-  box-shadow: 0 2px 0 #6a0812;
-  border-bottom: 2px solid #6a0812;
-  font-size: 1em;
-  line-height: 1.25;
-  text-decoration: none;
-  -webkit-font-smoothing: antialiased;
-  cursor: pointer;
-  color: white; }
-  .design-guide .button-warning:visited {
-    background-color: #b10e1e; }
-  .design-guide .button-warning:hover, .design-guide .button-warning:focus {
-    background-color: #990c1a; }
-  .design-guide .button-warning:active {
-    top: 2px;
-    -webkit-box-shadow: 0 0 0 #b10e1e;
-    -moz-box-shadow: 0 0 0 #b10e1e;
-    box-shadow: 0 0 0 #b10e1e; }
-  .design-guide .button-warning.disabled, .design-guide .button-warning[disabled="disabled"], .design-guide .button-warning[disabled] {
-    zoom: 1;
-    filter: alpha(opacity=50);
-    opacity: 0.5; }
-    .design-guide .button-warning.disabled:hover, .design-guide .button-warning[disabled="disabled"]:hover, .design-guide .button-warning[disabled]:hover {
-      cursor: default;
-      background-color: #b10e1e; }
-    .design-guide .button-warning.disabled:active, .design-guide .button-warning[disabled="disabled"]:active, .design-guide .button-warning[disabled]:active {
-      top: 0;
-      -webkit-box-shadow: 0 2px 0 #6a0812;
-      -moz-box-shadow: 0 2px 0 #6a0812;
-      box-shadow: 0 2px 0 #6a0812;
-      border-bottom: 2px solid #6a0812; }
-  .design-guide .button-warning:hover, .design-guide .button-warning:focus, .design-guide .button-warning:visited {
-    color: white; }
-  .design-guide .button-warning:before {
-    content: "";
-    height: 110%;
-    width: 100%;
-    display: block;
-    background: transparent;
-    position: absolute;
-    top: 0;
-    left: 0; }
-  .design-guide .button-warning:active:before {
-    top: -10%;
-    height: 120%; }
-  .design-guide .button-warning[rel="external"]:after {
-    display: none;
-    content: none;
-    margin-left: 0;
-    margin-right: 0; }
-  .design-guide .button-warning[type="submit"], .design-guide .button-warning[type="reset"], .design-guide .button-warning[type="button"] {
-    filter: chroma(color=black); }
-  .design-guide .button-warning[type=submit].button {
-    filter: none; }
+.design-guide .main {
+  padding-bottom: 90px; }
+.design-guide .highlight {
+  color: #0076c0;
+  font-style: normal; }
 
 .design-guide {
   max-width: 1020px;
@@ -2127,8 +2058,7 @@ main.transaction-4 .content {
 
 .example-grid {
   background: white;
-  padding-left: 0;
-  padding-right: 0; }
+  padding: 25px 0 10px 0; }
 
 .example-grid p {
   width: 100%;

@@ -17,38 +17,42 @@ phases:
 </div>
 
 <div class="grid-wrapper">
-  <div class="grid">
+  <div class="grid grid-3-4">
     <div class="inner-block">
       
       <h1>Design guide example</h1>
-      <p>
-        This page uses the <a href="https://github.com/alphagov/govuk_template">gov.uk template</a>, <a href="https://github.com/alphagov/govuk_frontend_toolkit"> govuk_frontend_toolkit</a> and example <a href="https://github.com/alphagov/design-patterns/blob/gh-pages/example/assets/sass/example/_vars.scss">variables</a> and <a href="https://github.com/alphagov/design-patterns/blob/gh-pages/example/assets/sass/example/_template.scss">template</a> styles.
-      </p>
-      
-      <h2>base.scss</h2>
       
       <p>
-        At the top of your base Sass file, import the <a href="https://github.com/alphagov/govuk_frontend_toolkit"> govuk_frontend_toolkit</a> files.
+        This example provides a set of basic styles, to show how the mixins and variables within the front-end toolkit can be used to create content in the GOV.UK style. 
       </p>
-      
       <p>
-        Then import the <a href="https://github.com/alphagov/design-patterns/blob/gh-pages/example/assets/example/_vars.scss">vars</a> and <a href="https://github.com/alphagov/design-patterns/blob/gh-pages/example/assets/example/_template.scss">template</a> files, for basic layout and typography styles.
+        Styles are applied using the <code>.gov-uk</code> class on the <code>&lt;main&gt;</code> content area. 
       </p>
       
-      <p>
-        <a href="https://github.com/alphagov/design-patterns/blob/gh-pages/example/assets/sass/base.scss">Here's the base.scss file</a> for this project.
-      </p>
-      
-      <h2>Example pages using the template styles</h2>
+      <h2>Example pages</h2>
       <ul>
-        <li><a href="{{ site.baseurl }}/example/typography.html">Typography</a></li>
-        <li><a href="{{ site.baseurl }}/example/grid.html">Grid</a></li>
+        <li><a href="{{ site.baseurl }}/example/typography.html">Basic typography</a></li>
+        <li><a href="{{ site.baseurl }}/example/typography-classes.html">Basic typography - using classes</a></li>
+        <li><a href="{{ site.baseurl }}/example/grid.html">Grid layout</a></li>
+        <li><a href="{{ site.baseurl }}/example/buttons.html">Buttons</a></li>
+        <!-- <li><a href="{{ site.baseurl }}/example/service.html">Example service</a></li> -->
       </ul>
+        
+      <h2>Using Sass</h2>
       
       <p>
-        Styles are applied using the <code>.gov-uk</code> class.
+        This example assumes you are familiar with Sass and will use Sass to generate your stylesheets. Here, <code>application.scss</code> is the file that will be compiled with Sass. 
       </p>
       
+      <p>
+        Take a look at the <a href="https://github.com/alphagov/design-patterns/blob/gh-pages/example/assets/sass/application.scss">application.scss</a> to see how this example project is structured.
+      </p>
+      <p>
+      
+      <p>
+        The <code>basic.scss</code> stylesheet is structured in a mobile-first fashion. Mobile styles are defined first, then the <code>media</code> mixin is used to override the default mobile styles with tablet or desktop styles. 
+     </p>
+     
     </div>
   </div>
 </div>

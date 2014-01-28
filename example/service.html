@@ -1,0 +1,62 @@
+---
+layout: design-guide-example
+title: Design guide service example
+page-class: 'gov-uk'
+phases:
+  - alpha
+---
+
+<div id="global-breadcrumb" class="breadcrumb">
+  <nav role="navigation">
+    <ol class="group">
+      <li><a href="https://www.gov.uk">Home</a></li>
+      <li><a href="{{ site.baseurl }}/patterns/">Design patterns</a></li>
+      <li><a href="{{ site.baseurl }}/example/">Design guide example</a></li>
+      <li><a href="{{ site.baseurl }}/example/service.html">Service example</a></li>
+    </ol>
+  </nav>
+</div>
+
+<div class="grid-wrapper">
+  <div class="grid">
+    <div class="inner-block">
+      
+      <h1>
+        <span class="document-type">Service</span>
+        Renew a patent
+      </h1>
+      
+      <h2><span class="number">1</span> What patent do you want to renew?</h2>
+      
+      <p>
+        Patent numbers start with GB or EP. <a href="">Search for your patent number?</a>
+      </p>
+      
+      <h2><span class="number">2</span> Who is submitting the renewal?</h2>
+      <p>You can enter the name of an individual and/or the name of your company or business</p>
+      
+      <form action="">
+        <div class="form-row">
+          <label for="">First name</label>
+          <input type="text">
+        </div>
+        <div class="form-row">
+          <label for="">Last name</label>
+          <input type="text">
+        </div>
+        <div class="form-row">
+          <label for="">Company or business name (optional)</label>
+          <input type="text">
+        </div>
+        <div class="form-row">
+          <label for="">Email address</label>
+          <input type="text">
+        </div>
+        
+        <input type="submit" class="button" value="Go to checkout">
+        
+      </form>
+      
+    </div><!-- /.inner-block -->
+  </div><!-- /.grid -->
+</div><!-- /.grid-wrapper -->

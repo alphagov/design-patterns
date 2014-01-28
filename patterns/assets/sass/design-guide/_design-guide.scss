@@ -156,8 +156,7 @@
 
 .example-grid {
    background: white;
-   padding-left: 0;
-   padding-right: 0;
+   padding: 25px 0 10px 0;
 }
 
 .example-grid p {
@@ -175,18 +174,15 @@
 }
 
 .example {
-  
   img {
      max-width: 100%;
      vertical-align: top;
   }
-  
 }
 
 // Colour palette
 
 .example {
-  
   .swatch {
      width: $gutter*2;
      height: $gutter*2;
@@ -194,7 +190,6 @@
      margin-right: $gutter;
      margin-top: $gutter-half;
   }
-  
 }
 
 .colour-hm-government {
@@ -208,12 +203,10 @@
 // Buttons
 
 .example {
-  
    .button,
    .button-secondary,
    .button-warning {
       float: left;
       margin-bottom: 0;
    }
-   
 }

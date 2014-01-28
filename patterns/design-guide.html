@@ -49,9 +49,9 @@ phases:
           <li>
             <a href="#guide-grid">Grid</a>
             <ul>
-              <li><a href="#guide-grid-4-col">Four column grid</a></li>
-              <li><a href="#guide-grid-3-col">Three column grid</a></li>
               <li><a href="#guide-grid-2-col">Two column grid</a></li>
+              <li><a href="#guide-grid-3-col">Three column grid</a></li>
+              <li><a href="#guide-grid-4-col">Four column grid</a></li>
             </ul>
           </li>
           <li><a href="#guide-images">Images</a></li>
@@ -168,7 +168,7 @@ phases:
         <div class="guide guide-end">
           <h3 class="guide-subheader">Working example</h3>
           <p>
-            <a href="{{ site.baseurl}}/example/typography.html" class="example-url">Typography styles within a sample gov.uk template</a>
+            <a href="{{ site.baseurl}}/example/typography.html" class="example-url">Typography styles within a GOV.UK template</a>
           </p>
         </div>
         
@@ -181,66 +181,11 @@ phases:
         </div>
         
         <!-- Grid : Example -->
-        <div class="guide" id="guide-grid-4-col">
-          <h3 class="guide-subheader">Four equal columns</h3>
-        </div>
-      
-        <div class="example example-grid">
-          <div class="grid-wrapper">
-            <div class="grid grid-1-4">
-              <div class="inner-block">
-                <p>Content</p>
-              </div>
-            </div>
-            <div class="grid grid-1-4">
-              <div class="inner-block">
-                <p>Content</p>
-              </div>
-            </div>
-            <div class="grid grid-1-4">
-              <div class="inner-block">
-                <p>Content</p>
-              </div>
-            </div>
-            <div class="grid grid-1-4">
-              <div class="inner-block">
-                <p>Content</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Grid : Example -->
-        <div class="guide" id="guide-grid-3-col">
-          <h3 class="guide-subheader">Three equal columns</h3>
-        </div>
-        
-        <div class="example example-grid">
-          <div class="grid-wrapper">
-            <div class="grid grid-1-3">
-              <div class="inner-block">
-                <p>Content</p>
-              </div>
-            </div>
-            <div class="grid grid-1-3">
-              <div class="inner-block">
-                <p>Content</p>
-              </div>
-            </div>
-            <div class="grid grid-1-3">
-              <div class="inner-block">
-                <p>Content</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Grid : Example -->
         <div class="guide" id="guide-grid-2-col">
           <h3 class="guide-subheader">Two columns</h3>
         </div>
         
-        <div class="example example-grid">
+        <div class="example example-grid gov-uk">
           <div class="grid-wrapper">
             <div class="grid grid-2-3">
               <div class="inner-block">
@@ -255,11 +200,66 @@ phases:
           </div>
         </div>
         
+        <!-- Grid : Example -->
+        <div class="guide" id="guide-grid-3-col">
+          <h3 class="guide-subheader">Three equal columns</h3>
+        </div>
+        
+        <div class="example example-grid gov-uk">
+          <div class="grid-wrapper">
+            <div class="grid grid-1-3">
+              <div class="inner-block">
+                <p>Content</p>
+              </div>
+            </div>
+            <div class="grid grid-1-3">
+              <div class="inner-block">
+                <p>Content</p>
+              </div>
+            </div>
+            <div class="grid grid-1-3">
+              <div class="inner-block">
+                <p>Content</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Grid : Example -->
+        <div class="guide" id="guide-grid-4-col">
+          <h3 class="guide-subheader">Four equal columns</h3>
+        </div>
+        
+        <div class="example example-grid gov-uk">
+          <div class="grid-wrapper">
+            <div class="grid grid-1-4">
+              <div class="inner-block">
+                <p>Content</p>
+              </div>
+            </div>
+            <div class="grid grid-1-4">
+              <div class="inner-block">
+                <p>Content</p>
+              </div>
+            </div>
+            <div class="grid grid-1-4">
+              <div class="inner-block">
+                <p>Content</p>
+              </div>
+            </div>
+            <div class="grid grid-1-4">
+              <div class="inner-block">
+                <p>Content</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
         <!-- Grid : Working example page -->
         <div class="guide guide-end">
           <h3 class="guide-subheader">Working example</h3>
           <p>
-            <a href="{{ site.baseurl}}/example/grid.html" class="example-url">Grid styles within a sample gov.uk template</a>
+            <a href="{{ site.baseurl}}/example/grid.html" class="example-url">Grid styles within a GOV.UK template</a>
           </p>
         </div>
         
@@ -411,28 +411,13 @@ phases:
           </div>
         </div>
         
-        <details class="more">
-          <summary>View HTML &amp; SCSS for this example</summary>
-          
+        <!-- Buttons : Working example page -->
+        <div class="guide guide-end">
+          <h3 class="guide-subheader">Working example</h3>
           <p>
-            The front-end toolkit provides button mixins in _buttons.scss.
+            <a href="{{ site.baseurl}}/example/buttons.html" class="example-url">Button styles within a GOV.UK template</a>
           </p>
-          
-          <p>Usage: </p>
-          
-          <pre>
-            <code>
-              &lt;button class=&quot;button&quot;&gt;Primary action&lt;/button&gt;
-              
-              .button {
-                @include button($green);
-              }
-            </code>
-          </pre>
-          
-          <a href="https://github.com/alphagov/govuk_frontend_toolkit#buttons">Github: GOV.UK front-end toolkit - buttons</a>
-          
-        </details>
+        </div>
         
       </div>
     </div>

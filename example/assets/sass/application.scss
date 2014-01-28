@@ -1,7 +1,7 @@
 //
 // Design Guide example stylesheet
 //
-// From the frontend toolkit
+// Import the frontend toolkit
 @import "../govuk_frontend_toolkit/stylesheets/colours";
 @import "../govuk_frontend_toolkit/stylesheets/conditionals";
 @import "../govuk_frontend_toolkit/stylesheets/css3";
@@ -13,19 +13,17 @@
 @import "../govuk_frontend_toolkit/stylesheets/design-patterns/alpha-beta";
 @import "../govuk_frontend_toolkit/stylesheets/design-patterns/buttons";
 
-// Where 'example' is the project name
+
+// Where 'example' is our project name
 
 // Import variables
 @import "example/vars";
 
-// Import typography & layout base styles
-@import "example/template";
+// Import basic typography & layout styles
+@import "example/basic";
 
 // Import design patterns (modules)
 @import "design-patterns/alpha-beta";
 @import "design-patterns/breadcrumb";
-@import "design-patterns/buttons";
-@import "design-patterns/footer";
-@import "design-patterns/service-name";
 
 // Import additional modules as required
