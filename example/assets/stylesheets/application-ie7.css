@@ -175,6 +175,8 @@ Example usage:
     font-weight: 400;
     text-transform: none;
     font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 30px;
     margin-top: 30px;
     margin-bottom: 60px; }
     @media (max-width: 640px) {
@@ -208,6 +210,8 @@ Example usage:
     font-weight: 400;
     text-transform: none;
     font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 10px;
     margin-top: 45px;
     margin-bottom: 20px; }
     @media (max-width: 640px) {
@@ -223,6 +227,8 @@ Example usage:
     font-weight: 400;
     text-transform: none;
     font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 5px;
     margin-top: 20px;
     margin-bottom: 10px; }
     @media (max-width: 640px) {
@@ -498,9 +504,7 @@ Example usage:
 
 .grid-wrapper {
   max-width: 1020px;
-  margin: 0 auto;
-  padding: 0;
-  padding: 0 15px; }
+  margin: 0 auto; }
 
 .grid {
   float: left; }
