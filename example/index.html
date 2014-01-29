@@ -11,46 +11,59 @@ phases:
     <ol class="group">
       <li><a href="https://www.gov.uk">Home</a></li>
       <li><a href="{{ site.baseurl }}/patterns/">Design patterns</a></li>
-      <li><a href="{{ site.baseurl }}/example/">Design guide example</a></li>
+      <li><a href="{{ site.baseurl }}/example/">Design guide examples</a></li>
     </ol>
   </nav>
 </div>
 
 <div class="grid-wrapper">
-  <div class="grid grid-3-4">
+  <div class="grid">
     <div class="inner-block">
       
-      <h1>Design guide example</h1>
+      <h1>Design guide examples</h1>
       
       <p>
-        This example provides a set of basic styles, to show how the mixins and variables within the front-end toolkit can be used to create content in the GOV.UK style. 
-      </p>
-      <p>
-        Styles are applied using the <code>.gov-uk</code> class on the <code>&lt;main&gt;</code> content area. 
+        These examples use the GOV.UK boilerplate, which provides basic styles for typography and grid layout. It shows how to make use of the Sass variables and mixins provided by the GOV.UK frontend toolkit.
       </p>
       
-      <h2>Example pages</h2>
+      <p>
+        To keep things tidy, typography styles are applied using the <code>.gov-uk</code> class on the <code>&lt;main&gt;</code> content area. 
+      </p>
+      
       <ul>
-        <li><a href="{{ site.baseurl }}/example/typography.html">Basic typography</a></li>
-        <li><a href="{{ site.baseurl }}/example/typography-classes.html">Basic typography - using classes</a></li>
+        <li><a href="{{ site.baseurl }}/example/typography.html">Typography</a></li>
+        <li><a href="{{ site.baseurl }}/example/typography-classnames.html">Typography - using classnames</a></li>
         <li><a href="{{ site.baseurl }}/example/grid.html">Grid layout</a></li>
-        <li><a href="{{ site.baseurl }}/example/buttons.html">Buttons</a></li>
-        <!-- <li><a href="{{ site.baseurl }}/example/service.html">Example service</a></li> -->
+        <li><a href="{{ site.baseurl }}/example/form.html">Form styles and buttons</a></li>
       </ul>
         
       <h2>Using Sass</h2>
       
       <p>
-        This example assumes you are familiar with Sass and will use Sass to generate your stylesheets. Here, <code>application.scss</code> is the file that will be compiled with Sass. 
+        These examples assume you are familiar with Sass and that you will use Sass to generate your stylesheets. In these examples, <code>base.scss</code> is the file that will be compiled with Sass.
       </p>
       
       <p>
-        Take a look at the <a href="https://github.com/alphagov/design-patterns/blob/gh-pages/example/assets/sass/application.scss">application.scss</a> to see how this example project is structured.
+        Take a look at the <a href="https://github.com/alphagov/design-patterns/blob/gh-pages/example/assets/sass/base.scss">base.scss</a> file to see how these examples are structured.
       </p>
       <p>
       
+      <h2>The GOV.UK boilerplate</h2>
+      
+      <h3>Dependancies</h3>
       <p>
-        The <code>basic.scss</code> stylesheet is structured in a mobile-first fashion. Mobile styles are defined first, then the <code>media</code> mixin is used to override the default mobile styles with tablet or desktop styles. 
+        The GOV.UK boilerplate <code>main.scss</code> has a dependancy on the GOV.UK frontend toolkit.
+      </p>
+      <p>
+        You'll need the GOV.UK frontend toolkit to use the GOV.UK boilerplate, since it uses the mixins and variables the toolkit defines.
+      </p>
+      
+      <h3>Best practice</h3>
+      <p>
+        The <code>main.scss</code> file is structured in a mobile-and-up fashion. Mobile styles are defined first, then the <code>media</code> mixin is used to override the default mobile styles with tablet or desktop styles.
+     </p>
+     <p>
+        Variables in Sass make it easy to see where the same numbers are repeated. The boilerplate uses a <code>$gutter</code> variable a lot! This will give you 30px and <code>$gutter-half</code> at 15px.
      </p>
      
     </div>

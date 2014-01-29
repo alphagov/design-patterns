@@ -1,0 +1,20 @@
+// Styles used only for example templates
+
+code,
+pre {
+  @include core-16;
+  font-family: monospace, serif;
+  padding: 0 5px;
+  background: $grey-3;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.highlight {
+  color: $hm-government;
+  font-style: normal;
+}

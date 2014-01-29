@@ -1,47 +1,44 @@
-// Prevent the Design Guide styles overriding any gov.uk template or frontend_toolkit styles
-
 // Design Guide - Layout
-
 .design-guide {
-   max-width: 1020px;
-   width: auto;
-   margin: 0 auto 90px;
+  max-width: 1020px;
+  width: auto;
+  margin: 0 auto 90px;
 }
 
 // Design Guide - Header
-
 .pattern-header {
-   @extend %contain-floats;
-   padding: $gutter-half 0;
-   @include media(tablet) {
-      padding: $gutter 0;
-   }
-   margin-bottom: $gutter;
-   .title {
-      float: left;
-      width: $two-thirds;
-      h1, p {
-         padding: 0 $gutter-half;
-      }
-      h1 {
-         @include core-48;
-         font-weight: bold;
-      }
-      p {
-         @include core-36;
-         color: $secondary-text-colour;
-      }
-   }
+  @extend %contain-floats;
+  padding: $gutter-half 0;
+  @include media(tablet) {
+    padding: $gutter 0;
+  }
+  margin-bottom: $gutter;
+  
+  .title {
+    float: left;
+    width: $two-thirds;
+    h1, p {
+      padding: 0 $gutter-half;
+    }
+    h1 {
+      @include core-48;
+      font-weight: bold;
+    }
+    p {
+      @include core-36;
+      color: $secondary-text-colour;
+    }
+  }
+  
 }
 
 // Design Guide - Nav
-
 .guide-nav {
-   border-top: 5px solid #0b0c0c;
-   padding-top: $gutter-half;
-   padding-left: $gutter-half;
-   margin-top: 7px;
-   list-style: none;
+  border-top: 5px solid #0b0c0c;
+  padding-top: $gutter-half;
+  padding-left: $gutter-half;
+  margin-top: 7px;
+  list-style: none;
 }
 
 .guide-nav ul {
@@ -49,7 +46,6 @@
 }
 
 // Design Guide - Explanatory sections
-
 .guide-header {
    @include heading-27;
    font-weight: 700;
@@ -62,31 +58,32 @@
 }
 
 .guide {
-   
-   margin-bottom: $gutter;
-   
-   p {
-      @include copy-19;
-      margin: $gutter-half 0;
-      @include media(tablet) {
-         max-width: 85%;
-      }
-   }
-   
-   .lede {
-      @include heading-24;
-      margin: 0 0 $gutter-half 0;
-      @include media(tablet) {
-         max-width: 85%;
-      }
-   }
-   
-   .note {
-      @include copy-16;
-      margin: $gutter-half 0;
-   }
-   
+  
+  margin-bottom: $gutter;
+  
+  p {
+    @include copy-19;
+    margin: $gutter-half 0;
+    @include media(tablet) {
+      max-width: 85%;
+    }
+  }
+  
+  .lede {
+    @include heading-24;
+    margin: 0 0 $gutter-half 0;
+    @include media(tablet) {
+      max-width: 85%;
+    }
+  }
+  
+  .note {
+    @include copy-16;
+    margin: $gutter-half 0;
+  }
+  
 }
+
 .guide-end {
   margin-bottom: $gutter*2;
 }
@@ -109,6 +106,7 @@
   .example-url {
     margin-top: $gutter;
   }
+  
   .example-url:before {
     content: "Example: ";
   }
@@ -124,89 +122,63 @@
   }
   
   // Reduce grid padding
-  .grid .inner-block {
-   padding: 0 $gutter-half;
+  .grid-wrapper {
+     padding: 0 $gutter-half;
   }
+  .grid .inner-block {
+    padding: 0 $gutter-half !important;
+  }
+  
+  // Colours
+  .swatch {
+    width: $gutter*2;
+    height: $gutter*2;
+    display: inline-block;
+    margin-right: $gutter;
+    margin-top: $gutter-half;
+  }
+  
+  // Buttons
+  .button,
+  .button-secondary,
+  .button-warning {
+    float: left;
+    margin-bottom: 0;
+  }
+  
 }
 
-// Design Guide - More information
-
-.more {
-   margin-top: -($gutter-half);
-   margin-bottom: $gutter*2;
-   padding-left: $gutter-half;
-}
-.more[open] {
-   margin-top: -($gutter-half);
-   margin-bottom: $gutter*2;
-}
-.more summary {
-   margin-left: -19px;
-}
-.more p,
-.more a {
-   margin: $gutter-half;
-}
-.more a {
-   display: inline-block;
-   @include copy-16;
-}
-
-// Grid layout
-
+// Example grid
 .example-grid {
-   background: white;
-   padding: 25px 0 10px 0;
+  background: white;
+  padding: 25px 0 10px 0;
 }
 
 .example-grid p {
-   width: 100%;
-   background: url("../images/grid.png") 0 0 repeat;
-   min-height: 60px;
-   overflow: hidden;
-   text-indent: -99em;
+  width: 100%;
+  background: url("../images/grid.png") 0 0 repeat;
+  min-height: 60px;
+  overflow: hidden;
+  text-indent: -99em;
 }
 
-// Images
+// Example images
 .example-images {
   padding-left: 0;
   padding-right: 0;
 }
 
-.example {
-  img {
-     max-width: 100%;
-     vertical-align: top;
-  }
+.example-images img {
+  max-width: 100%;
+  vertical-align: top;
 }
 
 // Colour palette
-
-.example {
-  .swatch {
-     width: $gutter*2;
-     height: $gutter*2;
-     display: inline-block;
-     margin-right: $gutter;
-     margin-top: $gutter-half;
-  }
-}
-
 .colour-hm-government {
-   background: $hm-government;
+  background: $hm-government;
 }
 
 .colour-department-of-health {
-   background: $department-of-health;
+  background: $department-of-health;
 }
 
-// Buttons
-
-.example {
-   .button,
-   .button-secondary,
-   .button-warning {
-      float: left;
-      margin-bottom: 0;
-   }
-}

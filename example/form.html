@@ -11,8 +11,8 @@ phases:
     <ol class="group">
       <li><a href="https://www.gov.uk">Home</a></li>
       <li><a href="{{ site.baseurl }}/patterns/">Design patterns</a></li>
-      <li><a href="{{ site.baseurl }}/example/">Design guide example</a></li>
-      <li><a href="{{ site.baseurl }}/example/service.html">Service example</a></li>
+      <li><a href="{{ site.baseurl }}/example/">Design guide examples</a></li>
+      <li><a href="{{ site.baseurl }}/example/form.html">Form styles and buttons</a></li>
     </ol>
   </nav>
 </div>
@@ -23,37 +23,41 @@ phases:
       
       <h1>
         <span class="document-type">Service</span>
-        Renew a patent
+        Example form
       </h1>
       
-      <h2><span class="number">1</span> What patent do you want to renew?</h2>
+      <h2>Contact details</h2>
+      <p class="text-secondary">These will not be made public</p>
       
-      <p>
-        Patent numbers start with GB or EP. <a href="">Search for your patent number?</a>
-      </p>
-      
-      <h2><span class="number">2</span> Who is submitting the renewal?</h2>
-      <p>You can enter the name of an individual and/or the name of your company or business</p>
-      
-      <form action="">
+      <form action="" class="form">
+        
         <div class="form-row">
-          <label for="">First name</label>
+          <label for="">Full name</label>
           <input type="text">
         </div>
+        
         <div class="form-row">
-          <label for="">Last name</label>
+          <label for="">Job title</label>
           <input type="text">
         </div>
+        
         <div class="form-row">
-          <label for="">Company or business name (optional)</label>
+          <label for="">Telephone number</label>
           <input type="text">
         </div>
+        
         <div class="form-row">
           <label for="">Email address</label>
           <input type="text">
         </div>
         
-        <input type="submit" class="button" value="Go to checkout">
+        <div class="form-row">
+          <input type="submit" class="button" value="Next">
+        </div>
+        
+        <div class="form-row">
+          <a href="#" class="back">Back</a>
+        </div>
         
       </form>
       

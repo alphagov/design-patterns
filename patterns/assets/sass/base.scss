@@ -59,15 +59,12 @@
 @import "views/transaction-3";
 @import "views/transaction-4";
 
-
-// # Design Guide
-// Using a nested import to prevent 'example' styles affecting Design Patterns
-// http://sass-lang.com/documentation/file.SASS_REFERENCE.html#nested-import
-
-.design-guide {
-   // Let's import the base example files, so we can show how they work in the Design Guide
-   @import "../../../example/assets/sass/example/vars";
-   @import "../../../example/assets/sass/example/basic";
+// Let's import the govuk-boilerplate files, so we can show how they work in the Design Guide
+.design-guide{
+  @import "../../../example/assets/sass/govuk-boilerplate/vars";
+  @import "../../../example/assets/sass/govuk-boilerplate/main";
 }
 
-@import "design-guide/design-guide"
+// # Design Guide
+@import "design-guide/design-guide";
+

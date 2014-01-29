@@ -36,7 +36,7 @@
 
 */
 #content:after, .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after, .service-header.v2 header:after, .service-header.v3 header:after, .date-of-birth:after, main.home header:after, main.pattern header:after, main.pattern .content .pattern-example:after,
-main.pattern .content .html-example:after, main.pattern .content .code-links:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ol:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ul:after, main.progress-indicator .pattern-example .progress-indicator.vertical ol:after, main.progress-indicator .pattern-example .progress-indicator.vertical ul:after, .design-guide .grid-wrapper:after, .pattern-header:after, .example:after {
+main.pattern .content .html-example:after, main.pattern .content .code-links:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ol:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ul:after, main.progress-indicator .pattern-example .progress-indicator.vertical ol:after, main.progress-indicator .pattern-example .progress-indicator.vertical ul:after, .design-guide .grid-wrapper:after, .design-guide .cf:after, .pattern-header:after, .example:after {
   content: "";
   display: block;
   clear: both; }
@@ -88,7 +88,7 @@ main.pattern .content .html-example:after, main.pattern .content .code-links:aft
 
 */
 #content:after, .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after, .service-header.v2 header:after, .service-header.v3 header:after, .date-of-birth:after, main.home header:after, main.pattern header:after, main.pattern .content .pattern-example:after,
-main.pattern .content .html-example:after, main.pattern .content .code-links:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ol:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ul:after, main.progress-indicator .pattern-example .progress-indicator.vertical ol:after, main.progress-indicator .pattern-example .progress-indicator.vertical ul:after, .design-guide .grid-wrapper:after, .pattern-header:after, .example:after {
+main.pattern .content .html-example:after, main.pattern .content .code-links:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ol:after, main.progress-indicator .pattern-example .progress-indicator.horizontal ul:after, main.progress-indicator .pattern-example .progress-indicator.vertical ol:after, main.progress-indicator .pattern-example .progress-indicator.vertical ul:after, .design-guide .grid-wrapper:after, .design-guide .cf:after, .pattern-header:after, .example:after {
   content: "";
   display: block;
   clear: both; }
@@ -1617,13 +1617,18 @@ main.transaction-4 .content {
     font-weight: 400;
     text-transform: none;
     font-weight: 700;
-    margin-top: 30px;
-    margin-bottom: 60px; }
+    margin-top: 15px;
+    margin-bottom: 30px; }
     @media (max-width: 640px) {
       .design-guide .gov-uk h1,
       .design-guide .gov-uk .heading-48 {
         font-size: 32px;
         line-height: 1.09375; } }
+    @media (min-width: 641px) {
+      .design-guide .gov-uk h1,
+      .design-guide .gov-uk .heading-48 {
+        margin-top: 30px;
+        margin-bottom: 60px; } }
     .design-guide .gov-uk h1 span,
     .design-guide .gov-uk h1 .document-type,
     .design-guide .gov-uk .heading-48 span,
@@ -1650,13 +1655,18 @@ main.transaction-4 .content {
     font-weight: 400;
     text-transform: none;
     font-weight: 700;
-    margin-top: 45px;
-    margin-bottom: 20px; }
+    margin-top: 25px;
+    margin-bottom: 10px; }
     @media (max-width: 640px) {
       .design-guide .gov-uk h2,
       .design-guide .gov-uk .heading-24 {
         font-size: 20px;
         line-height: 1.2; } }
+    @media (min-width: 641px) {
+      .design-guide .gov-uk h2,
+      .design-guide .gov-uk .heading-24 {
+        margin-top: 45px;
+        margin-bottom: 20px; } }
   .design-guide .gov-uk h3,
   .design-guide .gov-uk .heading-19 {
     font-family: "nta", Arial, sans-serif;
@@ -1665,30 +1675,30 @@ main.transaction-4 .content {
     font-weight: 400;
     text-transform: none;
     font-weight: 700;
-    margin-top: 20px;
-    margin-bottom: 10px; }
+    margin-top: 10px;
+    margin-bottom: 5px; }
     @media (max-width: 640px) {
       .design-guide .gov-uk h3,
       .design-guide .gov-uk .heading-19 {
         font-size: 16px;
         line-height: 1.25; } }
+    @media (min-width: 641px) {
+      .design-guide .gov-uk h3,
+      .design-guide .gov-uk .heading-19 {
+        margin-top: 20px;
+        margin-bottom: 10px; } }
   .design-guide .gov-uk p,
-  .design-guide .gov-uk ul {
+  .design-guide .gov-uk pre {
     margin-top: 5px;
     margin-bottom: 20px; }
-  .design-guide .gov-uk ul {
-    padding-left: 20px; }
-  .design-guide .gov-uk ul li {
-    list-style-type: disc; }
-  .design-guide .gov-uk li {
-    margin-bottom: 5px; }
   .design-guide .gov-uk .data-80 {
     font-family: "nta", Arial, sans-serif;
     font-size: 80px;
     line-height: 1;
     font-weight: 400;
     text-transform: none;
-    font-weight: 700; }
+    font-weight: 700;
+    line-height: 0.4; }
     @media (max-width: 640px) {
       .design-guide .gov-uk .data-80 {
         font-size: 53px;
@@ -1699,7 +1709,8 @@ main.transaction-4 .content {
     line-height: 1.04167;
     font-weight: 400;
     text-transform: none;
-    font-weight: 700; }
+    font-weight: 700;
+    line-height: 0.2; }
     @media (max-width: 640px) {
       .design-guide .gov-uk .data-48 {
         font-size: 32px;
@@ -1715,24 +1726,42 @@ main.transaction-4 .content {
       .design-guide .gov-uk .data p {
         font-size: 14px;
         line-height: 1.14286; } }
-  .design-guide .gov-uk .button {
-    margin-right: 15px; }
-  .design-guide .gov-uk code {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.25;
-    font-weight: 300;
-    text-transform: none;
-    padding: 0 5px;
-    background: #dee0e2; }
-    @media (max-width: 640px) {
-      .design-guide .gov-uk code {
-        font-size: 14px;
-        line-height: 1.14286; } }
-  .design-guide .gov-uk .gutter {
-    padding-bottom: 30px; }
-  .design-guide .gov-uk .gutter-double {
-    padding-bottom: 60px; }
+  .design-guide .gov-uk dl,
+  .design-guide .gov-uk menu,
+  .design-guide .gov-uk ol,
+  .design-guide .gov-uk ul {
+    margin: 0; }
+  .design-guide .gov-uk menu,
+  .design-guide .gov-uk ol,
+  .design-guide .gov-uk ul {
+    padding: 0 0 0 20px; }
+  .design-guide .gov-uk ul {
+    list-style-type: disc; }
+  .design-guide .gov-uk li {
+    margin-bottom: 5px; }
+  .design-guide .gov-uk form {
+    margin: 0; }
+  .design-guide .gov-uk button,
+  .design-guide .gov-uk input,
+  .design-guide .gov-uk select,
+  .design-guide .gov-uk textarea {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+    *vertical-align: middle; }
+  .design-guide .gov-uk button,
+  .design-guide .gov-uk input {
+    line-height: normal; }
+  .design-guide .gov-uk textarea {
+    overflow: auto;
+    vertical-align: top; }
+  .design-guide .gov-uk .form {
+    margin-top: 30px; }
+  .design-guide .gov-uk .form-row {
+    margin-bottom: 30px; }
+  .design-guide .gov-uk .form-row label {
+    display: block;
+    margin-bottom: 5px; }
   .design-guide .gov-uk .button {
     background-color: #006435;
     position: relative;
@@ -1913,13 +1942,13 @@ main.transaction-4 .content {
       content: none;
       margin-left: 0;
       margin-right: 0; }
+.design-guide .main {
+  max-width: 1020px;
+  width: auto;
+  margin: 0 auto 90px; }
 .design-guide .grid-wrapper {
   max-width: 1020px;
-  margin: 0 auto;
-  padding: 0; }
-  @media (min-width: 641px) {
-    .design-guide .grid-wrapper {
-      padding: 0 15px; } }
+  margin: 0 auto; }
 .design-guide .grid {
   float: left; }
 .design-guide .grid .inner-block {
@@ -1952,11 +1981,12 @@ main.transaction-4 .content {
   @media (min-width: 641px) {
     .design-guide .grid-3-4 {
       width: 75%; } }
-.design-guide .main {
-  padding-bottom: 90px; }
-.design-guide .highlight {
-  color: #0076c0;
-  font-style: normal; }
+.design-guide .text-secondary {
+  color: #6f777b; }
+.design-guide .is-space {
+  margin-bottom: 30px; }
+.design-guide .is-double-space {
+  margin-bottom: 60px; }
 
 .design-guide {
   max-width: 1020px;
@@ -2133,42 +2163,21 @@ main.transaction-4 .content {
   .example em {
     font-style: normal;
     color: #0076c0; }
-  .example .grid .inner-block {
+  .example .grid-wrapper {
     padding: 0 15px; }
-
-.more {
-  margin-top: -15px;
-  margin-bottom: 60px;
-  padding-left: 15px; }
-
-.more[open] {
-  margin-top: -15px;
-  margin-bottom: 60px; }
-
-.more summary {
-  margin-left: -19px; }
-
-.more p,
-.more a {
-  margin: 15px; }
-
-.more a {
-  display: inline-block;
-  font-family: "nta", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 300;
-  text-transform: none;
-  padding-top: 8px;
-  padding-bottom: 7px; }
-  @media (max-width: 640px) {
-    .more a {
-      font-size: 14px;
-      line-height: 1.14286; } }
-  @media (min-width: 641px) {
-    .more a {
-      padding-top: 5px;
-      padding-bottom: 5px; } }
+  .example .grid .inner-block {
+    padding: 0 15px !important; }
+  .example .swatch {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 15px; }
+  .example .button,
+  .example .button-secondary,
+  .example .button-warning {
+    float: left;
+    margin-bottom: 0; }
 
 .example-grid {
   background: white;
@@ -2185,25 +2194,12 @@ main.transaction-4 .content {
   padding-left: 0;
   padding-right: 0; }
 
-.example img {
+.example-images img {
   max-width: 100%;
   vertical-align: top; }
-
-.example .swatch {
-  width: 60px;
-  height: 60px;
-  display: inline-block;
-  margin-right: 30px;
-  margin-top: 15px; }
 
 .colour-hm-government {
   background: #0076c0; }
 
 .colour-department-of-health {
   background: #00ad93; }
-
-.example .button,
-.example .button-secondary,
-.example .button-warning {
-  float: left;
-  margin-bottom: 0; }

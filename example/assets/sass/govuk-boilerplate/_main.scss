@@ -1,0 +1,245 @@
+// Let's scope typography with .gov-uk for now - we can rename this - or remove entirely as required
+.gov-uk {
+  
+  // Increase default font size to 19px
+  @include core-19;
+  -webkit-font-smoothing: antialiased;
+  
+  
+  // ==========================================================================
+  // Typography
+  // ==========================================================================
+  
+  h1,
+  .heading-48 {
+    @include bold-48();
+    margin-top: $gutter-half;
+    margin-bottom: $gutter;
+    @include media(tablet) {
+      margin-top: $gutter;
+      margin-bottom: $gutter*2;
+    }
+    span,
+    .document-type {
+      display: block;
+      @include core-27();
+      color: $secondary-text-colour;
+    }
+  }
+  
+  h2,
+  .heading-24 {
+    @include bold-24();
+    margin-top: 25px;
+    margin-bottom: 10px;
+    @include media(tablet) {
+      margin-top: 45px;
+      margin-bottom: 20px;
+    }
+  }
+  
+  h3,
+  .heading-19 {
+    @include bold-19();
+    margin-top: 10px;
+    margin-bottom: 5px;
+    @include media(tablet) {
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+  }
+  
+  p, 
+  pre {
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  
+  // Data
+  .data-80 {
+    @include bold-80;
+    line-height: 0.4;
+  }
+  
+  .data-48 {
+    @include bold-48;
+    line-height: 0.2;
+  }
+  
+  .data p {
+    @include bold-16;
+  }
+  
+  
+  // ==========================================================================
+  // Lists
+  // ==========================================================================
+  
+  dl,
+  menu,
+  ol,
+  ul {
+    margin: 0;
+  }
+  
+  menu,
+  ol,
+  ul {
+    padding: 0 0 0 20px;
+  }
+  
+  ul {
+    list-style-type: disc;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  
+  // ==========================================================================
+  // Forms
+  // ==========================================================================
+  
+  form {
+    margin: 0;
+  }
+  
+  button,
+  input,
+  select,
+  textarea {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+    *vertical-align: middle;
+  }
+  
+  button,
+  input {
+      line-height: normal;
+  }
+  
+  textarea {
+    overflow: auto;
+    vertical-align: top;
+  }
+  
+  // Form elements
+  .form {
+    margin-top: $gutter;
+  }
+  .form-row {
+    margin-bottom: $gutter;
+  }
+  .form-row label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  // Buttons
+  .button {
+    @include button ($green);
+  }
+  
+  .button-secondary {
+    @include button ($grey-3);
+  }
+  
+  .button-warning {
+    @include button ($red);
+  }
+
+}
+// End .gov-uk scope
+
+
+// ==========================================================================
+// Grid layout
+// ==========================================================================
+
+.main {
+  max-width: 1020px;
+  width: auto;
+  margin: 0 auto 90px;
+}
+
+.grid-wrapper {
+  @extend %contain-floats;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.grid {
+  float: left;
+}
+
+.grid .inner-block {
+  padding: 0 $gutter-half;
+  @include media(tablet) {
+    padding: 0 $gutter;
+  }
+}
+
+.grid-1-4 {
+  width: 100%;
+  @include media(tablet) {
+    width: 25%;
+  }
+}
+
+.grid-1-3 {
+  width: 100%;
+  @include media(tablet) {
+    width: 33.333333333%;
+  }
+}
+
+.grid-1-2 {
+  width: 100%;
+  @include media(tablet) {
+    width: 50%;
+  }
+}
+
+.grid-2-3 {
+  width: 100%;
+  @include media(tablet) {
+    width: 66.666666667%;
+  }
+}
+
+.grid-3-4 {
+  width: 100%;
+  @include media(tablet) {
+    width: 75%;
+  }
+}
+
+
+// ==========================================================================
+// Colours
+// ==========================================================================
+
+.text-secondary {
+  color: $secondary-text-colour;
+}
+
+
+// ==========================================================================
+// Helper classes
+// ==========================================================================
+
+.is-space {
+  margin-bottom: $gutter;
+}
+
+.is-double-space {
+  margin-bottom: $gutter*2;
+}
+
+.cf {
+  @extend %contain-floats;
+}
+
+
