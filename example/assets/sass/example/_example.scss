@@ -18,3 +18,21 @@ pre {
   color: $hm-government;
   font-style: normal;
 }
+
+// Let's see how the grid works
+
+.example-highlight-grid {
+  
+  .grid-wrapper {
+    background:  $grey-2;
+  }
+  
+  .grid {
+    background: $grey-4;
+  }
+  
+  .grid .inner-block * {
+    background: $grey-3;
+  }
+  
+}

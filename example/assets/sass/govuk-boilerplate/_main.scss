@@ -1,10 +1,16 @@
-// Let's scope typography with .gov-uk for now - we can rename this - or remove entirely as required
+// Let's scope typography with .gov-uk for now
+// http://dbushell.com/2012/04/18/scoping-typography-css/
 .gov-uk {
   
   // Increase default font size to 19px
   @include core-19;
   -webkit-font-smoothing: antialiased;
   
+  // Let's set a max-width for text blocks
+  // 50-60 characters per line of text
+  .text {
+    max-width: 30em;
+  }
   
   // ==========================================================================
   // Typography
@@ -85,6 +91,8 @@
   menu,
   ol,
   ul {
+    margin-top: 5px;
+    margin-bottom: 20px;
     padding: 0 0 0 20px;
   }
   
@@ -125,31 +133,62 @@
     vertical-align: top;
   }
   
-  // Form elements
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="email"],
+  input[type="month"],
+  input[type="number"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="time"],
+  input[type="url"],
+  input[type="week"],
+  select[size],
+  textarea {
+    padding: 2px 4px;
+    background-color: #FFFFFF;
+    border: 2px inset;
+    @include ie-lte(8) {
+      border: 1px inset $border-colour; 
+    }
+    font-size: 1em;
+    
+    // Disable webkit appearance and remove rounded corners
+    -webkit-appearance: none;
+    border-radius: 0;
+  }
+  
+  textarea {
+    min-height: 10em;
+    height: auto;
+  }
+  
   .form {
     margin-top: $gutter;
   }
-  .form-row {
-    margin-bottom: $gutter;
+  
+  .form-control {
+    min-width: 96%;
+    @include media(tablet) {
+      min-width: 18em;
+    }
   }
-  .form-row label {
+  
+  .form-group {
+    margin-bottom: $gutter-half;
+    @include media(tablet) {
+      margin-bottom: $gutter;
+    }
+  }
+  
+  .form-group label {
     display: block;
     margin-bottom: 5px;
   }
   
-  // Buttons
-  .button {
-    @include button ($green);
-  }
-  
-  .button-secondary {
-    @include button ($grey-3);
-  }
-  
-  .button-warning {
-    @include button ($red);
-  }
-
 }
 // End .gov-uk scope
 
@@ -164,23 +203,29 @@
   margin: 0 auto 90px;
 }
 
+
+// Wrap grid layout
 .grid-wrapper {
   @extend %contain-floats;
-  max-width: 1020px;
-  margin: 0 auto;
-}
-
-.grid {
-  float: left;
-}
-
-.grid .inner-block {
   padding: 0 $gutter-half;
   @include media(tablet) {
-    padding: 0 $gutter;
+    padding: 0 $gutter-half;
   }
 }
 
+// Grid units take 100% width, unless a .grid-width class is applied
+.grid {
+  float: left;
+  width: 100%;
+}
+
+.grid .inner-block {
+  @include media(tablet) {
+    padding: 0 $gutter-half;
+  }
+}
+
+// Grid unit widths
 .grid-1-4 {
   width: 100%;
   @include media(tablet) {

@@ -1,7 +1,6 @@
 ---
 layout: design-guide-example
 title: Design guide service example
-page-class: 'gov-uk'
 phases:
   - alpha
 ---
@@ -26,38 +25,42 @@ phases:
         Example form
       </h1>
       
-      <h2>Contact details</h2>
-      <p class="text-secondary">These will not be made public</p>
-      
-      <form action="" class="form">
-        
-        <div class="form-row">
-          <label for="">Full name</label>
-          <input type="text">
-        </div>
-        
-        <div class="form-row">
-          <label for="">Job title</label>
-          <input type="text">
-        </div>
-        
-        <div class="form-row">
-          <label for="">Telephone number</label>
-          <input type="text">
-        </div>
-        
-        <div class="form-row">
-          <label for="">Email address</label>
-          <input type="text">
-        </div>
-        
-        <div class="form-row">
-          <input type="submit" class="button" value="Next">
-        </div>
-        
-        <div class="form-row">
+      <form action="get" class="form">
+        <fieldset>
+          
+          <legend class="heading-24">
+            Contact details
+          </legend>
+          <p class="text-secondary">These will not be made public</p>
+          
+          <div class="form-group">
+            <label for="">Full name</label>
+            <input type="text" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="">Job title</label>
+            <input type="text" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="">Telephone number</label>
+            <input type="text" class="form-control">
+            <span class="hint">Include your country code</span>
+          </div>
+
+          <div class="form-group">
+            <label for="">Email address</label>
+            <input type="text" class="form-control">
+          </div>
+          
+          <div class="form-group">
+            <input type="submit" class="button" value="Next">
+          </div>
+          
           <a href="#" class="back">Back</a>
-        </div>
+          
+        </fieldset>
         
       </form>
       

@@ -1,0 +1,12 @@
+// Buttons
+.button {
+  @include button ($green);
+}
+
+.button-secondary {
+  @include button ($grey-3);
+}
+
+.button-warning {
+  @include button ($red);
+}

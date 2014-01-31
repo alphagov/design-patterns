@@ -1464,6 +1464,8 @@ main.transaction-4 .content {
     .design-guide .gov-uk {
       font-size: 16px;
       line-height: 1.25; } }
+  .design-guide .gov-uk .text {
+    max-width: 30em; }
   .design-guide .gov-uk h1,
   .design-guide .gov-uk .heading-48 {
     font-family: "nta", Arial, sans-serif;
@@ -1574,6 +1576,8 @@ main.transaction-4 .content {
   .design-guide .gov-uk menu,
   .design-guide .gov-uk ol,
   .design-guide .gov-uk ul {
+    margin-top: 5px;
+    margin-bottom: 20px;
     padding: 0 0 0 20px; }
   .design-guide .gov-uk ul {
     list-style-type: disc; }
@@ -1595,234 +1599,49 @@ main.transaction-4 .content {
   .design-guide .gov-uk textarea {
     overflow: auto;
     vertical-align: top; }
+  .design-guide .gov-uk input[type="text"],
+  .design-guide .gov-uk input[type="email"],
+  .design-guide .gov-uk input[type="date"],
+  .design-guide .gov-uk input[type="datetime"],
+  .design-guide .gov-uk input[type="datetime-local"],
+  .design-guide .gov-uk input[type="email"],
+  .design-guide .gov-uk input[type="month"],
+  .design-guide .gov-uk input[type="number"],
+  .design-guide .gov-uk input[type="search"],
+  .design-guide .gov-uk input[type="tel"],
+  .design-guide .gov-uk input[type="time"],
+  .design-guide .gov-uk input[type="url"],
+  .design-guide .gov-uk input[type="week"],
+  .design-guide .gov-uk select[size],
+  .design-guide .gov-uk textarea {
+    padding: 2px 4px;
+    background-color: #FFFFFF;
+    border: 2px inset;
+    border: 1px inset #bfc1c3;
+    font-size: 1em;
+    -webkit-appearance: none;
+    border-radius: 0; }
+  .design-guide .gov-uk textarea {
+    min-height: 10em;
+    height: auto; }
   .design-guide .gov-uk .form {
     margin-top: 30px; }
-  .design-guide .gov-uk .form-row {
-    margin-bottom: 30px; }
-  .design-guide .gov-uk .form-row label {
+  .design-guide .gov-uk .form-control {
+    min-width: 96%; }
+  .design-guide .gov-uk .form-group {
+    margin-bottom: 15px; }
+  .design-guide .gov-uk .form-group label {
     display: block;
     margin-bottom: 5px; }
-  .design-guide .gov-uk .button {
-    background-color: #006435;
-    position: relative;
-    display: -moz-inline-stack;
-    display: inline-block;
-    zoom: 1;
-    display: inline;
-    padding: 0.35em 0.5em 0.15em 0.5em;
-    border: none;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-    -webkit-appearance: none;
-    -webkit-box-shadow: 0 2px 0 #00180c;
-    -moz-box-shadow: 0 2px 0 #00180c;
-    box-shadow: 0 2px 0 #00180c;
-    border-bottom: 2px solid #00180c;
-    font-size: 1em;
-    line-height: 1.25;
-    text-decoration: none;
-    -webkit-font-smoothing: antialiased;
-    cursor: pointer;
-    color: white; }
-    .design-guide .gov-uk .button:visited {
-      background-color: #006435; }
-    .design-guide .gov-uk .button:hover, .design-guide .gov-uk .button:focus {
-      background-color: #004b27; }
-    .design-guide .gov-uk .button:active {
-      top: 2px;
-      -webkit-box-shadow: 0 0 0 #006435;
-      -moz-box-shadow: 0 0 0 #006435;
-      box-shadow: 0 0 0 #006435; }
-    .design-guide .gov-uk .button.disabled, .design-guide .gov-uk .button[disabled="disabled"], .design-guide .gov-uk .button[disabled] {
-      zoom: 1;
-      filter: alpha(opacity=50);
-      opacity: 0.5; }
-      .design-guide .gov-uk .button.disabled:hover, .design-guide .gov-uk .button[disabled="disabled"]:hover, .design-guide .gov-uk .button[disabled]:hover {
-        cursor: default;
-        background-color: #006435; }
-      .design-guide .gov-uk .button.disabled:active, .design-guide .gov-uk .button[disabled="disabled"]:active, .design-guide .gov-uk .button[disabled]:active {
-        top: 0;
-        -webkit-box-shadow: 0 2px 0 #00180c;
-        -moz-box-shadow: 0 2px 0 #00180c;
-        box-shadow: 0 2px 0 #00180c;
-        border-bottom: 2px solid #00180c; }
-    .design-guide .gov-uk .button:hover, .design-guide .gov-uk .button:focus, .design-guide .gov-uk .button:visited {
-      color: white; }
-    .design-guide .gov-uk .button:before {
-      content: "";
-      height: 110%;
-      width: 100%;
-      display: block;
-      background: transparent;
-      position: absolute;
-      top: 0;
-      left: 0; }
-    .design-guide .gov-uk .button:active:before {
-      top: -10%;
-      height: 120%;
-      top: auto;
-      height: 100%; }
-    .design-guide .gov-uk .button[rel="external"]:after {
-      display: none;
-      content: none;
-      margin-left: 0;
-      margin-right: 0; }
-    .design-guide .gov-uk .button[type="submit"], .design-guide .gov-uk .button[type="reset"], .design-guide .gov-uk .button[type="button"] {
-      filter: chroma(color=black); }
-    .design-guide .gov-uk .button[type=submit].button {
-      filter: none; }
-  .design-guide .gov-uk .button-secondary {
-    background-color: #dee0e2;
-    position: relative;
-    display: -moz-inline-stack;
-    display: inline-block;
-    zoom: 1;
-    display: inline;
-    padding: 0.35em 0.5em 0.15em 0.5em;
-    border: none;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-    -webkit-appearance: none;
-    -webkit-box-shadow: 0 2px 0 #b5babe;
-    -moz-box-shadow: 0 2px 0 #b5babe;
-    box-shadow: 0 2px 0 #b5babe;
-    border-bottom: 2px solid #b5babe;
-    font-size: 1em;
-    line-height: 1.25;
-    text-decoration: none;
-    -webkit-font-smoothing: antialiased;
-    cursor: pointer;
-    color: #0b0c0c; }
-    .design-guide .gov-uk .button-secondary:visited {
-      background-color: #dee0e2; }
-    .design-guide .gov-uk .button-secondary:hover, .design-guide .gov-uk .button-secondary:focus {
-      background-color: #d0d3d6; }
-    .design-guide .gov-uk .button-secondary:active {
-      top: 2px;
-      -webkit-box-shadow: 0 0 0 #dee0e2;
-      -moz-box-shadow: 0 0 0 #dee0e2;
-      box-shadow: 0 0 0 #dee0e2; }
-    .design-guide .gov-uk .button-secondary.disabled, .design-guide .gov-uk .button-secondary[disabled="disabled"], .design-guide .gov-uk .button-secondary[disabled] {
-      zoom: 1;
-      filter: alpha(opacity=50);
-      opacity: 0.5; }
-      .design-guide .gov-uk .button-secondary.disabled:hover, .design-guide .gov-uk .button-secondary[disabled="disabled"]:hover, .design-guide .gov-uk .button-secondary[disabled]:hover {
-        cursor: default;
-        background-color: #dee0e2; }
-      .design-guide .gov-uk .button-secondary.disabled:active, .design-guide .gov-uk .button-secondary[disabled="disabled"]:active, .design-guide .gov-uk .button-secondary[disabled]:active {
-        top: 0;
-        -webkit-box-shadow: 0 2px 0 #b5babe;
-        -moz-box-shadow: 0 2px 0 #b5babe;
-        box-shadow: 0 2px 0 #b5babe;
-        border-bottom: 2px solid #b5babe; }
-    .design-guide .gov-uk .button-secondary:hover, .design-guide .gov-uk .button-secondary:focus, .design-guide .gov-uk .button-secondary:visited {
-      color: #0b0c0c; }
-    .design-guide .gov-uk .button-secondary:before {
-      content: "";
-      height: 110%;
-      width: 100%;
-      display: block;
-      background: transparent;
-      position: absolute;
-      top: 0;
-      left: 0; }
-    .design-guide .gov-uk .button-secondary:active:before {
-      top: -10%;
-      height: 120%;
-      top: auto;
-      height: 100%; }
-    .design-guide .gov-uk .button-secondary[rel="external"]:after {
-      display: none;
-      content: none;
-      margin-left: 0;
-      margin-right: 0; }
-    .design-guide .gov-uk .button-secondary[type="submit"], .design-guide .gov-uk .button-secondary[type="reset"], .design-guide .gov-uk .button-secondary[type="button"] {
-      filter: chroma(color=black); }
-    .design-guide .gov-uk .button-secondary[type=submit].button {
-      filter: none; }
-  .design-guide .gov-uk .button-warning {
-    background-color: #b10e1e;
-    position: relative;
-    display: -moz-inline-stack;
-    display: inline-block;
-    zoom: 1;
-    display: inline;
-    padding: 0.35em 0.5em 0.15em 0.5em;
-    border: none;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-    -webkit-appearance: none;
-    -webkit-box-shadow: 0 2px 0 #6a0812;
-    -moz-box-shadow: 0 2px 0 #6a0812;
-    box-shadow: 0 2px 0 #6a0812;
-    border-bottom: 2px solid #6a0812;
-    font-size: 1em;
-    line-height: 1.25;
-    text-decoration: none;
-    -webkit-font-smoothing: antialiased;
-    cursor: pointer;
-    color: white; }
-    .design-guide .gov-uk .button-warning:visited {
-      background-color: #b10e1e; }
-    .design-guide .gov-uk .button-warning:hover, .design-guide .gov-uk .button-warning:focus {
-      background-color: #990c1a; }
-    .design-guide .gov-uk .button-warning:active {
-      top: 2px;
-      -webkit-box-shadow: 0 0 0 #b10e1e;
-      -moz-box-shadow: 0 0 0 #b10e1e;
-      box-shadow: 0 0 0 #b10e1e; }
-    .design-guide .gov-uk .button-warning.disabled, .design-guide .gov-uk .button-warning[disabled="disabled"], .design-guide .gov-uk .button-warning[disabled] {
-      zoom: 1;
-      filter: alpha(opacity=50);
-      opacity: 0.5; }
-      .design-guide .gov-uk .button-warning.disabled:hover, .design-guide .gov-uk .button-warning[disabled="disabled"]:hover, .design-guide .gov-uk .button-warning[disabled]:hover {
-        cursor: default;
-        background-color: #b10e1e; }
-      .design-guide .gov-uk .button-warning.disabled:active, .design-guide .gov-uk .button-warning[disabled="disabled"]:active, .design-guide .gov-uk .button-warning[disabled]:active {
-        top: 0;
-        -webkit-box-shadow: 0 2px 0 #6a0812;
-        -moz-box-shadow: 0 2px 0 #6a0812;
-        box-shadow: 0 2px 0 #6a0812;
-        border-bottom: 2px solid #6a0812; }
-    .design-guide .gov-uk .button-warning:hover, .design-guide .gov-uk .button-warning:focus, .design-guide .gov-uk .button-warning:visited {
-      color: white; }
-    .design-guide .gov-uk .button-warning:before {
-      content: "";
-      height: 110%;
-      width: 100%;
-      display: block;
-      background: transparent;
-      position: absolute;
-      top: 0;
-      left: 0; }
-    .design-guide .gov-uk .button-warning:active:before {
-      top: -10%;
-      height: 120%;
-      top: auto;
-      height: 100%; }
-    .design-guide .gov-uk .button-warning[rel="external"]:after {
-      display: none;
-      content: none;
-      margin-left: 0;
-      margin-right: 0; }
-    .design-guide .gov-uk .button-warning[type="submit"], .design-guide .gov-uk .button-warning[type="reset"], .design-guide .gov-uk .button-warning[type="button"] {
-      filter: chroma(color=black); }
-    .design-guide .gov-uk .button-warning[type=submit].button {
-      filter: none; }
 .design-guide .main {
   max-width: 1020px;
   width: auto;
   margin: 0 auto 90px; }
 .design-guide .grid-wrapper {
-  max-width: 1020px;
-  margin: 0 auto; }
-.design-guide .grid {
-  float: left; }
-.design-guide .grid .inner-block {
   padding: 0 15px; }
+.design-guide .grid {
+  float: left;
+  width: 100%; }
 .design-guide .grid-1-4 {
   width: 100%; }
 .design-guide .grid-1-3 {
@@ -1879,7 +1698,6 @@ main.transaction-4 .content {
 .guide-nav {
   border-top: 5px solid #0b0c0c;
   padding-top: 15px;
-  padding-left: 15px;
   margin-top: 7px;
   list-style: none; }
 
@@ -1962,10 +1780,9 @@ main.transaction-4 .content {
 
 .example {
   border: 1px solid #bfc1c3;
-  outline: 20px solid #f8f8f8;
+  outline: 15px solid #f8f8f8;
   margin: 45px 0 60px 0;
-  padding: 15px 0;
-  overflow: hidden; }
+  padding: 15px 0; }
   .example .example-url {
     margin-top: 30px; }
   .example .example-url:before {

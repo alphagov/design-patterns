@@ -161,6 +161,8 @@ Example usage:
     .gov-uk {
       font-size: 16px;
       line-height: 1.25; } }
+  .gov-uk .text {
+    max-width: 30em; }
   .gov-uk h1,
   .gov-uk .heading-48 {
     font-family: "nta", Arial, sans-serif;
@@ -286,6 +288,8 @@ Example usage:
   .gov-uk menu,
   .gov-uk ol,
   .gov-uk ul {
+    margin-top: 5px;
+    margin-bottom: 20px;
     padding: 0 0 0 20px; }
   .gov-uk ul {
     list-style-type: disc; }
@@ -307,193 +311,45 @@ Example usage:
   .gov-uk textarea {
     overflow: auto;
     vertical-align: top; }
+  .gov-uk input[type="text"],
+  .gov-uk input[type="email"],
+  .gov-uk input[type="date"],
+  .gov-uk input[type="datetime"],
+  .gov-uk input[type="datetime-local"],
+  .gov-uk input[type="email"],
+  .gov-uk input[type="month"],
+  .gov-uk input[type="number"],
+  .gov-uk input[type="search"],
+  .gov-uk input[type="tel"],
+  .gov-uk input[type="time"],
+  .gov-uk input[type="url"],
+  .gov-uk input[type="week"],
+  .gov-uk select[size],
+  .gov-uk textarea {
+    padding: 2px 4px;
+    background-color: #FFFFFF;
+    border: 2px inset;
+    font-size: 1em;
+    -webkit-appearance: none;
+    border-radius: 0; }
+  .gov-uk textarea {
+    min-height: 10em;
+    height: auto; }
   .gov-uk .form {
     margin-top: 30px; }
-  .gov-uk .form-row {
-    margin-bottom: 30px; }
-  .gov-uk .form-row label {
+  .gov-uk .form-control {
+    min-width: 96%; }
+    @media (min-width: 641px) {
+      .gov-uk .form-control {
+        min-width: 18em; } }
+  .gov-uk .form-group {
+    margin-bottom: 15px; }
+    @media (min-width: 641px) {
+      .gov-uk .form-group {
+        margin-bottom: 30px; } }
+  .gov-uk .form-group label {
     display: block;
     margin-bottom: 5px; }
-  .gov-uk .button {
-    background-color: #006435;
-    position: relative;
-    display: -moz-inline-stack;
-    display: inline-block;
-    padding: 0.35em 0.5em 0.15em 0.5em;
-    border: none;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-    -webkit-appearance: none;
-    -webkit-box-shadow: 0 2px 0 #00180c;
-    -moz-box-shadow: 0 2px 0 #00180c;
-    box-shadow: 0 2px 0 #00180c;
-    font-size: 1em;
-    line-height: 1.25;
-    text-decoration: none;
-    -webkit-font-smoothing: antialiased;
-    cursor: pointer;
-    color: white; }
-    .gov-uk .button:visited {
-      background-color: #006435; }
-    .gov-uk .button:hover, .gov-uk .button:focus {
-      background-color: #004b27; }
-    .gov-uk .button:active {
-      top: 2px;
-      -webkit-box-shadow: 0 0 0 #006435;
-      -moz-box-shadow: 0 0 0 #006435;
-      box-shadow: 0 0 0 #006435; }
-    .gov-uk .button.disabled, .gov-uk .button[disabled="disabled"], .gov-uk .button[disabled] {
-      zoom: 1;
-      filter: alpha(opacity=50);
-      opacity: 0.5; }
-      .gov-uk .button.disabled:hover, .gov-uk .button[disabled="disabled"]:hover, .gov-uk .button[disabled]:hover {
-        cursor: default;
-        background-color: #006435; }
-      .gov-uk .button.disabled:active, .gov-uk .button[disabled="disabled"]:active, .gov-uk .button[disabled]:active {
-        top: 0;
-        -webkit-box-shadow: 0 2px 0 #00180c;
-        -moz-box-shadow: 0 2px 0 #00180c;
-        box-shadow: 0 2px 0 #00180c; }
-    .gov-uk .button:hover, .gov-uk .button:focus, .gov-uk .button:visited {
-      color: white; }
-    .gov-uk .button:before {
-      content: "";
-      height: 110%;
-      width: 100%;
-      display: block;
-      background: transparent;
-      position: absolute;
-      top: 0;
-      left: 0; }
-    .gov-uk .button:active:before {
-      top: -10%;
-      height: 120%; }
-    .gov-uk .button[rel="external"]:after {
-      display: none;
-      content: none;
-      margin-left: 0;
-      margin-right: 0; }
-  .gov-uk .button-secondary {
-    background-color: #dee0e2;
-    position: relative;
-    display: -moz-inline-stack;
-    display: inline-block;
-    padding: 0.35em 0.5em 0.15em 0.5em;
-    border: none;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-    -webkit-appearance: none;
-    -webkit-box-shadow: 0 2px 0 #b5babe;
-    -moz-box-shadow: 0 2px 0 #b5babe;
-    box-shadow: 0 2px 0 #b5babe;
-    font-size: 1em;
-    line-height: 1.25;
-    text-decoration: none;
-    -webkit-font-smoothing: antialiased;
-    cursor: pointer;
-    color: #0b0c0c; }
-    .gov-uk .button-secondary:visited {
-      background-color: #dee0e2; }
-    .gov-uk .button-secondary:hover, .gov-uk .button-secondary:focus {
-      background-color: #d0d3d6; }
-    .gov-uk .button-secondary:active {
-      top: 2px;
-      -webkit-box-shadow: 0 0 0 #dee0e2;
-      -moz-box-shadow: 0 0 0 #dee0e2;
-      box-shadow: 0 0 0 #dee0e2; }
-    .gov-uk .button-secondary.disabled, .gov-uk .button-secondary[disabled="disabled"], .gov-uk .button-secondary[disabled] {
-      zoom: 1;
-      filter: alpha(opacity=50);
-      opacity: 0.5; }
-      .gov-uk .button-secondary.disabled:hover, .gov-uk .button-secondary[disabled="disabled"]:hover, .gov-uk .button-secondary[disabled]:hover {
-        cursor: default;
-        background-color: #dee0e2; }
-      .gov-uk .button-secondary.disabled:active, .gov-uk .button-secondary[disabled="disabled"]:active, .gov-uk .button-secondary[disabled]:active {
-        top: 0;
-        -webkit-box-shadow: 0 2px 0 #b5babe;
-        -moz-box-shadow: 0 2px 0 #b5babe;
-        box-shadow: 0 2px 0 #b5babe; }
-    .gov-uk .button-secondary:hover, .gov-uk .button-secondary:focus, .gov-uk .button-secondary:visited {
-      color: #0b0c0c; }
-    .gov-uk .button-secondary:before {
-      content: "";
-      height: 110%;
-      width: 100%;
-      display: block;
-      background: transparent;
-      position: absolute;
-      top: 0;
-      left: 0; }
-    .gov-uk .button-secondary:active:before {
-      top: -10%;
-      height: 120%; }
-    .gov-uk .button-secondary[rel="external"]:after {
-      display: none;
-      content: none;
-      margin-left: 0;
-      margin-right: 0; }
-  .gov-uk .button-warning {
-    background-color: #b10e1e;
-    position: relative;
-    display: -moz-inline-stack;
-    display: inline-block;
-    padding: 0.35em 0.5em 0.15em 0.5em;
-    border: none;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-    -webkit-appearance: none;
-    -webkit-box-shadow: 0 2px 0 #6a0812;
-    -moz-box-shadow: 0 2px 0 #6a0812;
-    box-shadow: 0 2px 0 #6a0812;
-    font-size: 1em;
-    line-height: 1.25;
-    text-decoration: none;
-    -webkit-font-smoothing: antialiased;
-    cursor: pointer;
-    color: white; }
-    .gov-uk .button-warning:visited {
-      background-color: #b10e1e; }
-    .gov-uk .button-warning:hover, .gov-uk .button-warning:focus {
-      background-color: #990c1a; }
-    .gov-uk .button-warning:active {
-      top: 2px;
-      -webkit-box-shadow: 0 0 0 #b10e1e;
-      -moz-box-shadow: 0 0 0 #b10e1e;
-      box-shadow: 0 0 0 #b10e1e; }
-    .gov-uk .button-warning.disabled, .gov-uk .button-warning[disabled="disabled"], .gov-uk .button-warning[disabled] {
-      zoom: 1;
-      filter: alpha(opacity=50);
-      opacity: 0.5; }
-      .gov-uk .button-warning.disabled:hover, .gov-uk .button-warning[disabled="disabled"]:hover, .gov-uk .button-warning[disabled]:hover {
-        cursor: default;
-        background-color: #b10e1e; }
-      .gov-uk .button-warning.disabled:active, .gov-uk .button-warning[disabled="disabled"]:active, .gov-uk .button-warning[disabled]:active {
-        top: 0;
-        -webkit-box-shadow: 0 2px 0 #6a0812;
-        -moz-box-shadow: 0 2px 0 #6a0812;
-        box-shadow: 0 2px 0 #6a0812; }
-    .gov-uk .button-warning:hover, .gov-uk .button-warning:focus, .gov-uk .button-warning:visited {
-      color: white; }
-    .gov-uk .button-warning:before {
-      content: "";
-      height: 110%;
-      width: 100%;
-      display: block;
-      background: transparent;
-      position: absolute;
-      top: 0;
-      left: 0; }
-    .gov-uk .button-warning:active:before {
-      top: -10%;
-      height: 120%; }
-    .gov-uk .button-warning[rel="external"]:after {
-      display: none;
-      content: none;
-      margin-left: 0;
-      margin-right: 0; }
 
 .main {
   max-width: 1020px;
@@ -501,17 +357,18 @@ Example usage:
   margin: 0 auto 90px; }
 
 .grid-wrapper {
-  max-width: 1020px;
-  margin: 0 auto; }
-
-.grid {
-  float: left; }
-
-.grid .inner-block {
   padding: 0 15px; }
   @media (min-width: 641px) {
-    .grid .inner-block {
-      padding: 0 30px; } }
+    .grid-wrapper {
+      padding: 0 15px; } }
+
+.grid {
+  float: left;
+  width: 100%; }
+
+@media (min-width: 641px) {
+  .grid .inner-block {
+    padding: 0 15px; } }
 
 .grid-1-4 {
   width: 100%; }
@@ -610,6 +467,211 @@ Example usage:
         #global-breadcrumb nav ol li a:hover {
           color: #2e8aca; }
 
+.hint {
+  display: block;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none;
+  color: #6f777b;
+  margin-top: 5px; }
+  @media (max-width: 640px) {
+    .hint {
+      font-size: 14px;
+      line-height: 1.14286; } }
+
+.field-with-errors label,
+.field-with-errors input {
+  color: #B94A48; }
+.field-with-errors input,
+.field-with-errors textarea {
+  background-color: #F2DEDE;
+  border-color: #EED3D7; }
+
+.button {
+  background-color: #006435;
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  padding: 0.35em 0.5em 0.15em 0.5em;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-box-shadow: 0 2px 0 #00180c;
+  -moz-box-shadow: 0 2px 0 #00180c;
+  box-shadow: 0 2px 0 #00180c;
+  font-size: 1em;
+  line-height: 1.25;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  color: white; }
+  .button:visited {
+    background-color: #006435; }
+  .button:hover, .button:focus {
+    background-color: #004b27; }
+  .button:active {
+    top: 2px;
+    -webkit-box-shadow: 0 0 0 #006435;
+    -moz-box-shadow: 0 0 0 #006435;
+    box-shadow: 0 0 0 #006435; }
+  .button.disabled, .button[disabled="disabled"], .button[disabled] {
+    zoom: 1;
+    filter: alpha(opacity=50);
+    opacity: 0.5; }
+    .button.disabled:hover, .button[disabled="disabled"]:hover, .button[disabled]:hover {
+      cursor: default;
+      background-color: #006435; }
+    .button.disabled:active, .button[disabled="disabled"]:active, .button[disabled]:active {
+      top: 0;
+      -webkit-box-shadow: 0 2px 0 #00180c;
+      -moz-box-shadow: 0 2px 0 #00180c;
+      box-shadow: 0 2px 0 #00180c; }
+  .button:hover, .button:focus, .button:visited {
+    color: white; }
+  .button:before {
+    content: "";
+    height: 110%;
+    width: 100%;
+    display: block;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .button:active:before {
+    top: -10%;
+    height: 120%; }
+  .button[rel="external"]:after {
+    display: none;
+    content: none;
+    margin-left: 0;
+    margin-right: 0; }
+
+.button-secondary {
+  background-color: #dee0e2;
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  padding: 0.35em 0.5em 0.15em 0.5em;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-box-shadow: 0 2px 0 #b5babe;
+  -moz-box-shadow: 0 2px 0 #b5babe;
+  box-shadow: 0 2px 0 #b5babe;
+  font-size: 1em;
+  line-height: 1.25;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  color: #0b0c0c; }
+  .button-secondary:visited {
+    background-color: #dee0e2; }
+  .button-secondary:hover, .button-secondary:focus {
+    background-color: #d0d3d6; }
+  .button-secondary:active {
+    top: 2px;
+    -webkit-box-shadow: 0 0 0 #dee0e2;
+    -moz-box-shadow: 0 0 0 #dee0e2;
+    box-shadow: 0 0 0 #dee0e2; }
+  .button-secondary.disabled, .button-secondary[disabled="disabled"], .button-secondary[disabled] {
+    zoom: 1;
+    filter: alpha(opacity=50);
+    opacity: 0.5; }
+    .button-secondary.disabled:hover, .button-secondary[disabled="disabled"]:hover, .button-secondary[disabled]:hover {
+      cursor: default;
+      background-color: #dee0e2; }
+    .button-secondary.disabled:active, .button-secondary[disabled="disabled"]:active, .button-secondary[disabled]:active {
+      top: 0;
+      -webkit-box-shadow: 0 2px 0 #b5babe;
+      -moz-box-shadow: 0 2px 0 #b5babe;
+      box-shadow: 0 2px 0 #b5babe; }
+  .button-secondary:hover, .button-secondary:focus, .button-secondary:visited {
+    color: #0b0c0c; }
+  .button-secondary:before {
+    content: "";
+    height: 110%;
+    width: 100%;
+    display: block;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .button-secondary:active:before {
+    top: -10%;
+    height: 120%; }
+  .button-secondary[rel="external"]:after {
+    display: none;
+    content: none;
+    margin-left: 0;
+    margin-right: 0; }
+
+.button-warning {
+  background-color: #b10e1e;
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  padding: 0.35em 0.5em 0.15em 0.5em;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-box-shadow: 0 2px 0 #6a0812;
+  -moz-box-shadow: 0 2px 0 #6a0812;
+  box-shadow: 0 2px 0 #6a0812;
+  font-size: 1em;
+  line-height: 1.25;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  color: white; }
+  .button-warning:visited {
+    background-color: #b10e1e; }
+  .button-warning:hover, .button-warning:focus {
+    background-color: #990c1a; }
+  .button-warning:active {
+    top: 2px;
+    -webkit-box-shadow: 0 0 0 #b10e1e;
+    -moz-box-shadow: 0 0 0 #b10e1e;
+    box-shadow: 0 0 0 #b10e1e; }
+  .button-warning.disabled, .button-warning[disabled="disabled"], .button-warning[disabled] {
+    zoom: 1;
+    filter: alpha(opacity=50);
+    opacity: 0.5; }
+    .button-warning.disabled:hover, .button-warning[disabled="disabled"]:hover, .button-warning[disabled]:hover {
+      cursor: default;
+      background-color: #b10e1e; }
+    .button-warning.disabled:active, .button-warning[disabled="disabled"]:active, .button-warning[disabled]:active {
+      top: 0;
+      -webkit-box-shadow: 0 2px 0 #6a0812;
+      -moz-box-shadow: 0 2px 0 #6a0812;
+      box-shadow: 0 2px 0 #6a0812; }
+  .button-warning:hover, .button-warning:focus, .button-warning:visited {
+    color: white; }
+  .button-warning:before {
+    content: "";
+    height: 110%;
+    width: 100%;
+    display: block;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .button-warning:active:before {
+    top: -10%;
+    height: 120%; }
+  .button-warning[rel="external"]:after {
+    display: none;
+    content: none;
+    margin-left: 0;
+    margin-right: 0; }
+
 code,
 pre {
   font-family: "nta", Arial, sans-serif;
@@ -634,3 +696,10 @@ pre {
 .highlight {
   color: #0076c0;
   font-style: normal; }
+
+.example-highlight-grid .grid-wrapper {
+  background: #bfc1c3; }
+.example-highlight-grid .grid {
+  background: #f8f8f8; }
+.example-highlight-grid .grid .inner-block * {
+  background: #dee0e2; }

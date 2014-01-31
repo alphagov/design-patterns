@@ -29,14 +29,12 @@
       color: $secondary-text-colour;
     }
   }
-  
 }
 
 // Design Guide - Nav
 .guide-nav {
   border-top: 5px solid #0b0c0c;
   padding-top: $gutter-half;
-  padding-left: $gutter-half;
   margin-top: 7px;
   list-style: none;
 }
@@ -94,14 +92,13 @@
   @extend %contain-floats;
   
   border: 1px solid #bfc1c3;
-  outline: 20px solid #f8f8f8;
+  outline: $gutter-half solid #f8f8f8;
   margin: $gutter*1.5 0 $gutter*2 0;
-  padding: $gutter-half 0;
   
+  padding: $gutter-half 0;
   @include media(tablet) {
     padding: $gutter $gutter-half;
   }
-  overflow: hidden;
   
   .example-url {
     margin-top: $gutter;
