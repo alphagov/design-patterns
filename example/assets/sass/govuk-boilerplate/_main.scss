@@ -47,10 +47,8 @@
   .heading-19 {
     @include bold-19();
     margin-top: 10px;
-    margin-bottom: 5px;
     @include media(tablet) {
       margin-top: 20px;
-      margin-bottom: 10px;
     }
   }
   
@@ -58,6 +56,10 @@
   pre {
     margin-top: 5px;
     margin-bottom: 20px;
+  }
+  
+  h3 + p {
+    margin-top: 0;
   }
   
   // Data
@@ -97,10 +99,6 @@
   
   ul {
     list-style-type: disc;
-  }
-  
-  li {
-    margin-bottom: 5px;
   }
   
   

@@ -230,9 +230,7 @@ Example usage:
     text-transform: none;
     font-weight: 700;
     margin-top: 10px;
-    margin-bottom: 5px;
-    margin-top: 20px;
-    margin-bottom: 10px; }
+    margin-top: 20px; }
     @media (max-width: 640px) {
       .gov-uk h3,
       .gov-uk .heading-19 {
@@ -242,6 +240,8 @@ Example usage:
   .gov-uk pre {
     margin-top: 5px;
     margin-bottom: 20px; }
+  .gov-uk h3 + p {
+    margin-top: 0; }
   .gov-uk .data-80 {
     font-family: "nta", Arial, sans-serif;
     font-size: 80px;
@@ -290,8 +290,6 @@ Example usage:
     padding: 0 0 0 20px; }
   .gov-uk ul {
     list-style-type: disc; }
-  .gov-uk li {
-    margin-bottom: 5px; }
   .gov-uk form {
     margin: 0; }
   .gov-uk button,
