@@ -1989,6 +1989,19 @@ main.transaction-4 .content {
       .guide .note {
         padding-top: 5px;
         padding-bottom: 5px; } }
+  .guide code {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 300;
+    text-transform: none;
+    font-family: monospace, serif;
+    padding: 2px 5px;
+    background: #dee0e2; }
+    @media (max-width: 640px) {
+      .guide code {
+        font-size: 14px;
+        line-height: 1.14286; } }
 
 .guide-end {
   margin-bottom: 60px; }
@@ -2006,15 +2019,8 @@ main.transaction-4 .content {
   .example .example-url:before {
     content: "Example: "; }
   .example code {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.25;
-    font-weight: 300;
-    text-transform: none; }
-    @media (max-width: 640px) {
-      .example code {
-        font-size: 14px;
-        line-height: 1.14286; } }
+    display: block;
+    padding: 0 0 30px 0; }
   .example em {
     font-style: normal;
     color: #0076c0; }
@@ -2025,9 +2031,10 @@ main.transaction-4 .content {
   .example .swatch {
     width: 60px;
     height: 60px;
-    display: inline-block;
-    margin-right: 30px;
-    margin-top: 15px; }
+    display: block;
+    margin-bottom: 30px; }
+  .example .text-secondary {
+    color: #6f777b; }
   .example .button,
   .example .button-secondary,
   .example .button-warning {

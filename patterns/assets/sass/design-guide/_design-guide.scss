@@ -80,6 +80,12 @@
     margin: $gutter-half 0;
   }
   
+  code {
+    @include core-16;
+    font-family: monospace, serif;
+    padding: 2px 5px;
+    background: $grey-3;
+  }
 }
 
 .guide-end {
@@ -109,7 +115,8 @@
   }
   
   code {
-   @include core-16;
+    display: block;
+    padding: 0 0 $gutter 0;
   }
   
   // Highlight font sizes
@@ -130,9 +137,11 @@
   .swatch {
     width: $gutter*2;
     height: $gutter*2;
-    display: inline-block;
-    margin-right: $gutter;
-    margin-top: $gutter-half;
+    display: block;
+    margin-bottom: $gutter;
+  }
+  .text-secondary {
+    color: $secondary-text-colour;
   }
   
   // Buttons
@@ -142,7 +151,6 @@
     float: left;
     margin-bottom: 0;
   }
-  
 }
 
 // Example grid

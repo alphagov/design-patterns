@@ -81,7 +81,7 @@ phases:
           </p>
         </div>
         
-        <!-- Typography : Page titles -->
+        <!-- Typography : Start page titles -->
         <div class="guide" id="guide-typography-titles">
           <h3 class="guide-subheader">Page titles</h3>
         </div>
@@ -89,13 +89,31 @@ phases:
         <div class="example gov-uk">
           <div class="inner-block">
             
-            <h1>Car tax: get a tax disc for your vehicle <em>48px</em></h1>
+            <h1>Driving and transport <em>48px</em></h1>
             <p>
               Buy or renew your tax disc (vehicle licence) online - get tax for your car, motorbike, lorry, bus or other vehicle that needs a tax disc. <em>19px</em>
             </p>
             
           </div>
         </div>
+        
+        <!-- Typography : Content page titles -->
+        <!-- Should we provide a 36px heading for content pages? 
+        <div class="guide">
+          <h3 class="guide-subheader">Content page titles</h3>
+        </div>
+        
+        <div class="example gov-uk">
+          <div class="inner-block">
+            
+            <h1 class="heading-36">Car tax: get a tax disc for your vehicle <em>36px</em></h1>
+            <p>
+              Buy or renew your tax disc (vehicle licence) online - get tax for your car, motorbike, lorry, bus or other vehicle that needs a tax disc. <em>19px</em>
+            </p>
+            
+          </div>
+        </div>
+        -->
         
         <!-- Typography : Page subtitles -->
         <div class="guide" id="guide-typography-subtitles">
@@ -175,7 +193,7 @@ phases:
         <div class="guide guide-end">
           <h3 class="guide-subheader">Get the styles</h3>
           <p>
-            The GOV.UK boilerplate provides a set of <a href="{{ site.baseurl}}/example/typography.html">basic typography styles</a>. For more control over heading hierarchy, here's the same example <a href="{{ site.baseurl}}/example/typography-classnames.html">using classnames</a>. We're also using a <code>.text</code> class on text blocks, to set a maximum width and prevent lines from getting to long.
+            Here's an example of the above <a href="{{ site.baseurl}}/example/typography.html">basic typography styles</a>. For more control over heading hierarchy, here's the same example <a href="{{ site.baseurl}}/example/typography-classnames.html">using classnames</a>. We're also using a <code>.text</code> class to wrap text blocks, setting a maximum width and to prevent lines from getting too long.
           </p>
         </div>
         
@@ -266,7 +284,7 @@ phases:
         <div class="guide guide-end">
           <h3 class="guide-subheader">Get the styles</h3>
           <p>
-            The GOV.UK boilerplate provides a set of basic grid layout styles. Here's an example of the <a href="{{ site.baseurl}}/example/grid.html">grid layout</a>. Use these to get started structuring your page content.
+            Here's an example of the above <a href="{{ site.baseurl}}/example/grid.html">grid layout</a>. Use this example to get started structuring your page content.
           </p>
         </div>
         
@@ -357,10 +375,7 @@ phases:
         <div class="guide" id="guide-colour">
           <h2 class="guide-header">Colour</h2>
           <p>
-            GOV.UK colour palette with Sass variable names.
-          </p>
-          <p>
-            Using the Sass variables in the frontend toolkit is advised, in case these colours are updated. The GOV.UK Service Design Manual shows hex values and Sass variable names for the <a href="https://www.gov.uk/service-manual/user-centered-design/resources/colour-palettes.html">GOV.UK colour palette</a>.
+            The GOV.UK Service Design Manual shows HEX values and Sass variable names for the <a href="https://www.gov.uk/service-manual/user-centered-design/resources/colour-palettes.html">GOV.UK colour palette</a>. Using the Sass variables in the GOV.UK frontend toolkit is recommended, in case these colours are updated. 
           </p>
         </div>
         
@@ -368,12 +383,29 @@ phases:
         <div class="example gov-uk">
           <div class="inner-block">
             
-            <div class="swatch colour-hm-government"></div>
-            <pre><code>Sass variable: $hm-government</code></pre>
+            <p>
+              <a href="#">Link colour</a>
+            </p>
+            <code>
+              HEX: #2e3191 <br>
+              Sass variable: $link-colour
+            </code>
             
-            <div class="swatch colour-department-of-health"></div>
-            <pre><code>Sass variable: $department-of-health;</code></pre>
+            <p class="text-secondary">
+              Secondary text colour
+            </p>
+            <code>
+              HEX: #6F777B <br>
+              Sass variable: $secondary-text-colour
+            </code>
             
+            <div class="swatch colour-hm-government">
+            </div>
+            <code>
+              HM Government <br>
+              HEX: #0076c0 <br>
+              Sass: $hm-government
+            </code>
           </div>
         </div>
         
@@ -400,7 +432,7 @@ phases:
         <div class="guide guide-end">
           <h3 class="guide-subheader">Get the styles</h3>
           <p>
-            The GOV.UK boilerplate shows how to use the GOV.UK frontend toolkit to create your own buttons. Here's an example form using the <a href="{{ site.baseurl}}/example/form.html">button styles</a>.
+            Here's an <a href="{{ site.baseurl}}/example/form.html">example form using the button styles</a>.
           </p>
         </div>
         
