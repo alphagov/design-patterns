@@ -105,8 +105,8 @@ Sometimes referred to as 'postcode lookup'. An address finder lets users specify
 
 #### Remember...
 
-* to make it clear that the address finder only works for UK addresses
-* to provide a manual option for people with international adresses or addresses that are missing or badly formed in the Royal Mail database
+* Make it clear that the address finder only works for UK addresses
+* Provide a manual option for people with international adresses or addresses that are missing or badly formed in the Royal Mail database
 
 #### Example
 
@@ -123,6 +123,6 @@ Here's an example that combines an address finder, with a free text box. This ap
 	</form>
 </div>
 
-Note: The JavaScript in the above example is purely to demonstrate the interaction, it doesn't actually 'work'.
+**Note:** The above example is purely to demonstrate the interaction, it's not production code.
 
 

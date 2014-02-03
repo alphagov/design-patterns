@@ -1034,14 +1034,11 @@ main.pattern .content {
     outline: 20px solid #f8f8f8;
     margin: 40px 0 50px 0;
     padding: 30px;
-    padding-bottom: 10px;
     overflow: hidden;
     position: relative; }
-    main.pattern .content .pattern-example figcaption,
-    main.pattern .content .html-example figcaption {
-      border-top: 1px solid #bfc1c3;
-      padding: 10px 5px 0 20px;
-      margin: 0 -30px; }
+    main.pattern .content .pattern-example.wide,
+    main.pattern .content .html-example.wide {
+      margin-right: -35%; }
   main.pattern .content .html-example code {
     margin-top: -20px;
     margin-left: -70px;
@@ -1176,22 +1173,19 @@ main.progress-indicator .pattern-example .progress-indicator.horizontal, main.pr
     main.progress-indicator .pattern-example .progress-indicator.horizontal li.done span, main.progress-indicator .pattern-example .progress-indicator.vertical li.done span {
       font-weight: bold;
       color: #006435;
-          /*
-
-          text-indent: -9999px;
-          margin-right: 5px;
-          margin-left: -16px;
-          width: 5px;
-          margin-top: -23px;
-          height: 10px;
-          border-right: 3px solid;
-          border-bottom: 3px solid;
-          border-color: $green;
-          -webkit-transform: rotate(45deg);
-          position: absolute;
-          */ }
-main.progress-indicator .pattern-example .progress-indicator.horizontal li.done span {
-  display: none; }
+      text-indent: -9999px;
+      margin-right: 5px;
+      margin-left: -16px;
+      width: 5px;
+      margin-top: -23px;
+      height: 10px;
+      border-right: 3px solid;
+      border-bottom: 3px solid;
+      border-color: #006435;
+      -webkit-transform: rotate(45deg);
+      position: absolute; }
+main.progress-indicator .pattern-example .progress-indicator.horizontal li {
+  margin-left: 20px; }
 main.progress-indicator .pattern-example .progress-indicator.vertical {
   width: 25%;
   float: left; }
@@ -1208,210 +1202,6 @@ main.progress-indicator .pattern-example .progress-indicator.vertical {
     margin: 0; }
 main.progress-indicator .pattern-example .progress-indicator.horizontal ul {
   margin: 0; }
-
-main.transaction-1 .content {
-  width: 100%; }
-  main.transaction-1 .content h2 {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 24px;
-    line-height: 1.25;
-    font-weight: 400;
-    text-transform: none;
-    padding-top: 9px;
-    padding-bottom: 6px;
-    padding-top: 6px;
-    padding-bottom: 4px;
-    font-weight: bold;
-    margin-bottom: 15px; }
-    @media (max-width: 640px) {
-      main.transaction-1 .content h2 {
-        font-size: 20px;
-        line-height: 1.2; } }
-  main.transaction-1 .content h3 {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 24px;
-    line-height: 1.25;
-    font-weight: 400;
-    text-transform: none;
-    padding-top: 9px;
-    padding-bottom: 6px;
-    padding-top: 6px;
-    padding-bottom: 4px;
-    font-weight: bold;
-    margin: 15px 0 10px; }
-    @media (max-width: 640px) {
-      main.transaction-1 .content h3 {
-        font-size: 20px;
-        line-height: 1.2; } }
-  main.transaction-1 .content p {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 19px;
-    line-height: 1.31579;
-    font-weight: 400;
-    text-transform: none;
-    padding-top: 2px;
-    padding-bottom: 8px;
-    padding-top: 0;
-    padding-bottom: 5px;
-    margin: 10px 0; }
-    @media (max-width: 640px) {
-      main.transaction-1 .content p {
-        font-size: 16px;
-        line-height: 1.25; } }
-
-main.transaction-2 .content {
-  width: 75%;
-  float: right; }
-  main.transaction-2 .content h2 {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 24px;
-    line-height: 1.25;
-    font-weight: 400;
-    text-transform: none;
-    padding-top: 9px;
-    padding-bottom: 6px;
-    padding-top: 6px;
-    padding-bottom: 4px;
-    font-weight: bold;
-    margin-bottom: 15px; }
-    @media (max-width: 640px) {
-      main.transaction-2 .content h2 {
-        font-size: 20px;
-        line-height: 1.2; } }
-  main.transaction-2 .content h3 {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 24px;
-    line-height: 1.25;
-    font-weight: 400;
-    text-transform: none;
-    padding-top: 9px;
-    padding-bottom: 6px;
-    padding-top: 6px;
-    padding-bottom: 4px;
-    font-weight: bold;
-    margin: 15px 0 10px; }
-    @media (max-width: 640px) {
-      main.transaction-2 .content h3 {
-        font-size: 20px;
-        line-height: 1.2; } }
-  main.transaction-2 .content p {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 19px;
-    line-height: 1.31579;
-    font-weight: 400;
-    text-transform: none;
-    padding-top: 2px;
-    padding-bottom: 8px;
-    padding-top: 0;
-    padding-bottom: 5px;
-    margin: 10px 0; }
-    @media (max-width: 640px) {
-      main.transaction-2 .content p {
-        font-size: 16px;
-        line-height: 1.25; } }
-
-main.transaction-3 .progress-indicator.horizontal {
-  margin-top: -30px; }
-  main.transaction-3 .progress-indicator.horizontal ul {
-    border-top: none; }
-main.transaction-3 .content h2 {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 24px;
-  line-height: 1.25;
-  font-weight: 400;
-  text-transform: none;
-  padding-top: 9px;
-  padding-bottom: 6px;
-  padding-top: 6px;
-  padding-bottom: 4px;
-  font-weight: bold;
-  margin-bottom: 15px; }
-  @media (max-width: 640px) {
-    main.transaction-3 .content h2 {
-      font-size: 20px;
-      line-height: 1.2; } }
-main.transaction-3 .content h3 {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 24px;
-  line-height: 1.25;
-  font-weight: 400;
-  text-transform: none;
-  padding-top: 9px;
-  padding-bottom: 6px;
-  padding-top: 6px;
-  padding-bottom: 4px;
-  font-weight: bold;
-  margin: 15px 0 10px; }
-  @media (max-width: 640px) {
-    main.transaction-3 .content h3 {
-      font-size: 20px;
-      line-height: 1.2; } }
-main.transaction-3 .content p {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 19px;
-  line-height: 1.31579;
-  font-weight: 400;
-  text-transform: none;
-  padding-top: 2px;
-  padding-bottom: 8px;
-  padding-top: 0;
-  padding-bottom: 5px;
-  margin: 10px 0; }
-  @media (max-width: 640px) {
-    main.transaction-3 .content p {
-      font-size: 16px;
-      line-height: 1.25; } }
-
-main.transaction-4 .content {
-  width: 75%;
-  float: right; }
-  main.transaction-4 .content h2 {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 24px;
-    line-height: 1.25;
-    font-weight: 400;
-    text-transform: none;
-    padding-top: 9px;
-    padding-bottom: 6px;
-    padding-top: 6px;
-    padding-bottom: 4px;
-    font-weight: bold;
-    margin-bottom: 15px; }
-    @media (max-width: 640px) {
-      main.transaction-4 .content h2 {
-        font-size: 20px;
-        line-height: 1.2; } }
-  main.transaction-4 .content h3 {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 24px;
-    line-height: 1.25;
-    font-weight: 400;
-    text-transform: none;
-    padding-top: 9px;
-    padding-bottom: 6px;
-    padding-top: 6px;
-    padding-bottom: 4px;
-    font-weight: bold;
-    margin: 15px 0 10px; }
-    @media (max-width: 640px) {
-      main.transaction-4 .content h3 {
-        font-size: 20px;
-        line-height: 1.2; } }
-  main.transaction-4 .content p {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 19px;
-    line-height: 1.31579;
-    font-weight: 400;
-    text-transform: none;
-    padding-top: 2px;
-    padding-bottom: 8px;
-    padding-top: 0;
-    padding-bottom: 5px;
-    margin: 10px 0; }
-    @media (max-width: 640px) {
-      main.transaction-4 .content p {
-        font-size: 16px;
-        line-height: 1.25; } }
 
 .design-guide .gov-uk {
   font-family: "nta", Arial, sans-serif;

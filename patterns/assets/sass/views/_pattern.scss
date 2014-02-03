@@ -110,13 +110,12 @@ main.pattern {
       outline: 20px solid $highlight-colour;
       margin: 40px 0 50px 0;
       padding: $gutter;
-      padding-bottom: 10px;
       overflow: hidden;
       position: relative;
-      figcaption{
-        border-top: 1px solid $border-colour;
-        padding: 10px 5px 0 20px;
-        margin: 0 -30px;
+      &.wide{
+        @include media(tablet){
+          margin-right: -35%;
+        } 
       }
     }
     .html-example{

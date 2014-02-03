@@ -24,6 +24,8 @@ layout-class: 'pattern'
   <div class="block content">
     <div class="inner-block">
       {{ content }}
+
+      {% if page.discuss-url %}<p class="discuss"><strong><a href="{{ page.discuss-url }}">Discuss this pattern</a></strong></p>{% endif %}
     </div>
   </div>
   <div class="related">
@@ -43,7 +45,6 @@ layout-class: 'pattern'
 
     <ul class="actions">
       {% if page.discuss-url %}<li><a href="{{ page.discuss-url }}">Discuss this pattern</a></li>{% endif %}
-      <li><a href="{{ site.baseurl }}alerts{{ page.url }}">Follow this pattern</a></li>
     </ul>
   </div>
 </article>
