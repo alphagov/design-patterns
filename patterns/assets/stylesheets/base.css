@@ -1362,234 +1362,6 @@ main.progress-indicator .pattern-example .progress-indicator.vertical {
 main.progress-indicator .pattern-example .progress-indicator.horizontal ul {
   margin: 0; }
 
-main.transaction-1 .content {
-  width: 100%; }
-  main.transaction-1 .content h2 {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 24px;
-    line-height: 1.25;
-    font-weight: 400;
-    text-transform: none;
-    padding-top: 9px;
-    padding-bottom: 6px;
-    font-weight: bold;
-    margin-bottom: 15px; }
-    @media (max-width: 640px) {
-      main.transaction-1 .content h2 {
-        font-size: 20px;
-        line-height: 1.2; } }
-    @media (min-width: 641px) {
-      main.transaction-1 .content h2 {
-        padding-top: 6px;
-        padding-bottom: 4px; } }
-  main.transaction-1 .content h3 {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 24px;
-    line-height: 1.25;
-    font-weight: 400;
-    text-transform: none;
-    padding-top: 9px;
-    padding-bottom: 6px;
-    font-weight: bold;
-    margin: 15px 0 10px; }
-    @media (max-width: 640px) {
-      main.transaction-1 .content h3 {
-        font-size: 20px;
-        line-height: 1.2; } }
-    @media (min-width: 641px) {
-      main.transaction-1 .content h3 {
-        padding-top: 6px;
-        padding-bottom: 4px; } }
-  main.transaction-1 .content p {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 19px;
-    line-height: 1.31579;
-    font-weight: 400;
-    text-transform: none;
-    padding-top: 2px;
-    padding-bottom: 8px;
-    margin: 10px 0; }
-    @media (max-width: 640px) {
-      main.transaction-1 .content p {
-        font-size: 16px;
-        line-height: 1.25; } }
-    @media (min-width: 641px) {
-      main.transaction-1 .content p {
-        padding-top: 0;
-        padding-bottom: 5px; } }
-
-main.transaction-2 .content {
-  width: 75%;
-  float: right; }
-  main.transaction-2 .content h2 {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 24px;
-    line-height: 1.25;
-    font-weight: 400;
-    text-transform: none;
-    padding-top: 9px;
-    padding-bottom: 6px;
-    font-weight: bold;
-    margin-bottom: 15px; }
-    @media (max-width: 640px) {
-      main.transaction-2 .content h2 {
-        font-size: 20px;
-        line-height: 1.2; } }
-    @media (min-width: 641px) {
-      main.transaction-2 .content h2 {
-        padding-top: 6px;
-        padding-bottom: 4px; } }
-  main.transaction-2 .content h3 {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 24px;
-    line-height: 1.25;
-    font-weight: 400;
-    text-transform: none;
-    padding-top: 9px;
-    padding-bottom: 6px;
-    font-weight: bold;
-    margin: 15px 0 10px; }
-    @media (max-width: 640px) {
-      main.transaction-2 .content h3 {
-        font-size: 20px;
-        line-height: 1.2; } }
-    @media (min-width: 641px) {
-      main.transaction-2 .content h3 {
-        padding-top: 6px;
-        padding-bottom: 4px; } }
-  main.transaction-2 .content p {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 19px;
-    line-height: 1.31579;
-    font-weight: 400;
-    text-transform: none;
-    padding-top: 2px;
-    padding-bottom: 8px;
-    margin: 10px 0; }
-    @media (max-width: 640px) {
-      main.transaction-2 .content p {
-        font-size: 16px;
-        line-height: 1.25; } }
-    @media (min-width: 641px) {
-      main.transaction-2 .content p {
-        padding-top: 0;
-        padding-bottom: 5px; } }
-
-main.transaction-3 .progress-indicator.horizontal {
-  margin-top: -30px; }
-  main.transaction-3 .progress-indicator.horizontal ul {
-    border-top: none; }
-main.transaction-3 .content h2 {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 24px;
-  line-height: 1.25;
-  font-weight: 400;
-  text-transform: none;
-  padding-top: 9px;
-  padding-bottom: 6px;
-  font-weight: bold;
-  margin-bottom: 15px; }
-  @media (max-width: 640px) {
-    main.transaction-3 .content h2 {
-      font-size: 20px;
-      line-height: 1.2; } }
-  @media (min-width: 641px) {
-    main.transaction-3 .content h2 {
-      padding-top: 6px;
-      padding-bottom: 4px; } }
-main.transaction-3 .content h3 {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 24px;
-  line-height: 1.25;
-  font-weight: 400;
-  text-transform: none;
-  padding-top: 9px;
-  padding-bottom: 6px;
-  font-weight: bold;
-  margin: 15px 0 10px; }
-  @media (max-width: 640px) {
-    main.transaction-3 .content h3 {
-      font-size: 20px;
-      line-height: 1.2; } }
-  @media (min-width: 641px) {
-    main.transaction-3 .content h3 {
-      padding-top: 6px;
-      padding-bottom: 4px; } }
-main.transaction-3 .content p {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 19px;
-  line-height: 1.31579;
-  font-weight: 400;
-  text-transform: none;
-  padding-top: 2px;
-  padding-bottom: 8px;
-  margin: 10px 0; }
-  @media (max-width: 640px) {
-    main.transaction-3 .content p {
-      font-size: 16px;
-      line-height: 1.25; } }
-  @media (min-width: 641px) {
-    main.transaction-3 .content p {
-      padding-top: 0;
-      padding-bottom: 5px; } }
-
-main.transaction-4 .content {
-  width: 75%;
-  float: right; }
-  main.transaction-4 .content h2 {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 24px;
-    line-height: 1.25;
-    font-weight: 400;
-    text-transform: none;
-    padding-top: 9px;
-    padding-bottom: 6px;
-    font-weight: bold;
-    margin-bottom: 15px; }
-    @media (max-width: 640px) {
-      main.transaction-4 .content h2 {
-        font-size: 20px;
-        line-height: 1.2; } }
-    @media (min-width: 641px) {
-      main.transaction-4 .content h2 {
-        padding-top: 6px;
-        padding-bottom: 4px; } }
-  main.transaction-4 .content h3 {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 24px;
-    line-height: 1.25;
-    font-weight: 400;
-    text-transform: none;
-    padding-top: 9px;
-    padding-bottom: 6px;
-    font-weight: bold;
-    margin: 15px 0 10px; }
-    @media (max-width: 640px) {
-      main.transaction-4 .content h3 {
-        font-size: 20px;
-        line-height: 1.2; } }
-    @media (min-width: 641px) {
-      main.transaction-4 .content h3 {
-        padding-top: 6px;
-        padding-bottom: 4px; } }
-  main.transaction-4 .content p {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 19px;
-    line-height: 1.31579;
-    font-weight: 400;
-    text-transform: none;
-    padding-top: 2px;
-    padding-bottom: 8px;
-    margin: 10px 0; }
-    @media (max-width: 640px) {
-      main.transaction-4 .content p {
-        font-size: 16px;
-        line-height: 1.25; } }
-    @media (min-width: 641px) {
-      main.transaction-4 .content p {
-        padding-top: 0;
-        padding-bottom: 5px; } }
-
 .design-guide .gov-uk {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
@@ -1669,8 +1441,7 @@ main.transaction-4 .content {
     font-weight: 400;
     text-transform: none;
     font-weight: 700;
-    margin-top: 10px;
-    margin-bottom: 5px; }
+    margin-top: 10px; }
     @media (max-width: 640px) {
       .design-guide .gov-uk h3,
       .design-guide .gov-uk .heading-19 {
@@ -1679,12 +1450,13 @@ main.transaction-4 .content {
     @media (min-width: 641px) {
       .design-guide .gov-uk h3,
       .design-guide .gov-uk .heading-19 {
-        margin-top: 20px;
-        margin-bottom: 10px; } }
+        margin-top: 20px; } }
   .design-guide .gov-uk p,
   .design-guide .gov-uk pre {
     margin-top: 5px;
     margin-bottom: 20px; }
+  .design-guide .gov-uk h3 + p {
+    margin-top: 0; }
   .design-guide .gov-uk .data-80 {
     font-family: "nta", Arial, sans-serif;
     font-size: 80px;
@@ -1733,8 +1505,6 @@ main.transaction-4 .content {
     padding: 0 0 0 20px; }
   .design-guide .gov-uk ul {
     list-style-type: disc; }
-  .design-guide .gov-uk li {
-    margin-bottom: 5px; }
   .design-guide .gov-uk form {
     margin: 0; }
   .design-guide .gov-uk button,

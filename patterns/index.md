@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Design pattern library
+title: Design patterns
 phases:
   - alpha
 ---

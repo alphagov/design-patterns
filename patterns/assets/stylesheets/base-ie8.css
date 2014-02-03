@@ -1287,232 +1287,19 @@ main.progress-indicator .pattern-example .progress-indicator.vertical {
 main.progress-indicator .pattern-example .progress-indicator.horizontal ul {
   margin: 0; }
 
-main.transaction-1 .content {
-  width: 100%; }
-  main.transaction-1 .content h2 {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 24px;
-    line-height: 1.25;
-    font-weight: 400;
-    text-transform: none;
-    padding-top: 9px;
-    padding-bottom: 6px;
-    padding-top: 6px;
-    padding-bottom: 4px;
-    font-weight: bold;
-    margin-bottom: 15px; }
-    @media (max-width: 640px) {
-      main.transaction-1 .content h2 {
-        font-size: 20px;
-        line-height: 1.2; } }
-  main.transaction-1 .content h3 {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 24px;
-    line-height: 1.25;
-    font-weight: 400;
-    text-transform: none;
-    padding-top: 9px;
-    padding-bottom: 6px;
-    padding-top: 6px;
-    padding-bottom: 4px;
-    font-weight: bold;
-    margin: 15px 0 10px; }
-    @media (max-width: 640px) {
-      main.transaction-1 .content h3 {
-        font-size: 20px;
-        line-height: 1.2; } }
-  main.transaction-1 .content p {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 19px;
-    line-height: 1.31579;
-    font-weight: 400;
-    text-transform: none;
-    padding-top: 2px;
-    padding-bottom: 8px;
-    padding-top: 0;
-    padding-bottom: 5px;
-    margin: 10px 0; }
-    @media (max-width: 640px) {
-      main.transaction-1 .content p {
-        font-size: 16px;
-        line-height: 1.25; } }
-
-main.transaction-2 .content {
-  width: 75%;
-  float: right; }
-  main.transaction-2 .content h2 {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 24px;
-    line-height: 1.25;
-    font-weight: 400;
-    text-transform: none;
-    padding-top: 9px;
-    padding-bottom: 6px;
-    padding-top: 6px;
-    padding-bottom: 4px;
-    font-weight: bold;
-    margin-bottom: 15px; }
-    @media (max-width: 640px) {
-      main.transaction-2 .content h2 {
-        font-size: 20px;
-        line-height: 1.2; } }
-  main.transaction-2 .content h3 {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 24px;
-    line-height: 1.25;
-    font-weight: 400;
-    text-transform: none;
-    padding-top: 9px;
-    padding-bottom: 6px;
-    padding-top: 6px;
-    padding-bottom: 4px;
-    font-weight: bold;
-    margin: 15px 0 10px; }
-    @media (max-width: 640px) {
-      main.transaction-2 .content h3 {
-        font-size: 20px;
-        line-height: 1.2; } }
-  main.transaction-2 .content p {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 19px;
-    line-height: 1.31579;
-    font-weight: 400;
-    text-transform: none;
-    padding-top: 2px;
-    padding-bottom: 8px;
-    padding-top: 0;
-    padding-bottom: 5px;
-    margin: 10px 0; }
-    @media (max-width: 640px) {
-      main.transaction-2 .content p {
-        font-size: 16px;
-        line-height: 1.25; } }
-
-main.transaction-3 .progress-indicator.horizontal {
-  margin-top: -30px; }
-  main.transaction-3 .progress-indicator.horizontal ul {
-    border-top: none; }
-main.transaction-3 .content h2 {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 24px;
-  line-height: 1.25;
-  font-weight: 400;
-  text-transform: none;
-  padding-top: 9px;
-  padding-bottom: 6px;
-  padding-top: 6px;
-  padding-bottom: 4px;
-  font-weight: bold;
-  margin-bottom: 15px; }
-  @media (max-width: 640px) {
-    main.transaction-3 .content h2 {
-      font-size: 20px;
-      line-height: 1.2; } }
-main.transaction-3 .content h3 {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 24px;
-  line-height: 1.25;
-  font-weight: 400;
-  text-transform: none;
-  padding-top: 9px;
-  padding-bottom: 6px;
-  padding-top: 6px;
-  padding-bottom: 4px;
-  font-weight: bold;
-  margin: 15px 0 10px; }
-  @media (max-width: 640px) {
-    main.transaction-3 .content h3 {
-      font-size: 20px;
-      line-height: 1.2; } }
-main.transaction-3 .content p {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 19px;
-  line-height: 1.31579;
-  font-weight: 400;
-  text-transform: none;
-  padding-top: 2px;
-  padding-bottom: 8px;
-  padding-top: 0;
-  padding-bottom: 5px;
-  margin: 10px 0; }
-  @media (max-width: 640px) {
-    main.transaction-3 .content p {
-      font-size: 16px;
-      line-height: 1.25; } }
-
-main.transaction-4 .content {
-  width: 75%;
-  float: right; }
-  main.transaction-4 .content h2 {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 24px;
-    line-height: 1.25;
-    font-weight: 400;
-    text-transform: none;
-    padding-top: 9px;
-    padding-bottom: 6px;
-    padding-top: 6px;
-    padding-bottom: 4px;
-    font-weight: bold;
-    margin-bottom: 15px; }
-    @media (max-width: 640px) {
-      main.transaction-4 .content h2 {
-        font-size: 20px;
-        line-height: 1.2; } }
-  main.transaction-4 .content h3 {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 24px;
-    line-height: 1.25;
-    font-weight: 400;
-    text-transform: none;
-    padding-top: 9px;
-    padding-bottom: 6px;
-    padding-top: 6px;
-    padding-bottom: 4px;
-    font-weight: bold;
-    margin: 15px 0 10px; }
-    @media (max-width: 640px) {
-      main.transaction-4 .content h3 {
-        font-size: 20px;
-        line-height: 1.2; } }
-  main.transaction-4 .content p {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 19px;
-    line-height: 1.31579;
-    font-weight: 400;
-    text-transform: none;
-    padding-top: 2px;
-    padding-bottom: 8px;
-    padding-top: 0;
-    padding-bottom: 5px;
-    margin: 10px 0; }
-    @media (max-width: 640px) {
-      main.transaction-4 .content p {
-        font-size: 16px;
-        line-height: 1.25; } }
-
 .design-guide .gov-uk {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
   line-height: 1.31579;
   font-weight: 400;
-<<<<<<< HEAD
   text-transform: none;
   -webkit-font-smoothing: antialiased; }
-=======
-  text-transform: none; }
->>>>>>> Update ie stylesheets
   @media (max-width: 640px) {
     .design-guide .gov-uk {
       font-size: 16px;
       line-height: 1.25; } }
-<<<<<<< HEAD
   .design-guide .gov-uk .text {
     max-width: 30em; }
-=======
-  .design-guide .gov-uk * {
-    max-width: 75ex; }
->>>>>>> Update ie stylesheets
   .design-guide .gov-uk h1,
   .design-guide .gov-uk .heading-48 {
     font-family: "nta", Arial, sans-serif;
@@ -1574,9 +1361,7 @@ main.transaction-4 .content {
     text-transform: none;
     font-weight: 700;
     margin-top: 10px;
-    margin-bottom: 5px;
-    margin-top: 20px;
-    margin-bottom: 10px; }
+    margin-top: 20px; }
     @media (max-width: 640px) {
       .design-guide .gov-uk h3,
       .design-guide .gov-uk .heading-19 {
@@ -1586,6 +1371,8 @@ main.transaction-4 .content {
   .design-guide .gov-uk pre {
     margin-top: 5px;
     margin-bottom: 20px; }
+  .design-guide .gov-uk h3 + p {
+    margin-top: 0; }
   .design-guide .gov-uk .data-80 {
     font-family: "nta", Arial, sans-serif;
     font-size: 80px;
@@ -1621,7 +1408,6 @@ main.transaction-4 .content {
       .design-guide .gov-uk .data p {
         font-size: 14px;
         line-height: 1.14286; } }
-<<<<<<< HEAD
   .design-guide .gov-uk dl,
   .design-guide .gov-uk menu,
   .design-guide .gov-uk ol,
@@ -1635,8 +1421,6 @@ main.transaction-4 .content {
     padding: 0 0 0 20px; }
   .design-guide .gov-uk ul {
     list-style-type: disc; }
-  .design-guide .gov-uk li {
-    margin-bottom: 5px; }
   .design-guide .gov-uk form {
     margin: 0; }
   .design-guide .gov-uk button,
@@ -1690,23 +1474,6 @@ main.transaction-4 .content {
     display: block;
     margin-bottom: 5px; }
 .design-guide .main {
-=======
-  .design-guide .gov-uk .button {
-    margin-right: 15px; }
-  .design-guide .gov-uk code {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.25;
-    font-weight: 300;
-    text-transform: none;
-    padding: 0 5px;
-    background: #dee0e2; }
-    @media (max-width: 640px) {
-      .design-guide .gov-uk code {
-        font-size: 14px;
-        line-height: 1.14286; } }
-.design-guide .grid-wrapper {
->>>>>>> Update ie stylesheets
   max-width: 1020px;
   width: auto;
   margin: 0 auto 90px; }
@@ -1733,216 +1500,12 @@ main.transaction-4 .content {
 .design-guide .grid-3-4 {
   width: 100%;
   width: 75%; }
-<<<<<<< HEAD
 .design-guide .text-secondary {
   color: #6f777b; }
 .design-guide .is-space {
   margin-bottom: 30px; }
 .design-guide .is-double-space {
   margin-bottom: 60px; }
-=======
-.design-guide .button {
-  background-color: #006435;
-  position: relative;
-  display: -moz-inline-stack;
-  display: inline-block;
-  padding: 0.35em 0.5em 0.15em 0.5em;
-  border: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  -webkit-appearance: none;
-  -webkit-box-shadow: 0 2px 0 #00180c;
-  -moz-box-shadow: 0 2px 0 #00180c;
-  box-shadow: 0 2px 0 #00180c;
-  border-bottom: 2px solid #00180c;
-  font-size: 1em;
-  line-height: 1.25;
-  text-decoration: none;
-  -webkit-font-smoothing: antialiased;
-  cursor: pointer;
-  color: white; }
-  .design-guide .button:visited {
-    background-color: #006435; }
-  .design-guide .button:hover, .design-guide .button:focus {
-    background-color: #004b27; }
-  .design-guide .button:active {
-    top: 2px;
-    -webkit-box-shadow: 0 0 0 #006435;
-    -moz-box-shadow: 0 0 0 #006435;
-    box-shadow: 0 0 0 #006435; }
-  .design-guide .button.disabled, .design-guide .button[disabled="disabled"], .design-guide .button[disabled] {
-    zoom: 1;
-    filter: alpha(opacity=50);
-    opacity: 0.5; }
-    .design-guide .button.disabled:hover, .design-guide .button[disabled="disabled"]:hover, .design-guide .button[disabled]:hover {
-      cursor: default;
-      background-color: #006435; }
-    .design-guide .button.disabled:active, .design-guide .button[disabled="disabled"]:active, .design-guide .button[disabled]:active {
-      top: 0;
-      -webkit-box-shadow: 0 2px 0 #00180c;
-      -moz-box-shadow: 0 2px 0 #00180c;
-      box-shadow: 0 2px 0 #00180c;
-      border-bottom: 2px solid #00180c; }
-  .design-guide .button:hover, .design-guide .button:focus, .design-guide .button:visited {
-    color: white; }
-  .design-guide .button:before {
-    content: "";
-    height: 110%;
-    width: 100%;
-    display: block;
-    background: transparent;
-    position: absolute;
-    top: 0;
-    left: 0; }
-  .design-guide .button:active:before {
-    top: -10%;
-    height: 120%; }
-  .design-guide .button[rel="external"]:after {
-    display: none;
-    content: none;
-    margin-left: 0;
-    margin-right: 0; }
-  .design-guide .button[type="submit"], .design-guide .button[type="reset"], .design-guide .button[type="button"] {
-    filter: chroma(color=black); }
-  .design-guide .button[type=submit].button {
-    filter: none; }
-.design-guide .button-secondary {
-  background-color: #dee0e2;
-  position: relative;
-  display: -moz-inline-stack;
-  display: inline-block;
-  padding: 0.35em 0.5em 0.15em 0.5em;
-  border: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  -webkit-appearance: none;
-  -webkit-box-shadow: 0 2px 0 #b5babe;
-  -moz-box-shadow: 0 2px 0 #b5babe;
-  box-shadow: 0 2px 0 #b5babe;
-  border-bottom: 2px solid #b5babe;
-  font-size: 1em;
-  line-height: 1.25;
-  text-decoration: none;
-  -webkit-font-smoothing: antialiased;
-  cursor: pointer;
-  color: #0b0c0c; }
-  .design-guide .button-secondary:visited {
-    background-color: #dee0e2; }
-  .design-guide .button-secondary:hover, .design-guide .button-secondary:focus {
-    background-color: #d0d3d6; }
-  .design-guide .button-secondary:active {
-    top: 2px;
-    -webkit-box-shadow: 0 0 0 #dee0e2;
-    -moz-box-shadow: 0 0 0 #dee0e2;
-    box-shadow: 0 0 0 #dee0e2; }
-  .design-guide .button-secondary.disabled, .design-guide .button-secondary[disabled="disabled"], .design-guide .button-secondary[disabled] {
-    zoom: 1;
-    filter: alpha(opacity=50);
-    opacity: 0.5; }
-    .design-guide .button-secondary.disabled:hover, .design-guide .button-secondary[disabled="disabled"]:hover, .design-guide .button-secondary[disabled]:hover {
-      cursor: default;
-      background-color: #dee0e2; }
-    .design-guide .button-secondary.disabled:active, .design-guide .button-secondary[disabled="disabled"]:active, .design-guide .button-secondary[disabled]:active {
-      top: 0;
-      -webkit-box-shadow: 0 2px 0 #b5babe;
-      -moz-box-shadow: 0 2px 0 #b5babe;
-      box-shadow: 0 2px 0 #b5babe;
-      border-bottom: 2px solid #b5babe; }
-  .design-guide .button-secondary:hover, .design-guide .button-secondary:focus, .design-guide .button-secondary:visited {
-    color: #0b0c0c; }
-  .design-guide .button-secondary:before {
-    content: "";
-    height: 110%;
-    width: 100%;
-    display: block;
-    background: transparent;
-    position: absolute;
-    top: 0;
-    left: 0; }
-  .design-guide .button-secondary:active:before {
-    top: -10%;
-    height: 120%; }
-  .design-guide .button-secondary[rel="external"]:after {
-    display: none;
-    content: none;
-    margin-left: 0;
-    margin-right: 0; }
-  .design-guide .button-secondary[type="submit"], .design-guide .button-secondary[type="reset"], .design-guide .button-secondary[type="button"] {
-    filter: chroma(color=black); }
-  .design-guide .button-secondary[type=submit].button {
-    filter: none; }
-.design-guide .button-warning {
-  background-color: #b10e1e;
-  position: relative;
-  display: -moz-inline-stack;
-  display: inline-block;
-  padding: 0.35em 0.5em 0.15em 0.5em;
-  border: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  -webkit-appearance: none;
-  -webkit-box-shadow: 0 2px 0 #6a0812;
-  -moz-box-shadow: 0 2px 0 #6a0812;
-  box-shadow: 0 2px 0 #6a0812;
-  border-bottom: 2px solid #6a0812;
-  font-size: 1em;
-  line-height: 1.25;
-  text-decoration: none;
-  -webkit-font-smoothing: antialiased;
-  cursor: pointer;
-  color: white; }
-  .design-guide .button-warning:visited {
-    background-color: #b10e1e; }
-  .design-guide .button-warning:hover, .design-guide .button-warning:focus {
-    background-color: #990c1a; }
-  .design-guide .button-warning:active {
-    top: 2px;
-    -webkit-box-shadow: 0 0 0 #b10e1e;
-    -moz-box-shadow: 0 0 0 #b10e1e;
-    box-shadow: 0 0 0 #b10e1e; }
-  .design-guide .button-warning.disabled, .design-guide .button-warning[disabled="disabled"], .design-guide .button-warning[disabled] {
-    zoom: 1;
-    filter: alpha(opacity=50);
-    opacity: 0.5; }
-    .design-guide .button-warning.disabled:hover, .design-guide .button-warning[disabled="disabled"]:hover, .design-guide .button-warning[disabled]:hover {
-      cursor: default;
-      background-color: #b10e1e; }
-    .design-guide .button-warning.disabled:active, .design-guide .button-warning[disabled="disabled"]:active, .design-guide .button-warning[disabled]:active {
-      top: 0;
-      -webkit-box-shadow: 0 2px 0 #6a0812;
-      -moz-box-shadow: 0 2px 0 #6a0812;
-      box-shadow: 0 2px 0 #6a0812;
-      border-bottom: 2px solid #6a0812; }
-  .design-guide .button-warning:hover, .design-guide .button-warning:focus, .design-guide .button-warning:visited {
-    color: white; }
-  .design-guide .button-warning:before {
-    content: "";
-    height: 110%;
-    width: 100%;
-    display: block;
-    background: transparent;
-    position: absolute;
-    top: 0;
-    left: 0; }
-  .design-guide .button-warning:active:before {
-    top: -10%;
-    height: 120%; }
-  .design-guide .button-warning[rel="external"]:after {
-    display: none;
-    content: none;
-    margin-left: 0;
-    margin-right: 0; }
-  .design-guide .button-warning[type="submit"], .design-guide .button-warning[type="reset"], .design-guide .button-warning[type="button"] {
-    filter: chroma(color=black); }
-  .design-guide .button-warning[type=submit].button {
-    filter: none; }
-.design-guide .example {
-  color: #0076c0;
-  font-style: normal; }
->>>>>>> Update ie stylesheets
 
 .design-guide {
   max-width: 1020px;
