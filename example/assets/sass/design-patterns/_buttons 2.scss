@@ -1,0 +1,32 @@
+.button {
+   @include button;
+}
+.button-secondary {
+   @include button($highlight-colour);
+}
+.button-warning {
+   @include button($red);
+}
+
+// Additional styles for consistent button size and alignment
+
+.button,
+.button-secondary,
+.button-warning {
+    margin: 0 $gutter-half $gutter-half 0;
+    vertical-align: top;
+}
+
+%link-style,
+.link-style {
+    display: inline;
+    color: $link-colour;
+    -webkit-appearance:none;
+    background: none;
+    border: none;
+    text-decoration: underline;
+  &:hover {
+    color: $link-hover-colour;
+    cursor: pointer;
+  }
+}

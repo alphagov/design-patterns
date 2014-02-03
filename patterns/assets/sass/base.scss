@@ -33,20 +33,18 @@
 // The name of the file should match the single selector inside the file and
 // everything else should be nested under that selector,
 
-// Layout helpers
-@import "helpers/block";
-@import "helpers/phase-block";
-
-@import "helpers/progress-indicator";
-@import "helpers/step-navigation";
-@import "helpers/service-header";
-@import "helpers/buttons";
-@import "helpers/forms";
-@import "helpers/date-of-birth";
-@import "helpers/breadcrumbs";
-@import "helpers/address-finder";
-@import "helpers/progressive-disclosure";
-
+// Design Patterns
+// Import design patterns
+@import "../../../example/assets/sass/design-patterns/address-finder";
+@import "../../../example/assets/sass/design-patterns/alpha-beta";
+@import "../../../example/assets/sass/design-patterns/block";
+@import "../../../example/assets/sass/design-patterns/breadcrumb";
+@import "../../../example/assets/sass/design-patterns/buttons";
+@import "../../../example/assets/sass/design-patterns/date-of-birth";
+@import "../../../example/assets/sass/design-patterns/forms";
+@import "../../../example/assets/sass/design-patterns/phase-block";
+@import "../../../example/assets/sass/design-patterns/progress-indicator";
+@import "../../../example/assets/sass/design-patterns/progressive-disclosure";
 
 // # Views
 // Views are where you style the layout of a single page and any elements which

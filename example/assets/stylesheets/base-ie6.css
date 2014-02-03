@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @-ms-viewport {
   width: device-width; }
 
@@ -34,9 +35,9 @@
    }
 
 */
-.grid-wrapper, .cf {
+.grid-wrapper, .cf, .date-of-birth, .phase-block, .progress-indicator.horizontal ol, .progress-indicator.horizontal ul, .progress-indicator.vertical ol, .progress-indicator.vertical ul {
   zoom: 1; }
-  .grid-wrapper:after, .cf:after {
+  .grid-wrapper:after, .cf:after, .date-of-birth:after, .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after {
     content: "";
     display: block;
     clear: both; }
@@ -87,9 +88,9 @@
    }
 
 */
-.grid-wrapper, .cf {
+.grid-wrapper, .cf, .date-of-birth, .phase-block, .progress-indicator.horizontal ol, .progress-indicator.horizontal ul, .progress-indicator.vertical ol, .progress-indicator.vertical ul {
   zoom: 1; }
-  .grid-wrapper:after, .cf:after {
+  .grid-wrapper:after, .cf:after, .date-of-birth:after, .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after {
     content: "";
     display: block;
     clear: both; }
@@ -120,9 +121,9 @@
    }
 
 */
-.grid-wrapper, .cf {
+.grid-wrapper, .cf, .date-of-birth, .phase-block, .progress-indicator.horizontal ol, .progress-indicator.horizontal ul, .progress-indicator.vertical ol, .progress-indicator.vertical ul {
   zoom: 1; }
-  .grid-wrapper:after, .cf:after {
+  .grid-wrapper:after, .cf:after, .date-of-birth:after, .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after {
     content: "";
     display: block;
     clear: both; }
@@ -372,6 +373,10 @@ Example usage:
 .is-double-space {
   margin-bottom: 60px; }
 
+#find-uk-address {
+  margin-left: 10px;
+  vertical-align: -1px; }
+
 .phase-banner {
   padding: 8px 0;
   background-color: #d53880; }
@@ -426,28 +431,6 @@ Example usage:
         color: #0b0c0c; }
         #global-breadcrumb nav ol li a:hover {
           color: #2e8aca; }
-
-.hint {
-  display: block;
-  font-family: "nta", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 300;
-  text-transform: none;
-  color: #6f777b;
-  margin-top: 5px; }
-  @media (max-width: 640px) {
-    .hint {
-      font-size: 14px;
-      line-height: 1.14286; } }
-
-.field-with-errors label,
-.field-with-errors input {
-  color: #B94A48; }
-.field-with-errors input,
-.field-with-errors textarea {
-  background-color: #F2DEDE;
-  border-color: #EED3D7; }
 
 .button {
   background-color: #006435;
@@ -661,6 +644,274 @@ Example usage:
     filter: chroma(color=black); }
   .button-warning[type=submit].button {
     filter: none; }
+
+.date-of-birth .control {
+  width: 60px;
+  width: 69px;
+  float: left; }
+  .date-of-birth .control.day input, .date-of-birth .control.month input {
+    width: 40px; }
+    .date-of-birth .control.day input:after, .date-of-birth .control.month input:after {
+      content: "/"; }
+  .date-of-birth .control.year input {
+    width: 60px; }
+
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"],
+.form input[type="date"],
+.form input[type="datetime"],
+.form input[type="datetime-local"],
+.form input[type="email"],
+.form input[type="month"],
+.form input[type="number"],
+.form input[type="search"],
+.form input[type="tel"],
+.form input[type="time"],
+.form input[type="url"],
+.form input[type="week"] {
+  background-color: #f8f8f8;
+  border: 2px inset;
+  padding: 2px 0 2px 8px; }
+  .form input[type="text"].postcode,
+  .form input[type="password"].postcode,
+  .form input[type="email"].postcode,
+  .form input[type="date"].postcode,
+  .form input[type="datetime"].postcode,
+  .form input[type="datetime-local"].postcode,
+  .form input[type="email"].postcode,
+  .form input[type="month"].postcode,
+  .form input[type="number"].postcode,
+  .form input[type="search"].postcode,
+  .form input[type="tel"].postcode,
+  .form input[type="time"].postcode,
+  .form input[type="url"].postcode,
+  .form input[type="week"].postcode {
+    width: 100px; }
+.form textarea {
+  width: 97%;
+  background-color: #f8f8f8;
+  border: 2px inset;
+  padding: 2px 0 2px 8px; }
+.form label {
+  display: block;
+  padding-right: 10px;
+  padding-top: 5px; }
+.form select {
+  font-size: 19px;
+  margin-left: 0; }
+.form .control {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none;
+  padding: 8px 0; }
+  @media (max-width: 640px) {
+    .form .control {
+      font-size: 16px;
+      line-height: 1.25; } }
+.form fieldset {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  font-weight: 700; }
+  @media (max-width: 640px) {
+    .form fieldset {
+      font-size: 20px;
+      line-height: 1.2; } }
+.form .hint {
+  color: #6f777b; }
+.form .field-with-errors label,
+.form .field-with-errors input {
+  color: #B94A48; }
+.form .field-with-errors input,
+.form .field-with-errors textarea {
+  background-color: #F2DEDE;
+  border-color: #EED3D7; }
+
+.phase-block {
+  display: inline;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .phase-block .alpha {
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    display: inline;
+    background-color: #d53880;
+    color: #fff;
+    font-family: "nta", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 300;
+    text-transform: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin: 3px 10px 0 5px;
+    padding: 2px 5px 0; }
+    @media (max-width: 640px) {
+      .phase-block .alpha {
+        font-size: 14px;
+        line-height: 1.14286; } }
+  .phase-block .beta {
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    display: inline;
+    background-color: #f47738;
+    color: #fff;
+    font-family: "nta", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 300;
+    text-transform: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    margin: 3px 10px 0 5px;
+    padding: 2px 5px 0; }
+    @media (max-width: 640px) {
+      .phase-block .beta {
+        font-size: 14px;
+        line-height: 1.14286; } }
+  .phase-block .alpha,
+  .phase-block .beta {
+    display: inline;
+    vertical-align: middle;
+    float: none; }
+
+.progress-indicator.compact {
+  margin: 30px 0 0 30px;
+  color: #6f777b; }
+.progress-indicator.horizontal, .progress-indicator.vertical {
+  margin-bottom: 30px;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none; }
+  @media (max-width: 640px) {
+    .progress-indicator.horizontal, .progress-indicator.vertical {
+      font-size: 16px;
+      line-height: 1.25; } }
+  .progress-indicator.horizontal ol, .progress-indicator.horizontal ul, .progress-indicator.vertical ol, .progress-indicator.vertical ul {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-color: #bfc1c3;
+    list-style-type: none;
+    margin: 0 0 0 30px;
+    padding: 0; }
+  .progress-indicator.horizontal li, .progress-indicator.vertical li {
+    float: left;
+    margin: 0 40px -1px 0;
+    padding: 10px 0 5px 0;
+    color: #6f777b;
+    border-bottom: 5px solid transparent; }
+    .progress-indicator.horizontal li a, .progress-indicator.vertical li a {
+      display: block;
+      text-decoration: none; }
+      .progress-indicator.horizontal li a:hover, .progress-indicator.vertical li a:hover {
+        color: #2e3191;
+        text-decoration: underline; }
+    .progress-indicator.horizontal li.active, .progress-indicator.vertical li.active {
+      border-bottom: 5px solid #0b0c0c;
+      color: #0b0c0c; }
+      .progress-indicator.horizontal li.active a, .progress-indicator.vertical li.active a {
+        color: #0b0c0c; }
+    .progress-indicator.horizontal li span, .progress-indicator.vertical li span {
+      float: right;
+      font-family: "nta", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.25;
+      font-weight: 300;
+      text-transform: none; }
+      @media (max-width: 640px) {
+        .progress-indicator.horizontal li span, .progress-indicator.vertical li span {
+          font-size: 14px;
+          line-height: 1.14286; } }
+    .progress-indicator.horizontal li.done span, .progress-indicator.vertical li.done span {
+      font-weight: bold;
+      color: #006435;
+          /*
+
+          text-indent: -9999px;
+          margin-right: 5px;
+          margin-left: -16px;
+          width: 5px;
+          margin-top: -23px;
+          height: 10px;
+          border-right: 3px solid;
+          border-bottom: 3px solid;
+          border-color: $green;
+          -webkit-transform: rotate(45deg);
+          position: absolute;
+          */ }
+.progress-indicator.horizontal li.done span {
+  display: none; }
+.progress-indicator.vertical {
+  width: 25%;
+  float: left; }
+  .progress-indicator.vertical li {
+    float: none;
+    margin-right: 0; }
+    .progress-indicator.vertical li.done span {
+      position: relative;
+      margin-top: 3px; }
+
+/* Example use:
+    <details>
+      <summary>Wanna know more?</sumary>
+      <p>Of course you do!</p>
+    </details>
+*/
+details {
+  display: block;
+  margin: 0;
+  padding-left: 10px;
+  border-left: 4px solid #fff; }
+  details summary {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 19px;
+    line-height: 1.31579;
+    font-weight: 400;
+    text-transform: none;
+    display: block;
+    padding-bottom: 5px;
+    margin-top: 3px;
+    margin-left: -18px;
+    background: #fff; }
+    @media (max-width: 640px) {
+      details summary {
+        font-size: 16px;
+        line-height: 1.25; } }
+  details[open] {
+    margin: 0;
+    border-left-color: #bfc1c3; }
+    details[open] summary:focus {
+      outline: none;
+      background-color: #fff; }
+
+/* Styles for browsers that don't yet natively support details/summary */
+.no-details details > * {
+  display: none; }
+
+.no-details details > summary:before {
+  float: left;
+  width: 20px;
+  content: '► '; }
+
+.no-details details.open > summary:before {
+  content: '▼ '; }
+
+.no-details details summary {
+  display: block; }
 
 code,
 pre {

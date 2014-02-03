@@ -22,10 +22,15 @@
 @import "govuk-boilerplate/main";
 
 // Import design patterns
+@import "design-patterns/address-finder";
 @import "design-patterns/alpha-beta";
 @import "design-patterns/breadcrumb";
-@import "design-patterns/form";
 @import "design-patterns/buttons";
+@import "design-patterns/date-of-birth";
+@import "design-patterns/forms";
+@import "design-patterns/phase-block";
+@import "design-patterns/progress-indicator";
+@import "design-patterns/progressive-disclosure";
 
 // Example styles, no need to include in your project
 @import "example/example";
