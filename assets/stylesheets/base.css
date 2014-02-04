@@ -691,9 +691,9 @@ Example usage:
 .form input[type="time"],
 .form input[type="url"],
 .form input[type="week"] {
-  background-color: #f8f8f8;
-  border: 2px inset;
-  padding: 2px 0 2px 8px; }
+  background-color: white;
+  border: 1px solid #bfc1c3;
+  padding: 3px 0 3px 8px; }
   @media (max-width: 640px) {
     .form input[type="text"],
     .form input[type="password"],
@@ -744,9 +744,9 @@ Example usage:
     width: 100px; }
 .form textarea {
   width: 97%;
-  background-color: #f8f8f8;
-  border: 2px inset;
-  padding: 2px 0 2px 8px; }
+  background-color: white;
+  border: 1px solid #bfc1c3;
+  padding: 3px 0 3px 8px; }
   @media (max-width: 640px) {
     .form textarea {
       width: 300px; } }

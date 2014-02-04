@@ -14,9 +14,9 @@
   input[type="time"],
   input[type="url"],
   input[type="week"]{
-    background-color: $highlight-colour;
-    border: 2px inset;
-    padding: 2px 0 2px 8px;
+    background-color: $white;
+    border: 1px solid $border-colour;
+    padding: 3px 0 3px 8px;
     
     @include media(mobile) {
       width: 97%;
@@ -33,9 +33,9 @@
   textarea{
     width: 97%;
     
-    background-color: $highlight-colour;
-    border: 2px inset;
-    padding: 2px 0 2px 8px;    
+    background-color: $white;
+    border: 1px solid $border-colour;
+    padding: 3px 0 3px 8px;    
     @include media("mobile") {
       width: 300px;    
     }
