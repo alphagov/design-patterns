@@ -11,7 +11,7 @@ phases:
     <ol class="group">
       <li><a href="https://www.gov.uk">Home</a></li>
       <li><a href="{{ site.baseurl }}/">Guides</a></li>
-      <li><a href="{{ site.baseurl }}/example/">Examples</a></li>
+      <li><a href="{{ site.baseurl }}/example/">Design style guide examples</a></li>
     </ol>
   </nav>
 </div>

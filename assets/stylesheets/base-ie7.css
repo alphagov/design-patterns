@@ -669,6 +669,17 @@ Example usage:
   .button-warning[type=submit].button {
     filter: none; }
 
+.link-style {
+  display: inline;
+  color: #005ea5;
+  -webkit-appearance: none;
+  background: none;
+  border: none;
+  text-decoration: underline; }
+  .link-style:hover {
+    color: #2e8aca;
+    cursor: pointer; }
+
 .date-of-birth .control {
   width: 60px;
   width: 69px;

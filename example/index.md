@@ -1,7 +1,7 @@
 ---
 layout: template-example
 document-type: Guide
-title: Design guide examples
+title: Design style guide examples
 phases:
   - alpha
 ---
@@ -11,7 +11,7 @@ phases:
     <ol class="group">
       <li><a href="https://www.gov.uk">Home</a></li>
       <li><a href="{{ site.baseurl }}/">Guides</a></li>
-      <li><a href="{{ site.baseurl }}/example/">Examples</a></li>
+      <li><a href="{{ site.baseurl }}/example/">Design style guide examples</a></li>
     </ol>
   </nav>
 </div>
@@ -28,7 +28,7 @@ phases:
         </h1>
 
         <p>
-          These examples show how to get started using the <a href="https://github.com/alphagov/design-patterns/tree/gh-pages/example/assets/sass/govuk-boilerplate">GOV.UK boilerplate</a> and create  basic styles for typography and grid layout.
+          These examples show how to get started using the <a href="https://github.com/alphagov/design-patterns/blob/gh-pages/assets/sass/govuk-boilerplate/_main.scss">GOV.UK boilerplate</a> and create  basic styles for typography and grid layout.
         </p>
 
         <p>
