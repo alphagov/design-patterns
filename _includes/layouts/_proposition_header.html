@@ -1,22 +1,14 @@
-{% if page.service-header == 'default' %}
-
 <div class="header-proposition">
   <div class="content">
     <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
     <nav id="proposition-menu">
-    <span id="proposition-name"><a href="/patterns">{{ page.service-title }}</a> <span class="alpha">Alpha</span></span>
-      {% if page.proposition-links %}
-      <nav class="account">
-        <ul>
-          {% for link in page.transaction-links %}
-          <li><a href="#">{{ link }}</a></li>
-          {% endfor %}
-        </ul>
-      </nav>
-      {% endif %}
+      <a href="https://www.gov.uk/service-manual" id="proposition-name">Government Service Design Manual</a>
+      <ul id="proposition-links">
+        <li><a href="https://www.gov.uk/service-manual/digital-by-default" class="">Digital by Default Service Standard</a></li>
+        <li><a href="https://www.gov.uk/service-manual/start" class="">Start using the manual</a></li>
+        <li><a href="https://www.gov.uk/contact/govuk" class="">Feedback</a></li>
+      </ul>
     </nav>
   </div>
 </div>
-
-{% endif %}
 

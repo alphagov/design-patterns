@@ -1,5 +1,5 @@
 ---
-layout: template-design-patterns
+layout: template-homepage
 document-type: Guide
 title: Design patterns
 phases:
