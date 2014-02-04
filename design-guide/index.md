@@ -9,12 +9,19 @@ phases:
 
 <!-- About this guide -->
 <div class="guide" id="guide-about">
-  <p>Use this guide to help you achieve a consistent look across government services.</p>
+  <p>Use this guide to help you make your service look consistent with the rest of GOV.UK.</p>
 </div>
+
+1. **[Typography](#guide-typography)**
+2. **[Grids](#guide-grid)**
+3. **[Images](#guide-images)**
+4. **[Data](#guide-data)**
+5. **[Colour](#guide-colour)**
+6. **[Forms](#guide-forms)**
 
 <!-- Typography -->
 <div class="guide" id="guide-typography">
-  <h2 class="guide-header">Typography</h2>
+  <h2 class="guide-header">1. Typography</h2>
   <p>
     Services should use clear, easy to read type, with consistent styles and a clear hierarchy of information.
   </p>
@@ -125,7 +132,7 @@ phases:
 
 <!-- Grid -->
 <div class="guide" id="guide-grid">
-  <h2 class="guide-header">Grid</h2>
+  <h2 class="guide-header">2. Grids</h2>
   <p>
     Tablet or desktop layouts use either a three or four column fluid grid. 
   </p>
@@ -217,7 +224,7 @@ phases:
 
 <!-- Images -->
 <div class="guide" id="guide-images">
-  <h2 class="guide-header">Images</h2>
+  <h2 class="guide-header">3. Images</h2>
   <p>
     Avoid using images, GOV.UK is for services and information, not photographs. If images cannot be avoided they should be landscape, 3:2 aspect ratio.
   </p>
@@ -242,7 +249,7 @@ phases:
 
 <!-- Data -->
 <div class="guide" id="guide-data">
-  <h2 class="guide-header">Data</h2>
+  <h2 class="guide-header">4. Data</h2>
   <p>
     Data is recommended as an alternative to using photography.
   </p>
@@ -299,7 +306,7 @@ phases:
 
 <!-- Colour palette -->
 <div class="guide" id="guide-colour">
-  <h2 class="guide-header">Colour</h2>
+  <h2 class="guide-header">5. Colour</h2>
   <p>
     The GOV.UK Service Design Manual shows HEX values and Sass variable names for the <a href="https://www.gov.uk/service-manual/user-centered-design/resources/colour-palettes.html">GOV.UK colour palette</a>. Using the Sass variables in the GOV.UK frontend toolkit is recommended, in case these colours are updated. 
   </p>
@@ -336,7 +343,7 @@ phases:
 
 <!-- Buttons -->
 <div class="guide" id="guide-buttons">
-  <h2 class="guide-header">Buttons</h2>
+  <h2 class="guide-header">6. Buttons</h2>
   <p>
     Primary action buttons are green, secondary action buttons are grey, irreversible action buttons are red.
   </p>
