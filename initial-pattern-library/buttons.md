@@ -1,6 +1,5 @@
 ---
-layout: template-design-patterns
-document-type: Design pattern
+layout: pattern
 title: Buttons
 page-class: 'buttons'
 discuss-url: https://designpatterns.hackpad.com/Buttons-zoP1sKiW3y4

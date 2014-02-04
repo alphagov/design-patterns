@@ -1,6 +1,5 @@
 ---
-layout: template-design-patterns
-document-type: Guide
+layout: home
 title: Design patterns
 phases:
   - alpha
@@ -10,7 +9,11 @@ If you're designing or building services for GOV.UK this library can help you.
 It contains guidance and examples for some of the more common design problems.
 If you'd like to discuss a pattern or suggest a new one you can do this on the [design patterns wiki](https://designpatterns.hackpad.com/Pattern-library-0eUk1OdHvql).
 
-##The patterns
+####The guide
+
+* [GOV.UK design guide](design-guide.html)
+
+####The patterns
 
 * [Addresses](addresses.html)
 * [Buttons](buttons.html)
@@ -30,5 +33,5 @@ If you'd like to discuss a pattern or suggest a new one you can do this on the [
 ## Code examples
 
 All the code for the examples in this library is [available on Github](https://github.com/alphagov/design-patterns) and linked to from each pattern page.
-
 This code should be considered a starting point for your own designs. It's not supported by GDS and you'll need to integrate it into your service in the most appropriate way.
+

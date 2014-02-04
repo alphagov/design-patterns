@@ -1,6 +1,5 @@
 ---
-layout: template-design-patterns
-document-type: Design pattern
+layout: pattern
 title: Progress indicators
 page-class: 'progress-indicator'
 discuss-url: https://designpatterns.hackpad.com/Progress-indicators-3AOrLoia9Us

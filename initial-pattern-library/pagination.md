@@ -1,6 +1,5 @@
 ---
-layout: template-design-patterns
-document-type: Design pattern
+layout: pattern
 title: Pagination
 page-class: 'pagination'
 discuss-url: https://designpatterns.hackpad.com/Pagination-erRdhBW8sAK

@@ -1,6 +1,5 @@
 ---
-layout: template-design-patterns
-document-type: Design pattern
+layout: pattern
 title: Addresses
 page-class: 'addresses'
 discuss-url: https://designpatterns.hackpad.com/Address-CgrMSGRAhRc
@@ -20,13 +19,13 @@ There are a couple of ways to capture addresses. Which one you choose will depen
 
 A single, multi-line text box where users write out the address in full.
 
-<div class="example">
-  <form class="form">
-    <div class="control">
-      <label for="address">Full address</label>
-      <textarea type="text" id="address" rows="5"></textarea>
-    </div>
-  </form>
+<div class="pattern-example">
+	<form class="form">
+		<div class="control">
+	  		<label for="address">Full address</label>
+	  		<textarea type="text" id="address" rows="5"></textarea>
+		</div>
+	</form>
 </div>
 
 #### Pros
@@ -49,7 +48,7 @@ A single, multi-line text box where users write out the address in full.
 
 The address is broken down into multiple fields. Here's an example that works for simple UK addresses:
 
-<div class="example">
+<div class="pattern-example">
 	<form class="form">
 		<div class="control">
 	  		<label for="ex2-street">Street address</label>
@@ -125,3 +124,5 @@ Here's an example that combines an address finder, with a free text box. This ap
 </div>
 
 **Note:** The above example is purely to demonstrate the interaction, it's not production code.
+
+

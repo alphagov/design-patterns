@@ -1,6 +1,5 @@
 ---
-layout: template-design-patterns
-document-type: Design pattern
+layout: pattern
 title: People's names
 page-class: 'peoples-names'
 discuss-url: https://designpatterns.hackpad.com/Peoples-names-mgFWXkwyPEt

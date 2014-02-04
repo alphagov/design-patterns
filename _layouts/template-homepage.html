@@ -1,0 +1,36 @@
+---
+layout: default
+service-title: "Guides for designers"
+document-type: Guides
+header-class: class="with-proposition"
+has-proposition: true
+---
+
+<div id="global-breadcrumb" class="breadcrumb">
+  <nav role="navigation">
+    <ol class="group">
+      <li><a href="https://www.gov.uk">Home</a></li>
+      <li><a href="{{ site.baseurl }}/">Guides</a></li>
+    </ol>
+  </nav>
+</div>
+
+<main class="main gov-uk design-guide">
+
+  <div class="grid-wrapper">
+    <div class="grid">
+      <div class="inner-block">
+        
+        <div class="text">
+          <h1>
+            <span class="document-type">{{ page.document-type }}</span>
+            {{ page.title }} {% include _phase-block.html %}
+          </h1>
+          {{ content }}
+        </div>
+        
+      </div>
+    </div>
+  </div><!-- /.grid-wrapper -->
+
+</main><!-- /.main -->

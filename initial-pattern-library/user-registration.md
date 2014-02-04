@@ -1,6 +1,5 @@
 ---
-layout: template-design-patterns
-document-type: Design pattern
+layout: pattern
 title: User registration
 page-class: 'user-registration'
 discuss-url: https://designpatterns.hackpad.com/Passwords-email-addresses-and-logins-4dSSBUhCYjj

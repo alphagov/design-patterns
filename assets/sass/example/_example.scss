@@ -1,0 +1,175 @@
+// Styles used only for Design Guide examples
+
+// ==========================================================================
+// Design Guide & Design Patterns styles
+// ==========================================================================
+
+.design-guide {
+  
+  // Design Guide layout
+  
+  .page-metadata {
+    border-top: 5px solid $black;
+    padding-top: $gutter-two-thirds;
+  }
+  
+  .page-metadata dt {
+    @include core-16;
+  }
+  
+  .page-metadata dd {
+    @include bold-24;
+    margin-bottom: $gutter-third;
+  }
+  
+  .page-actions {
+    margin: $gutter 0;
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .page-actions li {
+    @include bold-19;
+    margin-bottom: $gutter-third;
+  }
+  
+  // Adjust typography
+  .guide-subheader {
+    margin-bottom: 0;
+  }
+  
+  // Code and example format and highlighting
+  code,
+  pre {
+    @include core-16;
+    font-family: monospace, serif;
+    padding: 0 5px;
+    background: $grey-3;
+  }
+
+  pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .highlight {
+    color: $hm-government;
+    font-style: normal;
+  }
+  
+}
+
+
+// ==========================================================================
+// Design Guide - In-page examples (grey boxes)
+// ==========================================================================
+
+.example,
+.pattern-example {
+  
+  @extend %contain-floats;
+  
+  border: 1px solid #bfc1c3;
+  outline: $gutter-half solid #f8f8f8;
+  margin: $gutter 0 $gutter*2 0;
+  padding: $gutter-half;
+  @include media(tablet) {
+    padding: $gutter $gutter-half;
+  }
+  
+  code {
+    display: block;
+    padding: 0 0 $gutter 0;
+    background: none;
+  }
+  
+  // Highlight font sizes
+  em {
+    font-style: normal;
+    color: $hm-government;
+  }
+  
+  // Colours
+  .swatch {
+    width: $gutter*2;
+    height: $gutter*2;
+    display: block;
+    margin-bottom: $gutter;
+  }
+  .text-secondary {
+    color: $secondary-text-colour;
+  }
+  .colour-hm-government {
+    background: $hm-government;
+  }
+  .colour-department-of-health {
+    background: $department-of-health;
+  }
+  
+  // Buttons
+  .button,
+  .button-secondary,
+  .button-warning {
+    float: left;
+    margin-right: $gutter-half;
+    margin-bottom: 2px;
+  }
+}
+
+// Design Guide - Grid example
+
+.example-grid {
+  background: white;
+  padding: 15px 0 10px 0;
+  @include media(tablet) {
+    padding: 25px 0 20px 0;
+  }
+}
+
+.example-grid p {
+  width: 100%;
+  background: url("../images/example/grid.png") 0 0 repeat;
+  min-height: 30px;
+  margin-bottom: 10px;
+  @include media(tablet) {
+    min-height: 60px;
+  }
+  overflow: hidden;
+  text-indent: -99em;
+}
+
+// Design Guide - Image example
+
+.example-images {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.example-images img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+
+// ==========================================================================
+// Design Guide example pages
+// ==========================================================================
+
+// Let's see how the grid works
+
+.example-highlight-grid {
+  
+  .grid-wrapper {
+    background:  $grey-2;
+  }
+  
+  .grid {
+    background: $grey-4;
+  }
+  
+  .grid .inner-block * {
+    background: $grey-3;
+  }
+  
+}

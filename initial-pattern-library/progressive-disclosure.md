@@ -1,6 +1,5 @@
 ---
-layout: template-design-patterns
-document-type: Design pattern
+layout: pattern
 title: Progressive disclosure
 page-class: 'progressive-disclosure'
 discuss-url: https://designpatterns.hackpad.com/

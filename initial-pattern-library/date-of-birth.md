@@ -1,6 +1,5 @@
 ---
-layout: template-design-patterns
-document-type: Design pattern
+layout: pattern
 title: Date of birth
 page-class: 'date-of-birth'
 discuss-url: https://designpatterns.hackpad.com/Date-of-birth-648NbMKNYTr

@@ -4,7 +4,7 @@ lsi:         false
 pygments:    false
 markdown:    kramdown
 permalink:   :title
-baseurl:     /design-patterns
+baseurl:     /
 kramdown:
   auto_ids: true,
   footnote_nr: 1
@@ -28,4 +28,4 @@ kramdown:
 __default_layouts:
   default: 'default'
 
-govuk_template_assets: '/patterns/assets/govuk_template'
+govuk_template_assets: '/assets/govuk_template'
