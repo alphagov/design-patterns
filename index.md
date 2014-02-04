@@ -1,19 +1,15 @@
 ---
 layout: template-homepage
-title: Guides
+title: Design guides
 phases:
   - alpha
 ---
 
-## Intro text here
-Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. xx
-
-###The guide
-* [GOV.UK design guide]({{ site.baseurl }}/design-guide/)
+New guides for designers, researchers and front end developers building services for GOV.UK. All of these guides are in alpha and subject to change. For the current set of live design guides, see the [GOV.UK service manual](https://www.gov.uk/service-manual/designers).
 
 
-###Getting started
+###The guides
+
+* [Design style guide]({{ site.baseurl }}/design-guide/)
 * [GOV.UK guide examples]({{ site.baseurl }}/example/)
-
-###Design patterns
-* [GOV.UK design patterns]({{ site.baseurl }}/patterns/)
+* [Design patterns]({{ site.baseurl }}/patterns/)
