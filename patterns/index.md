@@ -10,7 +10,7 @@ If you're designing or building services for GOV.UK this library can help you.
 It contains guidance and examples for some of the more common design problems.
 If you'd like to discuss a pattern or suggest a new one you can do this on the [design patterns wiki](https://designpatterns.hackpad.com/Pattern-library-0eUk1OdHvql).
 
-##The patterns
+### The patterns
 
 * [Addresses](addresses.html)
 * [Buttons](buttons.html)

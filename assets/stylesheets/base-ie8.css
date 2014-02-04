@@ -203,9 +203,9 @@ Example usage:
           font-size: 18px;
           line-height: 1.11111; } }
   .gov-uk h2,
-  .gov-uk .heading-27 {
+  .gov-uk .heading-36 {
     font-family: "nta", Arial, sans-serif;
-    font-size: 27px;
+    font-size: 36px;
     line-height: 1.11111;
     font-weight: 400;
     text-transform: none;
@@ -216,9 +216,9 @@ Example usage:
     margin-bottom: 20px; }
     @media (max-width: 640px) {
       .gov-uk h2,
-      .gov-uk .heading-27 {
-        font-size: 18px;
-        line-height: 1.11111; } }
+      .gov-uk .heading-36 {
+        font-size: 24px;
+        line-height: 1.04167; } }
   .gov-uk h3,
   .gov-uk .heading-24 {
     font-family: "nta", Arial, sans-serif;
@@ -308,6 +308,11 @@ Example usage:
     padding: 0 0 0 20px; }
   .gov-uk ul {
     list-style-type: disc; }
+  .gov-uk ol {
+    list-style-type: decimal; }
+  .gov-uk ul li,
+  .gov-uk ol li {
+    margin-bottom: 5px; }
   .gov-uk form {
     margin: 0; }
   .gov-uk button,
@@ -349,8 +354,6 @@ Example usage:
   .gov-uk textarea {
     min-height: 10em;
     height: auto; }
-  .gov-uk .form {
-    margin-top: 30px; }
   .gov-uk .form-control {
     min-width: 96%;
     min-width: 18em; }
@@ -826,7 +829,7 @@ Example usage:
       display: block;
       text-decoration: none; }
       .progress-indicator.horizontal li a:hover, .progress-indicator.vertical li a:hover {
-        color: #2e3191;
+        color: #005ea5;
         text-decoration: underline; }
     .progress-indicator.horizontal li.active, .progress-indicator.vertical li.active {
       border-bottom: 5px solid #0b0c0c;
@@ -989,6 +992,8 @@ details {
 
 .example,
 .pattern-example {
+  position: relative;
+  overflow: hidden;
   border: 1px solid #bfc1c3;
   outline: 15px solid #f8f8f8;
   margin: 30px 0 60px 0;
@@ -1027,6 +1032,29 @@ details {
     float: left;
     margin-right: 15px;
     margin-bottom: 2px; }
+  .example #postcode-lookup,
+  .pattern-example #postcode-lookup {
+    float: left; }
+  .example #enter-address-manually,
+  .pattern-example #enter-address-manually {
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+    padding: 8px 0; }
+  .example .ribbon,
+  .pattern-example .ribbon {
+    background-color: #85994b;
+    overflow: hidden;
+    position: absolute;
+    right: -50px;
+    top: 40px;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 3px 50px; }
 
 .example-grid {
   background: white;
