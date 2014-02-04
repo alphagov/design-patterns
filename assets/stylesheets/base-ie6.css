@@ -1,8 +1,10 @@
 @charset "UTF-8";
 @-ms-viewport {
   width: device-width; }
+
 @-o-viewport {
   width: device-width; }
+
 /* CSS 3 Mixins
 
   Add them as you need them. This should let us manage vendor prefixes in one place.
@@ -13,8 +15,10 @@
  */
 @-ms-viewport {
   width: device-width; }
+
 @-o-viewport {
   width: device-width; }
+
 /* Usage:
    @include inline-block
 
@@ -43,25 +47,33 @@
 @font-face {
   font-family: GDS-Logo;
   src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica"); }
+
 @-ms-viewport {
   width: device-width; }
+
 @-o-viewport {
   width: device-width; }
+
 @font-face {
   font-family: GDS-Logo;
   src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica"); }
+
 @-ms-viewport {
   width: device-width; }
+
 @-o-viewport {
   width: device-width; }
+
 /* Cross-browser shims
 
   Ways of normalising properties across browsers.
  */
 @-ms-viewport {
   width: device-width; }
+
 @-o-viewport {
   width: device-width; }
+
 /* Usage:
    @include inline-block
 
@@ -93,8 +105,10 @@
  */
 @-ms-viewport {
   width: device-width; }
+
 @-o-viewport {
   width: device-width; }
+
 /* Usage:
    @include inline-block
 
@@ -126,8 +140,10 @@
  */
 @-ms-viewport {
   width: device-width; }
+
 @-o-viewport {
   width: device-width; }
+
 /*
 
 Mixin and defaults for making buttons on GOV.UK services.
@@ -806,7 +822,6 @@ Example usage:
     border-top: 1px solid;
     border-color: #bfc1c3;
     list-style-type: none;
-    margin: 0 0 0 30px;
     padding: 0; }
   .progress-indicator.horizontal li, .progress-indicator.vertical li {
     float: left;
@@ -1012,6 +1027,9 @@ details {
   .pattern-example .colour-department-of-health {
     background: #00ad93; }
   .example .button,
+  .pattern-example .button {
+    clear: both; }
+  .example .button,
   .example .button-secondary,
   .example .button-warning,
   .pattern-example .button,
@@ -1029,6 +1047,9 @@ details {
     float: left;
     margin-top: 10px;
     padding: 8px 0; }
+  .example details,
+  .pattern-example details {
+    margin-left: 15px; }
   .example .ribbon,
   .pattern-example .ribbon {
     background-color: #85994b;

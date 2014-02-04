@@ -110,6 +110,10 @@
   }
   
   // Buttons
+  .button {
+    clear: both;
+  }
+  
   .button,
   .button-secondary,
   .button-warning {
@@ -129,8 +133,15 @@
     padding: 8px 0;
   }
   
-  // Recommended - Ribbon
+  // Details example
+  details {
+    margin-left: $gutter-half;
+    @include media(tablet) {
+      margin-left: $gutter;
+    }
+  }
   
+  // Recommended - Ribbon
   .ribbon {
     background-color: $grass-green;
     overflow: hidden;
