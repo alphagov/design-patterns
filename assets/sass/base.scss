@@ -1,7 +1,7 @@
 //
 // Design Guide example
 //
-// GOV.UK frontend toolkit
+// GOV.UK front end toolkit
 // Sass mixins and helpers for responsive design, x-browser compatibility and colour palettes
 @import "../govuk_frontend_toolkit/stylesheets/colours";
 @import "../govuk_frontend_toolkit/stylesheets/conditionals";
@@ -14,12 +14,13 @@
 @import "../govuk_frontend_toolkit/stylesheets/design-patterns/alpha-beta";
 @import "../govuk_frontend_toolkit/stylesheets/design-patterns/buttons";
 
-// GOV.UK boilerplate (requires the GOV.UK frontend toolkit)
-// Style the core typographic and form elements
+// GOV.UK helper (requires the GOV.UK frontend toolkit)
+// A couple of helper files to set basic styling 
+// - typography, grid layout, form elements and spacing
 
-// Import variables and core styles
-@import "govuk-boilerplate/vars";
-@import "govuk-boilerplate/main";
+// Import helper vars and styles
+@import "govuk-helper/vars";
+@import "govuk-helper/main";
 
 // Import design patterns
 @import "design-patterns/address-finder";

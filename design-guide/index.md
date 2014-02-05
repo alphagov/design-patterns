@@ -7,9 +7,8 @@ phases:
   - alpha
 ---
 
-<!-- About this guide -->
-<div class="guide" id="guide-about">
-  <p>Use this guide to help you make your service look consistent with the rest of GOV.UK.</p>
+<div class="guide">
+  <p>Use this guide to help make your service look consistent with the rest of GOV.UK.</p>
 </div>
 
 1. **[Typography](#guide-typography)**
@@ -17,17 +16,49 @@ phases:
 3. **[Images](#guide-images)**
 4. **[Data](#guide-data)**
 5. **[Colour](#guide-colour)**
-6. **[Forms](#guide-forms)**
 
 <!-- Typography -->
 <div class="guide" id="guide-typography">
   <h2 class="guide-header">1. Typography</h2>
   <p>
-    Services should use clear, easy to read type, with consistent styles and a clear hierarchy of information.
+    The GOV.UK design is mostly about the typography. Tell people what they need to do, in words that they understand. Make the words big enough so they are comfortable to read.
+  </p>
+  <p>
+    GOV.UK uses the typeface New Transport, an update of Transport which was designed in the late fifties/early sixties for for Britain’s national motorway and road sign system. It's designed to be highly legible in all sorts of extreme conditions; in the rain, at night, at speed. Read more about it on <a href="https://gds.blog.gov.uk/2012/07/05/a-few-notes-on-typography/">Ben's blog post</a>.
   </p>
 </div>
 
-<!-- Typography : Start page titles -->
+<!-- Typography : Body copy -->
+<div class="guide" id="guide-typography-copy">
+  <h3 class="guide-subheader">Body copy</h3>
+</div>
+
+<div class="example">
+  <div class="inner-block">
+    
+    <div class="text">
+      <h4>
+        If you’re a motor trader. <em>19px</em>
+      </h4>
+      <p>
+        Motor traders don’t need to make a SORN on a vehicle if all the following apply: <em>19px</em> 
+      </p>
+    </div>
+    
+  </div>
+</div>
+<div class="guide">
+  <p>
+    Body copy is the main content of your web page. In most cases we'd advise:
+  </p>
+  <ul>
+    <li>the body copy should be the main focus of the page. on desktop computers that means 66.6% page width or wider</li>
+    <li>use the 19px font size for paragraph and caption text</li>
+    <li>try to keep line lengths beneath about 75 characters</li>
+  </ul>
+</div>
+
+<!-- Typography : Page titles -->
 <div class="guide" id="guide-typography-titles">
   <h3 class="guide-subheader">Page titles</h3>
 </div>
@@ -55,78 +86,32 @@ phases:
     
     <div class="text">
       <h2>
-        Disability exemption <em>27px</em>
+        Disability exemption <em>36px</em>
       </h2>
       <p>
         You may be exempt or pay a reduced amount of vehicle tax if you receive certain benefits because of your disability. Find out if you’re eligible and how to apply. <em>19px</em>
       </p>
-    </div>
-    
-  </div>
-</div>
-
-<!-- Typography : Body copy -->
-<div class="guide" id="guide-typography-copy">
-  <h3 class="guide-subheader">Body copy</h3>
-</div>
-
-<div class="example">
-  <div class="inner-block">
-    
-    <div class="text">
+      
       <h3>
-        If you’re a motor trader. <em>19px</em>
+        Disability exemption <em>27px</em>
       </h3>
       <p>
-        Motor traders don’t need to make a SORN on a vehicle if all the following apply: <em>19px</em> 
+        You may be exempt or pay a reduced amount of vehicle tax if you receive certain benefits because of your disability. Find out if you’re eligible and how to apply. <em>19px</em>
       </p>
+      
     </div>
     
   </div>
 </div>
 
-<!-- Typography : Spacing -->
-<div class="guide" id="guide-typography-spacing">
-  <h3 class="guide-subheader">Putting it all together</h3>
-  <p>
-    To ensure text is easy to read, aim for 50-60 characters per line.
-  </p>
-</div>
-
-<div class="example">
-  <div class="inner-block">
-    
-    <div class="text">
-      <h1>
-        Make a SORN (Statutory Off Road Notification) <em>48px</em>
-      </h1>
-      <p>
-        You can make a SORN (Statutory Off Road Notification) online if you are registered as the vehicle’s keeper. You’ll need the reference number on your V5C registration certificate, V11 or V85/1 reminder form. <em>19px</em>
-      </p>
-
-      <h2>
-        Penalties <em>27px</em>
-      </h2>
-      <p>
-        If you don’t make a SORN when you have to you’ll automatically be fined £80, will need to get a new tax disc and must pay any tax arrears. You could also get a County Court Judgement against you, be fined a minimum of £1,000 and be liable to prosecution. <em>19px</em>
-      </p>
-
-      <h3> If you’re a motor trader. <em>19px</em></h3>
-
-      <p>
-        Motor traders don’t need to make a SORN on a vehicle if all the following apply: <em>19px</em>
-      </p>
-    </div>
-    
-  </div>
-  
-</div>
-
-<!-- Typography : Get the styles -->
+<!-- Typography :  -->
 <div class="guide guide-end">
-  <h3 class="guide-subheader">Get the styles</h3>
+  <h3 class="guide-subheader">Take a look at the examples</h3>
   <p>
-    Here's an example of the above <a href="{{ site.baseurl}}/example/typography.html">basic typography styles</a>. For more control over heading hierarchy, here's the same example <a href="{{ site.baseurl}}/example/typography-classnames.html">using classnames</a>. We're also using a <code>.text</code> class to wrap text blocks, setting a maximum width and to prevent lines from getting too long.
+    Here's an a page full of the <a href="{{ site.baseurl}}/example/typography.html">basic typography styles</a>. For more control over heading hierarchy, here's the same example <a href="{{ site.baseurl}}/example/typography-classnames.html">using classnames</a>. 
+  </p>
+  <p>
+    We're also using a <code>.text</code> class to wrap text blocks, setting a maximum width to prevent lines from getting too long.
   </p>
 </div>
 
@@ -213,11 +198,11 @@ phases:
   </div>
 </div>
 
-<!-- Grid : Get the styles -->
+<!-- Grid : Take a look at the examples -->
 <div class="guide guide-end">
-  <h3 class="guide-subheader">Get the styles</h3>
+  <h3 class="guide-subheader">Take a look at the examples</h3>
   <p>
-    Here's an example of the above <a href="{{ site.baseurl}}/example/grid.html">grid layout</a>. Use this example to get started structuring your page content.
+    Here's a page which shows how to create the above <a href="{{ site.baseurl}}/example/grid.html">grid layout</a>. Use this example to get started structuring your page content.
   </p>
 </div>
 
@@ -308,8 +293,11 @@ phases:
 <div class="guide" id="guide-colour">
   <h2 class="guide-header">5. Colour</h2>
   <p>
-    The GOV.UK Service Design Manual shows HEX values and Sass variable names for the <a href="https://www.gov.uk/service-manual/user-centered-design/resources/colour-palettes.html">GOV.UK colour palette</a>. Using the Sass variables in the GOV.UK frontend toolkit is recommended, in case these colours are updated. 
+    Text should only be set in black with secondary text in grey. Links should be blue and buttons or dialog boxes should have text in white.
   </p>
+  <p>
+     The GOV.UK Service Design Manual shows HEX values and Sass variable names for the <a href="https://www.gov.uk/service-manual/user-centered-design/resources/colour-palettes.html">GOV.UK colour palette</a>. You can find Sass variables for the GOV.UK colour palette in the <a href="https://github.com/alphagov/govuk_frontend_toolkit#colours">GOV.UK front end toolkit</a>.
+   </p>
 </div>
 
 <!-- Colour palette : Example -->
@@ -329,39 +317,42 @@ phases:
       HEX: #6F777B <br>
       Sass variable: $secondary-text-colour
     </code>
-    
     <div class="swatch colour-hm-government">
     </div>
-    
     <code>
       HM Government <br>
       HEX: #0076c0 <br>
       Sass: $hm-government
     </code>
+    <button class="button">Button</button>
+    <code>
+      Sass: $green<br>
+      Hex: #006435
+    </code>
   </div>
 </div>
 
 <!-- Buttons -->
-<div class="guide" id="guide-forms">
+<!-- <div class="guide" id="guide-forms">
   <h2 class="guide-header">6. Buttons</h2>
   <p>
     Primary action buttons are green, secondary action buttons are grey, irreversible action buttons are red.
   </p>
-</div>
+</div> -->
 
 <!-- Buttons : Example-->
-<div class="example">
+<!-- <div class="example">
   <div class="inner-block">
     <a href="#" class="button">Primary action</a>
     <a href="#" class="button button-secondary">Secondary action</a>
     <a href="#" class="button button-warning">Warning action</a>
   </div>
-</div>
+</div> -->
 
 <!-- Buttons : Get the styles -->
-<div class="guide guide-end">
+<!-- <div class="guide guide-end">
   <h3 class="guide-subheader">Get the styles</h3>
   <p>
     Here's an <a href="{{ site.baseurl}}/example/form.html">example form using the button styles</a>.
   </p>
-</div>
+</div> -->

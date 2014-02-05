@@ -952,7 +952,8 @@ details {
 .no-details details summary {
   display: block; }
 
-.design-guide p {
+.design-guide p,
+.design-guide ul {
   max-width: 30em; }
 .design-guide .page-metadata {
   border-top: 5px solid #0b0c0c;
@@ -1053,14 +1054,8 @@ details {
   .pattern-example .colour-department-of-health {
     background: #00ad93; }
   .example .button,
-  .example .button-secondary,
-  .example .button-warning,
-  .pattern-example .button,
-  .pattern-example .button-secondary,
-  .pattern-example .button-warning {
-    float: left;
-    margin-right: 15px;
-    margin-bottom: 2px; }
+  .pattern-example .button {
+    margin-bottom: 30px; }
   .example #postcode-lookup,
   .pattern-example #postcode-lookup {
     float: left; }
@@ -1112,5 +1107,6 @@ details {
   background: #bfc1c3; }
 .example-highlight-grid .grid {
   background: #f8f8f8; }
-.example-highlight-grid .grid .inner-block * {
-  background: #dee0e2; }
+.example-highlight-grid .grid .is-inner-block-highlight {
+  background: #dee0e2;
+  width: 100%; }

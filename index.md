@@ -11,5 +11,8 @@ New guides for designers, researchers and front end developers building services
 ###The guides
 
 * [Design style guide]({{ site.baseurl }}/design-guide/)
-* [GOV.UK guide examples]({{ site.baseurl }}/example/)
 * [Design patterns]({{ site.baseurl }}/patterns/)
+
+###The examples
+
+* [Design style guide examples]({{ site.baseurl }}/example/)

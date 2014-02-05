@@ -7,7 +7,8 @@
 .design-guide {
   
   // Design Guide layout
-  p {
+  p,
+  ul {
     max-width: 30em;
   }
   
@@ -112,14 +113,18 @@
     background: $department-of-health;
   }
   
-  // Buttons
-  .button,
-  .button-secondary,
-  .button-warning {
-    float: left;
-    margin-right: $gutter-half;
-    margin-bottom: 2px;
+  .button {
+    margin-bottom: $gutter;
   }
+  
+  // Buttons
+  //  .button,
+  //  .button-secondary,
+  //  .button-warning {
+  //    float: left;
+  //    margin-right: $gutter-half;
+  //    margin-bottom: 2px;
+  //  }
   
   // Form examples
   #postcode-lookup {
@@ -209,8 +214,9 @@
     background: $grey-4;
   }
   
-  .grid .inner-block * {
+  .grid .is-inner-block-highlight {
     background: $grey-3;
+    width: 100%;
   }
   
 }

@@ -30,13 +30,25 @@ phases:
 </div>
 
 <div class="grid-wrapper">
+  <div class="grid">
+    <div class="inner-block">
+      <h2>Full width</h2>
+      <h3>
+        <a href="#" class="js-highlight-grid">Toggle background colours</a> to see the padding on grid cells.
+      </h3>
+      <p>Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur.</p>
+      
+    </div>
+  </div>
+</div>
+
+<div class="grid-wrapper">
   <div class="grid grid-2-3">
     <div class="inner-block">
       
       <h2>Two thirds</h2>
-      <h3>
-        <a href="#" class="js-highlight-grid">Toggle background colours</a> to see the padding on grid cells.
-      </h3>
       <p>Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur.</p>

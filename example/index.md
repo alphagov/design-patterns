@@ -28,48 +28,38 @@ phases:
         </h1>
 
         <p>
-          These examples show how to get started using the <a href="https://github.com/alphagov/design-patterns/blob/gh-pages/assets/sass/govuk-boilerplate/_main.scss">GOV.UK boilerplate</a> and create  basic styles for typography and grid layout.
+          These examples use the <a href="#style-guide-helper">style guide helper</a>, a couple of files that show how to get started using the GOV.UK front end toolkit by creating basic styles for typography and grid layout.
         </p>
-
-        <p>
-          To keep things tidy, typography styles are applied using the <code>.gov-uk</code> class on the <code>&lt;main&gt;</code> content area.
-          A <code>.text</code> class is used to wrap blocks of text, for optimal line length (50-60 characters per line). 
-        </p>
-
+        
         <ul>
           <li><a href="{{ site.baseurl }}/example/typography.html">Typography</a></li>
           <li><a href="{{ site.baseurl }}/example/typography-classnames.html">Typography using classnames</a></li>
           <li><a href="{{ site.baseurl }}/example/grid.html">Grid layout</a></li>
-          <li><a href="{{ site.baseurl }}/example/form.html">Form styles and buttons</a></li>
+          <!-- <li><a href="{{ site.baseurl }}/example/form.html">Form styles</a></li> -->
         </ul>
-
-        <h2>Using Sass</h2>
-
+        
+        <p>
+          To keep things tidy, typography styles are applied using the <code>.gov-uk</code> class on the <code>&lt;main&gt;</code> content area.
+        </p>
+        <p>
+          A <code>.text</code> class is used to wrap blocks of text, for optimal line length (less than 75 characters per line). 
+        </p>
+        
+        <h3 id="style-guide-helper">The style guide helper files</h3>
+        
         <p>
           These examples assume you are familiar with Sass and that you will use Sass to generate your stylesheets.
         </p>
-
+        
         <p>
-          Take a look at the <a href="https://github.com/alphagov/design-patterns/blob/gh-pages/assets/sass/base.scss">base.scss</a> file to see how these examples are structured.
+          The <code>main.scss</code> file has a dependancy on the GOV.UK front end toolkit.
         </p>
+        
         <p>
-
-        <h2>The GOV.UK boilerplate</h2>
-
-        <h3>Dependancies</h3>
-        <p>
-          The <code>main.scss</code> file has a dependancy on the GOV.UK frontend toolkit.
-        </p>
-        <p>
-          You'll need the GOV.UK frontend toolkit to use the GOV.UK boilerplate, since it uses the mixins and variables the toolkit defines.
-        </p>
-
-        <h3>Best practice</h3>
-        <p>
-          The <code>main.scss</code> file is structured in a mobile-and-up fashion. Mobile styles are defined first, then the <code>media</code> mixin is used to override the default mobile styles with tablet or desktop styles.
+          Mobile styles are defined first, then the <code>@media</code> mixin from the GOV.UK front end toolkit is used to override the mobile-first styles with tablet or desktop styles. <a href="https://github.com/alphagov/govuk_frontend_toolkit#media">More on how this works here</a>.
        </p>
        <p>
-          Variables in Sass make it easy to see where the same values are repeated. The boilerplate makes use of a <code>$gutter</code> variable. This is 30px and there's also a <code>$gutter-half</code> at 15px. Take a look at how the grid layout works to see these variables in use.
+         The helper makes use of a <code>$gutter</code> variable. This is 30px and there's also a <code>$gutter-half</code> at 15px. <a href="{{ site.baseurl }}/example/grid.html">Take a look at how the grid layout works</a> to see these variables in use.
        </p>
 
       </div>
