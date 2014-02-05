@@ -50,7 +50,7 @@ phases:
         </p>
 
         <p>
-          Take a look at the <a href="https://github.com/alphagov/design-patterns/blob/gh-pages/example/assets/sass/base.scss">base.scss</a> file to see how these examples are structured.
+          Take a look at the <a href="https://github.com/alphagov/design-patterns/blob/gh-pages/assets/sass/base.scss">base.scss</a> file to see how these examples are structured.
         </p>
         <p>
 

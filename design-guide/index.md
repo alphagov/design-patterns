@@ -55,7 +55,7 @@ phases:
     
     <div class="text">
       <h2>
-        Disability exemption <em>24px</em>
+        Disability exemption <em>27px</em>
       </h2>
       <p>
         You may be exempt or pay a reduced amount of vehicle tax if you receive certain benefits because of your disability. Find out if you’re eligible and how to apply. <em>19px</em>
@@ -105,7 +105,7 @@ phases:
       </p>
 
       <h2>
-        Penalties <em>24px</em>
+        Penalties <em>27px</em>
       </h2>
       <p>
         If you don’t make a SORN when you have to you’ll automatically be fined £80, will need to get a new tax disc and must pay any tax arrears. You could also get a County Court Judgement against you, be fined a minimum of £1,000 and be liable to prosecution. <em>19px</em>
