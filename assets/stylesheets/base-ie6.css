@@ -1,8 +1,10 @@
 @charset "UTF-8";
 @-ms-viewport {
   width: device-width; }
+
 @-o-viewport {
   width: device-width; }
+
 /* CSS 3 Mixins
 
   Add them as you need them. This should let us manage vendor prefixes in one place.
@@ -13,8 +15,10 @@
  */
 @-ms-viewport {
   width: device-width; }
+
 @-o-viewport {
   width: device-width; }
+
 /* Usage:
    @include inline-block
 
@@ -43,25 +47,33 @@
 @font-face {
   font-family: GDS-Logo;
   src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica"); }
+
 @-ms-viewport {
   width: device-width; }
+
 @-o-viewport {
   width: device-width; }
+
 @font-face {
   font-family: GDS-Logo;
   src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica"); }
+
 @-ms-viewport {
   width: device-width; }
+
 @-o-viewport {
   width: device-width; }
+
 /* Cross-browser shims
 
   Ways of normalising properties across browsers.
  */
 @-ms-viewport {
   width: device-width; }
+
 @-o-viewport {
   width: device-width; }
+
 /* Usage:
    @include inline-block
 
@@ -93,8 +105,10 @@
  */
 @-ms-viewport {
   width: device-width; }
+
 @-o-viewport {
   width: device-width; }
+
 /* Usage:
    @include inline-block
 
@@ -126,8 +140,10 @@
  */
 @-ms-viewport {
   width: device-width; }
+
 @-o-viewport {
   width: device-width; }
+
 /*
 
 Mixin and defaults for making buttons on GOV.UK services.
@@ -734,7 +750,20 @@ Example usage:
       font-size: 16px;
       line-height: 1.25; } }
 .form .hint {
-  color: #6f777b; }
+  display: block;
+  color: #6f777b;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none;
+  margin-top: 8px; }
+  @media (max-width: 640px) {
+    .form .hint {
+      font-size: 14px;
+      line-height: 1.14286; } }
+.form .button {
+  margin-right: 5px; }
 .form .field-with-errors label,
 .form .field-with-errors input {
   color: #B94A48; }
@@ -923,6 +952,8 @@ details {
 .no-details details summary {
   display: block; }
 
+.design-guide p {
+  max-width: 30em; }
 .design-guide .page-metadata {
   border-top: 5px solid #0b0c0c;
   padding-top: 40px; }
@@ -1021,9 +1052,6 @@ details {
   .example .colour-department-of-health,
   .pattern-example .colour-department-of-health {
     background: #00ad93; }
-  .example .button,
-  .pattern-example .button {
-    clear: both; }
   .example .button,
   .example .button-secondary,
   .example .button-warning,

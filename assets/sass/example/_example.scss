@@ -7,6 +7,9 @@
 .design-guide {
   
   // Design Guide layout
+  p {
+    max-width: 30em;
+  }
   
   .page-metadata {
     border-top: 5px solid $black;
@@ -110,10 +113,6 @@
   }
   
   // Buttons
-  .button {
-    clear: both;
-  }
-  
   .button,
   .button-secondary,
   .button-warning {

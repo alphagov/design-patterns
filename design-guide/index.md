@@ -342,7 +342,7 @@ phases:
 </div>
 
 <!-- Buttons -->
-<div class="guide" id="guide-buttons">
+<div class="guide" id="guide-forms">
   <h2 class="guide-header">6. Buttons</h2>
   <p>
     Primary action buttons are green, secondary action buttons are grey, irreversible action buttons are red.

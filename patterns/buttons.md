@@ -17,11 +17,11 @@ Buttons should be used to signify actions that the user can perform.
 Buttons can be made of links, inputs and button tags. CSS should be used to separate the technical implementation of a button from its style so it looks the same whatever tag is used, like this:
 
 <div class="pattern-example">
-  <p>
+  <div class="inner-block">
     <button class="button">Button tag</button>
     <a href="#" class="button">Link tag</a>
     <input class="button" type="submit" value="Input tag" />
-  </p>
+  </div>
 </div>
 
 ### Button colours
@@ -33,11 +33,11 @@ The default button colour is green (Sass variable: `$button-colour` ). Only use 
 As with the default browser style, buttons will need a disabled style to indicate when the `disabled` attribute is set.
 
 <div class="pattern-example">
-<p>
-  <button class="button" disabled="disabled">Button tag</button>
-  <a class="disabled button">Link tag</a>
-  <input class="button" disabled="" type="submit" value="Input tag" />
-</p>
+  <div class="inner-block">
+    <button class="button" disabled="disabled">Button tag</button>
+    <a class="disabled button">Link tag</a>
+    <input class="button" disabled="" type="submit" value="Input tag" />
+  </div>
 </div>
 
 ### Types of button
@@ -45,9 +45,11 @@ As with the default browser style, buttons will need a disabled style to indicat
 #### Primary actions
 
 <div class="pattern-example">
-  <p>
-    <a href="#" class="button">Next step</a>
-  </p>
+  <div class="inner-block">
+    <p>
+      <a href="#" class="button">Next step</a>
+    </p>
+  </div>
 </div>
 
 * Primary actions move the user on to the next part of the transaction
@@ -56,9 +58,9 @@ As with the default browser style, buttons will need a disabled style to indicat
 #### Secondary actions
 
 <div class="pattern-example">
-  <p>
+  <div class="inner-block">
     <a href="#" class="button-secondary">Save</a>
-  </p>
+  </div>
 </div>
 
 * Secondary actions modify the current view
@@ -69,9 +71,9 @@ As with the default browser style, buttons will need a disabled style to indicat
 #### Warning actions
 
 <div class="pattern-example">
-  <p>
+  <div class="inner-block">
     <a href="#" class="button-warning">Delete account</a>
-  </p>
+  </div>
 </div>
 
 * Actions that have irreversable effects should look ‘scary’
@@ -82,10 +84,9 @@ As with the default browser style, buttons will need a disabled style to indicat
 ### Launch button
 
 <div class="pattern-example">
-  <p>
-    <a href="#" class="button" rel="external" title="Get started on the HMRC website">Get started</a>
-     on the HMRC website
-  </p>
+  <div class="inner-block">
+    <a href="#" class="button" rel="external" title="Get started on the HMRC website">Get started</a> on the HMRC website
+  </div>
 </div>
 
 * Use to initiate a transaction

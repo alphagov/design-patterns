@@ -55,24 +55,17 @@
   .control {
     @include core-19;
     padding: 8px 0;
-    //zoom: 1;
-    //overflow: hidden;
   }
   
-  .form-group {
-    
-  }
-  
-  .form-control {
-    
-  }
-
-//  fieldset{
-//    @include bold-24;
-//  }
-
   .hint{
+    display: block;
     color: $secondary-text-colour;
+    @include core-16;
+    margin-top: 8px;
+  }
+  
+  .button {
+    margin-right: 5px;
   }
   
   .field-with-errors {

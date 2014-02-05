@@ -56,9 +56,10 @@ phases:
           
           <div class="form-group">
             <input type="submit" class="button" value="Next">
+            <button class="button-secondary">Back</button>
           </div>
           
-          <a href="#" class="back">Back</a>
+          
           
         </fieldset>
         
