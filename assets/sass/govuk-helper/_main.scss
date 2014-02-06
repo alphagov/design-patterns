@@ -1,11 +1,11 @@
-// Let's scope typography with .gov-uk for now
+// Scope typography with .gov-uk
 .gov-uk {
   
   // Increase default font size to 19px
   @include core-19;
   -webkit-font-smoothing: antialiased;
   
-  // Let's set a max-width for text blocks
+  // Set a max-width for text blocks
   // Less than 75 characters per line of text
   .text {
     max-width: 30em;
@@ -15,6 +15,8 @@
   // Typography
   // ==========================================================================
   
+  // Headings
+  h1,
   .heading-48 {
     @include bold-48();
     margin-top: $gutter-half;
@@ -31,6 +33,7 @@
     }
   }
   
+  h2,
   .heading-36 {
     @include bold-36();
     margin-top: 25px;
@@ -41,6 +44,7 @@
     }
   }
   
+  h3,
   .heading-24 {
     @include bold-24();
     margin-top: 25px;
@@ -51,6 +55,7 @@
     }
   }
   
+  h4,
   .heading-19 {
     @include bold-19();
     margin-top: 10px;

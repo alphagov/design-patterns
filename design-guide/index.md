@@ -108,7 +108,7 @@ phases:
 <div class="guide guide-end">
   <h3 class="guide-subheader">Take a look at the examples</h3>
   <p>
-    Here's an a page full of the <a href="{{ site.baseurl}}/example/typography.html">basic typography styles</a>. For more control over heading hierarchy, here's the same example <a href="{{ site.baseurl}}/example/typography-classnames.html">using classnames</a>. 
+    Here's an example showing the <a href="{{ site.baseurl}}/example/typography.html">basic typography styles</a>.
   </p>
   <p>
     We're also using a <code>.text</code> class to wrap text blocks, setting a maximum width to prevent lines from getting too long.
