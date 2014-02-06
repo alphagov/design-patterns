@@ -6,7 +6,7 @@
   -webkit-font-smoothing: antialiased;
   
   // Let's set a max-width for text blocks
-  // 50-60 characters per line of text
+  // Less than 75 characters per line of text
   .text {
     max-width: 30em;
   }
@@ -15,7 +15,6 @@
   // Typography
   // ==========================================================================
   
-  h1,
   .heading-48 {
     @include bold-48();
     margin-top: $gutter-half;
@@ -32,7 +31,6 @@
     }
   }
   
-  h2,
   .heading-36 {
     @include bold-36();
     margin-top: 25px;
@@ -43,7 +41,6 @@
     }
   }
   
-  h3,
   .heading-24 {
     @include bold-24();
     margin-top: 25px;
@@ -54,7 +51,6 @@
     }
   }
   
-  h4,
   .heading-19 {
     @include bold-19();
     margin-top: 10px;

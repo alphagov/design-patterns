@@ -167,7 +167,6 @@ Example usage:
       line-height: 1.25; } }
   .gov-uk .text {
     max-width: 30em; }
-  .gov-uk h1,
   .gov-uk .heading-48 {
     font-family: "nta", Arial, sans-serif;
     font-size: 48px;
@@ -180,12 +179,9 @@ Example usage:
     margin-top: 30px;
     margin-bottom: 60px; }
     @media (max-width: 640px) {
-      .gov-uk h1,
       .gov-uk .heading-48 {
         font-size: 32px;
         line-height: 1.09375; } }
-    .gov-uk h1 span,
-    .gov-uk h1 .document-type,
     .gov-uk .heading-48 span,
     .gov-uk .heading-48 .document-type {
       display: block;
@@ -196,13 +192,10 @@ Example usage:
       text-transform: none;
       color: #6f777b; }
       @media (max-width: 640px) {
-        .gov-uk h1 span,
-        .gov-uk h1 .document-type,
         .gov-uk .heading-48 span,
         .gov-uk .heading-48 .document-type {
           font-size: 18px;
           line-height: 1.11111; } }
-  .gov-uk h2,
   .gov-uk .heading-36 {
     font-family: "nta", Arial, sans-serif;
     font-size: 36px;
@@ -215,11 +208,9 @@ Example usage:
     margin-top: 45px;
     margin-bottom: 20px; }
     @media (max-width: 640px) {
-      .gov-uk h2,
       .gov-uk .heading-36 {
         font-size: 24px;
         line-height: 1.04167; } }
-  .gov-uk h3,
   .gov-uk .heading-24 {
     font-family: "nta", Arial, sans-serif;
     font-size: 24px;
@@ -232,11 +223,9 @@ Example usage:
     margin-top: 45px;
     margin-bottom: 20px; }
     @media (max-width: 640px) {
-      .gov-uk h3,
       .gov-uk .heading-24 {
         font-size: 20px;
         line-height: 1.2; } }
-  .gov-uk h4,
   .gov-uk .heading-19 {
     font-family: "nta", Arial, sans-serif;
     font-size: 19px;
@@ -248,7 +237,6 @@ Example usage:
     margin-bottom: 5px;
     margin-top: 20px; }
     @media (max-width: 640px) {
-      .gov-uk h4,
       .gov-uk .heading-19 {
         font-size: 16px;
         line-height: 1.25; } }

@@ -33,13 +33,13 @@ phases:
         
         <ul>
           <li><a href="{{ site.baseurl }}/example/typography.html">Typography</a></li>
-          <li><a href="{{ site.baseurl }}/example/typography-classnames.html">Typography using classnames</a></li>
           <li><a href="{{ site.baseurl }}/example/grid.html">Grid layout</a></li>
           <!-- <li><a href="{{ site.baseurl }}/example/form.html">Form styles</a></li> -->
         </ul>
         
         <p>
           To keep things tidy, typography styles are applied using the <code>.gov-uk</code> class on the <code>&lt;main&gt;</code> content area.
+          A set of classes are shown to illustrate heading hierarchy.
         </p>
         <p>
           A <code>.text</code> class is used to wrap blocks of text, for optimal line length (less than 75 characters per line). 
