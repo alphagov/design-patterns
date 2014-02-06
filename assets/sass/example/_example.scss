@@ -6,6 +6,52 @@
 
 .design-guide {
   
+  // Typography
+  h1 {
+    @include bold-48();
+    margin-top: $gutter-half;
+    margin-bottom: $gutter;
+    @include media(tablet) {
+      margin-top: $gutter;
+      margin-bottom: $gutter*2;
+    }
+    span,
+    .document-type {
+      display: block;
+      @include core-27();
+      color: $secondary-text-colour;
+    }
+  }
+  
+  h2 {
+    @include bold-36();
+    margin-top: 25px;
+    margin-bottom: 10px;
+    @include media(tablet) {
+      margin-top: 45px;
+      margin-bottom: 20px;
+    }
+  }
+  
+  h3 {
+    @include bold-24();
+    margin-top: 25px;
+    margin-bottom: 10px;
+    @include media(tablet) {
+      margin-top: 45px;
+      margin-bottom: 20px;
+    }
+  }
+  
+  h4 {
+    @include bold-19();
+    margin-top: 10px;
+    margin-bottom: 5px;
+    @include media(tablet) {
+      margin-top: 20px;
+    }
+  }
+  
   // Design Guide layout
   p,
   ul {
