@@ -93,7 +93,7 @@ phases:
       </p>
       
       <h3>
-        Disability exemption <em>27px</em>
+        Disability exemption <em>24px</em>
       </h3>
       <p>
         You may be exempt or pay a reduced amount of vehicle tax if you receive certain benefits because of your disability. Find out if you’re eligible and how to apply. <em>19px</em>
