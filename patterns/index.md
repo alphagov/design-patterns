@@ -29,6 +29,6 @@ If you'd like to discuss a pattern or suggest a new one you can do this on the [
 
 <h2 class="heading-36">Code examples</h2>
 
-All the code for the examples in this library is [available on Github](https://github.com/alphagov/design-patterns) and linked to from each pattern page.
+All the code for the examples in this library is [available on Github](https://github.com/alphagov/design-patterns/tree/gh-pages/assets/sass/design-patterns) and linked to from each pattern page.
 
 This code should be considered a starting point for your own designs. It's not supported by GDS and you'll need to integrate it into your service in the most appropriate way.
