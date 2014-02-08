@@ -172,12 +172,8 @@
   textarea {
     padding: 2px 4px;
     background-color: #FFFFFF;
-    border: 2px inset;
-    @include ie-lte(8) {
-      border: 1px inset $border-colour; 
-    }
+    border: 1px solid $border-colour;
     font-size: 1em;
-    
     // Disable webkit appearance and remove rounded corners
     -webkit-appearance: none;
     border-radius: 0;
