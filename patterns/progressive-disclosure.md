@@ -11,7 +11,7 @@ phases:
 ---
 
 This is the technique of hiding content on a page until a user interacts with it in some way.
-Examples of progressive diclosure include tooltips, expanding sections in forms and the HTML details tag.
+Examples of progressive disclosure include tooltips, expanding sections in forms and the HTML details tag.
 
 Done well it:
 
