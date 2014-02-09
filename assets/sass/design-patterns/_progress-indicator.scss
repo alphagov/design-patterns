@@ -83,12 +83,15 @@
     }
   }
   &.horizontal{
+    ul{
+      max-width: 100%;
+    }
     li.done span{
       display: none;
     }
   }
   &.vertical{
-    width: 25%;
+    width: 33.33%;
     float: left;
     li{
       float: none;

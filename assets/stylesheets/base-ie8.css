@@ -850,10 +850,12 @@ Example usage:
           -webkit-transform: rotate(45deg);
           position: absolute;
           */ }
+.progress-indicator.horizontal ul {
+  max-width: 100%; }
 .progress-indicator.horizontal li.done span {
   display: none; }
 .progress-indicator.vertical {
-  width: 25%;
+  width: 33.33%;
   float: left; }
   .progress-indicator.vertical li {
     float: none;
@@ -968,6 +970,8 @@ details {
   margin: 30px 0 60px 0;
   padding: 15px;
   padding: 30px 15px; }
+  .pattern-example.wide {
+    margin-right: -33.33%; }
   .pattern-example .ribbon {
     background-color: #85994b;
     overflow: hidden;

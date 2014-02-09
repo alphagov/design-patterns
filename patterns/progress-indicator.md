@@ -1,5 +1,5 @@
 ---
-layout: template-design-patterns-full
+layout: template-design-patterns
 document-type: Design pattern
 title: Progress indicators
 page-class: 'progress-indicator'
@@ -10,54 +10,98 @@ phases:
   - alpha
 ---
 
-<h3 class="heading-24">Example 1: Step indicator</h3>
+When people interact with multi-page transactions they can become disorientated or think that they've finished when they haven't. This can cause them to drop out of the transaction before they've completed it.
 
-{% include _progress-indicator-example-1.html %}
+Progress indicators address this issue by telling users how many steps they've completed and how many more there are to go.
 
-This is the preferred approach and should be tried before moving on to any of the others. It's accessible, compact and works well on all devices.
+1. **[Step indicator](#step-indicator)**
+2. **[Progress bar](#progress-bar)**
+3. **[Summary-menu](#summary menu)**
 
-<h3 class="heading-24">Example 2: Horizontal progress bar</h3>
+<h2 class="heading-36" id="step-indicator">1. Step indicator</h2>
 
-{% include _progress-indicator-example-2.html %}
+Tell the user what step they're on.
 
-A horizontal progress bar labels each of the steps involved in a transaction. This can help if your users need reminding of what each step involves or of how long each step might take. 
+<div class="pattern-example">
+  <div class="inner-block">
+    <div class="ribbon">Recommended</div>
+    <h1>
+      <span>Step 3 of 5</span>
+      Payment details
+    </h1>
+  </div>
+</div>
 
-You can also use the progress bar as an additional form of navigation. Don't rely on people using it like this though - you'll still need to provide 'Back' and 'Next' links at the bottom of each screen.
+This approach should be tried before moving on to any of the others. It's accessible, compact and works well on all devices.
 
-Remember to number each step - it helps to reinforce their sequential nature.
 
-You'll need to keep the number of steps and their names short in order to fit them all on one line.
+<h2 class="heading-36" id="progress-bar">2. Progress bar</h2>
 
-<h3 class="heading-24">Example 3: Vertical progress bar</h3>
+Show the steps horizontally across the top of the page, with the current step highlighted.
 
-{% include _progress-indicator-example-3.html %}
+<div class="pattern-example wide">
+  <div class="inner-block">
+    <nav role="navigation" class="horizontal progress-indicator">
+      <ul>
+        <li class="done"><a href="">1. About you <span>done</span></a></li>
+        <li class="done"><a href="">2. Your company <span>done</span></a></li>
+        <li class="active">3. Payment details</li>
+        <li>4. Delivery</li>
+        <li>5. Done</li>
+      </ul>
+    </nav>
+  </div>
+</div>
 
-For some transactions you'll want to let users complete the steps in any order, or let them partially complete steps. In general this is harder to do in a usable way, so only do it if the benefits to the user outweight the costs.
+<h3 class="heading-24">Pros</h3>
 
-We recommend using a vertical progress bar for this. The steps aren't numbered because they can be completed in any order. The vertical alignment allows room for more steps and also to indicate how complete each step is.
+* Provides an overiew of the entire process
+* Steps can be used as navigation
 
-Don't forget you'll need to let people know when they can progress past these steps to the next part of the transaction.
+<h3 class="heading-24">Cons</h3>
 
-{% include _progress-indicator-example-4.html %}
+* Can be hard to fit into the available space, especially on small screens
 
-You'll should also consider alerting users that they can proceed in some other way too (a pop-up for example). Not everyone will notice the appearance of a button.
+<h3 class="heading-24">Guidance</h3>
 
-<h3 class="heading-24">Example 4: Loading bar</h3>
+* Works best when the sequence of steps is fixed
+* Number the steps to reinforce their sequential nature
+* Don't rely on progress bars for navigation - you'll still need to provide 'Back' and 'Next' links on each screen
 
-We're not recommending that you use these. So far we've not seen any examples where a simple step indicator wouldn't work just as well. As that's the simpler solution, that's the one we're recommending.
 
-There's one possible use case, where:
+<h2 class="heading-36" id="summary-menu">3. Summary menu</h2>
 
-* there are a large number of small, similarly sized steps
-* the total number of steps changes depending on how the user completes them
+Provide a vertical list of links to each section, which can be completed in any order.
 
-A survey is one example of the above. If anyone wants to test the two approaches on a survey we'd be very interested in the results.
+<div class="pattern-example">
+  <div class="inner-block">
+    <nav role="navigation" class="vertical progress-indicator">
+      <ul>
+        <li><a href="">About you <span>(3/10)</span></a></li>
+        <li class="done"><a href="">Your company <span>(10/10)</span></a></li>
+        <li class="active"><a href="">Payment details <span>(1/6)</span></a></li>
+        <li><a href="">Delivery <span>(0/3)</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
 
-<h3 class="heading-24">Dealing with branching transaction flows</h3>
+<h3 class="heading-24">Pros</h3>
 
-If the total number of steps changes as the user moves through the transaction then this may confuse your users. One way to avoid the issue is not to specify how many steps are left, but this does remove one of the key benefits of the pattern. Another approach is to combine steps into larger chunks that don't change and then represent those instead.
+* Section titles can be longer
+* More room for more sections
+* Users can complete sections in an order that suits them
+* Steps can be partially completed
 
-As always, testing with your users is only way to decide on the best approach.
+<h3 class="heading-24">Cons</h3>
+
+* Not always clear when the user has completed all the steps
+
+<h3 class="heading-24">Guidance</h3>
+
+A summary menu can work well for lengthy applications where the user might not have all the information to hand.
+They can complete the sections in the order they choose, then go back and finish the rest when they're able to.
+To fully take advantage of this though you'll need to provide a way for users to save and return to their work.
 
 
 
