@@ -332,8 +332,7 @@ Example usage:
   .gov-uk textarea {
     padding: 2px 4px;
     background-color: #FFFFFF;
-    border: 2px inset;
-    border: 1px inset #bfc1c3;
+    border: 1px solid #bfc1c3;
     font-size: 1em;
     -webkit-appearance: none;
     border-radius: 0; }
