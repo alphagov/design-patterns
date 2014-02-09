@@ -35,7 +35,12 @@ has-proposition: true
       <div class="inner-block">
         
         {{ content }}
-        
+
+        {% if page.discuss-url %}
+        <ul class="page-actions">
+          <li><a rel="external" href="{{ page.discuss-url }}">Discuss this pattern</a></li>
+        </ul>
+        {% endif %}
       </div>
     </div>
     <div class="grid grid-1-4">
@@ -54,7 +59,7 @@ has-proposition: true
         
         {% if page.discuss-url %}
         <ul class="page-actions">
-          <li><a href="{{ page.discuss-url }}">Discuss this pattern</a></li>
+          <li><a rel="external" href="{{ page.discuss-url }}">Discuss this pattern</a></li>
         </ul>
         {% endif %}
         
