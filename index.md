@@ -1,20 +1,35 @@
 ---
 layout: template-homepage
-title: Design guides
+title: New design guides
 phases:
   - alpha
 ---
 
-New guides for designers, researchers and front end developers building services for GOV.UK. All of these guides are in alpha and subject to change. For the current set of live design guides, see the [GOV.UK service manual](https://www.gov.uk/service-manual/designers).
+These new guides are for designers, researchers and front end developers building services for GOV.UK.
+Their content is in **alpha** and subject to change.
+Help us improve it by [giving us your feedback](https://designpatterns.hackpad.com/Give-us-feedback-dE7mj6RNGKv).
 
 
-<h3 class="heading-24">The guides</h3>
+<h2 class="heading-36">Design style guide</h2>
 
-* [Design style guide]({{ site.baseurl }}/design-guide/)
-* [Design patterns]({{ site.baseurl }}/patterns/)
+This guide explains how to style and arrange the basic elements like like headings, paragraphs, images, form fields and buttons.
 
-<h3 class="heading-24">How to get started</h3>
-<p>
-  The example pages below show how to get started using the GOV.UK front end toolkit to create basic styles for typography and grid layout.
-</p>
-* [Design style guide examples]({{ site.baseurl }}/example/)
+* [Read the design style guide]({{ site.baseurl }}/design-guide/)
+
+
+<h2 class="heading-36">Design patterns</h2>
+
+The basic elements can be combined into patterns which address a specific user need.
+Here are four simple design patterns to get started with:
+
+* [Addresses]({{ site.baseurl }}/patterns/addresses.html)
+* [Date of birth]({{ site.baseurl }}/patterns/date-of-birth.html)
+* [People's names]({{ site.baseurl }}/patterns/peoples-names.html)
+* [Progress indicators]({{ site.baseurl }}/patterns/progress-indicator.html)
+
+<h3 class="heading-24">How to use the design patterns</h3>
+
+1. Don't use a pattern unless there's a genuine need for it
+2. Try the patterns here before creating your own versions
+3. If they don't work for your users, change them until they do
+4. [Let us know](https://designpatterns.hackpad.com/Pattern-library-0eUk1OdHvql) if you use or change a pattern

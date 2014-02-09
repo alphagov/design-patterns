@@ -10,6 +10,8 @@ phases:
   - alpha
 ---
 
+Here are two ways to ask users for their name:
+
 1. **[Single name field](#single-name-field)**
 2. **[Multiple name fields](#multiple-name-fields)**
 
@@ -38,7 +40,6 @@ A single text field where the user can enter their full name, including title if
 * Difficult if you need to parse out things like last name
 * Can't use formal contractions in correspondence (like 'Mr. Smith')
 * May be difficult to integrate this apporach with legacy back-end systems
-
 
 <h2 class="heading-36" id="multiple-name-fields">2. Multiple name fields</h2>
 
@@ -81,7 +82,4 @@ If you need to use multiple name fields then the current preferred labelling is 
 Avoid asking for someone's title without good reason. It's extra work for users and you're asking them to potentially reveal their gender and marital status as well, which they may not want to do.
 
 If you do implement a title field make sure users can leave it blank and then deal with that option sensibly in any resulting correspondence.
-
-
-
 

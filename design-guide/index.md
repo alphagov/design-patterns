@@ -8,7 +8,8 @@ phases:
 ---
 
 <div class="guide">
-  <p>Use this guide to help make your service look consistent with the rest of GOV.UK.</p>
+  <p>This guide explains how to make your service look consistent with the rest of GOV.UK.
+    For advice on how best to implement this style guide, <a href="../example/">see the examples page</a>.</p>
 </div>
 
 1. **[Typography](#guide-typography)**

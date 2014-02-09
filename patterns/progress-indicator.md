@@ -16,7 +16,7 @@ Progress indicators address this issue by telling users how many steps they've c
 
 1. **[Step indicator](#step-indicator)**
 2. **[Progress bar](#progress-bar)**
-3. **[Summary-menu](#summary menu)**
+3. **[Summary menu](#summary-menu)**
 
 <h2 class="heading-36" id="step-indicator">1. Step indicator</h2>
 
@@ -33,7 +33,6 @@ Tell the user what step they're on.
 </div>
 
 This approach should be tried before moving on to any of the others. It's accessible, compact and works well on all devices.
-
 
 <h2 class="heading-36" id="progress-bar">2. Progress bar</h2>
 
