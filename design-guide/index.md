@@ -37,7 +37,7 @@ phases:
   <div class="inner-block">
     
     <div class="text">
-      <h4>
+      <h4 class="heading-19">
         If you’re a motor trader. <em>19px</em>
       </h4>
       <p>
@@ -67,7 +67,7 @@ phases:
   <div class="inner-block">
     
     <div class="text">
-      <h1>Driving and transport <em>48px</em></h1>
+      <h1 class="heading-48">Driving and transport <em>48px</em></h1>
       <p>
         Buy or renew your tax disc (vehicle licence) online - get tax for your car, motorbike, lorry, bus or other vehicle that needs a tax disc. <em>19px</em>
       </p>
@@ -85,14 +85,14 @@ phases:
   <div class="inner-block">
     
     <div class="text">
-      <h2>
+      <h2 class="heading-36">
         Disability exemption <em>36px</em>
       </h2>
       <p>
         You may be exempt or pay a reduced amount of vehicle tax if you receive certain benefits because of your disability. Find out if you’re eligible and how to apply. <em>19px</em>
       </p>
       
-      <h3>
+      <h3 class="heading-24">
         Disability exemption <em>24px</em>
       </h3>
       <p>
@@ -170,7 +170,7 @@ phases:
 
 <!-- Grid : Example -->
 <div class="guide" id="guide-grid-4-col">
-  <h3 class="guide-subheader">Four equal columns</h3>
+  <h3 class="heading-24 guide-subheader">Four equal columns</h3>
 </div>
 
 <div class="example example-grid">
@@ -200,7 +200,7 @@ phases:
 
 <!-- Grid : Take a look at the examples -->
 <div class="guide guide-end">
-  <h3 class="guide-subheader">Take a look at the examples</h3>
+  <h3 class="heading-24 guide-subheader">Take a look at the examples</h3>
   <p>
     Here's a page which shows how to create the above <a href="{{ site.baseurl}}/example/grid.html">grid layout</a>. Use this example to get started structuring your page content.
   </p>
@@ -209,7 +209,7 @@ phases:
 
 <!-- Images -->
 <div class="guide" id="guide-images">
-  <h2 class="guide-header">3. Images</h2>
+  <h2 class="heading-36 guide-header">3. Images</h2>
   <p>
     Avoid using images, GOV.UK is for services and information, not photographs. If images cannot be avoided they should be landscape, 3:2 aspect ratio.
   </p>
@@ -234,7 +234,7 @@ phases:
 
 <!-- Data -->
 <div class="guide" id="guide-data">
-  <h2 class="guide-header">4. Data</h2>
+  <h2 class="heading-36 guide-header">4. Data</h2>
   <p>
     Data is recommended as an alternative to using photography.
   </p>
@@ -291,7 +291,7 @@ phases:
 
 <!-- Colour palette -->
 <div class="guide" id="guide-colour">
-  <h2 class="guide-header">5. Colour</h2>
+  <h2 class="heading-36 guide-header">5. Colour</h2>
   <p>
     Text should only be set in black with secondary text in grey. Links should be blue and buttons or dialog boxes should have text in white.
   </p>

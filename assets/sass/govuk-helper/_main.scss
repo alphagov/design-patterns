@@ -16,7 +16,6 @@
   // ==========================================================================
   
   // Headings
-  h1,
   .heading-48 {
     @include bold-48();
     margin-top: $gutter-half;
@@ -25,15 +24,13 @@
       margin-top: $gutter;
       margin-bottom: $gutter*2;
     }
-    span,
-    .document-type {
+    .heading-27 {
       display: block;
       @include core-27();
       color: $secondary-text-colour;
     }
   }
   
-  h2,
   .heading-36 {
     @include bold-36();
     margin-top: 25px;
@@ -44,7 +41,6 @@
     }
   }
   
-  h3,
   .heading-24 {
     @include bold-24();
     margin-top: 25px;
@@ -55,7 +51,6 @@
     }
   }
   
-  h4,
   .heading-19 {
     @include bold-19();
     margin-top: 10px;
@@ -69,10 +64,6 @@
   pre {
     margin-top: 5px;
     margin-bottom: 20px;
-  }
-  
-  .intro {
-    margin-bottom: $gutter;
   }
   
   // Data
@@ -184,14 +175,14 @@
   }
   
   textarea {
-    min-height: 10em;
+    min-height: 190px;
     height: auto;
   }
   
   .form-control {
     min-width: 96%;
     @include media(tablet) {
-      min-width: 18em;
+      min-width: 350px;
     }
   }
   
@@ -218,7 +209,7 @@
 .main {
   max-width: 1020px;
   width: auto;
-  margin: 0 auto 90px;
+  margin: 0 auto 90px auto;
 }
 
 

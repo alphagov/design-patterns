@@ -9,7 +9,7 @@ phases:
 <div id="global-breadcrumb" class="breadcrumb">
   <nav role="navigation">
     <ol class="group">
-      <li><a href="https://www.gov.uk">Home</a></li>
+      <li><a href="https://www.gov.uk/service-manual">Home</a></li>
       <li><a href="{{ site.baseurl }}/">Guides</a></li>
       <li><a href="{{ site.baseurl }}/example/">Design style guide examples</a></li>
     </ol>
@@ -23,7 +23,7 @@ phases:
       <div class="text">
 
         <h1 class="heading-48">
-          <span>{{ page.document-type }} <em class="highlight">.document-type</em></span>
+          <span class="heading-27">{{ page.document-type }} <em class="highlight">.heading-27</em></span>
           {{ page.title }} <em class="highlight">.heading-48</em>
         </h1>
 

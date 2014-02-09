@@ -9,7 +9,7 @@ phases:
 <div id="global-breadcrumb" class="breadcrumb">
   <nav role="navigation">
     <ol class="group">
-      <li><a href="https://www.gov.uk">Home</a></li>
+      <li><a href="https://www.gov.uk/service-manual">Home</a></li>
       <li><a href="{{ site.baseurl }}/">Guides</a></li>
       <li><a href="{{ site.baseurl }}/example/">Design style guide examples</a></li>
     </ol>
@@ -22,22 +22,21 @@ phases:
 
       <div class="text">
 
-        <h1>
-          <span>{{ page.document-type }}</span>
+        <h1 class="heading-48">
+          <span class="heading-27">{{ page.document-type }}</span>
           {{ page.title }}
         </h1>
 
         <p>
-          These examples use the <a href="#style-guide-helper">style guide helper</a>, a couple of files that show how to get started using the GOV.UK front end toolkit by creating basic styles for typography and grid layout.
+          These examples use the style guide helper, and show how to get started using the GOV.UK front end toolkit by creating basic styles for typography and grid layout.
         </p>
         
         <ul>
           <li><a href="{{ site.baseurl }}/example/typography.html">Typography</a></li>
           <li><a href="{{ site.baseurl }}/example/grid.html">Grid layout</a></li>
-          <!-- <li><a href="{{ site.baseurl }}/example/form.html">Form styles</a></li> -->
         </ul>
         
-        <h3 id="style-guide-helper">The style guide helper files</h3>
+        <h3 class="heading-24">The style guide helper files</h3>
         
         <p>
           These examples assume you are familiar with Sass and that you will use Sass to generate your stylesheets.
