@@ -4,6 +4,7 @@ document-type: Design pattern
 title: Progress indicators
 page-class: 'progress-indicator'
 discuss-url: https://designpatterns.hackpad.com/Progress-indicators-3AOrLoia9Us
+sass-url: https://github.com/alphagov/design-patterns/blob/gh-pages/assets/sass/design-patterns/_progress-indicator.scss
 published: 2 January 2014
 updated: 9 January 2014
 phases:
