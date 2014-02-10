@@ -16,5 +16,3 @@ source ~/.bashrc
 # Set up application
 gem install bundler
 gem install sass
-cd /design-patterns
-bundle
