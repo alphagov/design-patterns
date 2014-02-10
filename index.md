@@ -14,7 +14,7 @@ Help us improve it by [giving us your feedback](https://designpatterns.hackpad.c
 
 This guide explains how to style and arrange the basic elements like like headings, paragraphs, images, form fields and buttons.
 
-* [Read the design style guide]({{ site.baseurl }}/design-guide/)
+* [Read the design style guide]({{ site.baseurl }}/guides/design-style-guide.html)
 
 
 <h2 class="heading-36">Design patterns</h2>
@@ -22,14 +22,15 @@ This guide explains how to style and arrange the basic elements like like headin
 The basic elements can be combined into patterns which address a specific user need.
 Here are four simple design patterns to get started with:
 
-* [Addresses]({{ site.baseurl }}/patterns/addresses.html)
-* [Date of birth]({{ site.baseurl }}/patterns/date-of-birth.html)
-* [People's names]({{ site.baseurl }}/patterns/peoples-names.html)
-* [Progress indicators]({{ site.baseurl }}/patterns/progress-indicator.html)
+* [Addresses]({{ site.baseurl }}/guides/addresses.html)
+* [Date of birth]({{ site.baseurl }}/guides/date-of-birth.html)
+* [People's names]({{ site.baseurl }}/guides/peoples-names.html)
+* [Progress indicators]({{ site.baseurl }}/guides/progress-indicator.html)
 
 <h3 class="heading-24">How to use the design patterns</h3>
 
-1. Don't use a pattern unless there's a genuine need for it
+1. Don't use a pattern unless there's a genuine user need for it
 2. Try the patterns here before creating your own versions
-3. If they don't work for your users, change them until they do
+3. The [example code](https://github.com/alphagov/design-patterns/tree/gh-pages/assets/sass/design-patterns) is a starting point - make it your own
+3. If the patterns don't work for your users, change them until they do
 4. [Let us know](https://designpatterns.hackpad.com/Pattern-library-0eUk1OdHvql) if you use or change a pattern

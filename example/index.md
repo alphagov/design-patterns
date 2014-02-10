@@ -10,8 +10,7 @@ phases:
   <nav role="navigation">
     <ol class="group">
       <li><a href="https://www.gov.uk/service-manual">Home</a></li>
-      <li><a href="{{ site.baseurl }}/">Guides</a></li>
-      <li><a href="{{ site.baseurl }}/example/">Design style guide examples</a></li>
+      <li><a href="{{ site.baseurl }}/">New design guides</a></li>
     </ol>
   </nav>
 </div>
