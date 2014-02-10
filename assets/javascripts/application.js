@@ -1,6 +1,6 @@
 $(document).ready(function () {
     
-  // EXAMPLE - GRID HIGHLIGHT
+  // Example - Grid highlight
   if ($('.js-highlight-grid').length>0) {
     
     $('.js-highlight-grid').click(function(e) {
@@ -15,11 +15,43 @@ $(document).ready(function () {
           html.addClass('example-highlight-grid');
           $('.grid .inner-block').wrapInner('<div class="is-inner-block-highlight"></div>');
       }
-
+      
     });
   }
+  
+  // Example - Postcode lookup
+  if ($('.js-address-finder').length>0) {
     
-    // Convert a text field to a 'Title' select box
+    // Hide manual address entry
+    $('.js-enter-address label').hide();
+    $('.js-enter-address textarea').hide();
+    
+    // Hide address select
+    $('.js-select-address label').hide();
+    $('.js-select-address select').hide();
+    
+    // Show address 
+    $('.js-button-find-address').click(function(e) {
+      e.preventDefault();
+      $('.js-select-address label').show();
+      $('.js-select-address select').show();
+    });
+    
+    $('.js-enter-address a').click(function(e) {
+      e.preventDefault();
+      $(this).hide();
+      
+      $('.js-enter-address label').show();
+      $('.js-enter-address textarea').show();
+      
+      var selected = $('.js-select-address select').find(":selected").text();
+      $('.js-enter-address textarea').val(selected);
+      
+    });
+  
+  };
+  
+  // Convert a text field to a 'Title' select box
     
     jQuery.fn.convertToTitleSelect = function() {
     var titles = ['', 'Mr', 'Ms', 'Mrs', 'Miss', 'Dr'];
@@ -70,66 +102,6 @@ $(document).ready(function () {
   
   $('#name-title').convertToTitleSelect();
   
-  
-  // POSTCODE LOOKUP
-  jQuery.fn.postcodeLookup = function() {
-    // Add the control above the address fields
-    $(this).before(
-        '<div class="control">' +
-        '<label for="postcode-lookup">Postcode</label> ' +
-        '<input type="text" id="postcode-lookup" class="postcode"><span id="find-uk-address" class="button-secondary">Find UK address</span>' +    
-        '</div>' +
-        '<p id="enter-address-manually"><span class="link-style">Enter address manually</span></p>'
-    );  
-    // Hide the address fields by default
-    $(this).hide();
-    $('#select-address').hide();
-
-    // 'Enter address manually' link
-    $('#enter-address-manually span').click(function() {
-      $('.js-address-finder').toggle();
-      $(this).hide();
-    });
-
-    // Find addresses
-    $('#find-uk-address').click(function() {
-      $(this).after(
-        '<div class="control" id="select-address"><label for="address-list">Select an address</label>' +
-        '<select class="address-list" id="address-list" size="15">' + 
-        '<option>1 Borough High Street, London, SE1 6PQ</option>' +
-        '<option>2 Borough High Street, London, SE1 6PQ</option>' +
-        '<option>3 Borough High Street, London, SE1 6PQ</option>' +
-        '<option>4 Borough High Street, London, SE1 6PQ</option>' +
-        '<option>5 Borough High Street, London, SE1 6PQ</option>' +
-        '<option>6 Borough High Street, London, SE1 6PQ</option>' +
-        '<option>7 Borough High Street, London, SE1 6PQ</option>' +
-        '<option>8 Borough High Street, London, SE1 6PQ</option>' +
-        '<option>9 Borough High Street, London, SE1 6PQ</option>' +
-        '<option>10 Borough High Street, London, SE1 6PQ</option>' +
-        '<option>11 Borough High Street, London, SE1 6PQ</option>' +
-        '<option>12 Borough High Street, London, SE1 6PQ</option>' +
-        '<option>13 Borough High Street, London, SE1 6PQ</option>' +
-        '<option>14 Borough High Street, London, SE1 6PQ</option>' +
-        '<option>15 Borough High Street, London, SE1 6PQ</option>' +
-        '</select>' + 
-        '</div>'
-      );
-    });
-
-    // Select address
-    $(document.body).on( "change", "#address-list", function() {
-      var selectedAddress = $('#address-list').val();
-      selectedAddress = selectedAddress.replace(/, /g, "\n")
-      $('.js-address-finder').show();
-      $('#enter-address-manually, #select-address').hide();
-      $('#address-list').attr('size', '1');
-      $('#address2').val(selectedAddress).focus();
-    });
-
-  };
-
-  $('.js-address-finder').postcodeLookup();
-
   // DETAILS TAG POLYFILL
   
   // Add conditional classname based on support

@@ -69,7 +69,6 @@
   // Data
   .data-80 {
     @include bold-80;
-    //line-height: 0.4;
   }
   
   .data-48 {
@@ -141,11 +140,6 @@
       line-height: normal;
   }
   
-  textarea {
-    overflow: auto;
-    vertical-align: top;
-  }
-  
   input[type="text"],
   input[type="email"],
   input[type="date"],
@@ -161,25 +155,22 @@
   input[type="week"],
   select[size],
   textarea {
-    padding: 3px 4px;
-    background-color: #FFFFFF;
-    border: 1px solid $border-colour;
     font-size: 1em;
+    
+    padding: 4px;
+    background-color: $white;
+    border: 1px solid $border-colour;
+    
     // Disable webkit appearance and remove rounded corners
     -webkit-appearance: none;
     border-radius: 0;
   }
   
   textarea {
+    overflow: auto;
+    vertical-align: top;
     min-height: 190px;
     height: auto;
-  }
-  
-  .form-control {
-    min-width: 96%;
-    @include media(tablet) {
-      min-width: 350px;
-    }
   }
   
   .form-group {
@@ -194,8 +185,21 @@
     margin-bottom: 5px;
   }
   
+  .form-control {
+    width: 96%;
+    @include media(tablet) {
+      width: 350px;
+    }
+  }
+  
+  .hint{
+    display: block;
+    color: $secondary-text-colour;
+    @include core-16;
+    margin-top: 8px;
+  }
+  
 }
-// End .gov-uk scope
 
 
 // ==========================================================================
@@ -279,14 +283,6 @@
 // ==========================================================================
 // Helper classes
 // ==========================================================================
-
-.is-space {
-  margin-bottom: $gutter;
-}
-
-.is-double-space {
-  margin-bottom: $gutter*2;
-}
 
 .cf {
   @extend %contain-floats;

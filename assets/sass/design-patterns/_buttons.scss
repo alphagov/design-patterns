@@ -1,6 +1,7 @@
-// Buttons
 .button {
   @include button ($green);
+  margin: 0 $gutter-half $gutter-half 0;
+  vertical-align: top;
 }
 
 .button-secondary {
@@ -9,18 +10,4 @@
 
 .button-warning {
   @include button ($red);
-}
-
-%link-style,
-.link-style {
-    display: inline;
-    color: $link-colour;
-    -webkit-appearance:none;
-    background: none;
-    border: none;
-    text-decoration: underline;
-  &:hover {
-    color: $link-hover-colour;
-    cursor: pointer;
-  }
 }

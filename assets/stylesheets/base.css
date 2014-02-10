@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @-ms-viewport {
   width: device-width;
 }
@@ -40,7 +39,8 @@
 
 */
 /* line 49, ../govuk_frontend_toolkit/stylesheets/_shims.scss */
-.grid-wrapper:after, .cf:after, .date-of-birth:after, .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after, .pattern-example:after, .example:after {
+.grid-wrapper:after, .cf:after, .phase-block:after, .progress-indicator ol:after,
+.progress-indicator ul:after, .example:after {
   content: "";
   display: block;
   clear: both;
@@ -101,7 +101,8 @@
 
 */
 /* line 49, ../govuk_frontend_toolkit/stylesheets/_shims.scss */
-.grid-wrapper:after, .cf:after, .date-of-birth:after, .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after, .pattern-example:after, .example:after {
+.grid-wrapper:after, .cf:after, .phase-block:after, .progress-indicator ol:after,
+.progress-indicator ul:after, .example:after {
   content: "";
   display: block;
   clear: both;
@@ -136,7 +137,8 @@
 
 */
 /* line 49, ../govuk_frontend_toolkit/stylesheets/_shims.scss */
-.grid-wrapper:after, .cf:after, .date-of-birth:after, .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after, .pattern-example:after, .example:after {
+.grid-wrapper:after, .cf:after, .phase-block:after, .progress-indicator ol:after,
+.progress-indicator ul:after, .example:after {
   content: "";
   display: block;
   clear: both;
@@ -331,7 +333,7 @@ Example usage:
     line-height: 1.03774;
   }
 }
-/* line 75, ../sass/govuk-helper/_main.scss */
+/* line 74, ../sass/govuk-helper/_main.scss */
 .gov-uk .data-48 {
   font-family: "nta", Arial, sans-serif;
   font-size: 48px;
@@ -342,13 +344,13 @@ Example usage:
   line-height: 0.9;
 }
 @media (max-width: 640px) {
-  /* line 75, ../sass/govuk-helper/_main.scss */
+  /* line 74, ../sass/govuk-helper/_main.scss */
   .gov-uk .data-48 {
     font-size: 32px;
     line-height: 1.09375;
   }
 }
-/* line 80, ../sass/govuk-helper/_main.scss */
+/* line 79, ../sass/govuk-helper/_main.scss */
 .gov-uk .data p {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
@@ -358,24 +360,24 @@ Example usage:
   font-weight: 700;
 }
 @media (max-width: 640px) {
-  /* line 80, ../sass/govuk-helper/_main.scss */
+  /* line 79, ../sass/govuk-helper/_main.scss */
   .gov-uk .data p {
     font-size: 14px;
     line-height: 1.14286;
   }
 }
-/* line 92, ../sass/govuk-helper/_main.scss */
+/* line 91, ../sass/govuk-helper/_main.scss */
 .gov-uk dl,
 .gov-uk menu,
 .gov-uk ol,
 .gov-uk ul {
   margin: 0;
 }
-/* line 96, ../sass/govuk-helper/_main.scss */
+/* line 95, ../sass/govuk-helper/_main.scss */
 .gov-uk dd {
   margin-left: 0;
 }
-/* line 102, ../sass/govuk-helper/_main.scss */
+/* line 101, ../sass/govuk-helper/_main.scss */
 .gov-uk menu,
 .gov-uk ol,
 .gov-uk ul {
@@ -383,24 +385,24 @@ Example usage:
   margin-bottom: 20px;
   padding: 0 0 0 20px;
 }
-/* line 108, ../sass/govuk-helper/_main.scss */
+/* line 107, ../sass/govuk-helper/_main.scss */
 .gov-uk ul {
   list-style-type: disc;
 }
-/* line 111, ../sass/govuk-helper/_main.scss */
+/* line 110, ../sass/govuk-helper/_main.scss */
 .gov-uk ol {
   list-style-type: decimal;
 }
-/* line 116, ../sass/govuk-helper/_main.scss */
+/* line 115, ../sass/govuk-helper/_main.scss */
 .gov-uk ul li,
 .gov-uk ol li {
   margin-bottom: 5px;
 }
-/* line 125, ../sass/govuk-helper/_main.scss */
+/* line 124, ../sass/govuk-helper/_main.scss */
 .gov-uk form {
   margin: 0;
 }
-/* line 132, ../sass/govuk-helper/_main.scss */
+/* line 131, ../sass/govuk-helper/_main.scss */
 .gov-uk button,
 .gov-uk input,
 .gov-uk select,
@@ -410,17 +412,12 @@ Example usage:
   vertical-align: baseline;
   *vertical-align: middle;
 }
-/* line 140, ../sass/govuk-helper/_main.scss */
+/* line 139, ../sass/govuk-helper/_main.scss */
 .gov-uk button,
 .gov-uk input {
   line-height: normal;
 }
-/* line 144, ../sass/govuk-helper/_main.scss */
-.gov-uk textarea {
-  overflow: auto;
-  vertical-align: top;
-}
-/* line 163, ../sass/govuk-helper/_main.scss */
+/* line 157, ../sass/govuk-helper/_main.scss */
 .gov-uk input[type="text"],
 .gov-uk input[type="email"],
 .gov-uk input[type="date"],
@@ -436,149 +433,153 @@ Example usage:
 .gov-uk input[type="week"],
 .gov-uk select[size],
 .gov-uk textarea {
-  padding: 3px 4px;
-  background-color: #FFFFFF;
-  border: 1px solid #bfc1c3;
   font-size: 1em;
+  padding: 4px;
+  background-color: white;
+  border: 1px solid #bfc1c3;
   -webkit-appearance: none;
   border-radius: 0;
 }
-/* line 173, ../sass/govuk-helper/_main.scss */
+/* line 169, ../sass/govuk-helper/_main.scss */
 .gov-uk textarea {
+  overflow: auto;
+  vertical-align: top;
   min-height: 190px;
   height: auto;
 }
-/* line 178, ../sass/govuk-helper/_main.scss */
-.gov-uk .form-control {
-  min-width: 96%;
-}
-@media (min-width: 641px) {
-  /* line 178, ../sass/govuk-helper/_main.scss */
-  .gov-uk .form-control {
-    min-width: 350px;
-  }
-}
-/* line 185, ../sass/govuk-helper/_main.scss */
+/* line 176, ../sass/govuk-helper/_main.scss */
 .gov-uk .form-group {
   margin-bottom: 15px;
 }
 @media (min-width: 641px) {
-  /* line 185, ../sass/govuk-helper/_main.scss */
+  /* line 176, ../sass/govuk-helper/_main.scss */
   .gov-uk .form-group {
     margin-bottom: 30px;
   }
 }
-/* line 192, ../sass/govuk-helper/_main.scss */
+/* line 183, ../sass/govuk-helper/_main.scss */
 .gov-uk .form-group label {
   display: block;
   margin-bottom: 5px;
 }
+/* line 188, ../sass/govuk-helper/_main.scss */
+.gov-uk .form-control {
+  width: 96%;
+}
+@media (min-width: 641px) {
+  /* line 188, ../sass/govuk-helper/_main.scss */
+  .gov-uk .form-control {
+    width: 350px;
+  }
+}
+/* line 195, ../sass/govuk-helper/_main.scss */
+.gov-uk .hint {
+  display: block;
+  color: #6f777b;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none;
+  margin-top: 8px;
+}
+@media (max-width: 640px) {
+  /* line 195, ../sass/govuk-helper/_main.scss */
+  .gov-uk .hint {
+    font-size: 14px;
+    line-height: 1.14286;
+  }
+}
 
-/* line 205, ../sass/govuk-helper/_main.scss */
+/* line 209, ../sass/govuk-helper/_main.scss */
 .main {
   max-width: 1020px;
   width: auto;
   margin: 0 auto 90px auto;
 }
 
-/* line 213, ../sass/govuk-helper/_main.scss */
+/* line 217, ../sass/govuk-helper/_main.scss */
 .grid-wrapper {
   padding: 0 15px;
 }
 @media (min-width: 641px) {
-  /* line 213, ../sass/govuk-helper/_main.scss */
+  /* line 217, ../sass/govuk-helper/_main.scss */
   .grid-wrapper {
     padding: 0 15px;
   }
 }
 
-/* line 222, ../sass/govuk-helper/_main.scss */
+/* line 226, ../sass/govuk-helper/_main.scss */
 .grid {
   float: left;
   width: 100%;
 }
 
 @media (min-width: 641px) {
-  /* line 227, ../sass/govuk-helper/_main.scss */
+  /* line 231, ../sass/govuk-helper/_main.scss */
   .grid .inner-block {
     padding: 0 15px;
   }
 }
 
-/* line 234, ../sass/govuk-helper/_main.scss */
+/* line 238, ../sass/govuk-helper/_main.scss */
 .grid-1-4 {
   width: 100%;
 }
 @media (min-width: 641px) {
-  /* line 234, ../sass/govuk-helper/_main.scss */
+  /* line 238, ../sass/govuk-helper/_main.scss */
   .grid-1-4 {
     width: 25%;
   }
 }
 
-/* line 241, ../sass/govuk-helper/_main.scss */
+/* line 245, ../sass/govuk-helper/_main.scss */
 .grid-1-3 {
   width: 100%;
 }
 @media (min-width: 641px) {
-  /* line 241, ../sass/govuk-helper/_main.scss */
+  /* line 245, ../sass/govuk-helper/_main.scss */
   .grid-1-3 {
     width: 33.333333333%;
   }
 }
 
-/* line 248, ../sass/govuk-helper/_main.scss */
+/* line 252, ../sass/govuk-helper/_main.scss */
 .grid-1-2 {
   width: 100%;
 }
 @media (min-width: 641px) {
-  /* line 248, ../sass/govuk-helper/_main.scss */
+  /* line 252, ../sass/govuk-helper/_main.scss */
   .grid-1-2 {
     width: 50%;
   }
 }
 
-/* line 255, ../sass/govuk-helper/_main.scss */
+/* line 259, ../sass/govuk-helper/_main.scss */
 .grid-2-3 {
   width: 100%;
 }
 @media (min-width: 641px) {
-  /* line 255, ../sass/govuk-helper/_main.scss */
+  /* line 259, ../sass/govuk-helper/_main.scss */
   .grid-2-3 {
     width: 66.666666667%;
   }
 }
 
-/* line 262, ../sass/govuk-helper/_main.scss */
+/* line 266, ../sass/govuk-helper/_main.scss */
 .grid-3-4 {
   width: 100%;
 }
 @media (min-width: 641px) {
-  /* line 262, ../sass/govuk-helper/_main.scss */
+  /* line 266, ../sass/govuk-helper/_main.scss */
   .grid-3-4 {
     width: 75%;
   }
 }
 
-/* line 274, ../sass/govuk-helper/_main.scss */
+/* line 278, ../sass/govuk-helper/_main.scss */
 .text-secondary {
   color: #6f777b;
-}
-
-/* line 283, ../sass/govuk-helper/_main.scss */
-.is-space {
-  margin-bottom: 30px;
-}
-
-/* line 287, ../sass/govuk-helper/_main.scss */
-.is-double-space {
-  margin-bottom: 60px;
-}
-
-/* line 2, ../sass/design-patterns/_address-finder.scss */
-#find-uk-address {
-  margin-left: 10px;
-  vertical-align: -1px;
 }
 
 /* line 1, ../sass/design-patterns/_alpha-beta.scss */
@@ -614,61 +615,126 @@ Example usage:
   color: #0b0c0c;
 }
 
-/* line 1, ../sass/design-patterns/_breadcrumb.scss */
-#global-breadcrumb {
-  background-color: white;
-  max-width: 1020px;
-  margin: 0 auto;
-  z-index: 50;
+/* line 1, ../sass/design-patterns/_phase-block.scss */
+.phase-block {
+  display: inline !important;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-/* line 8, ../sass/design-patterns/_breadcrumb.scss */
-#global-breadcrumb nav ol {
-  max-width: 960px;
-  margin: 0 15px;
-  padding: 0.75em 0;
+/* line 10, ../sass/design-patterns/_phase-block.scss */
+.phase-block .alpha,
+.phase-block .beta {
+  display: inline;
+  vertical-align: middle;
+  float: none;
 }
-@media (min-width: 641px) {
-  /* line 8, ../sass/design-patterns/_breadcrumb.scss */
-  #global-breadcrumb nav ol {
-    margin: 0 30px;
-  }
-}
-/* line 16, ../sass/design-patterns/_breadcrumb.scss */
-#global-breadcrumb nav ol li {
+/* line 16, ../sass/design-patterns/_phase-block.scss */
+.phase-block .alpha {
+  display: -moz-inline-stack;
+  display: inline-block;
+  background-color: #d53880;
+  color: #fff;
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
   font-weight: 300;
   text-transform: none;
-  background: url(https://assets.digital.cabinet-office.gov.uk/static/separator-73822610794bc3a64871f144d93d6526.png) 100% 50% no-repeat;
-  float: left;
-  list-style: none;
-  margin-left: 0;
-  margin-right: 0.5em;
-  padding-right: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  margin: 3px 10px 0 5px;
+  padding: 2px 5px 0;
 }
 @media (max-width: 640px) {
-  /* line 16, ../sass/design-patterns/_breadcrumb.scss */
-  #global-breadcrumb nav ol li {
+  /* line 16, ../sass/design-patterns/_phase-block.scss */
+  .phase-block .alpha {
     font-size: 14px;
     line-height: 1.14286;
   }
 }
-/* line 26, ../sass/design-patterns/_breadcrumb.scss */
-#global-breadcrumb nav ol li:last-child {
+/* line 20, ../sass/design-patterns/_phase-block.scss */
+.phase-block .beta {
+  display: -moz-inline-stack;
+  display: inline-block;
+  background-color: #f47738;
+  color: #fff;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  margin: 3px 10px 0 5px;
+  padding: 2px 5px 0;
+}
+@media (max-width: 640px) {
+  /* line 20, ../sass/design-patterns/_phase-block.scss */
+  .phase-block .beta {
+    font-size: 14px;
+    line-height: 1.14286;
+  }
+}
+
+/* line 1, ../sass/design-patterns/_breadcrumb.scss */
+.breadcrumb {
+  max-width: 1020px;
+  margin: 0 auto 35px auto;
+}
+
+/* line 6, ../sass/design-patterns/_breadcrumb.scss */
+.breadcrumb ol {
+  list-style: none;
+  margin: 0 15px;
+  padding: 12px 0;
+  border-top: 10px solid #2b8cc4;
+}
+@media (min-width: 641px) {
+  /* line 6, ../sass/design-patterns/_breadcrumb.scss */
+  .breadcrumb ol {
+    margin: 0 30px;
+  }
+}
+
+/* line 17, ../sass/design-patterns/_breadcrumb.scss */
+.breadcrumb li {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none;
+  float: left;
+  background: url(https://assets.digital.cabinet-office.gov.uk/static/separator-73822610794bc3a64871f144d93d6526.png) 100% 50% no-repeat;
+  margin-right: 8px;
+  padding-right: 16px;
+}
+@media (max-width: 640px) {
+  /* line 17, ../sass/design-patterns/_breadcrumb.scss */
+  .breadcrumb li {
+    font-size: 14px;
+    line-height: 1.14286;
+  }
+}
+/* line 24, ../sass/design-patterns/_breadcrumb.scss */
+.breadcrumb li:last-child {
   background-image: none;
   margin-right: 0;
 }
-/* line 31, ../sass/design-patterns/_breadcrumb.scss */
-#global-breadcrumb nav ol li a {
+
+/* line 30, ../sass/design-patterns/_breadcrumb.scss */
+.breadcrumb a {
   color: #0b0c0c;
 }
-/* line 34, ../sass/design-patterns/_breadcrumb.scss */
-#global-breadcrumb nav ol li a:hover {
+/* line 33, ../sass/design-patterns/_breadcrumb.scss */
+.breadcrumb a:hover {
   color: #2e8aca;
 }
 
-/* line 2, ../sass/design-patterns/_buttons.scss */
+/* line 1, ../sass/design-patterns/_buttons.scss */
 .button {
   background-color: #006435;
   position: relative;
@@ -689,6 +755,8 @@ Example usage:
   -webkit-font-smoothing: antialiased;
   cursor: pointer;
   color: white;
+  margin: 0 15px 15px 0;
+  vertical-align: top;
 }
 /* line 51, ../govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
 .button:visited {
@@ -751,7 +819,7 @@ Example usage:
   margin-right: 0;
 }
 
-/* line 6, ../sass/design-patterns/_buttons.scss */
+/* line 7, ../sass/design-patterns/_buttons.scss */
 .button-secondary {
   background-color: #dee0e2;
   position: relative;
@@ -834,7 +902,7 @@ Example usage:
   margin-right: 0;
 }
 
-/* line 10, ../sass/design-patterns/_buttons.scss */
+/* line 11, ../sass/design-patterns/_buttons.scss */
 .button-warning {
   background-color: #b10e1e;
   position: relative;
@@ -917,467 +985,110 @@ Example usage:
   margin-right: 0;
 }
 
-/* line 15, ../sass/design-patterns/_buttons.scss */
-.link-style {
-  display: inline;
-  color: #005ea5;
-  -webkit-appearance: none;
-  background: none;
-  border: none;
-  text-decoration: underline;
+/* line 2, ../sass/design-patterns/_addresses.scss */
+.form .postcode {
+  width: 100px;
 }
-/* line 22, ../sass/design-patterns/_buttons.scss */
-.link-style:hover {
-  color: #2e8aca;
-  cursor: pointer;
+
+/* line 7, ../sass/design-patterns/_addresses.scss */
+.address-finder label {
+  padding-top: 10px;
+}
+
+/* line 10, ../sass/design-patterns/_addresses.scss */
+.address-finder .postcode {
+  float: left;
+  margin-right: 15px;
 }
 
 /* line 3, ../sass/design-patterns/_date-of-birth.scss */
-.date-of-birth .control {
-  width: 60px;
-  width: 69px;
-  float: left;
+.date-of-birth legend {
+  margin-bottom: 15px;
 }
-/* line 9, ../sass/design-patterns/_date-of-birth.scss */
-.date-of-birth .control.day input, .date-of-birth .control.month input {
+/* line 7, ../sass/design-patterns/_date-of-birth.scss */
+.date-of-birth .form-group {
   width: 40px;
-}
-/* line 11, ../sass/design-patterns/_date-of-birth.scss */
-.date-of-birth .control.day input:after, .date-of-birth .control.month input:after {
-  content: "/";
-}
-/* line 15, ../sass/design-patterns/_date-of-birth.scss */
-.date-of-birth .control.year input {
-  width: 60px;
-}
-
-/* line 16, ../sass/design-patterns/_forms.scss */
-.form input[type="text"],
-.form input[type="password"],
-.form input[type="email"],
-.form input[type="date"],
-.form input[type="datetime"],
-.form input[type="datetime-local"],
-.form input[type="email"],
-.form input[type="month"],
-.form input[type="number"],
-.form input[type="search"],
-.form input[type="tel"],
-.form input[type="time"],
-.form input[type="url"],
-.form input[type="week"] {
-  background-color: white;
-  border: 1px solid #bfc1c3;
-  padding: 3px 0 3px 8px;
-}
-@media (max-width: 640px) {
-  /* line 16, ../sass/design-patterns/_forms.scss */
-  .form input[type="text"],
-  .form input[type="password"],
-  .form input[type="email"],
-  .form input[type="date"],
-  .form input[type="datetime"],
-  .form input[type="datetime-local"],
-  .form input[type="email"],
-  .form input[type="month"],
-  .form input[type="number"],
-  .form input[type="search"],
-  .form input[type="tel"],
-  .form input[type="time"],
-  .form input[type="url"],
-  .form input[type="week"] {
-    width: 97%;
-    box-sizing: border-box;
-  }
+  float: left;
+  margin-right: 15px;
 }
 @media (min-width: 641px) {
-  /* line 16, ../sass/design-patterns/_forms.scss */
-  .form input[type="text"],
-  .form input[type="password"],
-  .form input[type="email"],
-  .form input[type="date"],
-  .form input[type="datetime"],
-  .form input[type="datetime-local"],
-  .form input[type="email"],
-  .form input[type="month"],
-  .form input[type="number"],
-  .form input[type="search"],
-  .form input[type="tel"],
-  .form input[type="time"],
-  .form input[type="url"],
-  .form input[type="week"] {
-    width: 300px;
+  /* line 7, ../sass/design-patterns/_date-of-birth.scss */
+  .date-of-birth .form-group {
+    margin-right: 30px;
   }
 }
-/* line 28, ../sass/design-patterns/_forms.scss */
-.form input[type="text"].postcode,
-.form input[type="password"].postcode,
-.form input[type="email"].postcode,
-.form input[type="date"].postcode,
-.form input[type="datetime"].postcode,
-.form input[type="datetime-local"].postcode,
-.form input[type="email"].postcode,
-.form input[type="month"].postcode,
-.form input[type="number"].postcode,
-.form input[type="search"].postcode,
-.form input[type="tel"].postcode,
-.form input[type="time"].postcode,
-.form input[type="url"].postcode,
-.form input[type="week"].postcode {
-  width: 100px;
+/* line 16, ../sass/design-patterns/_date-of-birth.scss */
+.date-of-birth .form-group-year {
+  width: 60px;
 }
-/* line 33, ../sass/design-patterns/_forms.scss */
-.form textarea {
-  width: 97%;
-  background-color: white;
-  border: 1px solid #bfc1c3;
-  padding: 3px 0 3px 8px;
-}
-@media (max-width: 640px) {
-  /* line 33, ../sass/design-patterns/_forms.scss */
-  .form textarea {
-    width: 300px;
-  }
-}
-/* line 44, ../sass/design-patterns/_forms.scss */
-.form label {
-  display: block;
-  padding-right: 10px;
-  padding-top: 5px;
-}
-/* line 50, ../sass/design-patterns/_forms.scss */
-.form select {
-  font-size: 19px;
-  margin-left: 0;
-}
-/* line 55, ../sass/design-patterns/_forms.scss */
-.form .control {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 19px;
-  line-height: 1.31579;
-  font-weight: 400;
-  text-transform: none;
-  padding: 8px 0;
-}
-@media (max-width: 640px) {
-  /* line 55, ../sass/design-patterns/_forms.scss */
-  .form .control {
-    font-size: 16px;
-    line-height: 1.25;
-  }
-}
-/* line 60, ../sass/design-patterns/_forms.scss */
-.form .hint {
-  display: block;
-  color: #6f777b;
-  font-family: "nta", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 300;
-  text-transform: none;
-  margin-top: 8px;
-}
-@media (max-width: 640px) {
-  /* line 60, ../sass/design-patterns/_forms.scss */
-  .form .hint {
-    font-size: 14px;
-    line-height: 1.14286;
-  }
-}
-/* line 67, ../sass/design-patterns/_forms.scss */
-.form .button {
-  margin-right: 5px;
-}
-/* line 73, ../sass/design-patterns/_forms.scss */
-.form .field-with-errors label,
-.form .field-with-errors input {
-  color: #B94A48;
-}
-/* line 78, ../sass/design-patterns/_forms.scss */
-.form .field-with-errors input,
-.form .field-with-errors textarea {
-  background-color: #F2DEDE;
-  border-color: #EED3D7;
+/* line 20, ../sass/design-patterns/_date-of-birth.scss */
+.date-of-birth .form-control {
+  width: 100%;
 }
 
-/* line 1, ../sass/design-patterns/_phase-block.scss */
-.phase-block {
-  display: inline !important;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-/* line 8, ../sass/design-patterns/_phase-block.scss */
-.phase-block .alpha {
-  display: -moz-inline-stack;
-  display: inline-block;
-  background-color: #d53880;
-  color: #fff;
-  font-family: "nta", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 300;
-  text-transform: none;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-decoration: none;
-  margin: 3px 10px 0 5px;
-  padding: 2px 5px 0;
-}
-@media (max-width: 640px) {
-  /* line 8, ../sass/design-patterns/_phase-block.scss */
-  .phase-block .alpha {
-    font-size: 14px;
-    line-height: 1.14286;
-  }
-}
-/* line 11, ../sass/design-patterns/_phase-block.scss */
-.phase-block .beta {
-  display: -moz-inline-stack;
-  display: inline-block;
-  background-color: #f47738;
-  color: #fff;
-  font-family: "nta", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 300;
-  text-transform: none;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-decoration: none;
-  margin: 3px 10px 0 5px;
-  padding: 2px 5px 0;
-}
-@media (max-width: 640px) {
-  /* line 11, ../sass/design-patterns/_phase-block.scss */
-  .phase-block .beta {
-    font-size: 14px;
-    line-height: 1.14286;
-  }
-}
-/* line 15, ../sass/design-patterns/_phase-block.scss */
-.phase-block .alpha,
-.phase-block .beta {
-  display: inline;
-  vertical-align: middle;
-  float: none;
-}
-
-/* line 5, ../sass/design-patterns/_progress-indicator.scss */
-.progress-indicator.compact {
-  margin: 30px 0 0 30px;
-  color: #6f777b;
-}
-/* line 10, ../sass/design-patterns/_progress-indicator.scss */
-.progress-indicator.horizontal, .progress-indicator.vertical {
+/* line 1, ../sass/design-patterns/_progress-indicator.scss */
+.progress-indicator {
   margin-bottom: 30px;
-  font-family: "nta", Arial, sans-serif;
-  font-size: 19px;
-  line-height: 1.31579;
-  font-weight: 400;
-  text-transform: none;
 }
-@media (max-width: 640px) {
-  /* line 10, ../sass/design-patterns/_progress-indicator.scss */
-  .progress-indicator.horizontal, .progress-indicator.vertical {
-    font-size: 16px;
-    line-height: 1.25;
-  }
-}
-@media (max-width: 640px) {
-  /* line 10, ../sass/design-patterns/_progress-indicator.scss */
-  .progress-indicator.horizontal, .progress-indicator.vertical {
-    padding-left: 40px;
-  }
-}
-/* line 16, ../sass/design-patterns/_progress-indicator.scss */
-.progress-indicator.horizontal ol, .progress-indicator.horizontal ul, .progress-indicator.vertical ol, .progress-indicator.vertical ul {
+/* line 6, ../sass/design-patterns/_progress-indicator.scss */
+.progress-indicator ol,
+.progress-indicator ul {
   border-bottom: 1px solid;
   border-top: 1px solid;
   border-color: #bfc1c3;
   list-style-type: none;
-  padding: 0;
+  padding-left: 0;
 }
-@media (max-width: 640px) {
-  /* line 16, ../sass/design-patterns/_progress-indicator.scss */
-  .progress-indicator.horizontal ol, .progress-indicator.horizontal ul, .progress-indicator.vertical ol, .progress-indicator.vertical ul {
-    margin: 0;
-  }
-}
-/* line 28, ../sass/design-patterns/_progress-indicator.scss */
-.progress-indicator.horizontal li, .progress-indicator.vertical li {
-  float: left;
-  margin: 0 40px -1px 0;
-  padding: 10px 0 5px 0;
+/* line 15, ../sass/design-patterns/_progress-indicator.scss */
+.progress-indicator li {
   color: #6f777b;
-  border-bottom: 5px solid transparent;
+  padding: 12px 0 5px 0;
 }
-/* line 34, ../sass/design-patterns/_progress-indicator.scss */
-.progress-indicator.horizontal li a, .progress-indicator.vertical li a {
-  display: block;
+/* line 19, ../sass/design-patterns/_progress-indicator.scss */
+.progress-indicator a {
   text-decoration: none;
 }
-/* line 37, ../sass/design-patterns/_progress-indicator.scss */
-.progress-indicator.horizontal li a:hover, .progress-indicator.vertical li a:hover {
-  color: #005ea5;
-  text-decoration: underline;
-}
-/* line 42, ../sass/design-patterns/_progress-indicator.scss */
-.progress-indicator.horizontal li.active, .progress-indicator.vertical li.active {
+/* line 23, ../sass/design-patterns/_progress-indicator.scss */
+.progress-indicator .active {
   border-bottom: 5px solid #0b0c0c;
   color: #0b0c0c;
 }
-/* line 45, ../sass/design-patterns/_progress-indicator.scss */
-.progress-indicator.horizontal li.active a, .progress-indicator.vertical li.active a {
+/* line 27, ../sass/design-patterns/_progress-indicator.scss */
+.progress-indicator .active a {
   color: #0b0c0c;
+  text-decoration: none;
 }
-@media (max-width: 640px) {
+
+@media (min-width: 641px) {
+  /* line 36, ../sass/design-patterns/_progress-indicator.scss */
+  .progress-indicator-horizontal li {
+    float: left;
+    margin-right: 30px;
+  }
+}
+@media (min-width: 641px) {
   /* line 42, ../sass/design-patterns/_progress-indicator.scss */
-  .progress-indicator.horizontal li.active, .progress-indicator.vertical li.active {
-    border: 0;
-    font-weight: bold;
+  .progress-indicator-horizontal li.active {
+    margin-bottom: -5px;
   }
 }
-/* line 54, ../sass/design-patterns/_progress-indicator.scss */
-.progress-indicator.horizontal li span, .progress-indicator.vertical li span {
+
+@media (min-width: 641px) {
+  /* line 50, ../sass/design-patterns/_progress-indicator.scss */
+  .progress-indicator-vertical {
+    width: 50%;
+  }
+}
+/* line 57, ../sass/design-patterns/_progress-indicator.scss */
+.progress-indicator-vertical span {
   float: right;
-  font-family: "nta", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 300;
-  text-transform: none;
-}
-@media (max-width: 640px) {
-  /* line 54, ../sass/design-patterns/_progress-indicator.scss */
-  .progress-indicator.horizontal li span, .progress-indicator.vertical li span {
-    font-size: 14px;
-    line-height: 1.14286;
-  }
-}
-@media (max-width: 640px) {
-  /* line 28, ../sass/design-patterns/_progress-indicator.scss */
-  .progress-indicator.horizontal li, .progress-indicator.vertical li {
-    width: 100%;
-    margin-left: 0;
-  }
-}
-/* line 63, ../sass/design-patterns/_progress-indicator.scss */
-.progress-indicator.horizontal li.done span, .progress-indicator.vertical li.done span {
-  font-weight: bold;
-  color: #006435;
-          /*
-
-          text-indent: -9999px;
-          margin-right: 5px;
-          margin-left: -16px;
-          width: 5px;
-          margin-top: -23px;
-          height: 10px;
-          border-right: 3px solid;
-          border-bottom: 3px solid;
-          border-color: $green;
-          -webkit-transform: rotate(45deg);
-          position: absolute;
-          */
-}
-/* line 86, ../sass/design-patterns/_progress-indicator.scss */
-.progress-indicator.horizontal ul {
-  max-width: 100%;
-}
-/* line 89, ../sass/design-patterns/_progress-indicator.scss */
-.progress-indicator.horizontal li.done span {
-  display: none;
-}
-/* line 93, ../sass/design-patterns/_progress-indicator.scss */
-.progress-indicator.vertical {
-  width: 33.33%;
-  float: left;
-}
-/* line 96, ../sass/design-patterns/_progress-indicator.scss */
-.progress-indicator.vertical li {
-  float: none;
-  margin-right: 0;
-}
-/* line 100, ../sass/design-patterns/_progress-indicator.scss */
-.progress-indicator.vertical li.done span {
-  position: relative;
-  margin-top: 3px;
 }
 
-/* Example use:
-    <details>
-      <summary>Wanna know more?</sumary>
-      <p>Of course you do!</p>
-    </details>
-*/
-/* line 15, ../sass/design-patterns/_progressive-disclosure.scss */
-details {
-  display: block;
-  margin: 0;
-  padding-left: 10px;
-  border-left: 4px solid #fff;
-}
-/* line 21, ../sass/design-patterns/_progressive-disclosure.scss */
-details summary {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 19px;
-  line-height: 1.31579;
-  font-weight: 400;
-  text-transform: none;
-  display: block;
-  padding-bottom: 5px;
-  margin-top: 3px;
-  margin-left: -18px;
-  background: #fff;
-}
-@media (max-width: 640px) {
-  /* line 21, ../sass/design-patterns/_progressive-disclosure.scss */
-  details summary {
-    font-size: 16px;
-    line-height: 1.25;
-  }
-}
-/* line 30, ../sass/design-patterns/_progressive-disclosure.scss */
-details[open] {
-  margin: 0;
-  border-left-color: #bfc1c3;
-}
-/* line 33, ../sass/design-patterns/_progressive-disclosure.scss */
-details[open] summary:focus {
-  outline: none;
-  background-color: #fff;
-}
-
-/* Styles for browsers that don't yet natively support details/summary */
-/* line 41, ../sass/design-patterns/_progressive-disclosure.scss */
-.no-details details > * {
-  display: none;
-}
-
-/* line 42, ../sass/design-patterns/_progressive-disclosure.scss */
-.no-details details > summary:before {
-  float: left;
-  width: 20px;
-  content: '► ';
-}
-
-/* line 43, ../sass/design-patterns/_progressive-disclosure.scss */
-.no-details details.open > summary:before {
-  content: '▼ ';
-}
-
-/* line 44, ../sass/design-patterns/_progressive-disclosure.scss */
-.no-details details summary {
-  display: block;
-}
-
-/* line 8, ../sass/example/_example.scss */
+/* line 9, ../sass/example/_example.scss */
 .design-guide .guide-subheader {
   margin-bottom: 0;
 }
-/* line 16, ../sass/example/_example.scss */
+/* line 17, ../sass/example/_example.scss */
 .design-guide h1,
 .design-guide h2,
 .design-guide h3,
@@ -1385,12 +1096,12 @@ details[open] summary:focus {
 .design-guide ul {
   max-width: 30em;
 }
-/* line 21, ../sass/example/_example.scss */
+/* line 22, ../sass/example/_example.scss */
 .design-guide .page-metadata {
   border-top: 5px solid #0b0c0c;
-  padding-top: 40px;
+  padding-top: 20px;
 }
-/* line 26, ../sass/example/_example.scss */
+/* line 27, ../sass/example/_example.scss */
 .design-guide .page-metadata dt {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
@@ -1399,13 +1110,13 @@ details[open] summary:focus {
   text-transform: none;
 }
 @media (max-width: 640px) {
-  /* line 26, ../sass/example/_example.scss */
+  /* line 27, ../sass/example/_example.scss */
   .design-guide .page-metadata dt {
     font-size: 14px;
     line-height: 1.14286;
   }
 }
-/* line 30, ../sass/example/_example.scss */
+/* line 31, ../sass/example/_example.scss */
 .design-guide .page-metadata dd {
   font-family: "nta", Arial, sans-serif;
   font-size: 24px;
@@ -1416,19 +1127,19 @@ details[open] summary:focus {
   margin-bottom: 10px;
 }
 @media (max-width: 640px) {
-  /* line 30, ../sass/example/_example.scss */
+  /* line 31, ../sass/example/_example.scss */
   .design-guide .page-metadata dd {
     font-size: 20px;
     line-height: 1.2;
   }
 }
-/* line 35, ../sass/example/_example.scss */
+/* line 36, ../sass/example/_example.scss */
 .design-guide .page-actions {
   margin: 30px 0;
   list-style-type: none;
   padding-left: 0;
 }
-/* line 41, ../sass/example/_example.scss */
+/* line 42, ../sass/example/_example.scss */
 .design-guide .page-actions li {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
@@ -1439,15 +1150,40 @@ details[open] summary:focus {
   margin-bottom: 10px;
 }
 @media (max-width: 640px) {
-  /* line 41, ../sass/example/_example.scss */
+  /* line 42, ../sass/example/_example.scss */
   .design-guide .page-actions li {
     font-size: 16px;
     line-height: 1.25;
   }
 }
+/* line 48, ../sass/example/_example.scss */
+.design-guide code {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none;
+  font-family: monospace, serif;
+  background: #dee0e2;
+  padding: 0 4px;
+  display: -moz-inline-stack;
+  display: inline-block;
+}
+@media (max-width: 640px) {
+  /* line 48, ../sass/example/_example.scss */
+  .design-guide code {
+    font-size: 14px;
+    line-height: 1.14286;
+  }
+}
+/* line 57, ../sass/example/_example.scss */
+.design-guide .highlight {
+  color: #0076c0;
+  font-style: normal;
+}
 
-/* line 53, ../sass/example/_example.scss */
-.pattern-example {
+/* line 69, ../sass/example/_example.scss */
+.example {
   position: relative;
   overflow: hidden;
   border: 1px solid #bfc1c3;
@@ -1456,17 +1192,53 @@ details[open] summary:focus {
   padding: 15px;
 }
 @media (min-width: 641px) {
-  /* line 53, ../sass/example/_example.scss */
-  .pattern-example {
+  /* line 69, ../sass/example/_example.scss */
+  .example {
     padding: 30px 15px;
   }
 }
-/* line 67, ../sass/example/_example.scss */
-.pattern-example.wide {
-  margin-right: -33.33%;
+/* line 83, ../sass/example/_example.scss */
+.example.example-wide {
+  margin-right: 0;
 }
-/* line 72, ../sass/example/_example.scss */
-.pattern-example .ribbon {
+@media (min-width: 641px) {
+  /* line 83, ../sass/example/_example.scss */
+  .example.example-wide {
+    margin-right: -33.33%;
+  }
+}
+/* line 91, ../sass/example/_example.scss */
+.example em {
+  color: #0076c0;
+  font-style: normal;
+}
+/* line 97, ../sass/example/_example.scss */
+.example code {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none;
+  font-family: monospace, serif;
+  display: block;
+  padding: 0 0 15px 0;
+  background: none;
+}
+@media (max-width: 640px) {
+  /* line 97, ../sass/example/_example.scss */
+  .example code {
+    font-size: 14px;
+    line-height: 1.14286;
+  }
+}
+@media (min-width: 641px) {
+  /* line 97, ../sass/example/_example.scss */
+  .example code {
+    padding: 0 0 30px 0;
+  }
+}
+/* line 109, ../sass/example/_example.scss */
+.example .ribbon {
   background-color: #85994b;
   overflow: hidden;
   position: absolute;
@@ -1480,87 +1252,24 @@ details[open] summary:focus {
   font-size: 16px;
   padding: 3px 50px;
 }
-/* line 88, ../sass/example/_example.scss */
-.pattern-example #postcode-lookup {
-  float: left;
-}
-/* line 91, ../sass/example/_example.scss */
-.pattern-example #enter-address-manually {
-  width: 100%;
-  float: left;
-  margin-top: 10px;
-  padding: 8px 0;
-}
-/* line 99, ../sass/example/_example.scss */
-.pattern-example details {
-  margin-left: 15px;
-}
-@media (min-width: 641px) {
-  /* line 99, ../sass/example/_example.scss */
-  .pattern-example details {
-    margin-left: 30px;
-  }
+/* line 124, ../sass/example/_example.scss */
+.example ul {
+  max-width: 100%;
 }
 
-/* line 113, ../sass/example/_example.scss */
-.example {
-  position: relative;
-  overflow: hidden;
-  border: 1px solid #bfc1c3;
-  outline: 15px solid #f8f8f8;
-  margin: 30px 0 60px 0;
-  padding: 15px;
-}
-@media (min-width: 641px) {
-  /* line 113, ../sass/example/_example.scss */
-  .example {
-    padding: 30px 15px;
-  }
-}
-/* line 128, ../sass/example/_example.scss */
-.example em {
-  color: #0076c0;
-  font-style: normal;
-}
-/* line 134, ../sass/example/_example.scss */
-.example code {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 300;
-  text-transform: none;
-  font-family: monospace, serif;
-  display: block;
-  padding: 0 0 15px 0;
-  background: none;
-}
-@media (max-width: 640px) {
-  /* line 134, ../sass/example/_example.scss */
-  .example code {
-    font-size: 14px;
-    line-height: 1.14286;
-  }
-}
-@media (min-width: 641px) {
-  /* line 134, ../sass/example/_example.scss */
-  .example code {
-    padding: 0 0 30px 0;
-  }
-}
-
-/* line 148, ../sass/example/_example.scss */
+/* line 132, ../sass/example/_example.scss */
 .example-grid {
   background: white;
   padding: 15px 0 10px 0;
 }
 @media (min-width: 641px) {
-  /* line 148, ../sass/example/_example.scss */
+  /* line 132, ../sass/example/_example.scss */
   .example-grid {
     padding: 25px 0 20px 0;
   }
 }
 
-/* line 156, ../sass/example/_example.scss */
+/* line 140, ../sass/example/_example.scss */
 .example-grid p {
   width: 100%;
   background: url("../images/example/grid.png") 0 0 repeat;
@@ -1570,89 +1279,62 @@ details[open] summary:focus {
   text-indent: -99em;
 }
 @media (min-width: 641px) {
-  /* line 156, ../sass/example/_example.scss */
+  /* line 140, ../sass/example/_example.scss */
   .example-grid p {
     min-height: 60px;
   }
 }
 
-/* line 170, ../sass/example/_example.scss */
+/* line 154, ../sass/example/_example.scss */
 .example-images {
   padding-left: 0;
   padding-right: 0;
 }
 
-/* line 175, ../sass/example/_example.scss */
+/* line 159, ../sass/example/_example.scss */
 .example-images img {
   max-width: 100%;
   vertical-align: top;
 }
 
-/* line 182, ../sass/example/_example.scss */
+/* line 166, ../sass/example/_example.scss */
 .example .data p {
   margin-bottom: 0;
 }
 
-/* line 191, ../sass/example/_example.scss */
+/* line 175, ../sass/example/_example.scss */
 .example .swatch {
   width: 60px;
   height: 60px;
   display: block;
   margin-bottom: 30px;
 }
-/* line 197, ../sass/example/_example.scss */
+/* line 181, ../sass/example/_example.scss */
 .example .text-secondary {
   color: #6f777b;
 }
-/* line 201, ../sass/example/_example.scss */
+/* line 185, ../sass/example/_example.scss */
 .example .colour-hm-government {
   background: #0076c0;
 }
-/* line 204, ../sass/example/_example.scss */
+/* line 188, ../sass/example/_example.scss */
 .example .colour-department-of-health {
   background: #00ad93;
 }
-/* line 208, ../sass/example/_example.scss */
+/* line 192, ../sass/example/_example.scss */
 .example .button {
   margin-bottom: 30px;
 }
 
-/* line 219, ../sass/example/_example.scss */
-code {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 300;
-  text-transform: none;
-  font-family: monospace, serif;
-  background: #dee0e2;
-  padding: 0 4px;
-  display: -moz-inline-stack;
-  display: inline-block;
-}
-@media (max-width: 640px) {
-  /* line 219, ../sass/example/_example.scss */
-  code {
-    font-size: 14px;
-    line-height: 1.14286;
-  }
-}
-
-/* line 228, ../sass/example/_example.scss */
-.highlight {
-  color: #0076c0;
-  font-style: normal;
-}
-
-/* line 237, ../sass/example/_example.scss */
+/* line 206, ../sass/example/_example.scss */
 .example-highlight-grid .grid-wrapper {
   background: #bfc1c3;
 }
-/* line 241, ../sass/example/_example.scss */
+/* line 210, ../sass/example/_example.scss */
 .example-highlight-grid .grid {
   background: #f8f8f8;
 }
-/* line 245, ../sass/example/_example.scss */
+/* line 214, ../sass/example/_example.scss */
 .example-highlight-grid .grid .is-inner-block-highlight {
   background: #dee0e2;
   width: 100%;

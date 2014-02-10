@@ -1,19 +1,24 @@
-.date-of-birth{
-  @extend %contain-floats;
-  .control{
-    width: 60px;
-    //margin-right: 10px;
-    width: 69px;
+.date-of-birth {
+  
+  legend {
+    margin-bottom: $gutter-half;
+  }
+  
+  .form-group {
+    width: 40px;
     float: left;
-    &.day input,
-    &.month input{
-      width: 40px;
-      &:after{
-        content: "/";
-      }
-    }
-    &.year input{
-      width: 60px;
+    margin-right: $gutter-half;
+    @include media(tablet) {
+      margin-right: $gutter;
     }
   }
+  
+  .form-group-year {
+    width: 60px;
+  }
+  
+  .form-control {
+    width: 100%;
+  }
+  
 }

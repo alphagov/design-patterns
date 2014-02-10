@@ -4,8 +4,9 @@ document-type: Design pattern
 title: Buttons
 page-class: 'buttons'
 discuss-url: https://designpatterns.hackpad.com/Buttons-zoP1sKiW3y4
+sass-url: https://github.com/alphagov/design-patterns/blob/gh-pages/assets/sass/design-patterns/_buttons.scss
 published: 10 January 2014
-updated: 10 January 2014
+updated: 10 February 2014
 phases:
   - alpha
 ---

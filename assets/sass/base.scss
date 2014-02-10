@@ -15,23 +15,20 @@
 @import "../govuk_frontend_toolkit/stylesheets/design-patterns/buttons";
 
 // GOV.UK helper (requires the GOV.UK frontend toolkit)
-// A couple of helper files to set basic styling 
+// A helper file to set basic styling 
 // - typography, grid layout, form elements and spacing
-
-// Import helper vars and styles
-@import "govuk-helper/vars";
 @import "govuk-helper/main";
+
+// Import patterns required for styling GOV.UK template content
+@import "design-patterns/alpha-beta";
+@import "design-patterns/phase-block";
+@import "design-patterns/breadcrumb";
+@import "design-patterns/buttons";
 
 // Import design patterns
 @import "design-patterns/addresses";
-@import "design-patterns/alpha-beta";
-@import "design-patterns/breadcrumb";
-@import "design-patterns/buttons";
 @import "design-patterns/date-of-birth";
-@import "design-patterns/forms";
-@import "design-patterns/phase-block";
 @import "design-patterns/progress-indicator";
-@import "design-patterns/progressive-disclosure";
 
 // Example styles, no need to include in your project
 @import "example/example";

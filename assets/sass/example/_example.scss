@@ -5,6 +5,7 @@
 // ==========================================================================
 
 .design-guide {
+  
   .guide-subheader {
     margin-bottom: 0;
   }
@@ -29,7 +30,7 @@
   
   .page-metadata dd {
     @include bold-24;
-    margin-bottom: $gutter-third;
+    margin-bottom: 10px;
   }
   
   .page-actions {
@@ -40,17 +41,32 @@
   
   .page-actions li {
     @include bold-19;
-    margin-bottom: $gutter-third;
+    margin-bottom: 10px;
+  }
+  
+  // Code highlight
+  code {
+    @include core-16;
+    font-family: monospace, serif;
+    background: $grey-3;
+    padding: 0 4px;
+    @include inline-block;
+  }
+  
+  // Highlight font sizes
+  .highlight {
+    color: $hm-government;
+    font-style: normal;
   }
   
 }
 
 
 // ==========================================================================
-// Design Patterns - In-page examples (grey boxes)
+// Design Guide - In-page examples (grey boxes)
 // ==========================================================================
 
-.pattern-example {
+.example {
   
   @extend %contain-floats;
   position: relative;
@@ -63,65 +79,12 @@
   @include media(tablet) {
     padding: $gutter $gutter-half;
   }
-
-  &.wide{
-    margin-right: -33.33%;
-  }
   
-  // Recommended - Ribbon
-  .ribbon {
-    background-color: $grass-green;
-    overflow: hidden;
-    position: absolute;
-    right: -50px;
-    top: 40px;
-    -moz-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    color: #fff;
-    display: block;
-    font-weight: bold;
-    font-size: 16px;
-    padding: 3px 50px;
-  }
-  
-  // Form examples
-  #postcode-lookup {
-    float: left;
-  }
-  #enter-address-manually {
-    width: 100%;
-    float: left;
-    margin-top: 10px;
-    padding: 8px 0;
-  }
-  
-  // Details example
-  details {
-    margin-left: $gutter-half;
+  &.example-wide {
+    margin-right: 0;
     @include media(tablet) {
-      margin-left: $gutter;
+       margin-right: -33.33%;
     }
-  }
-  
-}
-
-
-// ==========================================================================
-// Design Style Guide - In-page examples (grey boxes)
-// ==========================================================================
-
-.example {
-  
-  @extend %contain-floats;
-  position: relative;
-  overflow: hidden;
-  
-  border: 1px solid #bfc1c3;
-  outline: $gutter-half solid #f8f8f8;
-  margin: $gutter 0 $gutter*2 0;
-  padding: $gutter-half;
-  @include media(tablet) {
-    padding: $gutter $gutter-half;
   }
   
   // Highlight font size examples
@@ -141,6 +104,27 @@
       padding: 0 0 30px 0;
     }
   }
+  
+  // Recommended - Ribbon
+  .ribbon {
+    background-color: $grass-green;
+    overflow: hidden;
+    position: absolute;
+    right: -50px;
+    top: 40px;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 3px 50px;
+  }
+  
+  ul {
+    max-width: 100%;
+  }
+  
 }
 
 // 2. Design Guide - Grid example
@@ -211,27 +195,12 @@
   
 }
 
+
 // ==========================================================================
 // Design Guide example pages
 // ==========================================================================
 
-// Code highlight
-code {
-  @include core-16;
-  font-family: monospace, serif;
-  background: $grey-3;
-  padding: 0 4px;
-  @include inline-block;
-}
-
-// Highlight font size examples
-.highlight {
-  color: $hm-government;
-  font-style: normal;
-}
-
-// Grid highlight colours
-
+// Highlight grid colours
 .example-highlight-grid {
   
   .grid-wrapper {

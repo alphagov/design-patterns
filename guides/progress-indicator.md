@@ -23,13 +23,15 @@ Progress indicators address this issue by telling users how many steps they've c
 
 Tell the user what step they're on.
 
-<div class="pattern-example">
+<div class="example">
+  <div class="ribbon">Recommended</div>
   <div class="inner-block">
-    <div class="ribbon">Recommended</div>
+    
     <h1 class="heading-48">
       <span class="heading-27">Step 3 of 5</span>
       Payment details
     </h1>
+    
   </div>
 </div>
 
@@ -39,9 +41,10 @@ This approach should be tried before moving on to any of the others. It's access
 
 Show the steps horizontally across the top of the page, with the current step highlighted.
 
-<div class="pattern-example wide">
+<div class="example example-wide">
   <div class="inner-block">
-    <nav role="navigation" class="horizontal progress-indicator">
+    
+    <nav class="progress-indicator progress-indicator-horizontal">
       <ul>
         <li class="done"><a href="">1. About you <span>done</span></a></li>
         <li class="done"><a href="">2. Your company <span>done</span></a></li>
@@ -50,6 +53,7 @@ Show the steps horizontally across the top of the page, with the current step hi
         <li>5. Done</li>
       </ul>
     </nav>
+    
   </div>
 </div>
 
@@ -73,9 +77,10 @@ Show the steps horizontally across the top of the page, with the current step hi
 
 Provide a vertical list of links to each section, which can be completed in any order.
 
-<div class="pattern-example">
+<div class="example">
   <div class="inner-block">
-    <nav role="navigation" class="vertical progress-indicator">
+    
+    <nav class="progress-indicator progress-indicator-vertical">
       <ul>
         <li><a href="">About you <span>(3/10)</span></a></li>
         <li class="done"><a href="">Your company <span>(10/10)</span></a></li>
@@ -83,6 +88,7 @@ Provide a vertical list of links to each section, which can be completed in any 
         <li><a href="">Delivery <span>(0/3)</span></a></li>
       </ul>
     </nav>
+    
   </div>
 </div>
 

@@ -13,29 +13,30 @@ phases:
 
 Our current recommendation for capturing date of birth is to use three clearly labelled text boxes.
 
-<div class="pattern-example">
-	<div class="ribbon">Recommended</div>
-	<form class="form">
-		<fieldset class="date-of-birth">
-			<legend>Date of birth <p class="hint">Example: 21 03 1976</p></legend>
-
-			<div class="control day">
-		  		<label for="day">Day</label>
-		  		<input type="text" pattern="[0-9]*" id="day">
-			</div>
-			<div class="control month">
-		  		<label for="month">Month</label>
-		  		<input type="text" id="month">
-			</div>
-			<div class="control year">
-		  		<label for="year">Year</label>
-		  		<input type="text" pattern="[0-9]*" id="year">
-			</div>
-		</fieldset>
-	</form>
+<div class="example">
+  <div class="ribbon">Recommended</div>
+  <form class="form">
+    
+    <fieldset class="date-of-birth">
+      <legend>Date of birth <p class="hint">Example: 21 03 1976</p></legend>
+      <div class="form-group">
+        <label for="day">Day</label>
+        <input type="text" pattern="[0-9]*" id="day" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="month">Month</label>
+        <input type="text" id="month" class="form-control">
+      </div>
+      <div class="form-group form-group-year">
+        <label for="year">Year</label>
+        <input type="text" pattern="[0-9]*" id="year" class="form-control">
+      </div>
+    </fieldset>
+    
+  </form>
 </div>
 
-### Guidance
+<h3 class="heading-24">Guidance</h3>
 
 A date of birth is personal information, so don't ask for it unless you absolutely have to. For example, you don't need to ask for full date of birth if you only need to know:
 

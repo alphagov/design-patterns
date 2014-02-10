@@ -19,14 +19,16 @@ Here are two ways to ask users for their name:
 
 A single text field where the user can enter their full name, including title if they wish
 
-<div class="pattern-example">
-	<div class="ribbon">Recommended</div>
-	<form class="form">
-		<div class="control">
-	  		<label for="fullName">Full name</label>
-	  		<input type="text" id="fullName">
-		</div>
-	</form>
+<div class="example">
+  <div class="ribbon">Recommended</div>
+  
+  <form class="form">
+    <div class="form-group">
+      <label for="full-name">Full name</label>
+      <input type="text" id="full-name" class="form-control">
+    </div>
+  </form>
+  
 </div>
 
 <h3 class="heading-24">Pros</h3>
@@ -45,21 +47,21 @@ A single text field where the user can enter their full name, including title if
 
 Users enter the different parts of their name into different fields.
 
-<div class="pattern-example">
-	<form class="form">
-		<div class="control">
-	  		<label for="title">Title (optional)</label>
-	  		<input type="text" id="name-title">
-		</div>
-		<div class="control">
-	  		<label for="firstName">First name</label>
-	  		<input type="text" id="firstName">
-		</div>
-		<div class="control">
-	  		<label for="lastName">Last name</label>
-	  		<input type="text" id="lastName">
-		</div>
-	</form>
+<div class="example">
+  <form class="form">
+    <div class="form-group">
+      <label for="title">Title (optional)</label>
+      <input type="text" id="name-title" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="firstName">First name</label>
+      <input type="text" id="firstName" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last name</label>
+      <input type="text" id="lastName" class="form-control">
+    </div>
+  </form>
 </div>
 
 <h3 class="heading-24">Pros</h3>
