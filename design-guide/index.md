@@ -19,7 +19,7 @@ phases:
 
 <!-- Typography -->
 <div class="guide" id="guide-typography">
-  <h2 class="guide-header">1. Typography</h2>
+  <h2 class="heading-36 guide-header">1. Typography</h2>
   <p>
     The GOV.UK design is mostly about the typography. Tell people what they need to do, in words that they understand. Make the words big enough so they are comfortable to read.
   </p>
@@ -30,7 +30,7 @@ phases:
 
 <!-- Typography : Body copy -->
 <div class="guide" id="guide-typography-copy">
-  <h3 class="guide-subheader">Body copy</h3>
+  <h3 class="heading-24 guide-subheader">Body copy</h3>
 </div>
 
 <div class="example">
@@ -60,7 +60,7 @@ phases:
 
 <!-- Typography : Page titles -->
 <div class="guide" id="guide-typography-titles">
-  <h3 class="guide-subheader">Page titles</h3>
+  <h3 class="heading-24 guide-subheader">Page titles</h3>
 </div>
 
 <div class="example">
@@ -78,7 +78,7 @@ phases:
 
 <!-- Typography : Page subtitles -->
 <div class="guide" id="guide-typography-subtitles">
-  <h3 class="guide-subheader">Page subtitles</h3>
+  <h3 class="heading-24 guide-subheader">Page subtitles</h3>
 </div>
 
 <div class="example">
@@ -106,7 +106,7 @@ phases:
 
 <!-- Typography :  -->
 <div class="guide guide-end">
-  <h3 class="guide-subheader">Take a look at the examples</h3>
+  <h3 class="heading-24 guide-subheader">Take a look at the examples</h3>
   <p>
     Here's an example showing the <a href="{{ site.baseurl}}/example/typography.html">basic typography styles</a>.
   </p>
@@ -117,7 +117,7 @@ phases:
 
 <!-- Grid -->
 <div class="guide" id="guide-grid">
-  <h2 class="guide-header">2. Grids</h2>
+  <h2 class="heading-36 guide-header">2. Grids</h2>
   <p>
     Tablet or desktop layouts use either a three or four column fluid grid. 
   </p>
@@ -125,7 +125,7 @@ phases:
 
 <!-- Grid : Example -->
 <div class="guide" id="guide-grid-2-col">
-  <h3 class="guide-subheader">Two columns</h3>
+  <h3 class="heading-24 guide-subheader">Two columns</h3>
 </div>
 
 <div class="example example-grid">
@@ -145,7 +145,7 @@ phases:
 
 <!-- Grid : Example -->
 <div class="guide" id="guide-grid-3-col">
-  <h3 class="guide-subheader">Three equal columns</h3>
+  <h3 class="heading-24 guide-subheader">Three equal columns</h3>
 </div>
 
 <div class="example example-grid">

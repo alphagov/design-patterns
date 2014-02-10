@@ -12,16 +12,15 @@ phases:
 
 We recommend you [avoid creating user accounts and login systems](https://www.gov.uk/service-manual/making-software/logins.html) where possible. However if you do need to, follow the guidance here.
 
-## Usernames
+<h2 class="heading-36">Usernames</h2>
 
 Avoid creating usernames unless your service has some kind of social element. Instead, use an email address or phone number. You'll need to capture one of these anyway to help users retreive or reset their password.
 
-## Email addresses
+<h2 class="heading-36">Email addresses</h2>
 
 Depending on the nature of the information your service deals with you might want to verify that an email address has been entered correctly, or that it genuinely belongs to the user.
 
-
-### Checking for errors
+<h3 class="heading-24">Checking for errors</h3>
 
 To check that an email has been correctly entered you can:
 
@@ -30,7 +29,7 @@ To check that an email has been correctly entered you can:
 
 For an example of how this second approach can help, [read this article](http://blog.kicksend.com/how-we-decreased-sign-up-confirmation-email-bounces-by-50/).
 
-### Verifying the owner
+<h3 class="heading-24">Verifying the owner</h3>
 
 If you want to verify that an email address belongs to the user you can:
 
@@ -46,12 +45,12 @@ Which approach you use will depend on whether you allow links in your outgoing e
 
 [More on how to handle emails](https://www.gov.uk/service-manual/domain-names/email.html)
 
-## Passwords
+<h2 class="heading-36">Passwords</h2>
 
 It's good practice to ask users to re-enter their password when they're registering for a service, to check they haven't mis-typed it.
 
 
-### Password strength indicators
+<h3 class="heading-24">Password strength indicators</h3>
 
 Use a password strength indicator to encourage better password practice without forcing users to conform to a specific set of constraints.
 
@@ -60,7 +59,7 @@ Make sure that it uses a good algorithm to determine password strength. Many sim
 **TEST THIS:** Password strength indicators are a form of client-side validation. Client side validation can sometimes be distracting to users, so test it thoroughly.
 
 
-### Disabling copy / paste on passwords
+<h3 class="heading-24">Disabling copy / paste on passwords</h3>
 
 Some services disable copy and paste on the password fields. The rationale is that it stops people mis-typing their password and then copying it into the second field. However it also stops people copying their (correct) password from their clipboard or from a password manager they may be using.
 

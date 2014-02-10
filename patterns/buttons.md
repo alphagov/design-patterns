@@ -12,7 +12,7 @@ phases:
 
 Buttons should be used to signify actions that the user can perform.
 
-### Button styles
+<h2 class="heading-36">Button styles</h2>
 
 Buttons can be made of links, inputs and button tags. CSS should be used to separate the technical implementation of a button from its style so it looks the same whatever tag is used, like this:
 
@@ -24,11 +24,11 @@ Buttons can be made of links, inputs and button tags. CSS should be used to sepa
   </div>
 </div>
 
-### Button colours
+<h3 class="heading-24">Button colours</h3>
 
 The default button colour is green (Sass variable: `$button-colour` ). Only use other colours if it improves the user experience in some way.
 
-### Disabling buttons
+<h3 class="heading-24">Disabling buttons</h3>
 
 As with the default browser style, buttons will need a disabled style to indicate when the `disabled` attribute is set.
 
@@ -40,9 +40,9 @@ As with the default browser style, buttons will need a disabled style to indicat
   </div>
 </div>
 
-### Types of button
+<h2 class="heading-36">Types of button</h2>
 
-#### Primary actions
+<h3 class="heading-24">Primary actions</h3>
 
 <div class="pattern-example">
   <div class="inner-block">
@@ -55,7 +55,7 @@ As with the default browser style, buttons will need a disabled style to indicat
 * Primary actions move the user on to the next part of the transaction
 * Avoid having multiple primary actions on a single page
 
-#### Secondary actions
+<h3 class="heading-24">Secondary actions</h3>
 
 <div class="pattern-example">
   <div class="inner-block">
@@ -68,7 +68,7 @@ As with the default browser style, buttons will need a disabled style to indicat
 * There can be multiple secondary actions per page
 * They should be less prominent than the primary action
 
-#### Warning actions
+<h3 class="heading-24">Warning actions</h3>
 
 <div class="pattern-example">
   <div class="inner-block">
@@ -81,7 +81,7 @@ As with the default browser style, buttons will need a disabled style to indicat
 * Make the action reversible / ‘undo’-able
 * If that isn’t possible to implement, use an alert to check that the user really wants to do this
 
-### Launch button
+<h3 class="heading-24">Launch button</h3>
 
 <div class="pattern-example">
   <div class="inner-block">
@@ -92,49 +92,6 @@ As with the default browser style, buttons will need a disabled style to indicat
 * Use to initiate a transaction
 * Let users know if they’ll be taken to a different website
 
-### Writing button text
+<h3 class="heading-24">Writing button text</h3>
 
-Do use:
-
-* verbs and an active voice
-* clear, informative and succinct language
-* sentence case
-
-Don’t use:
-
-* technical terms - eg use ‘delete’, not ‘form reset’, use one of the common actions below instead of ‘submit’
-* lots of words - eye tracking shows users are less likely to read long labels
-
-### Common actions
-
-Many of these can be used in place of ‘Submit’, which is a technical term to be avoided.
-
-#### 'Start now’
-Use at the beginning of the service
-
-#### ‘Next’
-Not ‘forward’, ‘go’ etc.
-
-#### ‘Finish’
-Use at the end of a service before the final confirmation screen
-
-#### ‘Back’
-Not ‘previous’
-
-#### ‘Sign in’ and ‘Sign out’
-Not ‘log-in’ or ‘log-out’
-
-#### ‘Sign up’
-Only use this for mailing lists
-
-#### ‘Create an account’
-Not ‘register’
-
-### Compound actions
-
-Sometimes you want a single button to perform more than one action. For example, ‘Save and quit’.
-
-It’s worth trying to avoid this situation but if you can’t, use common sense. If one of the actions is obvious or not important to know, don’t mention it.
-
-For example, if a button saves the current state and moves the user to the next screen, don’t use ‘Save and next’, just use ‘Next’, because users will assume the former. When in doubt, test with real users.
-
+Advice on writing button text can be found in the [Service Manual](https://www.gov.uk/service-manual/user-centered-design/resources/buttons.html).

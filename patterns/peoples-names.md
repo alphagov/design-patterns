@@ -24,7 +24,7 @@ The simplest way of capturing someone's name is to use a single field marked 'Fu
 </div>
 
 
-#### Multiple name fields
+<h4 class="heading-19">Multiple name fields</h4>
 
 Users of GOV.UK services come from many different cultural backgrounds, each with their own conventions regarding personal names.
 
@@ -37,7 +37,7 @@ For a more detailed overview of these and related issues, read these two article
 * [http://www.w3.org/International/questions/qa-personal-names](http://www.w3.org/International/questions/qa-personal-names)
 * [http://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/](http://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/)
 
-#### What if I still need to use multiple name fields?
+<h4 class="heading-19">What if I still need to use multiple name fields?</h4>
 
 If you need to use multiple name fields then the preferred labelling is 'First name', 'Last name'. Don't include 'Middle names' unless you absolutely have to and make sure it's optional (you don't need to mark it as optional as users will understand this).
 
@@ -54,7 +54,7 @@ If you need to use multiple name fields then the preferred labelling is 'First n
 	</form>
 </div>
 
-### Title (eg. 'Mr', 'Dr' etc.)
+<h3 class="heading-24">Title (eg. 'Mr', 'Dr' etc.)</h3>
 
 Avoid asking for someone's title without good reason. It's extra work for users and you're asking them to potentially reveal their gender and marital status as well, which they may not want to do.
 

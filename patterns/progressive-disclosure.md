@@ -23,9 +23,7 @@ Don't over do it and be careful not to hide important content from people or for
 
 If a majority of users need that content, *don't hide it*.
 
-
-
-### Details tag
+<h3 class="heading-24">Details tag</h3>
 
 The HTML5 `details` and `summary` tags can be used like this:
 
@@ -38,7 +36,7 @@ The HTML5 `details` and `summary` tags can be used like this:
 
 The Sass code for the above example is [available on GitHub](https://github.com/alphagov/design-patterns/blob/gh-pages/patterns/assets/sass/helpers/_progressive-disclosure.scss). Cross browser support for these tags is [still patchy](http://caniuse.com/details), but you can plug the gap with JavaScript. [This jQuery plugin](https://github.com/mathiasbynens/jquery-details) does just that, whilst also adding appropriate ARIA roles to the elements.
 
-#### Writing good summary text
+<h4 class="heading-19">Writing good summary text</h4>
 
 Good summary text is critical because you're hiding content from users. The target audience need to be compelled to click on the summary - everyone else needs to know that they can safely ignore it. Verbs are powerful, as is writing in the first person.
 
@@ -50,8 +48,7 @@ Some examples:
 
 Some users are reluctant to click on summary text for fear that they will be taken to another screen and lose whatever information they've already provided. A consistent visual treatment (like the '►' bullet above) can help, as can using strong action words like 'add' or 'show'.
 
-
-### Progressive disclosure in forms
+<h3 class="heading-24">Progressive disclosure in forms</h3>
 
 Used carefully, progressive disclosure can improve the user experience of forms by hiding those parts of the form that the user doesn't need to complete.
 

@@ -35,11 +35,9 @@
    }
 
 */
-.grid-wrapper, .cf, .date-of-birth, .phase-block, .progress-indicator.horizontal ol, .progress-indicator.horizontal ul, .progress-indicator.vertical ol, .progress-indicator.vertical ul, .example,
-.pattern-example {
+.grid-wrapper, .cf, .date-of-birth, .phase-block, .progress-indicator.horizontal ol, .progress-indicator.horizontal ul, .progress-indicator.vertical ol, .progress-indicator.vertical ul, .pattern-example, .example {
   zoom: 1; }
-  .grid-wrapper:after, .cf:after, .date-of-birth:after, .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after, .example:after,
-  .pattern-example:after {
+  .grid-wrapper:after, .cf:after, .date-of-birth:after, .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after, .pattern-example:after, .example:after {
     content: "";
     display: block;
     clear: both; }
@@ -90,11 +88,9 @@
    }
 
 */
-.grid-wrapper, .cf, .date-of-birth, .phase-block, .progress-indicator.horizontal ol, .progress-indicator.horizontal ul, .progress-indicator.vertical ol, .progress-indicator.vertical ul, .example,
-.pattern-example {
+.grid-wrapper, .cf, .date-of-birth, .phase-block, .progress-indicator.horizontal ol, .progress-indicator.horizontal ul, .progress-indicator.vertical ol, .progress-indicator.vertical ul, .pattern-example, .example {
   zoom: 1; }
-  .grid-wrapper:after, .cf:after, .date-of-birth:after, .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after, .example:after,
-  .pattern-example:after {
+  .grid-wrapper:after, .cf:after, .date-of-birth:after, .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after, .pattern-example:after, .example:after {
     content: "";
     display: block;
     clear: both; }
@@ -125,11 +121,9 @@
    }
 
 */
-.grid-wrapper, .cf, .date-of-birth, .phase-block, .progress-indicator.horizontal ol, .progress-indicator.horizontal ul, .progress-indicator.vertical ol, .progress-indicator.vertical ul, .example,
-.pattern-example {
+.grid-wrapper, .cf, .date-of-birth, .phase-block, .progress-indicator.horizontal ol, .progress-indicator.horizontal ul, .progress-indicator.vertical ol, .progress-indicator.vertical ul, .pattern-example, .example {
   zoom: 1; }
-  .grid-wrapper:after, .cf:after, .date-of-birth:after, .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after, .example:after,
-  .pattern-example:after {
+  .grid-wrapper:after, .cf:after, .date-of-birth:after, .phase-block:after, .progress-indicator.horizontal ol:after, .progress-indicator.horizontal ul:after, .progress-indicator.vertical ol:after, .progress-indicator.vertical ul:after, .pattern-example:after, .example:after {
     content: "";
     display: block;
     clear: both; }
@@ -257,8 +251,7 @@ Example usage:
     line-height: 1;
     font-weight: 400;
     text-transform: none;
-    font-weight: 700;
-    line-height: 0.4; }
+    font-weight: 700; }
     @media (max-width: 640px) {
       .gov-uk .data-80 {
         font-size: 53px;
@@ -270,7 +263,7 @@ Example usage:
     font-weight: 400;
     text-transform: none;
     font-weight: 700;
-    line-height: 0.2; }
+    line-height: 0.9; }
     @media (max-width: 640px) {
       .gov-uk .data-48 {
         font-size: 32px;
@@ -999,7 +992,6 @@ details {
       font-size: 16px;
       line-height: 1.25; } }
 
-.example,
 .pattern-example {
   position: relative;
   overflow: hidden;
@@ -1008,47 +1000,6 @@ details {
   margin: 30px 0 60px 0;
   padding: 15px;
   padding: 30px 15px; }
-  .example code,
-  .pattern-example code {
-    display: block;
-    padding: 0 0 30px 0;
-    background: none; }
-  .example em,
-  .pattern-example em {
-    font-style: normal;
-    color: #0076c0; }
-  .example .swatch,
-  .pattern-example .swatch {
-    width: 60px;
-    height: 60px;
-    display: block;
-    margin-bottom: 30px; }
-  .example .text-secondary,
-  .pattern-example .text-secondary {
-    color: #6f777b; }
-  .example .colour-hm-government,
-  .pattern-example .colour-hm-government {
-    background: #0076c0; }
-  .example .colour-department-of-health,
-  .pattern-example .colour-department-of-health {
-    background: #00ad93; }
-  .example .button,
-  .pattern-example .button {
-    margin-bottom: 30px; }
-  .example #postcode-lookup,
-  .pattern-example #postcode-lookup {
-    float: left; }
-  .example #enter-address-manually,
-  .pattern-example #enter-address-manually {
-    width: 100%;
-    float: left;
-    margin-top: 10px;
-    padding: 8px 0; }
-  .example details,
-  .pattern-example details {
-    margin-left: 15px;
-    margin-left: 30px; }
-  .example .ribbon,
   .pattern-example .ribbon {
     background-color: #85994b;
     overflow: hidden;
@@ -1062,6 +1013,43 @@ details {
     font-weight: bold;
     font-size: 16px;
     padding: 3px 50px; }
+  .pattern-example #postcode-lookup {
+    float: left; }
+  .pattern-example #enter-address-manually {
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+    padding: 8px 0; }
+  .pattern-example details {
+    margin-left: 15px;
+    margin-left: 30px; }
+
+.example {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #bfc1c3;
+  outline: 15px solid #f8f8f8;
+  margin: 30px 0 60px 0;
+  padding: 15px;
+  padding: 30px 15px; }
+  .example em {
+    color: #0076c0;
+    font-style: normal; }
+  .example code {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 300;
+    text-transform: none;
+    font-family: monospace, serif;
+    display: block;
+    padding: 0 0 15px 0;
+    background: none;
+    padding: 0 0 30px 0; }
+    @media (max-width: 640px) {
+      .example code {
+        font-size: 14px;
+        line-height: 1.14286; } }
 
 .example-grid {
   background: white;
@@ -1085,30 +1073,22 @@ details {
   max-width: 100%;
   vertical-align: top; }
 
-code,
-pre {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 300;
-  text-transform: none;
-  font-family: monospace, serif;
-  padding: 0 5px;
-  background: #dee0e2; }
-  @media (max-width: 640px) {
-    code,
-    pre {
-      font-size: 14px;
-      line-height: 1.14286; } }
+.example .data p {
+  margin-bottom: 0; }
 
-pre {
-  white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word; }
-
-.highlight {
-  color: #0076c0;
-  font-style: normal; }
+.example .swatch {
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin-bottom: 30px; }
+.example .text-secondary {
+  color: #6f777b; }
+.example .colour-hm-government {
+  background: #0076c0; }
+.example .colour-department-of-health {
+  background: #00ad93; }
+.example .button {
+  margin-bottom: 30px; }
 
 .example-highlight-grid .grid-wrapper {
   background: #bfc1c3; }

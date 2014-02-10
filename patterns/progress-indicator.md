@@ -10,14 +10,13 @@ phases:
   - alpha
 ---
 
-### Example 1: Step indicator
+<h3 class="heading-24">Example 1: Step indicator</h3>
 
 {% include _progress-indicator-example-1.html %}
 
 This is the preferred approach and should be tried before moving on to any of the others. It's accessible, compact and works well on all devices.
 
-
-### Example 2: Horizontal progress bar
+<h3 class="heading-24">Example 2: Horizontal progress bar</h3>
 
 {% include _progress-indicator-example-2.html %}
 
@@ -29,8 +28,7 @@ Remember to number each step - it helps to reinforce their sequential nature.
 
 You'll need to keep the number of steps and their names short in order to fit them all on one line.
 
-
-### Example 3: Vertical progress bar
+<h3 class="heading-24">Example 3: Vertical progress bar</h3>
 
 {% include _progress-indicator-example-3.html %}
 
@@ -44,8 +42,7 @@ Don't forget you'll need to let people know when they can progress past these st
 
 You'll should also consider alerting users that they can proceed in some other way too (a pop-up for example). Not everyone will notice the appearance of a button.
 
-
-### Example 4: Loading bar
+<h3 class="heading-24">Example 4: Loading bar</h3>
 
 We're not recommending that you use these. So far we've not seen any examples where a simple step indicator wouldn't work just as well. As that's the simpler solution, that's the one we're recommending.
 
@@ -56,8 +53,7 @@ There's one possible use case, where:
 
 A survey is one example of the above. If anyone wants to test the two approaches on a survey we'd be very interested in the results.
 
-
-### Dealing with branching transaction flows
+<h3 class="heading-24">Dealing with branching transaction flows</h3>
 
 If the total number of steps changes as the user moves through the transaction then this may confuse your users. One way to avoid the issue is not to specify how many steps are left, but this does remove one of the key benefits of the pattern. Another approach is to combine steps into larger chunks that don't change and then represent those instead.
 

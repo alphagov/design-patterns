@@ -1,12 +1,11 @@
 // Styles used only for Design Guide examples
 
 // ==========================================================================
-// Design Guide & Design Patterns styles
+// Design Style Guide & Design Patterns page styles
 // ==========================================================================
 
 .design-guide {
   
-  // Adjust typography
   .guide-subheader {
     margin-bottom: 0;
   }
@@ -19,6 +18,7 @@
     max-width: 30em;
   }
   
+  // Page updated & follow
   .page-metadata {
     border-top: 5px solid $black;
     padding-top: $gutter-two-thirds;
@@ -48,10 +48,9 @@
 
 
 // ==========================================================================
-// Design Guide - In-page examples (grey boxes)
+// Design Patterns - In-page examples (grey boxes)
 // ==========================================================================
 
-.example,
 .pattern-example {
   
   @extend %contain-floats;
@@ -66,47 +65,21 @@
     padding: $gutter $gutter-half;
   }
   
-  code {
+  // Recommended - Ribbon
+  .ribbon {
+    background-color: $grass-green;
+    overflow: hidden;
+    position: absolute;
+    right: -50px;
+    top: 40px;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    color: #fff;
     display: block;
-    padding: 0 0 $gutter 0;
-    background: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 3px 50px;
   }
-  
-  // Highlight font sizes
-  em {
-    font-style: normal;
-    color: $hm-government;
-  }
-  
-  // Colours
-  .swatch {
-    width: $gutter*2;
-    height: $gutter*2;
-    display: block;
-    margin-bottom: $gutter;
-  }
-  .text-secondary {
-    color: $secondary-text-colour;
-  }
-  .colour-hm-government {
-    background: $hm-government;
-  }
-  .colour-department-of-health {
-    background: $department-of-health;
-  }
-  
-  .button {
-    margin-bottom: $gutter;
-  }
-  
-  // Buttons
-  //  .button,
-  //  .button-secondary,
-  //  .button-warning {
-  //    float: left;
-  //    margin-right: $gutter-half;
-  //    margin-bottom: 2px;
-  //  }
   
   // Form examples
   #postcode-lookup {
@@ -127,25 +100,47 @@
     }
   }
   
-  // Recommended - Ribbon
-  .ribbon {
-    background-color: $grass-green;
-    overflow: hidden;
-    position: absolute;
-    right: -50px;
-    top: 40px;
-    -moz-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    color: #fff;
-    display: block;
-    font-weight: bold;
-    font-size: 16px;
-    padding: 3px 50px;
-  }
-  
 }
 
-// Design Guide - Grid example
+
+// ==========================================================================
+// Design Style Guide - In-page examples (grey boxes)
+// ==========================================================================
+
+.example {
+  
+  @extend %contain-floats;
+  position: relative;
+  overflow: hidden;
+  
+  border: 1px solid #bfc1c3;
+  outline: $gutter-half solid #f8f8f8;
+  margin: $gutter 0 $gutter*2 0;
+  padding: $gutter-half;
+  @include media(tablet) {
+    padding: $gutter $gutter-half;
+  }
+  
+  // Highlight font size examples
+  em {
+    color: $hm-government;
+    font-style: normal;
+  }
+  
+  // Format code blocks
+  code {
+    @include core-16;
+    font-family: monospace, serif;
+    display: block;
+    padding: 0 0 15px 0;
+    background: none;
+    @include media(tablet) {
+      padding: 0 0 30px 0;
+    }
+  }
+}
+
+// 2. Design Guide - Grid example
 
 .example-grid {
   background: white;
@@ -167,7 +162,7 @@
   text-indent: -99em;
 }
 
-// Design Guide - Image example
+// 3. Design Guide - Image example
 
 .example-images {
   padding-left: 0;
@@ -179,33 +174,45 @@
   vertical-align: top;
 }
 
+// 4. Design Guide - Data example
+
+.example .data p {
+  margin-bottom: 0;
+}
+
+
+// 5. Design Guide - Colour example
+
+.example {
+  
+  .swatch {
+    width: $gutter*2;
+    height: $gutter*2;
+    display: block;
+    margin-bottom: $gutter;
+  }
+  .text-secondary {
+    color: $secondary-text-colour;
+  }
+  
+  .colour-hm-government {
+    background: $hm-government;
+  }
+  .colour-department-of-health {
+    background: $department-of-health;
+  }
+  
+  .button {
+    margin-bottom: $gutter;
+  }
+  
+}
 
 // ==========================================================================
 // Design Guide example pages
 // ==========================================================================
 
-// Code and example format and highlighting
-
-code,
-pre {
-  @include core-16;
-  font-family: monospace, serif;
-  padding: 0 5px;
-  background: $grey-3;
-}
-
-pre {
-  white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-
-.highlight {
-  color: $hm-government;
-  font-style: normal;
-}
-
-// Let's see how the grid works
+// Grid highlight colours
 
 .example-highlight-grid {
   

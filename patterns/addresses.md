@@ -16,7 +16,7 @@ There are a couple of ways to capture addresses. Which one you choose will depen
 2. [Multiple fields](#multiple-fields)
 3. [Address finder](#address-finder)
 
-### 1. Free text box
+<h3 class="heading-24">1. Free text box</h3>
 
 A single, multi-line text box where users write out the address in full.
 
@@ -29,23 +29,23 @@ A single, multi-line text box where users write out the address in full.
   </form>
 </div>
 
-#### Pros
+<h4 class="heading-19"></h4>
 
 * It can handle any possible address format
 * People can copy and paste addresses from the clipboard
 * People don't have to work out which part of the address goes in which field
 
-#### Cons
+<h4 class="heading-19">Cons</h4>
 
 * Parsing addresses for sub-parts (region, street etc.) is hard, and impossible to do with 100% accuracy
 
-#### Use when...
+<h4 class="heading-19">Use when...</h4>
 
 * you're expecting a very broad range of address formats
 * you don't need to use specific sub-parts of the address
 
 
-### 2. Multiple fields
+<h3 class="heading-24">2. Multiple fields</h3>
 
 The address is broken down into multiple fields. Here's an example that works for simple UK addresses:
 
@@ -74,23 +74,23 @@ The address is broken down into multiple fields. Here's an example that works fo
 	</form>
 </div>
 
-#### Pros
+<h4 class="heading-19">Pros</h4>
 
 * You can easily extract the parts of an address and do things with them
 * You can give help for or validate each part of the address separately
 * Works well with browsers that have auto-complete enabled
 
-#### Cons
+<h4 class="heading-19">Cons</h4>
 
 * Hard to find a single format that works for a broad range of regions
 * No guarantee that people will use the fields as you intended
 * Can't easily paste addresses from the clipboard
 
-#### Use when...
+<h4 class="heading-19">Use when...</h4>
 
 * you know which regions the addresses will come from and can find a format that supports them all
 
-#### Guidelines for UK addresses
+<h4 class="heading-19">Guidelines for UK addresses</h4>
 
 * 'postcode' is written all one word
 * let people enter postcodes with or without spaces
@@ -100,16 +100,16 @@ The address is broken down into multiple fields. Here's an example that works fo
 * make the field lengths appropriate - it helps people understand the form
 
 
-### 3. Address finder
+<h3 class="heading-24"></h3>
 
 Sometimes referred to as 'postcode lookup'. An address finder lets users specify a UK address by inputing their postcode and selecting the address from a list.
 
-#### Remember...
+<h4 class="heading-19">Remember...</h4>
 
 * Make it clear that the address finder only works for UK addresses
 * Provide a manual option for people with international adresses or addresses that are missing or badly formed in the Royal Mail database
 
-#### Example
+<h4 class="heading-19">Example</h4>
 
 Here's an example that combines an address finder, with a free text box. This approach potentially combines the benefit of structured data for UK addresses, whilst allowing for any format for non-UK addresses.
 
