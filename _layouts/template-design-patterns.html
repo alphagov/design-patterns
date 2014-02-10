@@ -35,11 +35,12 @@ has-proposition: true
         
         {{ content }}
 
-        {% if page.discuss-url %}
+        
         <ul class="page-actions">
-          <li><a rel="external" href="{{ page.discuss-url }}">Discuss this pattern</a></li>
+          {% if page.discuss-url %}<li><a rel="external" href="{{ page.discuss-url }}">Discuss this pattern</a></li>{% endif %}
+          {% if page.sass-url %}<li><a rel="external" href="{{ page.sass-url }}">Get the code</a></li>{% endif %}
         </ul>
-        {% endif %}
+        
       </div>
     </div>
     <div class="grid grid-1-4">
@@ -56,11 +57,12 @@ has-proposition: true
         </dl>
         {% endif %}  
         
-        {% if page.discuss-url %}
+        
         <ul class="page-actions">
-          <li><a rel="external" href="{{ page.discuss-url }}">Discuss this pattern</a></li>
+          {% if page.discuss-url %}<li><a rel="external" href="{{ page.discuss-url }}">Discuss this pattern</a></li>{% endif %}
+          {% if page.sass-url %}<li><a rel="external" href="{{ page.sass-url }}">Get the code</a></li>{% endif %}
         </ul>
-        {% endif %}
+        
         
       </div>
     </div>
