@@ -1,0 +1,42 @@
+//
+// Design Guide example
+//
+/* 
+  GOV.UK front end toolkit
+
+  Sass mixins and helpers for responsive design, x-browser compatibility and colour palettes
+*/
+
+@import "../govuk_frontend_toolkit/stylesheets/colours";
+@import "../govuk_frontend_toolkit/stylesheets/css3";
+@import "../govuk_frontend_toolkit/stylesheets/shims";
+@import "../govuk_frontend_toolkit/stylesheets/typography";
+
+@import "../govuk_frontend_toolkit/stylesheets/design-patterns/alpha-beta";
+@import "../govuk_frontend_toolkit/stylesheets/design-patterns/buttons";
+
+/*
+  Styles used to construct the page
+*/
+
+// Import helper vars and styles
+@import "../govuk-helper/vars";
+
+// Page styles
+@import "../design-patterns/_alpha-beta";
+@import "../design-patterns/_breadcrumb";
+
+// Content wrapper
+@import "../govuk-helper/_main_wrapper";
+
+// Grids
+@import "../govuk-helper/_grid_base.scss";
+@import "../govuk-helper/_grid_wrapper";
+
+// Typography
+@import "../govuk-helper/_typography_base";
+@import "../govuk-helper/_typography_general";
+@import "../govuk-helper/_typography_headings";
+
+// Content
+@import "../govuk-helper/_lists";
