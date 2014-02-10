@@ -25,8 +25,8 @@ Tell the user what step they're on.
 <div class="pattern-example">
   <div class="inner-block">
     <div class="ribbon">Recommended</div>
-    <h1>
-      <span>Step 3 of 5</span>
+    <h1 class="heading-48">
+      <span class="heading-27">Step 3 of 5</span>
       Payment details
     </h1>
   </div>
