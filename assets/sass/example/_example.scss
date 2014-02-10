@@ -215,6 +215,21 @@
 // Design Guide example pages
 // ==========================================================================
 
+// Code highlight
+code {
+  @include core-16;
+  font-family: monospace, serif;
+  background: $grey-3;
+  padding: 0 4px;
+  @include inline-block;
+}
+
+// Highlight font size examples
+.highlight {
+  color: $hm-government;
+  font-style: normal;
+}
+
 // Grid highlight colours
 
 .example-highlight-grid {
