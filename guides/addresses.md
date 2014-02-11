@@ -47,6 +47,7 @@ A single, multi-line text box where users write out the address in full.
 <h3 class="heading-24">Cons</h3>
 
 * Parsing addresses for sub-parts (region, street etc.) is hard, and impossible to do with 100% accuracy
+* Many legacy back-end systems expect multi-field addresses
 
 <h3 class="heading-24">Guidance</h3>
 
