@@ -1020,17 +1020,6 @@ textarea {
   width: 100px;
 }
 
-/* line 8, ../sass/design-patterns/_addresses.scss */
-.address-finder label {
-  padding-top: 10px;
-}
-
-/* line 11, ../sass/design-patterns/_addresses.scss */
-.address-finder .postcode {
-  float: left;
-  margin-right: 15px;
-}
-
 /* line 3, ../sass/design-patterns/_date-of-birth.scss */
 .date-of-birth legend {
   margin-bottom: 15px;
