@@ -1,29 +1,22 @@
 ---
-layout: default
+layout: govuk_template
 service-title: "Design patterns"
-header-class: class="with-proposition"
-has-proposition: true
 ---
 
-<div class="breadcrumb">
-  <nav role="navigation">
-    <ol>
-      <li><a href="https://www.gov.uk/service-manual">Home</a></li>
-      <li><a href="{{ site.baseurl }}/">New design guides</a></li>
-    </ol>
-  </nav>
-</div>
+{% include /layouts/_breadcrumb.html %}
 
-<main class="main gov-uk design-pattern">
+<main class="main gov-uk">
   
   <div class="grid-wrapper">
     <div class="grid">
       <div class="inner-block">
         
-        <h1 class="heading-48">
-          <span class="heading-27">{{ page.document-type }}</span>
-          {{ page.title }} {% include _phase-block.html %}
-        </h1>
+        <div class="text">
+          <h1 class="heading-48">
+            <span class="heading-27">{{ page.document-type }}</span>
+            {{ page.title }} {% include _phase-block.html %}
+          </h1>
+        </div>
         
       </div>
     </div>
@@ -33,19 +26,30 @@ has-proposition: true
     <div class="grid grid-3-4">
       <div class="inner-block">
         
+        {% if page.text-wrapper %}
+        <div class="{{ page.text-wrapper }}">
+        {% endif %}
+        
         {{ content }}
-
+        
+        {% if page.text-wrapper %}
+        </div>
+        {% endif %}
         
         <ul class="page-actions">
-          {% if page.discuss-url %}<li><a rel="external" href="{{ page.discuss-url }}">Discuss this pattern</a></li>{% endif %}
-          {% if page.sass-url %}<li><a rel="external" href="{{ page.sass-url }}">Get the code</a></li>{% endif %}
+          {% if page.discuss-url %}
+          <li><a rel="external" href="{{ page.discuss-url }}">Discuss this pattern</a></li>
+          {% endif %}
+          {% if page.sass-url %}
+          <li><a rel="external" href="{{ page.sass-url }}">Get the code</a></li>
+          {% endif %}
         </ul>
         
       </div>
     </div>
     <div class="grid grid-1-4">
       <div class="inner-block">
-        
+      
         {% if page.published %}
         <dl class="page-metadata">
           <dt>First published:</dt>
@@ -57,15 +61,15 @@ has-proposition: true
         </dl>
         {% endif %}  
         
-        
         <ul class="page-actions">
-          {% if page.discuss-url %}<li><a rel="external" href="{{ page.discuss-url }}">Discuss this pattern</a></li>{% endif %}
+          {% if page.discuss-url %}
+          <li><a rel="external" href="{{ page.discuss-url }}">Discuss this pattern</a></li>
+          {% endif %}
           {% if page.sass-url %}<li><a rel="external" href="{{ page.sass-url }}">Get the code</a></li>{% endif %}
         </ul>
         
-        
       </div>
     </div>
-  </div><!-- /.grid-wrapper -->
+  </div>
   
-</main><!-- /.main -->
+</main>

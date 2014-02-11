@@ -1,5 +1,5 @@
 ---
-layout: template-design-patterns
+layout: guide
 document-type: Design pattern
 title: Date of birth
 discuss-url: https://designpatterns.hackpad.com/Date-of-birth-648NbMKNYTr
@@ -8,6 +8,13 @@ published: 10 January 2014
 updated: 10 January 2014
 phases:
   - alpha
+breadcrumb:
+  -
+    title: Home
+    url: https://www.gov.uk/service-manual
+  -
+    title: New design guides
+    url: /
 ---
 
 Our current recommendation for capturing date of birth is to use three clearly labelled text boxes.

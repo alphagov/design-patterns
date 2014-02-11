@@ -1,5 +1,5 @@
 ---
-layout: template-design-patterns
+layout: guide
 document-type: Design pattern
 title: Progress indicators
 discuss-url: https://designpatterns.hackpad.com/Progress-indicators-3AOrLoia9Us
@@ -8,6 +8,13 @@ published: 2 January 2014
 updated: 9 January 2014
 phases:
   - alpha
+breadcrumb:
+  -
+    title: Home
+    url: https://www.gov.uk/service-manual
+  -
+    title: New design guides
+    url: /
 ---
 
 When people interact with multi-page transactions they can become disorientated or think that they've finished when they haven't. This can cause them to drop out of the transaction before they've completed it.

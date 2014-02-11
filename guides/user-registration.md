@@ -1,5 +1,5 @@
 ---
-layout: template-design-patterns
+layout: guide
 document-type: Design pattern
 title: User registration
 discuss-url: https://designpatterns.hackpad.com/Passwords-email-addresses-and-logins-4dSSBUhCYjj
@@ -7,6 +7,13 @@ published: 16 January 2014
 updated: 16 January 2014
 phases:
   - alpha
+breadcrumb:
+  -
+    title: Home
+    url: https://www.gov.uk/service-manual
+  -
+    title: New design guides
+    url: /
 ---
 
 We recommend you [avoid creating user accounts and login systems](https://www.gov.uk/service-manual/making-software/logins.html) where possible. However if you do need to, follow the guidance here.

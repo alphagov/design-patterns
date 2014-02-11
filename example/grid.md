@@ -1,30 +1,29 @@
 ---
-layout: template-example-grid
+layout: example
 document-type: Guide
 title: Grid example
 phases:
   - alpha
+breadcrumb:
+  -
+    title: Home
+    url: https://www.gov.uk/service-manual
+  -
+    title: New design guides
+    url: /
 ---
-
-<div class="breadcrumb">
-  <nav role="navigation">
-    <ol>
-      <li><a href="https://www.gov.uk/service-manual">Home</a></li>
-      <li><a href="{{ site.baseurl }}/">Guides</a></li>
-      <li><a href="{{ site.baseurl }}/example/">Design style guide examples</a></li>
-    </ol>
-  </nav>
-</div>
 
 <div class="grid-wrapper">
   <div class="grid">
     <div class="inner-block">
-
-      <h1 class="heading-48">
-        <span class="heading-27">{{ page.document-type }}</span>
-        {{ page.title }}
-      </h1>
-
+      
+      <div class="text">
+        <h1 class="heading-48">
+          <span class="heading-27">{{ page.document-type }}</span>
+          {{ page.title }} {% include _phase-block.html %}
+        </h1>
+      </div>
+      
     </div>
   </div>
 </div>
