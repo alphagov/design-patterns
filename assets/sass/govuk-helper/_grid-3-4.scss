@@ -1,6 +1,6 @@
-.grid-1-4 {
+.grid-3-4 {
   width: 100%;
   @include media(tablet) {
-    width: 25%;
+    width: 75%;
   }
 }
