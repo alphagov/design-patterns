@@ -19,38 +19,6 @@ $(document).ready(function () {
     });
   }
   
-  // Example - Postcode lookup
-  if ($('.js-address-finder').length>0) {
-    
-    // Hide manual address entry
-    $('.js-enter-address label').hide();
-    $('.js-enter-address textarea').hide();
-    
-    // Hide address select
-    $('.js-select-address label').hide();
-    $('.js-select-address select').hide();
-    
-    // Show address 
-    $('.js-button-find-address').click(function(e) {
-      e.preventDefault();
-      $('.js-select-address label').show();
-      $('.js-select-address select').show();
-    });
-    
-    $('.js-enter-address a').click(function(e) {
-      e.preventDefault();
-      $(this).hide();
-      
-      $('.js-enter-address label').show();
-      $('.js-enter-address textarea').show();
-      
-      var selected = $('.js-select-address select').find(":selected").text();
-      $('.js-enter-address textarea').val(selected);
-      
-    });
-  
-  };
-  
   // Convert a text field to a 'Title' select box
     
     jQuery.fn.convertToTitleSelect = function() {

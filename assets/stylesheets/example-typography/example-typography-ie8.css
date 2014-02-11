@@ -9,11 +9,9 @@
 @-ms-viewport {
   width: device-width;
 }
-
 @-o-viewport {
   width: device-width;
 }
-
 /* Usage:
    @include inline-block
 
@@ -30,7 +28,7 @@
    }
 
 */
-/* line 49, /Users/gemmaleigh/Sites/gds/design-patterns/assets/sass/../govuk_frontend_toolkit/stylesheets/_shims.scss */
+/* line 49, /Users/timpaul/code/gds/design-patterns/../govuk_frontend_toolkit/stylesheets/_shims.scss */
 .grid-wrapper:after {
   content: "";
   display: block;
@@ -41,28 +39,22 @@
   font-family: GDS-Logo;
   src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica");
 }
-
 @-ms-viewport {
   width: device-width;
 }
-
 @-o-viewport {
   width: device-width;
 }
-
 @font-face {
   font-family: GDS-Logo;
   src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica");
 }
-
 @-ms-viewport {
   width: device-width;
 }
-
 @-o-viewport {
   width: device-width;
 }
-
 /* Cross-browser shims
 
   Ways of normalising properties across browsers.
@@ -70,11 +62,9 @@
 @-ms-viewport {
   width: device-width;
 }
-
 @-o-viewport {
   width: device-width;
 }
-
 /* Usage:
    @include inline-block
 
@@ -91,58 +81,11 @@
    }
 
 */
-/* line 49, /Users/gemmaleigh/Sites/gds/design-patterns/assets/sass/../govuk_frontend_toolkit/stylesheets/design-patterns/../_shims.scss */
+/* line 49, /Users/timpaul/code/gds/design-patterns/assets/sass/../govuk_frontend_toolkit/stylesheets/design-patterns/../_shims.scss */
 .grid-wrapper:after {
   content: "";
   display: block;
   clear: both;
-}
-
-/* Cross-browser shims
-
-  Ways of normalising properties across browsers.
- */
-@-ms-viewport {
-  width: device-width;
-}
-
-@-o-viewport {
-  width: device-width;
-}
-
-/* Usage:
-   @include inline-block
-
-   or
-
-   @include inline-block("250px")
-
-   which gives a min-height to the inline-block elements.
-*/
-/* Contain floats usage:
-
-   .this-has-floated-children {
-     @extend %contain-floats;
-   }
-
-*/
-/* line 49, /Users/gemmaleigh/Sites/gds/design-patterns/assets/sass/../govuk_frontend_toolkit/stylesheets/design-patterns/../_shims.scss */
-.grid-wrapper:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-/* CSS 3 Mixins
-
-  Add them as you need them. This should let us manage vendor prefixes in one place.
- */
-@-ms-viewport {
-  width: device-width;
-}
-
-@-o-viewport {
-  width: device-width;
 }
 
 /*
@@ -169,7 +112,7 @@ Example usage:
   padding: 8px 0;
   background-color: #d53880;
 }
-/* line 14, /Users/gemmaleigh/Sites/gds/design-patterns/assets/sass/../govuk_frontend_toolkit/stylesheets/design-patterns/_alpha-beta.scss */
+/* line 14, /Users/timpaul/code/gds/design-patterns/assets/sass/../govuk_frontend_toolkit/stylesheets/design-patterns/_alpha-beta.scss */
 .phase-banner p {
   max-width: 960px;
   margin: 0 auto;
@@ -182,17 +125,17 @@ Example usage:
   text-transform: none;
 }
 @media (max-width: 640px) {
-  /* line 14, /Users/gemmaleigh/Sites/gds/design-patterns/assets/sass/../govuk_frontend_toolkit/stylesheets/design-patterns/_alpha-beta.scss */
+  /* line 14, /Users/timpaul/code/gds/design-patterns/assets/sass/../govuk_frontend_toolkit/stylesheets/design-patterns/_alpha-beta.scss */
   .phase-banner p {
     font-size: 14px;
     line-height: 1.14286;
   }
 }
-/* line 23, /Users/gemmaleigh/Sites/gds/design-patterns/assets/sass/../govuk_frontend_toolkit/stylesheets/design-patterns/_alpha-beta.scss */
+/* line 23, /Users/timpaul/code/gds/design-patterns/assets/sass/../govuk_frontend_toolkit/stylesheets/design-patterns/_alpha-beta.scss */
 .phase-banner a, .phase-banner a:link, .phase-banner a:visited, .phase-banner a:active {
   color: #0b0c0c;
 }
-/* line 27, /Users/gemmaleigh/Sites/gds/design-patterns/assets/sass/../govuk_frontend_toolkit/stylesheets/design-patterns/_alpha-beta.scss */
+/* line 27, /Users/timpaul/code/gds/design-patterns/assets/sass/../govuk_frontend_toolkit/stylesheets/design-patterns/_alpha-beta.scss */
 .phase-banner a:hover {
   color: #0b0c0c;
 }
@@ -311,7 +254,7 @@ Example usage:
   }
 }
 
-/* line 2, ../../sass/govuk-helper/_typography-general.scss */
+/* line 1, ../../sass/govuk-helper/_typography-general.scss */
 p,
 pre {
   margin-top: 5px;
@@ -323,7 +266,7 @@ pre {
   max-width: 30em;
 }
 
-/* line 19, ../../sass/govuk-helper/_typography-general.scss */
+/* line 14, ../../sass/govuk-helper/_typography-general.scss */
 .design-pattern h1,
 .design-pattern h2,
 .design-pattern h3,

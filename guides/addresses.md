@@ -116,37 +116,11 @@ Only use multiple address fields when you know which regions the addresses will 
 
 Sometimes referred to as 'postcode lookup'. An address finder lets users specify a UK address by inputing their postcode (and optionally street name or number) and selecting the address from a list.
 
+Here's how this pattern was implemented on the [Lasting Power of Attorney](https://lastingpowerofattorney.service.gov.uk/) service.
+
 <div class="example">
   
-  <form class="form address-finder js-address-finder">
-    
-    <div class="form-group">
-      <label for="ex3-postcode-lookup">Postcode</label>
-      <input type="text" id="ex3-postcode-lookup" class="form-control postcode" value="SE1 6PQ">
-      <button class="button-secondary js-button-find-address">Find UK address</button>
-    </div>
-    <div class="form-group js-select-address">
-      <label for="ex3-address-list"></label>
-      <select id="ex3-address-list" size="15">
-        <option>1 Borough High Street, London, SE1 6PQ</option>
-        <option>2 Borough High Street, London, SE1 6PQ</option>
-        <option>3 Borough High Street, London, SE1 6PQ</option>
-        <option>4 Borough High Street, London, SE1 6PQ</option>
-        <option>5 Borough High Street, London, SE1 6PQ</option>
-        <option>6 Borough High Street, London, SE1 6PQ</option>
-        <option>7 Borough High Street, London, SE1 6PQ</option>
-        <option>8 Borough High Street, London, SE1 6PQ</option>
-        <option>9 Borough High Street, London, SE1 6PQ</option>
-        <option>10 Borough High Street, London, SE1 6PQ</option>
-      </select>
-    </div>
-    <div class="form-group js-enter-address">
-      <a href="#">Enter address manually</a>
-      <label for="ex3-address">Address</label>
-      <textarea type="text" id="ex3-address" rows="5"></textarea>
-    </div>
-    
-  </form>
+ <img src="{{ site.baseurl }}/assets/images/guides/postcode-lookup.gif" title="An animation showing the address finder in the Lasting Power of Attorney service">
   
 </div>
 
