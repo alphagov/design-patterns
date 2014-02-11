@@ -5,5 +5,31 @@ header-class: class="with-proposition"
 has-proposition: true
 ---
 
-{{ content }}
+{% include /layouts/_breadcrumb.html %}
+
+<main class="main gov-uk">
+  
+  <div class="grid-wrapper">
+    <div class="grid">
+      <div class="inner-block">
+        
+        <h1 class="heading-48">
+          <span class="heading-27">{{ page.document-type }}</span>
+          {{ page.title }} {% include _phase-block.html %}
+        </h1>
+        
         {% if page.text-wrapper %}
+        <div class="{{ page.text-wrapper }}">
+        {% endif %}
+        
+        {{ content }}
+        
+        {% if page.text-wrapper %}
+        </div>
+        {% endif %}
+        
+      </div><!-- /.inner-block -->
+    </div><!-- /.grid -->
+  </div><!-- /.grid-wrapper -->
+  
+</main>
