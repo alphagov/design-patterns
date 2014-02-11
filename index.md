@@ -8,6 +8,9 @@ breadcrumb:
   -
     title: Home
     url: https://www.gov.uk/service-manual
+  -
+    title: New design guides
+    url: /
 ---
 
 These new guides are for designers, researchers and front end developers building services for GOV.UK.
@@ -19,6 +22,7 @@ Help us improve it by [giving us your feedback](https://designpatterns.hackpad.c
 This guide explains how to style and arrange the basic elements like like headings, paragraphs, images, form fields and buttons.
 
 * [Read the design style guide]({{ site.baseurl }}/guides/design-style-guide.html)
+* [Take a look through the design style guide examples]({{ site.baseurl }}/example/)
 
 
 <h2 class="heading-36">Design patterns</h2>

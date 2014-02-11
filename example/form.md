@@ -1,7 +1,7 @@
 ---
 layout: example
-document-type: Guide
-title: Form example
+document-type: Example
+title: Forms
 phases:
   - alpha
 custom-css: 'example-form'
@@ -13,7 +13,7 @@ breadcrumb:
     title: New design guides
     url: /
   -
-    title: Examples
+    title: Design style guide examples
     url: /example/
 ---
 

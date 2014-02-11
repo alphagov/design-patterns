@@ -1,7 +1,7 @@
 ---
 layout: example
-document-type: Guide
-title: Grid example
+document-type: Example
+title: Grid layout
 phases:
   - alpha
 custom-css: 'example-grids'
@@ -13,7 +13,7 @@ breadcrumb:
     title: New design guides
     url: /
   -
-    title: Examples
+    title: Design style guide examples
     url: /example/
 ---
 

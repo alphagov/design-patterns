@@ -1,6 +1,6 @@
 ---
 layout: default
-document-type: Guide
+document-type: Example
 title: Design style guide examples
 phases:
   - alpha
@@ -12,7 +12,7 @@ breadcrumb:
     title: New design guides
     url: /
   -
-    title: Examples
+    title: Design style guide examples
     url: /example/
 ---
 

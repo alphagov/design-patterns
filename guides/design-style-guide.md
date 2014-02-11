@@ -12,6 +12,9 @@ breadcrumb:
   -
     title: New design guides
     url: /
+  -
+    title: Design style guide
+    url: /design-style-guide.html
 ---
 
 <div class="text">
