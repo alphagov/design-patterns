@@ -16,6 +16,11 @@
 
 // Styles used to construct the page
 
+// Import patterns required for styling GOV.UK template content
+@import "../design-patterns/alpha-beta";
+@import "../design-patterns/phase-block";
+@import "../design-patterns/breadcrumb";
+
 // Typography
 @import "../govuk-helper/typography-base";
 @import "../govuk-helper/typography-general";
@@ -29,18 +34,10 @@
 @import "../govuk-helper/grid-wrapper";
 @import "../govuk-helper/grid-widths";
 
-// Additional helper files
-@import "../govuk-helper/colours";
-@import "../govuk-helper/lists";
-@import "../govuk-helper/forms";
-@import "../govuk-helper/buttons";
-
-// Import patterns required for styling GOV.UK template content
-@import "../design-patterns/alpha-beta";
-@import "../design-patterns/phase-block";
-@import "../design-patterns/breadcrumb";
-
 // Form styles
 @import "../govuk-helper/forms";
 @import "../govuk-helper/buttons";
+
+// Additional helper files
+@import "../govuk-helper/colours";
 
