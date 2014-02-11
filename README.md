@@ -29,13 +29,34 @@ bundle
 
 ## Installation
 
-The site has been designed to be hosted on GitHub pages, which run Jekyll in Safe mode. For this reason if you make any changes to the Sass files you'll need to compile them locally. From the '/patterns/assets' folder:
+### Submodules
+
+The site uses the [govuk_frontend_toolkit](https://github.com/alphagov/govuk_frontend_toolkit) as a [Git submodule](http://git-scm.com/book/en/Git-Tools-Submodules). After cloning the project, you will need to run these commands to initialise the submodule:
+
+```
+git submodule init
+git submodule update
+```
+
+This will make the toolkit files available which is required for the Sass to compile correctly.
+
+You should always be working from the latest version of the toolkit. To update it, run this command:
+
+The site has been designed to be hosted on GitHub pages, which run Jekyll in Safe mode. For this reason if you make any changes to the Sass files you'll need to compile them locally. From the root folder:
+
+```
+git submodule update
+```
+
+### Running Sass
 
 ```
 sass --stop-on-error --style expanded --line-numbers --watch assets/sass:assets/stylesheets
 ```
 
 If you want to preview your work locally, run Jekyll like this:
+
+### Running Jekyll
 
 ```
 jekyll serve --watch --baseurl ''
