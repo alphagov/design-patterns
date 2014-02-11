@@ -4,6 +4,7 @@ document-type: Guide
 title: Form example
 phases:
   - alpha
+custom-css: 'example-form'
 breadcrumb:
   -
     title: Home
@@ -11,6 +12,9 @@ breadcrumb:
   -
     title: New design guides
     url: /
+  -
+    title: Examples
+    url: /example/
 ---
 
 <div class="grid-wrapper">
@@ -28,6 +32,7 @@ breadcrumb:
           <legend class="heading-24">
             Contact details
           </legend>
+          
           <p class="text-secondary">These will not be made public</p>
           
           <div class="form-group">
@@ -55,8 +60,6 @@ breadcrumb:
             <input type="submit" class="button" value="Next">
             <button class="button-secondary">Back</button>
           </div>
-          
-          
           
         </fieldset>
         

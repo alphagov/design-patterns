@@ -24,6 +24,7 @@ breadcrumb:
 3. **[Images](#guide-images)**
 4. **[Data](#guide-data)**
 5. **[Colour](#guide-colour)**
+5. **[Forms](#guide-forms)**
 
 <!-- Typography -->
 <div class="text" id="guide-typography">
@@ -333,35 +334,59 @@ breadcrumb:
       HEX: #0076c0 <br>
       Sass: $hm-government
     </code>
-    <button class="button">Button</button>
-    <code>
-      Sass: $green<br>
-      Hex: #006435
-    </code>
   </div>
 </div>
 
-<!-- Buttons -->
-<!-- <div class="guide" id="guide-forms">
-  <h2 class="guide-header">6. Buttons</h2>
+<!-- Forms -->
+<div class="text" id="guide-forms">
+  <h2 class="heading-36">6. Forms</h2>
+  <p>As explained in their <a href="http://www.w3.org/TR/html51/forms.html#the-fieldset-element">HTML5 specification section</a> fieldsets are used to break up forms into logical sections.</p>
+</div>
+
+<div class="text">
+  <h3 class="heading-24">Labels</h3>
   <p>
-    Primary action buttons are green, secondary action buttons are grey, irreversible action buttons are red.
+    By default labels should be aligned above their controls.
   </p>
-</div> -->
+</div>
+
+<!-- Forms : Example-->
+<div class="example">
+  <div class="inner-block">
+    <form action="get" class="form">
+      <fieldset>
+        <div class="form-group">
+          <label for="">Full name</label>
+          <input type="text" class="form-control" />
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>
+
+<div class="text">
+  <h3 class="heading-24">Buttons</h3>
+  <p>
+    Primary actions are green ($green), secondary actions are grey ($grey-3). They use the button mixin defined in the <a href="https://github.com/alphagov/govuk_frontend_toolkit#buttons">GOV.UK front end toolkit</a>. 
+  </p>
+  <p>
+    The button text colour is set by the mixin to either light or dark, depending on the button background colour.
+  </p>
+</div>
 
 <!-- Buttons : Example-->
-<!-- <div class="example">
+<div class="example">
   <div class="inner-block">
-    <a href="#" class="button">Primary action</a>
-    <a href="#" class="button button-secondary">Secondary action</a>
-    <a href="#" class="button button-warning">Warning action</a>
+    <button class="button">Primary button</button>
+    <button class="button-secondary">Secondary button</button>
   </div>
-</div> -->
+</div>
 
-<!-- Buttons : Get the styles -->
-<!-- <div class="guide guide-end">
-  <h3 class="guide-subheader">Get the styles</h3>
+<!-- Forms : Take a look at the examples -->
+<div class="text">
+  <h3 class="heading-24">Take a look at the examples</h3>
   <p>
-    Here's an <a href="{{ site.baseurl}}/example/form.html">example form using the button styles</a>.
+      Here's an <a href="{{ site.baseurl}}/example/form.html">example form</a>.
   </p>
-</div> -->
+</div>
+

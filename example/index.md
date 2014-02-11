@@ -11,6 +11,9 @@ breadcrumb:
   -
     title: New design guides
     url: /
+  -
+    title: Examples
+    url: /example/
 ---
 
 <div class="text">
@@ -21,6 +24,7 @@ breadcrumb:
   <ul>
     <li><a href="{{ site.baseurl }}/example/typography.html">Typography</a></li>
     <li><a href="{{ site.baseurl }}/example/grid.html">Grid layout</a></li>
+    <li><a href="{{ site.baseurl }}/example/form.html">Forms</a></li>
   </ul>
 
   <h3 class="heading-24">The style guide helper files</h3>

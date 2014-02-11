@@ -4,6 +4,7 @@ document-type: Guide
 title: Grid example
 phases:
   - alpha
+custom-css: 'example-grids'
 breadcrumb:
   -
     title: Home
@@ -11,6 +12,9 @@ breadcrumb:
   -
     title: New design guides
     url: /
+  -
+    title: Examples
+    url: /example/
 ---
 
 <div class="grid-wrapper">

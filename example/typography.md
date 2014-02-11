@@ -2,6 +2,7 @@
 layout: example
 document-type: Guide
 title: Typography example
+custom-css: 'example-typography'
 phases:
   - alpha
 breadcrumb:
@@ -11,6 +12,9 @@ breadcrumb:
   -
     title: New design guides
     url: /
+  -
+    title: Examples
+    url: /example/
 ---
 
 <div class="grid-wrapper">
