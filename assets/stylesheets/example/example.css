@@ -1,34 +1,29 @@
 /*
-Syntax error: Undefined variable: "$white".
-        on line 38 of assets/sass/govuk-helper/forms.scss
+Syntax error: File to import not found or unreadable: govuk-helper/vars.
+              Load paths:
+                /Users/gemmaleigh/Sites/gds/design-patterns
+                /Users/gemmaleigh/Sites/gds/design-patterns/assets/sass
+        on line 22 of assets/sass/example/example.scss
 
-33: select[size],
-34: textarea {
-35:   font-size: 1em;
-36:   
-37:   padding: 4px;
-38:   background-color: $white;
-39:   border: 1px solid $border-colour;
-40:   
-41:   // Disable webkit appearance and remove rounded corners
-42:   -webkit-appearance: none;
-43:   border-radius: 0;
+17: // GOV.UK helper (requires the GOV.UK frontend toolkit)
+18: // A couple of helper files to set basic styling 
+19: // - typography, grid layout, form elements and spacing
+20: 
+21: // Import helper vars and styles
+22: @import "govuk-helper/vars";
+23: @import "govuk-helper/main";
+24: 
+25: // Import design patterns
+26: @import "design-patterns/address-finder";
+27: @import "design-patterns/alpha-beta";
 
 Backtrace:
-assets/sass/govuk-helper/forms.scss:38
-/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/script/variable.rb:49:in `_perform'
-/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/script/node.rb:40:in `perform'
-/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
-/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+assets/sass/example/example.scss:22
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/import_node.rb:45:in `import'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
 /Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
 /Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
 /Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -61,4 +56,4 @@ assets/sass/govuk-helper/forms.scss:38
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$white\".\A         on line 38 of assets/sass/govuk-helper/forms.scss\A \A 33: select[size],\A 34: textarea {\A 35:   font-size: 1em;\A 36:   \A 37:   padding: 4px;\A 38:   background-color: $white;\A 39:   border: 1px solid $border-colour;\A 40:   \A 41:   // Disable webkit appearance and remove rounded corners\A 42:   -webkit-appearance: none;\A 43:   border-radius: 0;"; }
+  content: "Syntax error: File to import not found or unreadable: govuk-helper/vars.\A               Load paths:\A                 /Users/gemmaleigh/Sites/gds/design-patterns\A                 /Users/gemmaleigh/Sites/gds/design-patterns/assets/sass\A         on line 22 of assets/sass/example/example.scss\A \A 17: // GOV.UK helper (requires the GOV.UK frontend toolkit)\A 18: // A couple of helper files to set basic styling \A 19: // - typography, grid layout, form elements and spacing\A 20: \A 21: // Import helper vars and styles\A 22: @import \"govuk-helper/vars\";\A 23: @import \"govuk-helper/main\";\A 24: \A 25: // Import design patterns\A 26: @import \"design-patterns/address-finder\";\A 27: @import \"design-patterns/alpha-beta\";"; }
