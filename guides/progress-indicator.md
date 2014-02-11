@@ -2,7 +2,6 @@
 layout: template-design-patterns
 document-type: Design pattern
 title: Progress indicators
-page-class: 'progress-indicator'
 discuss-url: https://designpatterns.hackpad.com/Progress-indicators-3AOrLoia9Us
 sass-url: https://github.com/alphagov/design-patterns/blob/gh-pages/assets/sass/design-patterns/_progress-indicator.scss
 published: 2 January 2014
@@ -45,13 +44,13 @@ Show the steps horizontally across the top of the page, with the current step hi
   <div class="inner-block">
     
     <nav class="progress-indicator progress-indicator-horizontal">
-      <ul>
+      <ol>
         <li class="done"><a href="">1. About you <span>done</span></a></li>
         <li class="done"><a href="">2. Your company <span>done</span></a></li>
         <li class="active">3. Payment details</li>
         <li>4. Delivery</li>
         <li>5. Done</li>
-      </ul>
+      </ol>
     </nav>
     
   </div>

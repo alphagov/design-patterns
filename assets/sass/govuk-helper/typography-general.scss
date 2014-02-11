@@ -1,0 +1,26 @@
+p, 
+pre {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+// Set a max-width for text blocks
+// Less than 75 characters per line of text
+
+.text {
+  max-width: 30em;
+}
+
+.design-pattern h1,
+.design-pattern h2,
+.design-pattern h3,
+.design-pattern p,
+.design-pattern ul,
+.design-pattern ol {
+  max-width: 30em;
+}
+
+.design-pattern .example ol {
+  max-width: 100%;
+}
+

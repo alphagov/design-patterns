@@ -1,0 +1,10 @@
+.page-actions {
+  margin: $gutter 0;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.page-actions li {
+  @include bold-19;
+  margin-bottom: 10px;
+}

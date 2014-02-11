@@ -2,7 +2,6 @@
 layout: template-design-patterns
 document-type: Design pattern
 title: People's names
-page-class: 'peoples-names'
 discuss-url: https://designpatterns.hackpad.com/Peoples-names-mgFWXkwyPEt
 published: 2 January 2014
 updated: 9 January 2014

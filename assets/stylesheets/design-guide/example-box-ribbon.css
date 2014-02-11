@@ -1,0 +1,61 @@
+/*
+Syntax error: Undefined variable: "$grass-green".
+        on line 3 of assets/sass/design-guide/example-box-ribbon.scss
+
+1: // Recommended - Ribbon
+2: .ribbon {
+3:   background-color: $grass-green;
+4:   overflow: hidden;
+5:   position: absolute;
+6:   right: -50px;
+7:   top: 40px;
+8:   -moz-transform: rotate(45deg);
+
+Backtrace:
+assets/sass/design-guide/example-box-ribbon.scss:3
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/script/variable.rb:49:in `_perform'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/script/node.rb:40:in `perform'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/root_node.rb:20:in `render'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/engine.rb:315:in `_render'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/engine.rb:262:in `render'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:283:in `block in watch'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/vendor/listen/lib/listen/adapter.rb:198:in `call'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/vendor/listen/lib/listen/adapter.rb:198:in `report_changes'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/vendor/listen/lib/listen/adapter.rb:210:in `poll_changed_dirs'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/vendor/listen/lib/listen/adapters/darwin.rb:38:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined variable: \"$grass-green\".\A         on line 3 of assets/sass/design-guide/example-box-ribbon.scss\A \A 1: // Recommended - Ribbon\A 2: .ribbon {\A 3:   background-color: $grass-green;\A 4:   overflow: hidden;\A 5:   position: absolute;\A 6:   right: -50px;\A 7:   top: 40px;\A 8:   -moz-transform: rotate(45deg);"; }

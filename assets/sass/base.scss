@@ -1,23 +1,41 @@
 //
 // Design Guide example
 //
+
 // GOV.UK front end toolkit
 // Sass mixins and helpers for responsive design, x-browser compatibility and colour palettes
+
 @import "../govuk_frontend_toolkit/stylesheets/colours";
-@import "../govuk_frontend_toolkit/stylesheets/conditionals";
 @import "../govuk_frontend_toolkit/stylesheets/css3";
-@import "../govuk_frontend_toolkit/stylesheets/device-pixels";
-@import "../govuk_frontend_toolkit/stylesheets/measurements";
 @import "../govuk_frontend_toolkit/stylesheets/shims";
 @import "../govuk_frontend_toolkit/stylesheets/typography";
+@import "../govuk_frontend_toolkit/stylesheets/measurements";
 
 @import "../govuk_frontend_toolkit/stylesheets/design-patterns/alpha-beta";
 @import "../govuk_frontend_toolkit/stylesheets/design-patterns/buttons";
 
-// GOV.UK helper (requires the GOV.UK frontend toolkit)
-// A helper file to set basic styling 
-// - typography, grid layout, form elements and spacing
-@import "govuk-helper/main";
+// Styles used to construct the page
+
+// Typography
+@import "govuk-helper/typography-base";
+@import "govuk-helper/typography-general";
+@import "govuk-helper/typography-headings";
+@import "govuk-helper/typography-data";
+@import "govuk-helper/typography-highlights";
+
+// Content wrapper
+@import "govuk-helper/main-wrapper";
+
+// Grids
+@import "govuk-helper/grid-base";
+@import "govuk-helper/grid-wrapper";
+@import "govuk-helper/grid-widths";
+@import "govuk-helper/grid-highlights";
+
+// Additional helper files
+@import "govuk-helper/colours";
+@import "govuk-helper/lists";
+@import "govuk-helper/forms";
 
 // Import patterns required for styling GOV.UK template content
 @import "design-patterns/alpha-beta";
@@ -30,6 +48,23 @@
 @import "design-patterns/date-of-birth";
 @import "design-patterns/progress-indicator";
 
-// Example styles, no need to include in your project
-@import "example/example";
+// Import design guide page styles
+
+// Design guide - layout
+@import "design-guide/page-meta";
+@import "design-guide/page-actions";
+
+// Design guide - example boxes
+@import "design-guide/example";
+@import "design-guide/example-ribbon";
+@import "design-guide/code";
+
+// 2. Grids
+@import "design-guide/example-grid";
+// 3. Images
+@import "design-guide/example-images";
+// 4. Data
+@import "design-guide/example-data";
+// 5. Colour
+@import "design-guide/example-colour";
 

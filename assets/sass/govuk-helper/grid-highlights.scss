@@ -1,0 +1,17 @@
+// Used to highlight grey grid cells in examples
+.example-highlight-grid {
+  
+  .grid-wrapper {
+    background:  $grey-2;
+  }
+  
+  .grid {
+    background: $grey-4;
+  }
+  
+  .grid .is-inner-block-highlight {
+    background: $grey-3;
+    width: 100%;
+  }
+  
+}

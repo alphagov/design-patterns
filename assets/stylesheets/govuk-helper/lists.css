@@ -1,0 +1,37 @@
+/* line 4, ../../sass/govuk-helper/lists.scss */
+dl,
+menu,
+ol,
+ul {
+  margin: 0;
+}
+
+/* line 8, ../../sass/govuk-helper/lists.scss */
+dd {
+  margin-left: 0;
+}
+
+/* line 14, ../../sass/govuk-helper/lists.scss */
+menu,
+ol,
+ul {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding: 0 0 0 20px;
+}
+
+/* line 20, ../../sass/govuk-helper/lists.scss */
+ul {
+  list-style-type: disc;
+}
+
+/* line 23, ../../sass/govuk-helper/lists.scss */
+ol {
+  list-style-type: decimal;
+}
+
+/* line 28, ../../sass/govuk-helper/lists.scss */
+ul li,
+ol li {
+  margin-bottom: 5px;
+}

@@ -6,9 +6,9 @@ phases:
   - alpha
 ---
 
-<div id="global-breadcrumb" class="breadcrumb">
+<div class="breadcrumb">
   <nav role="navigation">
-    <ol class="group">
+    <ol>
       <li><a href="https://www.gov.uk/service-manual">Home</a></li>
       <li><a href="{{ site.baseurl }}/">Guides</a></li>
       <li><a href="{{ site.baseurl }}/example/">Design style guide examples</a></li>

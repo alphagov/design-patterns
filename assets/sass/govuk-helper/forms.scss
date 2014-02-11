@@ -1,0 +1,77 @@
+form {
+  margin: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+button,
+input {
+    line-height: normal;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+select[size],
+textarea {
+  font-size: 1em;
+  
+  padding: 4px;
+  background-color: $white;
+  border: 1px solid $border-colour;
+  
+  // Disable webkit appearance and remove rounded corners
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  min-height: 190px;
+  height: auto;
+}
+
+.form-group {
+  margin-bottom: $gutter-half;
+  @include media(tablet) {
+    margin-bottom: $gutter;
+  }
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  width: 96%;
+  @include media(tablet) {
+    width: 350px;
+  }
+}
+
+.hint{
+  display: block;
+  color: $secondary-text-colour;
+  @include core-16;
+  margin-top: 8px;
+}

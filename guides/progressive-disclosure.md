@@ -2,7 +2,6 @@
 layout: template-design-patterns
 document-type: Design pattern
 title: Progressive disclosure
-page-class: 'progressive-disclosure'
 discuss-url: https://designpatterns.hackpad.com/
 published: 2 January 2014
 updated: 9 January 2014

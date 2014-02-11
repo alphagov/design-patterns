@@ -1,11 +1,3 @@
-@-ms-viewport {
-  width: device-width;
-}
-
-@-o-viewport {
-  width: device-width;
-}
-
 /* CSS 3 Mixins
 
   Add them as you need them. This should let us manage vendor prefixes in one place.
@@ -39,12 +31,12 @@
 
 */
 /* line 48, ../govuk_frontend_toolkit/stylesheets/_shims.scss */
-.grid-wrapper, .cf, .phase-block, .progress-indicator ol,
+.grid-wrapper, .phase-block, .progress-indicator ol,
 .progress-indicator ul, .example {
   zoom: 1;
 }
 /* line 49, ../govuk_frontend_toolkit/stylesheets/_shims.scss */
-.grid-wrapper:after, .cf:after, .phase-block:after, .progress-indicator ol:after,
+.grid-wrapper:after, .phase-block:after, .progress-indicator ol:after,
 .progress-indicator ul:after, .example:after {
   content: "";
   display: block;
@@ -106,12 +98,12 @@
 
 */
 /* line 48, ../govuk_frontend_toolkit/stylesheets/_shims.scss */
-.grid-wrapper, .cf, .phase-block, .progress-indicator ol,
+.grid-wrapper, .phase-block, .progress-indicator ol,
 .progress-indicator ul, .example {
   zoom: 1;
 }
 /* line 49, ../govuk_frontend_toolkit/stylesheets/_shims.scss */
-.grid-wrapper:after, .cf:after, .phase-block:after, .progress-indicator ol:after,
+.grid-wrapper:after, .phase-block:after, .progress-indicator ol:after,
 .progress-indicator ul:after, .example:after {
   content: "";
   display: block;
@@ -147,12 +139,12 @@
 
 */
 /* line 48, ../govuk_frontend_toolkit/stylesheets/_shims.scss */
-.grid-wrapper, .cf, .phase-block, .progress-indicator ol,
+.grid-wrapper, .phase-block, .progress-indicator ol,
 .progress-indicator ul, .example {
   zoom: 1;
 }
 /* line 49, ../govuk_frontend_toolkit/stylesheets/_shims.scss */
-.grid-wrapper:after, .cf:after, .phase-block:after, .progress-indicator ol:after,
+.grid-wrapper:after, .phase-block:after, .progress-indicator ol:after,
 .progress-indicator ul:after, .example:after {
   content: "";
   display: block;
@@ -190,7 +182,7 @@ Example usage:
 }
 
 */
-/* line 2, ../sass/govuk-helper/_main.scss */
+/* line 2, ../sass/govuk-helper/typography-base.scss */
 .gov-uk {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
@@ -200,18 +192,42 @@ Example usage:
   -webkit-font-smoothing: antialiased;
 }
 @media (max-width: 640px) {
-  /* line 2, ../sass/govuk-helper/_main.scss */
+  /* line 2, ../sass/govuk-helper/typography-base.scss */
   .gov-uk {
     font-size: 16px;
     line-height: 1.25;
   }
 }
-/* line 10, ../sass/govuk-helper/_main.scss */
-.gov-uk .text {
+
+/* line 2, ../sass/govuk-helper/typography-general.scss */
+p,
+pre {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+/* line 10, ../sass/govuk-helper/typography-general.scss */
+.text {
   max-width: 30em;
 }
-/* line 19, ../sass/govuk-helper/_main.scss */
-.gov-uk .heading-48 {
+
+/* line 19, ../sass/govuk-helper/typography-general.scss */
+.design-pattern h1,
+.design-pattern h2,
+.design-pattern h3,
+.design-pattern p,
+.design-pattern ul,
+.design-pattern ol {
+  max-width: 30em;
+}
+
+/* line 23, ../sass/govuk-helper/typography-general.scss */
+.design-pattern .example ol {
+  max-width: 100%;
+}
+
+/* line 1, ../sass/govuk-helper/typography-headings.scss */
+.heading-48 {
   font-family: "nta", Arial, sans-serif;
   font-size: 48px;
   line-height: 1.04167;
@@ -224,14 +240,14 @@ Example usage:
   margin-bottom: 60px;
 }
 @media (max-width: 640px) {
-  /* line 19, ../sass/govuk-helper/_main.scss */
-  .gov-uk .heading-48 {
+  /* line 1, ../sass/govuk-helper/typography-headings.scss */
+  .heading-48 {
     font-size: 32px;
     line-height: 1.09375;
   }
 }
-/* line 27, ../sass/govuk-helper/_main.scss */
-.gov-uk .heading-48 .heading-27 {
+/* line 9, ../sass/govuk-helper/typography-headings.scss */
+.heading-48 .heading-27 {
   display: block;
   font-family: "nta", Arial, sans-serif;
   font-size: 27px;
@@ -241,14 +257,15 @@ Example usage:
   color: #6f777b;
 }
 @media (max-width: 640px) {
-  /* line 27, ../sass/govuk-helper/_main.scss */
-  .gov-uk .heading-48 .heading-27 {
+  /* line 9, ../sass/govuk-helper/typography-headings.scss */
+  .heading-48 .heading-27 {
     font-size: 18px;
     line-height: 1.11111;
   }
 }
-/* line 34, ../sass/govuk-helper/_main.scss */
-.gov-uk .heading-36 {
+
+/* line 16, ../sass/govuk-helper/typography-headings.scss */
+.heading-36 {
   font-family: "nta", Arial, sans-serif;
   font-size: 36px;
   line-height: 1.11111;
@@ -261,14 +278,15 @@ Example usage:
   margin-bottom: 20px;
 }
 @media (max-width: 640px) {
-  /* line 34, ../sass/govuk-helper/_main.scss */
-  .gov-uk .heading-36 {
+  /* line 16, ../sass/govuk-helper/typography-headings.scss */
+  .heading-36 {
     font-size: 24px;
     line-height: 1.04167;
   }
 }
-/* line 44, ../sass/govuk-helper/_main.scss */
-.gov-uk .heading-24 {
+
+/* line 26, ../sass/govuk-helper/typography-headings.scss */
+.heading-24 {
   font-family: "nta", Arial, sans-serif;
   font-size: 24px;
   line-height: 1.25;
@@ -281,14 +299,15 @@ Example usage:
   margin-bottom: 20px;
 }
 @media (max-width: 640px) {
-  /* line 44, ../sass/govuk-helper/_main.scss */
-  .gov-uk .heading-24 {
+  /* line 26, ../sass/govuk-helper/typography-headings.scss */
+  .heading-24 {
     font-size: 20px;
     line-height: 1.2;
   }
 }
-/* line 54, ../sass/govuk-helper/_main.scss */
-.gov-uk .heading-19 {
+
+/* line 36, ../sass/govuk-helper/typography-headings.scss */
+.heading-19 {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
   line-height: 1.31579;
@@ -300,20 +319,15 @@ Example usage:
   margin-top: 20px;
 }
 @media (max-width: 640px) {
-  /* line 54, ../sass/govuk-helper/_main.scss */
-  .gov-uk .heading-19 {
+  /* line 36, ../sass/govuk-helper/typography-headings.scss */
+  .heading-19 {
     font-size: 16px;
     line-height: 1.25;
   }
 }
-/* line 64, ../sass/govuk-helper/_main.scss */
-.gov-uk p,
-.gov-uk pre {
-  margin-top: 5px;
-  margin-bottom: 20px;
-}
-/* line 70, ../sass/govuk-helper/_main.scss */
-.gov-uk .data-80 {
+
+/* line 2, ../sass/govuk-helper/typography-data.scss */
+.data-80 {
   font-family: "nta", Arial, sans-serif;
   font-size: 80px;
   line-height: 1;
@@ -322,14 +336,15 @@ Example usage:
   font-weight: 700;
 }
 @media (max-width: 640px) {
-  /* line 70, ../sass/govuk-helper/_main.scss */
-  .gov-uk .data-80 {
+  /* line 2, ../sass/govuk-helper/typography-data.scss */
+  .data-80 {
     font-size: 53px;
     line-height: 1.03774;
   }
 }
-/* line 74, ../sass/govuk-helper/_main.scss */
-.gov-uk .data-48 {
+
+/* line 6, ../sass/govuk-helper/typography-data.scss */
+.data-48 {
   font-family: "nta", Arial, sans-serif;
   font-size: 48px;
   line-height: 1.04167;
@@ -339,14 +354,15 @@ Example usage:
   line-height: 0.9;
 }
 @media (max-width: 640px) {
-  /* line 74, ../sass/govuk-helper/_main.scss */
-  .gov-uk .data-48 {
+  /* line 6, ../sass/govuk-helper/typography-data.scss */
+  .data-48 {
     font-size: 32px;
     line-height: 1.09375;
   }
 }
-/* line 79, ../sass/govuk-helper/_main.scss */
-.gov-uk .data p {
+
+/* line 11, ../sass/govuk-helper/typography-data.scss */
+.data p {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
@@ -355,79 +371,173 @@ Example usage:
   font-weight: 700;
 }
 @media (max-width: 640px) {
-  /* line 79, ../sass/govuk-helper/_main.scss */
-  .gov-uk .data p {
+  /* line 11, ../sass/govuk-helper/typography-data.scss */
+  .data p {
     font-size: 14px;
     line-height: 1.14286;
   }
 }
-/* line 91, ../sass/govuk-helper/_main.scss */
-.gov-uk dl,
-.gov-uk menu,
-.gov-uk ol,
-.gov-uk ul {
+
+/* line 2, ../sass/govuk-helper/typography-highlights.scss */
+.highlight {
+  color: #0076c0;
+  font-style: normal;
+}
+
+/* line 1, ../sass/govuk-helper/main-wrapper.scss */
+.main {
+  max-width: 1020px;
+  width: auto;
+  margin: 0 auto 90px;
+}
+
+/* line 2, ../sass/govuk-helper/grid-base.scss */
+.grid {
+  float: left;
+  width: 100%;
+}
+
+/* line 7, ../sass/govuk-helper/grid-base.scss */
+.grid .inner-block {
+  padding: 0 15px;
+}
+
+/* line 2, ../sass/govuk-helper/grid-wrapper.scss */
+.grid-wrapper {
+  padding: 0 15px;
+  padding: 0 15px;
+}
+
+/* line 1, ../sass/govuk-helper/grid-1-2.scss */
+.grid-1-2 {
+  width: 100%;
+  width: 50%;
+}
+
+/* line 1, ../sass/govuk-helper/grid-1-3.scss */
+.grid-1-3 {
+  width: 100%;
+  width: 33.333333333%;
+}
+
+/* line 1, ../sass/govuk-helper/grid-1-4.scss */
+.grid-1-4 {
+  width: 100%;
+  width: 25%;
+}
+
+/* line 1, ../sass/govuk-helper/grid-2-3.scss */
+.grid-2-3 {
+  width: 100%;
+  width: 66.666666667%;
+}
+
+/* line 1, ../sass/govuk-helper/grid-3-4.scss */
+.grid-3-4 {
+  width: 100%;
+  width: 75%;
+}
+
+/* line 4, ../sass/govuk-helper/grid-highlights.scss */
+.example-highlight-grid .grid-wrapper {
+  background: #bfc1c3;
+}
+/* line 8, ../sass/govuk-helper/grid-highlights.scss */
+.example-highlight-grid .grid {
+  background: #f8f8f8;
+}
+/* line 12, ../sass/govuk-helper/grid-highlights.scss */
+.example-highlight-grid .grid .is-inner-block-highlight {
+  background: #dee0e2;
+  width: 100%;
+}
+
+/* line 1, ../sass/govuk-helper/colours.scss */
+.text-secondary {
+  color: #6f777b;
+}
+
+/* line 5, ../sass/govuk-helper/colours.scss */
+.bg-hm-government {
+  background: #0076c0;
+}
+
+/* line 4, ../sass/govuk-helper/lists.scss */
+dl,
+menu,
+ol,
+ul {
   margin: 0;
 }
-/* line 95, ../sass/govuk-helper/_main.scss */
-.gov-uk dd {
+
+/* line 8, ../sass/govuk-helper/lists.scss */
+dd {
   margin-left: 0;
 }
-/* line 101, ../sass/govuk-helper/_main.scss */
-.gov-uk menu,
-.gov-uk ol,
-.gov-uk ul {
+
+/* line 14, ../sass/govuk-helper/lists.scss */
+menu,
+ol,
+ul {
   margin-top: 5px;
   margin-bottom: 20px;
   padding: 0 0 0 20px;
 }
-/* line 107, ../sass/govuk-helper/_main.scss */
-.gov-uk ul {
+
+/* line 20, ../sass/govuk-helper/lists.scss */
+ul {
   list-style-type: disc;
 }
-/* line 110, ../sass/govuk-helper/_main.scss */
-.gov-uk ol {
+
+/* line 23, ../sass/govuk-helper/lists.scss */
+ol {
   list-style-type: decimal;
 }
-/* line 115, ../sass/govuk-helper/_main.scss */
-.gov-uk ul li,
-.gov-uk ol li {
+
+/* line 28, ../sass/govuk-helper/lists.scss */
+ul li,
+ol li {
   margin-bottom: 5px;
 }
-/* line 124, ../sass/govuk-helper/_main.scss */
-.gov-uk form {
+
+/* line 1, ../sass/govuk-helper/forms.scss */
+form {
   margin: 0;
 }
-/* line 131, ../sass/govuk-helper/_main.scss */
-.gov-uk button,
-.gov-uk input,
-.gov-uk select,
-.gov-uk textarea {
+
+/* line 8, ../sass/govuk-helper/forms.scss */
+button,
+input,
+select,
+textarea {
   font-size: 100%;
   margin: 0;
   vertical-align: baseline;
   *vertical-align: middle;
 }
-/* line 139, ../sass/govuk-helper/_main.scss */
-.gov-uk button,
-.gov-uk input {
+
+/* line 16, ../sass/govuk-helper/forms.scss */
+button,
+input {
   line-height: normal;
 }
-/* line 157, ../sass/govuk-helper/_main.scss */
-.gov-uk input[type="text"],
-.gov-uk input[type="email"],
-.gov-uk input[type="date"],
-.gov-uk input[type="datetime"],
-.gov-uk input[type="datetime-local"],
-.gov-uk input[type="email"],
-.gov-uk input[type="month"],
-.gov-uk input[type="number"],
-.gov-uk input[type="search"],
-.gov-uk input[type="tel"],
-.gov-uk input[type="time"],
-.gov-uk input[type="url"],
-.gov-uk input[type="week"],
-.gov-uk select[size],
-.gov-uk textarea {
+
+/* line 34, ../sass/govuk-helper/forms.scss */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+select[size],
+textarea {
   font-size: 1em;
   padding: 4px;
   background-color: white;
@@ -435,30 +545,35 @@ Example usage:
   -webkit-appearance: none;
   border-radius: 0;
 }
-/* line 169, ../sass/govuk-helper/_main.scss */
-.gov-uk textarea {
+
+/* line 46, ../sass/govuk-helper/forms.scss */
+textarea {
   overflow: auto;
   vertical-align: top;
   min-height: 190px;
   height: auto;
 }
-/* line 176, ../sass/govuk-helper/_main.scss */
-.gov-uk .form-group {
+
+/* line 53, ../sass/govuk-helper/forms.scss */
+.form-group {
   margin-bottom: 15px;
   margin-bottom: 30px;
 }
-/* line 183, ../sass/govuk-helper/_main.scss */
-.gov-uk .form-group label {
+
+/* line 60, ../sass/govuk-helper/forms.scss */
+.form-group label {
   display: block;
   margin-bottom: 5px;
 }
-/* line 188, ../sass/govuk-helper/_main.scss */
-.gov-uk .form-control {
+
+/* line 65, ../sass/govuk-helper/forms.scss */
+.form-control {
   width: 96%;
   width: 350px;
 }
-/* line 195, ../sass/govuk-helper/_main.scss */
-.gov-uk .hint {
+
+/* line 72, ../sass/govuk-helper/forms.scss */
+.hint {
   display: block;
   color: #6f777b;
   font-family: "nta", Arial, sans-serif;
@@ -469,70 +584,11 @@ Example usage:
   margin-top: 8px;
 }
 @media (max-width: 640px) {
-  /* line 195, ../sass/govuk-helper/_main.scss */
-  .gov-uk .hint {
+  /* line 72, ../sass/govuk-helper/forms.scss */
+  .hint {
     font-size: 14px;
     line-height: 1.14286;
   }
-}
-
-/* line 209, ../sass/govuk-helper/_main.scss */
-.main {
-  max-width: 1020px;
-  width: auto;
-  margin: 0 auto 90px auto;
-}
-
-/* line 217, ../sass/govuk-helper/_main.scss */
-.grid-wrapper {
-  padding: 0 15px;
-  padding: 0 15px;
-}
-
-/* line 226, ../sass/govuk-helper/_main.scss */
-.grid {
-  float: left;
-  width: 100%;
-}
-
-/* line 231, ../sass/govuk-helper/_main.scss */
-.grid .inner-block {
-  padding: 0 15px;
-}
-
-/* line 238, ../sass/govuk-helper/_main.scss */
-.grid-1-4 {
-  width: 100%;
-  width: 25%;
-}
-
-/* line 245, ../sass/govuk-helper/_main.scss */
-.grid-1-3 {
-  width: 100%;
-  width: 33.333333333%;
-}
-
-/* line 252, ../sass/govuk-helper/_main.scss */
-.grid-1-2 {
-  width: 100%;
-  width: 50%;
-}
-
-/* line 259, ../sass/govuk-helper/_main.scss */
-.grid-2-3 {
-  width: 100%;
-  width: 66.666666667%;
-}
-
-/* line 266, ../sass/govuk-helper/_main.scss */
-.grid-3-4 {
-  width: 100%;
-  width: 75%;
-}
-
-/* line 278, ../sass/govuk-helper/_main.scss */
-.text-secondary {
-  color: #6f777b;
 }
 
 /* line 1, ../sass/design-patterns/_alpha-beta.scss */
@@ -1061,25 +1117,14 @@ Example usage:
   float: right;
 }
 
-/* line 9, ../sass/example/_example.scss */
-.design-guide .guide-subheader {
-  margin-bottom: 0;
-}
-/* line 17, ../sass/example/_example.scss */
-.design-guide h1,
-.design-guide h2,
-.design-guide h3,
-.design-guide p,
-.design-guide ul {
-  max-width: 30em;
-}
-/* line 22, ../sass/example/_example.scss */
-.design-guide .page-metadata {
+/* line 1, ../sass/design-guide/page-meta.scss */
+.page-metadata {
   border-top: 5px solid #0b0c0c;
   padding-top: 20px;
 }
-/* line 27, ../sass/example/_example.scss */
-.design-guide .page-metadata dt {
+
+/* line 6, ../sass/design-guide/page-meta.scss */
+.page-metadata dt {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
@@ -1087,14 +1132,15 @@ Example usage:
   text-transform: none;
 }
 @media (max-width: 640px) {
-  /* line 27, ../sass/example/_example.scss */
-  .design-guide .page-metadata dt {
+  /* line 6, ../sass/design-guide/page-meta.scss */
+  .page-metadata dt {
     font-size: 14px;
     line-height: 1.14286;
   }
 }
-/* line 31, ../sass/example/_example.scss */
-.design-guide .page-metadata dd {
+
+/* line 10, ../sass/design-guide/page-meta.scss */
+.page-metadata dd {
   font-family: "nta", Arial, sans-serif;
   font-size: 24px;
   line-height: 1.25;
@@ -1104,20 +1150,22 @@ Example usage:
   margin-bottom: 10px;
 }
 @media (max-width: 640px) {
-  /* line 31, ../sass/example/_example.scss */
-  .design-guide .page-metadata dd {
+  /* line 10, ../sass/design-guide/page-meta.scss */
+  .page-metadata dd {
     font-size: 20px;
     line-height: 1.2;
   }
 }
-/* line 36, ../sass/example/_example.scss */
-.design-guide .page-actions {
+
+/* line 1, ../sass/design-guide/page-actions.scss */
+.page-actions {
   margin: 30px 0;
   list-style-type: none;
   padding-left: 0;
 }
-/* line 42, ../sass/example/_example.scss */
-.design-guide .page-actions li {
+
+/* line 7, ../sass/design-guide/page-actions.scss */
+.page-actions li {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
   line-height: 1.31579;
@@ -1127,41 +1175,14 @@ Example usage:
   margin-bottom: 10px;
 }
 @media (max-width: 640px) {
-  /* line 42, ../sass/example/_example.scss */
-  .design-guide .page-actions li {
+  /* line 7, ../sass/design-guide/page-actions.scss */
+  .page-actions li {
     font-size: 16px;
     line-height: 1.25;
   }
 }
-/* line 48, ../sass/example/_example.scss */
-.design-guide code {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 300;
-  text-transform: none;
-  font-family: monospace, serif;
-  background: #dee0e2;
-  padding: 0 4px;
-  display: -moz-inline-stack;
-  display: inline-block;
-  zoom: 1;
-  display: inline;
-}
-@media (max-width: 640px) {
-  /* line 48, ../sass/example/_example.scss */
-  .design-guide code {
-    font-size: 14px;
-    line-height: 1.14286;
-  }
-}
-/* line 57, ../sass/example/_example.scss */
-.design-guide .highlight {
-  color: #0076c0;
-  font-style: normal;
-}
 
-/* line 69, ../sass/example/_example.scss */
+/* line 2, ../sass/design-guide/example.scss */
 .example {
   position: relative;
   overflow: hidden;
@@ -1171,37 +1192,13 @@ Example usage:
   padding: 15px;
   padding: 30px 15px;
 }
-/* line 83, ../sass/example/_example.scss */
+/* line 16, ../sass/design-guide/example.scss */
 .example.example-wide {
   margin-right: 0;
   margin-right: -33.33%;
 }
-/* line 91, ../sass/example/_example.scss */
-.example em {
-  color: #0076c0;
-  font-style: normal;
-}
-/* line 97, ../sass/example/_example.scss */
-.example code {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 300;
-  text-transform: none;
-  font-family: monospace, serif;
-  display: block;
-  padding: 0 0 15px 0;
-  background: none;
-  padding: 0 0 30px 0;
-}
-@media (max-width: 640px) {
-  /* line 97, ../sass/example/_example.scss */
-  .example code {
-    font-size: 14px;
-    line-height: 1.14286;
-  }
-}
-/* line 109, ../sass/example/_example.scss */
+
+/* line 2, ../sass/design-guide/example-ribbon.scss */
 .example .ribbon {
   background-color: #85994b;
   overflow: hidden;
@@ -1216,19 +1213,54 @@ Example usage:
   font-size: 16px;
   padding: 3px 50px;
 }
-/* line 124, ../sass/example/_example.scss */
-.example ul {
-  max-width: 100%;
+
+/* line 1, ../sass/design-guide/code.scss */
+code {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none;
+  background: #dee0e2;
+  padding: 0 4px;
+}
+@media (max-width: 640px) {
+  /* line 1, ../sass/design-guide/code.scss */
+  code {
+    font-size: 14px;
+    line-height: 1.14286;
+  }
 }
 
-/* line 132, ../sass/example/_example.scss */
+/* line 7, ../sass/design-guide/code.scss */
+.example code {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none;
+  font-family: monospace, serif;
+  display: block;
+  padding: 0 0 15px 0;
+  background: none;
+  padding: 0 0 30px 0;
+}
+@media (max-width: 640px) {
+  /* line 7, ../sass/design-guide/code.scss */
+  .example code {
+    font-size: 14px;
+    line-height: 1.14286;
+  }
+}
+
+/* line 2, ../sass/design-guide/example-grid.scss */
 .example-grid {
   background: white;
   padding: 15px 0 10px 0;
   padding: 25px 0 20px 0;
 }
 
-/* line 140, ../sass/example/_example.scss */
+/* line 9, ../sass/design-guide/example-grid.scss */
 .example-grid p {
   width: 100%;
   background: url("../images/example/grid.png") 0 0 repeat;
@@ -1239,57 +1271,27 @@ Example usage:
   text-indent: -99em;
 }
 
-/* line 154, ../sass/example/_example.scss */
+/* line 1, ../sass/design-guide/example-images.scss */
 .example-images {
   padding-left: 0;
   padding-right: 0;
 }
 
-/* line 159, ../sass/example/_example.scss */
+/* line 6, ../sass/design-guide/example-images.scss */
 .example-images img {
   max-width: 100%;
   vertical-align: top;
 }
 
-/* line 166, ../sass/example/_example.scss */
+/* line 1, ../sass/design-guide/example-data.scss */
 .example .data p {
   margin-bottom: 0;
 }
 
-/* line 175, ../sass/example/_example.scss */
+/* line 1, ../sass/design-guide/example-colour.scss */
 .example .swatch {
   width: 60px;
   height: 60px;
   display: block;
   margin-bottom: 30px;
-}
-/* line 181, ../sass/example/_example.scss */
-.example .text-secondary {
-  color: #6f777b;
-}
-/* line 185, ../sass/example/_example.scss */
-.example .colour-hm-government {
-  background: #0076c0;
-}
-/* line 188, ../sass/example/_example.scss */
-.example .colour-department-of-health {
-  background: #00ad93;
-}
-/* line 192, ../sass/example/_example.scss */
-.example .button {
-  margin-bottom: 30px;
-}
-
-/* line 206, ../sass/example/_example.scss */
-.example-highlight-grid .grid-wrapper {
-  background: #bfc1c3;
-}
-/* line 210, ../sass/example/_example.scss */
-.example-highlight-grid .grid {
-  background: #f8f8f8;
-}
-/* line 214, ../sass/example/_example.scss */
-.example-highlight-grid .grid .is-inner-block-highlight {
-  background: #dee0e2;
-  width: 100%;
 }

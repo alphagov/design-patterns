@@ -39,10 +39,10 @@ phases:
     
     <div class="text">
       <h4 class="heading-19">
-        If you’re a motor trader. <em>19px</em>
+        If you’re a motor trader. <em class="highlight">19px</em>
       </h4>
       <p>
-        Motor traders don’t need to make a SORN on a vehicle if all the following apply: <em>19px</em> 
+        Motor traders don’t need to make a SORN on a vehicle if all the following apply: <em class="highlight">19px</em> 
       </p>
     </div>
     
@@ -68,9 +68,9 @@ phases:
   <div class="inner-block">
     
     <div class="text">
-      <h1 class="heading-48">Driving and transport <em>48px</em></h1>
+      <h1 class="heading-48">Driving and transport <em class="highlight">48px</em></h1>
       <p>
-        Buy or renew your tax disc (vehicle licence) online - get tax for your car, motorbike, lorry, bus or other vehicle that needs a tax disc. <em>19px</em>
+        Buy or renew your tax disc (vehicle licence) online - get tax for your car, motorbike, lorry, bus or other vehicle that needs a tax disc. <em class="highlight">19px</em>
       </p>
     </div>
     
@@ -87,17 +87,17 @@ phases:
     
     <div class="text">
       <h2 class="heading-36">
-        Disability exemption <em>36px</em>
+        Disability exemption <em class="highlight">36px</em>
       </h2>
       <p>
-        You may be exempt or pay a reduced amount of vehicle tax if you receive certain benefits because of your disability. Find out if you’re eligible and how to apply. <em>19px</em>
+        You may be exempt or pay a reduced amount of vehicle tax if you receive certain benefits because of your disability. Find out if you’re eligible and how to apply. <em class="highlight">19px</em>
       </p>
       
       <h3 class="heading-24">
-        Disability exemption <em>24px</em>
+        Disability exemption <em class="highlight">24px</em>
       </h3>
       <p>
-        You may be exempt or pay a reduced amount of vehicle tax if you receive certain benefits because of your disability. Find out if you’re eligible and how to apply. <em>19px</em>
+        You may be exempt or pay a reduced amount of vehicle tax if you receive certain benefits because of your disability. Find out if you’re eligible and how to apply. <em class="highlight">19px</em>
       </p>
       
     </div>
@@ -318,7 +318,7 @@ phases:
       HEX: #6F777B <br>
       Sass variable: $secondary-text-colour
     </code>
-    <div class="swatch colour-hm-government">
+    <div class="swatch bg-hm-government">
     </div>
     <code>
       HM Government <br>

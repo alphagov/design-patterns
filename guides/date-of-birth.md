@@ -2,7 +2,6 @@
 layout: template-design-patterns
 document-type: Design pattern
 title: Date of birth
-page-class: 'date-of-birth'
 discuss-url: https://designpatterns.hackpad.com/Date-of-birth-648NbMKNYTr
 sass-url: https://github.com/alphagov/design-patterns/blob/gh-pages/assets/sass/design-patterns/_date-of-birth.scss
 published: 10 January 2014

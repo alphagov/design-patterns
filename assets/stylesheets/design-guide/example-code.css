@@ -1,0 +1,60 @@
+/*
+Syntax error: Undefined mixin 'core-16'.
+        on line 2 of assets/sass/design-guide/example-code.scss, in `core-16'
+        from line 2 of assets/sass/design-guide/example-code.scss
+
+1: code {
+2:   @include core-16;
+3:   font-family: monospace, serif;
+4:   display: block;
+5:   padding: 0 0 15px 0;
+6:   background: none;
+7:   @include media(tablet) {
+
+Backtrace:
+assets/sass/design-guide/example-code.scss:2:in `core-16'
+assets/sass/design-guide/example-code.scss:2
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/root_node.rb:20:in `render'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/engine.rb:315:in `_render'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/engine.rb:262:in `render'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:283:in `block in watch'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/vendor/listen/lib/listen/adapter.rb:198:in `call'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/vendor/listen/lib/listen/adapter.rb:198:in `report_changes'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/vendor/listen/lib/listen/adapter.rb:210:in `poll_changed_dirs'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/vendor/listen/lib/listen/adapters/darwin.rb:38:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'core-16'.\A         on line 2 of assets/sass/design-guide/example-code.scss, in `core-16'\A         from line 2 of assets/sass/design-guide/example-code.scss\A \A 1: code {\A 2:   @include core-16;\A 3:   font-family: monospace, serif;\A 4:   display: block;\A 5:   padding: 0 0 15px 0;\A 6:   background: none;\A 7:   @include media(tablet) {"; }

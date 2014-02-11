@@ -6,9 +6,9 @@ phases:
   - alpha
 ---
 
-<div id="global-breadcrumb" class="breadcrumb">
+<div class="breadcrumb">
   <nav role="navigation">
-    <ol class="group">
+    <ol>
       <li><a href="https://www.gov.uk/service-manual">Home</a></li>
       <li><a href="{{ site.baseurl }}/">New design guides</a></li>
     </ol>
@@ -42,7 +42,7 @@ phases:
         </p>
         
         <p>
-          The <code>main.scss</code> file has a dependancy on the GOV.UK front end toolkit.
+          The style guide helper files have a dependancy on the GOV.UK front end toolkit.
         </p>
         
         <p>

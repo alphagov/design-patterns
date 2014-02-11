@@ -1,0 +1,58 @@
+/*
+Syntax error: Undefined mixin 'core-19'.
+        on line 3 of assets/sass/govuk-helper/typography-base.scss, in `core-19'
+        from line 3 of assets/sass/govuk-helper/typography-base.scss
+
+1: // Increase default font size to 19px
+2: .gov-uk {
+3:   @include core-19;
+4:   -webkit-font-smoothing: antialiased;
+5: }
+
+Backtrace:
+assets/sass/govuk-helper/typography-base.scss:3:in `core-19'
+assets/sass/govuk-helper/typography-base.scss:3
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/tree/root_node.rb:20:in `render'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/engine.rb:315:in `_render'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/engine.rb:262:in `render'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:283:in `block in watch'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/vendor/listen/lib/listen/adapter.rb:198:in `call'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/vendor/listen/lib/listen/adapter.rb:198:in `report_changes'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/vendor/listen/lib/listen/adapter.rb:210:in `poll_changed_dirs'
+/Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/vendor/listen/lib/listen/adapters/darwin.rb:38:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'core-19'.\A         on line 3 of assets/sass/govuk-helper/typography-base.scss, in `core-19'\A         from line 3 of assets/sass/govuk-helper/typography-base.scss\A \A 1: // Increase default font size to 19px\A 2: .gov-uk {\A 3:   @include core-19;\A 4:   -webkit-font-smoothing: antialiased;\A 5: }"; }

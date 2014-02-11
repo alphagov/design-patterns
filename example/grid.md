@@ -1,14 +1,14 @@
 ---
-layout: template-example
+layout: template-example-grid
 document-type: Guide
 title: Grid example
 phases:
   - alpha
 ---
 
-<div id="global-breadcrumb" class="breadcrumb">
+<div class="breadcrumb">
   <nav role="navigation">
-    <ol class="group">
+    <ol>
       <li><a href="https://www.gov.uk/service-manual">Home</a></li>
       <li><a href="{{ site.baseurl }}/">Guides</a></li>
       <li><a href="{{ site.baseurl }}/example/">Design style guide examples</a></li>
@@ -95,7 +95,7 @@ phases:
   </div>
   <div class="grid grid-1-4">
     <div class="inner-block">
-      <h2>One quarter</h2>
+      <h2 class="heading-36">One quarter</h2>
       <p>Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur.</p>
