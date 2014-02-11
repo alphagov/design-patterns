@@ -14,7 +14,7 @@ breadcrumb:
     url: https://www.gov.uk/service-manual
   -
     title: New design guides
-    url: /
+    url:
 ---
 
 Buttons should be used to signify actions that the user can perform.

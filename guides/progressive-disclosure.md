@@ -13,7 +13,7 @@ breadcrumb:
     url: https://www.gov.uk/service-manual
   -
     title: New design guides
-    url: /
+    url:
 ---
 
 This is the technique of hiding content on a page until a user interacts with it in some way.

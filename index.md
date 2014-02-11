@@ -8,9 +8,6 @@ breadcrumb:
   -
     title: Home
     url: https://www.gov.uk/service-manual
-  -
-    title: New design guides
-    url: /
 ---
 
 These new guides are for designers, researchers and front end developers building services for GOV.UK.

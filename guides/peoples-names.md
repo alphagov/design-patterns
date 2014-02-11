@@ -13,7 +13,7 @@ breadcrumb:
     url: https://www.gov.uk/service-manual
   -
     title: New design guides
-    url: /
+    url:
 ---
 
 Here are two ways to ask users for their name:

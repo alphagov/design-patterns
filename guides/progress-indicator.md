@@ -14,7 +14,7 @@ breadcrumb:
     url: https://www.gov.uk/service-manual
   -
     title: New design guides
-    url: /
+    url:
 ---
 
 When people interact with multi-page transactions they can become disorientated or think that they've finished when they haven't. This can cause them to drop out of the transaction before they've completed it.

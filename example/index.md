@@ -10,10 +10,7 @@ breadcrumb:
     url: https://www.gov.uk/service-manual
   -
     title: New design guides
-    url: /
-  -
-    title: Design style guide examples
-    url: /example/
+    url: 
 ---
 
 <div class="text">

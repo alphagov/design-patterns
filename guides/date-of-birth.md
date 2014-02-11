@@ -14,7 +14,7 @@ breadcrumb:
     url: https://www.gov.uk/service-manual
   -
     title: New design guides
-    url: /
+    url:
 ---
 
 Our current recommendation for capturing date of birth is to use three clearly labelled text boxes.

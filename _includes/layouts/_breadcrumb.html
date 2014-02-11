@@ -3,8 +3,15 @@
   <nav role="navigation">
     <ol>
       {% for crumb in page.breadcrumb %}
+      
+      {% if crumb.title == "Home" %}
       <li><a href="{{ crumb.url }}">{{ crumb.title }}</a></li>
+      {% else %}
+      <li><a href="{{ site.baseurl}}/{{ crumb.url }}">{{ crumb.title }}</a></li>
+      {% endif %}
+      
       {% endfor %}
+      
     </ol>
   </nav>
 </div>
