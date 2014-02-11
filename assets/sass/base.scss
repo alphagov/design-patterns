@@ -49,22 +49,7 @@
 @import "design-patterns/progress-indicator";
 
 // Import design guide page styles
+// These styles only exist to style the Design Library, no need to include in your project
 
-// Design guide - layout
-@import "design-guide/page-meta";
-@import "design-guide/page-actions";
-
-// Design guide - example boxes
-@import "design-guide/example";
-@import "design-guide/example-ribbon";
-@import "design-guide/code";
-
-// 2. Grids
-@import "design-guide/example-grid";
-// 3. Images
-@import "design-guide/example-images";
-// 4. Data
-@import "design-guide/example-data";
-// 5. Colour
-@import "design-guide/example-colour";
+@import "design-guide/guide-styles";
 

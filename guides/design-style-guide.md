@@ -7,7 +7,7 @@ phases:
   - alpha
 ---
 
-<div class="guide">
+<div class="text">
   <p>This guide explains how to make your service look consistent with the rest of GOV.UK.
     For advice on how best to implement this style guide, <a href="../example/">see the examples page</a>.</p>
 </div>
@@ -19,8 +19,8 @@ phases:
 5. **[Colour](#guide-colour)**
 
 <!-- Typography -->
-<div class="guide" id="guide-typography">
-  <h2 class="heading-36 guide-header">1. Typography</h2>
+<div class="text" id="guide-typography">
+  <h2 class="heading-36">1. Typography</h2>
   <p>
     The GOV.UK design is mostly about the typography. Tell people what they need to do, in words that they understand. Make the words big enough so they are comfortable to read.
   </p>
@@ -30,8 +30,8 @@ phases:
 </div>
 
 <!-- Typography : Body copy -->
-<div class="guide" id="guide-typography-copy">
-  <h3 class="heading-24 guide-subheader">Body copy</h3>
+<div class="text" id="guide-typography-copy">
+  <h3 class="heading-24">Body copy</h3>
 </div>
 
 <div class="example">
@@ -48,7 +48,8 @@ phases:
     
   </div>
 </div>
-<div class="guide">
+
+<div class="text">
   <p>
     Body copy is the main content of your web page. In most cases we'd advise:
   </p>
@@ -60,8 +61,8 @@ phases:
 </div>
 
 <!-- Typography : Page titles -->
-<div class="guide" id="guide-typography-titles">
-  <h3 class="heading-24 guide-subheader">Page titles</h3>
+<div class="text" id="guide-typography-titles">
+  <h3 class="heading-24">Page titles</h3>
 </div>
 
 <div class="example">
@@ -78,8 +79,8 @@ phases:
 </div>
 
 <!-- Typography : Page subtitles -->
-<div class="guide" id="guide-typography-subtitles">
-  <h3 class="heading-24 guide-subheader">Page subtitles</h3>
+<div class="text" id="guide-typography-subtitles">
+  <h3 class="heading-24">Page subtitles</h3>
 </div>
 
 <div class="example">
@@ -106,8 +107,8 @@ phases:
 </div>
 
 <!-- Typography :  -->
-<div class="guide guide-end">
-  <h3 class="heading-24 guide-subheader">Take a look at the examples</h3>
+<div class="text">
+  <h3 class="heading-24">Take a look at the examples</h3>
   <p>
     Here's an example showing the <a href="{{ site.baseurl}}/example/typography.html">basic typography styles</a>.
   </p>
@@ -117,16 +118,16 @@ phases:
 </div>
 
 <!-- Grid -->
-<div class="guide" id="guide-grid">
-  <h2 class="heading-36 guide-header">2. Grids</h2>
+<div class="text" id="guide-grid">
+  <h2 class="heading-36">2. Grids</h2>
   <p>
     Tablet or desktop layouts use either a three or four column fluid grid. 
   </p>
 </div>
 
 <!-- Grid : Example -->
-<div class="guide" id="guide-grid-2-col">
-  <h3 class="heading-24 guide-subheader">Two columns</h3>
+<div class="text" id="guide-grid-2-col">
+  <h3 class="heading-24">Two columns</h3>
 </div>
 
 <div class="example example-grid">
@@ -145,8 +146,8 @@ phases:
 </div>
 
 <!-- Grid : Example -->
-<div class="guide" id="guide-grid-3-col">
-  <h3 class="heading-24 guide-subheader">Three equal columns</h3>
+<div class="text" id="guide-grid-3-col">
+  <h3 class="heading-24">Three equal columns</h3>
 </div>
 
 <div class="example example-grid">
@@ -170,8 +171,8 @@ phases:
 </div>
 
 <!-- Grid : Example -->
-<div class="guide" id="guide-grid-4-col">
-  <h3 class="heading-24 guide-subheader">Four equal columns</h3>
+<div class="text" id="guide-grid-4-col">
+  <h3 class="heading-24">Four equal columns</h3>
 </div>
 
 <div class="example example-grid">
@@ -200,8 +201,8 @@ phases:
 </div>
 
 <!-- Grid : Take a look at the examples -->
-<div class="guide guide-end">
-  <h3 class="heading-24 guide-subheader">Take a look at the examples</h3>
+<div class="text">
+  <h3 class="heading-24">Take a look at the examples</h3>
   <p>
     Here's a page which shows how to create the above <a href="{{ site.baseurl}}/example/grid.html">grid layout</a>. Use this example to get started structuring your page content.
   </p>
@@ -209,8 +210,8 @@ phases:
 
 
 <!-- Images -->
-<div class="guide" id="guide-images">
-  <h2 class="heading-36 guide-header">3. Images</h2>
+<div class="text" id="guide-images">
+  <h2 class="heading-36">3. Images</h2>
   <p>
     Avoid using images, GOV.UK is for services and information, not photographs. If images cannot be avoided they should be landscape, 3:2 aspect ratio.
   </p>
@@ -235,7 +236,7 @@ phases:
 
 <!-- Data -->
 <div class="guide" id="guide-data">
-  <h2 class="heading-36 guide-header">4. Data</h2>
+  <h2 class="heading-36">4. Data</h2>
   <p>
     Data is recommended as an alternative to using photography.
   </p>
@@ -291,8 +292,8 @@ phases:
 
 
 <!-- Colour palette -->
-<div class="guide" id="guide-colour">
-  <h2 class="heading-36 guide-header">5. Colour</h2>
+<div class="text" id="guide-colour">
+  <h2 class="heading-36">5. Colour</h2>
   <p>
     Text should only be set in black with secondary text in grey. Links should be blue and buttons or dialog boxes should have text in white.
   </p>

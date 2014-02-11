@@ -1,0 +1,117 @@
+.example {
+  
+  @extend %contain-floats;
+  position: relative;
+  overflow: hidden;
+  
+  border: 1px solid $border-colour;
+  outline: $gutter-half solid $highlight-colour;
+  margin: $gutter 0 $gutter*2 0;
+  padding: $gutter-half;
+  @include media(tablet) {
+    padding: $gutter $gutter-half;
+  }
+  
+  &.example-wide {
+    margin-right: 0;
+    @include media(tablet) {
+      margin-right: -33.33%;
+    }
+  }
+}
+
+code {
+  @include core-16;
+  background: $grey-3;
+  padding: 0 4px;
+}
+
+.example code {
+  @include core-16;
+  font-family: monospace, serif;
+  display: block;
+  padding: 0 0 15px 0;
+  background: none;
+  @include media(tablet) {
+    padding: 0 0 30px 0;
+  }
+}
+
+.example .ribbon {
+  background-color: $grass-green;
+  overflow: hidden;
+  position: absolute;
+  right: -50px;
+  top: 40px;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 3px 50px;
+}
+
+.example-grid {
+  background: white;
+  padding: 15px 0 10px 0;
+  @include media(tablet) {
+    padding: 25px 0 20px 0;
+  }
+}
+.example-grid p {
+  width: 100%;
+  background: url("../images/example/grid.png") 0 0 repeat;
+  min-height: 30px;
+  margin-bottom: 10px;
+  @include media(tablet) {
+    min-height: 60px;
+  }
+  overflow: hidden;
+  text-indent: -99em;
+}
+
+.example .swatch {
+  width: $gutter*2;
+  height: $gutter*2;
+  display: block;
+  margin-bottom: $gutter;
+}
+.example .data p {
+  margin-bottom: 0;
+}
+
+.example-images {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.example-images img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.page-actions {
+  margin: $gutter 0;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.page-actions li {
+  @include bold-19;
+  margin-bottom: 10px;
+}
+
+.page-metadata {
+  border-top: 5px solid $black;
+  padding-top: $gutter-two-thirds;
+}
+
+.page-metadata dt {
+  @include core-16;
+}
+
+.page-metadata dd {
+  @include bold-24;
+  margin-bottom: 10px;
+}

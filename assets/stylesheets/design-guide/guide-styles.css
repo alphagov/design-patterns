@@ -1,18 +1,21 @@
 /*
-Syntax error: Undefined variable: "$black".
-        on line 3 of assets/sass/style-guide/layout.scss
+Syntax error: Undefined variable: "$border-colour".
+        on line 7 of assets/sass/design-guide/guide-styles.scss
 
-1: // Page meta
-2: .page-metadata {
-3:   border-top: 5px solid $black;
-4:   padding-top: $gutter-two-thirds;
-5: }
-6: 
-7: .page-metadata dt {
-8:   @include core-16;
+2:   
+3:   @extend %contain-floats;
+4:   position: relative;
+5:   overflow: hidden;
+6:   
+7:   border: 1px solid $border-colour;
+8:   outline: $gutter-half solid $highlight-colour;
+9:   margin: $gutter 0 $gutter*2 0;
+10:   padding: $gutter-half;
+11:   @include media(tablet) {
+12:     padding: $gutter $gutter-half;
 
 Backtrace:
-assets/sass/style-guide/layout.scss:3
+assets/sass/design-guide/guide-styles.scss:7
 /Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/script/variable.rb:49:in `_perform'
 /Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/script/node.rb:40:in `perform'
 /Users/gemmaleigh/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.12/lib/sass/script/list.rb:71:in `block in _perform'
@@ -62,4 +65,4 @@ assets/sass/style-guide/layout.scss:3
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$black\".\A         on line 3 of assets/sass/style-guide/layout.scss\A \A 1: // Page meta\A 2: .page-metadata {\A 3:   border-top: 5px solid $black;\A 4:   padding-top: $gutter-two-thirds;\A 5: }\A 6: \A 7: .page-metadata dt {\A 8:   @include core-16;"; }
+  content: "Syntax error: Undefined variable: \"$border-colour\".\A         on line 7 of assets/sass/design-guide/guide-styles.scss\A \A 2:   \A 3:   @extend %contain-floats;\A 4:   position: relative;\A 5:   overflow: hidden;\A 6:   \A 7:   border: 1px solid $border-colour;\A 8:   outline: $gutter-half solid $highlight-colour;\A 9:   margin: $gutter 0 $gutter*2 0;\A 10:   padding: $gutter-half;\A 11:   @include media(tablet) {\A 12:     padding: $gutter $gutter-half;"; }

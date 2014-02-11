@@ -437,12 +437,17 @@ pre {
   width: 100%;
 }
 
-/* line 1, ../sass/govuk-helper/_colours.scss */
+/* line 1, ../sass/govuk-helper/colours.scss */
 .text-secondary {
   color: #6f777b;
 }
 
-/* line 4, ../sass/govuk-helper/_lists.scss */
+/* line 5, ../sass/govuk-helper/colours.scss */
+.bg-hm-government {
+  background: #0076c0;
+}
+
+/* line 4, ../sass/govuk-helper/lists.scss */
 dl,
 menu,
 ol,
@@ -450,12 +455,12 @@ ul {
   margin: 0;
 }
 
-/* line 8, ../sass/govuk-helper/_lists.scss */
+/* line 8, ../sass/govuk-helper/lists.scss */
 dd {
   margin-left: 0;
 }
 
-/* line 14, ../sass/govuk-helper/_lists.scss */
+/* line 14, ../sass/govuk-helper/lists.scss */
 menu,
 ol,
 ul {
@@ -464,28 +469,28 @@ ul {
   padding: 0 0 0 20px;
 }
 
-/* line 20, ../sass/govuk-helper/_lists.scss */
+/* line 20, ../sass/govuk-helper/lists.scss */
 ul {
   list-style-type: disc;
 }
 
-/* line 23, ../sass/govuk-helper/_lists.scss */
+/* line 23, ../sass/govuk-helper/lists.scss */
 ol {
   list-style-type: decimal;
 }
 
-/* line 28, ../sass/govuk-helper/_lists.scss */
+/* line 28, ../sass/govuk-helper/lists.scss */
 ul li,
 ol li {
   margin-bottom: 5px;
 }
 
-/* line 1, ../sass/govuk-helper/_forms.scss */
+/* line 1, ../sass/govuk-helper/forms.scss */
 form {
   margin: 0;
 }
 
-/* line 8, ../sass/govuk-helper/_forms.scss */
+/* line 8, ../sass/govuk-helper/forms.scss */
 button,
 input,
 select,
@@ -496,19 +501,13 @@ textarea {
   *vertical-align: middle;
 }
 
-/* line 16, ../sass/govuk-helper/_forms.scss */
+/* line 16, ../sass/govuk-helper/forms.scss */
 button,
 input {
   line-height: normal;
 }
 
-/* line 20, ../sass/govuk-helper/_forms.scss */
-textarea {
-  overflow: auto;
-  vertical-align: top;
-}
-
-/* line 39, ../sass/govuk-helper/_forms.scss */
+/* line 34, ../sass/govuk-helper/forms.scss */
 input[type="text"],
 input[type="email"],
 input[type="date"],
@@ -524,37 +523,57 @@ input[type="url"],
 input[type="week"],
 select[size],
 textarea {
-  padding: 2px 4px;
-  background-color: #FFFFFF;
-  border: 2px inset;
-  border: 1px inset #bfc1c3;
   font-size: 1em;
+  padding: 4px;
+  background-color: white;
+  border: 1px solid #bfc1c3;
   -webkit-appearance: none;
   border-radius: 0;
 }
 
-/* line 53, ../sass/govuk-helper/_forms.scss */
+/* line 46, ../sass/govuk-helper/forms.scss */
 textarea {
-  min-height: 10em;
+  overflow: auto;
+  vertical-align: top;
+  min-height: 190px;
   height: auto;
 }
 
-/* line 58, ../sass/govuk-helper/_forms.scss */
-.form-control {
-  min-width: 96%;
-  min-width: 18em;
-}
-
-/* line 65, ../sass/govuk-helper/_forms.scss */
+/* line 53, ../sass/govuk-helper/forms.scss */
 .form-group {
   margin-bottom: 15px;
   margin-bottom: 30px;
 }
 
-/* line 72, ../sass/govuk-helper/_forms.scss */
+/* line 60, ../sass/govuk-helper/forms.scss */
 .form-group label {
   display: block;
   margin-bottom: 5px;
+}
+
+/* line 65, ../sass/govuk-helper/forms.scss */
+.form-control {
+  width: 96%;
+  width: 350px;
+}
+
+/* line 72, ../sass/govuk-helper/forms.scss */
+.hint {
+  display: block;
+  color: #6f777b;
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none;
+  margin-top: 8px;
+}
+@media (max-width: 640px) {
+  /* line 72, ../sass/govuk-helper/forms.scss */
+  .hint {
+    font-size: 14px;
+    line-height: 1.14286;
+  }
 }
 
 /* line 1, ../sass/design-patterns/_alpha-beta.scss */
@@ -1073,72 +1092,7 @@ textarea {
   float: right;
 }
 
-/* line 1, ../sass/design-guide/page-meta.scss */
-.page-metadata {
-  border-top: 5px solid #0b0c0c;
-  padding-top: 20px;
-}
-
-/* line 6, ../sass/design-guide/page-meta.scss */
-.page-metadata dt {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 300;
-  text-transform: none;
-}
-@media (max-width: 640px) {
-  /* line 6, ../sass/design-guide/page-meta.scss */
-  .page-metadata dt {
-    font-size: 14px;
-    line-height: 1.14286;
-  }
-}
-
-/* line 10, ../sass/design-guide/page-meta.scss */
-.page-metadata dd {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 24px;
-  line-height: 1.25;
-  font-weight: 400;
-  text-transform: none;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-@media (max-width: 640px) {
-  /* line 10, ../sass/design-guide/page-meta.scss */
-  .page-metadata dd {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-}
-
-/* line 1, ../sass/design-guide/page-actions.scss */
-.page-actions {
-  margin: 30px 0;
-  list-style-type: none;
-  padding-left: 0;
-}
-
-/* line 7, ../sass/design-guide/page-actions.scss */
-.page-actions li {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 19px;
-  line-height: 1.31579;
-  font-weight: 400;
-  text-transform: none;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-@media (max-width: 640px) {
-  /* line 7, ../sass/design-guide/page-actions.scss */
-  .page-actions li {
-    font-size: 16px;
-    line-height: 1.25;
-  }
-}
-
-/* line 2, ../sass/design-guide/example.scss */
+/* line 1, ../sass/design-guide/_guide-styles.scss */
 .example {
   position: relative;
   overflow: hidden;
@@ -1148,13 +1102,52 @@ textarea {
   padding: 15px;
   padding: 30px 15px;
 }
-/* line 16, ../sass/design-guide/example.scss */
+/* line 15, ../sass/design-guide/_guide-styles.scss */
 .example.example-wide {
   margin-right: 0;
   margin-right: -33.33%;
 }
 
-/* line 2, ../sass/design-guide/example-ribbon.scss */
+/* line 23, ../sass/design-guide/_guide-styles.scss */
+code {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none;
+  background: #dee0e2;
+  padding: 0 4px;
+}
+@media (max-width: 640px) {
+  /* line 23, ../sass/design-guide/_guide-styles.scss */
+  code {
+    font-size: 14px;
+    line-height: 1.14286;
+  }
+}
+
+/* line 29, ../sass/design-guide/_guide-styles.scss */
+.example code {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none;
+  font-family: monospace, serif;
+  display: block;
+  padding: 0 0 15px 0;
+  background: none;
+  padding: 0 0 30px 0;
+}
+@media (max-width: 640px) {
+  /* line 29, ../sass/design-guide/_guide-styles.scss */
+  .example code {
+    font-size: 14px;
+    line-height: 1.14286;
+  }
+}
+
+/* line 40, ../sass/design-guide/_guide-styles.scss */
 .example .ribbon {
   background-color: #85994b;
   overflow: hidden;
@@ -1170,53 +1163,14 @@ textarea {
   padding: 3px 50px;
 }
 
-/* line 1, ../sass/design-guide/code.scss */
-code {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 300;
-  text-transform: none;
-  background: #dee0e2;
-  padding: 0 4px;
-}
-@media (max-width: 640px) {
-  /* line 1, ../sass/design-guide/code.scss */
-  code {
-    font-size: 14px;
-    line-height: 1.14286;
-  }
-}
-
-/* line 7, ../sass/design-guide/code.scss */
-.example code {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 300;
-  text-transform: none;
-  font-family: monospace, serif;
-  display: block;
-  padding: 0 0 15px 0;
-  background: none;
-  padding: 0 0 30px 0;
-}
-@media (max-width: 640px) {
-  /* line 7, ../sass/design-guide/code.scss */
-  .example code {
-    font-size: 14px;
-    line-height: 1.14286;
-  }
-}
-
-/* line 2, ../sass/design-guide/example-grid.scss */
+/* line 55, ../sass/design-guide/_guide-styles.scss */
 .example-grid {
   background: white;
   padding: 15px 0 10px 0;
   padding: 25px 0 20px 0;
 }
 
-/* line 9, ../sass/design-guide/example-grid.scss */
+/* line 62, ../sass/design-guide/_guide-styles.scss */
 .example-grid p {
   width: 100%;
   background: url("../images/example/grid.png") 0 0 repeat;
@@ -1227,27 +1181,92 @@ code {
   text-indent: -99em;
 }
 
-/* line 1, ../sass/design-guide/example-images.scss */
-.example-images {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-/* line 6, ../sass/design-guide/example-images.scss */
-.example-images img {
-  max-width: 100%;
-  vertical-align: top;
-}
-
-/* line 1, ../sass/design-guide/example-data.scss */
-.example .data p {
-  margin-bottom: 0;
-}
-
-/* line 1, ../sass/design-guide/example-colour.scss */
+/* line 74, ../sass/design-guide/_guide-styles.scss */
 .example .swatch {
   width: 60px;
   height: 60px;
   display: block;
   margin-bottom: 30px;
+}
+
+/* line 80, ../sass/design-guide/_guide-styles.scss */
+.example .data p {
+  margin-bottom: 0;
+}
+
+/* line 84, ../sass/design-guide/_guide-styles.scss */
+.example-images {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 89, ../sass/design-guide/_guide-styles.scss */
+.example-images img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+/* line 94, ../sass/design-guide/_guide-styles.scss */
+.page-actions {
+  margin: 30px 0;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* line 100, ../sass/design-guide/_guide-styles.scss */
+.page-actions li {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+@media (max-width: 640px) {
+  /* line 100, ../sass/design-guide/_guide-styles.scss */
+  .page-actions li {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+/* line 105, ../sass/design-guide/_guide-styles.scss */
+.page-metadata {
+  border-top: 5px solid #0b0c0c;
+  padding-top: 20px;
+}
+
+/* line 110, ../sass/design-guide/_guide-styles.scss */
+.page-metadata dt {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none;
+}
+@media (max-width: 640px) {
+  /* line 110, ../sass/design-guide/_guide-styles.scss */
+  .page-metadata dt {
+    font-size: 14px;
+    line-height: 1.14286;
+  }
+}
+
+/* line 114, ../sass/design-guide/_guide-styles.scss */
+.page-metadata dd {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+@media (max-width: 640px) {
+  /* line 114, ../sass/design-guide/_guide-styles.scss */
+  .page-metadata dd {
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }
