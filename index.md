@@ -1,14 +1,18 @@
 ---
-layout: template-homepage
+layout: default
 title: New design guides
 phases:
   - alpha
+text-wrapper: text
+breadcrumb:
+  -
+    title: Home
+    url: https://www.gov.uk/service-manual
 ---
 
 These new guides are for designers, researchers and front end developers building services for GOV.UK.
 Their content is in **alpha** and subject to change.
 Help us improve it by [giving us your feedback](https://designpatterns.hackpad.com/Give-us-feedback-dE7mj6RNGKv).
-
 
 <h2 class="heading-36">Design style guide</h2>
 

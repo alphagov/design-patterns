@@ -1,5 +1,5 @@
 ---
-layout: template-design-patterns
+layout: guide
 document-type: Design pattern
 title: People's names
 discuss-url: https://designpatterns.hackpad.com/Peoples-names-mgFWXkwyPEt
@@ -7,6 +7,13 @@ published: 2 January 2014
 updated: 9 January 2014
 phases:
   - alpha
+breadcrumb:
+  -
+    title: Home
+    url: https://www.gov.uk/service-manual
+  -
+    title: New design guides
+    url: /
 ---
 
 Here are two ways to ask users for their name:

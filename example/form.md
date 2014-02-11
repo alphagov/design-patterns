@@ -1,20 +1,17 @@
 ---
-layout: template-example
+layout: example
 document-type: Guide
 title: Form example
 phases:
   - alpha
+breadcrumb:
+  -
+    title: Home
+    url: https://www.gov.uk/service-manual
+  -
+    title: New design guides
+    url: /
 ---
-
-<div class="breadcrumb">
-  <nav role="navigation">
-    <ol>
-      <li><a href="https://www.gov.uk/service-manual">Home</a></li>
-      <li><a href="{{ site.baseurl }}/">Guides</a></li>
-      <li><a href="{{ site.baseurl }}/example/">Design style guide examples</a></li>
-    </ol>
-  </nav>
-</div>
 
 <div class="grid-wrapper">
   <div class="grid">

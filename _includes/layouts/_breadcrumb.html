@@ -1,0 +1,11 @@
+{% if page.breadcrumb %}
+<div class="breadcrumb">
+  <nav role="navigation">
+    <ol>
+      {% for crumb in page.breadcrumb %}
+      <li><a href="{{ crumb.url }}">{{ crumb.title }}</a></li>
+      {% endfor %}
+    </ol>
+  </nav>
+</div>
+{% endif %}

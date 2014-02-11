@@ -1,5 +1,5 @@
 ---
-layout: template-design-patterns
+layout: guide
 document-type: Design pattern
 title: Buttons
 discuss-url: https://designpatterns.hackpad.com/Buttons-zoP1sKiW3y4
@@ -8,6 +8,13 @@ published: 10 January 2014
 updated: 10 February 2014
 phases:
   - alpha
+breadcrumb:
+  -
+    title: Home
+    url: https://www.gov.uk/service-manual
+  -
+    title: New design guides
+    url: /
 ---
 
 Buttons should be used to signify actions that the user can perform.
