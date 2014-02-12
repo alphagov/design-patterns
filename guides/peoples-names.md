@@ -4,7 +4,7 @@ document-type: Design pattern
 title: People's names
 discuss-url: https://designpatterns.hackpad.com/Peoples-names-mgFWXkwyPEt
 published: 2 January 2014
-updated: 9 January 2014
+updated: 12 February 2014
 phases:
   - alpha
 breadcrumb:
@@ -56,10 +56,6 @@ Users enter the different parts of their name into different fields.
 <div class="example">
   <form class="form">
     <div class="form-group">
-      <label for="title">Title (optional)</label>
-      <input type="text" id="name-title" class="form-control">
-    </div>
-    <div class="form-group">
       <label for="firstName">First name</label>
       <input type="text" id="firstName" class="form-control">
     </div>
@@ -76,16 +72,27 @@ Depending on your audience you'll be able to extract the parts of the name and d
 
 <h3 class="heading-24">Cons</h3>
 
-As soon as you adopt multiple fields you introduce the possibility that a person's name won't fit the format you've chosen, or that they'll enter their names in the wrong order. Remember, users of GOV.UK services come from many different cultural backgrounds, each with their own conventions regarding personal names.
+As soon as you adopt multiple fields you introduce the possibility that:
 
-For a more detailed overview of issues relating to personal names, read these two articles:
+* a person's name won't fit the format you've chosen
+* they enter their names in the wrong order
+* they try to enter their full name in the first field
 
+Remember, users of GOV.UK services come from many different cultural backgrounds, each with their own conventions regarding personal names.
+
+For a more detailed overview of issues relating to personal names, read these articles:
+
+* [http://baymard.com/blog/mobile-form-usability-single-input-fields](http://baymard.com/blog/mobile-form-usability-single-input-fields)
 * [http://www.w3.org/International/questions/qa-personal-names](http://www.w3.org/International/questions/qa-personal-names)
 * [http://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/](http://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/)
 
 <h3 class="heading-24">Guidance</h3>
 
+#### Labels
+
 If you need to use multiple name fields then the current preferred labelling is 'First name', 'Last name'. Don't include 'Middle names' unless you absolutely have to and make sure it's optional (you don't need to mark it as optional as users will understand this).
+
+#### Titles
 
 Avoid asking for someone's title without good reason. It's extra work for users and you're asking them to potentially reveal their gender and marital status as well, which they may not want to do.
 
