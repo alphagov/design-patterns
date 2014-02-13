@@ -482,12 +482,17 @@ textarea {
 }
 
 /* line 15, ../sass/govuk-helper/_forms.scss */
+legend {
+  padding-left: 0;
+}
+
+/* line 19, ../sass/govuk-helper/_forms.scss */
 button,
 input {
   line-height: normal;
 }
 
-/* line 20, ../sass/govuk-helper/_forms.scss */
+/* line 24, ../sass/govuk-helper/_forms.scss */
 input[type="text"],
 input[type="email"],
 input[type="date"],
@@ -511,7 +516,7 @@ textarea {
   border-radius: 0;
 }
 
-/* line 46, ../sass/govuk-helper/_forms.scss */
+/* line 50, ../sass/govuk-helper/_forms.scss */
 textarea {
   overflow: auto;
   vertical-align: top;
@@ -519,25 +524,25 @@ textarea {
   height: auto;
 }
 
-/* line 53, ../sass/govuk-helper/_forms.scss */
+/* line 57, ../sass/govuk-helper/_forms.scss */
 .form-group {
   margin-bottom: 15px;
   margin-bottom: 30px;
 }
 
-/* line 60, ../sass/govuk-helper/_forms.scss */
+/* line 64, ../sass/govuk-helper/_forms.scss */
 .form-group label {
   display: block;
   margin-bottom: 5px;
 }
 
-/* line 65, ../sass/govuk-helper/_forms.scss */
+/* line 69, ../sass/govuk-helper/_forms.scss */
 .form-control {
   width: 96%;
   width: 350px;
 }
 
-/* line 72, ../sass/govuk-helper/_forms.scss */
+/* line 76, ../sass/govuk-helper/_forms.scss */
 .hint {
   display: block;
   color: #6f777b;
@@ -549,7 +554,7 @@ textarea {
   margin-top: 8px;
 }
 @media (max-width: 640px) {
-  /* line 72, ../sass/govuk-helper/_forms.scss */
+  /* line 76, ../sass/govuk-helper/_forms.scss */
   .hint {
     font-size: 14px;
     line-height: 1.14286;
