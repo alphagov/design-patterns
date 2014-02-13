@@ -671,12 +671,16 @@ Example usage:
   vertical-align: baseline;
   *vertical-align: middle;
 }
-/* line 16, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_forms.scss */
+/* line 15, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_forms.scss */
+.govuk legend {
+  padding-left: 0;
+}
+/* line 20, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_forms.scss */
 .govuk button,
 .govuk input {
   line-height: normal;
 }
-/* line 34, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_forms.scss */
+/* line 38, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_forms.scss */
 .govuk input[type="text"],
 .govuk input[type="email"],
 .govuk input[type="date"],
@@ -699,39 +703,39 @@ Example usage:
   -webkit-appearance: none;
   border-radius: 0;
 }
-/* line 46, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_forms.scss */
+/* line 50, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_forms.scss */
 .govuk textarea {
   overflow: auto;
   vertical-align: top;
   min-height: 190px;
   height: auto;
 }
-/* line 53, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_forms.scss */
+/* line 57, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_forms.scss */
 .govuk .form-group {
   margin-bottom: 15px;
 }
 @media (min-width: 641px) {
-  /* line 53, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_forms.scss */
+  /* line 57, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_forms.scss */
   .govuk .form-group {
     margin-bottom: 30px;
   }
 }
-/* line 60, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_forms.scss */
+/* line 64, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_forms.scss */
 .govuk .form-group label {
   display: block;
   margin-bottom: 5px;
 }
-/* line 65, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_forms.scss */
+/* line 69, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_forms.scss */
 .govuk .form-control {
   width: 96%;
 }
 @media (min-width: 641px) {
-  /* line 65, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_forms.scss */
+  /* line 69, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_forms.scss */
   .govuk .form-control {
     width: 350px;
   }
 }
-/* line 72, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_forms.scss */
+/* line 76, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_forms.scss */
 .govuk .hint {
   display: block;
   color: #6f777b;
@@ -743,7 +747,7 @@ Example usage:
   margin-top: 8px;
 }
 @media (max-width: 640px) {
-  /* line 72, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_forms.scss */
+  /* line 76, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_forms.scss */
   .govuk .hint {
     font-size: 14px;
     line-height: 1.14286;
