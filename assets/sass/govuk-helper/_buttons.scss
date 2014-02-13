@@ -1,9 +1,9 @@
 .button {
-  @include button ($green);
-  margin: 0 $gutter-half $gutter-half 0;
-  vertical-align: top;
+	@include button ($green);
+	margin: 0 $gutter-half $gutter-half 0;
+	vertical-align: top;
 }
 
 .button-secondary {
-  @include button ($grey-3);
+	@include button ($grey-3);
 }
