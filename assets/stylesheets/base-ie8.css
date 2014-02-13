@@ -9,11 +9,9 @@
 @-ms-viewport {
   width: device-width;
 }
-
 @-o-viewport {
   width: device-width;
 }
-
 /* Usage:
    @include inline-block
 
@@ -42,28 +40,22 @@
   font-family: GDS-Logo;
   src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica");
 }
-
 @-ms-viewport {
   width: device-width;
 }
-
 @-o-viewport {
   width: device-width;
 }
-
 @font-face {
   font-family: GDS-Logo;
   src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica");
 }
-
 @-ms-viewport {
   width: device-width;
 }
-
 @-o-viewport {
   width: device-width;
 }
-
 /* Cross-browser shims
 
   Ways of normalising properties across browsers.
@@ -71,11 +63,9 @@
 @-ms-viewport {
   width: device-width;
 }
-
 @-o-viewport {
   width: device-width;
 }
-
 /* Usage:
    @include inline-block
 
@@ -107,11 +97,9 @@
 @-ms-viewport {
   width: device-width;
 }
-
 @-o-viewport {
   width: device-width;
 }
-
 /* Usage:
    @include inline-block
 
@@ -143,11 +131,9 @@
 @-ms-viewport {
   width: device-width;
 }
-
 @-o-viewport {
   width: device-width;
 }
-
 /*
 
 Mixin and defaults for making buttons on GOV.UK services.
@@ -184,7 +170,7 @@ Example usage:
   }
 }
 
-/* line 2, ../sass/govuk-helper/_typography-general.scss */
+/* line 1, ../sass/govuk-helper/_typography-general.scss */
 p,
 pre {
   margin-top: 5px;
@@ -426,7 +412,7 @@ pre {
   background: #0076c0;
 }
 
-/* line 4, ../sass/govuk-helper/_lists.scss */
+/* line 1, ../sass/govuk-helper/_lists.scss */
 dl,
 menu,
 ol,
@@ -439,7 +425,7 @@ dd {
   margin-left: 0;
 }
 
-/* line 14, ../sass/govuk-helper/_lists.scss */
+/* line 12, ../sass/govuk-helper/_lists.scss */
 menu,
 ol,
 ul {
@@ -458,7 +444,7 @@ ol {
   list-style-type: decimal;
 }
 
-/* line 28, ../sass/govuk-helper/_lists.scss */
+/* line 27, ../sass/govuk-helper/_lists.scss */
 ul li,
 ol li {
   margin-bottom: 5px;
@@ -469,7 +455,7 @@ form {
   margin: 0;
 }
 
-/* line 8, ../sass/govuk-helper/_forms.scss */
+/* line 5, ../sass/govuk-helper/_forms.scss */
 button,
 input,
 select,
@@ -480,13 +466,13 @@ textarea {
   *vertical-align: middle;
 }
 
-/* line 16, ../sass/govuk-helper/_forms.scss */
+/* line 15, ../sass/govuk-helper/_forms.scss */
 button,
 input {
   line-height: normal;
 }
 
-/* line 34, ../sass/govuk-helper/_forms.scss */
+/* line 20, ../sass/govuk-helper/_forms.scss */
 input[type="text"],
 input[type="email"],
 input[type="date"],
@@ -584,7 +570,7 @@ textarea {
 .button:visited {
   background-color: #006435;
 }
-/* line 55, ../govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
+/* line 54, ../govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
 .button:hover, .button:focus {
   background-color: #004b27;
 }
@@ -595,7 +581,7 @@ textarea {
   -moz-box-shadow: 0 0 0 #006435;
   box-shadow: 0 0 0 #006435;
 }
-/* line 66, ../govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
+/* line 64, ../govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
 .button.disabled, .button[disabled="disabled"], .button[disabled] {
   zoom: 1;
   filter: alpha(opacity=50);
@@ -614,7 +600,7 @@ textarea {
   box-shadow: 0 2px 0 #00180c;
   border-bottom: 2px solid #00180c;
 }
-/* line 86, ../govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
+/* line 84, ../govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
 .button:hover, .button:focus, .button:visited {
   color: white;
 }
@@ -641,7 +627,7 @@ textarea {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 134, ../govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
+/* line 132, ../govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
 .button[type="submit"], .button[type="reset"], .button[type="button"] {
   filter: chroma(color=black);
 }
@@ -677,7 +663,7 @@ textarea {
 .button-secondary:visited {
   background-color: #dee0e2;
 }
-/* line 55, ../govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
+/* line 54, ../govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
 .button-secondary:hover, .button-secondary:focus {
   background-color: #d0d3d6;
 }
@@ -688,7 +674,7 @@ textarea {
   -moz-box-shadow: 0 0 0 #dee0e2;
   box-shadow: 0 0 0 #dee0e2;
 }
-/* line 66, ../govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
+/* line 64, ../govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
 .button-secondary.disabled, .button-secondary[disabled="disabled"], .button-secondary[disabled] {
   zoom: 1;
   filter: alpha(opacity=50);
@@ -707,7 +693,7 @@ textarea {
   box-shadow: 0 2px 0 #b5babe;
   border-bottom: 2px solid #b5babe;
 }
-/* line 93, ../govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
+/* line 91, ../govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
 .button-secondary:hover, .button-secondary:focus, .button-secondary:visited {
   color: #0b0c0c;
 }
@@ -734,7 +720,7 @@ textarea {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 134, ../govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
+/* line 132, ../govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
 .button-secondary[type="submit"], .button-secondary[type="reset"], .button-secondary[type="button"] {
   filter: chroma(color=black);
 }
@@ -783,7 +769,7 @@ textarea {
   padding: 0;
   margin: 0;
 }
-/* line 10, ../sass/design-patterns/_phase-block.scss */
+/* line 9, ../sass/design-patterns/_phase-block.scss */
 .phase-block .alpha,
 .phase-block .beta {
   display: inline;
@@ -890,36 +876,36 @@ textarea {
   color: #2e8aca;
 }
 
-/* line 3, ../sass/design-patterns/_addresses.scss */
+/* line 8, ../sass/design-patterns/_addresses.scss */
 .form .postcode {
   width: 100px;
 }
 
-/* line 3, ../sass/design-patterns/_date-of-birth.scss */
+/* line 9, ../sass/design-patterns/_date-of-birth.scss */
 .date-of-birth legend {
   margin-bottom: 15px;
 }
-/* line 7, ../sass/design-patterns/_date-of-birth.scss */
+/* line 13, ../sass/design-patterns/_date-of-birth.scss */
 .date-of-birth .form-group {
   width: 40px;
   float: left;
   margin-right: 15px;
   margin-right: 30px;
 }
-/* line 16, ../sass/design-patterns/_date-of-birth.scss */
+/* line 22, ../sass/design-patterns/_date-of-birth.scss */
 .date-of-birth .form-group-year {
   width: 60px;
 }
-/* line 20, ../sass/design-patterns/_date-of-birth.scss */
+/* line 26, ../sass/design-patterns/_date-of-birth.scss */
 .date-of-birth .form-control {
   width: 100%;
 }
 
-/* line 1, ../sass/design-patterns/_progress-indicator.scss */
+/* line 7, ../sass/design-patterns/_progress-indicator.scss */
 .progress-indicator {
   margin-bottom: 30px;
 }
-/* line 6, ../sass/design-patterns/_progress-indicator.scss */
+/* line 11, ../sass/design-patterns/_progress-indicator.scss */
 .progress-indicator ol,
 .progress-indicator ul {
   border-bottom: 1px solid;
@@ -928,41 +914,41 @@ textarea {
   list-style-type: none;
   padding-left: 0;
 }
-/* line 15, ../sass/design-patterns/_progress-indicator.scss */
+/* line 21, ../sass/design-patterns/_progress-indicator.scss */
 .progress-indicator li {
   color: #6f777b;
   padding: 12px 0 5px 0;
 }
-/* line 19, ../sass/design-patterns/_progress-indicator.scss */
+/* line 25, ../sass/design-patterns/_progress-indicator.scss */
 .progress-indicator a {
   text-decoration: none;
 }
-/* line 23, ../sass/design-patterns/_progress-indicator.scss */
+/* line 29, ../sass/design-patterns/_progress-indicator.scss */
 .progress-indicator .active {
   border-bottom: 5px solid #0b0c0c;
   color: #0b0c0c;
 }
-/* line 27, ../sass/design-patterns/_progress-indicator.scss */
+/* line 33, ../sass/design-patterns/_progress-indicator.scss */
 .progress-indicator .active a {
   color: #0b0c0c;
   text-decoration: none;
 }
 
-/* line 36, ../sass/design-patterns/_progress-indicator.scss */
+/* line 42, ../sass/design-patterns/_progress-indicator.scss */
 .progress-indicator-horizontal li {
   float: left;
   margin-right: 30px;
 }
-/* line 42, ../sass/design-patterns/_progress-indicator.scss */
+/* line 48, ../sass/design-patterns/_progress-indicator.scss */
 .progress-indicator-horizontal li.active {
   margin-bottom: -5px;
 }
 
-/* line 50, ../sass/design-patterns/_progress-indicator.scss */
+/* line 56, ../sass/design-patterns/_progress-indicator.scss */
 .progress-indicator-vertical {
   width: 50%;
 }
-/* line 57, ../sass/design-patterns/_progress-indicator.scss */
+/* line 63, ../sass/design-patterns/_progress-indicator.scss */
 .progress-indicator-vertical span {
   float: right;
 }

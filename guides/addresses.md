@@ -3,7 +3,7 @@ layout: guide
 document-type: Design pattern
 title: Addresses
 discuss-url: https://designpatterns.hackpad.com/Address-CgrMSGRAhRc
-sass-url: https://github.com/alphagov/design-patterns/blob/gh-pages/assets/sass/design-patterns/_forms.scss
+sass-url: https://github.com/alphagov/design-patterns/blob/gh-pages/assets/sass/design-patterns/_addresses.scss
 published: 2 January 2014
 updated: 9 January 2014
 phases:
