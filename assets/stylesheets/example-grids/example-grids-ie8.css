@@ -422,6 +422,7 @@ Example usage:
   cursor: pointer;
   color: white;
   margin: 0 15px 15px 0;
+  padding: 10px 10px 5px 10px;
   vertical-align: top;
 }
 /* line 51, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
@@ -494,96 +495,27 @@ Example usage:
   filter: none;
 }
 /* line 7, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_buttons.scss */
-.govuk .button-secondary {
-  background-color: #dee0e2;
-  position: relative;
-  display: -moz-inline-stack;
-  display: inline-block;
-  padding: 0.35em 0.5em 0.15em 0.5em;
+.govuk .button:focus {
+  outline: 3px solid #ffbf47;
+}
+/* line 11, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_buttons.scss */
+.govuk .button-link {
+  background: none;
   border: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  -webkit-appearance: none;
-  -webkit-box-shadow: 0 2px 0 #b5babe;
-  -moz-box-shadow: 0 2px 0 #b5babe;
-  box-shadow: 0 2px 0 #b5babe;
-  border-bottom: 2px solid #b5babe;
-  font-size: 1em;
   line-height: 1.25;
-  text-decoration: none;
-  -webkit-font-smoothing: antialiased;
+  color: #005ea5;
+  text-decoration: underline;
   cursor: pointer;
-  color: #0b0c0c;
+  padding: 10px 10px 5px 10px;
+  vertical-align: top;
 }
-/* line 51, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
-.govuk .button-secondary:visited {
-  background-color: #dee0e2;
+/* line 25, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_buttons.scss */
+.govuk .button-link:hover {
+  color: #2e8aca;
 }
-/* line 55, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
-.govuk .button-secondary:hover, .govuk .button-secondary:focus {
-  background-color: #d0d3d6;
-}
-/* line 58, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
-.govuk .button-secondary:active {
-  top: 2px;
-  -webkit-box-shadow: 0 0 0 #dee0e2;
-  -moz-box-shadow: 0 0 0 #dee0e2;
-  box-shadow: 0 0 0 #dee0e2;
-}
-/* line 66, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
-.govuk .button-secondary.disabled, .govuk .button-secondary[disabled="disabled"], .govuk .button-secondary[disabled] {
-  zoom: 1;
-  filter: alpha(opacity=50);
-  opacity: 0.5;
-}
-/* line 68, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
-.govuk .button-secondary.disabled:hover, .govuk .button-secondary[disabled="disabled"]:hover, .govuk .button-secondary[disabled]:hover {
-  cursor: default;
-  background-color: #dee0e2;
-}
-/* line 72, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
-.govuk .button-secondary.disabled:active, .govuk .button-secondary[disabled="disabled"]:active, .govuk .button-secondary[disabled]:active {
-  top: 0;
-  -webkit-box-shadow: 0 2px 0 #b5babe;
-  -moz-box-shadow: 0 2px 0 #b5babe;
-  box-shadow: 0 2px 0 #b5babe;
-  border-bottom: 2px solid #b5babe;
-}
-/* line 93, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
-.govuk .button-secondary:hover, .govuk .button-secondary:focus, .govuk .button-secondary:visited {
-  color: #0b0c0c;
-}
-/* line 100, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
-.govuk .button-secondary:before {
-  content: "";
-  height: 110%;
-  width: 100%;
-  display: block;
-  background: transparent;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-/* line 110, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
-.govuk .button-secondary:active:before {
-  top: -10%;
-  height: 120%;
-}
-/* line 123, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
-.govuk .button-secondary[rel="external"]:after {
-  display: none;
-  content: none;
-  margin-left: 0;
-  margin-right: 0;
-}
-/* line 134, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
-.govuk .button-secondary[type="submit"], .govuk .button-secondary[type="reset"], .govuk .button-secondary[type="button"] {
-  filter: chroma(color=black);
-}
-/* line 138, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
-.govuk .button-secondary[type=submit].button {
-  filter: none;
+/* line 28, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_buttons.scss */
+.govuk .button-link:focus {
+  outline: 3px solid #ffbf47;
 }
 /* line 1, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_colours.scss */
 .govuk .text-secondary {

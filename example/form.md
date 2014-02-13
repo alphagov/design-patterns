@@ -58,7 +58,7 @@ breadcrumb:
           
           <div class="form-group">
             <input type="submit" class="button" value="Next">
-            <button class="button-secondary">Back</button>
+            <button class="button-link">Back</button>
           </div>
           
         </fieldset>
