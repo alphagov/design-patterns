@@ -367,10 +367,19 @@ breadcrumb:
 <div class="text">
   <h3 class="heading-24">Buttons</h3>
   <p>
-    Primary actions are green ($green), secondary actions are grey ($grey-3). They use the button mixin defined in the <a href="https://github.com/alphagov/govuk_frontend_toolkit#buttons">GOV.UK front end toolkit</a>. 
+     Buttons use the button mixin defined in the <a href="https://github.com/alphagov/govuk_frontend_toolkit#buttons">GOV.UK front end toolkit</a>. 
+  </p>
+  <h4 class="heading-19">Changing the secondary grey button style</h4>
+  <p>
+    The grey button has a couple of issues - when positioned next to our primary green button some users assume that the grey means the button is disabled. 
+
+    To others, it looks more like a default OS button than the green one, which can be confusing.
   </p>
   <p>
-    The button text colour is set by the mixin to either light or dark, depending on the button background colour.
+    To remove this confusion, we're changing the grey button to look like a link, but with appropriate whitespace so that it can be positioned consistently alongside the primary green buttons.
+  </p>
+  <p>
+    Yellow focus states for all buttons are also shown.
   </p>
 </div>
 
@@ -378,7 +387,8 @@ breadcrumb:
 <div class="example">
   <div class="inner-block">
     <button class="button">Primary button</button>
-    <button class="button-secondary">Secondary button</button>
+    <button class="button-link">Secondary button</button>
+    <a class="button-link" href="{{ site.baseurl}}/example/form.html">Link</a>
   </div>
 </div>
 
