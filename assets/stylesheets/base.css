@@ -547,18 +547,21 @@ Example usage:
 .govuk .button-link {
   background: none;
   border: none;
-  line-height: 1.25;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
   color: #005ea5;
+  line-height: 1.25;
   text-decoration: underline;
   cursor: pointer;
+  margin: 0 15px 15px 0;
   padding: 10px 10px 5px 10px;
   vertical-align: top;
 }
-/* line 25, ../sass/govuk-helper/_buttons.scss */
+/* line 27, ../sass/govuk-helper/_buttons.scss */
 .govuk .button-link:hover {
   color: #2e8aca;
 }
-/* line 28, ../sass/govuk-helper/_buttons.scss */
+/* line 30, ../sass/govuk-helper/_buttons.scss */
 .govuk .button-link:focus {
   outline: 3px solid #ffbf47;
 }

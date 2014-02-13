@@ -388,6 +388,7 @@ breadcrumb:
   <div class="inner-block">
     <button class="button">Primary button</button>
     <button class="button-link">Secondary button</button>
+    <a class="button-link" href="{{ site.baseurl}}/example/form.html">Link</a>
   </div>
 </div>
 

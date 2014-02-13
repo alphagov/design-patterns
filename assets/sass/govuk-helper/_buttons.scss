@@ -12,13 +12,15 @@
 	// Remove browser default button styles
 	background: none;
 	border: none;
-	// Set line height to match .button styles
-	line-height: 1.25;
-	// Set button colour to link colour
+	// Override webkit default button styles
+	-webkit-font-smoothing: antialiased;
+	// Match .button styles
+	display: inline-block;
 	color: $link-colour;
+	line-height: 1.25;
 	text-decoration: underline;
-	// Set cursor to match button cursor
 	cursor: pointer;
+	margin: 0 $gutter-half $gutter-half 0;
 	padding: 10px 10px 5px 10px;
 	vertical-align: top;
 }
@@ -28,4 +30,3 @@
 .button-link:focus {
 	outline: 3px solid $yellow;
 }
-
