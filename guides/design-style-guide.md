@@ -361,8 +361,8 @@ breadcrumb:
     <form action="get" class="form">
       <fieldset>
         <div class="form-group">
-          <label for="">Full name</label>
-          <input type="text" class="form-control" />
+          <label for="full-name" class="form-label">Full name</label>
+          <input type="text" class="form-control" id="full-name">
         </div>
       </fieldset>
     </form>
