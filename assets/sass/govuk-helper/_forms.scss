@@ -1,5 +1,10 @@
+// Normalize form elements
 form {
   margin: 0;
+}
+
+legend {
+  padding-left: 0;
 }
 
 button,
@@ -11,11 +16,6 @@ textarea {
   vertical-align: baseline;
   *vertical-align: middle;
 }
-
-legend{
-  padding-left: 0;
-}
-
 button,
 input {
     line-height: normal;
@@ -54,6 +54,7 @@ textarea {
   height: auto;
 }
 
+// Form group is used to wrap label and input pairs
 .form-group {
   margin-bottom: $gutter-half;
   @include media(tablet) {
@@ -61,21 +62,72 @@ textarea {
   }
 }
 
-.form-group label {
+// Form labels, or for legends styled to look like labels
+.form-label {
+  @include core-19;
   display: block;
   margin-bottom: 5px;
 }
 
+// By default, form controls are 50% width for desktop and 100% width for mobile
 .form-control {
-  width: 96%;
+  width: 100%;
+  box-sizing: border-box;
   @include media(tablet) {
-    width: 350px;
+    width: 50%;
   }
 }
 
-.hint{
+// Set modifier classes for form controls
+.form-control-75 {
+  width: 100%;
+  @include media(tablet) {
+    width: 75%;
+  }
+}
+
+.form-control-50 {
+  width: 100%;
+  @include media(tablet) {
+    width: 50%;
+  }
+}
+
+.form-control-25 {
+  width: 100%;
+  @include media(tablet) {
+    width: 25%;
+  }
+}
+
+// Form hints are light grey and sit under a form control
+.form-hint {
+  @include core-16;
   display: block;
   color: $secondary-text-colour;
-  @include core-16;
   margin-top: 8px;
 }
+
+// Selectable form labels, wrap radio buttons or checkboxes
+// .form-label-selectable {
+//   position: relative;
+//   display: inline-block;
+//   cursor: pointer;
+//   background: #F0F0F0;
+//   padding: 14px 14px 12px 14px;
+//   border: 1px solid #F0F0F0;
+//   margin: 0 16px 0 0;
+// }
+
+// .form-label-selectable span,
+// .form-label-selectable input {
+//   display: inline-block;
+//   vertical-align: middle;
+// }
+
+// .form-label-selectable input {
+//   margin-right: 14px;
+// }
+// .form-label-selectable input:focus {
+//   border: none;
+// }

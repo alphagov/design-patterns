@@ -46,9 +46,6 @@ breadcrumb:
   <div class="inner-block">
     
     <div class="text">
-      <h4 class="heading-19">
-        If you’re a motor trader. <em class="highlight">19px</em>
-      </h4>
       <p>
         Motor traders don’t need to make a SORN on a vehicle if all the following apply: <em class="highlight">19px</em> 
       </p>
@@ -95,6 +92,7 @@ breadcrumb:
   <div class="inner-block">
     
     <div class="text">
+      
       <h2 class="heading-36">
         Disability exemption <em class="highlight">36px</em>
       </h2>
@@ -107,6 +105,13 @@ breadcrumb:
       </h3>
       <p>
         You may be exempt or pay a reduced amount of vehicle tax if you receive certain benefits because of your disability. Find out if you’re eligible and how to apply. <em class="highlight">19px</em>
+      </p>
+
+      <h4 class="heading-19">
+        Disability exemption<em class="highlight">19px</em>
+      </h4>
+      <p>
+        You may be exempt or pay a reduced amount of vehicle tax if you receive certain benefits because of your disability. Find out if you’re eligible and how to apply. 
       </p>
       
     </div>

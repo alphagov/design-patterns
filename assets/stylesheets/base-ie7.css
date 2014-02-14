@@ -580,11 +580,15 @@ Example usage:
 .govuk ol li {
   margin-bottom: 5px;
 }
-/* line 1, ../sass/govuk-helper/_forms.scss */
+/* line 2, ../sass/govuk-helper/_forms.scss */
 .govuk form {
   margin: 0;
 }
-/* line 8, ../sass/govuk-helper/_forms.scss */
+/* line 6, ../sass/govuk-helper/_forms.scss */
+.govuk legend {
+  padding-left: 0;
+}
+/* line 13, ../sass/govuk-helper/_forms.scss */
 .govuk button,
 .govuk input,
 .govuk select,
@@ -593,10 +597,6 @@ Example usage:
   margin: 0;
   vertical-align: baseline;
   *vertical-align: middle;
-}
-/* line 15, ../sass/govuk-helper/_forms.scss */
-.govuk legend {
-  padding-left: 0;
 }
 /* line 20, ../sass/govuk-helper/_forms.scss */
 .govuk button,
@@ -633,35 +633,63 @@ Example usage:
   min-height: 190px;
   height: auto;
 }
-/* line 57, ../sass/govuk-helper/_forms.scss */
+/* line 58, ../sass/govuk-helper/_forms.scss */
 .govuk .form-group {
   margin-bottom: 15px;
   margin-bottom: 30px;
 }
-/* line 64, ../sass/govuk-helper/_forms.scss */
-.govuk .form-group label {
+/* line 66, ../sass/govuk-helper/_forms.scss */
+.govuk .form-label {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.31579;
+  font-weight: 400;
+  text-transform: none;
   display: block;
   margin-bottom: 5px;
 }
-/* line 69, ../sass/govuk-helper/_forms.scss */
-.govuk .form-control {
-  width: 96%;
-  width: 350px;
+@media (max-width: 640px) {
+  /* line 66, ../sass/govuk-helper/_forms.scss */
+  .govuk .form-label {
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }
-/* line 76, ../sass/govuk-helper/_forms.scss */
-.govuk .hint {
-  display: block;
-  color: #6f777b;
+/* line 73, ../sass/govuk-helper/_forms.scss */
+.govuk .form-control {
+  width: 100%;
+  box-sizing: border-box;
+  width: 50%;
+}
+/* line 82, ../sass/govuk-helper/_forms.scss */
+.govuk .form-control-75 {
+  width: 100%;
+  width: 75%;
+}
+/* line 89, ../sass/govuk-helper/_forms.scss */
+.govuk .form-control-50 {
+  width: 100%;
+  width: 50%;
+}
+/* line 96, ../sass/govuk-helper/_forms.scss */
+.govuk .form-control-25 {
+  width: 100%;
+  width: 25%;
+}
+/* line 104, ../sass/govuk-helper/_forms.scss */
+.govuk .form-hint {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
   font-weight: 300;
   text-transform: none;
+  display: block;
+  color: #6f777b;
   margin-top: 8px;
 }
 @media (max-width: 640px) {
-  /* line 76, ../sass/govuk-helper/_forms.scss */
-  .govuk .hint {
+  /* line 104, ../sass/govuk-helper/_forms.scss */
+  .govuk .form-hint {
     font-size: 14px;
     line-height: 1.14286;
   }

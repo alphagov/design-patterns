@@ -36,24 +36,24 @@ breadcrumb:
           <p class="text-secondary">These will not be made public</p>
           
           <div class="form-group">
-            <label for="">Full name</label>
-            <input type="text" class="form-control">
+            <label class="form-label" for="full-name">Full name</label>
+            <input type="text" class="form-control" id="full-name">
           </div>
 
           <div class="form-group">
-            <label for="">Job title</label>
-            <input type="text" class="form-control">
+            <label class="form-label" for="job-title">Job title</label>
+            <input type="text" class="form-control" id="job-title">
           </div>
 
           <div class="form-group">
-            <label for="">Telephone number</label>
-            <input type="text" class="form-control">
-            <span class="hint">Include your country code</span>
+            <label class="form-label" for="telephone-number">Telephone number</label>
+            <input type="text" class="form-control" id="telephone-number">
+            <span class="form-hint">Include your country code</span>
           </div>
 
           <div class="form-group">
-            <label for="">Email address</label>
-            <input type="text" class="form-control">
+            <label  class="form-label" for="email-address">Email address</label>
+            <input type="text" class="form-control" id="email-address">
           </div>
           
           <div class="form-group">
@@ -63,6 +63,37 @@ breadcrumb:
           
         </fieldset>
         
+        <!--
+        <fieldset>
+          
+          <legend class="heading-24">
+            Where do you live?
+          </legend>
+
+          <div class="form-group">
+            <label class="form-label form-label-selectable">
+              <input type="radio" name="radio-group" value="England" class="radio">
+              <span>England</span>
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label form-label-selectable">
+              <input type="radio" name="radio-group" value="Scotland" class="radio">
+              <span>Scotland</span>
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label form-label-selectable">
+              <input type="radio" name="radio-group" value="Wales" class="radio">
+              <span>Wales</span>
+            </label>
+          </div>
+          
+        </fieldset>
+      -->
+      
       </form>
       
     </div><!-- /.inner-block -->
