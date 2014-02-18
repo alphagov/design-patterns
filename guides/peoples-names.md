@@ -30,7 +30,7 @@ A single text field where the user can enter their full name, including title if
   
   <form class="form">
     <div class="form-group">
-      <label for="full-name">Full name</label>
+      <label for="full-name" class="form-label">Full name</label>
       <input type="text" id="full-name" class="form-control">
     </div>
   </form>
@@ -56,11 +56,11 @@ Users enter the different parts of their name into different fields.
 <div class="example">
   <form class="form">
     <div class="form-group">
-      <label for="firstName">First name</label>
+      <label for="firstName" class="form-label">First name</label>
       <input type="text" id="firstName" class="form-control">
     </div>
     <div class="form-group">
-      <label for="lastName">Last name</label>
+      <label for="lastName" class="form-label">Last name</label>
       <input type="text" id="lastName" class="form-control">
     </div>
   </form>

@@ -31,7 +31,7 @@ A single, multi-line text box where users write out the address in full.
   
   <form class="form">
     <div class="form-group">
-      <label for="ex1-address">Full address</label>
+      <label for="ex1-address" class="form-label">Full address</label>
       <textarea type="text" id="ex1-address" class="form-control" rows="5"></textarea>
     </div>
   </form>
@@ -62,7 +62,7 @@ The address is broken down into multiple fields. Here's an example that works fo
   
   <form class="form">
     <div class="form-group">
-      <label for="ex2-street-address">Street address</label>
+      <label for="ex2-street-address" class="form-label">Street address</label>
       <input type="text" id="ex2-street-address" class="form-control">
     </div>
     <div class="form-group">
@@ -70,15 +70,15 @@ The address is broken down into multiple fields. Here's an example that works fo
       <input type="text" id="ex2-street-address-2" class="form-control">
     </div>
     <div class="form-group">
-      <label for="ex2-town">Town or City</label>
+      <label for="ex2-town" class="form-label">Town or City</label>
       <input type="text" id="ex2-town" class="form-control">
     </div>
     <div class="form-group">
-      <label for="ex2-county">County (optional)</label>
+      <label for="ex2-county" class="form-label">County (optional)</label>
       <input type="text" id="ex2-county" class="form-control">
     </div>
     <div class="form-group">
-      <label for="ex2-postcode">Postcode</label>
+      <label for="ex2-postcode" class="form-label">Postcode</label>
       <input type="text" id="ex2-postcode" class="postcode form-control">
     </div>
   </form>
