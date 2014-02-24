@@ -387,19 +387,6 @@ Example usage:
 .govuk .grid-3-4 {
   width: 100%;
 }
-/* line 4, ../sass/govuk-helper/_grid-highlights.scss */
-.govuk .example-highlight-grid .grid-wrapper {
-  background: #bfc1c3;
-}
-/* line 8, ../sass/govuk-helper/_grid-highlights.scss */
-.govuk .example-highlight-grid .grid {
-  background: #f8f8f8;
-}
-/* line 12, ../sass/govuk-helper/_grid-highlights.scss */
-.govuk .example-highlight-grid .grid .is-inner-block-highlight {
-  background: #dee0e2;
-  width: 100%;
-}
 /* line 1, ../sass/govuk-helper/_buttons.scss */
 .govuk .button {
   background-color: #006435;

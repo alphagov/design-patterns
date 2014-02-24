@@ -386,19 +386,6 @@ Example usage:
   width: 100%;
   width: 75%;
 }
-/* line 4, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_grid-highlights.scss */
-.govuk .example-highlight-grid .grid-wrapper {
-  background: #bfc1c3;
-}
-/* line 8, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_grid-highlights.scss */
-.govuk .example-highlight-grid .grid {
-  background: #f8f8f8;
-}
-/* line 12, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_grid-highlights.scss */
-.govuk .example-highlight-grid .grid .is-inner-block-highlight {
-  background: #dee0e2;
-  width: 100%;
-}
 /* line 1, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_buttons.scss */
 .govuk .button {
   background-color: #006435;
@@ -827,4 +814,18 @@ Example usage:
 /* line 33, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/design-patterns/_breadcrumb.scss */
 .breadcrumb a:hover {
   color: #2e8aca;
+}
+
+/* line 4, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_grid-highlights.scss */
+.example-highlight-grid .grid-wrapper {
+  background: #bfc1c3;
+}
+/* line 8, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_grid-highlights.scss */
+.example-highlight-grid .grid {
+  background: #f8f8f8;
+}
+/* line 12, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_grid-highlights.scss */
+.example-highlight-grid .grid .is-inner-block-highlight {
+  background: #dee0e2;
+  width: 100%;
 }

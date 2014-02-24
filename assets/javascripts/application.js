@@ -4,16 +4,20 @@ $(document).ready(function () {
   if ($('.js-highlight-grid').length>0) {
     
     $('.js-highlight-grid').click(function(e) {
-      
+
       e.preventDefault();
       var html = $('html');
       
+      if ($('.is-inner-block-highlight').length>0) {
+        // Don't add more than once
+      } else {
+        $('.grid .inner-block').wrapInner('<div class="is-inner-block-highlight"></div>');
+      }
+      
       if (html.hasClass('example-highlight-grid')) {
           html.removeClass('example-highlight-grid');
-          $('.grid .inner-block').unwrapInner();
       } else {
           html.addClass('example-highlight-grid');
-          $('.grid .inner-block').wrapInner('<div class="is-inner-block-highlight"></div>');
       }
       
     });
