@@ -639,17 +639,17 @@ Example usage:
   width: 50%;
 }
 /* line 82, ../sass/govuk-helper/_forms.scss */
-.govuk .form-control-75 {
+.govuk .form-control-3-4 {
   width: 100%;
   width: 75%;
 }
 /* line 89, ../sass/govuk-helper/_forms.scss */
-.govuk .form-control-50 {
+.govuk .form-control-1-2 {
   width: 100%;
   width: 50%;
 }
 /* line 96, ../sass/govuk-helper/_forms.scss */
-.govuk .form-control-25 {
+.govuk .form-control-1-4 {
   width: 100%;
   width: 25%;
 }

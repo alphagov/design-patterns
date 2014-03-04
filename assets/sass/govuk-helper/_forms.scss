@@ -78,22 +78,22 @@ textarea {
   }
 }
 
-// Set modifier classes for form controls
-.form-control-75 {
+// Form control sizes
+.form-control-3-4 {
   width: 100%;
   @include media(tablet) {
     width: 75%;
   }
 }
 
-.form-control-50 {
+.form-control-1-2 {
   width: 100%;
   @include media(tablet) {
     width: 50%;
   }
 }
 
-.form-control-25 {
+.form-control-1-4 {
   width: 100%;
   @include media(tablet) {
     width: 25%;
@@ -107,6 +107,13 @@ textarea {
   color: $secondary-text-colour;
   margin-top: 8px;
 }
+
+// Form elements
+
+// Labels and checkboxes
+
+// Labels and radio buttons
+
 
 // Selectable form labels, wrap radio buttons or checkboxes
 // .form-label-selectable {
