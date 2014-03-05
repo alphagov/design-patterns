@@ -3,6 +3,10 @@ form {
   margin: 0;
 }
 
+fieldset {
+  margin-left: 0;
+}
+
 legend {
   padding-left: 0;
 }
@@ -62,6 +66,11 @@ textarea {
   }
 }
 
+.form-group-compound {
+  margin-bottom: 10px;
+}
+
+
 // Form labels, or for legends styled to look like labels
 .form-label {
   @include core-19;
@@ -100,6 +109,13 @@ textarea {
   }
 }
 
+.form-control-1-8 {
+  width: 100%;
+  @include media(tablet) {
+    width: 12.5%;
+  }
+}
+
 // Form hints are light grey and sit under a form control
 .form-hint {
   @include core-16;
@@ -108,33 +124,72 @@ textarea {
   margin-top: 8px;
 }
 
-// Form elements
+// Inline form layout (tablet and up)
+.form-group-inline .form-checkbox,
+.form-group-inline .form-radio {
+  margin-bottom: $gutter-half;
+  @include media(tablet) {
+    float: left;
+    margin-right: $gutter-half;
+    margin-bottom: 0;
+  }
+}
 
-// Labels and checkboxes
+// Block form layout (tablet and up)
+.form-group-block {
+  float: left;
+  width: 100%;
+  @extend %contain-floats;
+}
+.form-group-block .form-checkbox,
+.form-group-block .form-radio {
+  margin-bottom: $gutter-half;
+}
 
-// Labels and radio buttons
+// Large hit areas for radio buttons and checkboxes
+.form-checkbox label,
+.form-radio label {
+  display: inline-block;
+  padding: ($gutter-half $gutter $gutter-half $gutter-half);
+  background: $grey-3;
+  @include media(tablet) {
+    display: inline-block;
+  }
+
+  // Full width for mobile
+  @include box-sizing(border-box);
+  width: 100%;
+  @include media(tablet) {
+    // Auto width for tablet
+    width: auto;
+  }
+}
+
+// Only if JavaScript is enabled
+// Remove focus styles from radio and checkboxes
+.form-checkbox input:focus,
+.form-radio input:focus {
+  outline: none;
+}
+// Instead, add focus styles to labels
+.add-focus {
+  outline: 3px solid $yellow;
+}
+
+// Radio buttons & checkboxes
+.form-checkbox input,
+.form-radio input {
+  margin-right: 8px;
+}
+
+// Grey indented panels
+.form-group-indent {
+  border-left: 5px solid $grey-3;
+  padding-left: $gutter-half;
+  margin: $gutter 0;
+}
 
 
-// Selectable form labels, wrap radio buttons or checkboxes
-// .form-label-selectable {
-//   position: relative;
-//   display: inline-block;
-//   cursor: pointer;
-//   background: #F0F0F0;
-//   padding: 14px 14px 12px 14px;
-//   border: 1px solid #F0F0F0;
-//   margin: 0 16px 0 0;
-// }
 
-// .form-label-selectable span,
-// .form-label-selectable input {
-//   display: inline-block;
-//   vertical-align: middle;
-// }
 
-// .form-label-selectable input {
-//   margin-right: 14px;
-// }
-// .form-label-selectable input:focus {
-//   border: none;
-// }
+
