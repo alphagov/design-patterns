@@ -26,12 +26,12 @@ $(document).ready(function () {
   // Example - Form focus styles
   if ($('.form').length>0) {
 
-      $(".form-radio input, .form-checkbox input").focus(function() {
+      $(".block-label input").focus(function() {
         $("label[for='" + this.id + "']").addClass("add-focus");
       }).blur(function() {
         $("label").removeClass("add-focus");
       });
-
+      
   }
 
   // Convert a text field to a 'Title' select box

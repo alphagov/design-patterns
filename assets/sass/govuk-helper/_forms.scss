@@ -1,15 +1,36 @@
 // Normalize form elements
+
 form {
   margin: 0;
 }
 
 fieldset {
+  width: 100%;
+  float: left;
+  clear: both;
   margin-left: 0;
 }
 
 legend {
   padding-left: 0;
+  width: 100%;
+  float: left;
+  clear: both;
 }
+
+// Swap legend margins for padding
+legend.heading-36 {
+  margin: 0;
+  padding-top: 45px;
+  padding-bottom: ($gutter*1.5);
+}
+
+legend.heading-24 {
+  margin: 0;
+  padding-top: 45px;
+  padding-bottom: 20px
+}
+
 
 button,
 input,
@@ -59,10 +80,14 @@ textarea {
 }
 
 // Form group is used to wrap label and input pairs
+
 .form-group {
-  margin-bottom: $gutter-half;
+  float: left;
+  width: 100%;
+  clear: both;
+  @extend .cf;
   @include media(tablet) {
-    margin-bottom: $gutter;
+    margin-bottom: ($gutter*1.5);
   }
 }
 
@@ -72,13 +97,16 @@ textarea {
 
 
 // Form labels, or for legends styled to look like labels
-.form-label {
+.form-label,
+.form-group label {
   @include core-19;
   display: block;
   margin-bottom: 5px;
 }
 
+
 // By default, form controls are 50% width for desktop and 100% width for mobile
+
 .form-control {
   width: 100%;
   box-sizing: border-box;
@@ -87,7 +115,8 @@ textarea {
   }
 }
 
-// Form control sizes
+// Form control widths
+
 .form-control-3-4 {
   width: 100%;
   @include media(tablet) {
@@ -116,29 +145,80 @@ textarea {
   }
 }
 
-// Form hints are light grey and sit under a form control
+// Form hints & examples are light grey and sit above a form control
+
 .form-hint {
-  @include core-16;
   display: block;
   color: $secondary-text-colour;
   margin-top: 8px;
+  margin-bottom: 5px;
+}
+
+
+// Date of birth
+
+.date-of-birth legend {
+  @extend .form-label;
+}
+.date-of-birth label {
+  display: block;
+  color: $grey-1;
+  margin-bottom: 5px;
+}
+.date-of-birth .form-group {  
+  @include media(tablet){
+    width: 50px;
+    float: left;
+    margin-right: 20px;
+    clear: none;
+  }
+}
+.date-of-birth .form-group-year {
+  @include media(tablet){
+    width: 70px;
+  }
+}
+.date-of-birth .form-group input {
+  width: 100%;
+}
+
+// Vertical alignment of checkboxes
+
+.form-checkbox input {
+  vertical-align: middle;
+  margin: -2px 5px 0 0;
+}
+
+// Vertical alignment of radio buttons
+
+.form-radio input {
+  vertical-align: middle;
+  margin: -4px 5px 0 0;
+}
+
+// Grey indented panels
+
+.form-group-indent {
+  @include box-sizing(border-box);
+  border-left: 5px solid $grey-3;
+  padding-left: $gutter-half;
+  margin: ($gutter $gutter-two-thirds $gutter 0);
 }
 
 // Inline form layout (tablet and up)
+.form-group-inline {
+  padding-top: $gutter-half;
+}
 .form-group-inline .form-checkbox,
 .form-group-inline .form-radio {
+  float: left;
+  margin-right: $gutter-half;
   margin-bottom: $gutter-half;
-  @include media(tablet) {
-    float: left;
-    margin-right: $gutter-half;
-    margin-bottom: 0;
-  }
 }
 
 // Block form layout (tablet and up)
+
 .form-group-block {
-  float: left;
-  width: 100%;
   @extend %contain-floats;
 }
 .form-group-block .form-checkbox,
@@ -146,50 +226,28 @@ textarea {
   margin-bottom: $gutter-half;
 }
 
-// Large hit areas for radio buttons and checkboxes
-.form-checkbox label,
-.form-radio label {
+// Large hit areas for labels wrapping radio buttons and checkboxes
+.form-group label.block-label {
   display: inline-block;
-  padding: ($gutter-half $gutter $gutter-half $gutter-half);
-  background: $grey-3;
-  @include media(tablet) {
-    display: inline-block;
-  }
-
-  // Full width for mobile
-  @include box-sizing(border-box);
-  width: 100%;
-  @include media(tablet) {
-    // Auto width for tablet
-    width: auto;
-  }
 }
+
+.block-label {
+  display: inline-block;
+  padding: (18px $gutter $gutter-half $gutter-half);
+  background: $grey-3;
+}
+
 
 // Only if JavaScript is enabled
 // Remove focus styles from radio and checkboxes
-.form-checkbox input:focus,
-.form-radio input:focus {
+
+.js-enabled .block-label input:focus {
   outline: none;
 }
+
 // Instead, add focus styles to labels
-.add-focus {
+
+.js-enabled .add-focus {
   outline: 3px solid $yellow;
 }
-
-// Radio buttons & checkboxes
-.form-checkbox input,
-.form-radio input {
-  margin-right: 8px;
-}
-
-// Grey indented panels
-.form-group-indent {
-  border-left: 5px solid $grey-3;
-  padding-left: $gutter-half;
-  margin: $gutter 0;
-}
-
-
-
-
 
