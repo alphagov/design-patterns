@@ -4,8 +4,13 @@ pre {
   margin-bottom: 20px;
 }
 
-.lede {
+.lede,
+.lead {
   @include core-24;
+}
+
+.copy-16 {
+  @include core-16;
 }
 
 // Set a max-width for text blocks

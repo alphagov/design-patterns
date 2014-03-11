@@ -4,7 +4,7 @@
   position: relative;
   overflow: hidden;
   
-  border: 1px solid $border-colour;
+  // border: 1px solid $black;
   outline: $gutter-half solid $highlight-colour;
   margin: $gutter 0 $gutter*2 0;
   padding: $gutter-half;
@@ -120,3 +120,14 @@ code {
   @include bold-24;
   margin-bottom: 10px;
 }
+
+// Find out more
+
+.find-out-more {
+  background-color: $panel-colour;
+  border-bottom: 5px solid $black;
+  outline: 15px solid $panel-colour;
+  padding-bottom: $gutter-half;
+  margin-bottom: ($gutter*2);
+}
+
