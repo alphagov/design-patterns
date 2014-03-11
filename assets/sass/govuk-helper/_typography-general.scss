@@ -4,6 +4,10 @@ pre {
   margin-bottom: 20px;
 }
 
+.lede {
+  @include core-24;
+}
+
 // Set a max-width for text blocks
 // Less than 75 characters per line of text
 

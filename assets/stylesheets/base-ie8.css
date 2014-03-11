@@ -201,7 +201,22 @@ Example usage:
   margin-top: 5px;
   margin-bottom: 20px;
 }
-/* line 10, ../sass/govuk-helper/_typography-general.scss */
+/* line 7, ../sass/govuk-helper/_typography-general.scss */
+.govuk .lede {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+}
+@media (max-width: 640px) {
+  /* line 7, ../sass/govuk-helper/_typography-general.scss */
+  .govuk .lede {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+/* line 14, ../sass/govuk-helper/_typography-general.scss */
 .govuk .text {
   max-width: 30em;
 }
