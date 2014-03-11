@@ -28,8 +28,9 @@ breadcrumb:
         {{ page.title }} {% include _phase-block.html %}
       </h1>
       
-      <p>
-        This is an intro paragraph. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper.</p>
+      <p class="lede">
+        This is an intro paragraph at 24px. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper.
+      </p>
 
       <h2 class="heading-36">A 36px heading</h2>
 
@@ -55,7 +56,7 @@ breadcrumb:
       </ul>
 
       <ol class="list-number">
-        <li>Here is a bulleted list.</li>
+        <li>Here is a numbered list.</li>
         <li>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</li>
         <li>Vestibulum id ligula porta felis euismod semper.</li>
         <li>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
