@@ -1,3 +1,85 @@
+// Sass Map for colour palette
+$palettes: (
+  purple: (
+    base: $purple,
+    mid:  $purple-50,
+    light:$purple-25
+  ),
+  mauve: (
+    base: $mauve,
+    mid:  $mauve-50,
+    light:$mauve-25
+  ),
+  fuschia: (
+    base: $fuschia,
+    mid:  $fuschia-50,
+    light:$fuschia-25
+  ),
+  pink: (
+    base: $pink,
+    mid:  $pink-50,
+    light:$pink-25
+  ),
+  baby-pink: (
+    base: $baby-pink,
+    mid:  $baby-pink-50,
+    light:$baby-pink-25
+  ),
+  red: (
+    base: $red,
+    mid:  $red-50,
+    light:$red-25
+  ),
+  mellow-red: (
+    base: $mellow-red,
+    mid:  $mellow-red-50,
+    light:$mellow-red-25
+  ),
+  orange: (
+    base: $orange,
+    mid:  $orange-50,
+    light:$orange-25
+  ),
+  brown: (
+    base: $brown,
+    mid:  $brown-50,
+    light:$brown-25
+  ),
+  yellow: (
+    base: $yellow,
+    mid:  $yellow-50,
+    light:$yellow-25
+  ),
+  green: (
+    base: $green,
+    mid:  $green-50,
+    light:$green-25
+  ),
+  grass-green: (
+    base: $grass-green,
+    mid:  $grass-green-50,
+    light:$grass-green-25
+  ),
+  turquoise: (
+    base: $turquoise,
+    mid:  $turquoise-50,
+    light:$turquoise-25
+  ),
+  light-blue: (
+    base: $light-blue,
+    mid:  $light-blue-50,
+    light:$light-blue-25
+  )
+);
+
+@function palette($palette, $tone: 'base') {
+  @return map-get(map-get($palettes, $palette), $tone);
+}
+
+// Usage
+// color: palette(purple);
+// color: palette(purple, light);
+
 .text-secondary {
   color: $secondary-text-colour;
 }

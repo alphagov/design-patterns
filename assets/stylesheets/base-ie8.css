@@ -9,11 +9,9 @@
 @-ms-viewport {
   width: device-width;
 }
-
 @-o-viewport {
   width: device-width;
 }
-
 /* Usage:
    @include inline-block
 
@@ -42,28 +40,22 @@
   font-family: GDS-Logo;
   src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica");
 }
-
 @-ms-viewport {
   width: device-width;
 }
-
 @-o-viewport {
   width: device-width;
 }
-
 @font-face {
   font-family: GDS-Logo;
   src: local("HelveticaNeue"), local("Helvetica Neue"), local("Arial"), local("Helvetica");
 }
-
 @-ms-viewport {
   width: device-width;
 }
-
 @-o-viewport {
   width: device-width;
 }
-
 /* Cross-browser shims
 
   Ways of normalising properties across browsers.
@@ -71,11 +63,9 @@
 @-ms-viewport {
   width: device-width;
 }
-
 @-o-viewport {
   width: device-width;
 }
-
 /* Usage:
    @include inline-block
 
@@ -107,11 +97,9 @@
 @-ms-viewport {
   width: device-width;
 }
-
 @-o-viewport {
   width: device-width;
 }
-
 /* Usage:
    @include inline-block
 
@@ -143,11 +131,9 @@
 @-ms-viewport {
   width: device-width;
 }
-
 @-o-viewport {
   width: device-width;
 }
-
 /*
 
 Mixin and defaults for making buttons on GOV.UK services.
@@ -195,13 +181,13 @@ Example usage:
     line-height: 1.25;
   }
 }
-/* line 2, ../sass/govuk-helper/_typography-general.scss */
+/* line 1, ../sass/govuk-helper/_typography-general.scss */
 .govuk p,
 .govuk pre {
   margin-top: 5px;
   margin-bottom: 20px;
 }
-/* line 8, ../sass/govuk-helper/_typography-general.scss */
+/* line 7, ../sass/govuk-helper/_typography-general.scss */
 .govuk .lede,
 .govuk .lead {
   font-family: "nta", Arial, sans-serif;
@@ -211,7 +197,7 @@ Example usage:
   text-transform: none;
 }
 @media (max-width: 640px) {
-  /* line 8, ../sass/govuk-helper/_typography-general.scss */
+  /* line 7, ../sass/govuk-helper/_typography-general.scss */
   .govuk .lede,
   .govuk .lead {
     font-size: 20px;
@@ -451,7 +437,7 @@ Example usage:
 .govuk .button:visited {
   background-color: #006435;
 }
-/* line 55, ../govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
+/* line 54, ../govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
 .govuk .button:hover, .govuk .button:focus {
   background-color: #004b27;
 }
@@ -462,7 +448,7 @@ Example usage:
   -moz-box-shadow: 0 0 0 #006435;
   box-shadow: 0 0 0 #006435;
 }
-/* line 66, ../govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
+/* line 64, ../govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
 .govuk .button.disabled, .govuk .button[disabled="disabled"], .govuk .button[disabled] {
   zoom: 1;
   filter: alpha(opacity=50);
@@ -481,7 +467,7 @@ Example usage:
   box-shadow: 0 2px 0 #00180c;
   border-bottom: 2px solid #00180c;
 }
-/* line 86, ../govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
+/* line 84, ../govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
 .govuk .button:hover, .govuk .button:focus, .govuk .button:visited {
   color: white;
 }
@@ -508,7 +494,7 @@ Example usage:
   margin-left: 0;
   margin-right: 0;
 }
-/* line 134, ../govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
+/* line 132, ../govuk_frontend_toolkit/stylesheets/design-patterns/_buttons.scss */
 .govuk .button[type="submit"], .govuk .button[type="reset"], .govuk .button[type="button"] {
   filter: chroma(color=black);
 }
@@ -520,7 +506,53 @@ Example usage:
 .govuk .button:focus {
   outline: 3px solid #ffbf47;
 }
-/* line 11, ../sass/govuk-helper/_buttons.scss */
+/* line 12, ../sass/govuk-helper/_buttons.scss */
+.govuk .get-started .button {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  font-weight: 700;
+  line-height: 0.66667;
+  background-color: #00823b;
+  padding: 0.60em 1.7em 0.45em 0.67em;
+  background-image: url(https://assets.digital.cabinet-office.gov.uk/static/icon-pointer-063838cde108768e30b077e5303783fc.png);
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+}
+@media (max-width: 640px) {
+  /* line 12, ../sass/govuk-helper/_buttons.scss */
+  .govuk .get-started .button {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+/* line 22, ../sass/govuk-helper/_buttons.scss */
+.govuk .get-started .button:hover {
+  background-color: #006435;
+}
+/* line 26, ../sass/govuk-helper/_buttons.scss */
+.govuk .get-started .destination {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  font-weight: 400;
+  text-transform: none;
+  color: #2e3133;
+  display: block;
+  margin-top: 7px;
+  max-width: 182px;
+}
+@media (max-width: 640px) {
+  /* line 26, ../sass/govuk-helper/_buttons.scss */
+  .govuk .get-started .destination {
+    font-size: 12px;
+    line-height: 1.25;
+  }
+}
+/* line 35, ../sass/govuk-helper/_buttons.scss */
 .govuk .button-link {
   background: none;
   border: none;
@@ -534,23 +566,23 @@ Example usage:
   padding: 10px 10px 5px 10px;
   vertical-align: top;
 }
-/* line 27, ../sass/govuk-helper/_buttons.scss */
+/* line 51, ../sass/govuk-helper/_buttons.scss */
 .govuk .button-link:hover {
   color: #2e8aca;
 }
-/* line 30, ../sass/govuk-helper/_buttons.scss */
+/* line 54, ../sass/govuk-helper/_buttons.scss */
 .govuk .button-link:focus {
   outline: 3px solid #ffbf47;
 }
-/* line 1, ../sass/govuk-helper/_colours.scss */
+/* line 83, ../sass/govuk-helper/_colours.scss */
 .govuk .text-secondary {
   color: #6f777b;
 }
-/* line 5, ../sass/govuk-helper/_colours.scss */
+/* line 87, ../sass/govuk-helper/_colours.scss */
 .govuk .bg-hm-government {
   background: #0076c0;
 }
-/* line 4, ../sass/govuk-helper/_lists.scss */
+/* line 1, ../sass/govuk-helper/_lists.scss */
 .govuk dl,
 .govuk menu,
 .govuk ol,
@@ -561,7 +593,7 @@ Example usage:
 .govuk dd {
   margin-left: 0;
 }
-/* line 14, ../sass/govuk-helper/_lists.scss */
+/* line 12, ../sass/govuk-helper/_lists.scss */
 .govuk menu,
 .govuk ol,
 .govuk ul {
@@ -569,12 +601,12 @@ Example usage:
   margin-bottom: 20px;
   padding: 0;
 }
-/* line 21, ../sass/govuk-helper/_lists.scss */
+/* line 20, ../sass/govuk-helper/_lists.scss */
 .govuk ul,
 .govuk ol {
   list-style-type: none;
 }
-/* line 26, ../sass/govuk-helper/_lists.scss */
+/* line 25, ../sass/govuk-helper/_lists.scss */
 .govuk ul li,
 .govuk ol li {
   margin-bottom: 5px;
@@ -619,7 +651,7 @@ Example usage:
   padding-top: 45px;
   padding-bottom: 20px;
 }
-/* line 38, ../sass/govuk-helper/_forms.scss */
+/* line 35, ../sass/govuk-helper/_forms.scss */
 .govuk button,
 .govuk input,
 .govuk select,
@@ -629,12 +661,12 @@ Example usage:
   vertical-align: baseline;
   *vertical-align: middle;
 }
-/* line 45, ../sass/govuk-helper/_forms.scss */
+/* line 44, ../sass/govuk-helper/_forms.scss */
 .govuk button,
 .govuk input {
   line-height: normal;
 }
-/* line 63, ../sass/govuk-helper/_forms.scss */
+/* line 49, ../sass/govuk-helper/_forms.scss */
 .govuk input[type="text"],
 .govuk input[type="email"],
 .govuk input[type="date"],
@@ -675,7 +707,7 @@ Example usage:
 .govuk .form-group-compound {
   margin-bottom: 10px;
 }
-/* line 101, ../sass/govuk-helper/_forms.scss */
+/* line 100, ../sass/govuk-helper/_forms.scss */
 .govuk .form-label, .govuk .date-of-birth legend,
 .govuk .form-group label {
   font-family: "nta", Arial, sans-serif;
@@ -687,7 +719,7 @@ Example usage:
   margin-bottom: 5px;
 }
 @media (max-width: 640px) {
-  /* line 101, ../sass/govuk-helper/_forms.scss */
+  /* line 100, ../sass/govuk-helper/_forms.scss */
   .govuk .form-label, .govuk .date-of-birth legend,
   .govuk .form-group label {
     font-size: 16px;
@@ -771,14 +803,14 @@ Example usage:
 .govuk .form-group-inline {
   padding-top: 15px;
 }
-/* line 213, ../sass/govuk-helper/_forms.scss */
+/* line 212, ../sass/govuk-helper/_forms.scss */
 .govuk .form-group-inline .form-checkbox,
 .govuk .form-group-inline .form-radio {
   float: left;
   margin-right: 15px;
   margin-bottom: 15px;
 }
-/* line 225, ../sass/govuk-helper/_forms.scss */
+/* line 224, ../sass/govuk-helper/_forms.scss */
 .govuk .form-group-block .form-checkbox,
 .govuk .form-group-block .form-radio {
   margin-bottom: 15px;
@@ -842,7 +874,7 @@ Example usage:
   padding: 0;
   margin: 0;
 }
-/* line 10, ../sass/design-patterns/_phase-block.scss */
+/* line 9, ../sass/design-patterns/_phase-block.scss */
 .phase-block .alpha,
 .phase-block .beta {
   display: inline;
@@ -978,7 +1010,7 @@ Example usage:
 .progress-indicator {
   margin-bottom: 30px;
 }
-/* line 12, ../sass/design-patterns/_progress-indicator.scss */
+/* line 11, ../sass/design-patterns/_progress-indicator.scss */
 .progress-indicator ol,
 .progress-indicator ul {
   border-bottom: 1px solid;
@@ -1026,7 +1058,17 @@ Example usage:
   float: right;
 }
 
-/* line 1, ../sass/design-guide/_guide-styles.scss */
+/* line 83, ../sass/govuk-helper/_colours.scss */
+.text-secondary {
+  color: #6f777b;
+}
+
+/* line 87, ../sass/govuk-helper/_colours.scss */
+.bg-hm-government {
+  background: #0076c0;
+}
+
+/* line 3, ../sass/design-guide/_guide-styles.scss */
 .example {
   position: relative;
   overflow: hidden;
@@ -1035,18 +1077,18 @@ Example usage:
   padding: 15px;
   padding: 30px 15px;
 }
-/* line 15, ../sass/design-guide/_guide-styles.scss */
+/* line 17, ../sass/design-guide/_guide-styles.scss */
 .example.example-wide {
   margin-right: 0;
   margin-right: -33.33%;
 }
-/* line 22, ../sass/design-guide/_guide-styles.scss */
+/* line 24, ../sass/design-guide/_guide-styles.scss */
 .example .highlight {
   font-style: normal;
   color: #0076c0;
 }
 
-/* line 28, ../sass/design-guide/_guide-styles.scss */
+/* line 30, ../sass/design-guide/_guide-styles.scss */
 code {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
@@ -1057,14 +1099,14 @@ code {
   padding: 0 4px;
 }
 @media (max-width: 640px) {
-  /* line 28, ../sass/design-guide/_guide-styles.scss */
+  /* line 30, ../sass/design-guide/_guide-styles.scss */
   code {
     font-size: 14px;
     line-height: 1.14286;
   }
 }
 
-/* line 34, ../sass/design-guide/_guide-styles.scss */
+/* line 36, ../sass/design-guide/_guide-styles.scss */
 .example code {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
@@ -1078,14 +1120,14 @@ code {
   padding: 0 0 30px 0;
 }
 @media (max-width: 640px) {
-  /* line 34, ../sass/design-guide/_guide-styles.scss */
+  /* line 36, ../sass/design-guide/_guide-styles.scss */
   .example code {
     font-size: 14px;
     line-height: 1.14286;
   }
 }
 
-/* line 45, ../sass/design-guide/_guide-styles.scss */
+/* line 47, ../sass/design-guide/_guide-styles.scss */
 .example .ribbon {
   background-color: #85994b;
   overflow: hidden;
@@ -1101,14 +1143,14 @@ code {
   padding: 3px 50px;
 }
 
-/* line 60, ../sass/design-guide/_guide-styles.scss */
+/* line 62, ../sass/design-guide/_guide-styles.scss */
 .example-grid {
   background: white;
   padding: 15px 0 10px 0;
   padding: 25px 0 20px 0;
 }
 
-/* line 67, ../sass/design-guide/_guide-styles.scss */
+/* line 69, ../sass/design-guide/_guide-styles.scss */
 .example-grid p {
   width: 100%;
   background: url("../images/example/grid.png") 0 0 repeat;
@@ -1119,39 +1161,31 @@ code {
   text-indent: -99em;
 }
 
-/* line 79, ../sass/design-guide/_guide-styles.scss */
-.example .swatch {
-  width: 60px;
-  height: 60px;
-  display: block;
-  margin-bottom: 30px;
-}
-
-/* line 85, ../sass/design-guide/_guide-styles.scss */
+/* line 81, ../sass/design-guide/_guide-styles.scss */
 .example .data p {
   margin-bottom: 0;
 }
 
-/* line 89, ../sass/design-guide/_guide-styles.scss */
+/* line 85, ../sass/design-guide/_guide-styles.scss */
 .example-images {
   padding-left: 0;
   padding-right: 0;
 }
 
-/* line 94, ../sass/design-guide/_guide-styles.scss */
+/* line 90, ../sass/design-guide/_guide-styles.scss */
 .example-images img {
   max-width: 100%;
   vertical-align: top;
 }
 
-/* line 99, ../sass/design-guide/_guide-styles.scss */
+/* line 95, ../sass/design-guide/_guide-styles.scss */
 .page-actions {
   margin: 30px 0;
   list-style-type: none;
   padding-left: 0;
 }
 
-/* line 105, ../sass/design-guide/_guide-styles.scss */
+/* line 101, ../sass/design-guide/_guide-styles.scss */
 .page-actions li {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
@@ -1162,20 +1196,20 @@ code {
   margin-bottom: 10px;
 }
 @media (max-width: 640px) {
-  /* line 105, ../sass/design-guide/_guide-styles.scss */
+  /* line 101, ../sass/design-guide/_guide-styles.scss */
   .page-actions li {
     font-size: 16px;
     line-height: 1.25;
   }
 }
 
-/* line 110, ../sass/design-guide/_guide-styles.scss */
+/* line 106, ../sass/design-guide/_guide-styles.scss */
 .page-metadata {
   border-top: 5px solid #0b0c0c;
   padding-top: 20px;
 }
 
-/* line 115, ../sass/design-guide/_guide-styles.scss */
+/* line 111, ../sass/design-guide/_guide-styles.scss */
 .page-metadata dt {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
@@ -1184,14 +1218,14 @@ code {
   text-transform: none;
 }
 @media (max-width: 640px) {
-  /* line 115, ../sass/design-guide/_guide-styles.scss */
+  /* line 111, ../sass/design-guide/_guide-styles.scss */
   .page-metadata dt {
     font-size: 14px;
     line-height: 1.14286;
   }
 }
 
-/* line 119, ../sass/design-guide/_guide-styles.scss */
+/* line 115, ../sass/design-guide/_guide-styles.scss */
 .page-metadata dd {
   font-family: "nta", Arial, sans-serif;
   font-size: 24px;
@@ -1202,18 +1236,345 @@ code {
   margin-bottom: 10px;
 }
 @media (max-width: 640px) {
-  /* line 119, ../sass/design-guide/_guide-styles.scss */
+  /* line 115, ../sass/design-guide/_guide-styles.scss */
   .page-metadata dd {
     font-size: 20px;
     line-height: 1.2;
   }
 }
 
-/* line 126, ../sass/design-guide/_guide-styles.scss */
+/* line 122, ../sass/design-guide/_guide-styles.scss */
 .find-out-more {
   background-color: #dee0e2;
   border-bottom: 5px solid #0b0c0c;
   outline: 15px solid #dee0e2;
   padding-bottom: 15px;
   margin-bottom: 60px;
+}
+
+/* line 132, ../sass/design-guide/_guide-styles.scss */
+.swatch-wrapper {
+  float: left;
+  width: 20%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* line 162, ../sass/design-guide/_guide-styles.scss */
+.swatch-wrapper li {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none;
+}
+@media (max-width: 640px) {
+  /* line 162, ../sass/design-guide/_guide-styles.scss */
+  .swatch-wrapper li {
+    font-size: 14px;
+    line-height: 1.14286;
+  }
+}
+
+/* line 165, ../sass/design-guide/_guide-styles.scss */
+.swatch-wrapper b {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 170, ../sass/design-guide/_guide-styles.scss */
+.swatch {
+  width: 60px;
+  height: 60px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  margin: 0 auto 15px auto;
+}
+
+/* line 181, ../sass/design-guide/_guide-styles.scss */
+.swatch-text-colour {
+  background-color: #0b0c0c;
+}
+
+/* line 184, ../sass/design-guide/_guide-styles.scss */
+.swatch-text-secondary {
+  background-color: #6f777b;
+}
+
+/* line 187, ../sass/design-guide/_guide-styles.scss */
+.swatch-page-colour {
+  background-color: white;
+  border: 1px solid #dee0e2;
+}
+
+/* line 192, ../sass/design-guide/_guide-styles.scss */
+.swatch-link-colour {
+  background-color: #005ea5;
+}
+
+/* line 195, ../sass/design-guide/_guide-styles.scss */
+.swatch-link-colour-visited {
+  background-color: #005ea5;
+}
+
+/* line 198, ../sass/design-guide/_guide-styles.scss */
+.swatch-link-colour-hover {
+  background-color: #2e8aca;
+}
+
+/* line 202, ../sass/design-guide/_guide-styles.scss */
+.swatch-border-colour {
+  background-color: #bfc1c3;
+}
+
+/* line 205, ../sass/design-guide/_guide-styles.scss */
+.swatch-panel-colour {
+  background-color: #dee0e2;
+}
+
+/* line 208, ../sass/design-guide/_guide-styles.scss */
+.swatch-highlight-colour {
+  background-color: #f8f8f8;
+}
+
+/* line 212, ../sass/design-guide/_guide-styles.scss */
+.swatch-black {
+  background-color: #0b0c0c;
+}
+
+/* line 215, ../sass/design-guide/_guide-styles.scss */
+.swatch-grey-1 {
+  background-color: #6f777b;
+}
+
+/* line 218, ../sass/design-guide/_guide-styles.scss */
+.swatch-grey-2 {
+  background-color: #bfc1c3;
+}
+
+/* line 221, ../sass/design-guide/_guide-styles.scss */
+.swatch-grey-3 {
+  background-color: #dee0e2;
+}
+
+/* line 224, ../sass/design-guide/_guide-styles.scss */
+.swatch-grey-4 {
+  background-color: #f8f8f8;
+}
+
+/* line 227, ../sass/design-guide/_guide-styles.scss */
+.swatch-white {
+  background-color: white;
+  border: 1px solid #dee0e2;
+}
+
+/* line 237, ../sass/design-guide/_guide-styles.scss */
+.swatch-purple {
+  background-color: #2e358b;
+}
+
+/* line 240, ../sass/design-guide/_guide-styles.scss */
+.swatch-purple-mid {
+  background-color: #9799c4;
+}
+
+/* line 243, ../sass/design-guide/_guide-styles.scss */
+.swatch-purple-light {
+  background-color: #d5d6e7;
+}
+
+/* line 237, ../sass/design-guide/_guide-styles.scss */
+.swatch-mauve {
+  background-color: #6f72af;
+}
+
+/* line 240, ../sass/design-guide/_guide-styles.scss */
+.swatch-mauve-mid {
+  background-color: #b7b9d7;
+}
+
+/* line 243, ../sass/design-guide/_guide-styles.scss */
+.swatch-mauve-light {
+  background-color: #e2e2ef;
+}
+
+/* line 237, ../sass/design-guide/_guide-styles.scss */
+.swatch-fuschia {
+  background-color: #912b88;
+}
+
+/* line 240, ../sass/design-guide/_guide-styles.scss */
+.swatch-fuschia-mid {
+  background-color: #c994c3;
+}
+
+/* line 243, ../sass/design-guide/_guide-styles.scss */
+.swatch-fuschia-light {
+  background-color: #e9d4e6;
+}
+
+/* line 237, ../sass/design-guide/_guide-styles.scss */
+.swatch-pink {
+  background-color: #d53880;
+}
+
+/* line 240, ../sass/design-guide/_guide-styles.scss */
+.swatch-pink-mid {
+  background-color: #eb9bbe;
+}
+
+/* line 243, ../sass/design-guide/_guide-styles.scss */
+.swatch-pink-light {
+  background-color: #f6d7e5;
+}
+
+/* line 237, ../sass/design-guide/_guide-styles.scss */
+.swatch-baby-pink {
+  background-color: #f499be;
+}
+
+/* line 240, ../sass/design-guide/_guide-styles.scss */
+.swatch-baby-pink-mid {
+  background-color: #faccdf;
+}
+
+/* line 243, ../sass/design-guide/_guide-styles.scss */
+.swatch-baby-pink-light {
+  background-color: #fdebf2;
+}
+
+/* line 237, ../sass/design-guide/_guide-styles.scss */
+.swatch-red {
+  background-color: #b10e1e;
+}
+
+/* line 240, ../sass/design-guide/_guide-styles.scss */
+.swatch-red-mid {
+  background-color: #d9888c;
+}
+
+/* line 243, ../sass/design-guide/_guide-styles.scss */
+.swatch-red-light {
+  background-color: #efcfd1;
+}
+
+/* line 237, ../sass/design-guide/_guide-styles.scss */
+.swatch-mellow-red {
+  background-color: #df3034;
+}
+
+/* line 240, ../sass/design-guide/_guide-styles.scss */
+.swatch-mellow-red-mid {
+  background-color: #ef9998;
+}
+
+/* line 243, ../sass/design-guide/_guide-styles.scss */
+.swatch-mellow-red-light {
+  background-color: #f9d6d6;
+}
+
+/* line 237, ../sass/design-guide/_guide-styles.scss */
+.swatch-orange {
+  background-color: #f47738;
+}
+
+/* line 240, ../sass/design-guide/_guide-styles.scss */
+.swatch-orange-mid {
+  background-color: #fabb96;
+}
+
+/* line 243, ../sass/design-guide/_guide-styles.scss */
+.swatch-orange-light {
+  background-color: #fde4d4;
+}
+
+/* line 237, ../sass/design-guide/_guide-styles.scss */
+.swatch-brown {
+  background-color: #b58840;
+}
+
+/* line 240, ../sass/design-guide/_guide-styles.scss */
+.swatch-brown-mid {
+  background-color: #dac39c;
+}
+
+/* line 243, ../sass/design-guide/_guide-styles.scss */
+.swatch-brown-light {
+  background-color: #f0e7d7;
+}
+
+/* line 237, ../sass/design-guide/_guide-styles.scss */
+.swatch-yellow {
+  background-color: #ffbf47;
+}
+
+/* line 240, ../sass/design-guide/_guide-styles.scss */
+.swatch-yellow-mid {
+  background-color: #ffdf94;
+}
+
+/* line 243, ../sass/design-guide/_guide-styles.scss */
+.swatch-yellow-light {
+  background-color: #fff2d3;
+}
+
+/* line 237, ../sass/design-guide/_guide-styles.scss */
+.swatch-green {
+  background-color: #006435;
+}
+
+/* line 240, ../sass/design-guide/_guide-styles.scss */
+.swatch-green-mid {
+  background-color: #7fb299;
+}
+
+/* line 243, ../sass/design-guide/_guide-styles.scss */
+.swatch-green-light {
+  background-color: #cce0d6;
+}
+
+/* line 237, ../sass/design-guide/_guide-styles.scss */
+.swatch-grass-green {
+  background-color: #85994b;
+}
+
+/* line 240, ../sass/design-guide/_guide-styles.scss */
+.swatch-grass-green-mid {
+  background-color: #c2cca3;
+}
+
+/* line 243, ../sass/design-guide/_guide-styles.scss */
+.swatch-grass-green-light {
+  background-color: #e7ebda;
+}
+
+/* line 237, ../sass/design-guide/_guide-styles.scss */
+.swatch-turquoise {
+  background-color: #28a197;
+}
+
+/* line 240, ../sass/design-guide/_guide-styles.scss */
+.swatch-turquoise-mid {
+  background-color: #95d0cb;
+}
+
+/* line 243, ../sass/design-guide/_guide-styles.scss */
+.swatch-turquoise-light {
+  background-color: #d5ecea;
+}
+
+/* line 237, ../sass/design-guide/_guide-styles.scss */
+.swatch-light-blue {
+  background-color: #2b8cc4;
+}
+
+/* line 240, ../sass/design-guide/_guide-styles.scss */
+.swatch-light-blue-mid {
+  background-color: #96c6e2;
+}
+
+/* line 243, ../sass/design-guide/_guide-styles.scss */
+.swatch-light-blue-light {
+  background-color: #d5e8f3;
 }
