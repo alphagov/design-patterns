@@ -826,11 +826,11 @@ Example usage:
   background: #dee0e2;
 }
 /* line 244, ../sass/govuk-helper/_forms.scss */
-.govuk .js-enabled .block-label input:focus {
+.govuk .block-label input:focus {
   outline: none;
 }
 /* line 250, ../sass/govuk-helper/_forms.scss */
-.govuk .js-enabled .add-focus {
+.govuk .add-focus {
   outline: 3px solid #ffbf47;
 }
 

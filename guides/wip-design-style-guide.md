@@ -33,7 +33,6 @@ breadcrumb:
 8. **[Validations/Confirmations/Errors](#guide-errors)**
 9. **[Icons](#guide-icons)**
 10. **[Header/Footer](#guide-header-footer)**
-11. **[Status](#guide-status)**
 
 <div id="guide-layout">
   
@@ -861,10 +860,14 @@ breadcrumb:
   <div class="example">
     <div class="inner-block">
 
-       <div class="form-group">
-          <label for="full-name" class="form-label">Full name</label>
-          <input type="text" class="form-control" id="full-name">
-        </div>
+      <form action="" class="form">
+        <fieldset>
+          <div class="form-group">
+            <label for="full-name" class="form-label">Full name</label>
+            <input type="text" class="form-control" id="full-name">
+          </div>
+        </fieldset>
+      </form>
 
     </div>
   </div>
@@ -877,11 +880,15 @@ breadcrumb:
   <div class="example">
     <div class="inner-block">
       
-      <div class="form-group">
-        <label class="form-label" for="full-name">Full name</label>
-        <p class="form-hint">As shown on your birth certificate or passport</p>
-        <input type="text" class="form-control" id="full-name">
-      </div>
+      <form action="" class="form">
+        <fieldset>
+          <div class="form-group">
+            <label class="form-label" for="full-name">Full name</label>
+            <p class="form-hint">As shown on your birth certificate or passport</p>
+            <input type="text" class="form-control" id="full-name">
+          </div>
+        </fieldset>
+      </form>
 
     </div>
   </div>
@@ -893,18 +900,22 @@ breadcrumb:
   </ul>
   <div class="example">
     <div class="inner-block">
+      
+      <form action="" class="form">
+        <fieldset>
+          <div class="form-group">
+            <label class="form-label" for="full-name">Full name</label>
+            <p class="form-hint">As shown on your birth certificate or passport</p>
+            <input type="text" class="form-control" id="full-name">
+          </div>
 
-      <div class="form-group">
-        <label class="form-label" for="full-name">Full name</label>
-        <p class="form-hint">As shown on your birth certificate or passport</p>
-        <input type="text" class="form-control" id="full-name">
-      </div>
-
-      <div class="form-group">
-        <label class="form-label" for="other-names">Any other last names</label>
-        <input type="text" class="form-control" id="other-names">
-        <p class="form-hint">E.g. your maiden name</p>
-      </div>
+          <div class="form-group">
+            <label class="form-label" for="other-names">Any other last names</label>
+            <input type="text" class="form-control" id="other-names">
+            <p class="form-hint">E.g. your maiden name</p>
+          </div>
+        </fieldset>
+      </form>
 
     </div>
   </div>
@@ -913,18 +924,22 @@ breadcrumb:
   <div class="example">
     <div class="inner-block">
       
-      <div class="form-radio">
-        <label for="radio-option-1c">
-          <input id="radio-option-1c" type="radio" name="option-radio" value="">
-          Radio option 1
-        </label>
-      </div>
-      <div class="form-radio">
-        <label for="radio-option-2c">
-          <input id="radio-option-2c" type="radio" name="option-radio" value="">
-          Radio option 2
-        </label>
-      </div>
+      <form action="" class="form">
+        <fieldset>
+          <div class="form-radio">
+            <label for="radio-option-1c">
+              <input id="radio-option-1c" type="radio" name="option-radio" value="">
+              Radio option 1
+            </label>
+          </div>
+          <div class="form-radio">
+            <label for="radio-option-2c">
+              <input id="radio-option-2c" type="radio" name="option-radio" value="">
+              Radio option 2
+            </label>
+          </div>
+        </fieldset>
+      </form>
 
     </div>
   </div>
@@ -933,12 +948,16 @@ breadcrumb:
   <div class="example">
     <div class="inner-block">
       
-      <div class="form-checkbox">
-        <label for="checkbox-option-1d">
-          <input id="checkbox-option-1d" type="checkbox" value="">
-          Checkbox option 1
-        </label>
-      </div>
+      <form action="" class="form">
+        <fieldset>
+          <div class="form-checkbox">
+            <label for="checkbox-option-1d">
+              <input id="checkbox-option-1d" type="checkbox" value="">
+              Checkbox option 1
+            </label>
+          </div>
+        </fieldset>
+      </form>
 
     </div>
   </div>
@@ -947,34 +966,40 @@ breadcrumb:
   <div class="example">
     <div class="inner-block">
       
-      <div class="form-group form-group-block">
-        <div class="form-radio">
-          <label for="radio-option-1a" class="block-label">
-            <input id="radio-option-1a" type="radio" name="option-radio" value="">
-            Radio option 1
-          </label>
-        </div>
-        <div class="form-radio">
-          <label for="radio-option-2a" class="block-label">
-            <input id="radio-option-2a" type="radio" name="option-radio" value="">
-            Radio option 2
-          </label>
-        </div>
-      </div>
-      <div class="form-group form-group-block">
-        <div class="form-checkbox">
-          <label for="checkbox-option-3a" class="block-label">
-            <input id="checkbox-option-3a" type="checkbox" value="">
-            Checkbox option 1
-          </label>
-        </div>
-        <div class="form-checkbox">
-          <label for="checkbox-option-4b" class="block-label">
-            <input id="checkbox-option-4b" type="checkbox" value="">
-            Checkbox option 2
-          </label>
-        </div>
-      </div>
+      <form action="" class="form">
+        <fieldset>
+          <div class="form-group form-group-block">
+            <div class="form-radio">
+              <label for="radio-option-1a" class="block-label">
+                <input id="radio-option-1a" type="radio" name="option-radio" value="">
+                Radio option 1
+              </label>
+            </div>
+            <div class="form-radio">
+              <label for="radio-option-2a" class="block-label">
+                <input id="radio-option-2a" type="radio" name="option-radio" value="">
+                Radio option 2
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="form-group form-group-block">
+            <div class="form-checkbox">
+              <label for="checkbox-option-3a" class="block-label">
+                <input id="checkbox-option-3a" type="checkbox" value="">
+                Checkbox option 1
+              </label>
+            </div>
+            <div class="form-checkbox">
+              <label for="checkbox-option-4b" class="block-label">
+                <input id="checkbox-option-4b" type="checkbox" value="">
+                Checkbox option 2
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </form>
 
     </div>
   </div>
@@ -982,12 +1007,18 @@ breadcrumb:
   <h3 class="heading-24">Inset text</h3>
   <div class="example">
     <div class="inner-block">
-        
-        <div class="form-group form-group-indent">
-          <div class="text">
-            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna.</p>
+      
+      <form action="" class="form">
+        <fieldset>
+
+          <div class="form-group form-group-indent">
+            <div class="text">
+              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna.</p>
+            </div>
           </div>
-        </div>
+
+        </fieldset>
+      </form>
 
     </div>
   </div>
@@ -995,6 +1026,8 @@ breadcrumb:
   <h3 class="heading-24">Progressive disclosure</h3>
   <div class="example">
     <div class="inner-block">
+        
+
 
     </div>
   </div>
@@ -1238,34 +1271,3 @@ breadcrumb:
 </div>
 <!-- / #guide-header -->
 
-
-<div id="guide-status">
-  <h2 class="heading-36">Status</h2>
-  <h3 class="heading-24">Key points:</h3>
-  <ul class="list-bullet text">
-    <li></li>
-  </ul>
-
-  <h3 class="heading-24">Section header</h3>
-  <div class="example">
-    <div class="inner-block">
-      
-    </div>
-  </div>
-
-  <div class="find-out-more">
-    <h3 class="heading-24">Find out more</h3>
-    <ul>
-      <li><a href="#">Get more detail</a></li>
-      <li><a href="#">See an example page</a></li>
-    </ul>
-    <h4 class="heading-19">Live services that use these elements</h4>
-    <ul>
-      <li>BETA Name of service ></li>
-      <li>ALPHA Name of service ></li>
-    </ul>
-    <a href="#">Share/submit live services that use this element</a>
-  <div>
-
-</div>
-<!-- / #guide-status -->

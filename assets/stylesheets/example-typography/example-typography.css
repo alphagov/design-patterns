@@ -812,11 +812,11 @@
   background: #dee0e2;
 }
 /* line 244, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_forms.scss */
-.govuk .js-enabled .block-label input:focus {
+.govuk .block-label input:focus {
   outline: none;
 }
 /* line 250, /Users/gemmaleigh/Sites/govuk/design-patterns/assets/sass/govuk-helper/_forms.scss */
-.govuk .js-enabled .add-focus {
+.govuk .add-focus {
   outline: 3px solid #ffbf47;
 }
 
