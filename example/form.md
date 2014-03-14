@@ -92,7 +92,7 @@ breadcrumb:
           
           <div class="form-group">
             <label class="form-label" for="address-town">Town or City</label>
-            <input type="text" class="form-control form-control-1-4" id="address-town">
+            <input type="text" class="form-control form-control-1-2" id="address-town">
           </div>
 
           <div class="form-group">
