@@ -14,13 +14,11 @@ These new guides are for designers, researchers and front end developers buildin
 Their content is in **alpha** and subject to change.
 Help us improve it by [giving us your feedback](https://designpatterns.hackpad.com/Give-us-feedback-dE7mj6RNGKv).
 
-<h2 class="heading-36">Design style guide</h2>
+<h2 class="heading-36">GOV.UK elements</h2>
 
 This guide explains how to style and arrange the basic elements like headings, paragraphs, images, form fields and buttons.
 
-* [Read the design style guide]({{ site.baseurl }}/guides/design-style-guide.html)
-* [Take a look through the design style guide examples]({{ site.baseurl }}/example/)
-
+* [Read about GOV.UK elements](http://govuk-elements.herokuapp.com/)
 
 <h2 class="heading-36">Design patterns</h2>
 
