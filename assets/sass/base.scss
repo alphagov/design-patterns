@@ -16,8 +16,8 @@
 
 // Styles used to construct the page
 
-// Import the GOV.UK helper styles, basic styles for typography and layout
-@import "govuk-helper/govuk-helper";
+// Import the GOV.UK elements styles, basic styles for typography and layout
+@import "elements/elements";
 
 // Import patterns required for styling GOV.UK template content
 @import "design-patterns/alpha-beta";

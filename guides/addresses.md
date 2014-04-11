@@ -28,14 +28,14 @@ How you choose to capture addresses depends on what you want to do with them and
 A single, multi-line text box where users write out the address in full.
 
 <div class="example">
-  
+
   <form class="form">
     <div class="form-group">
       <label for="ex1-address" class="form-label">Full address</label>
       <textarea type="text" id="ex1-address" class="form-control" rows="5"></textarea>
     </div>
   </form>
-  
+
 </div>
 
 <h3 class="heading-24">Pros</h3>
@@ -59,9 +59,9 @@ Use when you're expecting a very broad range of address formats and you don't ne
 The address is broken down into multiple fields. Here's an example that works for simple UK addresses:
 
 <div class="example">
-  
+
   <form class="form">
-    <div class="form-group">
+    <div class="form-group form-group-compound">
       <label for="ex2-street-address" class="form-label">Street address</label>
       <input type="text" id="ex2-street-address" class="form-control">
     </div>
@@ -82,7 +82,7 @@ The address is broken down into multiple fields. Here's an example that works fo
       <input type="text" id="ex2-postcode" class="postcode form-control">
     </div>
   </form>
-  
+
 </div>
 
 
@@ -120,9 +120,9 @@ Sometimes referred to as 'postcode lookup'. An address finder lets users specify
 Here's how this pattern was implemented on the [Lasting Power of Attorney](https://lastingpowerofattorney.service.gov.uk/) service.
 
 <div class="example">
-  
+
  <img src="{{ site.baseurl }}/assets/images/guides/postcode-lookup.gif" title="An animation showing the address finder in the Lasting Power of Attorney service">
-  
+
 </div>
 
 <h3 class="heading-24">Pros</h3>

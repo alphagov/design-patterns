@@ -1,30 +1,35 @@
 // DESIGN PATTERN
 //
-// All design patterns make use of the helper styles in '/assets/sass/govuk-helper'
+// All design patterns make use of the elements styles in '/assets/sass/elements'
 
 // Additional styles for this pattern:
 
 .date-of-birth {
-  
+
   legend {
-    margin-bottom: $gutter-half;
+    margin-bottom:0;
   }
-  
+
+  .hint {
+    color: $secondary-text-colour;
+  }
+
   .form-group {
     width: 40px;
     float: left;
+    clear: none;
     margin-right: $gutter-half;
     @include media(tablet) {
       margin-right: $gutter;
     }
   }
-  
+
   .form-group-year {
     width: 60px;
   }
-  
+
   .form-control {
     width: 100%;
   }
-  
+
 }
